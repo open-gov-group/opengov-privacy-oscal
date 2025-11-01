@@ -30,7 +30,7 @@
       ]
     },
     "import-profile": {
-      "href": "./profile_intervenability.json"
+      "href": "../profiles/profile_intervenability.json"
     },
     "system-characteristics": {
       "system-ids": [
