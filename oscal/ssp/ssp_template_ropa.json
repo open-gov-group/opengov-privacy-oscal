@@ -30,7 +30,7 @@
       ]
     },
     "import-profile": {
-      "href": "../profiles/profile_intervenability.json"
+      "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json"
     },
     "system-characteristics": {
       "system-ids": [
