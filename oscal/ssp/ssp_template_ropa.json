@@ -13,7 +13,7 @@
         { "uuid": "REPLACE", "type": "person", "name": "Product Owner / Business Owner" }
       ]
     },
-    "import-profile": { "href": "./profile_intervenability.json" },
+    "import-profile": { "href": "../profiles/profile_intervenability.json" },
     "system-characteristics": {
       "system-ids": [
         { "identifier-type": "assigned", "id": "SSP-RoPA-XXX" }
