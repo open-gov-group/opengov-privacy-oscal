@@ -1,13 +1,6 @@
 {
     "system-security-plan": {
-        "control-implementation": {
-            "description": "Implementation of controls per profile/catalog; reference components and evidence.",
-            "implemented-requirements": [
-            ]
-        },
-        "import-profile": {
-            "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json"
-        },
+		"uuid": "13e6733a-8efd-4fc4-81d6-fd19c09d6653",
         "metadata": {
             "last-modified": "2025-11-01T07:03:02Z",
             "oscal-version": "1.1.2",
@@ -36,6 +29,9 @@
             "title": "SSP (RoPA) \u2013 Template for a processing activity",
             "version": "0.2.0"
         },
+        "import-profile": {
+            "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json"
+        },		
         "system-characteristics": {
             "description": "Short description of the processing, purpose, legal basis, categories of data subjects/data.",
             "props": [
@@ -93,6 +89,10 @@
             "components": [
             ]
         },
-        "uuid": "13e6733a-8efd-4fc4-81d6-fd19c09d6653"
+        "control-implementation": {
+            "description": "Implementation of controls per profile/catalog; reference components and evidence.",
+            "implemented-requirements": [
+            ]
+        }		
     }
 }
