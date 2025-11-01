@@ -9,7 +9,7 @@
     },
     "imports": [
       {
-        "href": "./opengov_privacy_catalog.json",
+        "href": "../catalog/opengov_privacy_catalog.json",
         "include-controls": [
           {
             "with-ids": [
