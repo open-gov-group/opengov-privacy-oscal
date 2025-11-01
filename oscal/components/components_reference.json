@@ -16,7 +16,7 @@
         "control-implementations": [
           {
             "uuid": "ba53fa91-122c-439e-bd13-87992466806a",
-            "source": "./opengov_privacy_catalog.json",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
             "description": "Implementations per Privacy Catalog/Profile.",
             "implemented-requirements": [
               {
@@ -51,7 +51,7 @@
         "control-implementations": [
           {
             "uuid": "adb6b599-fab0-4b3e-a163-eff857dd4682",
-            "source": "./opengov_privacy_catalog.json",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
             "description": "Implementations per Privacy Catalog/Profile.",
             "implemented-requirements": [
               {
@@ -76,7 +76,7 @@
         "control-implementations": [
           {
             "uuid": "c07c9f5e-432f-4c4a-97ae-ee4a4ac51a52",
-            "source": "./opengov_privacy_catalog.json",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
             "description": "Implementations per Privacy Catalog/Profile.",
             "implemented-requirements": [
               {
@@ -96,7 +96,7 @@
         "control-implementations": [
           {
             "uuid": "46e7d1d7-a1f3-4857-b8cc-71ff311bc399",
-            "source": "./opengov_privacy_catalog.json",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
             "description": "Implementations per Privacy Catalog/Profile.",
             "implemented-requirements": [
               {
@@ -121,7 +121,7 @@
         "control-implementations": [
           {
             "uuid": "ec4cd2a0-fc1d-478b-be9f-6db67c92214c",
-            "source": "./opengov_privacy_catalog.json",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
             "description": "Implementations per Privacy Catalog/Profile.",
             "implemented-requirements": [
               {
@@ -146,7 +146,7 @@
         "control-implementations": [
           {
             "uuid": "1a3fde24-bce7-4592-a197-1ca70f9069fe",
-            "source": "./opengov_privacy_catalog.json",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
             "description": "Implementations per Privacy Catalog/Profile.",
             "implemented-requirements": [
               {
