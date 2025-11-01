@@ -1,0 +1,178 @@
+{
+  "component-definition": {
+    "uuid": "cd07dd29-0585-4369-ab50-bd1fa36646b6",
+    "metadata": {
+      "title": "Reference Components – OpenGov Privacy",
+      "last-modified": "2025-11-01T07:03:02Z",
+      "version": "0.2.0",
+      "oscal-version": "1.1.2"
+    },
+    "components": [
+      {
+        "uuid": "59a36892-5736-49f3-889e-e5a652a19be4",
+        "type": "service",
+        "title": "Document Management System (DMS)",
+        "description": "Electronic records/documents, metadata, retention/erasure rules.",
+        "control-implementations": [
+          {
+            "uuid": "ba53fa91-122c-439e-bd13-87992466806a",
+            "source": "./opengov_privacy_catalog.json",
+            "description": "Implementations per Privacy Catalog/Profile.",
+            "implemented-requirements": [
+              {
+                "uuid": "7808d6da-6112-4271-9d3c-bf049a92876f",
+                "control-id": "B1-7",
+                "description": "Document Management System (DMS): implementation supports control B1-7."
+              },
+              {
+                "uuid": "da64d4a0-96c3-41a7-bcf6-2f675a48a3b5",
+                "control-id": "B1-20",
+                "description": "Document Management System (DMS): implementation supports control B1-20."
+              },
+              {
+                "uuid": "582be692-2445-4b33-a5e4-909171112a95",
+                "control-id": "B1-12",
+                "description": "Document Management System (DMS): implementation supports control B1-12."
+              },
+              {
+                "uuid": "769321db-1dc4-4a17-b5de-3186a14558f4",
+                "control-id": "B1-3",
+                "description": "Document Management System (DMS): implementation supports control B1-3."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "b697ad40-9009-4d2f-9703-ab3c5c95a070",
+        "type": "service",
+        "title": "Identity & Access Management (IAM)",
+        "description": "Central identities, authentication, authorization, roles/attributes.",
+        "control-implementations": [
+          {
+            "uuid": "adb6b599-fab0-4b3e-a163-eff857dd4682",
+            "source": "./opengov_privacy_catalog.json",
+            "description": "Implementations per Privacy Catalog/Profile.",
+            "implemented-requirements": [
+              {
+                "uuid": "44ab9307-15d0-4c42-907d-cf5d4bc727c4",
+                "control-id": "B1-7",
+                "description": "Identity & Access Management (IAM): implementation supports control B1-7."
+              },
+              {
+                "uuid": "c64a90bf-36c4-4f91-bfc3-c8055b682fce",
+                "control-id": "B1-10",
+                "description": "Identity & Access Management (IAM): implementation supports control B1-10."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "c1497673-69df-4b30-b627-a4b2ff90dc67",
+        "type": "service",
+        "title": "Export Service",
+        "description": "Structured, commonly used, machine-readable exports incl. metadata/provenance.",
+        "control-implementations": [
+          {
+            "uuid": "c07c9f5e-432f-4c4a-97ae-ee4a4ac51a52",
+            "source": "./opengov_privacy_catalog.json",
+            "description": "Implementations per Privacy Catalog/Profile.",
+            "implemented-requirements": [
+              {
+                "uuid": "6543e524-ebf2-44d6-925b-315265294c0c",
+                "control-id": "B1-14",
+                "description": "Export Service: implementation supports control B1-14."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "54c45044-7c8e-4e12-a5b7-ffdf32456450",
+        "type": "service",
+        "title": "Erasure Engine",
+        "description": "Automated erasure runs, retention holds, evidence.",
+        "control-implementations": [
+          {
+            "uuid": "46e7d1d7-a1f3-4857-b8cc-71ff311bc399",
+            "source": "./opengov_privacy_catalog.json",
+            "description": "Implementations per Privacy Catalog/Profile.",
+            "implemented-requirements": [
+              {
+                "uuid": "dc2ab246-8338-4ba4-b8a2-9725bcbefa11",
+                "control-id": "B1-12",
+                "description": "Erasure Engine: implementation supports control B1-12."
+              },
+              {
+                "uuid": "85bb0aa4-f2ef-40b5-85f2-727e2d7ab41b",
+                "control-id": "B1-3",
+                "description": "Erasure Engine: implementation supports control B1-3."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "1ddd75da-86b5-4ca4-926d-f2869afd6c97",
+        "type": "service",
+        "title": "Backup/Restore",
+        "description": "Backup & recovery with defined RTO/RPO; prevent reappearance of erased data.",
+        "control-implementations": [
+          {
+            "uuid": "ec4cd2a0-fc1d-478b-be9f-6db67c92214c",
+            "source": "./opengov_privacy_catalog.json",
+            "description": "Implementations per Privacy Catalog/Profile.",
+            "implemented-requirements": [
+              {
+                "uuid": "f0ec9a0d-7f31-4bf4-8d81-5c5ad3d69f1c",
+                "control-id": "B1-20",
+                "description": "Backup/Restore: implementation supports control B1-20."
+              },
+              {
+                "uuid": "c5498c03-faed-497c-9c8c-47eb591193d1",
+                "control-id": "B1-12",
+                "description": "Backup/Restore: implementation supports control B1-12."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uuid": "de903aff-9097-4927-a625-3b0e5cdd3fd9",
+        "type": "process",
+        "title": "Line-of-Business System X",
+        "description": "Business process with personal data; links to FIM/BPMN artefacts.",
+        "control-implementations": [
+          {
+            "uuid": "1a3fde24-bce7-4592-a197-1ca70f9069fe",
+            "source": "./opengov_privacy_catalog.json",
+            "description": "Implementations per Privacy Catalog/Profile.",
+            "implemented-requirements": [
+              {
+                "uuid": "8f1db308-860d-4066-b7d5-1f2df0290b1b",
+                "control-id": "B1-1",
+                "description": "Line-of-Business System X: implementation supports control B1-1."
+              },
+              {
+                "uuid": "13f48cf6-5c34-4ee4-b76d-89a54a4d4c3b",
+                "control-id": "B1-8",
+                "description": "Line-of-Business System X: implementation supports control B1-8."
+              },
+              {
+                "uuid": "196e80a6-344c-4c59-8eae-b4563ea617b9",
+                "control-id": "B1-3",
+                "description": "Line-of-Business System X: implementation supports control B1-3."
+              },
+              {
+                "uuid": "1aa9ea84-1deb-4462-9e88-e44e7ba79b47",
+                "control-id": "B1-2",
+                "description": "Line-of-Business System X: implementation supports control B1-2."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

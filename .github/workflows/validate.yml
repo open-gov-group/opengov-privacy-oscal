@@ -1,0 +1,19 @@
+name: Validate OSCAL JSON
+
+on:
+  pull_request:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check JSON syntax with jq
+        run: |
+          sudo apt-get update && sudo apt-get install -y jq
+          find oscal overlays -type f -name '*.json' -print0 | xargs -0 -n1 jq -e > /dev/null
+      - name: (Optional) Validate with OSCAL tools
+        run: |
+          echo "Add NIST OSCAL validation here (e.g., OSCAL-CLI or schema validation)."

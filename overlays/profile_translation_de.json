@@ -1,0 +1,170 @@
+{
+  "profile": {
+    "uuid": "5f511c26-a5b9-460a-a87a-7fd83764cb22",
+    "metadata": {
+      "title": "Profile – DE Translation Overlay (labels)",
+      "last-modified": "2025-11-01T07:03:02Z",
+      "version": "0.2.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Adds German labels as props for titles/statements; non-destructive."
+    },
+    "imports": [
+      {
+        "href": "./opengov_privacy_catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "B1-1",
+              "B1-8",
+              "B1-10",
+              "B1-12",
+              "B1-14",
+              "B1-7",
+              "B1-6",
+              "B1-20",
+              "B1-3",
+              "B1-2"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "modify": {
+      "alters": [
+        {
+          "control-id": "B1-1",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Informationspflichten & Transparenz für Betroffene"
+            },
+            {
+              "name": "statement:de",
+              "value": "Präzise, verständliche und leicht zugängliche Informationen; Auskunfts-/Benachrichtigungspflichten."
+            }
+          ]
+        },
+        {
+          "control-id": "B1-8",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Rechenschafts- und Nachweisfähigkeit"
+            },
+            {
+              "name": "statement:de",
+              "value": "Nachweis der Einhaltung (Dokumentation, Protokolle, VVT, DSFA)."
+            }
+          ]
+        },
+        {
+          "control-id": "B1-10",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Unterstützung Betroffenenrechte"
+            },
+            {
+              "name": "statement:de",
+              "value": "Prozesse/Schnittstellen zur Ausübung der Rechte nach Art. 15–22 DSGVO (SPoC, Portal, APIs)."
+            }
+          ]
+        },
+        {
+          "control-id": "B1-12",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Löschbarkeit"
+            },
+            {
+              "name": "statement:de",
+              "value": "Operative Möglichkeiten zur unverzüglichen Löschung personenbezogener Daten inkl. Nachweisführung."
+            }
+          ]
+        },
+        {
+          "control-id": "B1-14",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Datenübertragbarkeit"
+            },
+            {
+              "name": "statement:de",
+              "value": "Bereitstellung strukturierter, gängiger und maschinenlesbarer Exportformate inkl. Metadaten/Provenienz."
+            }
+          ]
+        },
+        {
+          "control-id": "B1-7",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Vertraulichkeit & Zugriffsschutz"
+            },
+            {
+              "name": "statement:de",
+              "value": "Schutz vor unbefugter Kenntnisnahme/Nutzung; Least-Privilege, AuthN/Z, Verschlüsselung."
+            }
+          ]
+        },
+        {
+          "control-id": "B1-6",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Integrität & Änderungsnachvollziehbarkeit"
+            },
+            {
+              "name": "statement:de",
+              "value": "Schutz vor unbeabsichtigter Änderung/Zerstörung; Nachvollziehbarkeit mittels Audit-Trails."
+            }
+          ]
+        },
+        {
+          "control-id": "B1-20",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Wiederherstellbarkeit & Notfallplanung"
+            },
+            {
+              "name": "statement:de",
+              "value": "Rasche Wiederherstellung der Verfügbarkeit/Zugriffsfähigkeit; RTO/RPO definiert und getestet."
+            }
+          ]
+        },
+        {
+          "control-id": "B1-3",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Datenminimierung"
+            },
+            {
+              "name": "statement:de",
+              "value": "Verarbeitung auf das notwendige Maß begrenzen; Pseudonymisierung/Maskierung einsetzen."
+            }
+          ]
+        },
+        {
+          "control-id": "B1-2",
+          "props": [
+            {
+              "name": "title:de",
+              "value": "Zweckbindung & Zwecktrennung"
+            },
+            {
+              "name": "statement:de",
+              "value": "Verarbeitung nur für festgelegte Zwecke; technische/organisatorische Zwecktrennung."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

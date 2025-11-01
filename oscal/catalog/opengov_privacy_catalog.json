@@ -1,0 +1,815 @@
+{
+  "catalog": {
+    "uuid": "4e4ea78a-ce8d-48f9-8963-327eae7c80f4",
+    "metadata": {
+      "title": "OpenGovGroup – Privacy Catalog (SDM + CNIL + ISO/IEC 29100/29134/27018/27701)",
+      "last-modified": "2025-11-01T07:03:02Z",
+      "version": "0.2.0",
+      "oscal-version": "1.1.2"
+    },
+    "groups": [
+      {
+        "id": "G-TP",
+        "title": "Transparency (Tp)",
+        "controls": [
+          {
+            "id": "B1-1",
+            "title": "Information duties & transparency for data subjects",
+            "parts": [
+              {
+                "id": "B1-1_stmt",
+                "name": "statement",
+                "prose": "Provide precise, intelligible and easily accessible information; comply with access/notification duties."
+              },
+              {
+                "id": "B1-1_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-1_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-1_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-1_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-1_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-1_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-1_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-1_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-1_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "TP/B1-1"
+              },
+              {
+                "name": "cnil",
+                "value": "Transparency"
+              },
+              {
+                "name": "iso-29100",
+                "value": "Openness/Transparency"
+              },
+              {
+                "name": "iso-27701",
+                "value": "7.3.2 Notice"
+              }
+            ]
+          },
+          {
+            "id": "B1-8",
+            "title": "Accountability and evidence of compliance",
+            "parts": [
+              {
+                "id": "B1-8_stmt",
+                "name": "statement",
+                "prose": "Evidence of GDPR compliance (documentation, logs, RoPA, DPIA)."
+              },
+              {
+                "id": "B1-8_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-8_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-8_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-8_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-8_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-8_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-8_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-8_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-8_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "TP/B1-8"
+              },
+              {
+                "name": "cnil",
+                "value": "Accountability"
+              },
+              {
+                "name": "iso-29100",
+                "value": "Accountability"
+              },
+              {
+                "name": "iso-27701",
+                "value": "5.2.1 Accountability"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-IG",
+        "title": "Integrity (Ig)",
+        "controls": [
+          {
+            "id": "B1-6",
+            "title": "Integrity & change traceability",
+            "parts": [
+              {
+                "id": "B1-6_stmt",
+                "name": "statement",
+                "prose": "Protection against unintended alteration/destruction; traceability via audit trails."
+              },
+              {
+                "id": "B1-6_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-6_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-6_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-6_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-6_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-6_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-6_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-6_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-6_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "IG/B1-6"
+              },
+              {
+                "name": "cnil",
+                "value": "Integrity"
+              },
+              {
+                "name": "iso-27701",
+                "value": "Annex mapping"
+              },
+              {
+                "name": "iso-29100",
+                "value": "Integrity/accuracy"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-VT",
+        "title": "Confidentiality (Vt)",
+        "controls": [
+          {
+            "id": "B1-7",
+            "title": "Confidentiality & access control",
+            "parts": [
+              {
+                "id": "B1-7_stmt",
+                "name": "statement",
+                "prose": "Protection against unauthorised access/use; least-privilege, authn/z, encryption."
+              },
+              {
+                "id": "B1-7_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-7_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-7_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-7_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-7_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-7_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-7_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-7_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-7_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "VT/B1-7"
+              },
+              {
+                "name": "cnil",
+                "value": "Security of processing"
+              },
+              {
+                "name": "iso-27018",
+                "value": "Cloud PII controls"
+              },
+              {
+                "name": "iso-27701",
+                "value": "security refs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-VF",
+        "title": "Availability (Vf)",
+        "controls": [
+          {
+            "id": "B1-20",
+            "title": "Recoverability & contingency planning",
+            "parts": [
+              {
+                "id": "B1-20_stmt",
+                "name": "statement",
+                "prose": "Rapid restoration of availability/access; defined & tested RTO/RPO."
+              },
+              {
+                "id": "B1-20_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-20_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-20_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-20_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-20_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-20_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-20_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-20_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-20_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "VF/B1-20"
+              },
+              {
+                "name": "cnil",
+                "value": "Business continuity"
+              },
+              {
+                "name": "iso-27701",
+                "value": "ref ISO 27001 A.17"
+              },
+              {
+                "name": "iso-27018",
+                "value": "Continuity, backup"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-IV",
+        "title": "Intervenability (Iv)",
+        "controls": [
+          {
+            "id": "B1-10",
+            "title": "Support for data subject rights",
+            "parts": [
+              {
+                "id": "B1-10_stmt",
+                "name": "statement",
+                "prose": "Processes/interfaces to exercise Arts. 15–22 GDPR (SPOC, portal, APIs)."
+              },
+              {
+                "id": "B1-10_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-10_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-10_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-10_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-10_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-10_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-10_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-10_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-10_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "IV/B1-10"
+              },
+              {
+                "name": "cnil",
+                "value": "Data Subject Rights"
+              },
+              {
+                "name": "iso-27701",
+                "value": "7.3.5 Rights"
+              },
+              {
+                "name": "iso-29100",
+                "value": "Individual participation"
+              }
+            ]
+          },
+          {
+            "id": "B1-12",
+            "title": "Deletability",
+            "parts": [
+              {
+                "id": "B1-12_stmt",
+                "name": "statement",
+                "prose": "Operational capability to erase personal data without undue delay, including evidence."
+              },
+              {
+                "id": "B1-12_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-12_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-12_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-12_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-12_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-12_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-12_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-12_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-12_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "IV/B1-12"
+              },
+              {
+                "name": "cnil",
+                "value": "Erasure"
+              },
+              {
+                "name": "iso-27701",
+                "value": "7.4.6 Deletion"
+              },
+              {
+                "name": "iso-29100",
+                "value": "Data minimization/retention"
+              }
+            ]
+          },
+          {
+            "id": "B1-14",
+            "title": "Data portability",
+            "parts": [
+              {
+                "id": "B1-14_stmt",
+                "name": "statement",
+                "prose": "Provide structured, commonly used, machine-readable export formats incl. metadata/provenance."
+              },
+              {
+                "id": "B1-14_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-14_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-14_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-14_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-14_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-14_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-14_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-14_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-14_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "IV/B1-14"
+              },
+              {
+                "name": "cnil",
+                "value": "Portability"
+              },
+              {
+                "name": "iso-27701",
+                "value": "7.3.5(c) Portability"
+              },
+              {
+                "name": "iso-29100",
+                "value": "Openness/Transparency"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-DM",
+        "title": "Data Minimization (Dm)",
+        "controls": [
+          {
+            "id": "B1-3",
+            "title": "Data minimization",
+            "parts": [
+              {
+                "id": "B1-3_stmt",
+                "name": "statement",
+                "prose": "Limit collection/processing to what is necessary; apply pseudonymisation/masking."
+              },
+              {
+                "id": "B1-3_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-3_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-3_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-3_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-3_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-3_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-3_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-3_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-3_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "DM/B1-3"
+              },
+              {
+                "name": "cnil",
+                "value": "Data minimization"
+              },
+              {
+                "name": "iso-29100",
+                "value": "Minimization"
+              },
+              {
+                "name": "iso-27701",
+                "value": "PII minimization"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-NN",
+        "title": "Purpose Limitation / Non-linkability (Nn)",
+        "controls": [
+          {
+            "id": "B1-2",
+            "title": "Purpose limitation & separation",
+            "parts": [
+              {
+                "id": "B1-2_stmt",
+                "name": "statement",
+                "prose": "Process only for specified purposes; technical/organizational separation for distinct purposes."
+              },
+              {
+                "id": "B1-2_guidance",
+                "name": "guidance",
+                "prose": "Implementation guidance: define responsibilities, processes, systems/services, and evidence; perform regular effectiveness checks."
+              },
+              {
+                "id": "B1-2_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-2_objective_1",
+                    "name": "objective",
+                    "prose": "Verify processes/documentation are current, approved, communicated."
+                  },
+                  {
+                    "id": "B1-2_objective_2",
+                    "name": "objective",
+                    "prose": "Verify technical/organizational controls are implemented and evidenced."
+                  },
+                  {
+                    "id": "B1-2_objective_3",
+                    "name": "objective",
+                    "prose": "Verify monitoring/reporting and corrective actions are established."
+                  }
+                ]
+              },
+              {
+                "id": "B1-2_criteria",
+                "name": "criteria",
+                "parts": [
+                  {
+                    "id": "B1-2_criteria_1",
+                    "name": "criteria",
+                    "prose": "Documentation exists, current, approved."
+                  },
+                  {
+                    "id": "B1-2_criteria_2",
+                    "name": "criteria",
+                    "prose": "Effectiveness evidenced by tests/sampling."
+                  },
+                  {
+                    "id": "B1-2_criteria_3",
+                    "name": "criteria",
+                    "prose": "Roles/responsibilities named; SLAs/KPIs met."
+                  }
+                ]
+              }
+            ],
+            "props": [
+              {
+                "name": "sdm",
+                "value": "NN/B1-2"
+              },
+              {
+                "name": "cnil",
+                "value": "Purpose limitation"
+              },
+              {
+                "name": "iso-29100",
+                "value": "Purpose legitimacy"
+              },
+              {
+                "name": "iso-27701",
+                "value": "Purpose specification"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

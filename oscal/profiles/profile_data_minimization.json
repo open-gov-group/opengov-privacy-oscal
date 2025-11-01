@@ -1,0 +1,27 @@
+{
+  "profile": {
+    "uuid": "68d8c404-47b0-4cc8-868c-09acbf3a4c76",
+    "metadata": {
+      "title": "Profile – Data Minimization (Dm)",
+      "last-modified": "2025-11-01T07:03:02Z",
+      "version": "0.2.0",
+      "oscal-version": "1.1.2"
+    },
+    "imports": [
+      {
+        "href": "./opengov_privacy_catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "B1-3",
+              "B1-2"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    }
+  }
+}

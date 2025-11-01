@@ -1,0 +1,26 @@
+{
+  "profile": {
+    "uuid": "aa0c5d36-d16a-486c-811c-eb0a3a21c646",
+    "metadata": {
+      "title": "Profile – Confidentiality (Vt)",
+      "last-modified": "2025-11-01T07:03:02Z",
+      "version": "0.2.0",
+      "oscal-version": "1.1.2"
+    },
+    "imports": [
+      {
+        "href": "./opengov_privacy_catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "B1-7"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    }
+  }
+}
