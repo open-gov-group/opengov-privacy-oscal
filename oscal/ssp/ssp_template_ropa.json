@@ -1,82 +1,38 @@
 {
   "system-security-plan": {
-    "uuid": "13e6733a-8efd-4fc4-81d6-fd19c09d6653",
+    "uuid": "REPLACE-WITH-UUID",
     "metadata": {
       "title": "SSP (RoPA) – Template for a processing activity",
-      "last-modified": "2025-11-01T07:03:02Z",
-      "version": "0.2.0",
+      "last-modified": "2025-01-01T00:00:00Z",
+      "version": "0.2.1",
       "oscal-version": "1.1.2",
       "parties": [
-        {
-          "uuid": "1e2a0a90-7a44-40fe-ba39-ef57f3b6e23b",
-          "type": "organization",
-          "name": "Controller (organisation)"
-        },
-        {
-          "uuid": "8d6ff23c-7593-43eb-a24f-1b7be87c9d13",
-          "type": "person",
-          "name": "Data Protection Officer"
-        },
-        {
-          "uuid": "b4648015-32ed-4930-ab27-efea825ed0d3",
-          "type": "person",
-          "name": "Information Security Officer / CISO"
-        },
-        {
-          "uuid": "7ffa028e-13a9-43dd-b69e-868a8a21f594",
-          "type": "person",
-          "name": "Product Owner / Business Owner"
-        }
+        { "uuid": "REPLACE", "type": "organization", "name": "Controller (organisation)" },
+        { "uuid": "REPLACE", "type": "person", "name": "Data Protection Officer" },
+        { "uuid": "REPLACE", "type": "person", "name": "Information Security Officer / CISO" },
+        { "uuid": "REPLACE", "type": "person", "name": "Product Owner / Business Owner" }
       ]
     },
-    "import-profile": {
-      "href": "./profile_intervenability.json"
-    },
+    "import-profile": { "href": "./profile_intervenability.json" },
     "system-characteristics": {
-      "system-id": {
-        "identifier-type": "assigned",
-        "id": "SSP-RoPA-XXX"
-      },
+      "system-ids": [
+        { "identifier-type": "assigned", "id": "SSP-RoPA-XXX" }
+      ],
       "system-name": "Processing activity – <Title>",
       "system-name-short": "PA-<Short>",
       "description": "Short description of the processing, purpose, legal basis, categories of data subjects/data.",
-      "status": {
-        "state": "operational"
-      },
+      "status": { "state": "operational" },
       "props": [
-        {
-          "name": "ropa:purpose",
-          "value": "<purpose(s)>"
-        },
-        {
-          "name": "ropa:data-categories",
-          "value": "<categories of personal data>"
-        },
-        {
-          "name": "ropa:data-subjects",
-          "value": "<data subject categories>"
-        },
-        {
-          "name": "ropa:recipients",
-          "value": "<recipients/categories>"
-        },
-        {
-          "name": "ropa:third-country-transfers",
-          "value": "<No/Yes – legal basis>"
-        },
-        {
-          "name": "ropa:retention",
-          "value": "<retention/erasure periods>"
-        },
-        {
-          "name": "ropa:legal-basis",
-          "value": "<Art. 6 GDPR / sector law>"
-        }
+        { "name": "ropa:purpose", "value": "<purpose(s)>" },
+        { "name": "ropa:data-categories", "value": "<categories of personal data>" },
+        { "name": "ropa:data-subjects", "value": "<data subject categories>" },
+        { "name": "ropa:recipients", "value": "<recipients/categories>" },
+        { "name": "ropa:third-country-transfers", "value": "<No/Yes – legal basis>" },
+        { "name": "ropa:retention", "value": "<retention/erasure periods>" },
+        { "name": "ropa:legal-basis", "value": "<Art. 6 GDPR / sector law>" }
       ]
     },
-    "system-implementation": {
-      "components": []
-    },
+    "system-implementation": { "components": [] },
     "control-implementation": {
       "description": "Implementation of controls per profile/catalog; reference components and evidence.",
       "implemented-requirements": []
