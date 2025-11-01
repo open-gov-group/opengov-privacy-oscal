@@ -33,9 +33,20 @@
       "href": "./profile_intervenability.json"
     },
     "system-characteristics": {
-      "system-ids": {
-        "identifier-type": "assigned",
-        "id": "SSP-RoPA-XXX"
+      "system-ids": [
+        { "identifier-type": "assigned", "id": "SSP-RoPA-XXX" }
+      ],
+      "system-name": "Processing activity – <Title>",
+      "description": "Short description of the processing, purpose, legal basis, categories of data subjects/data.",
+      "status": { "state": "operational" },
+      "security-sensitivity-level": "moderate",
+      "system-information": {
+        "information-types": [
+          {
+            "title": "Personal data (GDPR)",
+            "description": "Typical RoPA categories (e.g., identification, contact, usage)."
+          }
+        ]
       },
       "system-name": "Processing activity – <Title>",
       "system-name-short": "PA-<Short>",
