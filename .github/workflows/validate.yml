@@ -12,8 +12,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check JSON syntax with jq
         run: |
+          set -euo pipefail
           sudo apt-get update && sudo apt-get install -y jq
-          find oscal overlays -type f -name '*.json' -print0 | xargs -0 -n1 jq -e > /dev/null
+          # Alle JSONs validieren; bei Fehler Dateiname ausgeben und Job failen
+          while IFS= read -r -d '' f; do
+            if ! jq -e . "$f" > /dev/null; then
+              echo "Invalid JSON: $f"
+              exit 1
+            fi
+          done < <(find oscal overlays -type f -name '*.json' -print0)
       - name: (Optional) Validate with OSCAL tools
         run: |
           echo "Add NIST OSCAL validation here (e.g., OSCAL-CLI or schema validation)."
