@@ -1,6 +1,6 @@
 # OpenGov Privacy OSCAL
 
-[![VALIDATE](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate.yml/badge.svg)](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate.yml)
+[![VALIDATE](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate.yml/badge.svg)](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate.yml) [![VALIDATE](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate.yml/badge.svg)](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate-oscal.yml)
 
 A public, EU-ready privacy catalog and templates in **OSCAL** for public sector use — derived from **SDM (DSK)**, **CNIL guidance**, and **ISO/IEC 29100 / 29134 / 27018 / 27701**.  
 This repository is the canonical source for the **OpenGovGroup Privacy Catalog**, tailored **Profiles**, reusable **Components**, and a RoPA-oriented **SSP** template.
