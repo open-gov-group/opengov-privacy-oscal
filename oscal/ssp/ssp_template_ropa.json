@@ -14,7 +14,7 @@
       ]
     },
     "import-profile": {
-      "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/refs/heads/main/oscal/profiles/profile_intervenability.json"
+      "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json"
     },
     "system-characteristics": {
       "system-ids": [ { "identifier-type": "assigned", "id": "SSP-RoPA-XXX" } ],
