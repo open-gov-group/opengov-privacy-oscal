@@ -16,7 +16,7 @@
         "control-implementations": [
           {
             "uuid": "ba53fa91-122c-439e-bd13-87992466806a",
-            "source": "https://cdn.jsdelivr.net/gh/open-gov-group/opengov-privacy-oscal@main/oscal/catalog/opengov_privacy_catalog.json",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/refs/heads/main/oscal/catalog/opengov_privacy_catalog.json",
             "description": "Implementations per Privacy Catalog/Profile.",
             "implemented-requirements": [
               {

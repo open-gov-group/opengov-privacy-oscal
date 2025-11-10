@@ -2,14 +2,14 @@
   "profile": {
     "uuid": "1adff0e7-8aa2-4d6b-9093-0b063f476794",
     "metadata": {
-      "title": "Profile – Intervenability (Iv)",
+      "title": "Profile - Intervenability (Iv)",
       "last-modified": "2025-11-01T07:03:02Z",
       "version": "0.2.0",
       "oscal-version": "1.1.2"
     },
     "imports": [
       {
-        "href": "https://cdn.jsdelivr.net/gh/open-gov-group/opengov-privacy-oscal@main/oscal/catalog/opengov_privacy_catalog.json",
+        "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/refs/heads/main/oscal/catalog/opengov_privacy_catalog.json",
         "include-controls": [
           {
             "with-ids": [
