@@ -98,17 +98,31 @@
         },
         "control-implementation": {
             "description": "Implementation of controls per profile/catalog; reference components and evidence.",
-      	"implemented-requirements": [
+	      "implemented-requirements": [
 	        {
 	          "uuid": "00000000-0000-0000-0000-00000000b110",
 	          "control-id": "B1-10",
 	          "statements": [
-	            { "statement-id": "B1-10_stmt", "description": "Rights handling implemented and documented." }
-	          ],
-	          "by-components": [
 	            {
-	              "component-uuid": "00000000-0000-0000-0000-00000000c0de",
-	              "description": "Portal/IAM provides channels and authentication for rights requests."
+	              "statement-id": "B1-10_stmt",
+	              "uuid": "00000000-0000-0000-0000-00000000b111",
+	              "by-components": [
+	                {
+	                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+	                  "uuid": "00000000-0000-0000-0000-00000000b112",
+	                  "description": "Rights portal/IAM satisfies the control: request intake, authentication, tracking.",
+	                  "set-parameters": [
+	                    {
+	                      "param-id": "B1-10_prm_1",
+	                      "values": [ "Single point of contact: <team/role>" ]
+	                    },
+	                    {
+	                      "param-id": "B1-10_prm_2",
+	                      "values": [ "SLA for response: <e.g., 1 month>" ]
+	                    }
+	                  ]
+	                }
+	              ]
 	            }
 	          ]
 	        }
