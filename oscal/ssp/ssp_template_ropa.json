@@ -86,13 +86,32 @@
             "system-name-short": "PA-<Short>"
         },
         "system-implementation": {
-            "components": [
-            ]
+	      "components": [
+	        {
+	          "uuid": "00000000-0000-0000-0000-00000000c0de",
+	          "type": "service",
+	          "title": "Rights Portal / IAM",
+	          "description": "Interface for data subject rights (SPOC, portal, APIs)."
+	        }
+	      ]
         },
         "control-implementation": {
             "description": "Implementation of controls per profile/catalog; reference components and evidence.",
-            "implemented-requirements": [
-            ]
-        }		
+      	"implemented-requirements": [
+	        {
+	          "uuid": "00000000-0000-0000-0000-00000000b110",
+	          "control-id": "B1-10",
+	          "statements": [
+	            { "statement-id": "B1-10_stmt", "description": "Rights handling implemented and documented." }
+	          ],
+	          "by-components": [
+	            {
+	              "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+	              "description": "Portal/IAM provides channels and authentication for rights requests."
+	            }
+	          ]
+	        }
+	      ]
+		}		
     }
 }
