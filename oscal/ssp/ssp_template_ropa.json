@@ -50,29 +50,212 @@
       ]
     },
     "control-implementation": {
-      "description": "Implementation of controls per profile/catalog; reference components and evidence.",
+      "description": "Implementation of all profile-included controls; component mapping and parameterization.",
       "implemented-requirements": [
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b101",
+          "control-id": "B1-1",
+          "statements": [
+            {
+              "statement-id": "B1-1_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b1a1",
+              "by-components": [
+                {
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b1b1",
+                  "description": "Transparenz & Informationspflichten: veröffentlichte Datenschutzhinweise, leicht zugängliche Auskunftskanäle, Benachrichtigungen.",
+                  "set-parameters": [
+                    { "param-id": "B1-1_prm_1", "values": ["<public privacy notice URL>"] },
+                    { "param-id": "B1-1_prm_2", "values": ["<SLA for responses>"] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b102",
+          "control-id": "B1-2",
+          "statements": [
+            {
+              "statement-id": "B1-2_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b2a1",
+              "by-components": [
+                {
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b2b1",
+                  "description": "Zweckbindung & Zwecktrennung: technische/organisatorische Maßnahmen zur strikten Zweckverfolgung und -trennung.",
+                  "set-parameters": [
+                    { "param-id": "B1-2_prm_1", "values": ["<purpose registry/IDs>"] },
+                    { "param-id": "B1-2_prm_2", "values": ["<separation mechanisms: namespaces/roles>"] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b103",
+          "control-id": "B1-3",
+          "statements": [
+            {
+              "statement-id": "B1-3_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b3a1",
+              "by-components": [
+                {
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b3b1",
+                  "description": "Datenminimierung: Aufnahme minimaler Datensätze, Pseudonymisierung/Maskierung in Log/Analytics/Tests.",
+                  "set-parameters": [
+                    { "param-id": "B1-3_prm_1", "values": ["<allowed attributes/fields>"] },
+                    { "param-id": "B1-3_prm_2", "values": ["<masking policy reference>"] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b106",
+          "control-id": "B1-6",
+          "statements": [
+            {
+              "statement-id": "B1-6_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b6a1",
+              "by-components": [
+                {
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b6b1",
+                  "description": "Integrität: Schutz vor Verfälschung, Audit-Trails/Checksums, Change-Management.",
+                  "set-parameters": [
+                    { "param-id": "B1-6_prm_1", "values": ["<hashing/signing approach>"] },
+                    { "param-id": "B1-6_prm_2", "values": ["<change approval window/SLA>"] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b107",
+          "control-id": "B1-7",
+          "statements": [
+            {
+              "statement-id": "B1-7_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b7a1",
+              "by-components": [
+                {
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b7b1",
+                  "description": "Vertraulichkeit & Zugriffsschutz: RBAC/ABAC, MFA, Verschlüsselung in Transit/Ruhe, Least-Privilege.",
+                  "set-parameters": [
+                    { "param-id": "B1-7_prm_1", "values": ["<MFA policy link>"] },
+                    { "param-id": "B1-7_prm_2", "values": ["<transport/rest crypto suites>"] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b108",
+          "control-id": "B1-8",
+          "statements": [
+            {
+              "statement-id": "B1-8_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b8a1",
+              "by-components": [
+                {
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b8b1",
+                  "description": "Rechenschaft & Nachweis: VVT/Logs, nachvollziehbare Entscheidungen, revisionssichere Nachweise.",
+                  "set-parameters": [
+                    { "param-id": "B1-8_prm_1", "values": ["<evidence repository/link>"] },
+                    { "param-id": "B1-8_prm_2", "values": ["<audit scope/frequency>"] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "uuid": "00000000-0000-0000-0000-00000000b110",
           "control-id": "B1-10",
           "statements": [
             {
               "statement-id": "B1-10_stmt",
-              "uuid": "00000000-0000-0000-0000-00000000b111",
+              "uuid": "00000000-0000-0000-0000-00000000b10a",
               "by-components": [
                 {
                   "component-uuid": "00000000-0000-0000-0000-00000000c0de",
-                  "uuid": "00000000-0000-0000-0000-00000000b112",
-                  "description": "Rights portal/IAM satisfies the control: request intake, authentication, tracking.",
+                  "uuid": "00000000-0000-0000-0000-00000000b10b",
+                  "description": "Unterstützung Betroffenenrechte: SPOC/Portal/API, AuthN/Z für Anträge, SLA-Tracking, Export/Löschung.",
                   "set-parameters": [
-                    {
-                      "param-id": "B1-10_prm_1",
-                      "values": [ "Single point of contact: <team/role>" ]
-                    },
-                    {
-                      "param-id": "B1-10_prm_2",
-                      "values": [ "SLA for response: <e.g., 1 month>" ]
-                    }
+                    { "param-id": "B1-10_prm_1", "values": ["<SPOC/team/role>"] },
+                    { "param-id": "B1-10_prm_2", "values": ["<response SLA (e.g., 1 month)>"] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b112",
+          "control-id": "B1-12",
+          "statements": [
+            {
+              "statement-id": "B1-12_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b12a",
+              "by-components": [
+                {
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b12b",
+                  "description": "Löschbarkeit: Workflow/Engine, Sperrfristen, Nachweis & Reporting, irreversibles Löschen.",
+                  "set-parameters": [
+                    { "param-id": "B1-12_prm_1", "values": ["<retention policy>"] },
+                    { "param-id": "B1-12_prm_2", "values": ["<erasure proof mechanism>"] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b114",
+          "control-id": "B1-14",
+          "statements": [
+            {
+              "statement-id": "B1-14_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b14a",
+              "by-components": [
+                {
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b14b",
+                  "description": "Datenübertragbarkeit: strukturierte, gängige, maschinenlesbare Formate + Metadaten/Provenienz.",
+                  "set-parameters": [
+                    { "param-id": "B1-14_prm_1", "values": ["<export format(s)>"] },
+                    { "param-id": "B1-14_prm_2", "values": ["<export endpoint/process>"] }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b120",
+          "control-id": "B1-20",
+          "statements": [
+            {
+              "statement-id": "B1-20_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b20a",
+              "by-components": [
+                {
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b20b",
+                  "description": "Wiederherstellbarkeit & Notfallplanung: RTO/RPO, Offsite-Backups, regelmäßige Restore-Tests.",
+                  "set-parameters": [
+                    { "param-id": "B1-20_prm_1", "values": ["<RTO hours>"] },
+                    { "param-id": "B1-20_prm_2", "values": ["<RPO minutes>"] }
                   ]
                 }
               ]
