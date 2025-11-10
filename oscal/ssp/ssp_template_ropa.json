@@ -26,7 +26,7 @@
                     "uuid": "7ffa028e-13a9-43dd-b69e-868a8a21f594"
                 }
             ],
-            "title": "SSP (RoPA) \u2013 Template for a processing activity",
+            "title": "SSP (RoPA) - Template for a processing activity",
             "version": "0.2.0"
         },
         "import-profile": {
@@ -53,7 +53,7 @@
                 },
                 {
                     "name": "ropa:third-country-transfers",
-                    "value": "<No/Yes \u2013 legal basis>"
+                    "value": "<No/Yes - legal basis>"
                 },
                 {
                     "name": "ropa:retention",
@@ -82,7 +82,7 @@
                     }
                 ]
             },
-            "system-name": "Processing activity \u2013 <Title>",
+            "system-name": "Processing activity - <Title>",
             "system-name-short": "PA-<Short>"
         },
         "system-implementation": {
