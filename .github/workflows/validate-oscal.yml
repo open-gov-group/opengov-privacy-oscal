@@ -27,3 +27,14 @@ jobs:
         run: |
           bash tools/oscal-validate.sh \
             oscal/ssp/ssp_template_ropa.json
+
+      - name: Preflight profile & catalog as browser would
+        run: |
+          set -euo pipefail
+          SSP=oscal/ssp/ssp_template_ropa.json
+          PROF_URL=$(jq -r '.["system-security-plan"]["import-profile"].href' "$SSP")
+          echo "Profile URL: $PROF_URL"
+          curl -sI "$PROF_URL" | sed -n '1p;/^content-type:/Ip'
+          CAT_URL=$(curl -fsSL "$PROF_URL" | jq -r '.profile.imports[0].href')
+          echo "Catalog URL: $CAT_URL"
+          curl -sI "$CAT_URL" | sed -n '1p;/^content-type:/Ip'
