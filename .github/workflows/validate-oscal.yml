@@ -1,0 +1,29 @@
+name: Validate OSCAL (SSP ↔ Profile ↔ Catalog)
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Tools (jq, curl)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+
+      - name: Lint JSON syntax (repo)
+        run: |
+          set -euo pipefail
+          find oscal overlays -type f -name '*.json' -print0 \
+            | xargs -0 -I{} sh -c 'jq -e . "{}" >/dev/null || { echo "Invalid JSON: {}"; exit 1; }'
+          echo "JSON syntax OK."
+
+      - name: Run OSCAL consistency checks
+        run: |
+          bash tools/oscal-validate.sh \
+            oscal/ssp/ssp_template_ropa.json
