@@ -1,132 +1,85 @@
 {
-    "system-security-plan": {
-		"uuid": "13e6733a-8efd-4fc4-81d6-fd19c09d6653",
-        "metadata": {
-            "last-modified": "2025-11-01T07:03:02Z",
-            "oscal-version": "1.1.2",
-            "parties": [
+  "system-security-plan": {
+    "uuid": "13e6733a-8efd-4fc4-81d6-fd19c09d6653",
+    "metadata": {
+      "title": "SSP (RoPA) - Template for a processing activity",
+      "last-modified": "2025-11-01T07:03:02Z",
+      "version": "0.2.2",
+      "oscal-version": "1.1.2",
+      "parties": [
+        { "uuid": "1e2a0a90-7a44-40fe-ba39-ef57f3b6e23b", "type": "organization", "name": "Controller (organisation)" },
+        { "uuid": "8d6ff23c-7593-43eb-a24f-1b7be87c9d13", "type": "person", "name": "Data Protection Officer" },
+        { "uuid": "b4648015-32ed-4930-ab27-efea825ed0d3", "type": "person", "name": "Information Security Officer / CISO" },
+        { "uuid": "7ffa028e-13a9-43dd-b69e-868a8a21f594", "type": "person", "name": "Product Owner / Business Owner" }
+      ]
+    },
+    "import-profile": {
+      "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json"
+    },
+    "system-characteristics": {
+      "system-ids": [ { "identifier-type": "assigned", "id": "SSP-RoPA-XXX" } ],
+      "system-name": "Processing activity - <Title>",
+      "system-name-short": "PA-<Short>",
+      "description": "Short description of the processing, purpose, legal basis, categories of data subjects/data.",
+      "status": { "state": "operational" },
+      "security-sensitivity-level": "moderate",
+      "system-information": {
+        "information-types": [
+          { "title": "Personal data (GDPR)", "description": "Typical RoPA categories (e.g., identification, contact, usage)." }
+        ]
+      },
+      "props": [
+        { "name": "ropa:purpose", "value": "<purpose(s)>" },
+        { "name": "ropa:data-categories", "value": "<categories of personal data>" },
+        { "name": "ropa:data-subjects", "value": "<data subject categories>" },
+        { "name": "ropa:recipients", "value": "<recipients/categories>" },
+        { "name": "ropa:third-country-transfers", "value": "<No/Yes - legal basis>" },
+        { "name": "ropa:retention", "value": "<retention/erasure periods>" },
+        { "name": "ropa:legal-basis", "value": "<Art. 6 GDPR / sector law>" }
+      ]
+    },
+    "system-implementation": {
+      "components": [
+        {
+          "uuid": "00000000-0000-0000-0000-00000000c0de",
+          "type": "service",
+          "title": "Rights Portal / IAM",
+          "description": "Interface for data subject rights (SPOC, portal, APIs).",
+          "status": { "state": "operational" }
+        }
+      ]
+    },
+    "control-implementation": {
+      "description": "Implementation of controls per profile/catalog; reference components and evidence.",
+      "implemented-requirements": [
+        {
+          "uuid": "00000000-0000-0000-0000-00000000b110",
+          "control-id": "B1-10",
+          "statements": [
+            {
+              "statement-id": "B1-10_stmt",
+              "uuid": "00000000-0000-0000-0000-00000000b111",
+              "by-components": [
                 {
-                    "name": "Controller (organisation)",
-                    "type": "organization",
-                    "uuid": "1e2a0a90-7a44-40fe-ba39-ef57f3b6e23b"
-                },
-                {
-                    "name": "Data Protection Officer",
-                    "type": "person",
-                    "uuid": "8d6ff23c-7593-43eb-a24f-1b7be87c9d13"
-                },
-                {
-                    "name": "Information Security Officer / CISO",
-                    "type": "person",
-                    "uuid": "b4648015-32ed-4930-ab27-efea825ed0d3"
-                },
-                {
-                    "name": "Product Owner / Business Owner",
-                    "type": "person",
-                    "uuid": "7ffa028e-13a9-43dd-b69e-868a8a21f594"
-                }
-            ],
-            "title": "SSP (RoPA) - Template for a processing activity",
-            "version": "0.2.0"
-        },
-        "import-profile": {
-            "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json"
-        },		
-        "system-characteristics": {
-            "description": "Short description of the processing, purpose, legal basis, categories of data subjects/data.",
-            "props": [
-                {
-                    "name": "ropa:purpose",
-                    "value": "<purpose(s)>"
-                },
-                {
-                    "name": "ropa:data-categories",
-                    "value": "<categories of personal data>"
-                },
-                {
-                    "name": "ropa:data-subjects",
-                    "value": "<data subject categories>"
-                },
-                {
-                    "name": "ropa:recipients",
-                    "value": "<recipients/categories>"
-                },
-                {
-                    "name": "ropa:third-country-transfers",
-                    "value": "<No/Yes - legal basis>"
-                },
-                {
-                    "name": "ropa:retention",
-                    "value": "<retention/erasure periods>"
-                },
-                {
-                    "name": "ropa:legal-basis",
-                    "value": "<Art. 6 GDPR / sector law>"
-                }
-            ],
-            "security-sensitivity-level": "moderate",
-            "status": {
-                "state": "operational"
-            },
-            "system-ids": [
-                {
-                    "id": "SSP-RoPA-XXX",
-                    "identifier-type": "assigned"
-                }
-            ],
-            "system-information": {
-                "information-types": [
+                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                  "uuid": "00000000-0000-0000-0000-00000000b112",
+                  "description": "Rights portal/IAM satisfies the control: request intake, authentication, tracking.",
+                  "set-parameters": [
                     {
-                        "description": "Typical RoPA categories (e.g., identification, contact, usage).",
-                        "title": "Personal data (GDPR)"
+                      "param-id": "B1-10_prm_1",
+                      "values": [ "Single point of contact: <team/role>" ]
+                    },
+                    {
+                      "param-id": "B1-10_prm_2",
+                      "values": [ "SLA for response: <e.g., 1 month>" ]
                     }
-                ]
-            },
-            "system-name": "Processing activity - <Title>",
-            "system-name-short": "PA-<Short>"
-        },
-        "system-implementation": {
-	      "components": [
-	        {
-	          "uuid": "00000000-0000-0000-0000-00000000c0de",
-	          "type": "service",
-	          "title": "Rights Portal / IAM",
-	          "description": "Interface for data subject rights (SPOC, portal, APIs).",
-			  "status": { "state": "operational" }
-	        }
-	      ]
-        },
-        "control-implementation": {
-            "description": "Implementation of controls per profile/catalog; reference components and evidence.",
-	      "implemented-requirements": [
-	        {
-	          "uuid": "00000000-0000-0000-0000-00000000b110",
-	          "control-id": "B1-10",
-	          "statements": [
-	            {
-	              "statement-id": "B1-10_stmt",
-	              "uuid": "00000000-0000-0000-0000-00000000b111",
-	              "by-components": [
-	                {
-	                  "component-uuid": "00000000-0000-0000-0000-00000000c0de",
-	                  "uuid": "00000000-0000-0000-0000-00000000b112",
-	                  "description": "Rights portal/IAM satisfies the control: request intake, authentication, tracking.",
-	                  "set-parameters": [
-	                    {
-	                      "param-id": "B1-10_prm_1",
-	                      "values": [ "Single point of contact: <team/role>" ]
-	                    },
-	                    {
-	                      "param-id": "B1-10_prm_2",
-	                      "values": [ "SLA for response: <e.g., 1 month>" ]
-	                    }
-	                  ]
-	                }
-	              ]
-	            }
-	          ]
-	        }
-	      ]
-		}		
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
+  }
 }
