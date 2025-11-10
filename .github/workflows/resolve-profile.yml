@@ -1,0 +1,20 @@
+name: Resolve Profile → Catalog
+on:
+  push:
+  pull_request:
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y jq curl
+      - name: Resolve
+        run: |
+          bash tools/resolve-profile.sh \
+            "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json" \
+            "build/profile_resolved_catalog.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resolved-catalog
+          path: build/profile_resolved_catalog.json

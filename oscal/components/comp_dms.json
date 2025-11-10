@@ -1,0 +1,30 @@
+{
+  "component-definition": {
+    "uuid": "00000000-0000-0000-0000-00000000d0c1",
+    "metadata": { "title": "DMS (Dokumentenmanagement)", "version": "0.1.0", "oscal-version": "1.1.2" },
+    "components": [
+      {
+        "uuid": "00000000-0000-0000-0000-00000000d0c2",
+        "type": "software",
+        "title": "Dokumentenmanagementsystem",
+        "description": "Ablage, Aktenplan-Integration, Aufbewahrungsfristen, Revisionssicherheit.",
+        "status": { "state": "operational" },
+        "props": [
+          { "name": "tom-category", "value": "digital-applikation" }
+        ]
+      }
+    ],
+    "control-implementations": [
+      {
+        "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
+        "implemented-requirements": [
+          { "control-id": "B1-1",  "statements":[{ "statement-id":"B1-1_stmt","by-components":[{ "component-uuid":"00000000-0000-0000-0000-00000000d0c2","description":"Veröffentlichte DS-Hinweise, Aktenplankontext am Dokument." }]}]},
+          { "control-id": "B1-2",  "statements":[{ "statement-id":"B1-2_stmt","by-components":[{ "component-uuid":"00000000-0000-0000-0000-00000000d0c2","description":"Zweckfelder/Metadaten, Mandantentrennung." }]}]},
+          { "control-id": "B1-6",  "statements":[{ "statement-id":"B1-6_stmt","by-components":[{ "component-uuid":"00000000-0000-0000-0000-00000000d0c2","description":"WORM/Hash; 4-Augen-Check-In." }]}]},
+          { "control-id": "B1-8",  "statements":[{ "statement-id":"B1-8_stmt","by-components":[{ "component-uuid":"00000000-0000-0000-0000-00000000d0c2","description":"Audit-Logs; Versionierung; Aktenplan-ID Link." }]}]},
+          { "control-id": "B1-12", "statements":[{ "statement-id":"B1-12_stmt","by-components":[{ "component-uuid":"00000000-0000-0000-0000-00000000d0c2","description":"Sperr-/Löschfristen je Aktenplan-Code (xdomea)." }]}]}
+        ]
+      }
+    ]
+  }
+}

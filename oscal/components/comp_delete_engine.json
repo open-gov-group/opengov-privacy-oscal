@@ -1,0 +1,25 @@
+{
+  "component-definition": {
+    "uuid": "00000000-0000-0000-0000-00000000del0",
+    "metadata": { "title": "Lösch-Engine", "version": "0.1.0", "oscal-version": "1.1.2" },
+    "components": [
+      {
+        "uuid": "00000000-0000-0000-0000-00000000del1",
+        "type": "service",
+        "title": "Deletion Workflow",
+        "description": "Policy-gesteuerte Datenlöschung mit Nachweis.",
+        "status": { "state": "operational" },
+        "props": [ { "name": "tom-category", "value": "digital-infrastruktur" } ]
+      }
+    ],
+    "control-implementations": [
+      {
+        "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
+        "implemented-requirements": [
+          { "control-id":"B1-12", "statements":[{ "statement-id":"B1-12_stmt","by-components":[{ "component-uuid":"00000000-0000-0000-0000-00000000del1","description":"Policy→Job→Erasure Proof (hash, timestamp), Reporting." }]}]},
+          { "control-id":"B1-3",  "statements":[{ "statement-id":"B1-3_stmt", "by-components":[{ "component-uuid":"00000000-0000-0000-0000-00000000del1","description":"Pseudonymisierung vor Löschzeitpunkt (wenn zulässig)." }]}]}
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "assessment-plan": {
+    "uuid": "00000000-0000-0000-0000-00000000ap00",
+    "metadata": {
+      "title": "Assessment Plan – RoPA",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "roles": [
+        { "id": "lead-assessor", "title": "Lead Assessor" },
+        { "id": "auditor", "title": "Audit Team" },
+        { "id": "system-owner", "title": "System Owner" },
+        { "id": "dpo", "title": "Datenschutzbeauftragte:r" },
+        { "id": "iso", "title": "Informationssicherheitsbeauftragte:r" },
+        { "id": "devsecops", "title": "DevSecOps" }
+      ]
+    },
+    "import-ssp": {
+      "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/ssp/ssp_template_ropa_full.json"
+    },
+    "assessment-subjects": {
+      "included-components": [
+        { "component-uuid": "00000000-0000-0000-0000-00000000c0de" }
+      ]
+    },
+    "assessment-objectives": [
+      { "objective-id": "B1-1_stmt" },
+      { "objective-id": "B1-2_stmt" },
+      { "objective-id": "B1-3_stmt" },
+      { "objective-id": "B1-6_stmt" },
+      { "objective-id": "B1-7_stmt" },
+      { "objective-id": "B1-8_stmt" },
+      { "objective-id": "B1-10_stmt" },
+      { "objective-id": "B1-12_stmt" },
+      { "objective-id": "B1-14_stmt" },
+      { "objective-id": "B1-20_stmt" }
+    ],
+    "tasks": [
+      { "title": "Interviews", "props":[{ "name":"method", "value":"interview"}] },
+      { "title": "Evidence Review", "props":[{ "name":"method", "value":"inspection"}] },
+      { "title": "Config Tests", "props":[{ "name":"method", "value":"test"}] }
+    ]
+  }
+}

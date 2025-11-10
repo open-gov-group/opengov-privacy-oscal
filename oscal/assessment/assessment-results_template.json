@@ -1,0 +1,59 @@
+{
+  "assessment-results": {
+    "uuid": "00000000-0000-0000-0000-00000000ar00",
+    "metadata": { "title": "Assessment Results – RoPA", "version": "0.1.0", "oscal-version": "1.1.2" },
+    "import-ap": { "href": "../assessment/assessment-plan_template.json" },
+    "results": [
+      {
+        "uuid": "00000000-0000-0000-0000-00000000ar01",
+        "title": "Initial Assessment",
+        "observations": [
+          {
+            "uuid": "00000000-0000-0000-0000-00000000ob10",
+            "description": "B1-10: Portal belegt durch Tickets & Export-Protokolle.",
+            "methods": [ "interview", "inspection" ],
+            "related-resources": [
+              { "resource-uuid": "res-ticket-samples" },
+              { "resource-uuid": "res-export-log" }
+            ],
+            "relevant-evidence": [ "Evidence: DSR-Portal Screenshots", "Ticket IDs: 1023-1051" ],
+            "props": [
+              { "name": "risk-like", "value": "low" },
+              { "name": "risk-like-num", "value": "2" },
+              { "name": "risk-imp", "value": "low" },
+              { "name": "risk-imp-num", "value": "2" },
+              { "name": "risk-score", "value": "4" }
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "uuid": "00000000-0000-0000-0000-00000000fd12",
+            "title": "Fehlende Restore-Test-Dokumentation (B1-20)",
+            "description": "Restore-Test vorhanden, aber Nachweis unvollständig.",
+            "target": { "type": "objective", "target-id": "B1-20_stmt" },
+            "related-observations": [ "00000000-0000-0000-0000-00000000ob10" ],
+            "related-resources": [ { "resource-uuid": "res-backup-policy" } ],
+            "risk": {
+              "status": "identified",
+              "props": [
+                { "name": "risk-like", "value": "medium" },
+                { "name": "risk-like-num", "value": "3" },
+                { "name": "risk-imp", "value": "medium" },
+                { "name": "risk-imp-num", "value": "3" },
+                { "name": "risk-score", "value": "9" }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        { "uuid": "res-ticket-samples", "title": "Ticket Samples", "rlinks": [{ "href": "https://example/evidence/tickets.csv", "media-type": "text/csv" }] },
+        { "uuid": "res-export-log",    "title": "Export Logs",   "rlinks": [{ "href": "https://example/evidence/export.log", "media-type": "text/plain" }] },
+        { "uuid": "res-backup-policy", "title": "Backup Policy", "rlinks": [{ "href": "https://example/policies/backup.pdf", "media-type": "application/pdf" }] }
+      ]
+    }
+  }
+}

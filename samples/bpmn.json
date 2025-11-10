@@ -1,0 +1,11 @@
+{
+  "dataObjects": [
+    { "name": "E-Mail" }, { "name": "Telefon" }, { "name": "Kundennummer" }
+  ],
+  "lanes": [
+    { "label": "Bürger:innen", "external": false }, { "label": "Sachbearbeitung", "external": false }
+  ],
+  "messageFlows": [
+    { "targetPool": "Externer Dienstleister", "external": true }
+  ]
+}

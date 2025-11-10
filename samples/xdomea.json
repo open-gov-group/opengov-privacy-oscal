@@ -1,0 +1,8 @@
+{
+  "records": [
+    { "subjects": ["Finanzen", "Haushalt"] }
+  ],
+  "retention": { "policy": "10y" },
+  "legal_basis": ["Art. 6(1)(c)", "Art. 6(1)(e)"],
+  "recipients": ["<internal processing units>"]
+}

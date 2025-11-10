@@ -1,0 +1,31 @@
+{
+  "plan-of-action-and-milestones": {
+    "uuid": "00000000-0000-0000-0000-00000000pm00",
+    "metadata": { "title": "POA&M – RoPA", "version": "0.1.0", "oscal-version": "1.1.2" },
+    "import-ap": { "href": "../assessment/assessment-plan_template.json" },
+    "import-ar": { "href": "../assessment/assessment-results_template.json" },
+    "poam-items": [
+      {
+        "uuid": "00000000-0000-0000-0000-00000000pm12",
+        "title": "Restore-Test-Dokumentation nachschärfen",
+        "related-findings": [ "00000000-0000-0000-0000-00000000fd12" ],
+        "description": "Dokumentvorlage erstellen, SOP ergänzen, jährliche Evidenzablage.",
+        "risk": {
+          "props": [
+            { "name": "risk-like", "value": "medium" },
+            { "name": "risk-like-num", "value": "3" },
+            { "name": "risk-imp", "value": "medium" },
+            { "name": "risk-imp-num", "value": "3" },
+            { "name": "risk-score", "value": "9" }
+          ]
+        },
+        "prop": [ { "name": "owner-role", "value": "devsecops" } ],
+        "milestones": [
+          { "sequence": 1, "title": "SOP-Entwurf", "scheduled-completion-date": "2026-01-15" },
+          { "sequence": 2, "title": "Pilot-Restore & Nachweis", "scheduled-completion-date": "2026-02-15" }
+        ],
+        "status": "planned"
+      }
+    ]
+  }
+}

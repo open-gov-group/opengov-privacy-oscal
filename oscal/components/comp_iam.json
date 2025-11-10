@@ -1,0 +1,49 @@
+{
+  "component-definition": {
+    "uuid": "00000000-0000-0000-0000-00000000c1am",
+    "metadata": {
+      "title": "IAM / Rights Portal",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2"
+    },
+    "components": [
+      {
+        "uuid": "00000000-0000-0000-0000-00000000c0de",
+        "type": "service",
+        "title": "Rights Portal / IAM",
+        "description": "SPOC/Portal/API zur Abwicklung Betroffenenrechte (AuthN/Z, Nachweise).",
+        "status": { "state": "operational" },
+        "props": [
+          { "name": "tom-category", "value": "digital-kommunikation" },
+          { "name": "interface", "value": "https://portal.example/rights" }
+        ]
+      }
+    ],
+    "control-implementations": [
+      {
+        "description": "Referenzumsetzung IAM bezogen auf den OpenGov-Privacy-Katalog.",
+        "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
+        "implemented-requirements": [
+          {
+            "control-id": "B1-10",
+            "statements": [
+              {
+                "statement-id": "B1-10_stmt",
+                "by-components": [
+                  {
+                    "component-uuid": "00000000-0000-0000-0000-00000000c0de",
+                    "description": "SPOC/Portal mit AuthN/Z; SLA-Tracking; Export-/Lösch-Trigger.",
+                    "set-parameters": [
+                      { "param-id": "B1-10_prm_1", "values": ["DPO-Team"] },
+                      { "param-id": "B1-10_prm_2", "values": ["30d"] }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

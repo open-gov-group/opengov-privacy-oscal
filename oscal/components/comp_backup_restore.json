@@ -1,0 +1,25 @@
+{
+  "component-definition": {
+    "uuid": "00000000-0000-0000-0000-00000000bkp0",
+    "metadata": { "title": "Backup & Restore", "version": "0.1.0", "oscal-version": "1.1.2" },
+    "components": [
+      {
+        "uuid": "00000000-0000-0000-0000-00000000bkp1",
+        "type": "service",
+        "title": "Backup/Restore Service",
+        "description": "Verschlüsselte Backups, Offsite, regelmäßige Restore-Tests.",
+        "status": { "state": "operational" },
+        "props": [ { "name": "tom-category", "value": "digital-infrastruktur" } ]
+      }
+    ],
+    "control-implementations": [
+      {
+        "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
+        "implemented-requirements": [
+          { "control-id": "B1-20", "statements":[{ "statement-id":"B1-20_stmt","by-components":[{ "component-uuid":"00000000-0000-0000-0000-00000000bkp1","description":"RTO/RPO definiert; monatlicher Restore-Test dokumentiert." }]}]},
+          { "control-id": "B1-7",  "statements":[{ "statement-id":"B1-7_stmt", "by-components":[{ "component-uuid":"00000000-0000-0000-0000-00000000bkp1","description":"At-Rest/Transit Verschlüsselung; Key-Rotation via KMS." }]}]}
+        ]
+      }
+    ]
+  }
+}

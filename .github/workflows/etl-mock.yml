@@ -1,0 +1,12 @@
+name: ETL Mock (generate SSP)
+on: [push, pull_request]
+jobs:
+  etl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/etl/mock_etl.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ssp-generated
+          path: build/ssp_generated.json
