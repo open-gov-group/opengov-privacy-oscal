@@ -10,7 +10,7 @@
     },
     "imports": [
       {
-        "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/refs/heads/main/oscal/catalog/opengov_privacy_catalog.json",
+        "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json",
         "include-controls": [
           {
             "with-ids": [
