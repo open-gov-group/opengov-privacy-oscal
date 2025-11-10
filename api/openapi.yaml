@@ -1,0 +1,57 @@
+openapi: 3.0.3
+info:
+  title: OpenGov Privacy – RoPA API
+  version: 0.1.0
+servers:
+  - url: https://api.example.org
+paths:
+  /ingest/xdomea:
+    post:
+      summary: Ingest xdomea records (Aktenplan)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { type: object }
+      responses:
+        '200': { description: Parsed mapping preview }
+  /ingest/bpmn:
+    post:
+      summary: Ingest BPMN 2.0 XML
+      requestBody:
+        required: true
+        content:
+          application/xml:
+            schema: { type: string }
+      responses:
+        '200': { description: Extracted entities }
+  /ingest/oscal-component:
+    post:
+      summary: Ingest an OSCAL Component Definition
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { type: object }
+      responses:
+        '200': { description: Component registered }
+  /ropa/{id}/suggest:
+    get:
+      summary: Get auto-suggestions for a processing activity
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { description: Suggestions payload }
+  /oscal/ssp/{id}/generate:
+    post:
+      summary: Generate SSP JSON for a processing activity
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        '200': { description: SSP JSON created }

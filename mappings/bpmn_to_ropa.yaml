@@ -1,0 +1,17 @@
+# BPMN → RoPA mapping (seed)
+version: 0.1
+rules:
+  data-categories:
+    source: bpmn.dataObjects[*].name
+    normalize:
+      - mask: ["SSN","Password"]
+      - map:
+          "E-Mail": "contact.email"
+          "Telefon": "contact.phone"
+  recipients:
+    source: bpmn.messageFlows[*].targetPool
+    filter: external == true
+  interfaces:
+    source: bpmn.tasks[*].io.bindings
+    to:
+      - ssp.system-implementation.components[].props[name="interface"].value

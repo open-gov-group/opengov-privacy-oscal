@@ -1,0 +1,25 @@
+# xdomea → RoPA mapping (seed)
+version: 0.1
+rules:
+  purposes:
+    source: xdomea.records[*].subject
+    map:
+      - if: contains("Haushalt") or contains("Finanzen")
+        then: ["budgeting","accounting"]
+      - if: contains("Personal")
+        then: ["hr-management"]
+    fallback: ["<purpose-unclassified>"]
+  retention:
+    source: xdomea.records[*].retention.code
+    dictionary:
+      "A10": "10y"
+      "A06": "6y"
+      "A03": "3y"
+    default: "policy-defined"
+  responsible-parties:
+    source: xdomea.units[*]
+    fields:
+      role-id: derive("owner" | "dpo" | "iso")
+      party:
+        name: unit.name
+        email: unit.contact_email
