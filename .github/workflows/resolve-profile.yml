@@ -18,3 +18,6 @@ jobs:
         with:
           name: resolved-catalog
           path: build/profile_resolved_catalog.json
+      - name: Generate implemented-requirements skeleton
+        run: |
+          node tools/generate-ir-from-profile.mjs build/profile_resolved_catalog.json build/ir_skeleton.json

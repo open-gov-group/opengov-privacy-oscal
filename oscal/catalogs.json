@@ -1,0 +1,10 @@
+[
+  {
+    "id": "opengov-privacy-v0.3.0",
+    "title": "OpenGov Privacy Catalog",
+    "version": "0.3.0",
+    "oscalVersion": "1.1.2",
+    "profileUrl": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json",
+    "catalogUrl": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json"
+  }
+]
