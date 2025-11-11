@@ -1,0 +1,34 @@
+{
+  "catalog": {
+    "uuid": "a7f0f4f0-7d8b-4c4a-9d93-9f2b4a2b1234",
+    "metadata": {
+      "title": "OpenGov Privacy – Intervenability (Resolved)",
+      "version": "0.3.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-11-11T00:00:00Z"
+    },
+    "groups": [
+      {
+        "id": "B1",
+        "title": "Intervenability (Beispielgruppe)",
+        "controls": [
+          {
+            "id": "B1-10",
+            "title": "Unterstützung Betroffenenrechte",
+            "params": [
+              { "id": "B1-10_prm_1", "label": "SPOC/team/role", "values": [] },
+              { "id": "B1-10_prm_2", "label": "Response SLA", "values": [] }
+            ],
+            "parts": [
+              { "id": "B1-10_stmt", "name": "statement", "prose": "…" },
+              { "id": "B1-10_guidance", "name": "guidance", "prose": "…" }
+            ],
+            "links": [],
+            "props": []
+          }
+        ]
+      }
+    ],
+    "back-matter": {}
+  }
+}

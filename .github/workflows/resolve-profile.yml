@@ -1,23 +1,52 @@
-name: Resolve Profile → Catalog
+name: Resolve Profile → Resolved Catalog
+
 on:
   push:
-  pull_request:
+    paths:
+      - "oscal/profiles/**.json"
+      - "oscal/catalog/**.json"
+      - "tools/resolve-profile.mjs"
+  workflow_dispatch:
+
+permissions:
+  contents: write   # needed to commit the build file
 
 jobs:
   resolve:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: sudo apt-get update && sudo apt-get install -y jq curl
-      - name: Resolve
-        run: |
-          bash tools/resolve-profile.sh \
-            "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json" \
-            "build/profile_resolved_catalog.json"
-      - uses: actions/upload-artifact@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
-          name: resolved-catalog
-          path: build/profile_resolved_catalog.json
-      - name: Generate implemented-requirements skeleton
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # If you haven't added the resolver script yet, add tools/resolve-profile.mjs from my earlier message.
+
+      - name: Generate resolved catalog
         run: |
-          node tools/generate-ir-from-profile.mjs build/profile_resolved_catalog.json build/ir_skeleton.json
+          mkdir -p build
+          node tools/resolve-profile.mjs \
+            oscal/profiles/profile_intervenability.json \
+            oscal/catalog/opengov_privacy_catalog.json \
+            build/profile_resolved_catalog.json
+
+      - name: Sanity check (top-level key must be "catalog")
+        run: |
+          test "$(jq -r 'keys[0]' build/profile_resolved_catalog.json)" = "catalog"
+
+      - name: Commit updated resolved catalog
+        run: |
+          if [[ -n "$(git status --porcelain build/profile_resolved_catalog.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add build/profile_resolved_catalog.json
+            git commit -m "chore(build): update resolved catalog from profile"
+            git push
+          else
+            echo "No changes to commit."
+          fi

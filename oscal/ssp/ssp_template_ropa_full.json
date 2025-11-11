@@ -6,6 +6,10 @@
       "last-modified": "2025-11-01T07:03:02Z",
       "version": "0.3.1",
       "oscal-version": "1.1.2",
+      "props": [
+        { "name": "ui:preferred-viewer", "value": "https://viewer.oscal.io" },
+        { "name": "ui:lang-default", "value": "de" }
+      ],
       "parties": [
         { "uuid": "1e2a0a90-7a44-40fe-ba39-ef57f3b6e23b", "type": "organization", "name": "Controller (organisation)" },
         { "uuid": "8d6ff23c-7593-43eb-a24f-1b7be87c9d13", "type": "person", "name": "Data Protection Officer" },
@@ -280,6 +284,80 @@
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "res-profile",
+          "title": "Profile (source)",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "res-profile-resolved",
+          "title": "Profile (resolved)",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/build/profile_resolved_catalog.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "res-catalog",
+          "title": "Catalog",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "res-risk-qual",
+          "title": "Risk Matrix (qualitative)",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/resources/risk/qualitative.csv",
+              "media-type": "text/csv"
+            }
+          ]
+        },
+        {
+          "uuid": "res-risk-quant",
+          "title": "Risk Matrix (quantitative)",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/resources/risk/quantitative.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "res-i18n-de",
+          "title": "UI Strings (DE)",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/resources/i18n/de.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "res-i18n-en",
+          "title": "UI Strings (EN)",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/resources/i18n/en.json",
+              "media-type": "application/json"
             }
           ]
         }
