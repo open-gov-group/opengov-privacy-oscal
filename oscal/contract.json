@@ -1,0 +1,35 @@
+{
+  "contractVersion": "1.0",
+  "oscalVersion": "1.1.2",
+  "title": "OpenGov Privacy – App Contract",
+  "sources": {
+    "profile": {
+      "resolvedUrl": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/build/profile_resolved_catalog.json",
+      "sourceUrl": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json",
+      "sha256": "<optional-checksum-of-resolved>"
+    },
+    "catalog": {
+      "url": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/opengov_privacy_catalog.json"
+    },
+    "risk": {
+      "qualitativeCsv": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/resources/risk/qualitative.csv",
+      "quantitativeJson": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/resources/risk/quantitative.json"
+    },
+    "i18n": {
+      "de": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/resources/i18n/de.json",
+      "en": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/resources/i18n/en.json"
+    }
+  },
+  "rulesets": [
+    {
+      "id": "xdomea-default",
+      "description": "XDOMEA → RoPA default rules",
+      "yamlUrl": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-app/main/mappings/xdomea_to_ropa.yaml",
+      "priority": 10
+    }
+  ],
+  "ui": {
+    "preferredViewer": "https://viewer.oscal.io",
+    "defaultLang": "de"
+  }
+}

@@ -33,3 +33,6 @@ jobs:
           CAT_URL=$(curl -fsSL "$PROF_URL" | jq -r '.profile.imports[0].href')
           echo "Catalog URL: $CAT_URL"
           curl -sI "$CAT_URL" | sed -n '1p;/^content-type:/Ip'
+      - name: Sanity check contract
+        run: |
+          test "$(jq -r '.sources.profile | has("resolvedUrl") or has("sourceUrl")' oscal/contract.json)" = "true"
