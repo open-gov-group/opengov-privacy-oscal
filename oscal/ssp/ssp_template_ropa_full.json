@@ -292,6 +292,16 @@
     "back-matter": {
       "resources": [
         {
+          "uuid": "res-ruleset-xdomea",
+          "title": "XDOMEA → RoPA Default Mapping",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-app/main/mappings/xdomea_to_ropa.yaml",
+              "media-type": "text/yaml"
+            }
+          ]
+        },        
+        {
           "uuid": "res-profile",
           "title": "Profile (source)",
           "rlinks": [
