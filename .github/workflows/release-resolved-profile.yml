@@ -1,0 +1,46 @@
+name: Release Resolved Profile
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-resolve-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup jq
+      # jq wird für euren Resolver benutzt
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Resolve profile against catalog
+        # nutzt euren vorhandenen Resolver; Pfade ggf. anpassen
+        run: |
+          mkdir -p build
+          bash tools/resolve-profile.sh \
+            "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_intervenability.json" \
+            "build/profile_resolved_catalog.json"
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            build/profile_resolved_catalog.json
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Output release info
+        run: |
+          echo "Release uploaded: ${{ steps.create_release.outputs.upload_url }}"
