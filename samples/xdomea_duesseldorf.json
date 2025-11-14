@@ -1,0 +1,204 @@
+{
+  "rootTag": "xdomea:Aktenplan.Aktenplan.0301",
+  "root": {
+    "@": {
+      "xmlns:xdomea": "urn:xoev-de:xdomea:schema:4.0.0",
+      "xmlns:xoev-code": "http://xoev.de/schemata/code/1_0",
+      "xmlns:bn-uq-g2g": "http://xoev.de/schemata/basisnachricht/unqualified/g2g/1_1",
+      "xmlns:din91379": "urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08",
+      "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+      "xsi:schemaLocation": "urn:xoev-de:xdomea:schema:4.0.0 xdomea-Nachrichten-AktenplanAustauschen.xsd",
+      "produkt": "OpenGov Privacy Gateway MVP",
+      "produkthersteller": "open-gov.group",
+      "standard": "xdomea",
+      "version": "4.0.0"
+    },
+    "children": [
+      {
+        "tag": "xdomea:nachrichtenkopf",
+        "value": {
+          "children": [
+            {
+              "tag": "xdomea:identifikation.nachricht",
+              "value": {
+                "children": [
+                  {
+                    "tag": "nachrichtenUUID",
+                    "value": {
+                      "#text": "dfccea2d-7fad-45ea-8f3b-7a9a73e0c6e6"
+                    }
+                  },
+                  {
+                    "tag": "nachrichtentyp",
+                    "value": {
+                      "children": [
+                        {
+                          "tag": "code",
+                          "value": {
+                            "#text": "0629"
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "tag": "erstellungszeitpunkt",
+                    "value": {
+                      "#text": "2025-11-12T10:15:00+01:00"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "xdomea:leser",
+              "value": {
+                "children": [
+                  {
+                    "tag": "bn-uq-g2g:organisationsname",
+                    "value": {
+                      "#text": "OpenGov Privacy Gateway (Test)"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "xdomea:autor",
+              "value": {
+                "children": [
+                  {
+                    "tag": "bn-uq-g2g:organisationsname",
+                    "value": {
+                      "#text": "Stadt Düsseldorf – Einwohnermeldeamt"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "tag": "xdomea:ProzessID",
+              "value": {
+                "#text": "0bf6fef1-a897-4faf-b25a-eefba7aefcbd"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "tag": "xdomea:WeitererLeser",
+        "value": {
+          "children": [
+            {
+              "tag": "bn-uq-g2g:organisationsname",
+              "value": {
+                "#text": "Amt für Informationstechnik"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "tag": "xdomea:Empfangsbestaetigung",
+        "value": {
+          "#text": "0"
+        }
+      },
+      {
+        "tag": "xdomea:Aktenplan",
+        "value": {
+          "children": [
+            {
+              "tag": "xdomea:Bezeichnung",
+              "value": {
+                "#text": "Stadt Düsseldorf – Aktenplan Einwohnermeldeamt"
+              }
+            },
+            {
+              "tag": "xdomea:Version",
+              "value": {
+                "#text": "2025-11-12"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "tag": "xdomea:Aktenplan",
+        "value": {
+          "children": [
+            {
+              "tag": "xdomea:Bezeichnung",
+              "value": {
+                "#text": "32.00 – Melderecht allgemein"
+              }
+            },
+            {
+              "tag": "xdomea:Version",
+              "value": {
+                "#text": "1.0"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "tag": "xdomea:Aktenplan",
+        "value": {
+          "children": [
+            {
+              "tag": "xdomea:Bezeichnung",
+              "value": {
+                "#text": "32.10 – Elektronisches Melderegister (EMR)"
+              }
+            },
+            {
+              "tag": "xdomea:Version",
+              "value": {
+                "#text": "1.0"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "tag": "xdomea:Aktenplan",
+        "value": {
+          "children": [
+            {
+              "tag": "xdomea:Bezeichnung",
+              "value": {
+                "#text": "32.20 – Melderegisterauskünfte"
+              }
+            },
+            {
+              "tag": "xdomea:Version",
+              "value": {
+                "#text": "1.0"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "tag": "xdomea:Aktenplan",
+        "value": {
+          "children": [
+            {
+              "tag": "xdomea:Bezeichnung",
+              "value": {
+                "#text": "32.30 – Sonderfälle und Rechtsmittel"
+              }
+            },
+            {
+              "tag": "xdomea:Version",
+              "value": {
+                "#text": "1.0"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

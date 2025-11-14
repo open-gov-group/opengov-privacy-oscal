@@ -1,4 +1,4 @@
-# OpenGov Privacy OSCAL
+# OpenGov Privacy – OSCAL Inhalte
 
 [![VALIDATE](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate.yml/badge.svg)](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate.yml) [![VALIDATE](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate.yml/badge.svg)](https://github.com/open-gov-group/opengov-privacy-oscal/actions/workflows/validate-oscal.yml)
 
@@ -9,70 +9,79 @@ This repository is the canonical source for the **OpenGovGroup Privacy Catalog**
 
 ---
 
-## Goals
-- Provide a **Grundschutz-like privacy catalog** in OSCAL with GDPR-aligned controls.
-- Enable **profiles** for scopes (e.g., Intervenability, Confidentiality, Data Minimization, or specific line-of-business systems).
-- Offer **component definitions** (DMS, IAM, Export Service, Erasure Engine, Backup/Restore) for reuse across SSPs.
-- Deliver an **SSP (RoPA) template** to maintain Records of Processing in OSCAL.
-- Support **multilingual overlays** (DE/…​) without duplicating the canonical catalog.
+## Überblick
+Dieses Repository stellt die **autoritative Quelle** für alle OSCAL-Artefakte unseres Datenschutz-Katalogs bereit. Ziel ist ein **grundschutz-ähnlicher, EU-konformer** Baseline-Katalog (GDPR/DSGVO, ISO/IEC 29100/29134/27018/27701, SDM der DSK, CNIL), der von Fachverfahren wiederverwendet und in **System Security Plans (SSP)** integriert werden kann.
 
-## Repository Structure
-```
+## Hintergrund & Zielbild
+Öffentliche Verwaltungen halten zahlreiche Informationen bereits vor (Aktenplan/xDOMEA, Prozessbeschreibungen/BPMN, TOM-Nachweise). Durch **OSCAL** (Open Security Controls Assessment Language) standardisieren wir:
+- die **Formulierung von Anforderungen** (Catalog),
+- deren **Tailoring** (Profile),
+- **wiederverwendbare Bausteine** (Component Definition),
+- und die **Systemdokumentation** (SSP), inkl. Evidenz-Verweisen.
+
+Damit entsteht eine einheitliche, maschinenlesbare Grundlage für Dokumentation, Prüfung und Wiederverwendung.
+
+## Standards & Quellen
+- **DSGVO/GDPR** (Art. 5 ff., Betroffenenrechte, Löschung, Rechenschaftspflicht)
+- **ISO/IEC 29100/29134/27018/27701**, **ISO/IEC 27001 Anhang A** (Privacy-/Security-Kontrollen)
+- **SDM** der Datenschutzkonferenz (Gewährleistungsziele & Methodik)
+- **CNIL-Empfehlungen** (ergänzende Privacy-Kontrollen)
+
+## Artefakte im Repository
+- **Catalog** (`oscal/catalog/*.json`)  
+  Enthält Kontrollen und deren `parts` (z. B. *statement*, *guidance*, *objective*, optional *criteria*). Aufbau orientiert sich an Gewährleistungszielen (z. B. Intervenierbarkeit, Datenminimierung).
+- **Profiles** (`oscal/profiles/*.json`)  
+  Enthalten Tailoring-Regeln (*include/exclude/alter*) für Anwendungsfälle (z. B. nur „Intervenierbarkeit“).
+- **Components** (`oscal/components/*.json`)  
+  Referenz-Bausteine (DMS, IAM, Lösch-Engine, Backup/Restore) inkl. Platzhaltern für `control-implementations`.
+- **SSP-Vorlagen** (`oscal/ssp/*.json`)  
+  RoPA-orientierte Templates mit `import-profile`, minimalen Systemmerkmalen und Back-Matter-Hooks.
+- **Overlays** (`overlays/*.json`)  
+  Sprachüberlagerungen (z. B. DE) für Bezeichnungen/Hilfetexte.
+- **Build (optional)** (`build/profile_resolved_catalog.json`)  
+  CI-Artefakt: voraufgelöstes Profil als flacher Katalog für Viewer/Downstream Tools.
+
+## Verzeichnisstruktur
+
 oscal/
-  catalog/
-    opengov_privacy_catalog.json
-  profiles/
-    profile_intervenability.json
-    profile_confidentiality.json
-    profile_data_minimization.json
-  components/
-    components_reference.json
-  ssp/
-    ssp_template_ropa.json
+catalog/
+profiles/
+components/
+ssp/
 overlays/
-  profile_translation_de.json
-docs/
-tools/
-.github/workflows/
-  validate.yml
-LICENSE
-README.md
-```
+build/ # (optional) CI-Ausgabe, z. B. resolved profile
 
-## How to Use (viewer.oscal.io)
-1. **Load the catalog**: `oscal/catalog/opengov_privacy_catalog.json`  
-2. **Load a profile** (optional, recommended): e.g., `oscal/profiles/profile_intervenability.json`  
-3. **Load the component definition**: `oscal/components/components_reference.json` (to inspect reusable building blocks)  
-4. **Load the SSP template**: `oscal/ssp/ssp_template_ropa.json` (as the RoPA starting point)  
-5. **German labels**: additionally load `overlays/profile_translation_de.json` (non-destructive props overlay)
 
-> All imports use **relative paths** so you can download the repo and open files locally in the viewer.
+## Konventionen & Kompatibilität
+- **OSCAL-Version**: 1.1.2 (Viewer-Kompatibilität)
+- **Evidenz**: ausschließlich über `back-matter.resources[].rlinks[]` in Artefakten; Referenzierung auf Implementierungsebene via `links[]` (kein `related-resources` im SSP).
+- **IDs & Referenzen**: stabile `uuid` pro Objekt; URLs als **kanonische Raw-Links** (z. B. `https://raw.githubusercontent.com/...`).
 
-## IDs, Mapping & Method
-- **Control IDs** keep SDM-style identifiers (e.g., `B1-10`).
-- **Groups** reflect **Gewährleistungsziele** (Tp, Iv, Vt, Ig, Vf, Dm, Nn).
-- **Props** include references to CNIL and ISO/IEC 29100/29134/27018/27701 for traceability.
-- **Parts**: `statement`, `guidance`, nested `objective` parts, optional `criteria`.
-- **Profiles** tailor subsets for auditing or solution scope (as-is merge).
-- **Components** define reusable implementations (`control-implementations`).
-- **SSP** holds RoPA-relevant properties and links implementations via `by-components`.
+## Nutzungsszenarien
+### A) Katalog/Profil betrachten (Viewer)
+1. `oscal/catalog/opengov_privacy_catalog.json` im OSCAL-Viewer laden.  
+2. Optional: `build/profile_resolved_catalog.json` verwenden (flach, schneller).  
+3. Profile (`oscal/profiles/*.json`) als Baseline einblenden.
 
-## Roadmap
-- Expand catalog families: **Legal basis**, **Processors & DPAs**, **DPIA**, **Breach**, **Transfers**, **RoPA**, **Privacy by Design/Default**, **Security (TOM)**.
-- Add **profiles** per family and per **line-of-business** domain.
-- Add **vendor-neutral** and **vendor-specific** components with evidence resources.
-- Add **translation overlays** (FR/IT/ES) using the same pattern as `profile_translation_de.json`.
+### B) SSP aufsetzen (Downstream)
+1. Passendes **Profil** auswählen (`oscal/profiles/*.json`).  
+2. **SSP-Template** (`oscal/ssp/*.json`) kopieren und `import-profile.href` setzen.  
+3. Systemmerkmale und Komponenten befüllen; Evidenz in `back-matter.resources` hinterlegen und über `links[]` auf Implementierungen referenzieren.  
+4. Mit JSON-Schema validieren (siehe CI).
 
-## Contributing
-1. Fork and create a feature branch.
-2. Follow **ID & prose conventions** (English canonical; translations via overlays).
-3. Run CI (JSON lint). For schema validation, add NIST OSCAL tooling in `validate.yml`.
-4. Open a PR; reviewers: privacy, security, and public-sector SMEs.
+## CI/Validierung
+- **Syntax-Check** (JSON) und **OSCAL-Schema-Validierung** (1.1.2).  
+- Optionales **Resolve-Profile** erzeugt `build/profile_resolved_catalog.json`.  
+- Linting-Hinweise zu URLs (z. B. Canonicalisierung von GitHub-Raw-Links).
 
-## License
-- **Text & schema content**: Apache-2.0 (see `LICENSE`).
-- Please ensure external excerpts are cited and compatible with the license.
+## Beitrag & Pflege
+- Neue Kontrollen/Guidance als PR gegen **Catalog**.  
+- Tailoring als PR gegen **Profiles**.  
+- Gemeinsame Bausteine (DMS/IAM/…) als **Components** pflegen.  
+- Änderungen stets über **Issues/PRs** mit Quellenangabe (Norm/Leitlinie).
 
----
+## Lizenz
+- **Katalog-/Profil-Inhalte**: CC-BY-4.0 (sofern nicht anders vermerkt)  
+- **Hilfsskripte/CI**: Apache-2.0
 
-**Maintainers:** open-gov.group · Contact: info@open-gov.group
+
