@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Studio (https://www.liquid-technologies.com) -->
+<xdomea:Aktenplan.Aktenplan.0301
+  xmlns:xdomea="urn:xoev-de:xdomea:schema:4.0.0"
+  xmlns:xoev-code="http://xoev.de/schemata/code/1_0"
+  xmlns:bn-uq-g2g="http://xoev.de/schemata/basisnachricht/unqualified/g2g/1_1"
+  xmlns:din91379="urn:xoev-de:kosit:xoev:datentyp:din-91379_2022-08"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="urn:xoev-de:xdomea:schema:4.0.0 xdomea-Nachrichten-AktenplanAustauschen.xsd"
+  produkt="OpenGov Privacy Gateway MVP"
+  produkthersteller="open-gov.group"
+  standard="xdomea"
+  version="4.0.0">
+
+    <xdomea:nachrichtenkopf>
+        <xdomea:identifikation.nachricht>
+            <nachrichtenUUID>dfccea2d-7fad-45ea-8f3b-7a9a73e0c6e6</nachrichtenUUID>
+            <nachrichtentyp>
+                <!-- 0629 wie in deinem Sample -->
+                <code>0629</code>
+            </nachrichtentyp>
+            <erstellungszeitpunkt>2025-11-12T10:15:00+01:00</erstellungszeitpunkt>
+        </xdomea:identifikation.nachricht>
+
+        <!-- Autor / Leser strukturkompatibel zum Sample -->
+        <xdomea:leser>
+            <bn-uq-g2g:organisationsname>OpenGov Privacy Gateway (Test)</bn-uq-g2g:organisationsname>
+        </xdomea:leser>
+        <xdomea:autor>
+            <bn-uq-g2g:organisationsname>Stadt Düsseldorf – Einwohnermeldeamt</bn-uq-g2g:organisationsname>
+        </xdomea:autor>
+
+        <!-- Wie im Sample vorhanden -->
+        <xdomea:ProzessID>0bf6fef1-a897-4faf-b25a-eefba7aefcbd</xdomea:ProzessID>
+    </xdomea:nachrichtenkopf>
+
+    <!-- Optionale weitere Leser (in deinem Sample mehrfach erlaubt) -->
+    <xdomea:WeitererLeser>
+        <bn-uq-g2g:organisationsname>Amt für Informationstechnik</bn-uq-g2g:organisationsname>
+    </xdomea:WeitererLeser>
+
+    <!-- Wie im Sample -->
+    <xdomea:Empfangsbestaetigung>0</xdomea:Empfangsbestaetigung>
+
+    <!-- Aktenplan-Blöcke analog zur Sample-Struktur: Bezeichnung + Version -->
+    <xdomea:Aktenplan>
+        <xdomea:Bezeichnung>Stadt Düsseldorf – Aktenplan Einwohnermeldeamt</xdomea:Bezeichnung>
+        <xdomea:Version>2025-11-12</xdomea:Version>
+    </xdomea:Aktenplan>
+
+    <xdomea:Aktenplan>
+        <xdomea:Bezeichnung>32.00 – Melderecht allgemein</xdomea:Bezeichnung>
+        <xdomea:Version>1.0</xdomea:Version>
+    </xdomea:Aktenplan>
+
+    <xdomea:Aktenplan>
+        <xdomea:Bezeichnung>32.10 – Elektronisches Melderegister (EMR)</xdomea:Bezeichnung>
+        <xdomea:Version>1.0</xdomea:Version>
+    </xdomea:Aktenplan>
+
+    <xdomea:Aktenplan>
+        <xdomea:Bezeichnung>32.20 – Melderegisterauskünfte</xdomea:Bezeichnung>
+        <xdomea:Version>1.0</xdomea:Version>
+    </xdomea:Aktenplan>
+
+    <xdomea:Aktenplan>
+        <xdomea:Bezeichnung>32.30 – Sonderfälle und Rechtsmittel</xdomea:Bezeichnung>
+        <xdomea:Version>1.0</xdomea:Version>
+    </xdomea:Aktenplan>
+
+</xdomea:Aktenplan.Aktenplan.0301>
