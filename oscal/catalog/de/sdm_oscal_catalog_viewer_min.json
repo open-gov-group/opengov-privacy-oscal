@@ -1,0 +1,47 @@
+{
+  "catalog": {
+    "uuid": "2f91ed5c-d9e6-47a2-bd79-d725fffe2b5d",
+    "metadata": {
+      "title": "SDM als OSCAL Catalog (Minimal)",
+      "last-modified": "2025-10-31T13:55:53Z",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2"
+    },
+    "groups": [
+      {
+        "id": "G-TP",
+        "title": "Transparenz (Tp)",
+        "controls": [
+          {
+            "id": "B1-1",
+            "title": "Transparenz für Betroffene",
+            "parts": [
+              {
+                "id": "B1-1_stmt",
+                "name": "statement",
+                "prose": "Transparente Information und Auskunft gem. Art. 12–15, 34 DSGVO."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-DM",
+        "title": "Datenminimierung (Dm)",
+        "controls": [
+          {
+            "id": "B1-3",
+            "title": "Datenminimierung",
+            "parts": [
+              {
+                "id": "B1-3_stmt",
+                "name": "statement",
+                "prose": "Daten auf das notwendige Maß begrenzen (Art. 5(1)(c) DSGVO)."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

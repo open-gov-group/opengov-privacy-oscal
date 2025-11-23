@@ -1,0 +1,1116 @@
+{
+  "catalog": {
+    "uuid": "7ca53cd6-1e13-4d18-a8b1-cc70361fb305",
+    "metadata": {
+      "title": "SDM als OSCAL Catalog (Vollständiger Minimal-Katalog)",
+      "last-modified": "2025-10-31T14:09:55Z",
+      "version": "1.3.0",
+      "oscal-version": "1.1.2"
+    },
+    "groups": [
+      {
+        "id": "G-TP",
+        "title": "Transparenz (Tp)",
+        "controls": [
+          {
+            "id": "B1-1",
+            "title": "Transparenz für Betroffene",
+            "parts": [
+              {
+                "id": "B1-1_stmt",
+                "name": "statement",
+                "prose": "Präzise, transparente, verständliche und leicht zugängliche Informationen; Auskunfts- und Benachrichtigungspflichten nach Art. 12–15, 34 DSGVO."
+              },
+              {
+                "id": "B1-1_guidance",
+                "name": "guidance",
+                "prose": "Prozess für Auskunft/Benachrichtigung mit Identprüfung, Fristenkontrolle, Vorlagen und Nachweisführung etablieren."
+              },
+              {
+                "id": "B1-1_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-1_objective_1",
+                    "name": "objective",
+                    "prose": "Nachweise für Informationspflichten vorhanden (Texte, Versionen)."
+                  },
+                  {
+                    "id": "B1-1_objective_2",
+                    "name": "objective",
+                    "prose": "Prozess für Auskunft/Benachrichtigung mit Fristenkontrolle implementiert."
+                  },
+                  {
+                    "id": "B1-1_objective_3",
+                    "name": "objective",
+                    "prose": "Identitätsprüfung dokumentiert und wirksam."
+                  },
+                  {
+                    "id": "B1-1_objective_4",
+                    "name": "objective",
+                    "prose": "Stichproben an realen Fällen bestanden."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-8",
+            "title": "Rechenschafts- und Nachweisfähigkeit",
+            "parts": [
+              {
+                "id": "B1-8_stmt",
+                "name": "statement",
+                "prose": "Nachweise zur Einhaltung der Grundsätze der Verarbeitung (z. B. VVT, Protokolle, DSFA, Dokumentation)."
+              },
+              {
+                "id": "B1-8_guidance",
+                "name": "guidance",
+                "prose": "Rechenschaft sicherstellen: VVT, DSFA, TOM-Doku, Nachweise und regelmäßige Reviews pflegen."
+              },
+              {
+                "id": "B1-8_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-8_objective_1",
+                    "name": "objective",
+                    "prose": "VVT vollständig und aktuell."
+                  },
+                  {
+                    "id": "B1-8_objective_2",
+                    "name": "objective",
+                    "prose": "DSFA bei Bedarf vorhanden und aktuell."
+                  },
+                  {
+                    "id": "B1-8_objective_3",
+                    "name": "objective",
+                    "prose": "Rechenschaftsnachweise revisionssicher (Protokolle, Freigaben)."
+                  },
+                  {
+                    "id": "B1-8_objective_4",
+                    "name": "objective",
+                    "prose": "Review- und Eskalationspfade definiert und gelebt."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-23",
+            "title": "Angemessene Überwachung der Verarbeitung",
+            "parts": [
+              {
+                "id": "B1-23_stmt",
+                "name": "statement",
+                "prose": "Protokollierungs- und Auswertungskonzepte zur Feststellung von Datenschutzverletzungen sowie zur Überwachung der Verarbeitung."
+              },
+              {
+                "id": "B1-23_guidance",
+                "name": "guidance",
+                "prose": "Protokollierungs- und Monitoring-Konzept betreiben; Datenschutzvorfälle klassifizieren und auswerten."
+              },
+              {
+                "id": "B1-23_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-23_objective_1",
+                    "name": "objective",
+                    "prose": "Protokollierungskonzept vorhanden und umgesetzt."
+                  },
+                  {
+                    "id": "B1-23_objective_2",
+                    "name": "objective",
+                    "prose": "Ereignisklassen/Schwellwerte definiert."
+                  },
+                  {
+                    "id": "B1-23_objective_3",
+                    "name": "objective",
+                    "prose": "Detektion/Alerting getestet und wirksam."
+                  },
+                  {
+                    "id": "B1-23_objective_4",
+                    "name": "objective",
+                    "prose": "Incident-Reports vorhanden und ausgewertet."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B2-EM",
+            "title": "Einwilligungsmanagement – Transparenzaspekte",
+            "parts": [
+              {
+                "id": "B2-EM_stmt",
+                "name": "statement",
+                "prose": "Einwilligungen sind informiert, dokumentiert, widerrufbar und nachweisbar gestaltet."
+              },
+              {
+                "id": "B2-EM_guidance",
+                "name": "guidance",
+                "prose": "Granulare, informierte Einwilligungen; Widerruf jederzeit; Nachweis und Versionierung sichern."
+              },
+              {
+                "id": "B2-EM_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B2-EM_objective_1",
+                    "name": "objective",
+                    "prose": "Einwilligungstexte verständlich und zweckgebunden."
+                  },
+                  {
+                    "id": "B2-EM_objective_2",
+                    "name": "objective",
+                    "prose": "Nachweis der Einwilligung inkl. Widerruf historisiert."
+                  },
+                  {
+                    "id": "B2-EM_objective_3",
+                    "name": "objective",
+                    "prose": "Widerrufswege leicht zugänglich und funktionsfähig."
+                  },
+                  {
+                    "id": "B2-EM_objective_4",
+                    "name": "objective",
+                    "prose": "Kein Einsatz von Dark Patterns."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-NN",
+        "title": "Nichtverkettung (Nn)",
+        "controls": [
+          {
+            "id": "B1-2",
+            "title": "Zweckbindung",
+            "parts": [
+              {
+                "id": "B1-2_stmt",
+                "name": "statement",
+                "prose": "Daten werden zweckgebunden verarbeitet; Weiterverarbeitung nur bei Kompatibilität oder gesetzlicher Grundlage; technische/organisatorische Zwecktrennung."
+              },
+              {
+                "id": "B1-2_guidance",
+                "name": "guidance",
+                "prose": "Zwecktrennung technisch/organisatorisch; Kompatibilitätsprüfung nach Art. 6(4) dokumentieren."
+              },
+              {
+                "id": "B1-2_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-2_objective_1",
+                    "name": "objective",
+                    "prose": "Zwecke pro Verarbeitungstätigkeit dokumentiert."
+                  },
+                  {
+                    "id": "B1-2_objective_2",
+                    "name": "objective",
+                    "prose": "Kompatibilitätsprüfung nach Art. 6(4) durchgeführt."
+                  },
+                  {
+                    "id": "B1-2_objective_3",
+                    "name": "objective",
+                    "prose": "Technische und organisatorische Zwecktrennung nachweisbar."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-DM",
+        "title": "Datenminimierung (Dm)",
+        "controls": [
+          {
+            "id": "B1-3",
+            "title": "Datenminimierung",
+            "parts": [
+              {
+                "id": "B1-3_stmt",
+                "name": "statement",
+                "prose": "Daten sind dem Zweck angemessen, erheblich und auf das notwendige Maß begrenzt (Art. 5(1)(c) DSGVO)."
+              },
+              {
+                "id": "B1-3_guidance",
+                "name": "guidance",
+                "prose": "Attribute auf Minimum reduzieren; Pseudonymisierung/Maskierung für Nicht-Prod-Daten einsetzen."
+              },
+              {
+                "id": "B1-3_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-3_objective_1",
+                    "name": "objective",
+                    "prose": "Attributlisten minimiert und begründet."
+                  },
+                  {
+                    "id": "B1-3_objective_2",
+                    "name": "objective",
+                    "prose": "Pseudonymisierung/Maskierung in Nicht-Prod aktiv."
+                  },
+                  {
+                    "id": "B1-3_objective_3",
+                    "name": "objective",
+                    "prose": "Re-Identifikationsrisiko bewertet."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-5",
+            "title": "Speicherbegrenzung",
+            "parts": [
+              {
+                "id": "B1-5_stmt",
+                "name": "statement",
+                "prose": "Identifizierende Daten werden nur so lange gespeichert, wie erforderlich; es existiert ein Löschkonzept inkl. Pseudonymisierung/Anonymisierung."
+              },
+              {
+                "id": "B1-5_guidance",
+                "name": "guidance",
+                "prose": "Lösch-/Aufbewahrungskonzept (TTL, Retention Policies) mit automatischer Durchsetzung."
+              },
+              {
+                "id": "B1-5_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-5_objective_1",
+                    "name": "objective",
+                    "prose": "Lösch-/Aufbewahrungspolicy definiert und veröffentlicht."
+                  },
+                  {
+                    "id": "B1-5_objective_2",
+                    "name": "objective",
+                    "prose": "Automatisierte Löschläufe aktiv und protokolliert."
+                  },
+                  {
+                    "id": "B1-5_objective_3",
+                    "name": "objective",
+                    "prose": "Backups führen nicht zum Wiederaufleben gelöschter Daten."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-17",
+            "title": "Datenschutz durch Voreinstellungen (Default)",
+            "parts": [
+              {
+                "id": "B1-17_stmt",
+                "name": "statement",
+                "prose": "Voreinstellungen stellen sicher, dass nur erforderliche Daten verarbeitet, aufbewahrt und zugänglich gemacht werden."
+              },
+              {
+                "id": "B1-17_guidance",
+                "name": "guidance",
+                "prose": "Privacy by Default: konservative Voreinstellungen, nur erforderliche Felder sichtbar/verarbeitet."
+              },
+              {
+                "id": "B1-17_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-17_objective_1",
+                    "name": "objective",
+                    "prose": "Privacy-by-Default-Einstellungen dokumentiert."
+                  },
+                  {
+                    "id": "B1-17_objective_2",
+                    "name": "objective",
+                    "prose": "Abweichungen begründet und protokolliert."
+                  },
+                  {
+                    "id": "B1-17_objective_3",
+                    "name": "objective",
+                    "prose": "UI/Flows erfassen nur erforderliche Daten."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-VF",
+        "title": "Verfügbarkeit (Vf)",
+        "controls": [
+          {
+            "id": "B1-18",
+            "title": "Verfügbarkeit",
+            "parts": [
+              {
+                "id": "B1-18_stmt",
+                "name": "statement",
+                "prose": "Berechtigte haben rechtzeitig Zugriff auf Daten und Systeme; Daten sind auffindbar, darstellbar und betriebsbereit."
+              },
+              {
+                "id": "B1-18_guidance",
+                "name": "guidance",
+                "prose": "Service- und Datenkatalog; Auffindbarkeit und Zugriffswege dokumentieren."
+              },
+              {
+                "id": "B1-18_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-18_objective_1",
+                    "name": "objective",
+                    "prose": "Service-/Datenkatalog vorhanden und aktuell."
+                  },
+                  {
+                    "id": "B1-18_objective_2",
+                    "name": "objective",
+                    "prose": "Zugriffs- und Auffindbarkeitsnachweise vorhanden."
+                  },
+                  {
+                    "id": "B1-18_objective_3",
+                    "name": "objective",
+                    "prose": "Support-/Eskalationswege definiert."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-19",
+            "title": "Belastbarkeit",
+            "parts": [
+              {
+                "id": "B1-19_stmt",
+                "name": "statement",
+                "prose": "Systeme und Dienste sind widerstandsfähig; Schutz personenbezogener Daten bleibt unter Last gewahrt."
+              },
+              {
+                "id": "B1-19_guidance",
+                "name": "guidance",
+                "prose": "Belastbarkeit testen (Last/Chaos); Sicherheit/Datenschutz auch unter Last garantieren."
+              },
+              {
+                "id": "B1-19_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-19_objective_1",
+                    "name": "objective",
+                    "prose": "Regelmäßige Last-/Chaos-Tests durchgeführt."
+                  },
+                  {
+                    "id": "B1-19_objective_2",
+                    "name": "objective",
+                    "prose": "Sicherheits-/Privacy-Kontrollen bleiben unter Last wirksam."
+                  },
+                  {
+                    "id": "B1-19_objective_3",
+                    "name": "objective",
+                    "prose": "Monitoring-Metriken vorhanden und überwacht."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-20",
+            "title": "Wiederherstellbarkeit",
+            "parts": [
+              {
+                "id": "B1-20_stmt",
+                "name": "statement",
+                "prose": "Fähigkeit zur raschen Wiederherstellung der Verfügbarkeit und des Zugriffs bei Zwischenfällen; Notfallplanung."
+              },
+              {
+                "id": "B1-20_guidance",
+                "name": "guidance",
+                "prose": "Notfallplanung; regelmäßige Restore-Tests; RTO/RPO definieren und messen."
+              },
+              {
+                "id": "B1-20_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-20_objective_1",
+                    "name": "objective",
+                    "prose": "RTO/RPO festgelegt und gemessen."
+                  },
+                  {
+                    "id": "B1-20_objective_2",
+                    "name": "objective",
+                    "prose": "Restore-Tests regelmäßig erfolgreich."
+                  },
+                  {
+                    "id": "B1-20_objective_3",
+                    "name": "objective",
+                    "prose": "Notfallhandbuch aktuell und verbreitet."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-22-VF",
+            "title": "Behebung/Abmilderung – Verfügbarkeit",
+            "parts": [
+              {
+                "id": "B1-22-VF_stmt",
+                "name": "statement",
+                "prose": "Verfahren zur Behandlung von Datenschutzverletzungen mit Auswirkungen auf die Verfügbarkeit, inkl. Ursachenanalyse und Abmilderung."
+              },
+              {
+                "id": "B1-22-VF_guidance",
+                "name": "guidance",
+                "prose": "Playbook für Verfügbarkeitsvorfälle; Melde-/Benachrichtigungswege definieren."
+              },
+              {
+                "id": "B1-22-VF_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-22-VF_objective_1",
+                    "name": "objective",
+                    "prose": "Playbook für Verfügbarkeitsvorfälle vorhanden."
+                  },
+                  {
+                    "id": "B1-22-VF_objective_2",
+                    "name": "objective",
+                    "prose": "Entscheidungsbäume und Meldewege dokumentiert."
+                  },
+                  {
+                    "id": "B1-22-VF_objective_3",
+                    "name": "objective",
+                    "prose": "Lessons Learned werden umgesetzt."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-IG",
+        "title": "Integrität (Ig)",
+        "controls": [
+          {
+            "id": "B1-4",
+            "title": "Richtigkeit",
+            "parts": [
+              {
+                "id": "B1-4_stmt",
+                "name": "statement",
+                "prose": "Verfahren zur Sicherstellung sachlicher Richtigkeit und Aktualität; unrichtige Daten werden berichtigt oder gelöscht."
+              },
+              {
+                "id": "B1-4_guidance",
+                "name": "guidance",
+                "prose": "Datenqualitätsregeln und Korrekturprozesse; Empfänger über Korrekturen informieren."
+              },
+              {
+                "id": "B1-4_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-4_objective_1",
+                    "name": "objective",
+                    "prose": "Datenqualitätsregeln implementiert."
+                  },
+                  {
+                    "id": "B1-4_objective_2",
+                    "name": "objective",
+                    "prose": "Fehlerraten/KPIs gemessen."
+                  },
+                  {
+                    "id": "B1-4_objective_3",
+                    "name": "objective",
+                    "prose": "Korrekturprozesse inkl. Benachrichtigung aktiv."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-6",
+            "title": "Integrität",
+            "parts": [
+              {
+                "id": "B1-6_stmt",
+                "name": "statement",
+                "prose": "Schutz gegen unbeabsichtigten Verlust, Zerstörung oder Veränderung; Änderungen sind nachvollziehbar."
+              },
+              {
+                "id": "B1-6_guidance",
+                "name": "guidance",
+                "prose": "Integrität via Signaturen/Hashing/Audit-Trails; Änderungen nachvollziehbar machen."
+              },
+              {
+                "id": "B1-6_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-6_objective_1",
+                    "name": "objective",
+                    "prose": "Integritätsschutz aktiv (Signaturen/Hashing/Audit)."
+                  },
+                  {
+                    "id": "B1-6_objective_2",
+                    "name": "objective",
+                    "prose": "Vier-Augen-Änderungsfreigabe umgesetzt."
+                  },
+                  {
+                    "id": "B1-6_objective_3",
+                    "name": "objective",
+                    "prose": "Unautorisierte Änderungen erkennbar."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-16",
+            "title": "Fehler- und Diskriminierungsfreiheit beim Profiling",
+            "parts": [
+              {
+                "id": "B1-16_stmt",
+                "name": "statement",
+                "prose": "Maßnahmen minimieren Fehler und verhindern diskriminierende Entscheidungen; Validierung von Faktoren/Modellen."
+              },
+              {
+                "id": "B1-16_guidance",
+                "name": "guidance",
+                "prose": "Modelle validieren/monitoren; Bias-/Fehlertests; menschliche Übersteuerung ermöglichen."
+              },
+              {
+                "id": "B1-16_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-16_objective_1",
+                    "name": "objective",
+                    "prose": "Modellvalidierung und Bias-Tests dokumentiert."
+                  },
+                  {
+                    "id": "B1-16_objective_2",
+                    "name": "objective",
+                    "prose": "Monitoring von Drift und Fehlern aktiv."
+                  },
+                  {
+                    "id": "B1-16_objective_3",
+                    "name": "objective",
+                    "prose": "Menschliche Übersteuerung möglich und dokumentiert."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-22-IG",
+            "title": "Behebung/Abmilderung – Integrität",
+            "parts": [
+              {
+                "id": "B1-22-IG_stmt",
+                "name": "statement",
+                "prose": "Verfahren zur Erkennung, Behebung und Abmilderung von Integritätsverletzungen."
+              },
+              {
+                "id": "B1-22-IG_guidance",
+                "name": "guidance",
+                "prose": "Schnelle Erkennung/Behebung von Integritätsverletzungen; Ursachenanalyse etablieren."
+              },
+              {
+                "id": "B1-22-IG_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-22-IG_objective_1",
+                    "name": "objective",
+                    "prose": "Vorfälle klassifiziert."
+                  },
+                  {
+                    "id": "B1-22-IG_objective_2",
+                    "name": "objective",
+                    "prose": "Reaktionszeiten und Behebungsmaßnahmen nachweisbar."
+                  },
+                  {
+                    "id": "B1-22-IG_objective_3",
+                    "name": "objective",
+                    "prose": "Kommunikationspfade dokumentiert."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-VT",
+        "title": "Vertraulichkeit (Vt)",
+        "controls": [
+          {
+            "id": "B1-7",
+            "title": "Vertraulichkeit",
+            "parts": [
+              {
+                "id": "B1-7_stmt",
+                "name": "statement",
+                "prose": "Unbefugte Kenntnisnahme und Nutzung personenbezogener Daten wird verhindert (z. B. Berechtigungen, Verschlüsselung, Authentifizierung)."
+              },
+              {
+                "id": "B1-7_guidance",
+                "name": "guidance",
+                "prose": "Vertraulichkeit mit RBAC, Verschlüsselung, MFA; Secrets-Management; Least Privilege."
+              },
+              {
+                "id": "B1-7_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-7_objective_1",
+                    "name": "objective",
+                    "prose": "RBAC/Least Privilege umgesetzt."
+                  },
+                  {
+                    "id": "B1-7_objective_2",
+                    "name": "objective",
+                    "prose": "Verschlüsselung at-rest und in-transit aktiv."
+                  },
+                  {
+                    "id": "B1-7_objective_3",
+                    "name": "objective",
+                    "prose": "MFA für erhöhte Risiken etabliert."
+                  },
+                  {
+                    "id": "B1-7_objective_4",
+                    "name": "objective",
+                    "prose": "Secrets-Management implementiert."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-19-VT",
+            "title": "Belastbarkeit – Vertraulichkeit",
+            "parts": [
+              {
+                "id": "B1-19-VT_stmt",
+                "name": "statement",
+                "prose": "Vertraulichkeit bleibt auch unter Last und bei Störungen gewahrt."
+              },
+              {
+                "id": "B1-19-VT_guidance",
+                "name": "guidance",
+                "prose": "Unter Last Vertraulichkeitskontrollen testen (z. B. Rate Limiting, Entkopplung)."
+              },
+              {
+                "id": "B1-19-VT_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-19-VT_objective_1",
+                    "name": "objective",
+                    "prose": "Vertraulichkeitskontrollen unter Last getestet."
+                  },
+                  {
+                    "id": "B1-19-VT_objective_2",
+                    "name": "objective",
+                    "prose": "Rate Limiting/Throttling wirksam."
+                  },
+                  {
+                    "id": "B1-19-VT_objective_3",
+                    "name": "objective",
+                    "prose": "Kein Datenabfluss in Tests nachweisbar."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-22-VT",
+            "title": "Behebung/Abmilderung – Vertraulichkeit",
+            "parts": [
+              {
+                "id": "B1-22-VT_stmt",
+                "name": "statement",
+                "prose": "Verfahren zur Behandlung von Datenschutzverletzungen mit Auswirkungen auf die Vertraulichkeit (Melden/Benachrichtigen)."
+              },
+              {
+                "id": "B1-22-VT_guidance",
+                "name": "guidance",
+                "prose": "Benachrichtigung bei Datenpannen (Art. 33/34); Vorlagen/Entscheidungsbäume vorhalten."
+              },
+              {
+                "id": "B1-22-VT_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-22-VT_objective_1",
+                    "name": "objective",
+                    "prose": "Melde-/Benachrichtigungsschritte nach Art. 33/34 definiert."
+                  },
+                  {
+                    "id": "B1-22-VT_objective_2",
+                    "name": "objective",
+                    "prose": "Vorlagen und Sprachfassungen vorhanden."
+                  },
+                  {
+                    "id": "B1-22-VT_objective_3",
+                    "name": "objective",
+                    "prose": "Simulationsübungen durchgeführt."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-IV",
+        "title": "Intervenierbarkeit (Iv)",
+        "controls": [
+          {
+            "id": "B1-9",
+            "title": "Identifizierung und Authentifizierung",
+            "parts": [
+              {
+                "id": "B1-9_stmt",
+                "name": "statement",
+                "prose": "Sichere Identifizierung und Authentifizierung bei Auskunftsersuchen und Interaktionen mit Betroffenen."
+              },
+              {
+                "id": "B1-9_guidance",
+                "name": "guidance",
+                "prose": "Sichere Ident/Authent (z. B. oIDC, MFA) für Betroffenenprozesse; Missbrauchsschutz."
+              },
+              {
+                "id": "B1-9_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-9_objective_1",
+                    "name": "objective",
+                    "prose": "Ident-/Auth-Verfahren angemessen (z. B. MFA/KYC)."
+                  },
+                  {
+                    "id": "B1-9_objective_2",
+                    "name": "objective",
+                    "prose": "Missbrauchsschutz aktiv (Rate Limits, CAPTCHA)."
+                  },
+                  {
+                    "id": "B1-9_objective_3",
+                    "name": "objective",
+                    "prose": "Zugriffsprotokollierung vorhanden und geprüft."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-10",
+            "title": "Unterstützung bei der Wahrnehmung von Betroffenenrechten",
+            "parts": [
+              {
+                "id": "B1-10_stmt",
+                "name": "statement",
+                "prose": "Prozesse/Schnittstellen zur Ausübung der Rechte nach Art. 15–22 DSGVO (SPoC, Portale, APIs)."
+              },
+              {
+                "id": "B1-10_guidance",
+                "name": "guidance",
+                "prose": "SPoC/Portal/API mit Status-Tracking für Betroffenenrechte; interne Orchestrierung."
+              },
+              {
+                "id": "B1-10_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-10_objective_1",
+                    "name": "objective",
+                    "prose": "SPoC/Portal/API funktionsfähig."
+                  },
+                  {
+                    "id": "B1-10_objective_2",
+                    "name": "objective",
+                    "prose": "Durchlaufzeiten gemessen und eingehalten."
+                  },
+                  {
+                    "id": "B1-10_objective_3",
+                    "name": "objective",
+                    "prose": "Fristen und Vollständigkeit eingehalten."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-11",
+            "title": "Berichtigungsmöglichkeit von Daten",
+            "parts": [
+              {
+                "id": "B1-11_stmt",
+                "name": "statement",
+                "prose": "Operative Möglichkeiten zur unverzüglichen Berichtigung personenbezogener Daten."
+              },
+              {
+                "id": "B1-11_guidance",
+                "name": "guidance",
+                "prose": "SLA für Berichtigungen; Stammdatenführung anbinden; Benachrichtigung an Empfänger."
+              },
+              {
+                "id": "B1-11_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-11_objective_1",
+                    "name": "objective",
+                    "prose": "SLA für Berichtigungen eingehalten."
+                  },
+                  {
+                    "id": "B1-11_objective_2",
+                    "name": "objective",
+                    "prose": "Stammdatenprozesse integriert."
+                  },
+                  {
+                    "id": "B1-11_objective_3",
+                    "name": "objective",
+                    "prose": "Benachrichtigung an Empfänger dokumentiert."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-12",
+            "title": "Löschbarkeit von Daten",
+            "parts": [
+              {
+                "id": "B1-12_stmt",
+                "name": "statement",
+                "prose": "Operative Möglichkeiten zur unverzüglichen Löschung personenbezogener Daten; Ergebnis: Nichtverarbeitbarkeit."
+              },
+              {
+                "id": "B1-12_guidance",
+                "name": "guidance",
+                "prose": "Automatisierte Löschpfade mit Nachweis; Backups auf Alt-Datensätze prüfen."
+              },
+              {
+                "id": "B1-12_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-12_objective_1",
+                    "name": "objective",
+                    "prose": "Löschungen nachweisbar."
+                  },
+                  {
+                    "id": "B1-12_objective_2",
+                    "name": "objective",
+                    "prose": "Restore bringt gelöschte Daten nicht zurück."
+                  },
+                  {
+                    "id": "B1-12_objective_3",
+                    "name": "objective",
+                    "prose": "Sonderfälle (Sperrfristen) geregelt."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-13",
+            "title": "Einschränkbarkeit der Verarbeitung",
+            "parts": [
+              {
+                "id": "B1-13_stmt",
+                "name": "statement",
+                "prose": "Markierungs- und Steuerungsmechanismen zur Einschränkung der Verarbeitung."
+              },
+              {
+                "id": "B1-13_guidance",
+                "name": "guidance",
+                "prose": "Einschränkungs-Flags systemweit propagieren; Verarbeitung strikt respektiert Flags."
+              },
+              {
+                "id": "B1-13_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-13_objective_1",
+                    "name": "objective",
+                    "prose": "Einschränkungsflags systemweit durchgesetzt."
+                  },
+                  {
+                    "id": "B1-13_objective_2",
+                    "name": "objective",
+                    "prose": "Verarbeitungslogik respektiert Flags."
+                  },
+                  {
+                    "id": "B1-13_objective_3",
+                    "name": "objective",
+                    "prose": "Nachweise für Durchsetzung vorhanden."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-14",
+            "title": "Datenübertragbarkeit",
+            "parts": [
+              {
+                "id": "B1-14_stmt",
+                "name": "statement",
+                "prose": "Bereitstellung strukturierter, gängiger und maschinenlesbarer Formate; interoperable Exporte."
+              },
+              {
+                "id": "B1-14_guidance",
+                "name": "guidance",
+                "prose": "Interoperable Exportformate (JSON/CSV/XML) und Metadaten/Provenienz bereitstellen."
+              },
+              {
+                "id": "B1-14_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-14_objective_1",
+                    "name": "objective",
+                    "prose": "Exports in gängigen Formaten bereitgestellt."
+                  },
+                  {
+                    "id": "B1-14_objective_2",
+                    "name": "objective",
+                    "prose": "Semantik/Metadaten dokumentiert."
+                  },
+                  {
+                    "id": "B1-14_objective_3",
+                    "name": "objective",
+                    "prose": "Authentifizierte Bereitstellung und Nachweis vorhanden."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-15",
+            "title": "Eingriffsmöglichkeit in Prozesse automatisierter Entscheidungen",
+            "parts": [
+              {
+                "id": "B1-15_stmt",
+                "name": "statement",
+                "prose": "Manuelle Eingriffsmöglichkeiten in automatisierte Einzelentscheidungen; Darlegung und Anfechtung möglich."
+              },
+              {
+                "id": "B1-15_guidance",
+                "name": "guidance",
+                "prose": "Manuelle Eingriffe/Begründung/Anfechtung bei automatisierten Entscheidungen zulassen."
+              },
+              {
+                "id": "B1-15_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-15_objective_1",
+                    "name": "objective",
+                    "prose": "Manuelle Übersteuerung dokumentiert."
+                  },
+                  {
+                    "id": "B1-15_objective_2",
+                    "name": "objective",
+                    "prose": "Entscheidungsbegründung einsehbar."
+                  },
+                  {
+                    "id": "B1-15_objective_3",
+                    "name": "objective",
+                    "prose": "Anfechtungsprozess verfügbar und wirksam."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B1-22-IV",
+            "title": "Behebung/Abmilderung – Intervenierbarkeit",
+            "parts": [
+              {
+                "id": "B1-22-IV_stmt",
+                "name": "statement",
+                "prose": "Benachrichtigungs-, Reaktions- und Unterstützungsprozesse bei Datenschutzverletzungen."
+              },
+              {
+                "id": "B1-22-IV_guidance",
+                "name": "guidance",
+                "prose": "Benachrichtigungs-/Supportprozesse für Betroffene bei Vorfällen vorbereiten."
+              },
+              {
+                "id": "B1-22-IV_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B1-22-IV_objective_1",
+                    "name": "objective",
+                    "prose": "Benachrichtigungs- und Supportprozesse getestet."
+                  },
+                  {
+                    "id": "B1-22-IV_objective_2",
+                    "name": "objective",
+                    "prose": "Kontaktwege verifiziert."
+                  },
+                  {
+                    "id": "B1-22-IV_objective_3",
+                    "name": "objective",
+                    "prose": "Dokumentation aktuell."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "B3",
+            "title": "Umsetzung aufsichtsbehördlicher Anordnungen",
+            "parts": [
+              {
+                "id": "B3_stmt",
+                "name": "statement",
+                "prose": "Verarbeitung kann beschränkt und Übermittlungen ausgesetzt werden; Umsetzung behördlicher Anordnungen."
+              },
+              {
+                "id": "B3_guidance",
+                "name": "guidance",
+                "prose": "Mechanismen zum Aussetzen/Begrenzen der Verarbeitung; schnelle Umsetzung behördlicher Anordnungen."
+              },
+              {
+                "id": "B3_objective",
+                "name": "objective",
+                "parts": [
+                  {
+                    "id": "B3_objective_1",
+                    "name": "objective",
+                    "prose": "Mechanismen zum Stop/Limit der Verarbeitung vorhanden."
+                  },
+                  {
+                    "id": "B3_objective_2",
+                    "name": "objective",
+                    "prose": "Umsetzung behördlicher Vorgaben möglich (Playbooks/Feature-Toggles)."
+                  },
+                  {
+                    "id": "B3_objective_3",
+                    "name": "objective",
+                    "prose": "Nachweise über erfolgreiche Simulationen vorhanden."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

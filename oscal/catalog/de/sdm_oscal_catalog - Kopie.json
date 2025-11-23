@@ -1,0 +1,700 @@
+{
+  "catalog": {
+    "uuid": "769acd1d-ec34-4056-83d7-0f1d5e155d0b",
+    "metadata": {
+      "title": "SDM als OSCAL Catalog (Standard-Datenschutzmodell v3.1a)",
+      "last-modified": "2025-10-31T12:55:32Z",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "props": [
+        {
+          "name": "language",
+          "value": "de-DE"
+        },
+        {
+          "name": "origin",
+          "value": "Abbildung der SDM-Gewährleistungsziele auf OSCAL-Kontrollen; Quelle: SDM v3.1a"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://example.invalid/sdm-v31a.pdf",
+          "rel": "reference",
+          "media-type": "application/pdf",
+          "text": "SDM v3.1a (Referenz)"
+        },
+        {
+          "href": "https://viewer.oscal.io/",
+          "rel": "tool",
+          "text": "viewer.oscal.io"
+        }
+      ],
+      "remarks": "Dieser Katalog bildet die Gewährleistungsziele des Standard-Datenschutzmodells (SDM) \nauf OSCAL-Kontrollgruppen und -Kontrollen ab. Die Zuordnung folgt der Tabelle in SDM v3.1a, Teil C2 \n(S. 28–29) sowie den Beschreibungen in C1, D1 und D2.\n"
+    },
+    "groups": [
+      {
+        "id": "G-TP",
+        "title": "Transparenz (Tp)",
+        "controls": [
+          {
+            "id": "B1-1",
+            "title": "Transparenz für Betroffene",
+            "parts": [
+              {
+                "id": "B1-1_stmt",
+                "name": "statement",
+                "prose": "Der Verantwortliche stellt präzise, transparente, verständliche und leicht zugängliche Informationen bereit und erfüllt Auskunfts- und Benachrichtigungspflichten gem. Art. 12–15, 34 DS-GVO. Beinhaltet u. a. Inventarisierung von Verarbeitungstätigkeiten und Nachverfolgbarkeit."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.1; C1.6; D1.5"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 5(1)(a), 12–15, 34"
+              }
+            ],                        
+			"params": [
+                            {
+                                "id": "B1-1.p1",
+                                "label": "Informationskanäle für Betroffene",
+                                "usage": "Z. B. Datenschutzhinweise, Self-Service-Portal, E-Mail SPoC"
+                            },
+                            {
+                                "id": "B1-1.p2",
+                                "label": "Frist zur Beantwortung von Auskunftsersuchen (Tage)",
+                                "usage": "Vorgabe gem. Art. 12(3) – Standard 30 Tage"
+                            }
+                        ]
+          },
+          {
+            "id": "B1-8",
+            "title": "Rechenschafts- und Nachweisfähigkeit",
+            "parts": [
+              {
+                "id": "B1-8_stmt",
+                "name": "statement",
+                "prose": "Nachweise zur Einhaltung der Grundsätze der Verarbeitung werden geführt (z. B. VVT, Protokolle, DSFA, Dokumentation)."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.8; D1.5"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 5(2), 7(1), 24(1), 30, 33(5), 35, 58(1)(a)(e)"
+              }
+            ]
+          },
+          {
+            "id": "B1-23",
+            "title": "Angemessene Überwachung der Verarbeitung",
+            "parts": [
+              {
+                "id": "B1-23_stmt",
+                "name": "statement",
+                "prose": "Es existieren Protokollierungs- und Auswertungskonzepte zur Feststellung und Klassifikation von Datenschutzverletzungen sowie zur Überwachung der Verarbeitung."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.23; D1.5"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 32, 33, 34"
+              }
+            ]
+          },
+          {
+            "id": "B2-EM",
+            "title": "Einwilligungsmanagement – Transparenzaspekte",
+            "parts": [
+              {
+                "id": "B2-EM_stmt",
+                "name": "statement",
+                "prose": "Einwilligungen werden verständlich informiert, dokumentiert, widerrufbar und nachweisbar gestaltet."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B2; D1.5; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 4(11), 7, 8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-NN",
+        "title": "Nichtverkettung (Nn)",
+        "controls": [
+          {
+            "id": "B1-2",
+            "title": "Zweckbindung",
+            "parts": [
+              {
+                "id": "B1-2_stmt",
+                "name": "statement",
+                "prose": "Daten werden strikt zweckgebunden verarbeitet; Weiterverarbeitungen erfolgen nur bei Kompatibilität oder gesetzlicher Grundlage. Technische und organisatorische Maßnahmen sorgen für Zwecktrennung."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.2; C1.5; D1.4; D2.4"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 5(1)(b), 6(4)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-DM",
+        "title": "Datenminimierung (Dm)",
+        "controls": [
+          {
+            "id": "B1-3",
+            "title": "Datenminimierung",
+            "parts": [
+              {
+                "id": "B1-3_stmt",
+                "name": "statement",
+                "prose": "Personenbezogene Daten sind dem Zweck angemessen, erheblich und auf das notwendige Maß begrenzt. Umsetzung u. a. durch Attributreduktion, Pseudonymisierung/Anonymisierung, Maskierung."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.3; C1.1; D1.7"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 5(1)(c)"
+              }
+            ]
+          },
+          {
+            "id": "B1-5",
+            "title": "Speicherbegrenzung",
+            "parts": [
+              {
+                "id": "B1-5_stmt",
+                "name": "statement",
+                "prose": "Identifizierende Daten werden nur so lange gespeichert, wie für den Zweck erforderlich; es existiert ein Löschkonzept inkl. Pseudonymisierung/Anonymisierung."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.5; D1.7"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 5(1)(e)"
+              }
+            ]
+          },
+          {
+            "id": "B1-17",
+            "title": "Datenschutz durch Voreinstellungen (Default)",
+            "parts": [
+              {
+                "id": "B1-17_stmt",
+                "name": "statement",
+                "prose": "Voreinstellungen stellen sicher, dass nur erforderliche Daten verarbeitet, aufbewahrt und zugänglich gemacht werden; Abweichungen erfolgen nur in begründeten Einzelfällen oder auf Wunsch der betroffenen Person."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.17; C1.1; D1.7; D1.8"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 25(2)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-VF",
+        "title": "Verfügbarkeit (Vf)",
+        "controls": [
+          {
+            "id": "B1-18",
+            "title": "Verfügbarkeit",
+            "parts": [
+              {
+                "id": "B1-18_stmt",
+                "name": "statement",
+                "prose": "Berechtigte haben rechtzeitig Zugriff auf Daten und Systeme. Daten sind auffindbar, darstellbar und betriebsbereit."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.18; C1.2; D1.1"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 32(1)(b)"
+              }
+            ]
+          },
+          {
+            "id": "B1-19",
+            "title": "Belastbarkeit",
+            "parts": [
+              {
+                "id": "B1-19_stmt",
+                "name": "statement",
+                "prose": "Systeme und Dienste sind widerstandsfähig gegenüber widrigen Einflüssen; Schutz personenbezogener Daten ist auch unter Last gewährleistet."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.19; C1.2; C1.3; C1.4; D1.1"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 32(1)(b)"
+              }
+            ]
+          },
+          {
+            "id": "B1-20",
+            "title": "Wiederherstellbarkeit",
+            "parts": [
+              {
+                "id": "B1-20_stmt",
+                "name": "statement",
+                "prose": "Fähigkeit zur raschen Wiederherstellung der Verfügbarkeit und des Zugriffs bei physischen oder technischen Zwischenfällen; Notfallplanung inkl. Wiederanlaufzeiten."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.20; C1.2; D1.1"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 32(1)(c)"
+              }
+            ]
+          },
+          {
+            "id": "B1-22-VF",
+            "title": "Behebung/Abmilderung – Verfügbarkeit",
+            "parts": [
+              {
+                "id": "B1-22-VF_stmt",
+                "name": "statement",
+                "prose": "Es bestehen Verfahren zur Behandlung von Datenschutzverletzungen mit Auswirkungen auf die Verfügbarkeit, inkl. Ursachenanalyse und Abmilderungsmaßnahmen."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.22; C1.2; D1.1"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 33, 34"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-IG",
+        "title": "Integrität (Ig)",
+        "controls": [
+          {
+            "id": "B1-4",
+            "title": "Richtigkeit",
+            "parts": [
+              {
+                "id": "B1-4_stmt",
+                "name": "statement",
+                "prose": "Es bestehen Verfahren, um sachliche Richtigkeit und Aktualität sicherzustellen und unrichtige Daten unverzüglich zu berichtigen oder zu löschen."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.4; C1.3; D1.2"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 5(1)(d)"
+              }
+            ]
+          },
+          {
+            "id": "B1-6",
+            "title": "Integrität",
+            "parts": [
+              {
+                "id": "B1-6_stmt",
+                "name": "statement",
+                "prose": "Daten werden gegen unbeabsichtigten Verlust, Zerstörung oder Veränderung geschützt; Änderungen sind nachvollziehbar bzw. erkennbar."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.6; C1.3; D1.2"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 5(1)(f), 32(1)(b)"
+              }
+            ]
+          },
+          {
+            "id": "B1-16",
+            "title": "Fehler- und Diskriminierungsfreiheit beim Profiling",
+            "parts": [
+              {
+                "id": "B1-16_stmt",
+                "name": "statement",
+                "prose": "Technische und organisatorische Maßnahmen minimieren Fehler und verhindern diskriminierende Entscheidungen; Validierung von Faktoren/Modellen."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.16; C1.3; D1.2"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 22(3)(4); Recital 71"
+              }
+            ]
+          },
+          {
+            "id": "B1-22-IG",
+            "title": "Behebung/Abmilderung – Integrität",
+            "parts": [
+              {
+                "id": "B1-22-IG_stmt",
+                "name": "statement",
+                "prose": "Maßnahmen zur Erkennung, Behebung und Abmilderung von Integritätsverletzungen sind etabliert."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.22; C1.3; D1.2"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 33, 34"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-VT",
+        "title": "Vertraulichkeit (Vt)",
+        "controls": [
+          {
+            "id": "B1-7",
+            "title": "Vertraulichkeit",
+            "parts": [
+              {
+                "id": "B1-7_stmt",
+                "name": "statement",
+                "prose": "Unbefugte Kenntnisnahme und Nutzung personenbezogener Daten wird verhindert (z. B. Berechtigungen, Verschlüsselung, sichere Authentifizierung, organisatorische Maßnahmen)."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.7; C1.4; D1.3"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 5(1)(f), 28(3)(b), 29, 32(1)(b)(4), 38(5)"
+              }
+            ]
+          },
+          {
+            "id": "B1-19-VT",
+            "title": "Belastbarkeit – Vertraulichkeit",
+            "parts": [
+              {
+                "id": "B1-19-VT_stmt",
+                "name": "statement",
+                "prose": "Vertraulichkeit bleibt auch unter Last und bei Störungen gewahrt."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.19; C1.4; D1.3"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 32(1)(b)"
+              }
+            ]
+          },
+          {
+            "id": "B1-22-VT",
+            "title": "Behebung/Abmilderung – Vertraulichkeit",
+            "parts": [
+              {
+                "id": "B1-22-VT_stmt",
+                "name": "statement",
+                "prose": "Es bestehen Verfahren zur Behandlung von Datenschutzverletzungen mit Auswirkungen auf die Vertraulichkeit (z. B. Melden/Benachrichtigen)."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.22; C1.4; D1.3"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 33, 34"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-IV",
+        "title": "Intervenierbarkeit (Iv)",
+        "controls": [
+          {
+            "id": "B1-9",
+            "title": "Identifizierung und Authentifizierung",
+            "parts": [
+              {
+                "id": "B1-9_stmt",
+                "name": "statement",
+                "prose": "Verfahren zur sicheren Identifizierung und Authentifizierung bei Auskunftsersuchen und Interaktionen mit Betroffenen sind festgelegt."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.9; C1.7; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 12(6)"
+              }
+            ]
+          },
+          {
+            "id": "B1-10",
+            "title": "Unterstützung bei der Wahrnehmung von Betroffenenrechten",
+            "parts": [
+              {
+                "id": "B1-10_stmt",
+                "name": "statement",
+                "prose": "Prozesse und Schnittstellen zur Ausübung der Rechte nach Art. 15–22 DS-GVO (z. B. SPoC, Portale, APIs) sind implementiert."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.10; C1.7; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 12(2)"
+              }
+            ]
+          },
+          {
+            "id": "B1-11",
+            "title": "Berichtigungsmöglichkeit von Daten",
+            "parts": [
+              {
+                "id": "B1-11_stmt",
+                "name": "statement",
+                "prose": "Es bestehen operative Möglichkeiten zur unverzüglichen Berichtigung personenbezogener Daten."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.11; C1.7; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 16"
+              }
+            ]
+          },
+          {
+            "id": "B1-12",
+            "title": "Löschbarkeit von Daten",
+            "parts": [
+              {
+                "id": "B1-12_stmt",
+                "name": "statement",
+                "prose": "Es bestehen operative Möglichkeiten zur unverzüglichen Löschung personenbezogener Daten; Ergebnis ist die Nichtverarbeitbarkeit."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.12; C1.7; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 17"
+              }
+            ]
+          },
+          {
+            "id": "B1-13",
+            "title": "Einschränkbarkeit der Verarbeitung",
+            "parts": [
+              {
+                "id": "B1-13_stmt",
+                "name": "statement",
+                "prose": "Markierungs- und Steuerungsmechanismen zur Einschränkung der Verarbeitung werden bereitgestellt."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.13; C1.7; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 18"
+              }
+            ]
+          },
+          {
+            "id": "B1-14",
+            "title": "Datenübertragbarkeit",
+            "parts": [
+              {
+                "id": "B1-14_stmt",
+                "name": "statement",
+                "prose": "Bereitstellung strukturierter, gängiger und maschinenlesbarer Datenformate; interoperable Exporte."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.14; C1.7; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 20"
+              }
+            ]
+          },
+          {
+            "id": "B1-15",
+            "title": "Eingriffsmöglichkeit in Prozesse automatisierter Entscheidungen",
+            "parts": [
+              {
+                "id": "B1-15_stmt",
+                "name": "statement",
+                "prose": "Manuelle Eingriffsmöglichkeiten in automatisierte Einzelentscheidungen sind vorgesehen; Darlegung und Anfechtung werden ermöglicht."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.15; C1.7; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 22(3)"
+              }
+            ]
+          },
+          {
+            "id": "B1-22-IV",
+            "title": "Behebung/Abmilderung – Intervenierbarkeit",
+            "parts": [
+              {
+                "id": "B1-22-IV_stmt",
+                "name": "statement",
+                "prose": "Prozesse zur Benachrichtigung, Reaktion und Unterstützung betroffener Personen bei Datenschutzverletzungen sind etabliert."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B1.22; C1.7; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 33, 34"
+              }
+            ]
+          },
+          {
+            "id": "B3",
+            "title": "Umsetzung aufsichtsbehördlicher Anordnungen",
+            "parts": [
+              {
+                "id": "B3_stmt",
+                "name": "statement",
+                "prose": "Die Verarbeitung kann qualitativ/quantitativ beschränkt und Übermittlungen in Drittländer ausgesetzt werden."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B3; C1.7; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 58(2)(f)(j)"
+              }
+            ]
+          },
+          {
+            "id": "B2-EM-IV",
+            "title": "Einwilligungsmanagement – Intervenierbarkeit",
+            "parts": [
+              {
+                "id": "B2-EM-IV_stmt",
+                "name": "statement",
+                "prose": "Differenzierte Einwilligungs-, Widerrufs- und Widerspruchsoptionen; Nachweise und einfache Widerrufbarkeit."
+              }
+            ],
+            "props": [
+              {
+                "name": "source",
+                "value": "SDM v3.1a B2; D1.6"
+              },
+              {
+                "name": "legal",
+                "value": "GDPR Art. 4(11), 7, 8"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

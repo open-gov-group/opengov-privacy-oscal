@@ -1,0 +1,363 @@
+{
+  "catalog": {
+    "uuid": "7ca53cd6-1e13-4d18-a8b1-cc70361fb305",
+    "metadata": {
+      "title": "SDM als OSCAL Catalog (Vollständiger Minimal-Katalog)",
+      "last-modified": "2025-10-31T14:02:48Z",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2"
+    },
+    "groups": [
+      {
+        "id": "G-TP",
+        "title": "Transparenz (Tp)",
+        "controls": [
+          {
+            "id": "B1-1",
+            "title": "Transparenz für Betroffene",
+            "parts": [
+              {
+                "id": "B1-1_stmt",
+                "name": "statement",
+                "prose": "Präzise, transparente, verständliche und leicht zugängliche Informationen; Auskunfts- und Benachrichtigungspflichten nach Art. 12–15, 34 DSGVO."
+              }
+            ]
+          },
+          {
+            "id": "B1-8",
+            "title": "Rechenschafts- und Nachweisfähigkeit",
+            "parts": [
+              {
+                "id": "B1-8_stmt",
+                "name": "statement",
+                "prose": "Nachweise zur Einhaltung der Grundsätze der Verarbeitung (z. B. VVT, Protokolle, DSFA, Dokumentation)."
+              }
+            ]
+          },
+          {
+            "id": "B1-23",
+            "title": "Angemessene Überwachung der Verarbeitung",
+            "parts": [
+              {
+                "id": "B1-23_stmt",
+                "name": "statement",
+                "prose": "Protokollierungs- und Auswertungskonzepte zur Feststellung von Datenschutzverletzungen sowie zur Überwachung der Verarbeitung."
+              }
+            ]
+          },
+          {
+            "id": "B2-EM",
+            "title": "Einwilligungsmanagement – Transparenzaspekte",
+            "parts": [
+              {
+                "id": "B2-EM_stmt",
+                "name": "statement",
+                "prose": "Einwilligungen sind informiert, dokumentiert, widerrufbar und nachweisbar gestaltet."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-NN",
+        "title": "Nichtverkettung (Nn)",
+        "controls": [
+          {
+            "id": "B1-2",
+            "title": "Zweckbindung",
+            "parts": [
+              {
+                "id": "B1-2_stmt",
+                "name": "statement",
+                "prose": "Daten werden zweckgebunden verarbeitet; Weiterverarbeitung nur bei Kompatibilität oder gesetzlicher Grundlage; technische/organisatorische Zwecktrennung."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-DM",
+        "title": "Datenminimierung (Dm)",
+        "controls": [
+          {
+            "id": "B1-3",
+            "title": "Datenminimierung",
+            "parts": [
+              {
+                "id": "B1-3_stmt",
+                "name": "statement",
+                "prose": "Daten sind dem Zweck angemessen, erheblich und auf das notwendige Maß begrenzt (Art. 5(1)(c) DSGVO)."
+              }
+            ]
+          },
+          {
+            "id": "B1-5",
+            "title": "Speicherbegrenzung",
+            "parts": [
+              {
+                "id": "B1-5_stmt",
+                "name": "statement",
+                "prose": "Identifizierende Daten werden nur so lange gespeichert, wie erforderlich; es existiert ein Löschkonzept inkl. Pseudonymisierung/Anonymisierung."
+              }
+            ]
+          },
+          {
+            "id": "B1-17",
+            "title": "Datenschutz durch Voreinstellungen (Default)",
+            "parts": [
+              {
+                "id": "B1-17_stmt",
+                "name": "statement",
+                "prose": "Voreinstellungen stellen sicher, dass nur erforderliche Daten verarbeitet, aufbewahrt und zugänglich gemacht werden."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-VF",
+        "title": "Verfügbarkeit (Vf)",
+        "controls": [
+          {
+            "id": "B1-18",
+            "title": "Verfügbarkeit",
+            "parts": [
+              {
+                "id": "B1-18_stmt",
+                "name": "statement",
+                "prose": "Berechtigte haben rechtzeitig Zugriff auf Daten und Systeme; Daten sind auffindbar, darstellbar und betriebsbereit."
+              }
+            ]
+          },
+          {
+            "id": "B1-19",
+            "title": "Belastbarkeit",
+            "parts": [
+              {
+                "id": "B1-19_stmt",
+                "name": "statement",
+                "prose": "Systeme und Dienste sind widerstandsfähig; Schutz personenbezogener Daten bleibt unter Last gewahrt."
+              }
+            ]
+          },
+          {
+            "id": "B1-20",
+            "title": "Wiederherstellbarkeit",
+            "parts": [
+              {
+                "id": "B1-20_stmt",
+                "name": "statement",
+                "prose": "Fähigkeit zur raschen Wiederherstellung der Verfügbarkeit und des Zugriffs bei Zwischenfällen; Notfallplanung."
+              }
+            ]
+          },
+          {
+            "id": "B1-22-VF",
+            "title": "Behebung/Abmilderung – Verfügbarkeit",
+            "parts": [
+              {
+                "id": "B1-22-VF_stmt",
+                "name": "statement",
+                "prose": "Verfahren zur Behandlung von Datenschutzverletzungen mit Auswirkungen auf die Verfügbarkeit, inkl. Ursachenanalyse und Abmilderung."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-IG",
+        "title": "Integrität (Ig)",
+        "controls": [
+          {
+            "id": "B1-4",
+            "title": "Richtigkeit",
+            "parts": [
+              {
+                "id": "B1-4_stmt",
+                "name": "statement",
+                "prose": "Verfahren zur Sicherstellung sachlicher Richtigkeit und Aktualität; unrichtige Daten werden berichtigt oder gelöscht."
+              }
+            ]
+          },
+          {
+            "id": "B1-6",
+            "title": "Integrität",
+            "parts": [
+              {
+                "id": "B1-6_stmt",
+                "name": "statement",
+                "prose": "Schutz gegen unbeabsichtigten Verlust, Zerstörung oder Veränderung; Änderungen sind nachvollziehbar."
+              }
+            ]
+          },
+          {
+            "id": "B1-16",
+            "title": "Fehler- und Diskriminierungsfreiheit beim Profiling",
+            "parts": [
+              {
+                "id": "B1-16_stmt",
+                "name": "statement",
+                "prose": "Maßnahmen minimieren Fehler und verhindern diskriminierende Entscheidungen; Validierung von Faktoren/Modellen."
+              }
+            ]
+          },
+          {
+            "id": "B1-22-IG",
+            "title": "Behebung/Abmilderung – Integrität",
+            "parts": [
+              {
+                "id": "B1-22-IG_stmt",
+                "name": "statement",
+                "prose": "Verfahren zur Erkennung, Behebung und Abmilderung von Integritätsverletzungen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-VT",
+        "title": "Vertraulichkeit (Vt)",
+        "controls": [
+          {
+            "id": "B1-7",
+            "title": "Vertraulichkeit",
+            "parts": [
+              {
+                "id": "B1-7_stmt",
+                "name": "statement",
+                "prose": "Unbefugte Kenntnisnahme und Nutzung personenbezogener Daten wird verhindert (z. B. Berechtigungen, Verschlüsselung, Authentifizierung)."
+              }
+            ]
+          },
+          {
+            "id": "B1-19-VT",
+            "title": "Belastbarkeit – Vertraulichkeit",
+            "parts": [
+              {
+                "id": "B1-19-VT_stmt",
+                "name": "statement",
+                "prose": "Vertraulichkeit bleibt auch unter Last und bei Störungen gewahrt."
+              }
+            ]
+          },
+          {
+            "id": "B1-22-VT",
+            "title": "Behebung/Abmilderung – Vertraulichkeit",
+            "parts": [
+              {
+                "id": "B1-22-VT_stmt",
+                "name": "statement",
+                "prose": "Verfahren zur Behandlung von Datenschutzverletzungen mit Auswirkungen auf die Vertraulichkeit (Melden/Benachrichtigen)."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "G-IV",
+        "title": "Intervenierbarkeit (Iv)",
+        "controls": [
+          {
+            "id": "B1-9",
+            "title": "Identifizierung und Authentifizierung",
+            "parts": [
+              {
+                "id": "B1-9_stmt",
+                "name": "statement",
+                "prose": "Sichere Identifizierung und Authentifizierung bei Auskunftsersuchen und Interaktionen mit Betroffenen."
+              }
+            ]
+          },
+          {
+            "id": "B1-10",
+            "title": "Unterstützung bei der Wahrnehmung von Betroffenenrechten",
+            "parts": [
+              {
+                "id": "B1-10_stmt",
+                "name": "statement",
+                "prose": "Prozesse/Schnittstellen zur Ausübung der Rechte nach Art. 15–22 DSGVO (SPoC, Portale, APIs)."
+              }
+            ]
+          },
+          {
+            "id": "B1-11",
+            "title": "Berichtigungsmöglichkeit von Daten",
+            "parts": [
+              {
+                "id": "B1-11_stmt",
+                "name": "statement",
+                "prose": "Operative Möglichkeiten zur unverzüglichen Berichtigung personenbezogener Daten."
+              }
+            ]
+          },
+          {
+            "id": "B1-12",
+            "title": "Löschbarkeit von Daten",
+            "parts": [
+              {
+                "id": "B1-12_stmt",
+                "name": "statement",
+                "prose": "Operative Möglichkeiten zur unverzüglichen Löschung personenbezogener Daten; Ergebnis: Nichtverarbeitbarkeit."
+              }
+            ]
+          },
+          {
+            "id": "B1-13",
+            "title": "Einschränkbarkeit der Verarbeitung",
+            "parts": [
+              {
+                "id": "B1-13_stmt",
+                "name": "statement",
+                "prose": "Markierungs- und Steuerungsmechanismen zur Einschränkung der Verarbeitung."
+              }
+            ]
+          },
+          {
+            "id": "B1-14",
+            "title": "Datenübertragbarkeit",
+            "parts": [
+              {
+                "id": "B1-14_stmt",
+                "name": "statement",
+                "prose": "Bereitstellung strukturierter, gängiger und maschinenlesbarer Formate; interoperable Exporte."
+              }
+            ]
+          },
+          {
+            "id": "B1-15",
+            "title": "Eingriffsmöglichkeit in Prozesse automatisierter Entscheidungen",
+            "parts": [
+              {
+                "id": "B1-15_stmt",
+                "name": "statement",
+                "prose": "Manuelle Eingriffsmöglichkeiten in automatisierte Einzelentscheidungen; Darlegung und Anfechtung möglich."
+              }
+            ]
+          },
+          {
+            "id": "B1-22-IV",
+            "title": "Behebung/Abmilderung – Intervenierbarkeit",
+            "parts": [
+              {
+                "id": "B1-22-IV_stmt",
+                "name": "statement",
+                "prose": "Benachrichtigungs-, Reaktions- und Unterstützungsprozesse bei Datenschutzverletzungen."
+              }
+            ]
+          },
+          {
+            "id": "B3",
+            "title": "Umsetzung aufsichtsbehördlicher Anordnungen",
+            "parts": [
+              {
+                "id": "B3_stmt",
+                "name": "statement",
+                "prose": "Verarbeitung kann beschränkt und Übermittlungen ausgesetzt werden; Umsetzung behördlicher Anordnungen."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
