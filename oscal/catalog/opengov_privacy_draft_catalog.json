@@ -261,9 +261,6 @@
           }
         ]
       },
-
-      /* --- AB HIER: DETAILLIERTE SDM-BAUSTEIN-KONTROLLEN --- */
-
       {
         "id": "sdm-planen-spezifizieren",
         "title": "SDM-Baustein: Planen und Spezifizieren",
