@@ -1,0 +1,800 @@
+{
+  "catalog": {
+    "uuid": "11111111-2222-3333-4444-555555555555",
+    "metadata": {
+      "title": "Datenschutz-OSCAL-Katalog (SDM / CNIL PIA / ISO 27701:2025 / BSI Stand-der-Technik)",
+      "last-modified": "2025-11-26T00:00:00Z",
+      "version": "0.2.0-sdm-detail",
+      "oscal-version": "1.1.0",
+      "roles": [
+        {
+          "id": "creator",
+          "title": "Catalog Author"
+        },
+        {
+          "id": "privacy-officer",
+          "title": "Data Protection Officer"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee",
+          "type": "organization",
+          "name": "Open Gov Group – Privacy",
+          "roles": [
+            {
+              "role-id": "creator"
+            }
+          ]
+        }
+      ]
+    },
+
+    "groups": [
+      {
+        "id": "dsp-gov",
+        "title": "Datenschutz-Governance und Management",
+        "controls": [
+          {
+            "id": "dsp-gov-01",
+            "class": "management",
+            "title": "Datenschutz-Governance und Verantwortlichkeiten etablieren",
+            "props": [
+              { "name": "family", "value": "governance" },
+              { "name": "sdm-reference", "value": "SDM-V2.0b_Planen_Spezifizieren_V1.0" },
+              { "name": "gdpr-reference", "value": "Art.5, Art.24, Art.25, Art.30 DS-GVO" },
+              { "name": "iso-27701-2025", "value": "PIMS governance, roles & responsibilities" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-gov-01-statement",
+                "name": "statement",
+                "prose": "Die Organisation richtet ein dokumentiertes Datenschutz-Managementsystem (PIMS) ein, benennt Verantwortlichkeiten (einschließlich Datenschutzbeauftragtem) und stellt sicher, dass für alle Verarbeitungstätigkeiten Zuständigkeiten, Entscheidungswege und Kontrollmechanismen definiert und dokumentiert sind."
+              }
+            ]
+          },
+          {
+            "id": "dsp-gov-02",
+            "class": "management",
+            "title": "Verarbeitungstätigkeiten planen, spezifizieren und bewerten (DSFA/PIA)",
+            "props": [
+              { "name": "family", "value": "planning" },
+              { "name": "sdm-reference", "value": "SDM-V2.0b_Planen_Spezifizieren_V1.0" },
+              { "name": "gdpr-reference", "value": "Art.5, Art.25, Art.35 DS-GVO" },
+              { "name": "cnil-pia", "value": "CNIL PIA methodology – steps 1–4" },
+              { "name": "iso-27701-2025", "value": "risk assessment & treatment in the PIMS" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-gov-02-statement",
+                "name": "statement",
+                "prose": "Vor Einführung oder wesentlicher Änderung einer Verarbeitungstätigkeit erstellt die Organisation eine formale Spezifikation der Verarbeitung und führt eine Datenschutz-Folgenabschätzung bzw. PIA nach anerkanntem Verfahren durch, sofern ein voraussichtlich hohes Risiko besteht."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "dsp-lifecycle",
+        "title": "Lebenszyklus personenbezogener Daten und Betroffenenrechte",
+        "controls": [
+          {
+            "id": "dsp-lifecycle-01",
+            "class": "technical",
+            "title": "Datenminimierung und Trennung von Verarbeitungen",
+            "props": [
+              { "name": "family", "value": "data-lifecycle" },
+              { "name": "sdm-reference", "value": "SDM-V2.0_Trennen_V1.0" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.1 lit b, c DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-lifecycle-01-statement",
+                "name": "statement",
+                "prose": "Verarbeitungstätigkeiten werden zweckgebunden konzipiert und fachlich wie technisch voneinander getrennt, sodass nur die erforderlichen personenbezogenen Daten verarbeitet und nicht unzulässig zusammengeführt werden."
+              }
+            ]
+          },
+          {
+            "id": "dsp-lifecycle-02",
+            "class": "technical",
+            "title": "Speicherbegrenzung, Löschen und Vernichten",
+            "props": [
+              { "name": "family", "value": "data-lifecycle" },
+              { "name": "sdm-reference", "value": "SDM-V2.0_Löschen_und_Vernichten_V1.0a" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.1 lit e, Art.17 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-lifecycle-02-statement",
+                "name": "statement",
+                "prose": "Für alle Datenkategorien sind Speicherfristen festgelegt und technisch umgesetzt. Personenbezogene Daten werden nach Wegfall des Zwecks oder Ablauf der Frist inklusive relevanter Kopien und Sicherungen gelöscht oder vernichtet."
+              }
+            ]
+          },
+          {
+            "id": "dsp-lifecycle-03",
+            "class": "management",
+            "title": "Berichtigung und Einschränkung der Verarbeitung",
+            "props": [
+              { "name": "family", "value": "data-subject-rights" },
+              { "name": "sdm-reference", "value": "SDM-V2.0_Berichtigen_V1.0; SDM-V2.0_Einschränken_V1.0" },
+              { "name": "gdpr-reference", "value": "Art.16, Art.18 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-lifecycle-03-statement",
+                "name": "statement",
+                "prose": "Die Organisation stellt Verfahren bereit, mit denen betroffene Personen Berichtigung, Ergänzung oder Einschränkung der Verarbeitung ihrer Daten beantragen können. Systeme unterstützen die Kennzeichnung und Sperrung einschlägig betroffener Datensätze."
+              }
+            ]
+          },
+          {
+            "id": "dsp-lifecycle-04",
+            "class": "technical",
+            "title": "Protokollierung und Aufbewahrung von Protokolldaten",
+            "props": [
+              { "name": "family", "value": "transparency" },
+              { "name": "sdm-reference", "value": "SDM-V2.0_Protokollieren_V1.0a; SDM-V2.0_Aufbewahren_V1.0" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.2, Art.24, Art.32 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-lifecycle-04-statement",
+                "name": "statement",
+                "prose": "Datenschutz- und sicherheitsrelevante Aktivitäten werden protokolliert. Für Protokolldaten sind Zwecke, Aufbewahrungsfristen und Zugriffsbeschränkungen definiert."
+              }
+            ]
+          },
+          {
+            "id": "dsp-lifecycle-05",
+            "class": "technical",
+            "title": "Zugriffe auf Daten, Systeme und Prozesse regeln",
+            "props": [
+              { "name": "family", "value": "access-control" },
+              { "name": "sdm-reference", "value": "SDM-V2.0b_Zugriffe_regeln_V1.0" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.1 lit f, Art.32 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-lifecycle-05-statement",
+                "name": "statement",
+                "prose": "Ein Rollen- und Berechtigungskonzept sorgt dafür, dass nur autorisierte Personen und Systeme Zugriff auf personenbezogene Daten erhalten."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "dsp-security",
+        "title": "Technische und organisatorische Maßnahmen nach Stand der Technik",
+        "controls": [
+          {
+            "id": "dsp-security-01",
+            "class": "technical",
+            "title": "Ausrichtung an der BSI-Stand-der-Technik-Bibliothek",
+            "props": [
+              { "name": "family", "value": "security" },
+              { "name": "reference", "value": "BSI Stand-der-Technik-Bibliothek (Grundschutz++)" },
+              { "name": "source", "value": "https://github.com/BSI-Bund/Stand-der-Technik-Bibliothek" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-security-01-statement",
+                "name": "statement",
+                "prose": "TOMs zum Schutz personenbezogener Daten werden so ausgewählt und umgesetzt, dass sie mindestens den abstrakten Anforderungen des BSI-Grundschutz++ bzw. der Stand-der-Technik-Bibliothek entsprechen oder diese übertreffen."
+              }
+            ]
+          },
+          {
+            "id": "dsp-security-02",
+            "class": "technical",
+            "title": "Kryptographie und Pseudonymisierung",
+            "props": [
+              { "name": "family", "value": "security" },
+              { "name": "gdpr-reference", "value": "Art.32 Abs.1 lit a DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-security-02-statement",
+                "name": "statement",
+                "prose": "Sensible personenbezogene Daten werden bei Speicherung und Übertragung durch aktuelle kryptographische Verfahren geschützt. Wo möglich werden Pseudonymisierungsverfahren eingesetzt."
+              }
+            ]
+          },
+          {
+            "id": "dsp-security-03",
+            "class": "management",
+            "title": "Steuerung von Auftragsverarbeitern und gemeinsamen Verantwortlichen",
+            "props": [
+              { "name": "family", "value": "third-parties" },
+              { "name": "gdpr-reference", "value": "Art.26, Art.28 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-security-03-statement",
+                "name": "statement",
+                "prose": "Für alle Auftragsverarbeitungen und gemeinsamen Verantwortlichkeiten existieren schriftliche Vereinbarungen mit klar definierten Datenschutzpflichten und TOMs."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "dsp-bcm",
+        "title": "Datenschutz und Business Continuity / Resilienz",
+        "controls": [
+          {
+            "id": "dsp-bcm-01",
+            "class": "management",
+            "title": "Integration von Datenschutz in BCM und Krisenmanagement",
+            "props": [
+              { "name": "family", "value": "bcm" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.1 lit f, Art.32 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-bcm-01-statement",
+                "name": "statement",
+                "prose": "BCM und Krisenmanagement berücksichtigen Datenschutzanforderungen, Wiederanlauf, Notbetrieb, Kommunikationspflichten und Dokumentation der Entscheidungen."
+              }
+            ]
+          },
+          {
+            "id": "dsp-bcm-02",
+            "class": "management",
+            "title": "Meldung und Behandlung von Datenschutzverletzungen",
+            "props": [
+              { "name": "family", "value": "incident-management" },
+              { "name": "gdpr-reference", "value": "Art.33, Art.34 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "dsp-bcm-02-statement",
+                "name": "statement",
+                "prose": "Es bestehen klar dokumentierte Prozesse zur Erkennung, Bewertung, Meldung und Behandlung von Verletzungen des Schutzes personenbezogener Daten."
+              }
+            ]
+          }
+        ]
+      },
+
+      /* --- AB HIER: DETAILLIERTE SDM-BAUSTEIN-KONTROLLEN --- */
+
+      {
+        "id": "sdm-planen-spezifizieren",
+        "title": "SDM-Baustein: Planen und Spezifizieren",
+        "controls": [
+          {
+            "id": "sdm-ps-lvl1",
+            "class": "management",
+            "title": "PS-1 – Grundsätzliche Planung der Verarbeitungstätigkeit",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0b_Planen_Spezifizieren_V1.0" },
+              { "name": "sdm-measure-id", "value": "PS-1" },
+              { "name": "gdpr-reference", "value": "Art.5, Art.24 DS-GVO" },
+              { "name": "bsi-stand-der-technik-hint", "value": "Ausrichtung auf Grundschutz++-Katalog, Prozess- und Informationsbezug" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-ps-lvl1-statement",
+                "name": "statement",
+                "prose": "Für jede Verarbeitungstätigkeit liegt eine schriftliche Beschreibung der Zwecke, Kategorien personenbezogener Daten, betroffenen Personen, beteiligten Systeme, Empfänger, Rechtsgrundlagen und geplanten TOMs vor."
+              }
+            ]
+          },
+          {
+            "id": "sdm-ps-lvl2",
+            "class": "management",
+            "title": "PS-2 – Datenschutz by Design und by Default",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0b_Planen_Spezifizieren_V1.0" },
+              { "name": "sdm-measure-id", "value": "PS-2" },
+              { "name": "gdpr-reference", "value": "Art.25 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-ps-lvl2-statement",
+                "name": "statement",
+                "prose": "Fachkonzepte und technische Spezifikationen enthalten Vorgaben zur Datenminimierung, Speicherbegrenzung, Zugriffsbeschränkung, Pseudonymisierung/Verschlüsselung und Protokollierung."
+              }
+            ]
+          },
+          {
+            "id": "sdm-ps-lvl3",
+            "class": "management",
+            "title": "PS-3 – Risikobasierte Bewertung (DSFA/PIA)",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0b_Planen_Spezifizieren_V1.0" },
+              { "name": "sdm-measure-id", "value": "PS-3" },
+              { "name": "gdpr-reference", "value": "Art.35 DS-GVO" },
+              { "name": "cnil-pia", "value": "Risikoscoring, Maßnahmenplan, Rest-Risiko" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-ps-lvl3-statement",
+                "name": "statement",
+                "prose": "Für verarbeitungen mit erhöhtem Risiko wird eine Datenschutz-Folgenabschätzung/PIA mit systematischer Risikobewertung, Maßnahmenkatalog und Dokumentation der Rest-Risiken durchgeführt."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "sdm-dokumentieren",
+        "title": "SDM-Baustein: Dokumentieren",
+        "controls": [
+          {
+            "id": "sdm-dok-1",
+            "class": "management",
+            "title": "DOK-1 – Verzeichnis von Verarbeitungstätigkeiten (RoPA)",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Dokumentieren_V1.0a" },
+              { "name": "sdm-measure-id", "value": "DOK-1" },
+              { "name": "gdpr-reference", "value": "Art.30 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-dok-1-statement",
+                "name": "statement",
+                "prose": "Ein vollständiges und aktuelles Verzeichnis der Verarbeitungstätigkeiten liegt vor und enthält mindestens die in Art.30 DS-GVO geforderten Angaben."
+              }
+            ]
+          },
+          {
+            "id": "sdm-dok-2",
+            "class": "management",
+            "title": "DOK-2 – Technische Dokumentation der TOMs",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Dokumentieren_V1.0a" },
+              { "name": "sdm-measure-id", "value": "DOK-2" },
+              { "name": "gdpr-reference", "value": "Art.24, Art.32 DS-GVO" },
+              { "name": "bsi-stand-der-technik-hint", "value": "Verweis auf Grundschutz++-TOMs und deren Umsetzung" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-dok-2-statement",
+                "name": "statement",
+                "prose": "Die umgesetzten technischen und organisatorischen Maßnahmen (TOMs) werden nachvollziehbar dokumentiert, inklusive Verantwortlichkeiten, Geltungsbereich und Prüffrequenz."
+              }
+            ]
+          },
+          {
+            "id": "sdm-dok-3",
+            "class": "management",
+            "title": "DOK-3 – Nachweisführung und Prüfprotokolle",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Dokumentieren_V1.0a" },
+              { "name": "sdm-measure-id", "value": "DOK-3" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.2 DS-GVO (Rechenschaftspflicht)" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-dok-3-statement",
+                "name": "statement",
+                "prose": "Regelmäßige Prüfungen der TOMs sowie DSFA/PIA-Reviews werden protokolliert; Ergebnisse, Beschlüsse und Maßnahmen werden versioniert aufbewahrt."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "sdm-protokollieren",
+        "title": "SDM-Baustein: Protokollieren",
+        "controls": [
+          {
+            "id": "sdm-pro-1",
+            "class": "technical",
+            "title": "PRO-1 – Ereigniskatalog und Protokollierungsumfang",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Protokollieren_V1.0a" },
+              { "name": "sdm-measure-id", "value": "PRO-1" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.2, Art.24 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-pro-1-statement",
+                "name": "statement",
+                "prose": "Es existiert ein definierter Katalog protokollierungspflichtiger Ereignisse (z. B. Anmeldungen, Rollenänderungen, Datenzugriffe, Exporte, Konfigurationsänderungen) inklusive Mindestinhalten."
+              }
+            ]
+          },
+          {
+            "id": "sdm-pro-2",
+            "class": "technical",
+            "title": "PRO-2 – Schutz, Integrität und Zugriff auf Protokolle",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Protokollieren_V1.0a" },
+              { "name": "sdm-measure-id", "value": "PRO-2" },
+              { "name": "gdpr-reference", "value": "Art.32 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-pro-2-statement",
+                "name": "statement",
+                "prose": "Protokolldaten werden vor unbefugtem Zugriff und Manipulation geschützt, versioniert oder unveränderbar gespeichert und nur einem eingeschränkten Personenkreis zugänglich gemacht."
+              }
+            ]
+          },
+          {
+            "id": "sdm-pro-3",
+            "class": "management",
+            "title": "PRO-3 – Auswertung und Löschfristen von Protokollen",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Protokollieren_V1.0a" },
+              { "name": "sdm-measure-id", "value": "PRO-3" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.1 lit e, Art.32 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-pro-3-statement",
+                "name": "statement",
+                "prose": "Es gibt definierte Löschfristen für Protokolle, abgestimmt auf Sicherheitsanforderungen und Datenschutz. Die Auswertung erfolgt zweckgebunden (z. B. Incident Response, Revision) und wird dokumentiert."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "sdm-loeschen-vernichten",
+        "title": "SDM-Baustein: Löschen und Vernichten",
+        "controls": [
+          {
+            "id": "sdm-loe-1",
+            "class": "management",
+            "title": "LÖ-1 – Löschkonzept und Verantwortlichkeiten",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Löschen_und_Vernichten_V1.0a" },
+              { "name": "sdm-measure-id", "value": "LÖ-1" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.1 lit e, Art.17 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-loe-1-statement",
+                "name": "statement",
+                "prose": "Es liegt ein dokumentiertes Löschkonzept vor, das Datenkategorien, Speicherorte, Fristen, Verantwortlichkeiten und Lösch-/Vernichtungsprozesse beschreibt."
+              }
+            ]
+          },
+          {
+            "id": "sdm-loe-2",
+            "class": "technical",
+            "title": "LÖ-2 – Technische Lösch- und Sperrmechanismen",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Löschen_und_Vernichten_V1.0a" },
+              { "name": "sdm-measure-id", "value": "LÖ-2" },
+              { "name": "gdpr-reference", "value": "Art.25, Art.32 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-loe-2-statement",
+                "name": "statement",
+                "prose": "Fachanwendungen, Datenbanken und Filesysteme verfügen über Funktionen, um Datensätze regelkonform zu löschen oder – falls rechtlich geboten – zu sperren und als solche zu kennzeichnen."
+              }
+            ]
+          },
+          {
+            "id": "sdm-loe-3",
+            "class": "technical",
+            "title": "LÖ-3 – Löschung in Backups, Test- und Schattenumgebungen",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Löschen_und_Vernichten_V1.0a" },
+              { "name": "sdm-measure-id", "value": "LÖ-3" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.1 lit e DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-loe-3-statement",
+                "name": "statement",
+                "prose": "Der Umgang mit personenbezogenen Daten in Sicherungen, Test- und Schattenumgebungen ist geregelt; es besteht ein Verfahren, wie Löschungen in produktiven Systemen in Backups berücksichtigt werden."
+              }
+            ]
+          },
+          {
+            "id": "sdm-loe-4",
+            "class": "technical",
+            "title": "LÖ-4 – Vernichtung physischer Datenträger",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Löschen_und_Vernichten_V1.0a" },
+              { "name": "sdm-measure-id", "value": "LÖ-4" },
+              { "name": "gdpr-reference", "value": "Art.32 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-loe-4-statement",
+                "name": "statement",
+                "prose": "Datenträger mit personenbezogenen Daten werden nach definierten Verfahren (z. B. Schreddern, zertifizierte Entsorger) vernichtet; der Prozess ist dokumentiert und stichprobenartig überprüfbar."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "sdm-einschraenken",
+        "title": "SDM-Baustein: Einschränken der Verarbeitung",
+        "controls": [
+          {
+            "id": "sdm-eins-1",
+            "class": "technical",
+            "title": "EINS-1 – Technische Funktionssperre und Kennzeichnung",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Einschränken_V1.0" },
+              { "name": "sdm-measure-id", "value": "EINS-1" },
+              { "name": "gdpr-reference", "value": "Art.18 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-eins-1-statement",
+                "name": "statement",
+                "prose": "Systeme unterstützen die Kennzeichnung von Datensätzen mit dem Status 'Einschränkung der Verarbeitung' und verhindern deren Verwertung in regulären Verarbeitungsschritten."
+              }
+            ]
+          },
+          {
+            "id": "sdm-eins-2",
+            "class": "management",
+            "title": "EINS-2 – Prozessintegration und Kommunikation",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Einschränken_V1.0" },
+              { "name": "sdm-measure-id", "value": "EINS-2" },
+              { "name": "gdpr-reference", "value": "Art.18, Art.19 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-eins-2-statement",
+                "name": "statement",
+                "prose": "Fachprozesse regeln, wie Anträge auf Einschränkung entgegengenommen, geprüft, entschieden und an alle betroffenen Systeme/Verantwortliche kommuniziert werden."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "sdm-trennen",
+        "title": "SDM-Baustein: Trennen",
+        "controls": [
+          {
+            "id": "sdm-tren-1",
+            "class": "technical",
+            "title": "TREN-1 – Zweck- und Verfahrensbezogene Datentrennung",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Trennen_V1.0" },
+              { "name": "sdm-measure-id", "value": "TREN-1" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.1 lit b, c DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-tren-1-statement",
+                "name": "statement",
+                "prose": "Technische und organisatorische Maßnahmen verhindern unzulässige Vermischungen von Datenbeständen, die unterschiedlichen Zwecken oder Verarbeitungstätigkeiten zugeordnet sind."
+              }
+            ]
+          },
+          {
+            "id": "sdm-tren-2",
+            "class": "technical",
+            "title": "TREN-2 – Mandanten-, Umgebungs- und Rollen-Trennung",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Trennen_V1.0" },
+              { "name": "sdm-measure-id", "value": "TREN-2" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-tren-2-statement",
+                "name": "statement",
+                "prose": "Mandanten, Umgebungen (Entwicklung, Test, Produktion) und Rollen (z. B. Administration vs. Fachsachbearbeitung) sind technisch und organisatorisch klar voneinander getrennt."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "sdm-zugriffe-regeln",
+        "title": "SDM-Baustein: Zugriffe regeln",
+        "controls": [
+          {
+            "id": "sdm-zug-1",
+            "class": "management",
+            "title": "ZUG-1 – Rollen- und Berechtigungskonzept",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0b_Zugriffe_regeln_V1.0" },
+              { "name": "sdm-measure-id", "value": "ZUG-1" },
+              { "name": "gdpr-reference", "value": "Art.32 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-zug-1-statement",
+                "name": "statement",
+                "prose": "Ein dokumentiertes Rollen- und Berechtigungskonzept legt fest, welche Rollen Zugriff auf welche Datenkategorien und Funktionen haben."
+              }
+            ]
+          },
+          {
+            "id": "sdm-zug-2",
+            "class": "management",
+            "title": "ZUG-2 – Benutzer- und Rechteverwaltung, Rezertifizierung",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0b_Zugriffe_regeln_V1.0" },
+              { "name": "sdm-measure-id", "value": "ZUG-2" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-zug-2-statement",
+                "name": "statement",
+                "prose": "Es existieren Verfahren zur Anlage, Änderung und Löschung von Benutzerkonten sowie zur regelmäßigen Überprüfung und Rezertifizierung von Berechtigungen."
+              }
+            ]
+          },
+          {
+            "id": "sdm-zug-3",
+            "class": "technical",
+            "title": "ZUG-3 – Technische Umsetzung von Zugriffskontrollen",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0b_Zugriffe_regeln_V1.0" },
+              { "name": "sdm-measure-id", "value": "ZUG-3" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-zug-3-statement",
+                "name": "statement",
+                "prose": "Systeme implementieren technische Zugriffskontrollen (z. B. RBAC/ABAC, Trennung privilegierter Konten, Sperrmechanismen) entsprechend dem Rollen- und Berechtigungskonzept."
+              }
+            ]
+          },
+          {
+            "id": "sdm-zug-4",
+            "class": "management",
+            "title": "ZUG-4 – Protokollierung und Nachvollziehbarkeit von Zugriffen",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0b_Zugriffe_regeln_V1.0" },
+              { "name": "sdm-measure-id", "value": "ZUG-4" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.2, Art.24 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-zug-4-statement",
+                "name": "statement",
+                "prose": "Zugriffe auf personenbezogene Daten werden so protokolliert, dass unzulässige Zugriffe erkannt, untersucht und nachweisbar adressiert werden können."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "sdm-aufbewahren",
+        "title": "SDM-Baustein: Aufbewahren",
+        "controls": [
+          {
+            "id": "sdm-auf-1",
+            "class": "management",
+            "title": "AUF-1 – Aufbewahrungskonzept und Fristen",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Aufbewahren_V1.0" },
+              { "name": "sdm-measure-id", "value": "AUF-1" },
+              { "name": "gdpr-reference", "value": "Art.5 Abs.1 lit e DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-auf-1-statement",
+                "name": "statement",
+                "prose": "Für alle relevanten Datenkategorien sind rechtlich und fachlich begründete Aufbewahrungsfristen dokumentiert und mit dem Löschkonzept abgestimmt."
+              }
+            ]
+          },
+          {
+            "id": "sdm-auf-2",
+            "class": "technical",
+            "title": "AUF-2 – Archivierung und Trennung von aktiven Daten",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Aufbewahren_V1.0" },
+              { "name": "sdm-measure-id", "value": "AUF-2" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-auf-2-statement",
+                "name": "statement",
+                "prose": "Daten, die nur noch zu Archivierungszwecken aufbewahrt werden, sind von produktiven Datenbeständen organisatorisch und technisch getrennt."
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "id": "sdm-berichtigen",
+        "title": "SDM-Baustein: Berichtigen",
+        "controls": [
+          {
+            "id": "sdm-ber-1",
+            "class": "management",
+            "title": "BER-1 – Verfahren zur Fehlererkennung und -korrektur",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Berichtigen_V1.0" },
+              { "name": "sdm-measure-id", "value": "BER-1" },
+              { "name": "gdpr-reference", "value": "Art.16 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-ber-1-statement",
+                "name": "statement",
+                "prose": "Es existieren Verfahren, um fehlerhafte personenbezogene Daten zu erkennen (z. B. durch Rückmeldungen Betroffener, Prüfprozesse) und zeitnah zu berichtigen oder zu ergänzen."
+              }
+            ]
+          },
+          {
+            "id": "sdm-ber-2",
+            "class": "management",
+            "title": "BER-2 – Kommunikation der Berichtigung an Empfänger",
+            "props": [
+              { "name": "sdm-baustein-id", "value": "SDM-V2.0_Berichtigen_V1.0" },
+              { "name": "sdm-measure-id", "value": "BER-2" },
+              { "name": "gdpr-reference", "value": "Art.19 DS-GVO" }
+            ],
+            "parts": [
+              {
+                "id": "sdm-ber-2-statement",
+                "name": "statement",
+                "prose": "Empfänger, denen personenbezogene Daten offengelegt wurden, werden über Berichtigungen informiert, soweit dies möglich und verhältnismäßig ist."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "bbbbbbbb-1111-2222-3333-cccccccccccc",
+          "title": "DSK Standard-Datenschutzmodell (SDM) – Bausteine",
+          "rlinks": [
+            {
+              "href": "https://www.datenschutzkonferenz-online.de/sdm.html",
+              "media-type": "text/html"
+            }
+          ]
+        },
+        {
+          "uuid": "cccccccc-1111-2222-3333-dddddddddddd",
+          "title": "CNIL – Privacy Impact Assessment (PIA) Methodology",
+          "rlinks": [
+            {
+              "href": "https://www.cnil.fr/sites/default/files/atoms/files/cnil-pia-1-en-methodology.pdf",
+              "media-type": "application/pdf"
+            }
+          ]
+        },
+        {
+          "uuid": "dddddddd-1111-2222-3333-eeeeeeeeeeee",
+          "title": "ISO/IEC 27701:2025 – Privacy Information Management",
+          "rlinks": [
+            {
+              "href": "https://www.iso.org/standard/89486.html",
+              "media-type": "text/html"
+            }
+          ]
+        },
+        {
+          "uuid": "eeeeeeee-1111-2222-3333-ffffffffffff",
+          "title": "BSI – Stand-der-Technik-Bibliothek (Grundschutz++)",
+          "rlinks": [
+            {
+              "href": "https://github.com/BSI-Bund/Stand-der-Technik-Bibliothek",
+              "media-type": "text/html"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
