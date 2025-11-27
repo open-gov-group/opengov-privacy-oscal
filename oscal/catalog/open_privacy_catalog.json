@@ -1862,6 +1862,16 @@
                                 "id": "dpia-01-stmt",
                                 "name": "statement",
                                 "prose": "Für Verarbeitungstätigkeiten mit hohem Risiko führt die Organisation strukturierte Datenschutz-Folgenabschätzungen durch und dokumentiert Ergebnisse und Maßnahmen."
+                            },
+                            {
+                                "id": "dpia-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: DPIAs werden kaum oder nur in Ausnahmefällen durchgeführt; es gibt kein konsistentes Vorgehen und keine Übersicht, für welche Vorhaben eine DPIA erforderlich wäre.\nLevel 3: Für identifizierte Hochrisiko-Verarbeitungen werden DPIAs mit definierten Schritten durchgeführt; Ergebnisse und Maßnahmen werden dokumentiert und Verantwortlichkeiten festgelegt.\nLevel 5: DPIAs sind integraler Bestandteil des Risikomanagements; Erkenntnisse fließen in TOM, Systemdesign, Schulungen und Governance ein; Kennzahlen (z.B. Anzahl, Risikolevel, Maßnahmenumsetzung) werden ausgewertet."
+                            },
+                            {
+                                "id": "dpia-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Werden für alle identifizierten Hochrisiko-Verarbeitungen strukturierte DPIAs durchgeführt und dokumentiert?\n• Werden die in DPIAs definierten Maßnahmen systematisch nachverfolgt und in Risikoregister bzw. Maßnahmenpläne überführt?"
                             }
                         ]
                     },
@@ -1900,6 +1910,16 @@
                                 "id": "dpia-02-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation definiert und dokumentiert Kriterien sowie ein Screening-Verfahren, um zu bestimmen, ob eine geplante Verarbeitungstätigkeit voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen mit sich bringt und somit eine Datenschutz-Folgenabschätzung erfordert."
+                            },
+                            {
+                                "id": "dpia-02-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Ob eine DPIA erforderlich ist, wird fallweise und ohne klare Kriterien entschieden; nationale Listen, Leitlinien und Branchenempfehlungen werden kaum berücksichtigt.\nLevel 3: Es existiert ein dokumentiertes Screening-Verfahren mit Checklisten und Bezug auf nationale/EDPB-Listen; Screening wird für neue/ändernde Vorhaben verbindlich durchgeführt und dokumentiert.\nLevel 5: Screening ist in Projekt-/Change-Prozesse integriert; Ergebnisse werden statistisch ausgewertet; Kriterien werden auf Basis von Aufsichtspraxis, Rechtsprechung und internen Erfahrungen regelmäßig angepasst."
+                            },
+                            {
+                                "id": "dpia-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es dokumentierte Kriterien und Checklisten zur Beurteilung der DPIA-Pflicht unter Berücksichtigung von Art. 35 DSGVO und nationalen Listen?\n• Wird das Screening verbindlich in Projekt- und Änderungsprozessen durchgeführt und nachvollziehbar dokumentiert?"
                             }
                         ],
                         "links": [
@@ -1948,6 +1968,16 @@
                                 "id": "dpia-03-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation verwendet eine dokumentierte Methodik für Datenschutz-Folgenabschätzungen, die mindestens eine Beschreibung der Verarbeitung, eine Bewertung von Notwendigkeit und Verhältnismäßigkeit, eine systematische Analyse der Risiken für die Rechte und Freiheiten sowie die Ableitung und Bewertung geplanter Maßnahmen umfasst."
+                            },
+                            {
+                                "id": "dpia-03-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Inhalte und Struktur von DPIAs variieren stark; wesentliche Elemente gem. Art. 35(7) (z.B. Maßnahmenbewertung) fehlen teilweise oder sind nur oberflächlich dokumentiert.\nLevel 3: Es existieren verbindliche Templates/Tools und eine Methodik (z.B. nach CNIL/EBIOS), die Mindestinhalte und Risikoschritte festlegt; durchgeführte DPIAs orientieren sich erkennbar daran.\nLevel 5: Methodik wird regelmäßig anhand von Praxisfällen, Aufsichtsbewertungen und internen Lessons Learned weiterentwickelt; Verzahnung mit Informationssicherheit, Architektur/Security by Design und Produkt-/Prozessentwicklung ist etabliert."
+                            },
+                            {
+                                "id": "dpia-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Nutzen alle DPIAs eine einheitliche, dokumentierte Methodik mit den Mindestinhalten nach Art. 35(7) DSGVO?\n• Werden die angewendeten Bewertungskriterien und Risikomaßstäbe (z.B. Skalen, Kategorien) dokumentiert und konsistent verwendet?"
                             }
                         ],
                         "links": [
@@ -2000,6 +2030,16 @@
                                 "id": "dpia-04-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation führt ein Register der durchgeführten Datenschutz-Folgenabschätzungen, dokumentiert daraus abgeleitete Maßnahmenpläne, überwacht deren Umsetzung und überprüft die DPIA regelmäßig, insbesondere bei Änderungen der Risiken oder des Verarbeitungsumfangs."
+                            },
+                            {
+                                "id": "dpia-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: DPIAs liegen vereinzelt vor, aber es gibt kein zentrales Register; Maßnahmen und Reviews werden nur lose nachgehalten.\nLevel 3: Es existiert ein zentrales DPIA-Register mit Angaben zu Status, Restrisiko, Maßnahmen und Review-Terminen; Umsetzung und Reviews werden dokumentiert.\nLevel 5: Kennzahlen aus dem Register (z.B. Anzahl Hochrisiko-DPIAs, Rest-Risiken, Umsetzungsstand von Maßnahmen) fließen in Management-Reporting und Programmplanung ein; DPIA-Reviews sind mit Projekt-/Change- und Incident-Prozessen gekoppelt."
+                            },
+                            {
+                                "id": "dpia-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es ein zentrales DPIA-Register mit Angaben zu Status, Restrisiko und Maßnahmen je DPIA?\n• Werden geplante Reviews und Aktualisierungen von DPIAs (z.B. bei wesentlichen Änderungen) terminiert, durchgeführt und dokumentiert?"
                             }
                         ],
                         "links": [
@@ -2044,6 +2084,16 @@
                                 "id": "dpia-05-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation verfügt über ein dokumentiertes Eskalationsverfahren für Datenschutz-Folgenabschätzungen, einschließlich der verpflichtenden Einbindung der oder des Datenschutzbeauftragten sowie der Durchführung einer vorherigen Konsultation der Aufsichtsbehörde, wenn nach Umsetzung der Maßnahmen ein hohes Restrisiko verbleibt."
+                            },
+                            {
+                                "id": "dpia-05-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Es existieren keine klaren Eskalationsregeln; Prior Consultation wird kaum in Betracht gezogen; der DSB wird uneinheitlich eingebunden.\nLevel 3: Verfahren und Kriterien für Eskalation, DSB-Einbindung und ggf. Prior Consultation sind dokumentiert; Rollen, Entscheidungswege und Dokumentationsanforderungen sind definiert.\nLevel 5: Eskalations- und Konsultationspraxis wird regelmäßig mit Lessons Learned, Aufsichtsbehördenfeedback und Rechtsprechung abgeglichen; Musterfälle und Argumentationslinien werden gepflegt."
+                            },
+                            {
+                                "id": "dpia-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es definierte Kriterien, ab wann eine DPIA in ein Eskalationsverfahren (inkl. DSB-Einbindung) überführt wird und wann eine Prior Consultation in Betracht kommt?\n• Werden Entscheidungen gegen bzw. für eine Prior Consultation und die Begründungen nachvollziehbar dokumentiert?"
                             }
                         ],
                         "links": [
@@ -2092,6 +2142,16 @@
                                 "id": "dpia-06-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation verankert DPIA-Screening und gegebenenfalls die Durchführung einer Datenschutz-Folgenabschätzung als feste Schritte in Projekt-, Produktentwicklungs- und Änderungsprozessen und stellt sicher, dass wesentliche Änderungen von Verarbeitungstätigkeiten eine erneute Risikobewertung auslösen."
+                            },
+                            {
+                                "id": "dpia-06-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: DPIA-Aspekte werden in Projekten nur punktuell berücksichtigt; Projektvorlagen enthalten keine oder nur formale DPIA-Fragen.\nLevel 3: Projekt-/Change-Methoden enthalten verbindliche Datenschutz- und DPIA-Checkpoints (z.B. im Business Case, in Gate-Templates); Ergebnis des Screenings wird dokumentiert und ggf. DPIAs eingeplant.\nLevel 5: DPIA-Schritte sind in Toolchains (PM-Tools, Ticket-Systeme) integriert; deren Ergebnisse sind mit TOM, XFER, OPS und INC verknüpft; Erfahrungswerte fließen in Standardlösungen und Patterns für datenschutzfreundliche Gestaltung ein."
+                            },
+                            {
+                                "id": "dpia-06-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Enthalten Projekt- und Change-Management-Vorgehensmodelle verbindliche Schritte für DPIA-Screening bzw. -Durchführung und deren Dokumentation?\n• Lösen wesentliche Änderungen von Systemen/Prozessen mit personenbezogenen Daten automatisch eine Überprüfung der DPIA-/Risikobewertung aus?"
                             }
                         ]
                     }
@@ -2137,6 +2197,16 @@
                                 "id": "ops-01-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation stellt sicher, dass für alle wesentlichen Geschäftsprozesse, in denen personenbezogene Daten verarbeitet werden (z.B. Personalprozesse, Kunden- und Bürgerprozesse, Beschaffung, Finanzen), dokumentierte Arbeits- und Verfahrensanweisungen vorliegen, in denen relevante Datenschutzanforderungen (Zweckbindung, Datenminimierung, Betroffenenrechte, Zugriffsregelungen, Löschfristen, Informationspflichten) konkret auf den Ablauf des Prozesses abgebildet sind."
+                            },
+                            {
+                                "id": "ops-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Prozesse werden überwiegend informell gelebt; Datenschutzanforderungen sind nicht oder nur pauschal in Prozessbeschreibungen enthalten.\nLevel 3: Für die wichtigsten Kernprozesse existieren dokumentierte Abläufe, in denen Datenschutzanforderungen explizit verankert sind (z.B. Entscheidungspunkte, Kontrollen, Rollen), und diese Dokumentation wird für Schulung und Audit genutzt.\nLevel 5: Prozessdokumentation ist mit Kontrollplänen, KPIs und Tool-Workflows verknüpft; Änderungen in Prozessen lösen systematisch Datenschutz-Reviews aus; Lessons Learned aus Vorfällen, DSR und Audits fließen in Prozessverbesserung ein."
+                            },
+                            {
+                                "id": "ops-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Sind in den dokumentierten Kernprozessen die relevanten Datenschutzanforderungen (Zweckbindung, Datenminimierung, Löschfristen, Betroffenenrechte) konkret verankert?\n• Werden Prozessbeschreibungen mit Datenschutzinhalten aktiv für Schulungen, Audits und kontinuierliche Verbesserungsmaßnahmen genutzt?"
                             }
                         ]
                     },
@@ -2175,6 +2245,16 @@
                                 "id": "ops-02-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation integriert Datenschutzanforderungen systematisch in Projekt- und Change-Management-Vorgehensmodelle. Dies umfasst u.a. standardisierte Datenschutz-Checklisten und -Fragen in frühen Projektphasen, Vorgaben zur Erstellung von Datenschutzkonzepten, Kriterien und Trigger für Datenschutz-Folgenabschätzungen, die verpflichtende Einbindung des/der Datenschutzbeauftragten sowie dokumentierte Entscheidungen zur Gestaltung und Freigabe von Änderungen mit Auswirkungen auf die Verarbeitung personenbezogener Daten."
+                            },
+                            {
+                                "id": "ops-02-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Datenschutz wird in Projekten und Changes überwiegend reaktiv berücksichtigt; Projektvorlagen enthalten keine verbindlichen Datenschutzabschnitte.\nLevel 3: Projekt- und Change-Methoden enthalten feste Datenschutz-Prüfpunkte, Checklisten und Rollen (inkl. DSB); Dokumente wie Datenschutzkonzepte und DPIA-Ergebnisse sind Teil der Freigabeunterlagen.\nLevel 5: Datenschutzfragen sind in Toolgestützte Projekt-/Change-Workflows integriert; Kennzahlen zu Datenschutz-Compliance in Projekten werden erhoben; wiederkehrende Muster fließen in Standardlösungen und Bausteine ein."
+                            },
+                            {
+                                "id": "ops-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Enthalten die Projekt- und Change-Methoden verbindliche Datenschutz-Checks (inkl. DPIA-Trigger, DSB-Beteiligung) in definierten Phasen/Gates?\n• Wird die Freigabe von Projekten/Changes von der Dokumentation und Bewertung der Datenschutzfolgen abhängig gemacht?"
                             }
                         ],
                         "links": [
@@ -2223,6 +2303,16 @@
                                 "id": "ops-03-stmt",
                                 "name": "statement",
                                 "prose": "Beschaffungs- und Vergabeprozesse enthalten verbindliche Datenschutzanforderungen, insbesondere zur Rollenklärung (Verantwortlicher, gemeinsame Verantwortliche, Auftragsverarbeiter), zu technischen und organisatorischen Maßnahmen, Unterauftragsverhältnissen sowie Kontroll- und Auditrechten. Die Organisation nutzt standardisierte Vertragsmuster und Checklisten für die datenschutzrechtliche Prüfung von Dienstleistern und dokumentiert Auswahl-, Freigabe- und Review-Entscheidungen."
+                            },
+                            {
+                                "id": "ops-03-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Datenschutz wird bei Beschaffung und Dienstleisterauswahl nur sporadisch berücksichtigt; Vertragsklauseln und TOM-Anforderungen sind uneinheitlich.\nLevel 3: Es gibt verbindliche Anforderungen und Muster (AVV, Joint-Control, Standardklauseln) in Vergabe-/Beschaffungsprozessen; ein definierter Onboarding-Prozess erfasst Datenschutzrisiken und Freigaben.\nLevel 5: Datenschutz-Anforderungen sind in Lieferantenmanagement und Third-Party-Risk-Prozesse integriert; regelmäßige Reviews, Audits und KPIs zur Dienstleister-Compliance fließen in die Steuerung ein."
+                            },
+                            {
+                                "id": "ops-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Sind Datenschutzanforderungen (Rolle, TOM, Unterauftragnehmer, Audit-/Kontrollrechte) verbindlich in Beschaffungs- und Vergabeverfahren integriert?\n• Gibt es dokumentierte Onboarding- und Review-Prozesse, in denen Datenschutzrisiken von Dienstleistern bewertet und freigegeben werden?"
                             }
                         ],
                         "links": [
@@ -2271,6 +2361,16 @@
                                 "id": "ops-04-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation betreibt dokumentierte und wirksame Lösch-, Sperr- und Archivierungsprozesse, die an die festgelegten Aufbewahrungsfristen gekoppelt sind. Löschregeln werden systemseitig implementiert, regelmäßig getestet und auf ihre Wirksamkeit überprüft. Für Systeme mit besonderen Risiken (z.B. große Datenbestände, Langzeitarchivierung, Backups) bestehen spezifische Verfahren zur datenschutzkonformen Löschung, Pseudonymisierung oder Anonymisierung sowie zur Behandlung technischer Löschhindernisse."
+                            },
+                            {
+                                "id": "ops-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Löschungen erfolgen überwiegend manuell und ad hoc; Altdaten und Backups werden oft unbegrenzt aufbewahrt; es existieren keine systematischen Tests der Löschprozesse.\nLevel 3: Lösch- und Archivierungsprozesse sind dokumentiert, mit Aufbewahrungsfristen verknüpft und teilweise systemseitig umgesetzt; es gibt regelmäßige Stichproben und Tests.\nLevel 5: Lösch-/Sperrprozesse sind tief in Systemarchitektur und Betriebsprozesse integriert; technische Löschhindernisse sind bewertet und mit kompensierenden Maßnahmen versehen; Kennzahlen und Tests steuern Verbesserungen."
+                            },
+                            {
+                                "id": "ops-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es dokumentierte, systemseitig umgesetzte Lösch-/Sperrprozesse, die an konkrete Aufbewahrungsfristen gekoppelt sind und regelmäßig getestet werden?\n• Werden Sonderfälle (Backups, Archivsysteme, Langzeitaufbewahrung) mit spezifischen Verfahren und dokumentierten Restrisiken behandelt?"
                             }
                         ]
                     },
@@ -2309,6 +2409,16 @@
                                 "id": "ops-05-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation steuert fachliche Rollen und technische Zugriffsberechtigungen für personenbezogene Daten nach dem Need-to-know-Prinzip. Es existieren dokumentierte Verfahren für die Vergabe, Änderung und Entziehung von Berechtigungen (Joiner-Mover-Leaver-Prozess) sowie regelmäßige, nachvollziehbar dokumentierte Rezertifizierungen von Zugriffsrechten. Die fachliche Verantwortlichkeit für Berechtigungen ist klar zugeordnet und mit den datenschutzrechtlichen Zwecken abgestimmt."
+                            },
+                            {
+                                "id": "ops-05-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Berechtigungen werden primär technisch administriert; fachliche Rollen und Zweckbezüge sind unklar; Rezertifizierungen finden selten statt.\nLevel 3: Rollen- und Berechtigungskonzepte sind dokumentiert und an Zwecke/Prozesse gekoppelt; Joiner-Mover-Leaver-Prozesse und regelmäßige access reviews sind etabliert.\nLevel 5: Fachliche Verantwortliche steuern Berechtigungen aktiv; Kennzahlen (z.B. überhöhte Rechte, veraltete Konten) werden erhoben; Ergebnisse fließen in Prozess- und Toolverbesserungen ein."
+                            },
+                            {
+                                "id": "ops-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Sind fachliche Rollen- und Berechtigungskonzepte definiert, die sich an Zwecken und Prozessen orientieren und in Joiner-Mover-Leaver-Prozesse eingebettet sind?\n• Werden regelmäßige, dokumentierte Berechtigungsreviews durchgeführt und führen Findings zu nachweisbaren Anpassungen?"
                             }
                         ],
                         "links": [
@@ -2364,6 +2474,16 @@
                                 "id": "xfer-01-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation führt ein aktuelles Inventar aller Übermittlungen personenbezogener Daten an Empfänger außerhalb des EWR oder an internationale Organisationen. Das Inventar dokumentiert mindestens Kategorien der personenbezogenen Daten, Kategorien von Empfängern, betroffene Drittländer, genutzte Transferinstrumente nach Kapitel V DSGVO, wesentliche technische und organisatorische Maßnahmen sowie Verweise auf einschlägige Verträge und Bewertungen."
+                            },
+                            {
+                                "id": "xfer-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Internationale Transfers werden nicht systematisch erfasst; Informationen sind nur in Einzelsystemen oder Verträgen enthalten.\nLevel 3: Ein Transferregister listet relevante Übermittlungen mit Drittländern, Instrumenten und Kernparametern; es ist mit VVT/Datenlandkarte abgestimmt.\nLevel 5: Transferregister ist mit Vertrags-, Vendor- und Risiko-Tools verknüpft; es dient als operative Basis für TIAs, Kontrollen und Management-Reporting."
+                            },
+                            {
+                                "id": "xfer-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es ein zentrales, aktuelles Inventar aller Datenübermittlungen in Drittländer oder an internationale Organisationen?\n• Ist das Transferinventar mit VVT, System-/Datenlandkarte und Vendor-/Vertragsmanagement abgestimmt?"
                             }
                         ]
                     },
@@ -2402,6 +2522,16 @@
                                 "id": "xfer-02-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation verfügt über eine dokumentierte Politik zur Auswahl und Nutzung geeigneter Transferinstrumente nach Kapitel V DSGVO (Angemessenheitsbeschlüsse, Standarddatenschutzklauseln, verbindliche interne Datenschutzvorschriften, genehmigte Verhaltensregeln oder Zertifizierungen). Die Politik definiert Entscheidungskriterien, Zuständigkeiten sowie Anforderungen an Vertragsgestaltung, Dokumentation und regelmäßige Überprüfung der eingesetzten Transferinstrumente."
+                            },
+                            {
+                                "id": "xfer-02-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Auswahl des Transferinstruments erfolgt ad hoc; Standardklauseln werden ohne konsistente Bewertung eingesetzt; Zuständigkeiten sind unklar.\nLevel 3: Eine Transfer-Policy legt fest, wann welches Instrument genutzt wird, wer entscheidet und wie dies dokumentiert wird; Musterklauseln sind etabliert.\nLevel 5: Erfahrungen aus TIAs, Aufsichtspraxis und Rechtsprechung fließen in die Policy ein; die Nutzung bestimmter Instrumente wird strategisch gesteuert (z.B. bevorzugte Lösungswege, Exit-Strategien)."
+                            },
+                            {
+                                "id": "xfer-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es eine dokumentierte Politik, die die Auswahl geeigneter Transferinstrumente (Art. 45–47 DSGVO) steuert?\n• Werden Entscheidungen zu genutzten Transferinstrumenten je Transferfall nachvollziehbar dokumentiert und regelmäßig überprüft?"
                             }
                         ],
                         "links": [
@@ -2450,6 +2580,16 @@
                                 "id": "xfer-03-stmt",
                                 "name": "statement",
                                 "prose": "Bei internationalen Übermittlungen, die auf Art. 46 DSGVO gestützt werden, führt die Organisation strukturierte Transfer Impact Assessments (TIAs) durch. Die TIAs bewerten insbesondere das Recht und die Praxis des Drittlandes, mögliche Zugriffe von Behörden, das Schutzniveau der eingesetzten technischen, organisatorischen und vertraglichen Maßnahmen sowie das Gesamtrisiko für die Rechte und Freiheiten betroffener Personen. Ergänzende Maßnahmen werden dokumentiert und regelmäßig auf ihre Wirksamkeit überprüft."
+                            },
+                            {
+                                "id": "xfer-03-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Schrems-II-Anforderungen werden nur oberflächlich adressiert; TIAs werden selten oder nur formal durchgeführt.\nLevel 3: Es existiert eine TIA-Methodik mit Vorlagen; für relevante Transfers werden TIAs mit Bewertung von Rechtslage, Zugriffsszenarien und Schutzmaßnahmen durchgeführt und dokumentiert.\nLevel 5: TIAs sind mit TOM (insb. Verschlüsselung/Schlüsselverwaltung), Incident-Management und Rechtsmonitoring verzahnt; Kennzahlen zu TIAs und ergänzenden Maßnahmen fließen in Governance und Architekturentscheidungen ein."
+                            },
+                            {
+                                "id": "xfer-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Werden für Transfers auf Basis von Art. 46 DSGVO strukturierte TIAs durchgeführt, die Rechtslage, Behördenzugriffe und Schutzmaßnahmen bewerten?\n• Gibt es dokumentierte ergänzende Maßnahmen (technisch/organisatorisch/vertraglich) und werden diese regelmäßig im Lichte neuer Erkenntnisse überprüft?"
                             }
                         ],
                         "links": [
@@ -2494,6 +2634,16 @@
                                 "id": "xfer-04-stmt",
                                 "name": "statement",
                                 "prose": "Werden Datenübermittlungen auf Angemessenheitsbeschlüsse der Europäischen Kommission gestützt, stellt die Organisation sicher, dass die jeweils aktuellen Entscheidungen berücksichtigt werden und die Empfänger tatsächlich unter den Anwendungsbereich des Beschlusses fallen (z.B. Zertifizierung nach EU-U.S. Data Privacy Framework). Es existieren Verfahren zur regelmäßigen Überprüfung der Listeneinträge, zur Dokumentation der Prüfungen sowie zur Umstellung auf andere Transferinstrumente bei Änderungen oder Wegfall der Angemessenheit."
+                            },
+                            {
+                                "id": "xfer-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Angemessenheitsbeschlüsse werden genutzt, ohne dass systematisch geprüft wird, ob der Empfänger (noch) darunter fällt; Änderungen werden nur zufällig bemerkt.\nLevel 3: Es gibt definierte Prüfschritte und Dokumentation bei Nutzung von Angemessenheitsbeschlüssen (inkl. DPF-Listenkontrolle); regelmäßige Reviews sind vorgesehen.\nLevel 5: Monitoring von Angemessenheitsentscheidungen ist institutionalisiert; Anpassungen (z.B. Umstieg auf andere Instrumente) erfolgen gesteuert und nachvollziehbar dokumentiert."
+                            },
+                            {
+                                "id": "xfer-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Werden Empfänger bei Nutzung von Angemessenheitsbeschlüssen (z.B. EU-U.S. DPF) vorab und regelmäßig hinsichtlich ihrer Listeneinträge bzw. Zertifizierungen geprüft?\n• Gibt es definierte Prozesse für den Fall des Wegfalls oder der Änderung eines Angemessenheitsbeschlusses (inkl. Umstellung auf andere Transferinstrumente)?"
                             }
                         ],
                         "links": [
@@ -2502,7 +2652,7 @@
                                 "rel": "reference"
                             },
                             {
-                                "href": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2023/17_Angemessenheitsbeschluss-EU-US-DPF.html",
+                                "href": "https://www.bfdi.bundde/SharedDocs/Kurzmeldungen/DE/2023/17_Angemessenheitsbeschluss-EU-US-DPF.html",
                                 "rel": "reference"
                             }
                         ]
@@ -2542,6 +2692,16 @@
                                 "id": "xfer-05-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation nutzt die Ausnahmeregelungen des Art. 49 DSGVO nur in eng begrenzten, dokumentierten Einzelfällen und nicht für routinemäßige oder massenhafte Übermittlungen. Für jede Nutzung einer Ausnahme werden Rechtsgrundlage, Zweck, betroffene Datenkategorien, Empfänger, Drittländer, betroffene Personen, durchgeführte Risikoabwägungen sowie etwaige zusätzliche Schutzmaßnahmen nachvollziehbar dokumentiert."
+                            },
+                            {
+                                "id": "xfer-05-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Art. 49 wird großzügig für wiederkehrende Transfers genutzt; Dokumentation der Einzelfallprüfung ist schwach.\nLevel 3: Es existieren klare interne Leitlinien zur restriktiven Nutzung von Art. 49; jede Nutzung wird dokumentiert und enthält Risikoabwägung sowie Information der betroffenen Personen.\nLevel 5: Nutzung von Art. 49 wird eng überwacht; es wird aktiv an alternativen, stabileren Transferinstrumenten gearbeitet; Kennzahlen zur Nutzung von Art. 49 fließen in das Transferprogramm ein."
+                            },
+                            {
+                                "id": "xfer-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es interne Vorgaben, dass Art. 49 DSGVO nur ausnahmsweise und nicht für routinemäßige Transfers eingesetzt wird?\n• Werden Art. 49-Fälle mit Zweck, Rechtsgrundlage, Risikoabwägung und Information der betroffenen Personen dokumentiert und regelmäßig überprüft?"
                             }
                         ],
                         "links": [
@@ -2586,6 +2746,16 @@
                                 "id": "xfer-06-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation verfügt über ein Verfahren zum Umgang mit Anfragen und Anordnungen ausländischer Behörden oder Gerichte auf Herausgabe personenbezogener Daten. Das Verfahren stellt sicher, dass solche Anfragen rechtlich geprüft, dokumentiert, nur auf Grundlage eines völkerrechtlichen Übereinkommens oder anderer nach der DSGVO zulässiger Instrumente beantwortet werden und keine unzulässigen Übermittlungen erfolgen. Entscheidungen, Korrespondenz und etwaige Information der betroffenen Personen werden nachvollziehbar dokumentiert."
+                            },
+                            {
+                                "id": "xfer-06-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Auskunftsersuchen aus Drittstaaten werden ohne klare Policy behandelt; Risiken für Art. 48 werden nicht systematisch bewertet.\nLevel 3: Es existieren Richtlinien, Entscheidungsbäume und Einbindung von Rechtsberatung/DSB; Anfragen werden dokumentiert und nach einheitlichen Kriterien bewertet.\nLevel 5: Erfahrungswerte aus Anfragen, Aufsichtsfeedback und Rechtsprechung werden ausgewertet; Policy und Entscheidungsprozesse werden fortlaufend angepasst; Kennzahlen werden im Management berichtet."
+                            },
+                            {
+                                "id": "xfer-06-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es ein dokumentiertes Verfahren (inkl. Rollen, Kriterien, Rechtsprüfung) für Auskunfts- und Herausgabeverlangen aus Drittstaaten nach Art. 48 DSGVO?\n• Werden diese Fälle (inkl. Entscheidungsgründe, Rechtsgutachten, Kommunikation mit Betroffenen) nachvollziehbar dokumentiert und ausgewertet?"
                             }
                         ],
                         "links": [
