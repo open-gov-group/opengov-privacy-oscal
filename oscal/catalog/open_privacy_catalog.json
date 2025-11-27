@@ -834,20 +834,20 @@
             {
                 "id": "DSR",
                 "class": "data-subject-rights",
-                "title": "DSR – Betroffenenrechte",
+                "title": "DSR – Rechte der betroffenen Personen",
                 "controls": [
                     {
                         "id": "DSR-01",
                         "class": "process",
-                        "title": "Prozess zur Bearbeitung von Betroffenenanfragen",
+                        "title": "Grundsatz und Governance der Betroffenenrechte",
                         "props": [
                             {
                                 "name": "dsgvo-article",
-                                "value": "Art. 12–22"
+                                "value": "Art. 12; Art. 15–22; Art. 5(2); Art. 24"
                             },
                             {
                                 "name": "sdm-goal",
-                                "value": "Intervenierbarkeit, Transparenz"
+                                "value": "Transparenz, Intervenierbarkeit"
                             },
                             {
                                 "name": "maturity-domain",
@@ -855,7 +855,7 @@
                             },
                             {
                                 "name": "target-maturity",
-                                "value": "4"
+                                "value": "3"
                             },
                             {
                                 "name": "measure-type",
@@ -863,29 +863,39 @@
                             },
                             {
                                 "name": "evidence-type",
-                                "value": "procedure-description, request-logs"
+                                "value": "dsr-policy, dsr-process-descriptions, rasic-matrix, dsr-register"
                             }
                         ],
                         "parts": [
                             {
                                 "id": "dsr-01-stmt",
                                 "name": "statement",
-                                "prose": "Es existiert ein standardisierter, dokumentierter Prozess zur Identifikation, Bearbeitung und Dokumentation von Betroffenenanfragen."
+                                "prose": "Die Organisation verfügt über ein dokumentiertes, von der Leitungsebene gebilligtes Konzept für den Umgang mit Betroffenenrechten (Art. 12, 15–22 DSGVO). Dieses regelt Rollen, Zuständigkeiten, Fristen, Eskalationswege und Schnittstellen zu Fachbereichen, IT, Informationssicherheit und Datenschutzbeauftragten sowie die Dokumentation und das Reporting von Anfragen."
+                            },
+                            {
+                                "id": "dsr-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Umgang mit Betroffenenrechten erfolgt überwiegend ad hoc durch einzelne Fachbereiche; es gibt kein einheitliches Verfahren, keine klaren Zuständigkeiten und keine zentrale Übersicht über Anfragen.\nLevel 3: Es existiert ein dokumentiertes, organisationsweit geltendes Verfahren für alle Betroffenenrechte mit definierten Rollen, Fristen, Eskalationswegen und Dokumentationsanforderungen; Mitarbeitende kennen die grundsätzlichen Abläufe und wenden sie regelmäßig an.\nLevel 5: Das DSR-Governance-Konzept wird regelmäßig anhand von Kennzahlen (z.B. Anzahl/Art der Anfragen, Fristüberschreitungen, Beschwerden), Audits und Lessons Learned aus Vorfällen überprüft und angepasst; Steuerung erfolgt über regelmäßige Management-Reports."
+                            },
+                            {
+                                "id": "dsr-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es ein dokumentiertes, organisationsweit verbindliches Verfahren für den Umgang mit allen Betroffenenrechten (Art. 12, 15–22 DSGVO) mit klaren Rollen, Verantwortlichkeiten und Fristen?\n• Werden Umfang und Status von Betroffenenanfragen zentral erfasst und regelmäßig (z.B. jährlich) an Leitung oder Gremien berichtet?"
                             }
                         ]
                     },
                     {
                         "id": "DSR-02",
                         "class": "process",
-                        "title": "Transparente Informationen und Datenschutzhinweise",
+                        "title": "Annahme, Identitätsprüfung und sichere Kommunikation",
                         "props": [
                             {
                                 "name": "dsgvo-article",
-                                "value": "Art. 12; Art. 13; Art. 14"
+                                "value": "Art. 11; Art. 12(2)(3)(6)"
                             },
                             {
                                 "name": "sdm-goal",
-                                "value": "Transparenz"
+                                "value": "Vertraulichkeit, Intervenierbarkeit, Transparenz"
                             },
                             {
                                 "name": "maturity-domain",
@@ -893,7 +903,7 @@
                             },
                             {
                                 "name": "target-maturity",
-                                "value": "4"
+                                "value": "3"
                             },
                             {
                                 "name": "measure-type",
@@ -901,35 +911,39 @@
                             },
                             {
                                 "name": "evidence-type",
-                                "value": "privacy-notices, information-templates, information-register"
+                                "value": "dsr-intake-procedures, identity-verification-guidelines, communication-templates"
                             }
                         ],
                         "parts": [
                             {
                                 "id": "dsr-02-stmt",
                                 "name": "statement",
-                                "prose": "Die Organisation stellt betroffenen Personen rechtzeitig, klar verständlich und leicht zugänglich alle nach Art. 13 und 14 DSGVO erforderlichen Informationen über die Verarbeitung ihrer personenbezogenen Daten zur Verfügung und dokumentiert die verwendeten Datenschutzhinweise."
-                            }
-                        ],
-                        "links": [
+                                "prose": "Die Organisation stellt sicher, dass Betroffenenanfragen über definierte Eingangskanäle (z.B. Webformular, E-Mail-Adresse, Brief, Service-Portal) entgegengenommen, erfasst und bestätigt werden. Es existieren Verfahren zur angemessenen Identitätsprüfung und zur sicheren, datenschutzgerechten Kommunikation mit der betroffenen Person."
+                            },
                             {
-                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/transparency_en",
-                                "rel": "reference"
+                                "id": "dsr-02-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Anfragen erreichen verschiedene Stellen ohne klar definierte Eingangskanäle; es gibt keine einheitlichen Vorgaben zur Identitätsprüfung oder zur sicheren Kommunikation; Risiko von Fehladressierungen oder Offenlegung gegenüber Unbefugten ist hoch.\nLevel 3: Es sind zentrale oder koordinierte Eingangskanäle für Betroffenenrechte definiert; es bestehen dokumentierte Leitlinien zur Identitätsprüfung (risikobasiert) und zur sicheren Kommunikation (z.B. Verschlüsselung, Kundenportal); Eingänge werden protokolliert und zeitnah bestätigt.\nLevel 5: Intake- und Identitätsprozesse werden regelmäßig evaluiert (z.B. anhand von Beschwerden, Vorfällen, Audits) und angepasst; technische Workflows (Portale, Ticket-Systeme) unterstützen automatisierte Erfassung, Fristenkontrolle und sichere Kommunikation."
+                            },
+                            {
+                                "id": "dsr-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Sind zentrale Eingangskanäle für Betroffenenanfragen definiert und kommuniziert (z.B. in Datenschutzhinweisen), einschließlich eines standardisierten Eingangs- und Bestätigungsprozesses?\n• Gibt es dokumentierte Vorgaben, wie die Identität der betroffenen Person zu prüfen ist und wie sensible Inhalte sicher übermittelt werden (z.B. verschlüsselt oder über ein Portal)?"
                             }
                         ]
                     },
                     {
                         "id": "DSR-03",
                         "class": "process",
-                        "title": "Umsetzung des Auskunftsrechts",
+                        "title": "Auskunftsrecht und Datenkopie (Art. 15 DSGVO)",
                         "props": [
                             {
                                 "name": "dsgvo-article",
-                                "value": "Art. 15"
+                                "value": "Art. 15; Art. 12(3)-(5); Art. 19"
                             },
                             {
                                 "name": "sdm-goal",
-                                "value": "Intervenierbarkeit, Transparenz"
+                                "value": "Transparenz, Intervenierbarkeit"
                             },
                             {
                                 "name": "maturity-domain",
@@ -945,35 +959,39 @@
                             },
                             {
                                 "name": "evidence-type",
-                                "value": "access-procedure, access-request-logs, access-response-templates"
+                                "value": "access-request-procedures, data-extraction-guides, response-templates, dsr-register"
                             }
                         ],
                         "parts": [
                             {
                                 "id": "dsr-03-stmt",
                                 "name": "statement",
-                                "prose": "Die Organisation verfügt über einen dokumentierten Prozess zur Umsetzung des Auskunftsrechts nach Art. 15 DSGVO, einschließlich Identitätsprüfung, Definition des Auskunftsumfangs, Fristüberwachung, Bereitstellung von Kopien und Umgang mit offenkundig unbegründeten oder exzessiven Anträgen."
-                            }
-                        ],
-                        "links": [
+                                "prose": "Die Organisation verfügt über dokumentierte Verfahren zur Erfüllung von Auskunftsrechten einschließlich Bereitstellung einer Kopie der personenbezogenen Daten nach Art. 15 DSGVO. Diese regeln insbesondere die Zusammenführung von Daten aus relevanten Systemen, den Umgang mit Drittdaten, Geschäftsgeheimnissen und Rechten Dritter sowie die Fristenkontrolle und die Dokumentation der erteilten Auskünfte."
+                            },
                             {
-                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-012022-data-subject-rights-right-access_en",
-                                "rel": "reference"
+                                "id": "dsr-03-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Auskünfte werden im Einzelfall manuell zusammengestellt; es gibt keine Standardvorgehensweise zur System- und Datensuche; Risiken durch unvollständige, verspätete oder zu umfangreiche Auskünfte sind hoch.\nLevel 3: Es existieren klare Prozessbeschreibungen und Checklisten für Auskunftsersuchen, inklusive einer Übersicht der relevanten Systeme/Verantwortlichen, Standardtexten, Regeln zum Umgang mit Rechten Dritter und Fristenkontrolle; Ergebnisse und wesentliche Abwägungen werden dokumentiert.\nLevel 5: Prozesse zur Auskunftserteilung werden technisch unterstützt (z.B. Workflows, teilautomatisierte Datensuchen, Self-Service-Portale); Auskunftsfälle werden statistisch ausgewertet; wiederkehrende Probleme (z.B. Datenlokalisierung, Drittdaten) fließen in Datenarchitektur, Prozess- und TOM-Verbesserungen ein."
+                            },
+                            {
+                                "id": "dsr-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es definierte Verfahren und Hilfsmittel (Systemlisten, Checklisten, Vorlagen), um Auskunftsersuchen vollständig, fristgerecht und nachvollziehbar zu beantworten?\n• Werden Abwägungen zum Schutz von Rechten Dritter, Geschäftsgeheimnissen oder IP bei der Auskunftserteilung dokumentiert und ggf. wiederverwendet (z.B. Musterentscheidungen)?"
                             }
                         ]
                     },
                     {
                         "id": "DSR-04",
                         "class": "process",
-                        "title": "Berichtigung, Löschung und Einschränkung der Verarbeitung",
+                        "title": "Berichtigung, Löschung und Mitteilungspflichten (Art. 16–17, 19 DSGVO)",
                         "props": [
                             {
                                 "name": "dsgvo-article",
-                                "value": "Art. 16; Art. 17; Art. 18; Art. 19"
+                                "value": "Art. 16; Art. 17; Art. 19"
                             },
                             {
                                 "name": "sdm-goal",
-                                "value": "Intervenierbarkeit, Datenminimierung"
+                                "value": "Datenminimierung, Integrität, Verfügbarkeit"
                             },
                             {
                                 "name": "maturity-domain",
@@ -981,7 +999,7 @@
                             },
                             {
                                 "name": "target-maturity",
-                                "value": "3"
+                                "value": "4"
                             },
                             {
                                 "name": "measure-type",
@@ -989,29 +1007,39 @@
                             },
                             {
                                 "name": "evidence-type",
-                                "value": "rectification-and-erasure-procedures, deletion-concept, restriction-records, notification-records"
+                                "value": "correction-and-erasure-procedures, deletion-concept, dsr-register, notification-records"
                             }
                         ],
                         "parts": [
                             {
                                 "id": "dsr-04-stmt",
                                 "name": "statement",
-                                "prose": "Die Organisation verfügt über dokumentierte Verfahren zur Umsetzung der Rechte auf Berichtigung, Löschung und Einschränkung der Verarbeitung. Diese Verfahren sind mit dem Lösch- und Aufbewahrungskonzept verknüpft und stellen sicher, dass betroffene Empfänger über Berichtigungen, Löschungen oder Einschränkungen informiert werden."
+                                "prose": "Die Organisation verfügt über dokumentierte Verfahren zur Berichtigung und Löschung personenbezogener Daten auf Antrag der betroffenen Person sowie zur Umsetzung der Mitteilungspflichten nach Art. 19 DSGVO. Diese Verfahren sind mit Lösch- und Aufbewahrungskonzept, Archivsystemen und Fachprozessen abgestimmt und berücksichtigen gesetzliche Aufbewahrungspflichten und technische Restriktionen."
+                            },
+                            {
+                                "id": "dsr-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Berichtigungs- und Löschanfragen werden fallweise umgesetzt; die technische Umsetzbarkeit und Abhängigkeiten zu Archiv/Backups sind unklar; Mitteilungspflichten gegenüber Empfängern werden häufig übersehen.\nLevel 3: Es existieren abgestimmte Prozesse, wie Berichtigungs- und Löschanträge in den betroffenen Systemen umgesetzt, dokumentiert und an relevante Empfänger kommuniziert werden; Bezug zu Löschkonzept, Aufbewahrungsfristen und Ausnahmen ist beschrieben.\nLevel 5: Berichtigungs- und Löschprozesse sind weitgehend in Systeme und Workflows integriert; technische Funktionen (z.B. Kennzeichnung zur Löschung, Sperrung, Propagation an Empfänger) unterstützen eine konsistente Umsetzung; Kennzahlen zu Durchlaufzeit, Erfolgsquoten und Problemen fließen in die Weiterentwicklung von Datenarchitektur, Löschkonzept und Prozessen ein."
+                            },
+                            {
+                                "id": "dsr-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Sind Verfahren zur Umsetzung von Berichtigungs- und Löschanfragen dokumentiert und mit Löschkonzept, Aufbewahrungsfristen und Archiv-/Backup-Strategien abgestimmt?\n• Werden betroffene Empfänger nach Art. 19 DSGVO über Berichtigungen oder Löschungen informiert und ist dieser Prozess nachvollziehbar dokumentiert?"
                             }
                         ]
                     },
                     {
                         "id": "DSR-05",
                         "class": "process",
-                        "title": "Datenübertragbarkeit, Widerspruch und automatisierte Entscheidungen",
+                        "title": "Einschränkung, Widerspruch und Direktwerbung (Art. 18, 21 DSGVO)",
                         "props": [
                             {
                                 "name": "dsgvo-article",
-                                "value": "Art. 20; Art. 21; Art. 22"
+                                "value": "Art. 18; Art. 21; ErwGr. 69–70"
                             },
                             {
                                 "name": "sdm-goal",
-                                "value": "Intervenierbarkeit, Transparenz, Nicht-Verkettbarkeit"
+                                "value": "Intervenierbarkeit, Nicht-Verkettbarkeit, Datenminimierung"
                             },
                             {
                                 "name": "maturity-domain",
@@ -1027,14 +1055,72 @@
                             },
                             {
                                 "name": "evidence-type",
-                                "value": "portability-procedures, machine-readable-export-formats, objection-processes, adm-assessments"
+                                "value": "objection-handling-procedures, marketing-preference-management, dsr-register"
                             }
                         ],
                         "parts": [
                             {
                                 "id": "dsr-05-stmt",
                                 "name": "statement",
-                                "prose": "Die Organisation verfügt über Verfahren zur Umsetzung der Rechte auf Datenübertragbarkeit, Widerspruch – insbesondere gegen Direktwerbung – sowie der Rechte im Zusammenhang mit ausschließlich automatisierten Entscheidungen einschließlich Profiling und stellt sicher, dass betroffene Personen diese Rechte wirksam und ohne unzumutbare Hürden wahrnehmen können."
+                                "prose": "Die Organisation verfügt über Verfahren zur Umsetzung von Anträgen auf Einschränkung der Verarbeitung sowie Widersprüchen, insbesondere gegen Direktwerbung und Profiling. Diese Verfahren regeln die technische und organisatorische Umsetzung (z.B. Kennzeichnung in Systemen, Sperrkennzeichen, Opt-out-Listen) und die Information der betroffenen Person über das Ergebnis."
+                            },
+                            {
+                                "id": "dsr-05-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Widersprüche und Anträge auf Einschränkung werden unsystematisch behandelt; technische Umsetzungen (z.B. Sperrvermerke, Opt-out) sind unvollständig oder nur in einzelnen Systemen vorhanden; Risiko weiterer unerwünschter Verarbeitung bleibt hoch.\nLevel 3: Es existieren standardisierte Verfahren und Systemunterstützung zur Kennzeichnung und Berücksichtigung von Einschränkungen und Widersprüchen (insbesondere in CRM-, Marketing- und Kommunikationssystemen); Mitarbeitende kennen die Vorgaben, und Betroffene erhalten nachvollziehbare Antworten.\nLevel 5: Präferenz- und Widerspruchsmanagement ist ganzheitlich über Kanäle und Systeme hinweg abgestimmt; regelmäßige Tests (z.B. Stichproben, Kampagnenkontrollen) überprüfen die Wirksamkeit; Ergebnisse fließen in die Optimierung von Marketingprozessen, Profiling-Konzepten und Rechtsgrundlagenstrategie ein."
+                            },
+                            {
+                                "id": "dsr-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es dokumentierte und technisch unterstützte Verfahren, um Widersprüche (insbesondere gegen Direktwerbung) und Einschränkungen in allen relevanten Systemen zu kennzeichnen und zu berücksichtigen?\n• Werden Wirksamkeit und Konsistenz von Widerspruchs- und Opt-out-Regelungen regelmäßig überprüft (z.B. durch Stichproben, Tests vor Kampagnen)?"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "DSR-06",
+                        "class": "record",
+                        "title": "Register, SLA-Überwachung und Qualitätskontrolle von Betroffenenrechten",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(2); Art. 12(3)-(5); Art. 24"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Integrität, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-subject-rights"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "dsr-register, kpi-reports, quality-reviews, management-reports"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dsr-06-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation führt ein Register über Betroffenenanfragen, in dem mindestens Art der Anfragen, Eingangskanal, Datum des Eingangs, betroffene Systeme, Fristen, getroffene Entscheidungen, Antworten und etwaige Beschwerden dokumentiert werden. Kennzahlen und Auswertungen werden zur Überwachung von Fristen, Qualität und Ressourcenbedarf genutzt."
+                            },
+                            {
+                                "id": "dsr-06-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Es existiert kein oder nur ein fragmentiertes Register; Informationen zu Betroffenenanfragen liegen in E-Mails oder Einzelsystemen; Fristüberschreitungen und Wiederholungsanfragen werden kaum ausgewertet.\nLevel 3: Ein zentrales oder konsolidiertes DSR-Register erfasst alle wesentlichen Daten zu Anfragen; einfache Kennzahlen (z.B. Anzahl, Typ, Fristüberschreitungen) werden regelmäßig erhoben und dienen zur Steuerung von Kapazitäten und Verbesserungsmaßnahmen.\nLevel 5: Das DSR-Register ist in das DSMS integriert; Kennzahlen (z.B. Antwortqualität, Beschwerderate, Ursachen für SLA-Verletzungen) fließen in Management-Reviews, Risikoanalysen und Programmplanung ein und werden mit Ergebnissen aus Audits, Vorfällen und Schulungsmaßnahmen verknüpft."
+                            },
+                            {
+                                "id": "dsr-06-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Wird ein zentrales oder konsolidiertes Register über Betroffenenanfragen geführt, in dem Art der Anfrage, Fristen, Entscheidungen und Antworten nachvollziehbar dokumentiert sind?\n• Werden Kennzahlen aus dem DSR-Register (z.B. Volumen, Fristverletzungen, Beschwerderaten) regelmäßig ausgewertet und in Management- oder Risiko-Reviews eingebracht?"
                             }
                         ]
                     }
