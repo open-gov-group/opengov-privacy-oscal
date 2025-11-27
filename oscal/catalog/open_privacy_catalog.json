@@ -2369,6 +2369,14 @@
                             {
                                 "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-012021-examples-regarding-personal-data-breach_de",
                                 "rel": "reference"
+                            },
+                            {
+                                "href": "#DPIA-03",
+                                "rel": "related-control"
+                            },
+                            {
+                                "href": "#XFER-03",
+                                "rel": "related-control"
                             }
                         ]
                     },
@@ -2505,6 +2513,18 @@
                             {
                                 "href": "https://www.bsi.bund.de/DE/IT-Sicherheitsvorfall/Unternehmen/Ich-habe-einen-IT-Sicherheitsvorfall-Checkliste-Organisatorisches/ich-habe-einen-it-sicherheitsvorfall-checkliste-organisatorisches_node.html",
                                 "rel": "reference"
+                            },
+                            {
+                                "href": "#DPIA-03",
+                                "rel": "related-control"
+                            },
+                            {
+                                "href": "#XFER-03",
+                                "rel": "related-control"
+                            },
+                            {
+                                "href": "#TOM-01",
+                                "rel": "related-control"
                             }
                         ]
                     }
@@ -2518,11 +2538,11 @@
                     {
                         "id": "TRAIN-01",
                         "class": "awareness",
-                        "title": "Regelmäßige Datenschutzschulungen",
+                        "title": "Regelmäßige Datenschutzgrundlagenschulungen",
                         "props": [
                             {
                                 "name": "dsgvo-article",
-                                "value": "Art. 39(1)(b); Art. 24"
+                                "value": "Art. 39(1)(b); Art. 24; Art. 32"
                             },
                             {
                                 "name": "sdm-goal",
@@ -2542,20 +2562,148 @@
                             },
                             {
                                 "name": "evidence-type",
-                                "value": "training-plan, participation-records"
+                                "value": "training-plan, training-content, participation-records"
                             }
                         ],
                         "parts": [
                             {
                                 "id": "train-01-stmt",
                                 "name": "statement",
-                                "prose": "Die Organisation führt regelmäßig auf Zielgruppen zugeschnittene Datenschutzschulungen durch und dokumentiert die Teilnahme."
+                                "prose": "Die Organisation führt regelmäßig verpflichtende Datenschutzgrundlagenschulungen für alle Beschäftigten durch, die personenbezogene Daten verarbeiten. Inhalte umfassen mindestens Grundprinzipien der DSGVO, interne Datenschutzregeln, Meldewege für Datenschutzvorfälle sowie praktisches Verhalten im Arbeitsalltag. Schulungsinhalte und Teilnahmen werden nachvollziehbar dokumentiert."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/sme-data-protection-guide/home_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "TRAIN-02",
+                        "class": "awareness",
+                        "title": "Rollenbasierte und anlassbezogene Vertiefungsschulungen",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 39(1)(b); Art. 24; Art. 32"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Integrität, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "training"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "organizational"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "role-specific-training-plans, training-material, onboarding-records, change-training-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "train-02-stmt",
+                                "name": "statement",
+                                "prose": "Für besonders datenschutzrelevante Rollen (z.B. Führungskräfte, HR, Vertrieb/Marketing, IT/DevOps, Support, Fachadministration) führt die Organisation vertiefende, rollenbasierte Schulungen durch, die konkrete Verarbeitungsszenarien, typische Risiken und Pflichten adressieren. Neue Mitarbeitende erhalten vor Aufnahme datenschutzrelevanter Tätigkeiten ein geeignetes Onboarding; bei wesentlichen Änderungen von Prozessen, Systemen oder Rechtslage werden anlassbezogene Nachschulungen durchgeführt."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "TRAIN-03",
+                        "class": "awareness",
+                        "title": "Awareness-Kampagnen und gelebte Datenschutzkultur",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 24; Art. 25; Art. 32"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Transparenz, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "training"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "organizational"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "awareness-campaigns, intranet-pages, newsletters, posters, webinars"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "train-03-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation betreibt laufende Awareness-Maßnahmen zum Datenschutz (z.B. Intranet-Beiträge, Newsletter, Kampagnen, E-Learnings, Poster, kurze Reminder), die auf aktuelle Risiken und Vorfälle eingehen und die Beschäftigten zu datenschutzgerechtem Verhalten motivieren. Datenschutz wird als Bestandteil der Sicherheits- und Unternehmenskultur kommuniziert, nicht nur als einmalige Pflichtschulung."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.enisa.europa.eu/publications",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "TRAIN-04",
+                        "class": "awareness",
+                        "title": "Wirksamkeitskontrolle der Schulungen und kontinuierliche Verbesserung",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 24; Art. 32; Art. 39(1)(b)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "training"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "training-kpi-reports, quiz-results, feedback-surveys, improvement-actions, management-reports"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "train-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation bewertet regelmäßig die Wirksamkeit von Schulungs- und Awareness-Maßnahmen, z.B. durch Wissenstests, Feedback der Teilnehmenden, Kennzahlen zur Teilnahmequote, Auswertung typischer Fehler und Vorfälle sowie ggf. simulierte Phishing- oder Awareness-Kampagnen. Ergebnisse fließen systematisch in die Weiterentwicklung der Schulungsinhalte, Formate und Zielgruppenplanung ein und werden der Leitungsebene berichtet."
                             }
                         ]
                     }
                 ]
             }
-        ],
+        ]
+    }
+],
         "back-matter": {
             "resources": [
                 {
