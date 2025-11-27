@@ -3011,6 +3011,33 @@
                                 "prose": "Level 1: Datenschutzvorfälle werden ad hoc behandelt; es gibt allenfalls allgemeine IT-Sicherheitsvorgaben, aber kein spezifisches, dokumentiertes Verfahren für Datenschutzverletzungen und keine klar geregelten Rollen oder Eskalationswege.\nLevel 3: Ein formal beschlossenes, dokumentiertes Breach-Management-Verfahren speziell für Datenschutzverletzungen existiert und beschreibt Rollen, Eskalationspfade und Schnittstellen zum allgemeinen Incident- und Notfallmanagement; relevante Stellen kennen ihre Aufgaben.\nLevel 5: Der Breach-Prozess wird regelmäßig geübt (z.B. Tabletop-Übungen) und anhand von Kennzahlen (z.B. Zeit bis Erkennung/Eskalation, Vollständigkeit der Dokumentation) gesteuert; Ergebnisse aus Übungen, Audits und realen Vorfällen führen systematisch zu Prozessverbesserungen."
                             },
                             {
+                                "id": "inc-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Einrichtung eines strukturierten Datenschutzvorfall-Managements.",
+                                "parts": [
+                                    {
+                                        "id": "inc-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung und formale Verabschiedung einer Incident-Response-Policy bzw. eines Breach-Management-Verfahrens speziell für Datenschutzverletzungen."
+                                    },
+                                    {
+                                        "id": "inc-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition einer RASCI-Matrix mit klaren Rollen und Verantwortlichkeiten (z.B. IT, Informationssicherheit, DSB, Fachbereiche, Management) für alle Phasen des Vorfall-Managements."
+                                    },
+                                    {
+                                        "id": "inc-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Abstimmung und Integration des Datenschutzvorfall-Prozesses mit dem allgemeinen IT-Incident-, Krisen- und Notfallmanagement der Organisation."
+                                    },
+                                    {
+                                        "id": "inc-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Überprüfung und Aktualisierung des Breach-Management-Prozesses, z.B. im Rahmen von Reviews, Audits oder Lessons-Learned nach realen Vorfällen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "inc-01-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es ein formal beschlossenes Verfahren speziell für Datenschutzverletzungen (inkl. Schnittstelle zum allgemeinen IT-Incident-Management)?\n• Sind Rollen, Verantwortlichkeiten und Eskalationswege (IT, Informationssicherheit, DSB, Management, Fachbereiche) im Breach-Prozess klar beschrieben und bekannt?"
@@ -3065,6 +3092,33 @@
                                 "prose": "Level 1: Mitarbeitende und Dienstleister wissen nicht genau, was ein Datenschutzvorfall ist und an wen sie sich wenden sollen; Meldungen erfolgen zufällig oder sehr spät, es gibt keine definierten Meldewege.\nLevel 3: Es bestehen klar definierte und kommunizierte interne Meldekanäle für (vermutete) Datenschutzvorfälle sowie dokumentierte Erstbewertungs- und Eskalationsprozesse; Mitarbeitende werden regelmäßig informiert bzw. geschult, wie sie Vorfälle erkennen und melden.\nLevel 5: Meldeverhalten (Anzahl, Qualität, Geschwindigkeit von Meldungen) wird ausgewertet und für die Optimierung von Awareness, Prozessen und technischen Monitoring-Maßnahmen genutzt; technische Erkennung (Logging/Monitoring) ist organisatorisch mit den Meldeverfahren verknüpft."
                             },
                             {
+                                "id": "inc-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Erkennung und internen Meldung von Datenschutzvorfällen.",
+                                "parts": [
+                                    {
+                                        "id": "inc-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einrichtung klarer, niedrigschwelliger Meldekanäle für Mitarbeitende und Dienstleister (z.B. Funktionspostfach, Ticket-System, Web-Formular oder Hotline) für (vermutete) Datenschutzverletzungen."
+                                    },
+                                    {
+                                        "id": "inc-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung eines standardisierten Meldeformulars mit Mindestangaben (z.B. Art des Vorfalls, Systeme, Datenkategorien, Zeitpunkt, erste Maßnahmen)."
+                                    },
+                                    {
+                                        "id": "inc-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Integration von Hinweisen zu Erkennung und Meldung von Datenschutzvorfällen in Schulungen und Awareness-Materialien (z.B. Intranet-Seiten, Leitfäden, E-Learnings)."
+                                    },
+                                    {
+                                        "id": "inc-02-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Verknüpfung organisatorischer Meldewege mit technischen Erkennungsmechanismen (z.B. Logging/Monitoring, SIEM), sodass technische Alarme in den Datenschutzvorfall-Prozess eingespeist werden."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "inc-02-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Haben Mitarbeitende und Dienstleister klar definierte und bekannte Meldekanäle für (vermutete) Datenschutzvorfälle?\n• Werden Mitarbeitende regelmäßig darüber informiert oder geschult, was ein Datenschutzvorfall ist und wie er zu melden ist?"
@@ -3117,6 +3171,33 @@
                                 "id": "inc-03-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Die Entscheidung über Meldepflichten und Betroffenenbenachrichtigungen erfolgt überwiegend intuitiv und von Fall zu Fall; Gründe werden wenig oder gar nicht dokumentiert.\nLevel 3: Es existiert eine definierte, organisationsweit verwendete Methodik zur Bewertung von Datenschutzverletzungen (z.B. Scoremodell oder Checkliste nach EDPB), die für jeden Vorfall angewendet und nachvollziehbar dokumentiert wird, inkl. Einstufung und Melde-/Benachrichtigungsentscheidung.\nLevel 5: Die Bewertungsmethodik wird regelmäßig anhand von Praxisfällen, Rechtsprechung und neuen Leitlinien angepasst; Ergebnisse und Muster aus Vorfällen fließen in die Weiterentwicklung von DPIA-Methodik, Transferbewertungen (TIAs) und TOM-Risikobewertungen ein."
+                            },
+                            {
+                                "id": "inc-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur systematischen Risikoanalyse und Einstufung von Datenschutzverletzungen.",
+                                "parts": [
+                                    {
+                                        "id": "inc-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Entwicklung einer standardisierten Methodik (z.B. Scoremodell, Checkliste) zur Bewertung von Datenschutzverletzungen im Hinblick auf Schwere und Eintrittswahrscheinlichkeit möglicher Schäden für betroffene Personen."
+                                    },
+                                    {
+                                        "id": "inc-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung eines Bewertungsformulars oder Templates, das für jeden Vorfall ausgefüllt wird (inkl. betroffene Daten, Anzahl Betroffener, Art der Verletzung, Risikoeinstufung, Entscheidung zu Art. 33/34)."
+                                    },
+                                    {
+                                        "id": "inc-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Schulung der beteiligten Rollen (z.B. DSB, Informationssicherheit, Fachbereiche) in der Anwendung der Bewertungsmethodik und Bezug auf EDPB-Guidelines und Beispiele."
+                                    },
+                                    {
+                                        "id": "inc-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Überarbeitung der Bewertungsmethodik auf Basis von Praxisfällen, Rechtsprechung, neuen Aufsichtsleitlinien sowie Erkenntnissen aus DPIA, TIA und TOM-Risikobewertungen."
+                                    }
+                                ]
                             },
                             {
                                 "id": "inc-03-questions",
@@ -3185,6 +3266,33 @@
                                 "prose": "Level 1: Meldungen an Aufsichtsbehörden erfolgen nur in Ausnahmefällen ohne klaren Prozess; Unsicherheit herrscht darüber, ob, wann und wo zu melden ist; Fristen werden nicht systematisch überwacht.\nLevel 3: Es besteht ein dokumentiertes Verfahren zur Prüfung und Durchführung von Meldungen nach Art. 33 DSGVO mit klarer Zuständigkeit (z.B. DSB) und Fristenkontrolle; alle Melde- und Nicht-Meldeentscheidungen werden nachvollziehbar dokumentiert.\nLevel 5: Es existieren vorbereitete Meldevorlagen und -pakete; Qualität und Vollständigkeit von Meldungen werden im Nachgang geprüft; Feedback der Aufsichtsbehörden wird ausgewertet und in Prozesse, Schulungen und TOMs zurückgespielt."
                             },
                             {
+                                "id": "inc-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Umsetzung der Meldepflichten nach Art. 33 DSGVO.",
+                                "parts": [
+                                    {
+                                        "id": "inc-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation eines konkreten Verfahrens zur Meldung von Datenschutzverletzungen an Aufsichtsbehörden, inklusive Zuständigkeiten, Fristenkontrolle und Eskalationsregeln."
+                                    },
+                                    {
+                                        "id": "inc-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Pflege einer Übersicht der zuständigen Aufsichtsbehörden (inkl. Kontaktdaten, Online-Formulare) entsprechend den jeweiligen Verantwortlichkeiten und Standorten."
+                                    },
+                                    {
+                                        "id": "inc-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Vorbereitung von Melde-Templates bzw. Standardtexten, die die Mindestinhalte nach Art. 33 DSGVO abdecken und an die Formulare der Aufsichtsbehörden angepasst werden können."
+                                    },
+                                    {
+                                        "id": "inc-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Einführung einer 72-Stunden-Tracking-Logik (z.B. in Ticket-Systemen oder Vorfallsregistern), um Einhaltung der Meldefrist zu überwachen und Entscheidungswege zu dokumentieren."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "inc-04-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Existiert ein Prozess, der sicherstellt, dass Meldepflichten an Aufsichtsbehörden innerhalb von 72 Stunden geprüft und gegebenenfalls erfüllt werden, einschließlich Dokumentation der Entscheidung?"
@@ -3239,6 +3347,33 @@
                                 "prose": "Level 1: Betroffene Personen werden nur in Ausnahmefällen und ohne strukturierte Kriterien informiert; Benachrichtigungstexte werden im Einzelfall ad hoc formuliert und sind häufig rechtlich oder technisch schwer verständlich.\nLevel 3: Es existieren definierte Kriterien, wann Betroffene nach Art. 34 DSGVO zu benachrichtigen sind, sowie vorbereitete, verständliche Textbausteine und ein Kommunikationsplan (Kanäle, Ansprechpartner, Q&A); jede Benachrichtigung wird mit Inhalt, Zeitpunkt und Kanal dokumentiert.\nLevel 5: Die Kommunikation mit Betroffenen ist mit PR/Kommunikation und Beschwerdemanagement abgestimmt; typische Rückfragen und Beschwerden fließen in die Weiterentwicklung der Vorlagen und Prozesse ein; Qualität und Verständlichkeit der Benachrichtigungen werden stichprobenartig geprüft."
                             },
                             {
+                                "id": "inc-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für die Benachrichtigung betroffener Personen nach Art. 34 DSGVO.",
+                                "parts": [
+                                    {
+                                        "id": "inc-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Kriterien, wann Betroffene nach Art. 34 DSGVO zu benachrichtigen sind, im Anschluss an die Risikoanalyse und Einstufung des Vorfalls."
+                                    },
+                                    {
+                                        "id": "inc-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung verständlicher, zielgruppengerechter Benachrichtigungsvorlagen mit den gesetzlich geforderten Mindestinhalten und praxisnahen Handlungsempfehlungen für Betroffene."
+                                    },
+                                    {
+                                        "id": "inc-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Ausarbeitung eines Kommunikationsplans (Kanäle, Verantwortliche, Q&A), der Datenschutz, Kommunikation/PR, Fachbereiche und ggf. Kundensupport oder Bürgerbüros einbezieht."
+                                    },
+                                    {
+                                        "id": "inc-05-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation von Versandzeitpunkt, genutztem Kanal, Textversion und etwaigen Rückmeldungen der Betroffenen im Vorfallsregister bzw. in zugeordneten Kommunikationssystemen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "inc-05-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es vordefinierte Kriterien und Textbausteine für die Benachrichtigung betroffener Personen nach Art. 34 DSGVO, einschließlich eines Kommunikationsplans (Kanäle, Ansprechpartner, Q&A)?"
@@ -3291,6 +3426,33 @@
                                 "id": "inc-06-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Es existiert kein vollständiges, zentrales Register zu Datenschutzvorfällen; Informationen liegen verteilt in E-Mails oder Tickets, und systematisches Lernen aus Vorfällen findet kaum statt.\nLevel 3: Ein zentrales Vorfallsregister erfasst alle Datenschutzverletzungen einschließlich Risikoanalyse, Melde-/Benachrichtigungsentscheidung und getroffener Maßnahmen; Auswertungen werden regelmäßig erstellt und in einem geeigneten Gremium (z.B. Security-/Datenschutzboard, Management) besprochen.\nLevel 5: Vorfallsdaten werden aktiv genutzt, um TOMs, Prozesse, Schulungs- und DPIA-Konzepte anzupassen; es gibt Kennzahlen (z.B. Wiederholungsfehler, Zeit bis Maßnahmenumsetzung), die in Management-Reports einfließen und für die Steuerung des Datenschutz-Programms genutzt werden."
+                            },
+                            {
+                                "id": "inc-06-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Führung eines Vorfallsregisters und für Lessons Learned aus Datenschutzvorfällen.",
+                                "parts": [
+                                    {
+                                        "id": "inc-06-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einrichtung eines zentralen Vorfallsregisters (z.B. in einem Ticket-System oder spezialiserten Register), das alle Datenschutzverletzungen unabhängig von der Meldepflicht erfasst."
+                                    },
+                                    {
+                                        "id": "inc-06-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von Pflichtfeldern im Register (z.B. Ursachen, betroffene Systeme/Daten, Risikoeinschätzung, Art. 33/34-Entscheidungen, Sofortmaßnahmen, nachhaltige Korrekturmaßnahmen)."
+                                    },
+                                    {
+                                        "id": "inc-06-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung strukturierter Root-Cause-Analysen und Lessons-Learned-Workshops bei wesentlichen oder wiederkehrenden Vorfällen."
+                                    },
+                                    {
+                                        "id": "inc-06-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines regelmäßigen Berichtswesens (z.B. an Datenschutz- oder Security-Board), das Kennzahlen und Muster aus dem Vorfallsregister nutzt, um TOMs, Prozesse, Schulungen und DPIA-Ansätze gezielt zu verbessern."
+                                    }
+                                ]
                             },
                             {
                                 "id": "inc-06-questions",
