@@ -1241,6 +1241,218 @@
                                 "prose": "Die Organisation führt risikobasierte Bewertungen des Schutzbedarfs personenbezogener Daten durch und leitet geeignete technische und organisatorische Maßnahmen ab."
                             }
                         ]
+                    },
+                    {
+                        "id": "TOM-02",
+                        "class": "safeguard",
+                        "title": "Zugriffs- und Berechtigungsmanagement",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 32; Art. 5(1)(f)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "access-control"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "technical"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "access-control-policy, iam-configuration, access-review-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "tom-02-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation stellt durch ein systematisches Zugriffs- und Berechtigungsmanagement sicher, dass nur berechtigte Personen entsprechend dem Prinzip der geringsten Rechte auf personenbezogene Daten zugreifen können, und überprüft die Berechtigungen regelmäßig."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "TOM-03",
+                        "class": "safeguard",
+                        "title": "Verschlüsselung und Pseudonymisierung",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 32(1)(a); Art. 25"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Nicht-Verkettbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "encryption-pseudonymisation"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "technical"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "encryption-policy, key-management-docs, pseudonymisation-concept"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "tom-03-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation setzt für personenbezogene Daten angemessene Verfahren zur Verschlüsselung und Pseudonymisierung ein, dokumentiert deren Einsatzbereiche und stellt ein sicheres Schlüssel- und Kennwortmanagement sicher."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.enisa.europa.eu/publications/handbook-on-security-of-personal-data-processing",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "TOM-04",
+                        "class": "safeguard",
+                        "title": "Protokollierung, Monitoring und Erkennung von Sicherheitsvorfällen",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 32; Art. 5(1)(f)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Integrität, Verfügbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "logging-monitoring"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "technical"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "logging-policy, monitoring-concept, siem-configuration, log-retention-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "tom-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation protokolliert sicherheitsrelevante Zugriffe und Verarbeitungsvorgänge personenbezogener Daten, überwacht die Protokolle systematisch und setzt Verfahren zur Erkennung und Bewertung von Sicherheitsvorfällen ein."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/system/files/2024-01/one_stop_shop_case_digest_security_data_breach_en.pdf",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "TOM-05",
+                        "class": "safeguard",
+                        "title": "Backup, Wiederherstellung und Betriebsfortführung",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 32(1)(b)-(c)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Verfügbarkeit, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "business-continuity"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "technical"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "backup-policy, restore-test-records, business-continuity-plan, dr-test-reports"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "tom-05-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation implementiert und dokumentiert Verfahren zur Sicherung und Wiederherstellung personenbezogener Daten sowie zur Aufrechterhaltung des Betriebs kritischer Prozesse im Falle von Störungen oder Sicherheitsvorfällen."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "TOM-06",
+                        "class": "safeguard",
+                        "title": "Sichere Entwicklung und Änderungsmanagement",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 25; Art. 32"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Integrität, Nicht-Verkettbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "secure-development"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "secure-development-guidelines, change-management-records, code-review-logs, security-test-reports"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "tom-06-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über Richtlinien und Verfahren für die sichere Entwicklung und Änderung von Anwendungen und Systemen, die personenbezogene Daten verarbeiten, einschließlich Sicherheitsanforderungen, Reviews und Tests vor dem produktiven Einsatz."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/it-grundschutz-kompendium_node.html",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Kompendium_Einzel_PDFs_2023/03_CON_Konzepte_und_Vorgehensweisen/CON_2_Datenschutz_Edition_2023.pdf",
+                                "rel": "reference"
+                            }
+                        ]
                     }
                 ]
             },
