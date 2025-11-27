@@ -614,6 +614,16 @@
                                 "id": "law-01-stmt",
                                 "name": "statement",
                                 "prose": "Für jede Verarbeitung personenbezogener Daten werden Rechtsgrundlagen identifiziert, dokumentiert und regelmäßig überprüft."
+                            },
+                            {
+                                "id": "law-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Rechtsgrundlagen werden nur grob oder pauschal benannt (z.B. „Art. 6 DSGVO“), ohne systematische Zuordnung je Verarbeitungstätigkeit; eine Dokumentation erfolgt, wenn überhaupt, nur anlassbezogen.\nLevel 3: Für jede Verarbeitungstätigkeit ist im Verzeichnis von Verarbeitungstätigkeiten eine konkrete Rechtsgrundlage (inkl. Abs./Buchstabe) dokumentiert; es existiert ein Leitfaden oder Checkliste zur Auswahl von Rechtsgrundlagen, und wesentliche Änderungen von Prozessen oder Systemen lösen eine erneute Prüfung aus.\nLevel 5: Rechtsgrundlagen werden regelmäßig im Lichte von Rechtsprechung, Aufsichtsbehördenleitlinien und Geschäftsmodell-/Prozessänderungen überprüft; es existiert eine übergreifende „Legal-Basis-Strategie“ (z.B. für Marketing, HR, Plattformdienste), die mit Risiko- und DPIA-Prozessen verzahnt ist."
+                            },
+                            {
+                                "id": "law-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Ist für jede Verarbeitungstätigkeit im Verzeichnis eine konkrete Rechtsgrundlage (inkl. Abs./Buchstabe) dokumentiert und nachvollziehbar begründet?\n• Gibt es Leitlinien oder Checklisten zur Auswahl von Rechtsgrundlagen und werden diese bei neuen oder geänderten Verarbeitungstätigkeiten konsistent angewendet?"
                             }
                         ]
                     },
@@ -652,6 +662,16 @@
                                 "id": "law-02-stmt",
                                 "name": "statement",
                                 "prose": "Für jede Verarbeitungstätigkeit werden Zwecke klar, spezifisch und legitim definiert und dokumentiert; Weiterverarbeitungen werden nur nach dokumentierter Prüfung der Zweckkompatibilität durchgeführt."
+                            },
+                            {
+                                "id": "law-02-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Zwecke sind allgemein oder sehr weit gefasst (z.B. „Verbesserung unserer Services“), eine Trennung zwischen Primär- und Sekundärzwecken findet praktisch nicht statt; Kompatibilitätsprüfungen werden selten durchgeführt oder nicht dokumentiert.\nLevel 3: Zwecke sind für jede Verarbeitungstätigkeit spezifisch und verständlich formuliert und im Verzeichnis dokumentiert; für neue oder geänderte Nutzungen (Sekundärzwecke) existiert ein standardisiertes Verfahren zur Kompatibilitätsprüfung nach Art. 6(4) DSGVO mit Dokumentation der wesentlichen Erwägungen.\nLevel 5: Zweck- und Kompatibilitätsprüfungen sind in Produkt-/Projektgovernance integriert; Datenarchitektur und Prozesse unterstützen Zweckbindung technisch (z.B. Zweckkennzeichnungen, getrennte Datenräume); Ergebnisse aus Beschwerden, Vorfällen und DPIAs fließen in die Weiterentwicklung von Zweck- und Kompatibilitätsrichtlinien ein."
+                            },
+                            {
+                                "id": "law-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Sind die Zwecke für wesentliche Verarbeitungstätigkeiten spezifisch und verständlich dokumentiert (nicht nur generische Sammelbegriffe)?\n• Gibt es ein Verfahren zur Kompatibilitätsprüfung bei neuen oder erweiterten Nutzungen von Daten (Sekundärzwecke) und werden die Ergebnisse nachvollziehbar dokumentiert?"
                             }
                         ],
                         "links": [
@@ -696,6 +716,16 @@
                                 "id": "law-03-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation legt Kriterien zur Datenminimierung und zur Begrenzung der Speicherfristen fest, dokumentiert diese und überprüft sie regelmäßig im Hinblick auf Erforderlichkeit und Verhältnismäßigkeit."
+                            },
+                            {
+                                "id": "law-03-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Umfang der erhobenen Daten und Speicherfristen orientieren sich vor allem an technischen oder fachlichen Wünschen; es fehlen konsistente Lösch- und Aufbewahrungsregeln; Alt- und Testdaten werden häufig dauerhaft behalten.\nLevel 3: Es existieren ein Lösch- und Aufbewahrungskonzept mit definierten Fristen je Datenkategorie/Verarbeitung sowie Vorgaben zur Datenminimierung (Pflicht-/Kann-Felder, optionale Angaben); Fristen sind mit Fachbereichen, Recht und ggf. Archiv abgestimmt und werden regelmäßig überprüft.\nLevel 5: Datenminimierung und Speicherbegrenzung sind in Fach- und Systemdesign integriert (Privacy by Design); technische Verfahren (z.B. automatisierte Lösch-/Anonymisierungsjobs, Pseudonymisierung, Aggregation) unterstützen die Umsetzung; Kennzahlen zu Datenbeständen und Löschläufen werden genutzt, um Konzept und Prozesse zu verbessern."
+                            },
+                            {
+                                "id": "law-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es ein dokumentiertes Lösch- und Aufbewahrungskonzept mit konkreten Fristen und Verantwortlichkeiten je Datenkategorie bzw. Verarbeitungstätigkeit?\n• Werden Datenminimierung und Speicherbegrenzung bei der Gestaltung von Formularen, Systemen und Prozessen (z.B. Pflichtfelder, optionale Felder, automatische Löschung) systematisch berücksichtigt und getestet?"
                             }
                         ]
                     },
@@ -734,6 +764,16 @@
                                 "id": "law-04-stmt",
                                 "name": "statement",
                                 "prose": "Für Verarbeitungen besonderer Kategorien personenbezogener Daten und von Daten über strafrechtliche Verurteilungen und Straftaten werden spezifische Rechtsgrundlagen geprüft, dokumentiert und mit erhöhten Schutzmaßnahmen verknüpft."
+                            },
+                            {
+                                "id": "law-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Besondere Kategorien und Strafdaten werden rechtlich und technisch weitgehend wie normale personenbezogene Daten behandelt; es gibt keine spezifischen Kriterien für Zulässigkeit, Erforderlichkeit oder zusätzliche Schutzmaßnahmen.\nLevel 3: Für jede Verarbeitung besonderer Kategorien oder von Strafdaten ist eine spezifische Rechtsgrundlage nach Art. 9(2) bzw. Art. 10 DSGVO dokumentiert; es existieren Vorgaben zu zusätzlichen TOMs (z.B. Zugriffsbegrenzung, Protokollierung, Trennung) und zur Notwendigkeit von DPIAs bei hohem Risiko.\nLevel 5: Verarbeitungen besonderer Kategorien/Strafdaten werden regelmäßig im Rahmen von DPIAs, Risiko-Reviews und Rechtsprüfungen bewertet; es bestehen klare Ausstiegs- oder Alternativszenarien (z.B. Aggregation, Pseudonymisierung); Missbrauchs- oder Vorfallrisiken werden aktiv überwacht und fließen in Governance und Technik zurück."
+                            },
+                            {
+                                "id": "law-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Sind Verarbeitungen besonderer Kategorien personenbezogener Daten und von Strafdaten explizit identifiziert und mit spezifischen Rechtsgrundlagen (Art. 9(2) bzw. Art. 10 DSGVO) hinterlegt?\n• Werden für diese Verarbeitungen besondere Schutzmaßnahmen (z.B. Zugriffsbegrenzung, Protokollierung, DPIA-Pflicht) definiert, dokumentiert und regelmäßig überprüft?"
                             }
                         ]
                     },
@@ -772,6 +812,16 @@
                                 "id": "law-05-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation verfügt über Vorgaben zur Gestaltung, Einholung, Dokumentation und zum Widerruf von Einwilligungen, die die Anforderungen der DSGVO an Freiwilligkeit, Informiertheit, eindeutige Handlung und Nachweisbarkeit erfüllen."
+                            },
+                            {
+                                "id": "law-05-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Einwilligungen werden mit vorangekreuzten Kästchen, in AGB-ähnlichen Textblöcken oder gebündelt eingeholt; Nachweise über erteilte Einwilligungen und Widerrufe sind schwer oder gar nicht auffindbar; Opt-out-/Widerrufsprozesse sind kompliziert.\nLevel 3: Es existieren standardisierte, geprüfte Einwilligungstexte mit klarer Trennung nach Zwecken; Prozesse und Systeme stellen sicher, dass Einwilligungen protokolliert und nachweisbar sind; Widerruf ist jederzeit über einfache Kanäle möglich und wird zeitnah in den relevanten Systemen umgesetzt.\nLevel 5: Gestaltung und Verständlichkeit von Einwilligungstexten werden regelmäßig getestet (z.B. UX-/Lesbarkeitstests); es gibt zentrale Übersichten über Einwilligungsstände und Widerrufe über Kanäle hinweg; Daten aus Widerrufsgründen, Beschwerden und Audits fließen in die Optimierung von Texten, Prozessen und Rechtsgrundlagenstrategie ein."
+                            },
+                            {
+                                "id": "law-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Werden Einwilligungen mit standardisierten, geprüften Texten eingeholt und sind diese klar von anderen Erklärungen (z.B. AGB) getrennt?\n• Gibt es nachvollziehbare Protokolle über erteilte Einwilligungen und Widerrufe sowie einen einfachen, leicht auffindbaren Widerrufsprozess, der organisatorisch und technisch abgestützt ist?"
                             }
                         ],
                         "links": [
@@ -820,6 +870,16 @@
                                 "id": "law-06-stmt",
                                 "name": "statement",
                                 "prose": "Bei Verarbeitungen auf Grundlage berechtigter Interessen führt die Organisation strukturierte Legitimate-Interest-Assessments durch, dokumentiert Zweck, Erforderlichkeit, Interessenabwägung sowie ggf. ergänzende Schutzmaßnahmen und überprüft diese regelmäßig."
+                            },
+                            {
+                                "id": "law-06-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Art. 6(1)(f) wird weit genutzt (insbesondere im Marketing oder bei internen Analysen), ohne dass eine strukturierte Interessenabwägung durchgeführt oder dokumentiert wird; Betroffeneninteressen werden nur pauschal berücksichtigt.\nLevel 3: Es existieren Vorlagen/Checklisten für LIAs; für alle wesentlichen Verarbeitungen auf Basis berechtigter Interessen werden Zweck, Erforderlichkeit, berechtigte Interessen, Betroffeneninteressen, Abwägungsergebnis und Schutzmaßnahmen dokumentiert und periodisch überprüft.\nLevel 5: LIAs sind in Risiko- und DPIA-Prozesse integriert; wiederkehrende Muster (z.B. bestimmte Marketing- oder Analyseformen) werden regelmäßig im Lichte von Rechtsprechung und Aufsichtspraxis überprüft; Anpassungen der Schutzmaßnahmen (z.B. Opt-out-Möglichkeiten, Pseudonymisierung, Einschränkung der Daten) lassen sich aus den LIAs ableiten und werden nachgehalten."
+                            },
+                            {
+                                "id": "law-06-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Werden für Verarbeitungen auf Basis berechtigter Interessen strukturierte LIAs mit dokumentierter Interessenabwägung und ggf. zusätzlichen Schutzmaßnahmen durchgeführt?\n• Werden LIAs regelmäßig überprüft (z.B. bei Änderungen der Verarbeitung, neuer Rechtsprechung oder Beschwerden) und fließen deren Ergebnisse in Anpassungen von Prozessen, TOMs oder Kommunikationsinhalten ein?"
                             }
                         ],
                         "links": [
