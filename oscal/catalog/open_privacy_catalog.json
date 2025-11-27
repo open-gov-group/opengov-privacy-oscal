@@ -1733,25 +1733,25 @@
             },
             {
                 "id": "OPS",
-                "class": "processors-and-joint-controllers",
-                "title": "OPS – Auftragsverarbeitung & gemeinsame Verantwortliche",
+                "class": "operations",
+                "title": "OPS – Betriebsprozesse & operative Umsetzung",
                 "controls": [
                     {
                         "id": "OPS-01",
-                        "class": "contract",
-                        "title": "Auftragsverarbeitungsverträge",
+                        "class": "process",
+                        "title": "Datenschutzanforderungen in Kernprozessen verankert",
                         "props": [
                             {
                                 "name": "dsgvo-article",
-                                "value": "Art. 28"
+                                "value": "Art. 5(1)(b)(c)(e); Art. 24; Art. 25; Art. 32"
                             },
                             {
                                 "name": "sdm-goal",
-                                "value": "Vertraulichkeit, Transparenz"
+                                "value": "Transparenz, Datenminimierung, Vertraulichkeit, Verfügbarkeit"
                             },
                             {
                                 "name": "maturity-domain",
-                                "value": "processors"
+                                "value": "operations"
                             },
                             {
                                 "name": "target-maturity",
@@ -1759,18 +1759,200 @@
                             },
                             {
                                 "name": "measure-type",
-                                "value": "contractual"
+                                "value": "process"
                             },
                             {
                                 "name": "evidence-type",
-                                "value": "processor-contracts, vendor-list"
+                                "value": "process-descriptions, work-instructions, swimlane-diagrams, control-checklists"
                             }
                         ],
                         "parts": [
                             {
                                 "id": "ops-01-stmt",
                                 "name": "statement",
-                                "prose": "Die Organisation schließt mit allen Auftragsverarbeitern Verträge nach Art. 28 DSGVO ab und überprüft diese regelmäßig."
+                                "prose": "Die Organisation stellt sicher, dass für alle wesentlichen Geschäftsprozesse, in denen personenbezogene Daten verarbeitet werden (z.B. Personalprozesse, Kunden- und Bürgerprozesse, Beschaffung, Finanzen), dokumentierte Arbeits- und Verfahrensanweisungen vorliegen, in denen relevante Datenschutzanforderungen (Zweckbindung, Datenminimierung, Betroffenenrechte, Zugriffsregelungen, Löschfristen, Informationspflichten) konkret auf den Ablauf des Prozesses abgebildet sind."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "OPS-02",
+                        "class": "process",
+                        "title": "Datenschutz in Projekt- und Change-Management integriert",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 24; Art. 25; Art. 32; Art. 35"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit, Datenminimierung"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "operations"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "project-management-methodology, privacy-checklists, gate-templates, project-privacy-concepts, change-requests"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "ops-02-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation integriert Datenschutzanforderungen systematisch in Projekt- und Change-Management-Vorgehensmodelle. Dies umfasst u.a. standardisierte Datenschutz-Checklisten und -Fragen in frühen Projektphasen, Vorgaben zur Erstellung von Datenschutzkonzepten, Kriterien und Trigger für Datenschutz-Folgenabschätzungen, die verpflichtende Einbindung des/der Datenschutzbeauftragten sowie dokumentierte Entscheidungen zur Gestaltung und Freigabe von Änderungen mit Auswirkungen auf die Verarbeitung personenbezogener Daten."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.datenschutz-berlin.de/fileadmin/user_upload/pdf/dokumente/BlnBDI_Standardprozess_Datenschutz_Handreichung_I.pdf",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.datenschutz-bayern.de/datenschutzreform2018/aki64.html",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "OPS-03",
+                        "class": "process",
+                        "title": "Datenschutzanforderungen in Beschaffung und Dienstleistersteuerung",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(2); Art. 24; Art. 26; Art. 28; Art. 32"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Vertraulichkeit, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "operations"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "procurement-policy, data-protection-requirements-in-rfp, contract-templates, vendor-risk-assessments, onboarding-checklists"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "ops-03-stmt",
+                                "name": "statement",
+                                "prose": "Beschaffungs- und Vergabeprozesse enthalten verbindliche Datenschutzanforderungen, insbesondere zur Rollenklärung (Verantwortlicher, gemeinsame Verantwortliche, Auftragsverarbeiter), zu technischen und organisatorischen Maßnahmen, Unterauftragsverhältnissen sowie Kontroll- und Auditrechten. Die Organisation nutzt standardisierte Vertragsmuster und Checklisten für die datenschutzrechtliche Prüfung von Dienstleistern und dokumentiert Auswahl-, Freigabe- und Review-Entscheidungen."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Grundschutz/IT-GS-Kompendium_Einzel_PDFs_2023/03_CON_Konzepte_und_Vorgehensweisen/CON_2_Datenschutz_Edition_2023.pdf",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.datenschutzzentrum.de/sdm/",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "OPS-04",
+                        "class": "process",
+                        "title": "Lösch-, Sperr- und Archivierungsprozesse im Regelbetrieb",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(1)(c)(e); Art. 17; Art. 18; Art. 30; Art. 32"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Datenminimierung, Verfügbarkeit, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "operations"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "deletion-concept, retention-schedules, deletion-and-archiving-procedures, deletion-logs, test-reports"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "ops-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation betreibt dokumentierte und wirksame Lösch-, Sperr- und Archivierungsprozesse, die an die festgelegten Aufbewahrungsfristen gekoppelt sind. Löschregeln werden systemseitig implementiert, regelmäßig getestet und auf ihre Wirksamkeit überprüft. Für Systeme mit besonderen Risiken (z.B. große Datenbestände, Langzeitarchivierung, Backups) bestehen spezifische Verfahren zur datenschutzkonformen Löschung, Pseudonymisierung oder Anonymisierung sowie zur Behandlung technischer Löschhindernisse."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "OPS-05",
+                        "class": "process",
+                        "title": "Zugriffs- und Berechtigungssteuerung in Betriebsprozessen",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(1)(f); Art. 24; Art. 25; Art. 32"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Integrität, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "operations"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "role-concepts, access-matrices, joiner-mover-leaver-procedures, access-review-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "ops-05-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation steuert fachliche Rollen und technische Zugriffsberechtigungen für personenbezogene Daten nach dem Need-to-know-Prinzip. Es existieren dokumentierte Verfahren für die Vergabe, Änderung und Entziehung von Berechtigungen (Joiner-Mover-Leaver-Prozess) sowie regelmäßige, nachvollziehbar dokumentierte Rezertifizierungen von Zugriffsrechten. Die fachliche Verantwortlichkeit für Berechtigungen ist klar zugeordnet und mit den datenschutzrechtlichen Zwecken abgestimmt."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.datenschutz-mv.de/static/DS/Dateien/Datenschutzmodell/Bausteine/SDM-V2.0b_Zugriffe_regeln_V1.0.pdf",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.datenschutzzentrum.de/sdm/",
+                                "rel": "reference"
                             }
                         ]
                     }
@@ -1778,17 +1960,17 @@
             },
             {
                 "id": "XFER",
-                "class": "data-transfers",
-                "title": "XFER – Internationale Datentransfers",
+                "class": "transfers",
+                "title": "XFER – Datenübermittlungen & internationale Transfers",
                 "controls": [
                     {
                         "id": "XFER-01",
                         "class": "process",
-                        "title": "Identifikation und Dokumentation von Drittlandtransfers",
+                        "title": "Transfer-Inventar und Mapping internationaler Datenübermittlungen",
                         "props": [
                             {
                                 "name": "dsgvo-article",
-                                "value": "Art. 44–49"
+                                "value": "Art. 5(2); Art. 30; Art. 44–49"
                             },
                             {
                                 "name": "sdm-goal",
@@ -1804,18 +1986,246 @@
                             },
                             {
                                 "name": "measure-type",
-                                "value": "process"
+                                "value": "record"
                             },
                             {
                                 "name": "evidence-type",
-                                "value": "transfer-register, transfer-assessment"
+                                "value": "transfer-register, record-of-processing, data-flow-diagrams, system-inventory"
                             }
                         ],
                         "parts": [
                             {
                                 "id": "xfer-01-stmt",
                                 "name": "statement",
-                                "prose": "Die Organisation identifiziert, dokumentiert und bewertet alle Übermittlungen personenbezogener Daten in Drittländer oder an internationale Organisationen."
+                                "prose": "Die Organisation führt ein aktuelles Inventar aller Übermittlungen personenbezogener Daten an Empfänger außerhalb des EWR oder an internationale Organisationen. Das Inventar dokumentiert mindestens Kategorien der personenbezogenen Daten, Kategorien von Empfängern, betroffene Drittländer, genutzte Transferinstrumente nach Kapitel V DSGVO, wesentliche technische und organisatorische Maßnahmen sowie Verweise auf einschlägige Verträge und Bewertungen."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "XFER-02",
+                        "class": "policy",
+                        "title": "Politik zur Auswahl geeigneter Transferinstrumente nach Kapitel V DSGVO",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 44–46"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Vertraulichkeit, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-transfers"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "legal"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "transfer-policy, decision-criteria, contract-templates, bcr-documentation, code-of-conduct-membership"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "xfer-02-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über eine dokumentierte Politik zur Auswahl und Nutzung geeigneter Transferinstrumente nach Kapitel V DSGVO (Angemessenheitsbeschlüsse, Standarddatenschutzklauseln, verbindliche interne Datenschutzvorschriften, genehmigte Verhaltensregeln oder Zertifizierungen). Die Politik definiert Entscheidungskriterien, Zuständigkeiten sowie Anforderungen an Vertragsgestaltung, Dokumentation und regelmäßige Überprüfung der eingesetzten Transferinstrumente."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/sme-data-protection-guide/international-data-transfers_en",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "XFER-03",
+                        "class": "process",
+                        "title": "Transfer Impact Assessments und ergänzende Maßnahmen (Schrems II)",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 44; Art. 46; Art. 32"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Integrität, Verfügbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-transfers"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "tia-policy, tia-templates, tia-reports, supplementary-measures-register, encryption-and-key-management-policies"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "xfer-03-stmt",
+                                "name": "statement",
+                                "prose": "Bei internationalen Übermittlungen, die auf Art. 46 DSGVO gestützt werden, führt die Organisation strukturierte Transfer Impact Assessments (TIAs) durch. Die TIAs bewerten insbesondere das Recht und die Praxis des Drittlandes, mögliche Zugriffe von Behörden, das Schutzniveau der eingesetzten technischen, organisatorischen und vertraglichen Maßnahmen sowie das Gesamtrisiko für die Rechte und Freiheiten betroffener Personen. Ergänzende Maßnahmen werden dokumentiert und regelmäßig auf ihre Wirksamkeit überprüft."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/recommendations/recommendations-012020-measures-supplement-transfer_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "XFER-04",
+                        "class": "process",
+                        "title": "Nutzung von Angemessenheitsbeschlüssen und EU-U.S. Data Privacy Framework",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 45"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Vertraulichkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-transfers"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "adequacy-decision-register, dpf-participant-checks, vendor-onboarding-records, periodic-review-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "xfer-04-stmt",
+                                "name": "statement",
+                                "prose": "Werden Datenübermittlungen auf Angemessenheitsbeschlüsse der Europäischen Kommission gestützt, stellt die Organisation sicher, dass die jeweils aktuellen Entscheidungen berücksichtigt werden und die Empfänger tatsächlich unter den Anwendungsbereich des Beschlusses fallen (z.B. Zertifizierung nach EU-U.S. Data Privacy Framework). Es existieren Verfahren zur regelmäßigen Überprüfung der Listeneinträge, zur Dokumentation der Prüfungen sowie zur Umstellung auf andere Transferinstrumente bei Änderungen oder Wegfall der Angemessenheit."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/adequacy-decisions_en",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.bfdi.bund.de/SharedDocs/Kurzmeldungen/DE/2023/17_Angemessenheitsbeschluss-EU-US-DPF.html",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "XFER-05",
+                        "class": "process",
+                        "title": "Einsatz von Ausnahmeregelungen für bestimmte Fälle (Art. 49 DSGVO)",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 49"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-transfers"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "legal"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "art49-guideline, decision-records, data-subject-information-templates, risk-assessments"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "xfer-05-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation nutzt die Ausnahmeregelungen des Art. 49 DSGVO nur in eng begrenzten, dokumentierten Einzelfällen und nicht für routinemäßige oder massenhafte Übermittlungen. Für jede Nutzung einer Ausnahme werden Rechtsgrundlage, Zweck, betroffene Datenkategorien, Empfänger, Drittländer, betroffene Personen, durchgeführte Risikoabwägungen sowie etwaige zusätzliche Schutzmaßnahmen nachvollziehbar dokumentiert."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-22018-derogations-article-49-under-regulation_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "XFER-06",
+                        "class": "process",
+                        "title": "Umgang mit Auskunfts- und Herausgabeverlangen aus Drittstaaten (Art. 48 DSGVO)",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 48; Art. 44–46"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Integrität, Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-transfers"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "law-enforcement-request-policy, request-logs, legal-opinions, decision-records, data-subject-information-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "xfer-06-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über ein Verfahren zum Umgang mit Anfragen und Anordnungen ausländischer Behörden oder Gerichte auf Herausgabe personenbezogener Daten. Das Verfahren stellt sicher, dass solche Anfragen rechtlich geprüft, dokumentiert, nur auf Grundlage eines völkerrechtlichen Übereinkommens oder anderer nach der DSGVO zulässiger Instrumente beantwortet werden und keine unzulässigen Übermittlungen erfolgen. Entscheidungen, Korrespondenz und etwaige Information der betroffenen Personen werden nachvollziehbar dokumentiert."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/system/files/2025-06/edpb_guidelines_202402_article48_v2_en.pdf",
+                                "rel": "reference"
                             }
                         ]
                     }
