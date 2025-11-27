@@ -359,6 +359,158 @@
                                 "prose": "Die Organisation betreibt ein dokumentiertes Datenschutzmanagementsystem, welches Prozesse, Richtlinien und Nachweise zur Erfüllung der DSGVO umfasst."
                             }
                         ]
+                    },
+                    {
+                        "id": "ACC-02",
+                        "class": "procedure",
+                        "title": "Datenschutz-Dokumentationskonzept",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(2); Art. 24; Art. 30"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "accountability"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "documentation-policy, documentation-register, retention-rules"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "acc-02-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über ein dokumentiertes Konzept für die Datenschutzdokumentation, das Arten von Dokumenten, Verantwortlichkeiten, Strukturen, Versionierung und Aufbewahrung regelt."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ACC-03",
+                        "class": "procedure",
+                        "title": "Rechenschaftsnachweise und Compliance-Mapping",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(2); Art. 24"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "accountability"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "compliance-matrix, requirement-control-evidence-mapping, audit-dossiers"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "acc-03-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation führt ein systematisches Mapping der Anforderungen der DSGVO auf interne Kontrollen und Nachweise, sodass für wesentliche Pflichten jederzeit nachvollziehbar ist, durch welche Maßnahmen und Dokumente sie erfüllt werden."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ACC-04",
+                        "class": "procedure",
+                        "title": "Interne Datenschutz-Audits und Management-Review",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 24; Art. 32; Art. 39(1)(b)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "accountability"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "audit-plan, audit-reports, management-review-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "acc-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation führt regelmäßig interne Audits des Datenschutzmanagementsystems und der Datenschutzdokumentation durch und wertet die Ergebnisse in formellen Management-Reviews aus."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ACC-05",
+                        "class": "procedure",
+                        "title": "Dokumentation von Entscheidungs- und Risikoabwägungen",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 6(1)(f); Art. 24; Art. 25; Art. 35"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "accountability"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "lba-documentation, dpia-report, risk-acceptance-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "acc-05-stmt",
+                                "name": "statement",
+                                "prose": "Wesentliche datenschutzrelevante Entscheidungs- und Risikoabwägungen, insbesondere zu berechtigten Interessen und Datenschutz-Folgenabschätzungen, werden nachvollziehbar dokumentiert und sind für Prüfzwecke verfügbar."
+                            }
+                        ]
                     }
                 ]
             },
