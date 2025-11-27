@@ -2690,6 +2690,16 @@
                                 "id": "train-01-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation führt regelmäßig verpflichtende Datenschutzgrundlagenschulungen für alle Beschäftigten durch, die personenbezogene Daten verarbeiten. Inhalte umfassen mindestens Grundprinzipien der DSGVO, interne Datenschutzregeln, Meldewege für Datenschutzvorfälle sowie praktisches Verhalten im Arbeitsalltag. Schulungsinhalte und Teilnahmen werden nachvollziehbar dokumentiert."
+                            },
+                            {
+                                "id": "train-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Schulungen finden nur sporadisch oder einmalig (z.B. zur DSGVO-Einführung) statt, ohne klaren Pflichtcharakter, definierten Turnus oder vollständige Teilnehmerdokumentation. Level 3: Es existiert ein dokumentierter Schulungsplan mit definiertem Turnus (z.B. alle 1–2 Jahre), klarer Zielgruppe und Inhalten; Teilnahme an der Grundlagenschulung ist verpflichtend, wird nachvollziehbar erfasst und bei Nichterfüllung werden Nachschulungen angestoßen. Level 5: Schulungsinhalte werden regelmäßig auf Basis von Vorfällen, Auditergebnissen und Feedback angepasst; Teilnahme- und Testergebnisse fließen in Management-Reporting und Risikoanalysen ein und beeinflussen die Weiterentwicklung des Datenschutzprogramms."
+                            },
+                            {
+                                "id": "train-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es eine verpflichtende Datenschutzgrundlagenschulung für alle Mitarbeitenden mit dokumentierter Teilnahme und definiertem Turnus (z.B. alle 1–2 Jahre)?\n• Ist Datenschutz Bestandteil eines standardisierten Onboardings für neue Mitarbeitende, bevor sie mit personenbezogenen Daten arbeiten?"
                             }
                         ],
                         "links": [
@@ -2734,6 +2744,16 @@
                                 "id": "train-02-stmt",
                                 "name": "statement",
                                 "prose": "Für besonders datenschutzrelevante Rollen (z.B. Führungskräfte, HR, Vertrieb/Marketing, IT/DevOps, Support, Fachadministration) führt die Organisation vertiefende, rollenbasierte Schulungen durch, die konkrete Verarbeitungsszenarien, typische Risiken und Pflichten adressieren. Neue Mitarbeitende erhalten vor Aufnahme datenschutzrelevanter Tätigkeiten ein geeignetes Onboarding; bei wesentlichen Änderungen von Prozessen, Systemen oder Rechtslage werden anlassbezogene Nachschulungen durchgeführt."
+                            },
+                            {
+                                "id": "train-02-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Einzelne Fachbereiche organisieren bei Bedarf eigene Schulungen ohne zentrale Steuerung, Mindestinhalte oder systematisches Onboarding; Rollen mit hohem Datenschutzrisiko sind nicht klar definiert. Level 3: Es existieren definierte rollenbasierte Curricula (z.B. für HR, IT, Marketing, Führungskräfte) mit dokumentierten Lernzielen und Inhalten; rollenspezifische Schulungen sind Teil des Onboardings und werden bei Rollenwechseln oder wesentlichen Änderungen von Systemen/Prozessen angestoßen und dokumentiert. Level 5: Rollenbasierte Schulungen werden eng mit Risiko-, DPIA- und Incident-Ergebnissen verknüpft; Inhalte werden auf Basis typischer Fehler in den jeweiligen Prozessen angepasst; Teilnahmequoten und Testergebnisse werden pro Rolle ausgewertet und fließen in Personal- und Rollenplanung ein."
+                            },
+                            {
+                                "id": "train-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Existieren rollenbasierte Vertiefungsschulungen (z.B. für HR, IT, Marketing, Führungskräfte) mit klar definierten Lernzielen?\n• Werden bei wesentlichen Änderungen (neue Systeme, neue Prozesse, neue Rechtslage) gezielt Nachschulungen durchgeführt und dokumentiert?"
                             }
                         ]
                     },
@@ -2772,6 +2792,16 @@
                                 "id": "train-03-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation betreibt laufende Awareness-Maßnahmen zum Datenschutz (z.B. Intranet-Beiträge, Newsletter, Kampagnen, E-Learnings, Poster, kurze Reminder), die auf aktuelle Risiken und Vorfälle eingehen und die Beschäftigten zu datenschutzgerechtem Verhalten motivieren. Datenschutz wird als Bestandteil der Sicherheits- und Unternehmenskultur kommuniziert, nicht nur als einmalige Pflichtschulung."
+                            },
+                            {
+                                "id": "train-03-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Awareness-Maßnahmen erfolgen unregelmäßig und anlassbezogen (z.B. eine E-Mail zum Data Privacy Day), ohne Plan, Wiedererkennung oder Nachverfolgung; Datenschutz wird vorrangig als Compliance-Thema wahrgenommen. Level 3: Es gibt einen einfachen Jahresplan mit mehreren Awareness-Aktionen (z.B. 2–4 Kampagnen pro Jahr); Kanäle (Intranet, Newsletter, Events) sind definiert; Inhalte greifen wichtige Themen wie Vorfälle, neue Tools, neue Policies auf und werden dokumentiert. Level 5: Awareness ist Teil einer übergreifenden Sicherheits- und Compliance-Kultur; Kampagnen werden anhand von Kennzahlen (z.B. Reichweite, Teilnahme, Quiz-Ergebnisse) und Incident-/Auditdaten ausgerichtet; echte Vorfälle werden – soweit möglich – anonymisiert als Lernbeispiele genutzt."
+                            },
+                            {
+                                "id": "train-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es einen Jahresplan für Awareness-Maßnahmen (z.B. Kampagnen, Newsletter, Intranet-Artikel), der über reine Pflichtschulungen hinausgeht?\n• Werden Inhalte von Schulungen und Awareness-Kampagnen bewusst auf typische Fehler oder Vorfälle abgestimmt (z.B. Lessons Learned aus dem Vorfallsregister)?"
                             }
                         ],
                         "links": [
@@ -2816,6 +2846,16 @@
                                 "id": "train-04-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation bewertet regelmäßig die Wirksamkeit von Schulungs- und Awareness-Maßnahmen, z.B. durch Wissenstests, Feedback der Teilnehmenden, Kennzahlen zur Teilnahmequote, Auswertung typischer Fehler und Vorfälle sowie ggf. simulierte Phishing- oder Awareness-Kampagnen. Ergebnisse fließen systematisch in die Weiterentwicklung der Schulungsinhalte, Formate und Zielgruppenplanung ein und werden der Leitungsebene berichtet."
+                            },
+                            {
+                                "id": "train-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Es wird kaum geprüft, ob Schulungen oder Awareness-Maßnahmen verstanden und wirksam sind; Anpassungen erfolgen vor allem anlassbezogen (z.B. nach externen Prüfungen oder größeren Vorfällen). Level 3: Für wesentliche Schulungen und Kampagnen gibt es einfache Wissenschecks oder Feedback-Abfragen; Teilnahmequoten und ggf. Testergebnisse werden ausgewertet und bei schlechten Werten werden Maßnahmen (z.B. Reminder, Wiederholung, Anpassung von Inhalten) geplant und dokumentiert. Level 5: Es existiert ein KPI-Set zur Wirksamkeit von Trainings und Awareness (z.B. Scores, Vorfallkennzahlen, Meldequalität); Ergebnisse fließen in regelmäßige Management-Reviews ein und führen nachweisbar zu Anpassungen in Schulungsplanung, Awareness-Strategie und Ressourcenallokation."
+                            },
+                            {
+                                "id": "train-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Wird die Wirksamkeit von Schulungs- und Awareness-Maßnahmen mittels Tests, Feedback oder Kennzahlen (z.B. Teilnahmequote, Testergebnisse) bewertet?\n• Werden Ergebnisse aus Trainings- und Awareness-KPIs regelmäßig an das Management berichtet und führen sie nachweisbar zu Anpassungen im Schulungsprogramm?"
                             }
                         ]
                     }
