@@ -1824,20 +1824,20 @@
             {
                 "id": "INC",
                 "class": "incident-management",
-                "title": "INC – Datenschutzvorfälle & Meldepflichten",
+                "title": "INC – Datenschutzvorfälle & Meldungen",
                 "controls": [
                     {
                         "id": "INC-01",
                         "class": "process",
-                        "title": "Meldung von Datenschutzverletzungen",
+                        "title": "Grundsatz und Governance des Datenschutzvorfall-Managements",
                         "props": [
                             {
                                 "name": "dsgvo-article",
-                                "value": "Art. 33; Art. 34"
+                                "value": "Art. 4(12); Art. 24; Art. 32; Art. 33; Art. 34"
                             },
                             {
                                 "name": "sdm-goal",
-                                "value": "Integrität, Verfügbarkeit, Transparenz"
+                                "value": "Vertraulichkeit, Integrität, Verfügbarkeit, Transparenz"
                             },
                             {
                                 "name": "maturity-domain",
@@ -1853,14 +1853,248 @@
                             },
                             {
                                 "name": "evidence-type",
-                                "value": "incident-log, incident-procedure"
+                                "value": "incident-response-policy, breach-management-procedure, rasic-matrix"
                             }
                         ],
                         "parts": [
                             {
                                 "id": "inc-01-stmt",
                                 "name": "statement",
-                                "prose": "Die Organisation verfügt über definierte Prozesse zur Erkennung, Bewertung, Meldung und Dokumentation von Datenschutzverletzungen."
+                                "prose": "Die Organisation verfügt über einen dokumentierten, von der Leitungsebene gebilligten Prozess zum Management von Verletzungen des Schutzes personenbezogener Daten (Datenschutzvorfällen), der Aufgaben, Rollen (inkl. DSB, Informationssicherheit, Fachbereiche, Management), Eskalationswege und Schnittstellen zum allgemeinen Incident- und Notfallmanagement regelt."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-92022-personal-data-breach-notification-under_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "INC-02",
+                        "class": "process",
+                        "title": "Erkennung und interne Meldung von Datenschutzvorfällen",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 32; Art. 33(1)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Verfügbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "incident-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "incident-reporting-channel, incident-report-forms, awareness-material, logging-concept"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "inc-02-stmt",
+                                "name": "statement",
+                                "prose": "Es existieren klare, niedrigschwellige Verfahren und Kanäle, über die Mitarbeitende und Dienstleister tatsächliche oder vermutete Datenschutzverletzungen unverzüglich melden können. Die Verfahren definieren mindestens Auslösekriterien, Meldewege, Erstklassifizierung und Weiterleitung an die zuständigen Stellen (z.B. Informationssicherheit, Datenschutzbeauftragte:r) sowie die Dokumentation der Erstmeldung."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.bsi.bund.de/DE/IT-Sicherheitsvorfall/Unternehmen/Ich-habe-einen-IT-Sicherheitsvorfall-Checkliste-Organisatorisches/ich-habe-einen-it-sicherheitsvorfall-checkliste-organisatorisches_node.html",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "INC-03",
+                        "class": "process",
+                        "title": "Risikoanalyse und Einstufung von Datenschutzverletzungen",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 33; Art. 34"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Vertraulichkeit, Integrität, Verfügbarkeit, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "incident-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "breach-risk-assessment-template, risk-assessment-records, classification-schema"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "inc-03-stmt",
+                                "name": "statement",
+                                "prose": "Für erkannte oder vermutete Datenschutzverletzungen führt die Organisation eine strukturierte Risikoanalyse in Bezug auf die Rechte und Freiheiten der betroffenen Personen durch. Die Methodik differenziert mindestens nach Vertraulichkeits-, Integritäts- und Verfügbarkeitsverletzungen, bewertet Schwere und Eintrittswahrscheinlichkeit von Schäden und dokumentiert die Einstufung sowie die Entscheidung, ob eine Meldung an die Aufsichtsbehörde und/oder eine Benachrichtigung der betroffenen Personen erforderlich ist."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/system/files/2024-10/edpb_guidelines_202209_personal_data_breach_notification_v2.0_de_0.pdf",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-012021-examples-regarding-personal-data-breach_de",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "INC-04",
+                        "class": "process",
+                        "title": "Meldung an Aufsichtsbehörden nach Art. 33 DSGVO",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 33"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "incident-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "breach-notifications, authority-communication-records, 72h-tracking-logs, notification-templates"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "inc-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über ein Verfahren zur Meldung von Datenschutzverletzungen an die zuständige Aufsichtsbehörde innerhalb von 72 Stunden nach Bekanntwerden, einschließlich Regelungen zur Auswahl der zuständigen Behörde(n), zur Bereitstellung der Mindestinhalte nach Art. 33 DSGVO, zum Umgang mit unvollständigen Erstmeldungen und zur Nachmeldung ergänzender Informationen. Fristen und übermittelte Informationen werden nachvollziehbar dokumentiert."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-92022-personal-data-breach-notification-under_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "INC-05",
+                        "class": "process",
+                        "title": "Benachrichtigung betroffener Personen nach Art. 34 DSGVO",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 34"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "incident-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "data-subject-notification-templates, communication-plan, notification-records, faq-for-data-subjects"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "inc-05-stmt",
+                                "name": "statement",
+                                "prose": "Für Datenschutzverletzungen mit voraussichtlich hohem Risiko für die Rechte und Freiheiten der betroffenen Personen verfügt die Organisation über Verfahren und Textbausteine zur rechtzeitigen, klaren und verständlichen Benachrichtigung der betroffenen Personen. Diese Benachrichtigungen umfassen mindestens die nach Art. 34 DSGVO geforderten Informationen sowie pragmatische Hinweise zu Schutzmaßnahmen und werden inkl. Versandzeitpunkt und -kanal dokumentiert."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/system/files/2024-10/edpb_guidelines_202209_personal_data_breach_notification_v2.0_de_0.pdf",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "INC-06",
+                        "class": "process",
+                        "title": "Vorfallsregister, Dokumentation und Lessons Learned",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 33(5); Art. 24; Art. 32"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Integrität, Verfügbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "incident-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "breach-register, root-cause-analysis, lessons-learned-reports, improvement-actions, links-to-toms-and-dpias"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "inc-06-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation führt ein Register aller Verletzungen des Schutzes personenbezogener Daten, unabhängig davon, ob diese meldepflichtig waren. Für jeden Vorfall werden Ursachen, betroffene Daten und Systeme, getroffene Sofortmaßnahmen, Risikobewertung, Melde- und Benachrichtigungsentscheidungen sowie nachhaltige Korrekturmaßnahmen dokumentiert. Erkenntnisse aus Vorfällen fließen systematisch in die Verbesserung von TOMs, Prozessen, Schulungen und ggf. Datenschutz-Folgenabschätzungen ein."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/system/files/2024-10/edpb_guidelines_202209_personal_data_breach_notification_v2.0_de_0.pdf",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.bsi.bund.de/DE/IT-Sicherheitsvorfall/Unternehmen/Ich-habe-einen-IT-Sicherheitsvorfall-Checkliste-Organisatorisches/ich-habe-einen-it-sicherheitsvorfall-checkliste-organisatorisches_node.html",
+                                "rel": "reference"
                             }
                         ]
                     }
