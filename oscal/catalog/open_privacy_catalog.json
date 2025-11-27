@@ -517,68 +517,175 @@
                             {
                                 "id": "acc-03-maturity",
                                 "name": "maturity-hints",
-                                , {
-                                    "id": "LAW",
-                                    "class": "legal",
-                                    "title": "LAW – Rechtsgrundlagen, Zweckbindung & Datenminimierung",
-                                    "controls": [
-                                        {
-                                            "id": "LAW-01",
-                                            "class": "policy",
-                                            "title": "Festlegung und Dokumentation von Rechtsgrundlagen",
-                                            "props": [
-                                                {
-                                                    "name": "dsgvo-article",
-                                                    "value": "Art. 5(1)(a); Art. 6; Art. 9"
-                                                },
-                                                {
-                                                    "name": "sdm-goal",
-                                                    "value": "Transparenz"
-                                                },
-                                                {
-                                                    "name": "maturity-domain",
-                                                    "value": "legal-basis"
-                                                },
-                                                {
-                                                    "name": "target-maturity",
-                                                    "value": "3"
-                                                },
-                                                {
-                                                    "name": "measure-type",
-                                                    "value": "legal"
-                                                },
-                                                {
-                                                    "name": "evidence-type",
-                                                    "value": "record-of-processing, legal-assessment"
-                                                }
-                                            ],
-                                            "parts": [
-                                                {
-                                                    "id": "law-01-stmt",
-                                                    "name": "statement",
-                                                    "prose": "Für jede Verarbeitung personenbezogener Daten werden Rechtsgrundlagen identifiziert, dokumentiert und regelmäßig überprüft."
-                                                },
-                                                {
-                                                    "id": "law-01-maturity",
-                                                    "name": "maturity-hints",
-                                                    "prose": "Level 1: Rechtsgrundlagen werden nur grob oder pauschal benannt (z.B. „Art. 6 DSGVO“), ohne systematische Zuordnung je Verarbeitungstätigkeit; eine Dokumentation erfolgt, wenn überhaupt, nur anlassbezogen.\nLevel 3: Für jede Verarbeitungstätigkeit ist im Verzeichnis von Verarbeitungstätigkeiten eine konkrete Rechtsgrundlage (inkl. Abs./Buchstabe) dokumentiert; es existiert ein Leitfaden oder Checkliste zur Auswahl von Rechtsgrundlagen, und wesentliche Änderungen von Prozessen oder Systemen lösen eine erneute Prüfung aus.\nLevel 5: Rechtsgrundlagen werden regelmäßig im Lichte von Rechtsprechung, Aufsichtsbehördenleitlinien und Geschäftsmodell-/Prozessänderungen überprüft; es existiert eine übergreifende „Legal-Basis-Strategie“ (z.B. für Marketing, HR, Plattformdienste), die mit Risiko- und DPIA-Prozessen verzahnt ist."
-                                                },
-                                                {
-                                                    "id": "law-01-questions",
-                                                    "name": "assessment-questions",
-                                                    "prose": "• Ist für jede Verarbeitungstätigkeit im Verzeichnis eine konkrete Rechtsgrundlage (inkl. Abs./Buchstabe) dokumentiert und nachvollziehbar begründet?\n• Gibt es Leitlinien oder Checklisten zur Auswahl von Rechtsgrundlagen und werden diese bei neuen oder geänderten Verarbeitungstätigkeiten konsistent angewendet?"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "id": "LAW-02",
-                                            "class": "policy",
-                                            "title": "Zweckbestimmung und Zweckbindung",
-                                            "props": [
-                                                {
-                                                    "name": "dsgvo-article",
-                                                    "value": "Art. 5(1)(b)"
-                                                },
+                                "prose": "Level 1: Es existiert keine Übersicht, welche internen Maßnahmen und Dokumente welchen DSGVO-Anforderungen zugeordnet sind; Nachweise müssen bei Prüfungen mühsam zusammengesucht werden.\nLevel 3: Eine Compliance-Matrix bzw. ein Mapping existiert, in dem zentrale Anforderungen (z.B. Art. 5, 6, 24, 25, 30, 32, 35, 37 ff.) den relevanten Policies, Prozessen, Kontrollen und Nachweisen zugeordnet sind; dieses Mapping wird gepflegt und für Audits sowie Management-Reporting genutzt.\nLevel 5: Das Mapping ist in Tools/DSMS integriert; Änderungen an Anforderungen oder internen Kontrollen werden automatisiert oder workflowbasiert reflektiert; Auswertungen (z.B. Lücken, Überdeckungen, Reifegrade) dienen als Grundlage für Programmplanung und Priorisierung von Maßnahmen."
+                            },
+                            {
+                                "id": "acc-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es eine DSGVO-Compliance-Matrix oder ein vergleichbares Mapping, das zeigt, welche Kontrollen und Nachweise welche rechtlichen Anforderungen abdecken?\n• Wird dieses Mapping bei Änderungen (z.B. neue Leitlinien, Urteile, interne Prozessänderungen) aktualisiert und für Audits bzw. Managementberichte genutzt?"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ACC-04",
+                        "class": "procedure",
+                        "title": "Interne Datenschutz-Audits und Management-Review",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 24; Art. 32; Art. 39(1)(b)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "accountability"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "audit-plan, audit-reports, management-review-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "acc-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation führt regelmäßig interne Audits des Datenschutzmanagementsystems und der Datenschutzdokumentation durch und wertet die Ergebnisse in formellen Management-Reviews aus."
+                            },
+                            {
+                                "id": "acc-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Interne Prüfungen zu Datenschutz finden unstrukturiert oder nur anlassbezogen (z.B. nach Vorfällen oder externen Audits) statt; es gibt keinen Auditplan und keine formellen Management-Reviews.\nLevel 3: Es existiert ein Auditprogramm für Datenschutz (z.B. jährlicher Plan), das relevante Bereiche und Themen risikobasiert abdeckt; Ergebnisse werden dokumentiert, Maßnahmen verfolgt und in einem formellen Management-Review (mind. jährlich) auf Leitungsebene bewertet.\nLevel 5: Audit- und Review-Ergebnisse sind eng mit Risikomanagement, Maßnahmenplanung und Budgetierung verknüpft; Trends und wiederkehrende Findings fließen in Governance-, Architektur- und Kulturmaßnahmen ein; es gibt klar definierte KPIs zu Auditabdeckung, Maßnahmenumsetzung und Wirksamkeit."
+                            },
+                            {
+                                "id": "acc-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es ein dokumentiertes Programm für interne Datenschutz-Audits (inkl. Umfang, Frequenz, Verantwortlichkeiten) und werden die Ergebnisse in einem formellen Management-Review behandelt?\n• Werden Auditfeststellungen und vereinbarte Maßnahmen nachverfolgt (z.B. Tracking von Status und Wirksamkeit) und fließen sie in die Weiterentwicklung des DSMS ein?"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ACC-05",
+                        "class": "procedure",
+                        "title": "Dokumentation von Entscheidungs- und Risikoabwägungen",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 6(1)(f); Art. 24; Art. 25; Art. 35"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "accountability"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "lba-documentation, dpia-report, risk-acceptance-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "acc-05-stmt",
+                                "name": "statement",
+                                "prose": "Wesentliche datenschutzrelevante Entscheidungs- und Risikoabwägungen, insbesondere zu berechtigten Interessen und Datenschutz-Folgenabschätzungen, werden nachvollziehbar dokumentiert und sind für Prüfzwecke verfügbar."
+                            },
+                            {
+                                "id": "acc-05-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Entscheidungen mit erheblicher Datenschutzrelevanz (z.B. zu Rechtsgrundlagen, berechtigten Interessen, Profiling, neuen Technologien) werden nur knapp oder gar nicht dokumentiert; Begründungen sind im Nachhinein schwer nachzuvollziehen.\nLevel 3: Es existieren standardisierte Vorlagen und Prozesse zur Dokumentation von Entscheidungs- und Risikoabwägungen (z.B. LIAs, DPIAs, Risk-Acceptance-Forms); wesentliche Annahmen, Alternativen, Schutzmaßnahmen und Gründe für die Entscheidung werden festgehalten und versioniert archiviert.\nLevel 5: Dokumentierte Abwägungen werden regelmäßig überprüft (z.B. bei Änderungen der Verarbeitung, neuer Rechtsprechung oder Vorfällen); Querverbindungen zu anderen Artefakten (VVT, TOM, Verträge, Richtlinien) sind hergestellt; Musterentscheidungen werden gepflegt und dienen als Referenz für neue Fälle."
+                            },
+                            {
+                                "id": "acc-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Werden wesentliche datenschutzrelevante Entscheidungen (z.B. zu berechtigten Interessen, Profiling, hohem Risiko, akzeptierten Rest-Risiken) in strukturierten Dokumenten nachvollziehbar festgehalten?\n• Gibt es einen Prozess zur regelmäßigen Überprüfung zentraler Abwägungen (z.B. LIAs, DPIAs, Risk-Acceptance-Entscheidungen) und zur Aktualisierung bei geänderten Rahmenbedingungen?"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "LAW",
+                "class": "legal",
+                "title": "LAW – Rechtsgrundlagen, Zweckbindung & Datenminimierung",
+                "controls": [
+                    {
+                        "id": "LAW-01",
+                        "class": "policy",
+                        "title": "Festlegung und Dokumentation von Rechtsgrundlagen",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(1)(a); Art. 6; Art. 9"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "legal-basis"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "legal"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "record-of-processing, legal-assessment"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "law-01-stmt",
+                                "name": "statement",
+                                "prose": "Für jede Verarbeitung personenbezogener Daten werden Rechtsgrundlagen identifiziert, dokumentiert und regelmäßig überprüft."
+                            },
+                            {
+                                "id": "law-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Rechtsgrundlagen werden nur grob oder pauschal benannt (z.B. „Art. 6 DSGVO“), ohne systematische Zuordnung je Verarbeitungstätigkeit; eine Dokumentation erfolgt, wenn überhaupt, nur anlassbezogen.\nLevel 3: Für jede Verarbeitungstätigkeit ist im Verzeichnis von Verarbeitungstätigkeiten eine konkrete Rechtsgrundlage (inkl. Abs./Buchstabe) dokumentiert; es existiert ein Leitfaden oder Checkliste zur Auswahl von Rechtsgrundlagen, und wesentliche Änderungen von Prozessen oder Systemen lösen eine erneute Prüfung aus.\nLevel 5: Rechtsgrundlagen werden regelmäßig im Lichte von Rechtsprechung, Aufsichtsbehördenleitlinien und Geschäftsmodell-/Prozessänderungen überprüft; es existiert eine übergreifende „Legal-Basis-Strategie“ (z.B. für Marketing, HR, Plattformdienste), die mit Risiko- und DPIA-Prozessen verzahnt ist."
+                            },
+                            {
+                                "id": "law-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Ist für jede Verarbeitungstätigkeit im Verzeichnis eine konkrete Rechtsgrundlage (inkl. Abs./Buchstabe) dokumentiert und nachvollziehbar begründet?\n• Gibt es Leitlinien oder Checklisten zur Auswahl von Rechtsgrundlagen und werden diese bei neuen oder geänderten Verarbeitungstätigkeiten konsistent angewendet?"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "LAW-02",
+                        "class": "policy",
+                        "title": "Zweckbestimmung und Zweckbindung",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(1)(b)"
+                            },
                             {
                                 "name": "sdm-goal",
                                 "value": "Transparenz, Nicht-Verkettbarkeit"
