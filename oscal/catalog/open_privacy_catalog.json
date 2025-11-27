@@ -813,6 +813,170 @@
                                 "prose": "Es existiert ein standardisierter, dokumentierter Prozess zur Identifikation, Bearbeitung und Dokumentation von Betroffenenanfragen."
                             }
                         ]
+                    },
+                    {
+                        "id": "DSR-02",
+                        "class": "process",
+                        "title": "Transparente Informationen und Datenschutzhinweise",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 12; Art. 13; Art. 14"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-subject-rights"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "privacy-notices, information-templates, information-register"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dsr-02-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation stellt betroffenen Personen rechtzeitig, klar verständlich und leicht zugänglich alle nach Art. 13 und 14 DSGVO erforderlichen Informationen über die Verarbeitung ihrer personenbezogenen Daten zur Verfügung und dokumentiert die verwendeten Datenschutzhinweise."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/transparency_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "DSR-03",
+                        "class": "process",
+                        "title": "Umsetzung des Auskunftsrechts",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 15"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Intervenierbarkeit, Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-subject-rights"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "access-procedure, access-request-logs, access-response-templates"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dsr-03-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über einen dokumentierten Prozess zur Umsetzung des Auskunftsrechts nach Art. 15 DSGVO, einschließlich Identitätsprüfung, Definition des Auskunftsumfangs, Fristüberwachung, Bereitstellung von Kopien und Umgang mit offenkundig unbegründeten oder exzessiven Anträgen."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-012022-data-subject-rights-right-access_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "DSR-04",
+                        "class": "process",
+                        "title": "Berichtigung, Löschung und Einschränkung der Verarbeitung",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 16; Art. 17; Art. 18; Art. 19"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Intervenierbarkeit, Datenminimierung"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-subject-rights"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "rectification-and-erasure-procedures, deletion-concept, restriction-records, notification-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dsr-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über dokumentierte Verfahren zur Umsetzung der Rechte auf Berichtigung, Löschung und Einschränkung der Verarbeitung. Diese Verfahren sind mit dem Lösch- und Aufbewahrungskonzept verknüpft und stellen sicher, dass betroffene Empfänger über Berichtigungen, Löschungen oder Einschränkungen informiert werden."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "DSR-05",
+                        "class": "process",
+                        "title": "Datenübertragbarkeit, Widerspruch und automatisierte Entscheidungen",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 20; Art. 21; Art. 22"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Intervenierbarkeit, Transparenz, Nicht-Verkettbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-subject-rights"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "portability-procedures, machine-readable-export-formats, objection-processes, adm-assessments"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dsr-05-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über Verfahren zur Umsetzung der Rechte auf Datenübertragbarkeit, Widerspruch – insbesondere gegen Direktwerbung – sowie der Rechte im Zusammenhang mit ausschließlich automatisierten Entscheidungen einschließlich Profiling und stellt sicher, dass betroffene Personen diese Rechte wirksam und ohne unzumutbare Hürden wahrnehmen können."
+                            }
+                        ]
                     }
                 ]
             },
