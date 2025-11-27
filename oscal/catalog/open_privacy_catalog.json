@@ -30,7 +30,25 @@
                 "label": "Reifegrad",
                 "guidelines": [
                     {
-                        "prose": "CNIL-ähnliche Reifegrade 1 (ad hoc) bis 5 (optimiert)."
+                        "prose": "Globale Reifegradskala 1–5 für alle Kontrollen, angelehnt an das CNIL-Maturity-Modell. Die Controls enthalten i.d.R. beschreibende Texte für Level 1, 3 und 5; Level 2 und 4 sind als Zwischenstufen zu interpretieren."
+                    },
+                    {
+                        "prose": "Level 1 – initial / ad hoc: Es gibt keinen oder nur sehr rudimentären Prozess bzw. keine klare Verantwortung; Umsetzung erfolgt weitgehend ungeplant, sporadisch und reaktiv."
+                    },
+                    {
+                        "prose": "Level 2 – teilweise umgesetzt: Erste Elemente des Level-3-Zustands sind vorhanden, aber noch nicht flächendeckend, nicht stabil im Alltag und stark personenabhängig (\"mehr als 1, aber klar noch nicht 3\")."
+                    },
+                    {
+                        "prose": "Level 3 – definiert / etabliert: Prozess/Struktur ist formal beschrieben, Rollen sind geklärt und der Soll-Prozess wird im Normalfall so gelebt (Standardvorgehen, das typischerweise eingehalten wird)."
+                    },
+                    {
+                        "prose": "Level 4 – weit fortgeschritten: Die meisten Elemente des Level-5-Zustands sind umgesetzt; es gibt Kennzahlen/Reviews, der Prozess läuft stabil, ist aber noch nicht durchgängig integriert oder systematisch optimiert (\"mehr als 3, aber noch nicht konsistent auf 5\")."
+                    },
+                    {
+                        "prose": "Level 5 – optimiert / kontinuierliche Verbesserung: Der Prozess ist voll in Governance, Risiko- und Steuerungsprozesse integriert, messbar und wird auf Basis von KPIs, Audits, Vorfällen und Lessons Learned kontinuierlich verbessert."
+                    },
+                    {
+                        "prose": "Bewertungshinweis: Wenn die Praxis näher an der Beschreibung von Level 1 als an Level 3 liegt → Level 1; wenn „irgendwie vorhanden, aber wackelig“ → Level 2; wenn Level-3-Beschreibung passt → Level 3; wenn fast Level 5, aber noch nicht überall bzw. noch nicht konsistent → Level 4; wenn Level-5-Beschreibung wirklich erfüllt ist → Level 5."
                     }
                 ],
                 "constraints": [
