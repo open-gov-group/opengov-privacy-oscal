@@ -95,6 +95,11 @@
                                 "id": "gov-01-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Datenschutzaufgaben sind nur grob oder implizit verteilt, der/die DSB ist ggf. bestellt, aber ohne klar dokumentiertes Mandat; kein konsistentes Rollenmodell. Level 3: Es existiert ein dokumentiertes Rollen- und Zuständigkeitsmodell (inkl. Management, Fachbereiche, IT, DSB), das veröffentlicht und in zentralen Dokumenten (Organigramm, Richtlinien) verankert ist. Level 5: Rollenmodell wird regelmäßig bei Organisations- oder Prozessänderungen überprüft; Wirksamkeit (z.B. Erreichbarkeit, Reaktionszeiten, Beteiligung) wird über KPIs oder Feedback bewertet und führt zu Anpassungen."
+                            },
+                            {
+                                "id": "gov-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es ein dokumentiertes Rollen- und Zuständigkeitsmodell für den Datenschutz (inkl. Management, Fachbereiche, IT, DSB)?\n• Wurden diese Rollen und Zuständigkeiten organisationsweit kommuniziert (z.B. Intranet, Organigramm, Policy)?"
                             }
                         ]
                     },
@@ -138,6 +143,11 @@
                                 "id": "gov-02-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Es gibt keine oder nur sehr allgemein gehaltene Aussagen zu Datenschutz; Fokus liegt auf reiner Gesetzeserfüllung ohne konkrete Ziele. Level 3: Es existieren formulierte Datenschutzziele und eine Datenschutz- bzw. Compliance-Strategie, die auf Unternehmens- oder IT/Data-Strategie referenziert und regelmäßig kommuniziert wird. Level 5: Datenschutzziele sind messbar (KPIs/OKRs), in reguläre Ziel- und Review-Prozesse der Organisation integriert und werden auf Basis von Kennzahlen, Vorfällen, Audits und regulatorischen Entwicklungen angepasst."
+                            },
+                            {
+                                "id": "gov-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Liegen formulierte Datenschutzziele und/oder eine Datenschutz-/Compliance-Strategie vor, die über „wir halten die DSGVO ein“ hinausgeht?\n• Findet ein regelmäßiger Bericht (mind. jährlich) zu Datenschutz-Lage, Risiken und Maßnahmen an die oberste Leitung statt?"
                             }
                         ]
                     },
@@ -181,6 +191,11 @@
                                 "id": "gov-03-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Einmalige DSGVO-Einführung oder punktuelle Projekte; danach keine laufende, strukturierte Planung; Maßnahmen entstehen überwiegend reaktiv. Level 3: Es existiert ein aktueller Datenschutz-Maßnahmenplan bzw. Programm mit klar priorisierten Maßnahmen, Verantwortlichen, Terminen und Status; Fortschritt wird regelmäßig (z.B. quartalsweise) an Management oder Gremien berichtet. Level 5: Datenschutzprogramm ist in Portfolio- und Risikomanagement integriert; Priorisierung erfolgt risikobasiert und businessorientiert; Ergebnisse aus Audits, Vorfällen und Kennzahlen führen systematisch zu neuen oder geänderten Maßnahmen."
+                            },
+                            {
+                                "id": "gov-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Existiert ein laufender Maßnahmenplan / Programm zur Weiterentwicklung des Datenschutzes mit klaren Verantwortlichen, Prioritäten und Statusverfolgung?"
                             }
                         ],
                         "links": [
@@ -238,6 +253,11 @@
                                 "id": "gov-04-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Rollenbegriffe (Verantwortlicher, Auftragsverarbeiter, gemeinsame Verantwortliche) werden uneinheitlich genutzt; Rollenentscheidungen sind selten dokumentiert; Joint-Control-Situationen werden meist nicht erkannt. Level 3: Es existiert ein Rollenleitfaden mit Kriterien und Beispielen; bei neuen Vorhaben werden Rollen explizit entschieden und dokumentiert; Standardmuster für Art.-26- und Art.-28-Vereinbarungen werden genutzt. Level 5: Rollenentscheidungen werden regelmäßig überprüft (z.B. bei Vertrags- oder Service-Änderungen); Rollenmodelle sind konzern-/verwaltungsweit konsistent; es gibt definierte Prozesse für die Klärung von Rollenstreitigkeiten."
+                            },
+                            {
+                                "id": "gov-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Werden bei neuen Vorhaben Rollenentscheidungen (Verantwortlicher / gemeinsame Verantwortliche / Auftragsverarbeiter) bewusst getroffen und dokumentiert?"
                             }
                         ],
                         "links": [
@@ -287,6 +307,11 @@
                                 "id": "gov-05-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: DSB ist ggf. nur formal bestellt; Unabhängigkeit, Ressourcenausstattung und Einbindung in Entscheidungen sind nicht klar geregelt oder werden in der Praxis nicht gelebt. Level 3: Bestellung, Stellung, Berichtslinie und Ressourcenausstattung des/der DSB sind dokumentiert; der DSB wird systematisch in relevante Vorhaben eingebunden und berichtet mindestens jährlich an die Leitung. Level 5: Der DSB ist in strategische Planungs- und Risikoprozesse eingebunden, besitzt einen etablierten Eskalationspfad zur obersten Leitung; Wirkung der Berichte zeigt sich in nachweisbaren Management-Entscheidungen und Priorisierungen."
+                            },
+                            {
+                                "id": "gov-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Ist die Unabhängigkeit, Ressourcenausstattung und Berichtslinie des/der Datenschutzbeauftragten schriftlich geregelt und gelebte Praxis?\n• Findet ein regelmäßiger Bericht (mind. jährlich) des/der DSB an die oberste Leitung statt?"
                             }
                         ],
                         "links": [
@@ -336,6 +361,11 @@
                                 "id": "gov-06-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Data- und IT-Entscheidungen werden primär nach technischen oder wirtschaftlichen Kriterien getroffen; Datenschutz wird nur in Einzelfällen explizit adressiert. Level 3: Datenschutz ist als Prüffeld in relevanten Gremien und Prozessen (z.B. IT-Steuerung, Data Governance, Architekturboard) verankert; es existieren Checklisten oder Entscheidungsunterlagen mit Datenschutzfragen. Level 5: Datenschutzanforderungen sind fester Bestandteil von Bewertungs- und Priorisierungsmodellen; Governance-Gremien nutzen Informationen aus DPIA, TOMs und Incident-Management; Auswirkungen auf Datenschutz werden in Entscheidungsdokumenten nachvollziehbar dargestellt."
+                            },
+                            {
+                                "id": "gov-06-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Ist Datenschutz als Prüffeld in Data- oder IT-Governance-Gremien (z.B. Architekturboard, Data Governance Board) verankert, inkl. definierter Checklisten oder Kriterien?"
                             }
                         ],
                         "links": [
