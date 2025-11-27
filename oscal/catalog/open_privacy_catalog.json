@@ -112,21 +112,39 @@
                             {
                                 "id": "gov-01-maturity",
                                 "name": "maturity-hints",
-                                "prose": "CNIL - Reifegradmodel Level 1,3,5.",
+                                "prose": "CNIL-Reifegradmodell mit Level 1, 3 und 5.",
                                 "parts": [
                                     {
                                         "id": "gov-01-maturity-level-01",
-                                        "name": "maturity-hints",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "1"
+                                            }
+                                        ],
                                         "prose": "Level 1: Datenschutzaufgaben sind nur grob oder implizit verteilt, der/die DSB ist ggf. bestellt, aber ohne klar dokumentiertes Mandat; kein konsistentes Rollenmodell."
                                     },
                                     {
                                         "id": "gov-01-maturity-level-03",
-                                        "name": "maturity-hints",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "3"
+                                            }
+                                        ],
                                         "prose": "Level 3: Es existiert ein dokumentiertes Rollen- und Zuständigkeitsmodell (inkl. Management, Fachbereiche, IT, DSB), das veröffentlicht und in zentralen Dokumenten (Organigramm, Richtlinien) verankert ist."
                                     },
                                     {
                                         "id": "gov-01-maturity-level-05",
-                                        "name": "maturity-hints",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "5"
+                                            }
+                                        ],
                                         "prose": "Level 5: Rollenmodell wird regelmäßig bei Organisations- oder Prozessänderungen überprüft; Wirksamkeit (z.B. Erreichbarkeit, Reaktionszeiten, Beteiligung) wird über KPIs oder Feedback bewertet und führt zu Anpassungen."
                                     }
                                 ]
@@ -138,13 +156,12 @@
                                 "parts": [
                                     {
                                         "id": "gov-01-questions-01",
-                                        "name": "assessment-questions",
+                                        "name": "assessment-question",
                                         "prose": "Gibt es ein dokumentiertes Rollen- und Zuständigkeitsmodell für den Datenschutz (inkl. Management, Fachbereiche, IT, DSB)?"
-                                        
                                     },
                                     {
                                         "id": "gov-01-questions-02",
-                                        "name": "assessment-questions",
+                                        "name": "assessment-question",
                                         "prose": "Wurden diese Rollen und Zuständigkeiten organisationsweit kommuniziert (z.B. Intranet, Organigramm, Policy)?"
                                     }
                                 ]
