@@ -1,0 +1,383 @@
+{
+  "catalog": {
+    "uuid": "11111111-2222-3333-4444-555555555555",
+    "metadata": {
+      "title": "OSCAL-Datenschutzkatalog nach DSGVO",
+      "last-modified": "2025-11-27T00:00:00Z",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "roles": [
+        {
+          "id": "owner",
+          "title": "Katalogverantwortliche Stelle"
+        },
+        {
+          "id": "dsb",
+          "title": "Datenschutzbeauftragte:r"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+          "type": "organization",
+          "name": "Beispielorganisation",
+          "roles": [
+            {
+              "role-id": "owner"
+            }
+          ]
+        }
+      ]
+    },
+    "params": [
+      {
+        "id": "maturity-level",
+        "label": "Reifegrad",
+        "description": "CNIL-ähnliche Reifegrade 1 (ad hoc) bis 5 (optimiert).",
+        "constraints": {
+          "min-inclusive": 1,
+          "max-inclusive": 5
+        }
+      }
+    ],
+    "groups": [
+      {
+        "id": "GOV",
+        "class": "governance",
+        "title": "GOV – Governance & Organisation",
+        "controls": [
+          {
+            "id": "GOV-01",
+            "class": "management",
+            "title": "Datenschutzorganisation definiert",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 5(2); Art. 24" },
+              { "name": "sdm-goal", "value": "Transparenz, Intervenierbarkeit" },
+              { "name": "sdm-building-block", "value": "ORG-GOV-01" },
+              { "name": "maturity-domain", "value": "governance" },
+              { "name": "target-maturity", "value": "4" },
+              { "name": "measure-type", "value": "organizational" },
+              { "name": "evidence-type", "value": "policy, organization-chart" }
+            ],
+            "parts": [
+              {
+                "id": "gov-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation definiert und dokumentiert Rollen, Verantwortlichkeiten und Entscheidungswege für den Datenschutz (inkl. DSB, Fachbereiche, IT, Management)."
+              }
+            ]
+          },
+          {
+            "id": "GOV-02",
+            "class": "management",
+            "title": "Datenschutzziele und -strategie",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 24; Art. 25" },
+              { "name": "sdm-goal", "value": "Transparenz, Nicht-Verkettbarkeit" },
+              { "name": "maturity-domain", "value": "governance" },
+              { "name": "target-maturity", "value": "3" },
+              { "name": "measure-type", "value": "organizational" },
+              { "name": "evidence-type", "value": "policy, strategy-document" }
+            ],
+            "parts": [
+              {
+                "id": "gov-02-stmt",
+                "name": "statement",
+                "prose": "Die Organisation legt Datenschutzziele und eine übergreifende Datenschutzstrategie fest, die mit der Unternehmensstrategie abgestimmt ist."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ACC",
+        "class": "accountability",
+        "title": "ACC – Rechenschaft & Dokumentation",
+        "controls": [
+          {
+            "id": "ACC-01",
+            "class": "procedure",
+            "title": "Dokumentiertes Datenschutzmanagementsystem (DSMS)",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 5(2); Art. 24" },
+              { "name": "sdm-goal", "value": "Transparenz" },
+              { "name": "maturity-domain", "value": "governance" },
+              { "name": "target-maturity", "value": "4" },
+              { "name": "measure-type", "value": "process" },
+              { "name": "evidence-type", "value": "dsms-description, process-documentation" }
+            ],
+            "parts": [
+              {
+                "id": "acc-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation betreibt ein dokumentiertes Datenschutzmanagementsystem, welches Prozesse, Richtlinien und Nachweise zur Erfüllung der DSGVO umfasst."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "LAW",
+        "class": "legal",
+        "title": "LAW – Rechtsgrundlagen, Zweckbindung & Datenminimierung",
+        "controls": [
+          {
+            "id": "LAW-01",
+            "class": "policy",
+            "title": "Festlegung und Dokumentation von Rechtsgrundlagen",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 5(1)(a); Art. 6; Art. 9" },
+              { "name": "sdm-goal", "value": "Transparenz" },
+              { "name": "maturity-domain", "value": "legal-basis" },
+              { "name": "target-maturity", "value": "3" },
+              { "name": "measure-type", "value": "legal" },
+              { "name": "evidence-type", "value": "record-of-processing, legal-assessment" }
+            ],
+            "parts": [
+              {
+                "id": "law-01-stmt",
+                "name": "statement",
+                "prose": "Für jede Verarbeitung personenbezogener Daten werden Rechtsgrundlagen identifiziert, dokumentiert und regelmäßig überprüft."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DSR",
+        "class": "data-subject-rights",
+        "title": "DSR – Betroffenenrechte",
+        "controls": [
+          {
+            "id": "DSR-01",
+            "class": "process",
+            "title": "Prozess zur Bearbeitung von Betroffenenanfragen",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 12–22" },
+              { "name": "sdm-goal", "value": "Intervenierbarkeit, Transparenz" },
+              { "name": "maturity-domain", "value": "data-subject-rights" },
+              { "name": "target-maturity", "value": "4" },
+              { "name": "measure-type", "value": "process" },
+              { "name": "evidence-type", "value": "procedure-description, request-logs" }
+            ],
+            "parts": [
+              {
+                "id": "dsr-01-stmt",
+                "name": "statement",
+                "prose": "Es existiert ein standardisierter, dokumentierter Prozess zur Identifikation, Bearbeitung und Dokumentation von Betroffenenanfragen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "REG",
+        "class": "records-of-processing",
+        "title": "REG – Verarbeitungsverzeichnis & Informationsflüsse",
+        "controls": [
+          {
+            "id": "REG-01",
+            "class": "record",
+            "title": "Verzeichnis von Verarbeitungstätigkeiten",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 30" },
+              { "name": "sdm-goal", "value": "Transparenz" },
+              { "name": "maturity-domain", "value": "records-of-processing" },
+              { "name": "target-maturity", "value": "4" },
+              { "name": "measure-type", "value": "process" },
+              { "name": "evidence-type", "value": "record-of-processing" }
+            ],
+            "parts": [
+              {
+                "id": "reg-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation führt ein aktuelles, vollständiges Verzeichnis von Verarbeitungstätigkeiten, das alle gesetzlich geforderten Angaben enthält."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TOM",
+        "class": "technical-organizational-measures",
+        "title": "TOM – Technische und organisatorische Maßnahmen",
+        "controls": [
+          {
+            "id": "TOM-01",
+            "class": "safeguard",
+            "title": "Schutzbedarf und Risikobewertung",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 32; Art. 25" },
+              { "name": "sdm-goal", "value": "Vertraulichkeit, Integrität, Verfügbarkeit" },
+              { "name": "maturity-domain", "value": "risk-management" },
+              { "name": "target-maturity", "value": "3" },
+              { "name": "measure-type", "value": "process" },
+              { "name": "evidence-type", "value": "risk-assessment, tom-list" }
+            ],
+            "parts": [
+              {
+                "id": "tom-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation führt risikobasierte Bewertungen des Schutzbedarfs personenbezogener Daten durch und leitet geeignete technische und organisatorische Maßnahmen ab."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DPIA",
+        "class": "data-protection-impact-assessment",
+        "title": "DPIA – Datenschutz-Folgenabschätzung & Risikomanagement",
+        "controls": [
+          {
+            "id": "DPIA-01",
+            "class": "process",
+            "title": "Durchführung von DSFA / DPIA",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 35; Art. 36" },
+              { "name": "sdm-goal", "value": "Transparenz, Intervenierbarkeit, Nicht-Verkettbarkeit" },
+              { "name": "maturity-domain", "value": "risk-management" },
+              { "name": "target-maturity", "value": "3" },
+              { "name": "measure-type", "value": "process" },
+              { "name": "evidence-type", "value": "dpia-report, risk-register" }
+            ],
+            "parts": [
+              {
+                "id": "dpia-01-stmt",
+                "name": "statement",
+                "prose": "Für Verarbeitungstätigkeiten mit hohem Risiko führt die Organisation strukturierte Datenschutz-Folgenabschätzungen durch und dokumentiert Ergebnisse und Maßnahmen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "OPS",
+        "class": "processors-and-joint-controllers",
+        "title": "OPS – Auftragsverarbeitung & gemeinsame Verantwortliche",
+        "controls": [
+          {
+            "id": "OPS-01",
+            "class": "contract",
+            "title": "Auftragsverarbeitungsverträge",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 28" },
+              { "name": "sdm-goal", "value": "Vertraulichkeit, Transparenz" },
+              { "name": "maturity-domain", "value": "processors" },
+              { "name": "target-maturity", "value": "3" },
+              { "name": "measure-type", "value": "contractual" },
+              { "name": "evidence-type", "value": "processor-contracts, vendor-list" }
+            ],
+            "parts": [
+              {
+                "id": "ops-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation schließt mit allen Auftragsverarbeitern Verträge nach Art. 28 DSGVO ab und überprüft diese regelmäßig."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "XFER",
+        "class": "data-transfers",
+        "title": "XFER – Internationale Datentransfers",
+        "controls": [
+          {
+            "id": "XFER-01",
+            "class": "process",
+            "title": "Identifikation und Dokumentation von Drittlandtransfers",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 44–49" },
+              { "name": "sdm-goal", "value": "Transparenz" },
+              { "name": "maturity-domain", "value": "data-transfers" },
+              { "name": "target-maturity", "value": "3" },
+              { "name": "measure-type", "value": "process" },
+              { "name": "evidence-type", "value": "transfer-register, transfer-assessment" }
+            ],
+            "parts": [
+              {
+                "id": "xfer-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation identifiziert, dokumentiert und bewertet alle Übermittlungen personenbezogener Daten in Drittländer oder an internationale Organisationen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "INC",
+        "class": "incident-management",
+        "title": "INC – Datenschutzvorfälle & Meldepflichten",
+        "controls": [
+          {
+            "id": "INC-01",
+            "class": "process",
+            "title": "Meldung von Datenschutzverletzungen",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 33; Art. 34" },
+              { "name": "sdm-goal", "value": "Integrität, Verfügbarkeit, Transparenz" },
+              { "name": "maturity-domain", "value": "incident-management" },
+              { "name": "target-maturity", "value": "3" },
+              { "name": "measure-type", "value": "process" },
+              { "name": "evidence-type", "value": "incident-log, incident-procedure" }
+            ],
+            "parts": [
+              {
+                "id": "inc-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation verfügt über definierte Prozesse zur Erkennung, Bewertung, Meldung und Dokumentation von Datenschutzverletzungen."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "TRAIN",
+        "class": "training-and-awareness",
+        "title": "TRAIN – Schulung, Awareness & Kultur",
+        "controls": [
+          {
+            "id": "TRAIN-01",
+            "class": "awareness",
+            "title": "Regelmäßige Datenschutzschulungen",
+            "props": [
+              { "name": "dsgvo-article", "value": "Art. 39(1)(b); Art. 24" },
+              { "name": "sdm-goal", "value": "Vertraulichkeit, Transparenz" },
+              { "name": "maturity-domain", "value": "training" },
+              { "name": "target-maturity", "value": "3" },
+              { "name": "measure-type", "value": "organizational" },
+              { "name": "evidence-type", "value": "training-plan, participation-records" }
+            ],
+            "parts": [
+              {
+                "id": "train-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation führt regelmäßig auf Zielgruppen zugeschnittene Datenschutzschulungen durch und dokumentiert die Teilnahme."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "ref-sdm",
+          "title": "Standard-Datenschutzmodell (SDM)",
+          "rlinks": []
+        },
+        {
+          "uuid": "ref-cnil-maturity",
+          "title": "CNIL Privacy Maturity Model",
+          "rlinks": []
+        },
+        {
+          "uuid": "ref-edpb-guidelines",
+          "title": "EDPB Guidelines",
+          "rlinks": []
+        }
+      ]
+    }
+  }
+}
