@@ -2331,6 +2331,16 @@
                                 "id": "inc-01-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation verfügt über einen dokumentierten, von der Leitungsebene gebilligten Prozess zum Management von Verletzungen des Schutzes personenbezogener Daten (Datenschutzvorfällen), der Aufgaben, Rollen (inkl. DSB, Informationssicherheit, Fachbereiche, Management), Eskalationswege und Schnittstellen zum allgemeinen Incident- und Notfallmanagement regelt."
+                            },
+                            {
+                                "id": "inc-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Datenschutzvorfälle werden ad hoc behandelt; es gibt allenfalls allgemeine IT-Sicherheitsvorgaben, aber kein spezifisches, dokumentiertes Verfahren für Datenschutzverletzungen und keine klar geregelten Rollen oder Eskalationswege. Level 3: Ein formal beschlossenes, dokumentiertes Breach-Management-Verfahren speziell für Datenschutzverletzungen existiert und beschreibt Rollen, Eskalationspfade und Schnittstellen zum allgemeinen Incident- und Notfallmanagement; relevante Stellen kennen ihre Aufgaben. Level 5: Der Breach-Prozess wird regelmäßig geübt (z.B. Tabletop-Übungen) und anhand von Kennzahlen (z.B. Zeit bis Erkennung/Eskalation, Vollständigkeit der Dokumentation) gesteuert; Ergebnisse aus Übungen, Audits und realen Vorfällen führen systematisch zu Prozessverbesserungen."
+                            },
+                            {
+                                "id": "inc-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es ein formal beschlossenes Verfahren speziell für Datenschutzverletzungen (inkl. Schnittstelle zum allgemeinen IT-Incident-Management)?\n• Sind Rollen, Verantwortlichkeiten und Eskalationswege (IT, Informationssicherheit, DSB, Management, Fachbereiche) im Breach-Prozess klar beschrieben und bekannt?"
                             }
                         ],
                         "links": [
@@ -2375,6 +2385,16 @@
                                 "id": "inc-02-stmt",
                                 "name": "statement",
                                 "prose": "Es existieren klare, niedrigschwellige Verfahren und Kanäle, über die Mitarbeitende und Dienstleister tatsächliche oder vermutete Datenschutzverletzungen unverzüglich melden können. Die Verfahren definieren mindestens Auslösekriterien, Meldewege, Erstklassifizierung und Weiterleitung an die zuständigen Stellen (z.B. Informationssicherheit, Datenschutzbeauftragte:r) sowie die Dokumentation der Erstmeldung."
+                            },
+                            {
+                                "id": "inc-02-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Mitarbeitende und Dienstleister wissen nicht genau, was ein Datenschutzvorfall ist und an wen sie sich wenden sollen; Meldungen erfolgen zufällig oder sehr spät, es gibt keine definierten Meldewege. Level 3: Es bestehen klar definierte und kommunizierte interne Meldekanäle für (vermutete) Datenschutzvorfälle sowie dokumentierte Erstbewertungs- und Eskalationsprozesse; Mitarbeitende werden regelmäßig informiert bzw. geschult, wie sie Vorfälle erkennen und melden. Level 5: Meldeverhalten (Anzahl, Qualität, Geschwindigkeit von Meldungen) wird ausgewertet und für die Optimierung von Awareness, Prozessen und technischen Monitoring-Maßnahmen genutzt; technische Erkennung (Logging/Monitoring) ist organisatorisch mit den Meldeverfahren verknüpft."
+                            },
+                            {
+                                "id": "inc-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Haben Mitarbeitende und Dienstleister klar definierte und bekannte Meldekanäle für (vermutete) Datenschutzvorfälle?\n• Werden Mitarbeitende regelmäßig darüber informiert oder geschult, was ein Datenschutzvorfall ist und wie er zu melden ist?"
                             }
                         ],
                         "links": [
@@ -2419,6 +2439,16 @@
                                 "id": "inc-03-stmt",
                                 "name": "statement",
                                 "prose": "Für erkannte oder vermutete Datenschutzverletzungen führt die Organisation eine strukturierte Risikoanalyse in Bezug auf die Rechte und Freiheiten der betroffenen Personen durch. Die Methodik differenziert mindestens nach Vertraulichkeits-, Integritäts- und Verfügbarkeitsverletzungen, bewertet Schwere und Eintrittswahrscheinlichkeit von Schäden und dokumentiert die Einstufung sowie die Entscheidung, ob eine Meldung an die Aufsichtsbehörde und/oder eine Benachrichtigung der betroffenen Personen erforderlich ist."
+                            },
+                            {
+                                "id": "inc-03-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Die Entscheidung über Meldepflichten und Betroffenenbenachrichtigungen erfolgt überwiegend intuitiv und von Fall zu Fall; Gründe werden wenig oder gar nicht dokumentiert. Level 3: Es existiert eine definierte, organisationsweit verwendete Methodik zur Bewertung von Datenschutzverletzungen (z.B. Scoremodell oder Checkliste nach EDPB), die für jeden Vorfall angewendet und nachvollziehbar dokumentiert wird, inkl. Einstufung und Melde-/Benachrichtigungsentscheidung. Level 5: Die Bewertungsmethodik wird regelmäßig anhand von Praxisfällen, Rechtsprechung und neuen Leitlinien angepasst; Ergebnisse und Muster aus Vorfällen fließen in die Weiterentwicklung von DPIA-Methodik, Transferbewertungen (TIAs) und TOM-Risikobewertungen ein."
+                            },
+                            {
+                                "id": "inc-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Wird für jeden Vorfall eine dokumentierte Risikoanalyse mit einer einheitlichen Methode oder Checkliste durchgeführt (z.B. anhand der EDPB-Guidelines)?"
                             }
                         ],
                         "links": [
@@ -2475,6 +2505,16 @@
                                 "id": "inc-04-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation verfügt über ein Verfahren zur Meldung von Datenschutzverletzungen an die zuständige Aufsichtsbehörde innerhalb von 72 Stunden nach Bekanntwerden, einschließlich Regelungen zur Auswahl der zuständigen Behörde(n), zur Bereitstellung der Mindestinhalte nach Art. 33 DSGVO, zum Umgang mit unvollständigen Erstmeldungen und zur Nachmeldung ergänzender Informationen. Fristen und übermittelte Informationen werden nachvollziehbar dokumentiert."
+                            },
+                            {
+                                "id": "inc-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Meldungen an Aufsichtsbehörden erfolgen nur in Ausnahmefällen ohne klaren Prozess; Unsicherheit herrscht darüber, ob, wann und wo zu melden ist; Fristen werden nicht systematisch überwacht. Level 3: Es besteht ein dokumentiertes Verfahren zur Prüfung und Durchführung von Meldungen nach Art. 33 DSGVO mit klarer Zuständigkeit (z.B. DSB) und Fristenkontrolle; alle Melde- und Nicht-Meldeentscheidungen werden nachvollziehbar dokumentiert. Level 5: Es existieren vorbereitete Meldevorlagen und -pakete; Qualität und Vollständigkeit von Meldungen werden im Nachgang geprüft; Feedback der Aufsichtsbehörden wird ausgewertet und in Prozesse, Schulungen und TOMs zurückgespielt."
+                            },
+                            {
+                                "id": "inc-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Existiert ein Prozess, der sicherstellt, dass Meldepflichten an Aufsichtsbehörden innerhalb von 72 Stunden geprüft und gegebenenfalls erfüllt werden, einschließlich Dokumentation der Entscheidung?"
                             }
                         ],
                         "links": [
@@ -2518,7 +2558,17 @@
                             {
                                 "id": "inc-05-stmt",
                                 "name": "statement",
-                                "prose": "Für Datenschutzverletzungen mit voraussichtlich hohem Risiko für die Rechte und Freiheiten der betroffenen Personen verfügt die Organisation über Verfahren und Textbausteine zur rechtzeitigen, klaren und verständlichen Benachrichtigung der betroffenen Personen. Diese Benachrichtigungen umfassen mindestens die nach Art. 34 DSGVO geforderten Informationen sowie pragmatische Hinweise zu Schutzmaßnahmen und werden inkl. Versandzeitpunkt und -kanal dokumentiert."
+                                "prose": "Für Datenschutzverletzungen mit voraussichtlich hohem Risiko für die Rechte und Freiheiten der betroffenen Personen verfügt die Organisation über Verfahren und Textbausteine zur rechtzeitigen, klaren und verständlichen Benachrichtigung der betroffenen Personen. Diese Benachrichtigungen umfassen mindestens die nach Art. 34 DSGVO geforderten Informationen sowie pragmatische Hinweise zu Schutzmaßnahmen und werden inklusive Versandzeitpunkt und -kanal dokumentiert."
+                            },
+                            {
+                                "id": "inc-05-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Betroffene Personen werden nur in Ausnahmefällen und ohne strukturierte Kriterien informiert; Benachrichtigungstexte werden im Einzelfall ad hoc formuliert und sind häufig rechtlich oder technisch schwer verständlich. Level 3: Es existieren definierte Kriterien, wann Betroffene nach Art. 34 DSGVO zu benachrichtigen sind, sowie vorbereitete, verständliche Textbausteine und ein Kommunikationsplan (Kanäle, Ansprechpartner, Q&A); jede Benachrichtigung wird mit Inhalt, Zeitpunkt und Kanal dokumentiert. Level 5: Die Kommunikation mit Betroffenen ist mit PR/Kommunikation und Beschwerdemanagement abgestimmt; typische Rückfragen und Beschwerden fließen in die Weiterentwicklung der Vorlagen und Prozesse ein; Qualität und Verständlichkeit der Benachrichtigungen werden stichprobenartig geprüft."
+                            },
+                            {
+                                "id": "inc-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es vordefinierte Kriterien und Textbausteine für die Benachrichtigung betroffener Personen nach Art. 34 DSGVO, einschließlich eines Kommunikationsplans (Kanäle, Ansprechpartner, Q&A)?"
                             }
                         ],
                         "links": [
@@ -2562,7 +2612,17 @@
                             {
                                 "id": "inc-06-stmt",
                                 "name": "statement",
-                                "prose": "Die Organisation führt ein Register aller Verletzungen des Schutzes personenbezogener Daten, unabhängig davon, ob diese meldepflichtig waren. Für jeden Vorfall werden Ursachen, betroffene Daten und Systeme, getroffene Sofortmaßnahmen, Risikobewertung, Melde- und Benachrichtigungsentscheidungen sowie nachhaltige Korrekturmaßnahmen dokumentiert. Erkenntnisse aus Vorfällen fließen systematisch in die Verbesserung von TOMs, Prozessen, Schulungen und ggf. Datenschutz-Folgenabschätzungen ein."
+                                "prose": "Die Organisation führt ein Register aller Verletzungen des Schutzes personenbezogener Daten, unabhängig davon, ob diese meldepflichtig waren. Für jeden Vorfall werden Ursachen, betroffene Daten und Systeme, getroffene Sofortmaßnahmen, Risikobewertung, Melde- und Benachrichtigungsentscheidungen sowie nachhaltige Korrekturmaßnahmen dokumentiert. Erkenntnisse aus Vorfällen fließen systematisch in die Verbesserung von TOMs, Prozessen, Schulungen und gegebenenfalls Datenschutz-Folgenabschätzungen ein."
+                            },
+                            {
+                                "id": "inc-06-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Es existiert kein vollständiges, zentrales Register zu Datenschutzvorfällen; Informationen liegen verteilt in E-Mails oder Tickets, und systematisches Lernen aus Vorfällen findet kaum statt. Level 3: Ein zentrales Vorfallsregister erfasst alle Datenschutzverletzungen einschließlich Risikoanalyse, Melde-/Benachrichtigungsentscheidung und getroffener Maßnahmen; Auswertungen werden regelmäßig erstellt und in einem geeigneten Gremium (z.B. Security-/Datenschutzboard, Management) besprochen. Level 5: Vorfallsdaten werden aktiv genutzt, um TOMs, Prozesse, Schulungs- und DPIA-Konzepte anzupassen; es gibt Kennzahlen (z.B. Wiederholungsfehler, Zeit bis Maßnahmenumsetzung), die in Management-Reports einfließen und für die Steuerung des Datenschutz-Programms genutzt werden."
+                            },
+                            {
+                                "id": "inc-06-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Wird ein zentrales Vorfallsregister geführt, aus dem Ursachen, Maßnahmen und Lessons Learned hervorgehen – und werden daraus konkret Verbesserungen an TOMs, Prozessen oder Schulungen abgeleitet?"
                             }
                         ],
                         "links": [
