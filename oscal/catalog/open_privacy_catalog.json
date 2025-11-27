@@ -3233,14 +3233,88 @@
                                 "prose": "Die Organisation führt regelmäßig verpflichtende Datenschutzgrundlagenschulungen für alle Beschäftigten durch, die personenbezogene Daten verarbeiten. Inhalte umfassen mindestens Grundprinzipien der DSGVO, interne Datenschutzregeln, Meldewege für Datenschutzvorfälle sowie praktisches Verhalten im Arbeitsalltag. Schulungsinhalte und Teilnahmen werden nachvollziehbar dokumentiert."
                             },
                             {
+                                "id": "train-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Umsetzung der regelmäßigen Datenschutzgrundlagenschulungen.",
+                                "parts": [
+                                    {
+                                        "id": "train-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einführung einer verpflichtenden DSGVO-Grundlagenschulung für alle Mitarbeitenden, die personenbezogene Daten verarbeiten."
+                                    },
+                                    {
+                                        "id": "train-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Verankerung der Grundlagenschulung im Onboarding-Prozess (Pflichtschulung vor Aufnahme datenschutzrelevanter Tätigkeiten) und in regelmäßigen Auffrischungsintervallen (z.B. alle 1–2 Jahre)."
+                                    },
+                                    {
+                                        "id": "train-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung standardisierter Schulungsmaterialien (z.B. Foliendeck, E-Learning-Modul) unter zentraler fachlicher Verantwortung (Datenschutz/Compliance)."
+                                    },
+                                    {
+                                        "id": "train-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation der Teilnahme an Grundlagenschulungen (z.B. im Learning-Management-System oder in zentral geführten Teilnehmerlisten) inkl. Nachverfolgung von Nicht-Teilnahmen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "train-01-maturity",
                                 "name": "maturity-hints",
-                                "prose": "Level 1: Schulungen finden nur sporadisch oder einmalig (z.B. zur DSGVO-Einführung) statt, ohne klaren Pflichtcharakter, definierten Turnus oder vollständige Teilnehmerdokumentation.\nLevel 3: Es existiert ein dokumentierter Schulungsplan mit definiertem Turnus (z.B. alle 1–2 Jahre), klarer Zielgruppe und Inhalten; Teilnahme an der Grundlagenschulung ist verpflichtend, wird nachvollziehbar erfasst und bei Nichterfüllung werden Nachschulungen angestoßen.\nLevel 5: Schulungsinhalte werden regelmäßig auf Basis von Vorfällen, Auditergebnissen und Feedback angepasst; Teilnahme- und Testergebnisse fließen in Management-Reporting und Risikoanalysen ein und beeinflussen die Weiterentwicklung des Datenschutzprogramms."
+                                "prose": "CNIL-Reifegradmodell mit Level 1, 3 und 5.",
+                                "parts": [
+                                    {
+                                        "id": "train-01-maturity-level-01",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "1"
+                                            }
+                                        ],
+                                        "prose": "Level 1: Schulungen finden nur sporadisch oder einmalig (z.B. zur DSGVO-Einführung) statt, ohne klaren Pflichtcharakter, definierten Turnus oder vollständige Teilnehmerdokumentation."
+                                    },
+                                    {
+                                        "id": "train-01-maturity-level-03",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "3"
+                                            }
+                                        ],
+                                        "prose": "Level 3: Es existiert ein dokumentierter Schulungsplan mit definiertem Turnus (z.B. alle 1–2 Jahre), klarer Zielgruppe und Inhalten; Teilnahme an der Grundlagenschulung ist verpflichtend, wird nachvollziehbar erfasst und bei Nichterfüllung werden Nachschulungen angestoßen."
+                                    },
+                                    {
+                                        "id": "train-01-maturity-level-05",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "5"
+                                            }
+                                        ],
+                                        "prose": "Level 5: Schulungsinhalte werden regelmäßig auf Basis von Vorfällen, Auditergebnissen und Feedback angepasst; Teilnahme- und Testergebnisse fließen in Management-Reporting und Risikoanalysen ein und beeinflussen die Weiterentwicklung des Datenschutzprogramms."
+                                    }
+                                ]
                             },
                             {
                                 "id": "train-01-questions",
                                 "name": "assessment-questions",
-                                "prose": "• Gibt es eine verpflichtende Datenschutzgrundlagenschulung für alle Mitarbeitenden mit dokumentierter Teilnahme und definiertem Turnus (z.B. alle 1–2 Jahre)?\n• Ist Datenschutz Bestandteil eines standardisierten Onboardings für neue Mitarbeitende, bevor sie mit personenbezogenen Daten arbeiten?"
+                                "prose": "Auditfragen zu Governance und Organisation.",
+                                "parts": [
+                                    {
+                                        "id": "train-01-questions-01",
+                                        "name": "assessment-question",
+                                        "prose": "Gibt es eine verpflichtende Datenschutzgrundlagenschulung für alle Mitarbeitenden mit dokumentierter Teilnahme und definiertem Turnus (z.B. alle 1–2 Jahre)?"
+                                    },
+                                    {
+                                        "id": "train-01-questions-02",
+                                        "name": "assessment-question",
+                                        "prose": "Ist Datenschutz Bestandteil eines standardisierten Onboardings für neue Mitarbeitende, bevor sie mit personenbezogenen Daten arbeiten?"
+                                    }
+                                ]
                             }
                         ],
                         "links": [
@@ -3285,6 +3359,33 @@
                                 "id": "train-02-stmt",
                                 "name": "statement",
                                 "prose": "Für besonders datenschutzrelevante Rollen (z.B. Führungskräfte, HR, Vertrieb/Marketing, IT/DevOps, Support, Fachadministration) führt die Organisation vertiefende, rollenbasierte Schulungen durch, die konkrete Verarbeitungsszenarien, typische Risiken und Pflichten adressieren. Neue Mitarbeitende erhalten vor Aufnahme datenschutzrelevanter Tätigkeiten ein geeignetes Onboarding; bei wesentlichen Änderungen von Prozessen, Systemen oder Rechtslage werden anlassbezogene Nachschulungen durchgeführt."
+                            },
+                            {
+                                "id": "train-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für rollenbasierte und anlassbezogene Vertiefungsschulungen.",
+                                "parts": [
+                                    {
+                                        "id": "train-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von Rollen- bzw. Zielgruppen (z.B. HR, Führungskräfte, Marketing, IT/DevOps, Support, Fachadministration) mit erhöhtem Datenschutzrisiko."
+                                    },
+                                    {
+                                        "id": "train-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung rollenbasierter Curricula mit dokumentierten Lernzielen und Inhalten, die konkrete Verarbeitungsszenarien, typische Fehler und Pflichten adressieren."
+                                    },
+                                    {
+                                        "id": "train-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Integration rollenbezogener Schulungen in den Onboarding-Prozess sowie Auslösung von Nachschulungen bei Rollenwechseln oder Verantwortungsänderungen."
+                                    },
+                                    {
+                                        "id": "train-02-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung anlassbezogener Vertiefungsschulungen bei Einführung neuer Systeme, Prozesse oder wesentlichen Rechtsänderungen mit Datenschutzrelevanz."
+                                    }
+                                ]
                             },
                             {
                                 "id": "train-02-maturity",
@@ -3333,6 +3434,33 @@
                                 "id": "train-03-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation betreibt laufende Awareness-Maßnahmen zum Datenschutz (z.B. Intranet-Beiträge, Newsletter, Kampagnen, E-Learnings, Poster, kurze Reminder), die auf aktuelle Risiken und Vorfälle eingehen und die Beschäftigten zu datenschutzgerechtem Verhalten motivieren. Datenschutz wird als Bestandteil der Sicherheits- und Unternehmenskultur kommuniziert, nicht nur als einmalige Pflichtschulung."
+                            },
+                            {
+                                "id": "train-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für Awareness-Kampagnen und eine gelebte Datenschutzkultur.",
+                                "parts": [
+                                    {
+                                        "id": "train-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Planung und Umsetzung wiederkehrender Awareness-Aktionen (z.B. Intranet-Beiträge, Newsletter, Poster, kurze Videos oder Micro-Learnings) mit klaren Fokusthemen."
+                                    },
+                                    {
+                                        "id": "train-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Aufgreifen praxisnaher Themen wie „sauberer Schreibtisch“, Phishing, Homeoffice, BYOD, Umgang mit Papierunterlagen und sichere Kommunikation."
+                                    },
+                                    {
+                                        "id": "train-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Sichtbare Positionierung von Datenschutzbeauftragten und Informationssicherheit als Ansprechpersonen (z.B. Portrait im Intranet, Kontaktboxen, Q&A-Formate)."
+                                    },
+                                    {
+                                        "id": "train-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation und Archivierung der Awareness-Materialien (z.B. Kampagnenplan, Inhalte, Zielgruppen) zur Nachweisführung und Wiederverwendung."
+                                    }
+                                ]
                             },
                             {
                                 "id": "train-03-maturity",
@@ -3387,6 +3515,33 @@
                                 "id": "train-04-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation bewertet regelmäßig die Wirksamkeit von Schulungs- und Awareness-Maßnahmen, z.B. durch Wissenstests, Feedback der Teilnehmenden, Kennzahlen zur Teilnahmequote, Auswertung typischer Fehler und Vorfälle sowie ggf. simulierte Phishing- oder Awareness-Kampagnen. Ergebnisse fließen systematisch in die Weiterentwicklung der Schulungsinhalte, Formate und Zielgruppenplanung ein und werden der Leitungsebene berichtet."
+                            },
+                            {
+                                "id": "train-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Wirksamkeitskontrolle und kontinuierlichen Verbesserung der Trainings- und Awareness-Maßnahmen.",
+                                "parts": [
+                                    {
+                                        "id": "train-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einsatz kurzer Wissenschecks oder Quizzes im Anschluss an Schulungen bzw. E-Learnings, um das Verständnis zentraler Inhalte zu prüfen."
+                                    },
+                                    {
+                                        "id": "train-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung standardisierter Feedback-Abfragen (z.B. 3–5 Fragen zur Verständlichkeit, Relevanz, Praxisnähe) nach Trainings und Kampagnen."
+                                    },
+                                    {
+                                        "id": "train-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Auswertung von Kennzahlen wie Teilnahmequoten, Testergebnissen, häufigen Fragen und typischen Fehlern im Arbeitsalltag."
+                                    },
+                                    {
+                                        "id": "train-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Ableitung konkreter Verbesserungsmaßnahmen (z.B. Überarbeitung von Inhalten, Anpassung von Formaten, gezielte Nachschulungen) und Dokumentation in einem Verbesserungs- bzw. Maßnahmenplan."
+                                    }
+                                ]
                             },
                             {
                                 "id": "train-04-maturity",
