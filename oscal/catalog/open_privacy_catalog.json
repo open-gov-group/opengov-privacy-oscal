@@ -150,6 +150,28 @@
                                 ]
                             },
                             {
+                                "id": "gov-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Umsetzung einer definierten Datenschutzorganisation.",
+                                "parts": [
+                                    {
+                                        "id": "gov-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Benennung zentraler Rollen für den Datenschutz (z.B. Datenschutzbeauftragte:r, Verantwortliche Personen, Datenschutzkoordination)."
+                                    },
+                                    {
+                                        "id": "gov-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Pflege eines Organigramms oder einer RASCI-Matrix mit klaren Zuständigkeiten für Datenschutzaufgaben in Management, Fachbereichen und IT."
+                                    },
+                                    {
+                                        "id": "gov-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Einrichtung dokumentierter Gremien/Boards (z.B. Datenschutz- oder Compliance-Komitee), in denen Datenschutz regelmäßig behandelt wird."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "gov-01-questions",
                                 "name": "assessment-questions",
                                 "prose": "Auditfragen zu Governance und Organisation.",
@@ -210,6 +232,28 @@
                                 "prose": "Level 1: Es gibt keine oder nur sehr allgemein gehaltene Aussagen zu Datenschutz; Fokus liegt auf reiner Gesetzeserfüllung ohne konkrete Ziele.\nLevel 3: Es existieren formulierte Datenschutzziele und eine Datenschutz- bzw. Compliance-Strategie, die auf Unternehmens- oder IT/Data-Strategie referenziert und regelmäßig kommuniziert wird.\nLevel 5: Datenschutzziele sind messbar (KPIs/OKRs), in reguläre Ziel- und Review-Prozesse der Organisation integriert und werden auf Basis von Kennzahlen, Vorfällen, Audits und regulatorischen Entwicklungen angepasst."
                             },
                             {
+                                "id": "gov-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Definition von Datenschutzzielen und -strategie.",
+                                "parts": [
+                                    {
+                                        "id": "gov-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Schriftliche Festlegung von Datenschutzzielen (z.B. abgeleitet aus Leitbild, Compliance-Strategie oder Risikoappetit der Organisation)."
+                                    },
+                                    {
+                                        "id": "gov-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Verankerung von Datenschutz in Unternehmens-, IT- und Data-Strategien (z.B. eigene Kapitel oder Abschnitte zu Datenschutz-/Privacy-Zielen)."
+                                    },
+                                    {
+                                        "id": "gov-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Veröffentlichung von Management-Statements zu Datenschutz (z.B. Datenschutz-Policy, Code of Conduct, Leitlinien der Geschäftsleitung)."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "gov-02-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Liegen formulierte Datenschutzziele und/oder eine Datenschutz-/Compliance-Strategie vor, die über „wir halten die DSGVO ein“ hinausgeht?\n• Findet ein regelmäßiger Bericht (mind. jährlich) zu Datenschutz-Lage, Risiken und Maßnahmen an die oberste Leitung statt?"
@@ -256,6 +300,28 @@
                                 "id": "gov-03-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Einmalige DSGVO-Einführung oder punktuelle Projekte; danach keine laufende, strukturierte Planung; Maßnahmen entstehen überwiegend reaktiv.\nLevel 3: Es existiert ein aktueller Datenschutz-Maßnahmenplan bzw. Programm mit klar priorisierten Maßnahmen, Verantwortlichen, Terminen und Status; Fortschritt wird regelmäßig (z.B. quartalsweise) an Management oder Gremien berichtet.\nLevel 5: Datenschutzprogramm ist in Portfolio- und Risikomanagement integriert; Priorisierung erfolgt risikobasiert und businessorientiert; Ergebnisse aus Audits, Vorfällen und Kennzahlen führen systematisch zu neuen oder geänderten Maßnahmen."
+                            },
+                            {
+                                "id": "gov-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für ein DSGVO-Umsetzungsprogramm und Maßnahmenplan.",
+                                "parts": [
+                                    {
+                                        "id": "gov-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung und Pflege einer Programm- oder Projektliste zur DSGVO- und Datenschutz-Umsetzung (Roadmap) mit klar beschriebenen Maßnahmen."
+                                    },
+                                    {
+                                        "id": "gov-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Priorisierung der Maßnahmen mit benannten Verantwortlichen, Zeitplänen, Meilensteinen und Statusverfolgung."
+                                    },
+                                    {
+                                        "id": "gov-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Berichterstattung zum Fortschritt des Datenschutzprogramms an Management oder Aufsichtsgremien (z.B. quartalsweise Statusberichte)."
+                                    }
+                                ]
                             },
                             {
                                 "id": "gov-03-questions",
@@ -320,6 +386,28 @@
                                 "prose": "Level 1: Rollenbegriffe (Verantwortlicher, Auftragsverarbeiter, gemeinsame Verantwortliche) werden uneinheitlich genutzt; Rollenentscheidungen sind selten dokumentiert; Joint-Control-Situationen werden meist nicht erkannt.\nLevel 3: Es existiert ein Rollenleitfaden mit Kriterien und Beispielen; bei neuen Vorhaben werden Rollen explizit entschieden und dokumentiert; Standardmuster für Art.-26- und Art.-28-Vereinbarungen werden genutzt.\nLevel 5: Rollenentscheidungen werden regelmäßig überprüft (z.B. bei Vertrags- oder Service-Änderungen); Rollenmodelle sind konzern-/verwaltungsweit konsistent; es gibt definierte Prozesse für die Klärung von Rollenstreitigkeiten."
                             },
                             {
+                                "id": "gov-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Ausgestaltung des Rollenmodells Verantwortlicher / gemeinsame Verantwortliche / Auftragsverarbeiter.",
+                                "parts": [
+                                    {
+                                        "id": "gov-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erarbeitung und Dokumentation von Kriterien, wann die Organisation als Verantwortliche:r, gemeinsame Verantwortliche:r oder Auftragsverarbeiter:in agiert."
+                                    },
+                                    {
+                                        "id": "gov-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Führung einer Übersicht, in welchen Konstellationen (Dienste, Produkte, Kooperationen) die Organisation welche datenschutzrechtliche Rolle einnimmt."
+                                    },
+                                    {
+                                        "id": "gov-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung und Verwendung von Musterverträgen und Vereinbarungen für Art.-26- (gemeinsame Verantwortliche) und Art.-28-Szenarien (Auftragsverarbeitung)."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "gov-04-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Werden bei neuen Vorhaben Rollenentscheidungen (Verantwortlicher / gemeinsame Verantwortliche / Auftragsverarbeiter) bewusst getroffen und dokumentiert?"
@@ -374,6 +462,28 @@
                                 "prose": "Level 1: DSB ist ggf. nur formal bestellt; Unabhängigkeit, Ressourcenausstattung und Einbindung in Entscheidungen sind nicht klar geregelt oder werden in der Praxis nicht gelebt.\nLevel 3: Bestellung, Stellung, Berichtslinie und Ressourcenausstattung des/der DSB sind dokumentiert; der DSB wird systematisch in relevante Vorhaben eingebunden und berichtet mindestens jährlich an die Leitung.\nLevel 5: Der DSB ist in strategische Planungs- und Risikoprozesse eingebunden, besitzt einen etablierten Eskalationspfad zur obersten Leitung; Wirkung der Berichte zeigt sich in nachweisbaren Management-Entscheidungen und Priorisierungen."
                             },
                             {
+                                "id": "gov-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Bestellung, Stellung und Einbindung der/des Datenschutzbeauftragten.",
+                                "parts": [
+                                    {
+                                        "id": "gov-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Ausstellung schriftlicher Bestellungsunterlagen für die/den Datenschutzbeauftragte:n inklusive Aufgaben- und Funktionsbeschreibung."
+                                    },
+                                    {
+                                        "id": "gov-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung einer direkten oder funktional unabhängigen Berichtslinie des/der DSB zur obersten Leitungsebene (z.B. Geschäftsführung, Behördenleitung)."
+                                    },
+                                    {
+                                        "id": "gov-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines regelmäßigen Berichtswesens des/der DSB (mindestens jährlicher Datenschutzbericht) an die oberste Leitung."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "gov-05-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Ist die Unabhängigkeit, Ressourcenausstattung und Berichtslinie des/der Datenschutzbeauftragten schriftlich geregelt und gelebte Praxis?\n• Findet ein regelmäßiger Bericht (mind. jährlich) des/der DSB an die oberste Leitung statt?"
@@ -426,6 +536,28 @@
                                 "id": "gov-06-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Data- und IT-Entscheidungen werden primär nach technischen oder wirtschaftlichen Kriterien getroffen; Datenschutz wird nur in Einzelfällen explizit adressiert.\nLevel 3: Datenschutz ist als Prüffeld in relevanten Gremien und Prozessen (z.B. IT-Steuerung, Data Governance, Architekturboard) verankert; es existieren Checklisten oder Entscheidungsunterlagen mit Datenschutzfragen.\nLevel 5: Datenschutzanforderungen sind fester Bestandteil von Bewertungs- und Priorisierungsmodellen; Governance-Gremien nutzen Informationen aus DPIA, TOMs und Incident-Management; Auswirkungen auf Datenschutz werden in Entscheidungsdokumenten nachvollziehbar dargestellt."
+                            },
+                            {
+                                "id": "gov-06-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Einbettung des Datenschutzes in Data- und IT-Governance.",
+                                "parts": [
+                                    {
+                                        "id": "gov-06-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Aufnahme von Datenschutz in das Mandat relevanter Governance-Gremien (z.B. Steering Committees, Architekturboard, Data Governance Board)."
+                                    },
+                                    {
+                                        "id": "gov-06-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von Datenschutz-Checkpoints in IT- und Data-Entscheidungsprozessen (z.B. in Projekt- und Architektur-Gates, Beschaffung, Produktfreigaben)."
+                                    },
+                                    {
+                                        "id": "gov-06-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Architektur- und Designprinzipien, in denen Datenschutzanforderungen (z.B. Privacy by Design/Default, Datenminimierung) verbindlich verankert sind."
+                                    }
+                                ]
                             },
                             {
                                 "id": "gov-06-questions",
