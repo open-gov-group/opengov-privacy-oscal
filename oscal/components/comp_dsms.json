@@ -1,0 +1,137 @@
+﻿{
+  "component-definition": {
+        "uuid": "ef7573f0-cdea-455d-8303-79e97ab03a56",
+    "metadata": {
+      "title": "DSMS / Datenschutzmanagementsystem – Musterstadt Verwaltung",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-11-27T00:00:00Z",
+      "props": [
+        {
+          "name": "component-type",
+          "value": "process"
+        }
+      ],
+      "parties": [
+        {
+            "uuid": "cac32d25-94f1-4fc3-aab0-a93166837f21",
+          "type": "organization",
+          "name": "Musterstadt Verwaltung"
+        }
+      ]
+    },
+    "components": [
+        {
+            "uuid": "6b41b94e-c535-4d6a-8544-77fc1e6a70d7",
+        "type": "organizational",
+        "title": "Datenschutzmanagementsystem (DSMS)",
+        "description": "Component-Definition für das zentrale Datenschutzmanagementsystem der Musterstadt Verwaltung. Diese Komponente beschreibt organisatorische und prozessuale Umsetzungen ausgewählter Controls aus dem OpenGov Privacy OSCAL Catalog.",
+        "props": [
+          {
+            "name": "responsible-role",
+            "value": "Datenschutzbeauftragte:r / Compliance"
+          }
+        ],
+        "control-implementations": [
+            {
+            "uuid": "2985d231-70fe-41b2-b034-ee41ef3a2e52",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/open_privacy_catalog.json",
+            "description": "Implementierung ausgewählter Datenschutz-Governance- und Accountability-Controls über das zentrale DSMS.",
+            "implemented-requirements": [
+                    {
+                "uuid": "8467191c-f9df-4de6-b65f-f1d31d0c7b53",
+                "control-id": "GOV-01",
+                "description": "Die Musterstadt Verwaltung hat Rollen und Verantwortlichkeiten für den Datenschutz definiert und dokumentiert.",
+                "statements": [
+                            {
+                    "uuid": "f016ad23-00dd-42ab-953c-f675fac2ea2d",
+                    "statement-id": "gov-01-stmt",
+                    "description": "Rollenmodell und Zuständigkeiten sind in einer Datenschutz-Geschäftsanweisung, im Organigramm und in einer RACI-Matrix dokumentiert. Diese Dokumente werden jährlich geprüft und bei Organisationsänderungen aktualisiert."
+                  }
+                ],
+                "props": [
+                  {
+                    "name": "maturity-level",
+                    "value": "3"
+                  }
+                ]
+              },
+                {
+                "uuid": "a9a0d355-df88-4159-bcce-aace3890fea9",
+                "control-id": "GOV-02",
+                "description": "Die Organisation hat Datenschutzziele definiert und in ihre Compliance-Strategie integriert.",
+                "statements": [
+                            {
+                                "uuid": "aaa74ad0-2ca0-4422-821e-c04e40439c67",
+                    "statement-id": "gov-02-stmt",
+                    "description": "Eine Datenschutzstrategie wurde von der Behördenleitung verabschiedet. Sie enthält messbare Ziele (z.B. Vollständigkeit VVT, Schulungsquote, Abschluss von DPIAs) und ist im Intranet veröffentlicht."
+                  }
+                ],
+                "props": [
+                  {
+                    "name": "maturity-level",
+                    "value": "2"
+                  }
+                ]
+              },
+                {
+                    "uuid": "c51f393f-dce7-4fce-881f-9ee143c11c39",
+                    "control-id": "ACC-01",
+                    "description": "Das DSMS führt die zentrale Dokumentation für Rechenschaftspflichten nach Art. 5 Abs. 2 und Art. 24 DSGVO.",
+                    "statements": [
+                        {
+                            "uuid": "4ab3bfb0-6a59-43b5-8fd9-8c79dbf97851",
+                            "statement-id": "acc-01-stmt",
+                            "description": "Das DSMS betreibt ein zentrales DSMS-Handbuch, das Policies, VVT, DPIAs, TOM-Dokumentation, Schulungsnachweise und Vorfallsregister bündelt. Das Handbuch wird halbjährlich aktualisiert und im Rahmen eines Management-Reviews vorgestellt."
+                        }
+                    ],
+                    "props": [
+                        {
+                            "name": "maturity-level",
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "51ecd814-2f49-4745-9675-20ec53ee6ae9",
+                    "control-id": "TRAIN-01",
+                    "description": "Das DSMS stellt sicher, dass alle Mitarbeitenden regelmäßige Datenschutzgrundlagenschulungen erhalten.",
+                    "statements": [
+                        {
+                            "uuid": "5d5c9a5e-0fe2-4abb-b0f6-2e94d6f5f69e",
+                            "statement-id": "train-01-stmt",
+                            "description": "Es existiert ein verpflichtendes E-Learning-Modul zur DSGVO-Grundlagenschulung, das im Onboarding-Prozess verankert ist. Auffrischungen erfolgen alle zwei Jahre und werden im Learning-Management-System dokumentiert."
+                        }
+                    ],
+                    "props": [
+                        {
+                            "name": "maturity-level",
+                            "value": "3"
+                        }
+                    ]
+                },
+                {
+                    "uuid": "e40c502d-84bb-4ba7-adff-469d62c82741",
+                    "control-id": "INC-02",
+                    "description": "Das DSMS stellt erkennbare Meldewege und einheitliche Verfahren für interne Meldungen von Datenschutzvorfällen bereit.",
+                    "statements": [
+                        {
+                            "uuid": "89a256f2-95d1-4159-9535-4480adc6cc6b",
+                            "statement-id": "inc-02-stmt",
+                            "description": "Für (vermutete) Datenschutzvorfälle gibt es ein standardisiertes Meldeformular im Intranet sowie ein Funktionspostfach. Hinweise zu Meldewegen sind in Schulungen und auf der Datenschutz-Intranetseite dokumentiert."
+                        }
+                    ],
+                    "props": [
+                        {
+                            "name": "maturity-level",
+                            "value": "2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+]
+}
+}

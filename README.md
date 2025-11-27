@@ -133,6 +133,141 @@ Für alle Controls verwenden wir ein einheitliches Schema für **Reifegrad-Hinwe
 }
 ```
 
+### Control-Pattern: Statement, Reifegrade, typische Maßnahmen, Audit-Fragen
+
+Jedes Control im Katalog folgt (soweit möglich) einem einheitlichen 4-Baustein-Muster:
+
+1. **Statement** – Was ist die Anforderung?
+2. **Maturity-Hints** – Wie sehen die Reifegrade (1 / 3 / 5) aus?
+3. **Typical-Measures** – Welche typischen Maßnahmen setzen die Anforderung praktisch um?
+4. **Assessment-Questions** – Welche Fragen stelle ich im Audit / Self-Assessment?
+
+#### 1. Statement
+
+- Part-ID: `<control-id-lower>-stmt`  
+- `name: "statement"`  
+- `prose`: kurze, normnahe Beschreibung der Kontrolle
+
+```json
+{
+  "id": "gov-01-stmt",
+  "name": "statement",
+  "prose": "Die Organisation definiert eine klare Datenschutzorganisation mit benannten Rollen und Zuständigkeiten."
+}
+```
+
+### Contribution Checklist (neues Control)
+
+Wenn du ein neues Control anlegst oder ein bestehendes erweiterst, prüfe bitte:
+
+1. **Basis**
+   - [ ] Control-ID vergeben (z.B. `GOV-07`) und in der richtigen Gruppe (`GOV`, `INC`, …) einsortiert
+   - [ ] `title` gesetzt
+   - [ ] `props` mit mindestens:
+     - [ ] `dsgvo-article`
+     - [ ] `sdm-goal`
+     - [ ] `maturity-domain`
+     - [ ] `target-maturity`
+
+2. **Statement**
+   - [ ] Part `<control-id-lower>-stmt` vorhanden  
+     `name: "statement"`, kurzer, klarer Satz: *Was ist die Anforderung?*
+
+3. **Maturity-Hints**
+   - [ ] Part `<control-id-lower>-maturity` mit `name: "maturity-hints"`
+   - [ ] Unter-Parts für Level **1**, **3**, **5**:
+     - [ ] IDs `…-maturity-level-01|03|05`
+     - [ ] `name: "maturity-level"`
+     - [ ] `props: { "name": "maturity-level", "value": "1|3|5" }`
+     - [ ] `prose` beschreibt das jeweilige Level
+
+4. **Typical-Measures**
+   - [ ] Part `<control-id-lower>-typical-measures` mit `name: "typical-measures"`
+   - [ ] Unter-Parts:
+     - [ ] IDs `…-typical-measure-01|02|…`
+     - [ ] `name: "typical-measure"`
+     - [ ] jede `prose` = **eine** konkrete Maßnahme
+
+5. **Assessment-Questions**
+   - [ ] Part `<control-id-lower>-questions` mit `name: "assessment-questions"`
+   - [ ] Unter-Parts:
+     - [ ] IDs `…-question-01|02|…`
+     - [ ] `name: "assessment-question"`
+     - [ ] jede `prose` = **eine** Frage (ohne Bullet-Format)
+
+Optional:
+- [ ] Quellen-/Referenzlinks in `links` ergänzt (EDPB, DSK, BfDI, CNIL, SDM etc.)
+- [ ] Rechtschreibung / Klarheit der Texte kurz gegengecheckt
+
+
+### Wie nutze ich den Katalog mit einer OSCAL Component Definition?
+
+Der OpenGov Privacy OSCAL Catalog ist **nur der Baukasten** (Catalog-Layer).  
+Die konkrete Umsetzung in einer Organisation erfolgt über OSCAL **Component Definitions** und später über einen **System Security/Privacy Plan (SSP)**. 
+
+Ein typisches Vorgehen sieht so aus:
+
+1. **Catalog referenzieren**
+
+   - Verwende den Katalog als `source` in deiner `component-definition`:
+     ```json
+     "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/open_privacy_catalog.json"
+     ```
+   - Alternativ: nutze die Catalog-UUID, falls du mit aufgelösten Profilen arbeitest.
+
+2. **DSMS-/PIMS-Komponente definieren**
+
+   - Lege eine `component-definition` mit einer organisatorischen Komponente an, z.B.:
+     ```json
+     {
+       "uuid": "…",
+       "type": "organizational",
+       "title": "Datenschutzmanagementsystem (DSMS)",
+       "description": "Zentrale Policies, Prozesse, Rollen und Tools für den Datenschutz."
+     }
+     ```
+
+3. **Control-Implementierung beschreiben**
+
+   - Unter `control-implementations` referenzierst du Controls aus dem Katalog:
+     ```json
+     {
+       "control-id": "GOV-01",
+       "description": "Rollen- und Verantwortlichkeitsmodell für den Datenschutz.",
+       "statements": [
+         {
+           "statement-id": "gov-01-stmt",
+           "description": "Konkrete Umsetzung in der Organisation (z.B. Geschäftsordnung, Organigramm, RACI-Matrix)."
+         }
+       ],
+       "props": [
+         { "name": "maturity-level", "value": "3" }
+       ]
+     }
+     ```
+   - So kannst du nach und nach z.B. `GOV-01`, `GOV-02`, `ACC-01`, `TRAIN-01`, `INC-02` usw. als **implemented requirements** dokumentieren.
+
+4. **Reifegrad (Maturity) hinterlegen**
+
+   - Verwende das Property `maturity-level` (1–5) konsistent mit der globalen Skala im Catalog:
+     - `1` = ad hoc,
+     - `3` = etabliert,
+     - `5` = optimiert (Kontinuierliche Verbesserung).
+   - Optional kannst du daraus später Auswertungen oder Dashboards generieren.
+
+5. **Nutzung im System-/Privacy-Plan (SSP)**
+
+   - In einem SSP (z.B. für ein Fachverfahren oder eine Plattform) kannst du die DSMS-Komponente **erben**:
+     - „Dieses System nutzt die organisatorische Komponente `Datenschutzmanagementsystem (DSMS)`.“
+   - System-spezifische Controls (z.B. zusätzliche TOMs, spezielle DPIA) werden dann ergänzend im SSP beschrieben.
+
+Kurz gesagt:
+
+- **Catalog:** beschreibt, *was* gute Datenschutz-Kontrollen sind.  
+- **Component Definition (z.B. DSMS/PIMS):** beschreibt, *wie* eine Organisation diese Kontrollen umsetzt.  
+- **SSP:** beschreibt, *welche* Systeme welche Komponenten nutzen und wie die Controls dort konkret wirken.
+
+
 ## Konventionen & Kompatibilität
 - **OSCAL-Version**: 1.1.2 (Viewer-Kompatibilität)
 - **Evidenz**: ausschließlich über `back-matter.resources[].rlinks[]` in Artefakten; Referenzierung auf Implementierungsebene via `links[]` (kein `related-resources` im SSP).
