@@ -1169,6 +1169,16 @@
                                 "id": "reg-01-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation führt ein aktuelles, vollständiges Verzeichnis von Verarbeitungstätigkeiten, das alle gesetzlich geforderten Angaben enthält."
+                            },
+                            {
+                                "id": "reg-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Es existiert kein oder nur ein rudimentäres Verzeichnis; Einträge sind unvollständig, veraltet oder decken nur ausgewählte Bereiche ab.\nLevel 3: Es liegt ein vollständiges Verzeichnis für die relevanten Verarbeitungstätigkeiten vor, das die Mindestangaben nach Art. 30 DSGVO enthält und bei organisatorischen oder technischen Änderungen aktualisiert wird.\nLevel 5: Das Verzeichnis ist in Tools und Prozesse integriert (z.B. Workflow-/Ticket-/Projekttools); es dient als zentrale Referenz für DPIA, TOM, DSR, XFER und Audits und wird über definierte KPIs (Vollständigkeit, Aktualität, Qualitätsprüfungen) gesteuert."
+                            },
+                            {
+                                "id": "reg-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Deckt das Verzeichnis von Verarbeitungstätigkeiten alle wesentlichen Verarbeitungstätigkeiten der Organisation ab und enthält es die Mindestangaben nach Art. 30 DSGVO?\n• Existiert ein gelebter Prozess, um das Verzeichnis bei Änderungen von Prozessen, Systemen oder Dienstleistern zeitnah zu aktualisieren?"
                             }
                         ]
                     },
@@ -1207,6 +1217,16 @@
                                 "id": "reg-02-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation definiert und dokumentiert eine Methodik zur Identifikation und Beschreibung von Verarbeitungstätigkeiten (Abstraktionsniveau, erforderliche Angaben) sowie klare Verantwortlichkeiten für die Erstellung, Pflege und Freigabe der Verzeichniseinträge."
+                            },
+                            {
+                                "id": "reg-02-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Fachbereiche erfassen Verarbeitungstätigkeiten nach eigenem Verständnis; es gibt keine einheitlichen Vorgaben zum Detaillierungsgrad, zu Begriffen oder Verantwortlichkeiten; die Qualität der Einträge ist stark uneinheitlich.\nLevel 3: Leitlinien, Templates und Beispiele definieren, was als Verarbeitungstätigkeit gilt, welche Angaben erforderlich sind und wer für welche Einträge verantwortlich ist; DSB/Datenschutzkoordination unterstützt und prüft.\nLevel 5: Methodik und Rollen sind mit Projekt-, Change- und Prozessmanagement verzahnt; Schulungen und regelmäßige Reviews sichern ein konsistentes Verständnis; Erfahrungen aus Audits, DSR, DPIA und Vorfällen führen zu Anpassungen der Methodik."
+                            },
+                            {
+                                "id": "reg-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es eine dokumentierte Leitlinie/Methodik für die Erfassung von Verarbeitungstätigkeiten (inkl. Beispiele, Templates, Mindestangaben)?\n• Sind Rollen und Verantwortlichkeiten für Anlage, Pflege und Freigabe von Verzeichniseinträgen (Fachbereich, Datenschutz, ggf. IT) klar geregelt?"
                             }
                         ],
                         "links": [
@@ -1255,6 +1275,16 @@
                                 "id": "reg-03-stmt",
                                 "name": "statement",
                                 "prose": "Soweit die Organisation als Auftragsverarbeiter tätig ist, führt sie ein eigenes Verzeichnis von Verarbeitungstätigkeiten nach Art. 30 Abs. 2 DSGVO, in dem die Verarbeitungen nach Auftraggebern und Verarbeitungszwecken strukturiert dokumentiert sind."
+                            },
+                            {
+                                "id": "reg-03-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Auftragsverarbeiter-Tätigkeiten werden nicht gesondert dokumentiert; Kundenverträge und technische Implementierungen sind nur punktuell mit einem Verzeichnis verknüpft.\nLevel 3: Es existiert ein separates, strukturiertes Verzeichnis für Auftragsverarbeitungen nach Art. 30(2), das Kunden, Zwecke, Datenkategorien, Unterauftragsverhältnisse und relevante Systeme abbildet.\nLevel 5: Das Verzeichnis der Auftragsverarbeitungen ist mit Vertragsmanagement, Servicekatalogen, TOM-Dokumentation und Dienstleister-Controlling verknüpft und wird aktiv für Risiko- und Kapazitätssteuerung genutzt."
+                            },
+                            {
+                                "id": "reg-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Führt die Organisation ein separates Verzeichnis für Verarbeitungstätigkeiten als Auftragsverarbeiter nach Art. 30(2) DSGVO?\n• Sind die Einträge so strukturiert, dass sie einen klaren Bezug zu Kundenverträgen, technischen Umsetzungen und Unterauftragsverhältnissen erlauben?"
                             }
                         ],
                         "links": [
@@ -1299,6 +1329,16 @@
                                 "id": "reg-04-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation leitet aus dem Verzeichnis von Verarbeitungstätigkeiten eine System- und Datenlandkarte ab, die Informationsflüsse zwischen Anwendungen, Schnittstellen, Empfängern und Drittländern sichtbar macht und als Grundlage für Risikoanalysen, Datenschutz-Folgenabschätzungen, TOMs sowie internationale Datentransfers dient."
+                            },
+                            {
+                                "id": "reg-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Es existieren nur fragmentarische oder veraltete Übersichten über Systeme und Schnittstellen; Datenflüsse sind überwiegend implizites Wissen einzelner Personen.\nLevel 3: Es gibt eine dokumentierte System- und Datenlandkarte (z.B. Diagramme, Register), die wesentliche Systeme, Schnittstellen, Empfänger und Drittländer abbildet und mit dem VVT konsistent ist.\nLevel 5: Datenflüsse sind in Architektur- und Sicherheitsdokumentation integriert; Änderungen in Systemen/Schnittstellen aktualisieren automatisiert oder workflowbasiert die Datenlandkarte; sie wird aktiv für DPIA, XFER, TOM und Incident-Analysen genutzt."
+                            },
+                            {
+                                "id": "reg-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es eine aktuelle, mit dem Verzeichnis abgestimmte System- und Datenlandkarte, die wesentliche Informationsflüsse (inkl. Drittländer) sichtbar macht?\n• Wird diese Datenlandkarte konkret in Risikoanalysen, DPIAs, Transferbewertungen und TOM-Planung eingesetzt?"
                             }
                         ]
                     },
@@ -1337,6 +1377,16 @@
                                 "id": "reg-05-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation hat Verfahren zur laufenden Pflege und Qualitätssicherung des Verzeichnisses von Verarbeitungstätigkeiten etabliert, einschließlich Kriterien für Aktualisierungsanlässe, regelmäßiger Reviews, Plausibilitätsprüfungen und der Nutzung des Verzeichnisses als zentrale Grundlage für Audits, Auskünfte an Aufsichtsbehörden und die Planung weiterer Datenschutzmaßnahmen."
+                            },
+                            {
+                                "id": "reg-05-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Aktualisierungen erfolgen unkoordiniert; es gibt keine regelmäßige Überprüfung des Verzeichnisses; Fehler fallen meist erst bei Anfragen von Betroffenen oder Aufsichtsbehörden auf.\nLevel 3: Es existieren definierte Anlässe und Zyklen für Aktualisierungen und Reviews (z.B. jährlich, bei Projekten, bei Prozess-/Systemänderungen); es werden Stichproben und Plausibilitätsprüfungen durchgeführt; Erfahrungen aus Anfragen/Audits werden eingearbeitet.\nLevel 5: Qualität und Nutzung des Verzeichnisses werden über Kennzahlen (z.B. Änderungsrate, Fehlerquote, Zeit zur Bereitstellung von Auskünften gegenüber Behörden) gesteuert; Verbesserungen in Prozessen, Tools und Schulungen werden daraus abgeleitet."
+                            },
+                            {
+                                "id": "reg-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es einen dokumentierten Prozess für Aktualisierung, regelmäßige Review und Qualitätssicherung des Verzeichnisses von Verarbeitungstätigkeiten?\n• Wird das Verzeichnis nachweislich als Informationsquelle bei Anfragen von Aufsichtsbehörden, internen Audits und der Planung von Maßnahmen (z.B. DPIA, TOM) genutzt?"
                             }
                         ],
                         "links": [
