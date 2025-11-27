@@ -30,16 +30,23 @@
       ]
     },
     "params": [
-      {
+    {
         "id": "maturity-level",
         "label": "Reifegrad",
         "description": "CNIL-ähnliche Reifegrade 1 (ad hoc) bis 5 (optimiert).",
-        "constraints": {
-          "min-inclusive": 1,
-          "max-inclusive": 5
+        "constraints": [
+        {
+            "description": "Wert muss zwischen 1 (ad hoc) und 5 (optimiert) liegen.",
+            "tests": [
+            {
+                "expression": "$maturity-level >= 1 and $maturity-level <= 5"
+            }
+            ]
         }
-      }
-    ],
+        ]
+    }
+    ]
+    ,
     "groups": [
       {
         "id": "GOV",
@@ -361,23 +368,35 @@
       }
     ],
     "back-matter": {
-      "resources": [
+    "resources": [
         {
-          "uuid": "ref-sdm",
-          "title": "Standard-Datenschutzmodell (SDM)",
-          "rlinks": []
+        "uuid": "ref-sdm",
+        "title": "Standard-Datenschutzmodell (SDM)",
+        "rlinks": [
+            {
+            "href": "https://www.datenschutzkonferenz-online.de/arbeitskreise/ak-technik/sdm.html"
+            }
+        ]
         },
         {
-          "uuid": "ref-cnil-maturity",
-          "title": "CNIL Privacy Maturity Model",
-          "rlinks": []
+        "uuid": "ref-cnil-maturity",
+        "title": "CNIL Privacy Maturity Model",
+        "rlinks": [
+            {
+            "href": "https://www.cnil.fr/en/privacy-maturity"
+            }
+        ]
         },
         {
-          "uuid": "ref-edpb-guidelines",
-          "title": "EDPB Guidelines",
-          "rlinks": []
+        "uuid": "ref-edpb-guidelines",
+        "title": "EDPB Guidelines",
+        "rlinks": [
+            {
+            "href": "https://edpb.europa.eu/our-work-tools/general-guidance/guidelines-recommendations-best-practices_en"
+            }
+        ]
         }
-      ]
+    ]
     }
   }
 }
