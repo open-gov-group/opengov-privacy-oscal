@@ -43,6 +43,7 @@ Damit entsteht eine einheitliche, maschinenlesbare Grundlage für Dokumentation,
 
 ## Verzeichnisstruktur
 
+```
 oscal/
 catalog/
 profiles/
@@ -50,6 +51,7 @@ components/
 ssp/
 overlays/
 build/ # (optional) CI-Ausgabe, z. B. resolved profile
+```
 
 ### Maturity-Modell (Reifegrade 1–5)
 
@@ -80,6 +82,56 @@ Level-5-Beschreibung wirklich erfüllt → **Level 5**.
 
 In Tools kann diese Skala z.B. als Radiobutton-Skala 1–5 umgesetzt werden; die textlichen Beschreibungen für Level 1/3/5 stammen direkt aus den `maturity-hints` im Catalog.
 
+### Pattern: Maturity-Hints & Assessment-Questions je Control
+
+Für alle Controls verwenden wir ein einheitliches Schema für **Reifegrad-Hinweise** und **Audit-/Assessment-Fragen**.
+
+#### 1. Maturity-Hints
+
+- Pro Control gibt es genau einen Container-Part `*-maturity` mit:
+  - `name: "maturity-hints"`
+  - optional kurzer `prose`-Einleitung
+  - einer Liste von Sub-Parts für die Level **1, 3 und 5**
+- Jeder Level-Sub-Part:
+  - hat `name: "maturity-level"`
+  - trägt ein `prop` mit `name: "maturity-level"` und dem Wert `1`, `3` oder `5`
+  - enthält im `prose` die textliche Beschreibung für diesen Level
+
+**Beispiel (GOV-01):**
+
+```json
+{
+  "id": "gov-01-maturity",
+  "name": "maturity-hints",
+  "prose": "CNIL-basiertes Reifegradmodell (Level 1, 3, 5).",
+  "parts": [
+    {
+      "id": "gov-01-maturity-level-01",
+      "name": "maturity-level",
+      "props": [
+        { "name": "maturity-level", "value": "1" }
+      ],
+      "prose": "Level 1: …"
+    },
+    {
+      "id": "gov-01-maturity-level-03",
+      "name": "maturity-level",
+      "props": [
+        { "name": "maturity-level", "value": "3" }
+      ],
+      "prose": "Level 3: …"
+    },
+    {
+      "id": "gov-01-maturity-level-05",
+      "name": "maturity-level",
+      "props": [
+        { "name": "maturity-level", "value": "5" }
+      ],
+      "prose": "Level 5: …"
+    }
+  ]
+}
+```
 
 ## Konventionen & Kompatibilität
 - **OSCAL-Version**: 1.1.2 (Viewer-Kompatibilität)
