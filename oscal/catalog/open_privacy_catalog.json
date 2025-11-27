@@ -130,6 +130,190 @@
                                 "prose": "Die Organisation legt Datenschutzziele und eine übergreifende Datenschutzstrategie fest, die mit der Unternehmensstrategie abgestimmt ist."
                             }
                         ]
+                    },
+                    {
+                        "id": "GOV-03",
+                        "class": "management",
+                        "title": "DSGVO-Umsetzungsprogramm und Maßnahmenplan",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(2); Art. 24"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "governance"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "dsms-project-plan, roadmap, management-minutes"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "gov-03-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation betreibt ein strukturiertes DSGVO-Umsetzungsprogramm mit priorisierten Maßnahmen, klaren Verantwortlichkeiten, Zeitplänen und einem regelmäßigen Berichtswesen an die Leitungsebene."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.datenschutz-berlin.de/infothek/publikationen-der-dsk/kurzpapiere/",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.edpb.europa.eu/accountability-tools_en",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.datenschutz-berlin.de/fileadmin/user_upload/pdf/dokumente/BlnBDI_Standardprozess_Datenschutz_Handreichung_I.pdf",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "GOV-04",
+                        "class": "management",
+                        "title": "Rollenmodell Verantwortlicher, gemeinsame Verantwortliche und Auftragsverarbeiter",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 4(7); Art. 26; Art. 28"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "governance"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "organizational"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "role-descriptions, rasic-matrices, controller-processor-register"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "gov-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation definiert, dokumentiert und kommuniziert ein Rollenmodell für Verantwortliche, gemeinsame Verantwortliche und Auftragsverarbeiter, einschließlich der internen Zuordnung von Zuständigkeiten und der Kriterien für Rollenentscheidungen."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-072020-concepts-controller-and-processor-gdpr_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "GOV-05",
+                        "class": "management",
+                        "title": "Datenschutzbeauftragte:r – Bestellung, Stellung und Einbindung",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 37–39"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "governance"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "organizational"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "dsb-appointment, dsb-job-description, dsb-reporting"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "gov-05-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation bestellt eine:n Datenschutzbeauftragte:n nach Maßgabe der DSGVO, stellt dessen/deren Unabhängigkeit und Ressourcenausstattung sicher und regelt die Einbindung in Entscheidungsprozesse."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.bfdi.bund.de/SharedDocs/Downloads/DE/Broschueren/INFO4.html",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "GOV-06",
+                        "class": "management",
+                        "title": "Einbettung des Datenschutzes in Data- und IT-Governance",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 24; Art. 25; Art. 32"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Nicht-Verkettbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "governance"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "organizational"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "governance-charter, committee-minutes, architecture-principles"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "gov-06-stmt",
+                                "name": "statement",
+                                "prose": "Der Datenschutz ist in die Data- und IT-Governance der Organisation integriert, insbesondere über Gremien, Richtlinien und Entscheidungsprozesse, in denen Datenschutzanforderungen systematisch berücksichtigt werden."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.it-planungsrat.de/fileadmin/it-planungsrat/der-it-planungsrat/schwerpunktthemen/SPTDatennutzung_Handlungsleitfaden_Data_Governance.pdf",
+                                "rel": "reference"
+                            }
+                        ]
                     }
                 ]
             },
