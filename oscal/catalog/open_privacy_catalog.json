@@ -6,22 +6,6 @@
             "last-modified": "2025-11-27T00:00:00Z",
             "version": "0.5.0",
             "oscal-version": "1.1.2",
-            "remarks": {
-                "id": "catalog-conventions",
-                "name": "conventions",
-                "parts": [
-                    {
-                        "id": "pattern-maturity-assessment",
-                        "name": "pattern",
-                        "prose": "Pattern für Maturity-Hints und Assessment-Questions je Control: Pro Control existiert genau ein Container-Part mit name=\"maturity-hints\" (ID: <control-id>-maturity). Darunter werden als Sub-Parts mit name=\"maturity-level\" die Level 1, 3 und 5 modelliert. Jedes Level erhält ein Prop {\"name\": \"maturity-level\", \"value\": \"1|3|5\"} und den jeweiligen Beschreibungstext in prose. Zwischenlevel 2 und 4 werden nur global (Param maturity-level) beschrieben und nicht als eigene Sub-Parts angelegt."
-                    },
-                    {
-                        "id": "pattern-assessment-questions",
-                        "name": "pattern",
-                        "prose": "Assessment-Questions werden pro Control in einem Container-Part mit name=\"assessment-questions\" (ID: <control-id>-questions) erfasst. Darunter enthält jede einzelne Frage einen eigenen Sub-Part mit name=\"assessment-question\" und dem Fragentext in prose. IDs folgen dem Muster <control-id>-question-01, -02, usw."
-                    }
-                ]
-            },
             "roles": [
                 {
                     "id": "owner",
