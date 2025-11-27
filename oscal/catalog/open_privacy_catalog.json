@@ -600,6 +600,174 @@
                                 "rel": "reference"
                             }
                         ]
+                    },
+                    {
+                        "id": "LAW-03",
+                        "class": "policy",
+                        "title": "Datenminimierung und Speicherbegrenzung",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(1)(c); Art. 5(1)(e)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Datenminimierung, Verfügbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "data-minimisation"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "legal"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "data-minimisation-rules, retention-policy, deletion-concept"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "law-03-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation legt Kriterien zur Datenminimierung und zur Begrenzung der Speicherfristen fest, dokumentiert diese und überprüft sie regelmäßig im Hinblick auf Erforderlichkeit und Verhältnismäßigkeit."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "LAW-04",
+                        "class": "policy",
+                        "title": "Rechtsgrundlagen für besondere Kategorien personenbezogener Daten",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 9; Art. 10"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Datenminimierung, Vertraulichkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "special-categories"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "legal"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "legal-assessment, record-of-processing, dpia-report"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "law-04-stmt",
+                                "name": "statement",
+                                "prose": "Für Verarbeitungen besonderer Kategorien personenbezogener Daten und von Daten über strafrechtliche Verurteilungen und Straftaten werden spezifische Rechtsgrundlagen geprüft, dokumentiert und mit erhöhten Schutzmaßnahmen verknüpft."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "LAW-05",
+                        "class": "policy",
+                        "title": "Einwilligung – Gestaltung, Nachweis und Widerruf",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 4(11); Art. 6(1)(a); Art. 7"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "consent"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "legal"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "consent-templates, consent-records, withdrawal-process"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "law-05-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über Vorgaben zur Gestaltung, Einholung, Dokumentation und zum Widerruf von Einwilligungen, die die Anforderungen der DSGVO an Freiwilligkeit, Informiertheit, eindeutige Handlung und Nachweisbarkeit erfüllen."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052020-consent-under-regulation-2016679_en",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.datenschutzkonferenz-online.de/media/kp/dsk_kpnr_20.pdf",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "LAW-06",
+                        "class": "policy",
+                        "title": "Berechtigte Interessen – Legitimate-Interest-Assessment (LIA)",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 6(1)(f)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "legitimate-interest"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "legal"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "lia-templates, lia-records, risk-assessment"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "law-06-stmt",
+                                "name": "statement",
+                                "prose": "Bei Verarbeitungen auf Grundlage berechtigter Interessen führt die Organisation strukturierte Legitimate-Interest-Assessments durch, dokumentiert Zweck, Erforderlichkeit, Interessenabwägung sowie ggf. ergänzende Schutzmaßnahmen und überprüft diese regelmäßig."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/system/files/2024-10/edpb_guidelines_202401_legitimateinterest_en.pdf",
+                                "rel": "reference"
+                            }
+                        ]
                     }
                 ]
             },
