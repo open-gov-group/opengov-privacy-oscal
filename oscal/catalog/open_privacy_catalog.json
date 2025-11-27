@@ -556,6 +556,50 @@
                                 "prose": "Für jede Verarbeitung personenbezogener Daten werden Rechtsgrundlagen identifiziert, dokumentiert und regelmäßig überprüft."
                             }
                         ]
+                    },
+                    {
+                        "id": "LAW-02",
+                        "class": "policy",
+                        "title": "Zweckbestimmung und Zweckbindung",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(1)(b)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Nicht-Verkettbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "purpose-limitation"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "legal"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "record-of-processing, purpose-statements, compatibility-assessments"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "law-02-stmt",
+                                "name": "statement",
+                                "prose": "Für jede Verarbeitungstätigkeit werden Zwecke klar, spezifisch und legitim definiert und dokumentiert; Weiterverarbeitungen werden nur nach dokumentierter Prüfung der Zweckkompatibilität durchgeführt."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2013/wp203_en.pdf",
+                                "rel": "reference"
+                            }
+                        ]
                     }
                 ]
             },
