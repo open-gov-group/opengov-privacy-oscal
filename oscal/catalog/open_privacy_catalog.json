@@ -1299,6 +1299,16 @@
                                 "id": "tom-01-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation führt risikobasierte Bewertungen des Schutzbedarfs personenbezogener Daten durch und leitet geeignete technische und organisatorische Maßnahmen ab."
+                            },
+                            {
+                                "id": "tom-01-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Schutzbedarfs- und Risikoeinschätzungen erfolgen unsystematisch oder nur im Rahmen einzelner Projekte; TOMs werden primär aus Standardlisten übernommen, ohne klare Nachvollziehbarkeit zur Risikobewertung. Level 3: Es existiert eine dokumentierte Methodik zur Schutzbedarfs- und Risikoanalyse (z.B. nach SDM/BSI), die für relevante Prozesse und IT-Systeme angewendet und mit einer TOM-Liste verknüpft wird; Ergebnisse werden versioniert dokumentiert und regelmäßig überprüft. Level 5: Risikobewertungen sind in DSMS/ISMS, DPIA, Lieferanten- und Incident-Daten integriert; Kennzahlen und wiederkehrende Schwachstellen führen systematisch zu Anpassungen der TOMs, Priorisierung von Maßnahmen und Management-Entscheidungen."
+                            },
+                            {
+                                "id": "tom-01-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Werden für die wesentlichen Verarbeitungstätigkeiten und IT-Systeme dokumentierte Schutzbedarfs- oder Risikoanalysen durchgeführt, aus denen konkrete TOM-Anforderungen abgeleitet werden?\n• Werden diese Risiko- und Schutzbedarfsanalysen regelmäßig (z.B. alle 1–3 Jahre oder anlassbezogen) überprüft und bei Änderungen aktualisiert?"
                             }
                         ]
                     },
@@ -1337,6 +1347,16 @@
                                 "id": "tom-02-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation stellt durch ein systematisches Zugriffs- und Berechtigungsmanagement sicher, dass nur berechtigte Personen entsprechend dem Prinzip der geringsten Rechte auf personenbezogene Daten zugreifen können, und überprüft die Berechtigungen regelmäßig."
+                            },
+                            {
+                                "id": "tom-02-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Berechtigungen werden überwiegend manuell und ohne einheitliche Rollenmodelle vergeben; Joiner-Mover-Leaver-Prozesse sind unklar oder werden nicht konsistent umgesetzt; regelmäßige Rezertifizierungen finden kaum statt. Level 3: Es existiert eine dokumentierte Access-Control-Policy mit Rollen- und Rechtekonzept; Berechtigungen werden über definierte Joiner-Mover-Leaver-Prozesse vergeben und entzogen, und es finden regelmäßige, dokumentierte Rezertifizierungen der Zugriffsrechte statt. Level 5: Das Berechtigungsmanagement ist weitgehend automatisiert (z.B. über IAM/IDM), mit fachlich verantworteten Rollen, risikobasierten Review-Zyklen und Kennzahlen (z.B. Anzahl veralteter oder überhöhter Berechtigungen), die für kontinuierliche Verbesserungen genutzt werden."
+                            },
+                            {
+                                "id": "tom-02-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Bestehen dokumentierte Rollen- und Berechtigungskonzepte (inklusive Joiner-Mover-Leaver-Prozess) für Systeme mit personenbezogenen Daten?\n• Werden Zugriffsrechte regelmäßig formal rezertifiziert und bei Rollenwechseln oder Austritten zeitnah angepasst oder entzogen?"
                             }
                         ]
                     },
@@ -1375,6 +1395,16 @@
                                 "id": "tom-03-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation setzt für personenbezogene Daten angemessene Verfahren zur Verschlüsselung und Pseudonymisierung ein, dokumentiert deren Einsatzbereiche und stellt ein sicheres Schlüssel- und Kennwortmanagement sicher."
+                            },
+                            {
+                                "id": "tom-03-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Verschlüsselung und Pseudonymisierung werden punktuell eingesetzt (z.B. Festplattenverschlüsselung), ohne konsistente Vorgaben zu Einsatzbereichen, Verfahren und Schlüssellebenszyklus; Verantwortlichkeiten sind unklar. Level 3: Es existieren dokumentierte Vorgaben (Policy/Konzept), wann und wie Verschlüsselung und ggf. Pseudonymisierung einzusetzen sind; Schlüssel- und Passwortmanagement (Erzeugung, Aufbewahrung, Rotation, Notzugriff) ist geregelt und wird nachvollziehbar protokolliert. Level 5: Einsatz von Verschlüsselung und Pseudonymisierung ist risikobasiert für relevante Datenklassen und Verarbeitungsketten definiert; Schlüsselmanagement ist technisch und organisatorisch gehärtet (z.B. HSM, Role Split), und Wirksamkeit wird regelmäßig geprüft (z.B. durch Tests, Audits, Incident-Auswertungen)."
+                            },
+                            {
+                                "id": "tom-03-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es verbindliche Vorgaben, welche Daten und Übertragungswege verschlüsselt bzw. pseudonymisiert werden müssen (inklusive dokumentierter Einsatzbereiche)?\n• Sind Verantwortlichkeiten und Verfahren für das Schlüssel- und Kennwortmanagement (Erzeugung, Verteilung, Rotation, Notzugriffe) klar geregelt und dokumentiert?"
                             }
                         ],
                         "links": [
@@ -1419,6 +1449,16 @@
                                 "id": "tom-04-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation protokolliert sicherheitsrelevante Zugriffe und Verarbeitungsvorgänge personenbezogener Daten, überwacht die Protokolle systematisch und setzt Verfahren zur Erkennung und Bewertung von Sicherheitsvorfällen ein."
+                            },
+                            {
+                                "id": "tom-04-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Protokollierung erfolgt uneinheitlich und ohne klare Vorgaben; Logs werden selten oder nur anlassbezogen ausgewertet; Aufbewahrungsfristen und Zugriffe auf Logs sind nicht geregelt. Level 3: Es existieren Logging- und Monitoring-Konzepte mit definierten Ereignistypen, Schweregraden, Aufbewahrungsfristen und Zugriffsregelungen; sicherheitsrelevante Ereignisse werden über geeignete Werkzeuge (z.B. SIEM/Monitoring) regelmäßig ausgewertet und in den Incident-Management-Prozess eingespeist. Level 5: Protokollierung und Monitoring sind risikobasiert auf kritische Systeme und Prozesse ausgerichtet; es gibt Use-Cases und Korrelationen zur Erkennung von Datenschutzvorfällen; Kennzahlen (z.B. Time-to-Detect, Time-to-Respond) werden erhoben und zur kontinuierlichen Verbesserung von TOMs und Incident-Prozessen genutzt."
+                            },
+                            {
+                                "id": "tom-04-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Sind Umfang, Aufbewahrungsfristen und Zugriffsrechte für Logdaten in Richtlinien oder Konzepten dokumentiert und werden sicherheitsrelevante Logs regelmäßig ausgewertet?\n• Bestehen definierte Use-Cases bzw. Regeln, um mögliche Datenschutzverletzungen (z.B. unbefugte Zugriffe, Massenexporte) automatisiert oder zeitnah zu erkennen und in den Incident-Prozess zu überführen?"
                             }
                         ],
                         "links": [
@@ -1463,6 +1503,16 @@
                                 "id": "tom-05-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation implementiert und dokumentiert Verfahren zur Sicherung und Wiederherstellung personenbezogener Daten sowie zur Aufrechterhaltung des Betriebs kritischer Prozesse im Falle von Störungen oder Sicherheitsvorfällen."
+                            },
+                            {
+                                "id": "tom-05-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Backups werden nur punktuell oder ohne klare Strategie durchgeführt; Wiederherstellungstests finden selten oder gar nicht statt; Abhängigkeiten zu kritischen Prozessen sind nicht systematisch analysiert. Level 3: Es existieren dokumentierte Backup- und Restore-Konzepte inklusive RPO/RTO-Vorgaben für kritische Systeme; Backups werden regelmäßig überwacht und es finden dokumentierte Wiederherstellungstests statt; Business-Continuity- oder Notfallpläne berücksichtigen Systeme mit personenbezogenen Daten. Level 5: Backup-, Restore- und Business-Continuity-Maßnahmen werden regelmäßig anhand von Tests, Übungen und Vorfällen bewertet und verbessert; Kennzahlen (z.B. Wiederherstellungsdauer, Datenverlust) werden erhoben und in Risiko- und Investitionsentscheidungen einbezogen."
+                            },
+                            {
+                                "id": "tom-05-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es dokumentierte Backup- und Wiederherstellungskonzepte mit definierten RPO/RTO-Vorgaben für Systeme mit personenbezogenen Daten, und werden Wiederherstellungstests regelmäßig durchgeführt und protokolliert?\n• Sind Notfall- und Betriebsfortführungspläne mit den Verfahren für Backup/Restore und den besonders schutzbedürftigen Verarbeitungstätigkeiten abgestimmt?"
                             }
                         ]
                     },
@@ -1501,6 +1551,16 @@
                                 "id": "tom-06-stmt",
                                 "name": "statement",
                                 "prose": "Die Organisation verfügt über Richtlinien und Verfahren für die sichere Entwicklung und Änderung von Anwendungen und Systemen, die personenbezogene Daten verarbeiten, einschließlich Sicherheitsanforderungen, Reviews und Tests vor dem produktiven Einsatz."
+                            },
+                            {
+                                "id": "tom-06-maturity",
+                                "name": "maturity-hints",
+                                "prose": "Level 1: Entwicklung und Änderungen erfolgen ohne klar definierte Sicherheits- und Datenschutzanforderungen; Code-Reviews und Sicherheitstests finden, wenn überhaupt, nur informell und nicht systematisch statt. Level 3: Es existieren dokumentierte Secure-Development-Guidelines und Change-Management-Verfahren mit Mindestanforderungen (z.B. Code-Review, Sicherheits-/Funktionstests, Datenschutz-Check) vor Produktivsetzung; Änderungen werden nachverfolgbar dokumentiert und freigegeben. Level 5: Sicherheits- und Datenschutzanforderungen sind durchgängig im Entwicklungslebenszyklus verankert (z.B. Security-by-Design, Threat Modeling, automatisierte Security-Tests/Code-Scans); Kennzahlen zu Sicherheits- und Datenschutzfehlern fließen in die Weiterentwicklung von Entwicklungsrichtlinien, Schulungen und Tooling ein."
+                            },
+                            {
+                                "id": "tom-06-questions",
+                                "name": "assessment-questions",
+                                "prose": "• Gibt es dokumentierte Richtlinien und Prozesse für sichere Entwicklung und Änderungen (inkl. Mindestanforderungen wie Code-Review, Sicherheits- und Datenschutztests vor Produktivsetzung)?\n• Werden sicherheits- oder datenschutzrelevante Findings aus Tests, Audits und Vorfällen systematisch ausgewertet und in Entwicklungsrichtlinien, Tools und Schulungsinhalte zurückgespielt?"
                             }
                         ],
                         "links": [
