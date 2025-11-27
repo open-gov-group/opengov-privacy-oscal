@@ -1498,6 +1498,236 @@
                                 "prose": "Für Verarbeitungstätigkeiten mit hohem Risiko führt die Organisation strukturierte Datenschutz-Folgenabschätzungen durch und dokumentiert Ergebnisse und Maßnahmen."
                             }
                         ]
+                    },
+                    {
+                        "id": "DPIA-02",
+                        "class": "process",
+                        "title": "Kriterien und Screening für DPIA-Pflicht",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 35(1)-(4)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "risk-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "dpia-screening-guideline, screening-checklists, national-dpia-lists"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dpia-02-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation definiert und dokumentiert Kriterien sowie ein Screening-Verfahren, um zu bestimmen, ob eine geplante Verarbeitungstätigkeit voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen mit sich bringt und somit eine Datenschutz-Folgenabschätzung erfordert."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/data-protection-impact-assessments-high-risk-processing_en",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://ec.europa.eu/newsroom/document.cfm?doc_id=47711",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "DPIA-03",
+                        "class": "process",
+                        "title": "DPIA-Methodik und Mindestinhalte",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 35(7)-(9)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit, Nicht-Verkettbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "risk-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "dpia-policy, dpia-templates, completed-dpia-reports"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dpia-03-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verwendet eine dokumentierte Methodik für Datenschutz-Folgenabschätzungen, die mindestens eine Beschreibung der Verarbeitung, eine Bewertung von Notwendigkeit und Verhältnismäßigkeit, eine systematische Analyse der Risiken für die Rechte und Freiheiten sowie die Ableitung und Bewertung geplanter Maßnahmen umfasst."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.cnil.fr/sites/default/files/atoms/files/cnil-pia-1-en-methodology.pdf",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.cnil.fr/sites/default/files/atoms/files/cnil-pia-2-en-templates.pdf",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://club-ebios.org/site/en/the-cnils-pia-guides/",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "DPIA-04",
+                        "class": "record",
+                        "title": "DPIA-Register, Maßnahmenverfolgung und Review",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(2); Art. 24; Art. 35(7)-(9)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Integrität"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "risk-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "dpia-register, action-plans, follow-up-reports, review-records"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dpia-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation führt ein Register der durchgeführten Datenschutz-Folgenabschätzungen, dokumentiert daraus abgeleitete Maßnahmenpläne, überwacht deren Umsetzung und überprüft die DPIA regelmäßig, insbesondere bei Änderungen der Risiken oder des Verarbeitungsumfangs."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.cnil.fr/en/privacy-impact-assessment-pia",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "DPIA-05",
+                        "class": "process",
+                        "title": "Prior Consultation und Eskalationsverfahren",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 35(2); Art. 36"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Intervenierbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "risk-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "escalation-procedures, prior-consultation-files, dpa-correspondence"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dpia-05-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verfügt über ein dokumentiertes Eskalationsverfahren für Datenschutz-Folgenabschätzungen, einschließlich der verpflichtenden Einbindung der oder des Datenschutzbeauftragten sowie der Durchführung einer vorherigen Konsultation der Aufsichtsbehörde, wenn nach Umsetzung der Maßnahmen ein hohes Restrisiko verbleibt."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.dpa.gr/en/Organisations/Impact_Assessment",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/data-protection-impact-assessments-high-risk-processing_en",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "DPIA-06",
+                        "class": "process",
+                        "title": "Integration von DPIA in Projekt- und Änderungsmanagement",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 25; Art. 35"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Nicht-Verkettbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "risk-management"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "project-templates, change-management-records, dpia-screening-results"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "dpia-06-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation verankert DPIA-Screening und gegebenenfalls die Durchführung einer Datenschutz-Folgenabschätzung als feste Schritte in Projekt-, Produktentwicklungs- und Änderungsprozessen und stellt sicher, dass wesentliche Änderungen von Verarbeitungstätigkeiten eine erneute Risikobewertung auslösen."
+                            }
+                        ]
                     }
                 ]
             },
