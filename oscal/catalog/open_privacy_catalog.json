@@ -1022,6 +1022,180 @@
                                 "prose": "Die Organisation führt ein aktuelles, vollständiges Verzeichnis von Verarbeitungstätigkeiten, das alle gesetzlich geforderten Angaben enthält."
                             }
                         ]
+                    },
+                    {
+                        "id": "REG-02",
+                        "class": "procedure",
+                        "title": "Methodik und Verantwortlichkeiten für Verarbeitungstätigkeiten",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 30"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "records-of-processing"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "documentation-policy, processing-activity-guideline, responsibility-matrix"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "reg-02-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation definiert und dokumentiert eine Methodik zur Identifikation und Beschreibung von Verarbeitungstätigkeiten (Abstraktionsniveau, erforderliche Angaben) sowie klare Verantwortlichkeiten für die Erstellung, Pflege und Freigabe der Verzeichniseinträge."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.datenschutzkonferenz-online.de/media/kp/dsk_kpnr_1.pdf",
+                                "rel": "reference"
+                            },
+                            {
+                                "href": "https://www.bfdi.bund.de/DE/Fachthemen/Inhalte/Allgemein/Verzeichnis-Verarbeitungstaetigkeiten.html",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "REG-03",
+                        "class": "record",
+                        "title": "Verzeichnis von Verarbeitungstätigkeiten als Auftragsverarbeiter",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 30(2)"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "records-of-processing"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "processor-record-of-processing, customer-mapping"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "reg-03-stmt",
+                                "name": "statement",
+                                "prose": "Soweit die Organisation als Auftragsverarbeiter tätig ist, führt sie ein eigenes Verzeichnis von Verarbeitungstätigkeiten nach Art. 30 Abs. 2 DSGVO, in dem die Verarbeitungen nach Auftraggebern und Verarbeitungszwecken strukturiert dokumentiert sind."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.ldi.nrw.de/verarbeitungsverzeichnis",
+                                "rel": "reference"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "REG-04",
+                        "class": "record",
+                        "title": "Informationsflüsse und System-/Datenlandkarte",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 30; Art. 32; Art. 35; Art. 44–49"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz, Nicht-Verkettbarkeit"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "records-of-processing"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "3"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "data-flow-maps, system-inventory, interface-register"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "reg-04-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation leitet aus dem Verzeichnis von Verarbeitungstätigkeiten eine System- und Datenlandkarte ab, die Informationsflüsse zwischen Anwendungen, Schnittstellen, Empfängern und Drittländern sichtbar macht und als Grundlage für Risikoanalysen, Datenschutz-Folgenabschätzungen, TOMs sowie internationale Datentransfers dient."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "REG-05",
+                        "class": "procedure",
+                        "title": "Pflege, Qualitätssicherung und Nutzung des Verzeichnisses",
+                        "props": [
+                            {
+                                "name": "dsgvo-article",
+                                "value": "Art. 5(2); Art. 24; Art. 30"
+                            },
+                            {
+                                "name": "sdm-goal",
+                                "value": "Transparenz"
+                            },
+                            {
+                                "name": "maturity-domain",
+                                "value": "records-of-processing"
+                            },
+                            {
+                                "name": "target-maturity",
+                                "value": "4"
+                            },
+                            {
+                                "name": "measure-type",
+                                "value": "process"
+                            },
+                            {
+                                "name": "evidence-type",
+                                "value": "maintenance-procedures, change-logs, periodic-review-records, supervisory-authority-responses"
+                            }
+                        ],
+                        "parts": [
+                            {
+                                "id": "reg-05-stmt",
+                                "name": "statement",
+                                "prose": "Die Organisation hat Verfahren zur laufenden Pflege und Qualitätssicherung des Verzeichnisses von Verarbeitungstätigkeiten etabliert, einschließlich Kriterien für Aktualisierungsanlässe, regelmäßiger Reviews, Plausibilitätsprüfungen und der Nutzung des Verzeichnisses als zentrale Grundlage für Audits, Auskünfte an Aufsichtsbehörden und die Planung weiterer Datenschutzmaßnahmen."
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "https://www.datenschutzkonferenz-online.de/media/ah/201802_ah_verzeichnis_verarbeitungstaetigkeiten.pdf",
+                                "rel": "reference"
+                            }
+                        ]
                     }
                 ]
             },
