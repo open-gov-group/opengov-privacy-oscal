@@ -51,6 +51,35 @@ ssp/
 overlays/
 build/ # (optional) CI-Ausgabe, z. B. resolved profile
 
+### Maturity-Modell (Reifegrade 1–5)
+
+Der Katalog verwendet ein **CNIL-ähnliches Reifegradmodell** mit einer Skala von **1 bis 5**.  
+In den Kontrollen sind typischerweise nur die Zustände für **Level 1, 3 und 5** textlich beschrieben; **Level 2 und 4** sind als Zwischenstufen zu verstehen.
+
+- **Level 1 – initial / ad hoc**  
+  Kein oder nur rudimentärer Prozess, Rollen unklar, Umsetzung überwiegend reaktiv.
+
+- **Level 2 – teilweise umgesetzt**  
+  Erste Elemente von Level 3 vorhanden, aber noch nicht flächendeckend, nicht stabil im Alltag, stark personenabhängig („mehr als 1, aber klar noch nicht 3“).
+
+- **Level 3 – definiert / etabliert**  
+  Prozess/Struktur ist formal beschrieben, Rollen sind geklärt und der Soll-Prozess wird im Normalfall so gelebt.
+
+- **Level 4 – weit fortgeschritten**  
+  Die meisten Elemente von Level 5 sind umgesetzt (inkl. Kennzahlen/Reviews), aber noch nicht durchgängig integriert oder systematisch optimiert („mehr als 3, aber noch nicht konsistent auf 5“).
+
+- **Level 5 – optimiert / kontinuierliche Verbesserung**  
+  Voll in Governance, Risiko- und Steuerungsprozesse integriert, messbar und über KPIs, Audits, Vorfälle und Lessons Learned kontinuierlich verbessert.
+
+**Bewertungshinweis:**  
+Wenn die Praxis näher an Level 1 als an 3 liegt → **Level 1**.  
+„Irgendwie vorhanden, aber wackelig“ → **Level 2**.  
+Beschreibung für Level 3 passt → **Level 3**.  
+Fast Level 5, aber noch nicht überall bzw. nicht konsistent → **Level 4**.  
+Level-5-Beschreibung wirklich erfüllt → **Level 5**.
+
+In Tools kann diese Skala z.B. als Radiobutton-Skala 1–5 umgesetzt werden; die textlichen Beschreibungen für Level 1/3/5 stammen direkt aus den `maturity-hints` im Catalog.
+
 
 ## Konventionen & Kompatibilität
 - **OSCAL-Version**: 1.1.2 (Viewer-Kompatibilität)
