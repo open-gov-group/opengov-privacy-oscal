@@ -268,6 +268,80 @@ Kurz gesagt:
 - **SSP:** beschreibt, *welche* Systeme welche Komponenten nutzen und wie die Controls dort konkret wirken.
 
 
+
+### Links & related-controls
+
+Auf Control-Ebene nutzen wir das OSCAL-`links`-Feld für zwei Zwecke:
+
+1. **Fachliche Querverweise auf andere Controls**
+2. **Externe Quellen / Guidelines**
+
+#### 1. Related Controls
+
+Verwandte Controls im Katalog verlinken wir mit:
+
+- `rel: "related-control"`
+- `href: "#<CONTROL-ID>"`
+- optionalem `text` mit einer kurzen Begründung
+
+Beispiel (LAW-01 → REG/DPIA):
+
+```json
+"links": [
+  {
+    "href": "#REG-01",
+    "rel": "related-control",
+    "text": "Begründung: REG-01 ist die zentrale Dokumentationsquelle für Verarbeitungstätigkeiten; dort werden Rechtsgrundlagen je Verarbeitungstätigkeit konkret hinterlegt."
+  },
+  {
+    "href": "#REG-02",
+    "rel": "related-control",
+    "text": "Begründung: REG-02 definiert Methodik und Verantwortlichkeiten dafür, wie Rechtsgrundlagen im Verzeichnis beschrieben, geprüft und gepflegt werden."
+  },
+  {
+    "href": "#DPIA-01",
+    "rel": "related-control",
+    "text": "Begründung: In DPIA-01 wird bei Hochrisiko-Verarbeitungen geprüft, ob Rechtsgrundlagen tragfähig sind und welche zusätzlichen Maßnahmen erforderlich sind."
+  }
+]
+```
+### Links & related-controls
+
+Auf Control-Ebene nutzen wir das OSCAL-`links`-Feld für zwei Zwecke:
+
+1. **Fachliche Querverweise auf andere Controls**
+2. **Externe Quellen / Guidelines**
+
+#### 1. Related Controls
+
+Verwandte Controls im Katalog verlinken wir mit:
+
+- `rel: "related-control"`
+- `href: "#<CONTROL-ID>"`
+- optionalem `text` mit einer kurzen Begründung
+
+Beispiel (LAW-01 → REG/DPIA):
+
+```json
+"links": [
+  {
+    "href": "#REG-01",
+    "rel": "related-control",
+    "text": "Begründung: REG-01 ist die zentrale Dokumentationsquelle für Verarbeitungstätigkeiten; dort werden Rechtsgrundlagen je Verarbeitungstätigkeit konkret hinterlegt."
+  },
+  {
+    "href": "#REG-02",
+    "rel": "related-control",
+    "text": "Begründung: REG-02 definiert Methodik und Verantwortlichkeiten dafür, wie Rechtsgrundlagen im Verzeichnis beschrieben, geprüft und gepflegt werden."
+  },
+  {
+    "href": "#DPIA-01",
+    "rel": "related-control",
+    "text": "Begründung: In DPIA-01 wird bei Hochrisiko-Verarbeitungen geprüft, ob Rechtsgrundlagen tragfähig sind und welche zusätzlichen Maßnahmen erforderlich sind."
+  }
+]
+```
+
 ## Konventionen & Kompatibilität
 - **OSCAL-Version**: 1.1.2 (Viewer-Kompatibilität)
 - **Evidenz**: ausschließlich über `back-matter.resources[].rlinks[]` in Artefakten; Referenzierung auf Implementierungsebene via `links[]` (kein `related-resources` im SSP).
