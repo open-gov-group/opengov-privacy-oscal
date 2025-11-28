@@ -1614,6 +1614,23 @@
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es ein dokumentiertes, organisationsweit verbindliches Verfahren für den Umgang mit allen Betroffenenrechten (Art. 12, 15–22 DSGVO) mit klaren Rollen, Verantwortlichkeiten und Fristen?\n• Werden Umfang und Status von Betroffenenanfragen zentral erfasst und regelmäßig (z.B. jährlich) an Leitung oder Gremien berichtet?"
                             }
+                        ],
+                        "links": [
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control",
+                                "text": "Begründung: REG-01 dokumentiert die Verarbeitungstätigkeiten und dient als zentrale Referenz, um bei Betroffenenanfragen schnell zu erkennen, welche Prozesse und Systeme betroffen sind."
+                            },
+                            {
+                                "href": "#REG-02",
+                                "rel": "related-control",
+                                "text": "Begründung: REG-02 legt Methodik und Verantwortlichkeiten für das Verzeichnis fest; diese Rollen und Prozesse werden im DSR-Governance-Konzept für Zuständigkeiten und Eskalationswege wieder aufgegriffen."
+                            },
+                            {
+                                "href": "#DPIA-04",
+                                "rel": "related-control",
+                                "text": "Begründung: DPIA-04 (DPIA-Register, Maßnahmenverfolgung & Review) liefert ein weiteres zentrales Register für risikoreiche Verarbeitungen, dessen Inhalte in Governance, Reporting und Priorisierung von DSR-Fällen einfließen sollten."
+                            }
                         ]
                     },
                     {
@@ -1658,29 +1675,29 @@
                                 "prose": "Level 1: Anfragen erreichen verschiedene Stellen ohne klar definierte Eingangskanäle; es gibt keine einheitlichen Vorgaben zur Identitätsprüfung oder zur sicheren Kommunikation; Risiko von Fehladressierungen oder Offenlegung gegenüber Unbefugten ist hoch.\nLevel 3: Es sind zentrale oder koordinierte Eingangskanäle für Betroffenenrechte definiert; es bestehen dokumentierte Leitlinien zur Identitätsprüfung (risikobasiert) und zur sicheren Kommunikation (z.B. Verschlüsselung, Kundenportal); Eingänge werden protokolliert und zeitnah bestätigt.\nLevel 5: Intake- und Identitätsprozesse werden regelmäßig evaluiert (z.B. anhand von Beschwerden, Vorfällen, Audits) und angepasst; technische Workflows (Portale, Ticket-Systeme) unterstützen automatisierte Erfassung, Fristenkontrolle und sichere Kommunikation."
                             },
                             {
-                                "id": "dsr-01-typical-measures",
+                                "id": "dsr-02-typical-measures",
                                 "name": "typical-measures",
-                                "prose": "Typische Maßnahmen für ein strukturiertes Governance-Konzept zum Umgang mit Betroffenenrechten.",
+                                "prose": "Typische Maßnahmen für Intake, Identitätsprüfung und sichere Kommunikation bei Betroffenenanfragen.",
                                 "parts": [
                                     {
-                                        "id": "dsr-01-typical-measure-01",
+                                        "id": "dsr-02-typical-measure-01",
                                         "name": "typical-measure",
-                                        "prose": "Erstellung und formale Verabschiedung einer organisationsweit gültigen DSR-Policy, die Verfahren, Rollen, Zuständigkeiten, Fristen und Eskalationswege für alle Betroffenenrechte (Art. 12, 15–22 DSGVO) beschreibt."
+                                        "prose": "Definition und Veröffentlichung zentraler Eingangskanäle (z.B. dedizierte E-Mail-Adresse, Webformular, Kunden-/Bürgerportal, Postadresse) in Datenschutzhinweisen und auf relevanten Kontaktseiten."
                                     },
                                     {
-                                        "id": "dsr-01-typical-measure-02",
+                                        "id": "dsr-02-typical-measure-02",
                                         "name": "typical-measure",
-                                        "prose": "Definition einer RASCI-Matrix für Betroffenenrechte (z.B. DSB, zentrale Koordinationsstelle, Fachbereiche, IT, Legal) und Verankerung in Organisationsdokumenten und Prozessbeschreibungen."
+                                        "prose": "Einführung standardisierter Intake-Formulare oder Ticket-Templates mit Mindestangaben (Anfragetyp, Identifikationsdaten der betroffenen Person, betroffene Systeme/Prozesse, Datum, verantwortliche Stelle)."
                                     },
                                     {
-                                        "id": "dsr-01-typical-measure-03",
+                                        "id": "dsr-02-typical-measure-03",
                                         "name": "typical-measure",
-                                        "prose": "Etablierung eines standardisierten End-to-End-Prozesses für DSR-Fälle (von Intake über Prüfung, Sachverhaltsermittlung, Entscheidung bis zur Antwort) mit Schnittstellen zu REG, OPS, TOM, INC und XFER."
+                                        "prose": "Dokumentierte Leitlinien für risikobasierte Identitätsprüfungen (z.B. Abgleich von Stammdaten, Zwei-Faktor-Mechanismen, Nachweise in besonderen Fällen) und deren Integration in Arbeitsanweisungen."
                                     },
                                     {
-                                        "id": "dsr-01-typical-measure-04",
+                                        "id": "dsr-02-typical-measure-04",
                                         "name": "typical-measure",
-                                        "prose": "Regelmäßiges Reporting an Management oder Governance-Gremien über Anzahl, Arten, Durchlaufzeiten, SLA-Verletzungen und Beschwerden sowie Ableitung von Verbesserungsmaßnahmen."
+                                        "prose": "Festlegung sicherer Kommunikationskanäle (z.B. verschlüsselte E-Mail, gesichertes Portal, physische Übergabe) für Antworten und Übermittlung von Datenkopien und deren technische Umsetzung."
                                     }
                                 ]
                             },
@@ -1688,6 +1705,18 @@
                                 "id": "dsr-02-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Sind zentrale Eingangskanäle für Betroffenenanfragen definiert und kommuniziert (z.B. in Datenschutzhinweisen), einschließlich eines standardisierten Eingangs- und Bestätigungsprozesses?\n• Gibt es dokumentierte Vorgaben, wie die Identität der betroffenen Person zu prüfen ist und wie sensible Inhalte sicher übermittelt werden (z.B. verschlüsselt oder über ein Portal)?"
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "#TOM-02",
+                                "rel": "related-control",
+                                "text": "Begründung: TOM-02 (Zugriffs- und Berechtigungsmanagement) definiert, wer auf welche Daten zugreifen darf; dies ist Grundlage für sichere Identitätsprüfung und Bereitstellung von Auskünften."
+                            },
+                            {
+                                "href": "#TOM-03",
+                                "rel": "related-control",
+                                "text": "Begründung: TOM-03 (Verschlüsselung und Pseudonymisierung) legt Vorgaben für sichere Übermittlungswege und Schutz der Inhalte fest, die für die Kommunikation mit betroffenen Personen genutzt werden."
                             }
                         ]
                     },
@@ -1764,6 +1793,23 @@
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es definierte Verfahren und Hilfsmittel (Systemlisten, Checklisten, Vorlagen), um Auskunftsersuchen vollständig, fristgerecht und nachvollziehbar zu beantworten?\n• Werden Abwägungen zum Schutz von Rechten Dritter, Geschäftsgeheimnissen oder IP bei der Auskunftserteilung dokumentiert und ggf. wiederverwendet (z.B. Musterentscheidungen)?"
                             }
+                        ],
+                        "links": [
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control",
+                                "text": "Begründung: REG-01 liefert die Übersicht über Zwecke, Systeme, Empfänger und Datenkategorien, die als Ausgangspunkt für die Zusammenstellung von Auskünften dient."
+                            },
+                            {
+                                "href": "#REG-04",
+                                "rel": "related-control",
+                                "text": "Begründung: REG-04 (System-/Datenlandkarte) unterstützt die Identifikation aller relevanten Systeme und Informationsflüsse, damit Auskünfte vollständig und konsistent sind."
+                            },
+                            {
+                                "href": "#TOM-02",
+                                "rel": "related-control",
+                                "text": "Begründung: TOM-02 regelt Zugriffe und Rollen; nur berechtigte Personen sollen die für Auskunft und Datenkopie verwendeten Exporte durchführen und einsehen können."
+                            }
                         ]
                     },
                     {
@@ -1839,6 +1885,28 @@
                                 "name": "assessment-questions",
                                 "prose": "• Sind Verfahren zur Umsetzung von Berichtigungs- und Löschanfragen dokumentiert und mit Löschkonzept, Aufbewahrungsfristen und Archiv-/Backup-Strategien abgestimmt?\n• Werden betroffene Empfänger nach Art. 19 DSGVO über Berichtigungen oder Löschungen informiert und ist dieser Prozess nachvollziehbar dokumentiert?"
                             }
+                        ],
+                        "links": [
+                            {
+                                "href": "#LAW-03",
+                                "rel": "related-control",
+                                "text": "Begründung: LAW-03 definiert Grundsätze zu Datenminimierung und Speicherbegrenzung; DSR-04 setzt diese Regeln praktisch um, insbesondere bei Löschanträgen und Speicherfristen."
+                            },
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control",
+                                "text": "Begründung: REG-01 enthält Angaben zu Empfängern, Löschfristen und Systemen je Verarbeitungstätigkeit; diese Informationen werden für die Umsetzung von Löschung und die Mitteilungspflichten nach Art. 19 benötigt."
+                            },
+                            {
+                                "href": "#REG-03",
+                                "rel": "related-control",
+                                "text": "Begründung: REG-03 (Verzeichnis als Auftragsverarbeiter) ist relevant, wenn Berichtigung/Löschung im Auftrag eines Kunden erfolgt und Mitteilungspflichten entlang der Auftragsverarbeitungskette einzuhalten sind."
+                            },
+                            {
+                                "href": "#OPS-04",
+                                "rel": "related-control",
+                                "text": "Begründung: OPS-04 regelt Lösch-, Sperr- und Archivierungsprozesse im Betrieb; diese operativen Verfahren werden von den Anforderungen aus DSR-04 in konkreten Fällen ausgelöst."
+                            }
                         ]
                     },
                     {
@@ -1913,6 +1981,28 @@
                                 "id": "dsr-05-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es dokumentierte und technisch unterstützte Verfahren, um Widersprüche (insbesondere gegen Direktwerbung) und Einschränkungen in allen relevanten Systemen zu kennzeichnen und zu berücksichtigen?\n• Werden Wirksamkeit und Konsistenz von Widerspruchs- und Opt-out-Regelungen regelmäßig überprüft (z.B. durch Stichproben, Tests vor Kampagnen)?"
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "#LAW-02",
+                                "rel": "related-control",
+                                "text": "Begründung: LAW-02 (Zweckbestimmung & Zweckbindung) bildet den Rahmen, in dem Verarbeitungen stattfinden; Widerspruch und Einschränkung führen hier zu Anpassungen von Zwecken und weitergehender Nutzung."
+                            },
+                            {
+                                "href": "#LAW-05",
+                                "rel": "related-control",
+                                "text": "Begründung: LAW-05 (Einwilligung) steht in engem Zusammenhang mit Direktwerbung und Profiling; Widerrufe und Widersprüche müssen mit Einwilligungs- und Widerrufsprozessen abgestimmt sein."
+                            },
+                            {
+                                "href": "#LAW-06",
+                                "rel": "related-control",
+                                "text": "Begründung: LAW-06 (LIA) dokumentiert Interessenabwägungen bei Verarbeitungen auf Art. 6(1)(f); diese Bewertungen sind Grundlage, um Widersprüche angemessen zu beurteilen und ggf. zusätzliche Schutzmaßnahmen einzuführen."
+                            },
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control",
+                                "text": "Begründung: REG-01 macht sichtbar, welche Verarbeitungstätigkeiten für Marketing, Profiling oder andere widerspruchsrelevante Zwecke genutzt werden und mit welchen Systemen sie verknüpft sind."
                             }
                         ]
                     },
@@ -1990,6 +2080,23 @@
                                 "prose": "• Wird ein zentrales oder konsolidiertes Register über Betroffenenanfragen geführt, in dem Art der Anfrage, Fristen, Entscheidungen und Antworten nachvollziehbar dokumentiert sind?\n• Werden Kennzahlen aus dem DSR-Register (z.B. Volumen, Fristverletzungen, Beschwerderaten) regelmäßig ausgewertet und in Management- oder Risiko-Reviews eingebracht?"
                             }
                         ]
+                    }
+                ],
+                "links": [
+                    {
+                        "href": "#REG-01",
+                        "rel": "related-control",
+                        "text": "Begründung: REG-01 liefert den Kontext, zu welchen Verarbeitungstätigkeiten Betroffenenanfragen eingehen; Auswertungen aus dem DSR-Register können so pro Prozess/Verarbeitung analysiert werden."
+                    },
+                    {
+                        "href": "#REG-05",
+                        "rel": "related-control",
+                        "text": "Begründung: REG-05 regelt Pflege, Qualitätssicherung und Nutzung des Verzeichnisses; ähnliche Prinzipien (Reviews, KPIs, Nutzung in Audits) werden für das DSR-Register in DSR-06 angewendet."
+                    },
+                    {
+                        "href": "#DPIA-04",
+                        "rel": "related-control",
+                        "text": "Begründung: DPIA-04 beschreibt das DPIA-Register und dessen Auswertung; Hochrisiko-Verarbeitungen aus DPIAs sollten sich in Kennzahlen des DSR-Registers widerspiegeln und umgekehrt (z.B. Beschwerden, Fristverletzungen)."
                     }
                 ]
             },
