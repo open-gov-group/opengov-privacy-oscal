@@ -2983,6 +2983,33 @@
                                 "prose": "Level 1: DPIA-Aspekte werden in Projekten nur punktuell berücksichtigt; Projektvorlagen enthalten keine oder nur formale DPIA-Fragen.\nLevel 3: Projekt-/Change-Methoden enthalten verbindliche Datenschutz- und DPIA-Checkpoints (z.B. im Business Case, in Gate-Templates); Ergebnis des Screenings wird dokumentiert und ggf. DPIAs eingeplant.\nLevel 5: DPIA-Schritte sind in Toolchains (PM-Tools, Ticket-Systeme) integriert; deren Ergebnisse sind mit TOM, XFER, OPS und INC verknüpft; Erfahrungswerte fließen in Standardlösungen und Patterns für datenschutzfreundliche Gestaltung ein."
                             },
                             {
+                                "id": "dpia-06-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Integration von DPIA-Screening und -Durchführung in Projekt-, Produktentwicklungs- und Änderungsprozesse.",
+                                "parts": [
+                                    {
+                                        "id": "dpia-06-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Ergänzung der Projekt-, Produkt- und Change-Templates (z.B. Projektantrag, Business Case, Change-Request) um verpflichtende Fragen zu neuen oder geänderten Verarbeitungstätigkeiten sowie einen DPIA-Screening-Abschnitt mit Verweis auf die definierte Screening-Methodik."
+                                    },
+                                    {
+                                        "id": "dpia-06-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von Prozessschritten und Gates, in denen das Ergebnis des DPIA-Screenings geprüft und die Durchführung einer DPIA (inklusive Zeitpunkt, Verantwortliche und benötigte Input-Dokumente) verbindlich entschieden und dokumentiert wird."
+                                    },
+                                    {
+                                        "id": "dpia-06-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Integration von DPIA-Screening und -Referenzen in Projekt- und Change-Tools (z.B. PM-Tool, Ticket-System), einschließlich Feldern zur Angabe des DPIA-Status, der DPIA-ID sowie von Verknüpfungen zu TOM-, OPS-, XFER- und Incident-Dokumentation."
+                                    },
+                                    {
+                                        "id": "dpia-06-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung konkreter Änderungs-Trigger (z.B. Erweiterung von Datenkategorien, neue Empfängerkreise oder Drittländer, neue Analysefunktionen), bei denen Projekte und Systeme automatisch eine erneute DPIA- bzw. Risikobewertung durchlaufen müssen, einschließlich dokumentierter Review-Entscheidungen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "dpia-06-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Enthalten Projekt- und Change-Management-Vorgehensmodelle verbindliche Schritte für DPIA-Screening bzw. -Durchführung und deren Dokumentation?\n• Lösen wesentliche Änderungen von Systemen/Prozessen mit personenbezogenen Daten automatisch eine Überprüfung der DPIA-/Risikobewertung aus?"
@@ -3038,6 +3065,33 @@
                                 "prose": "Level 1: Prozesse werden überwiegend informell gelebt; Datenschutzanforderungen sind nicht oder nur pauschal in Prozessbeschreibungen enthalten.\nLevel 3: Für die wichtigsten Kernprozesse existieren dokumentierte Abläufe, in denen Datenschutzanforderungen explizit verankert sind (z.B. Entscheidungspunkte, Kontrollen, Rollen), und diese Dokumentation wird für Schulung und Audit genutzt.\nLevel 5: Prozessdokumentation ist mit Kontrollplänen, KPIs und Tool-Workflows verknüpft; Änderungen in Prozessen lösen systematisch Datenschutz-Reviews aus; Lessons Learned aus Vorfällen, DSR und Audits fließen in Prozessverbesserung ein."
                             },
                             {
+                                "id": "ops-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Verankerung von Datenschutzanforderungen in den operativen Kernprozessen.",
+                                "parts": [
+                                    {
+                                        "id": "ops-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Identifikation und Dokumentation der wesentlichen Geschäftsprozesse mit personenbezogenen Daten (z.B. HR, Kunden-/Bürgerprozesse, Beschaffung, Finanzen) inklusive Prozessverantwortlichen."
+                                    },
+                                    {
+                                        "id": "ops-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Erweiterung der Prozess- und Arbeitsanweisungen um konkrete Datenschutzanforderungen (Zweckbindung, Datenminimierung, Löschfristen, Betroffenenrechte, Zugriffsregeln, Informationspflichten) an den relevanten Prozessschritten."
+                                    },
+                                    {
+                                        "id": "ops-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Verknüpfung der Prozessbeschreibungen mit dem Verzeichnis von Verarbeitungstätigkeiten (REG), den TOM (TOM) und ggf. DPIA-Ergebnissen, sodass nachvollziehbar ist, welche Kontrollen in welchem Schritt greifen."
+                                    },
+                                    {
+                                        "id": "ops-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Nutzung der Prozessdokumentationen als Grundlage für Schulungen, Audits und kontinuierliche Verbesserungsmaßnahmen (z.B. Lessons Learned aus Incidents und DSR-Fällen)."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "ops-01-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Sind in den dokumentierten Kernprozessen die relevanten Datenschutzanforderungen (Zweckbindung, Datenminimierung, Löschfristen, Betroffenenrechte) konkret verankert?\n• Werden Prozessbeschreibungen mit Datenschutzinhalten aktiv für Schulungen, Audits und kontinuierliche Verbesserungsmaßnahmen genutzt?"
@@ -3084,6 +3138,33 @@
                                 "id": "ops-02-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Datenschutz wird in Projekten und Changes überwiegend reaktiv berücksichtigt; Projektvorlagen enthalten keine verbindlichen Datenschutzabschnitte.\nLevel 3: Projekt- und Change-Methoden enthalten feste Datenschutz-Prüfpunkte, Checklisten und Rollen (inkl. DSB); Dokumente wie Datenschutzkonzepte und DPIA-Ergebnisse sind Teil der Freigabeunterlagen.\nLevel 5: Datenschutzfragen sind in Toolgestützte Projekt-/Change-Workflows integriert; Kennzahlen zu Datenschutz-Compliance in Projekten werden erhoben; wiederkehrende Muster fließen in Standardlösungen und Bausteine ein."
+                            },
+                            {
+                                "id": "ops-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Integration von Datenschutzanforderungen in Projekt- und Change-Management.",
+                                "parts": [
+                                    {
+                                        "id": "ops-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Ergänzung von Projekt- und Change-Vorlagen (z.B. Projektantrag, Business Case, Change-Request) um verbindliche Datenschutz-Abschnitte, inklusive Fragen zu Datenarten, Betroffenen, Rechtsgrundlagen, Transfers und Risiken."
+                                    },
+                                    {
+                                        "id": "ops-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von Checklisten und Gate-Kriterien, die u.a. DPIA-Screening (DPIA-02/-06), Privacy-by-Design-Anforderungen, Einbindung des/der DSB und Abstimmung von TOM, REG, XFER und INC abprüfen."
+                                    },
+                                    {
+                                        "id": "ops-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Verankerung von Datenschutzkonzepten (inkl. TOM, Löschkonzept, Betroffenenrechte, Incident-Meldewege, Transfers) als Pflicht-Artefakte in Projekten mit relevanter Datenverarbeitung."
+                                    },
+                                    {
+                                        "id": "ops-02-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Integration der Datenschutz-Checkpoints in Projekt- und Change-Tools (z.B. PM-Tool, Ticket-System) mit nachvollziehbarer Dokumentation von Entscheidungen, Freigaben und ggf. Eskalationen."
+                                    }
+                                ]
                             },
                             {
                                 "id": "ops-02-questions",
@@ -3144,6 +3225,33 @@
                                 "prose": "Level 1: Datenschutz wird bei Beschaffung und Dienstleisterauswahl nur sporadisch berücksichtigt; Vertragsklauseln und TOM-Anforderungen sind uneinheitlich.\nLevel 3: Es gibt verbindliche Anforderungen und Muster (AVV, Joint-Control, Standardklauseln) in Vergabe-/Beschaffungsprozessen; ein definierter Onboarding-Prozess erfasst Datenschutzrisiken und Freigaben.\nLevel 5: Datenschutz-Anforderungen sind in Lieferantenmanagement und Third-Party-Risk-Prozesse integriert; regelmäßige Reviews, Audits und KPIs zur Dienstleister-Compliance fließen in die Steuerung ein."
                             },
                             {
+                                "id": "ops-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Berücksichtigung von Datenschutz in Beschaffungs-, Vergabe- und Dienstleistersteuerungsprozessen.",
+                                "parts": [
+                                    {
+                                        "id": "ops-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Ergänzung von Beschaffungs- und Vergabeunterlagen (RFP, Leistungsbeschreibungen, Bewertungsmatrizen) um verbindliche Datenschutzanforderungen, inklusive Rollenklärung (Verantwortlicher, Joint Controller, Auftragsverarbeiter) und TOM-Vorgaben."
+                                    },
+                                    {
+                                        "id": "ops-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung standardisierter Vertragsmuster (z.B. Art.-28-AVV, Joint-Control-Vereinbarungen, Transferklauseln), die mit den Anforderungen aus LAW, TOM und XFER abgestimmt sind."
+                                    },
+                                    {
+                                        "id": "ops-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines Vendor-Onboarding-Prozesses mit Datenschutz- und Sicherheitsbewertung (z.B. Fragebögen, Risiko-Scores, ggf. TIAs für internationale Transfers) sowie dokumentierten Freigabeentscheidungen."
+                                    },
+                                    {
+                                        "id": "ops-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung regelmäßiger Reviews von Dienstleistern (z.B. Vertrags- und TOM-Reviews, Audits, Performance- und Incident-Auswertung) und Anpassung von Verträgen, Maßnahmen oder der Zusammenarbeit bei Auffälligkeiten."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "ops-03-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Sind Datenschutzanforderungen (Rolle, TOM, Unterauftragnehmer, Audit-/Kontrollrechte) verbindlich in Beschaffungs- und Vergabeverfahren integriert?\n• Gibt es dokumentierte Onboarding- und Review-Prozesse, in denen Datenschutzrisiken von Dienstleistern bewertet und freigegeben werden?"
@@ -3202,6 +3310,33 @@
                                 "prose": "Level 1: Löschungen erfolgen überwiegend manuell und ad hoc; Altdaten und Backups werden oft unbegrenzt aufbewahrt; es existieren keine systematischen Tests der Löschprozesse.\nLevel 3: Lösch- und Archivierungsprozesse sind dokumentiert, mit Aufbewahrungsfristen verknüpft und teilweise systemseitig umgesetzt; es gibt regelmäßige Stichproben und Tests.\nLevel 5: Lösch-/Sperrprozesse sind tief in Systemarchitektur und Betriebsprozesse integriert; technische Löschhindernisse sind bewertet und mit kompensierenden Maßnahmen versehen; Kennzahlen und Tests steuern Verbesserungen."
                             },
                             {
+                                "id": "ops-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für wirksame Lösch-, Sperr- und Archivierungsprozesse im laufenden Betrieb.",
+                                "parts": [
+                                    {
+                                        "id": "ops-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung eines Lösch- und Aufbewahrungskonzepts mit definierten Aufbewahrungsfristen pro Datenkategorie/Verarbeitungstätigkeit und Zuordnung zu Systemen, inklusive Behandlung von Archivsystemen und Backups."
+                                    },
+                                    {
+                                        "id": "ops-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Implementierung automatisierter oder zumindest systemgestützter Lösch-/Sperrmechanismen in den relevanten Anwendungen (z.B. Zeitsteuerung, Statuswechsel, Pseudonymisierung) gemäß den festgelegten Fristen."
+                                    },
+                                    {
+                                        "id": "ops-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung regelmäßiger Löschtests und Stichproben (inkl. Backups und Archivsystemen) mit dokumentierten Testergebnissen, Abweichungen und Korrekturmaßnahmen."
+                                    },
+                                    {
+                                        "id": "ops-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation technischer Löschhindernisse (z.B. bestimmte Backup- oder Archivtechnologien) und Festlegung kompensierender Maßnahmen (z.B. Zugriffsbeschränkungen, verkürzte Wiederherstellbarkeit, Pseudonymisierung) einschließlich Bewertung verbleibender Restrisiken."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "ops-04-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es dokumentierte, systemseitig umgesetzte Lösch-/Sperrprozesse, die an konkrete Aufbewahrungsfristen gekoppelt sind und regelmäßig getestet werden?\n• Werden Sonderfälle (Backups, Archivsysteme, Langzeitaufbewahrung) mit spezifischen Verfahren und dokumentierten Restrisiken behandelt?"
@@ -3248,6 +3383,33 @@
                                 "id": "ops-05-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Berechtigungen werden primär technisch administriert; fachliche Rollen und Zweckbezüge sind unklar; Rezertifizierungen finden selten statt.\nLevel 3: Rollen- und Berechtigungskonzepte sind dokumentiert und an Zwecke/Prozesse gekoppelt; Joiner-Mover-Leaver-Prozesse und regelmäßige access reviews sind etabliert.\nLevel 5: Fachliche Verantwortliche steuern Berechtigungen aktiv; Kennzahlen (z.B. überhöhte Rechte, veraltete Konten) werden erhoben; Ergebnisse fließen in Prozess- und Toolverbesserungen ein."
+                            },
+                            {
+                                "id": "ops-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur praktischen Umsetzung von Zugriffs- und Berechtigungssteuerung im operativen Betrieb.",
+                                "parts": [
+                                    {
+                                        "id": "ops-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Abbildung fachlicher Rollen und Aufgaben in Berechtigungskonzepten für die produktiven Systeme (Rollenprofile, Gruppen, Rechtebündel) auf Basis des Need-to-know-Prinzips und der datenschutzrechtlichen Zwecke."
+                                    },
+                                    {
+                                        "id": "ops-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Einführung und Dokumentation eines Joiner-Mover-Leaver-Prozesses zur Vergabe, Änderung und Entziehung von Zugriffsrechten, idealerweise integriert in HR-/Identity-Management-Prozesse und -Tools."
+                                    },
+                                    {
+                                        "id": "ops-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige, risikobasierte Berechtigungsreviews durch fachliche Verantwortliche (z.B. mindestens jährlich, bei besonders sensiblen Daten häufiger) mit dokumentierten Entscheidungen und Nachverfolgung von Bereinigungsmaßnahmen."
+                                    },
+                                    {
+                                        "id": "ops-05-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Auswertung typischer Kennzahlen (z.B. Anzahl veralteter Konten, überhöhter Berechtigungen, Notfallzugriffe) und Nutzung der Ergebnisse zur Verbesserung von Prozessen, Tooling und Schulung der beteiligten Rollen."
+                                    }
+                                ]
                             },
                             {
                                 "id": "ops-05-questions",
@@ -3315,6 +3477,33 @@
                                 "prose": "Level 1: Internationale Transfers werden nicht systematisch erfasst; Informationen sind nur in Einzelsystemen oder Verträgen enthalten.\nLevel 3: Ein Transferregister listet relevante Übermittlungen mit Drittländern, Instrumenten und Kernparametern; es ist mit VVT/Datenlandkarte abgestimmt.\nLevel 5: Transferregister ist mit Vertrags-, Vendor- und Risiko-Tools verknüpft; es dient als operative Basis für TIAs, Kontrollen und Management-Reporting."
                             },
                             {
+                                "id": "xfer-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Einrichtung und Pflege eines Transferinventars für internationale Datenübermittlungen.",
+                                "parts": [
+                                    {
+                                        "id": "xfer-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Aufbau eines zentralen Transferregisters, das alle Übermittlungen personenbezogener Daten in Drittländer oder an internationale Organisationen erfasst (inkl. Empfänger, Drittländer, Zwecke, Datenkategorien, Transferinstrumente)."
+                                    },
+                                    {
+                                        "id": "xfer-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Verknüpfung des Transferregisters mit dem Verzeichnis von Verarbeitungstätigkeiten (REG) und der System-/Datenlandkarte (REG-04), sodass jede relevante Verarbeitungstätigkeit und jedes System seine Transfers referenziert."
+                                    },
+                                    {
+                                        "id": "xfer-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Definition klarer Verantwortlichkeiten für Anlage, Aktualisierung und Review von Transfer-Einträgen (z.B. Fachbereiche, Vendor-Management, Datenschutzkoordination) einschließlich Prozess zur Meldung neuer oder geänderter Transfers."
+                                    },
+                                    {
+                                        "id": "xfer-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßiger Abgleich des Transferregisters mit Vertrags- und Vendor-Registern (OPS-03), TIAs (XFER-03) und technischen Maßnahmen (TOM), um Konsistenz und Aktualität sicherzustellen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "xfer-01-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es ein zentrales, aktuelles Inventar aller Datenübermittlungen in Drittländer oder an internationale Organisationen?\n• Ist das Transferinventar mit VVT, System-/Datenlandkarte und Vendor-/Vertragsmanagement abgestimmt?"
@@ -3361,6 +3550,33 @@
                                 "id": "xfer-02-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Auswahl des Transferinstruments erfolgt ad hoc; Standardklauseln werden ohne konsistente Bewertung eingesetzt; Zuständigkeiten sind unklar.\nLevel 3: Eine Transfer-Policy legt fest, wann welches Instrument genutzt wird, wer entscheidet und wie dies dokumentiert wird; Musterklauseln sind etabliert.\nLevel 5: Erfahrungen aus TIAs, Aufsichtspraxis und Rechtsprechung fließen in die Policy ein; die Nutzung bestimmter Instrumente wird strategisch gesteuert (z.B. bevorzugte Lösungswege, Exit-Strategien)."
+                            },
+                            {
+                                "id": "xfer-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für eine dokumentierte Politik zur Auswahl geeigneter Transferinstrumente nach Kapitel V DSGVO.",
+                                "parts": [
+                                    {
+                                        "id": "xfer-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erarbeitung und Verabschiedung einer Transfer-Policy, die die in Kapitel V DSGVO vorgesehenen Instrumente (Angemessenheitsbeschlüsse, Standardvertragsklauseln, BCR, Codes of Conduct, Zertifizierungen) beschreibt und deren bevorzugte Einsatzszenarien definiert."
+                                    },
+                                    {
+                                        "id": "xfer-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Entscheidungskriterien (z.B. Art der Daten, Risiko, Dauer der Zusammenarbeit, Empfänger-Typ, Drittland) und eines formellen Entscheidungsprozesses inklusive Rollen (Rechtsabteilung, DSB, Einkauf, Fachbereiche)."
+                                    },
+                                    {
+                                        "id": "xfer-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung und Pflege von Musterklauseln und Vertragsbausteinen (z.B. aktuelle Standardvertragsklauseln der EU-Kommission), die mit der Transfer-Policy, den TOM und den Vendor-/Beschaffungsprozessen (OPS-03) abgestimmt sind."
+                                    },
+                                    {
+                                        "id": "xfer-02-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Überprüfung und Anpassung der Transfer-Policy auf Basis von Rechtsprechung, EDPB-Leitlinien, Angemessenheitsbeschlüssen und Erfahrungen aus TIAs und Audits."
+                                    }
+                                ]
                             },
                             {
                                 "id": "xfer-02-questions",
@@ -3421,6 +3637,33 @@
                                 "prose": "Level 1: Schrems-II-Anforderungen werden nur oberflächlich adressiert; TIAs werden selten oder nur formal durchgeführt.\nLevel 3: Es existiert eine TIA-Methodik mit Vorlagen; für relevante Transfers werden TIAs mit Bewertung von Rechtslage, Zugriffsszenarien und Schutzmaßnahmen durchgeführt und dokumentiert.\nLevel 5: TIAs sind mit TOM (insb. Verschlüsselung/Schlüsselverwaltung), Incident-Management und Rechtsmonitoring verzahnt; Kennzahlen zu TIAs und ergänzenden Maßnahmen fließen in Governance und Architekturentscheidungen ein."
                             },
                             {
+                                "id": "xfer-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für strukturierte Transfer Impact Assessments und ergänzende Maßnahmen nach Schrems II.",
+                                "parts": [
+                                    {
+                                        "id": "xfer-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Verabschiedung einer TIA-Policy, die Verfahren, Zuständigkeiten und Anwendungsfälle für TIAs bei Transfers auf Basis von Art. 46 DSGVO festlegt, inklusive Schwellenwerten, Dokumentationsanforderungen und Eskalationswegen."
+                                    },
+                                    {
+                                        "id": "xfer-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung standardisierter TIA-Templates, die insbesondere Rechtslage und Behördenzugriffe im Drittland, Art und Sensibilität der Daten, Kategorien von Empfängern, eingesetzte technische/organisatorische/vertragliche Maßnahmen und das Gesamtrisiko strukturiert erfassen."
+                                    },
+                                    {
+                                        "id": "xfer-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Verknüpfung von TIAs mit TOM (z.B. Verschlüsselungs- und Schlüsselmanagementkonzepten nach TOM-03), Incident-Management (INC) und Vendor-/Vertragsmanagement, um ergänzende Maßnahmen konsistent umzusetzen und zu überprüfen."
+                                    },
+                                    {
+                                        "id": "xfer-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Führung eines TIA-Registers mit Status, Ergebnissen, ergänzenden Maßnahmen und Review-Terminen sowie regelmäßige Aktualisierung der TIAs bei geänderter Rechtslage, neuen Risiken, Vorfällen oder System-/Prozessänderungen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "xfer-03-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Werden für Transfers auf Basis von Art. 46 DSGVO strukturierte TIAs durchgeführt, die Rechtslage, Behördenzugriffe und Schutzmaßnahmen bewerten?\n• Gibt es dokumentierte ergänzende Maßnahmen (technisch/organisatorisch/vertraglich) und werden diese regelmäßig im Lichte neuer Erkenntnisse überprüft?"
@@ -3473,6 +3716,33 @@
                                 "id": "xfer-04-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Angemessenheitsbeschlüsse werden genutzt, ohne dass systematisch geprüft wird, ob der Empfänger (noch) darunter fällt; Änderungen werden nur zufällig bemerkt.\nLevel 3: Es gibt definierte Prüfschritte und Dokumentation bei Nutzung von Angemessenheitsbeschlüssen (inkl. DPF-Listenkontrolle); regelmäßige Reviews sind vorgesehen.\nLevel 5: Monitoring von Angemessenheitsentscheidungen ist institutionalisiert; Anpassungen (z.B. Umstieg auf andere Instrumente) erfolgen gesteuert und nachvollziehbar dokumentiert."
+                            },
+                            {
+                                "id": "xfer-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für den strukturierten Einsatz von Angemessenheitsbeschlüssen und des EU–U.S. Data Privacy Framework.",
+                                "parts": [
+                                    {
+                                        "id": "xfer-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Führung einer Übersicht über alle Transfers, die auf Angemessenheitsbeschlüsse gestützt werden, inklusive Zuordnung zu Verarbeitungstätigkeiten, Systemen, Empfängern und betroffenen Ländern/Regimen."
+                                    },
+                                    {
+                                        "id": "xfer-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines dokumentierten Prüfprozesses zur Kontrolle, ob Empfänger tatsächlich unter den jeweiligen Angemessenheitsbeschluss fallen (z.B. DPF-Listeneintrag) und in welchem Scope (Service, Tochtergesellschaften, Zertifizierungsstatus)."
+                                    },
+                                    {
+                                        "id": "xfer-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Review-Zyklen und Triggern (z.B. Änderung/Anfechtung von Angemessenheitsbeschlüssen), in deren Rahmen die auf Angemessenheitsbeschlüsse gestützten Transfers und Empfänger geprüft und bei Bedarf angepasst werden."
+                                    },
+                                    {
+                                        "id": "xfer-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Ausarbeitung von Exit- und Umstellungsszenarien (z.B. Wechsel auf Standardvertragsklauseln mit ergänzenden Maßnahmen), die bei Wegfall oder wesentlicher Einschränkung eines Angemessenheitsbeschlusses greifen und im Transferregister dokumentiert werden."
+                                    }
+                                ]
                             },
                             {
                                 "id": "xfer-04-questions",
@@ -3533,6 +3803,33 @@
                                 "prose": "Level 1: Art. 49 wird großzügig für wiederkehrende Transfers genutzt; Dokumentation der Einzelfallprüfung ist schwach.\nLevel 3: Es existieren klare interne Leitlinien zur restriktiven Nutzung von Art. 49; jede Nutzung wird dokumentiert und enthält Risikoabwägung sowie Information der betroffenen Personen.\nLevel 5: Nutzung von Art. 49 wird eng überwacht; es wird aktiv an alternativen, stabileren Transferinstrumenten gearbeitet; Kennzahlen zur Nutzung von Art. 49 fließen in das Transferprogramm ein."
                             },
                             {
+                                "id": "xfer-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für den restriktiven und dokumentierten Einsatz von Ausnahmeregelungen nach Art. 49 DSGVO.",
+                                "parts": [
+                                    {
+                                        "id": "xfer-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung einer internen Leitlinie, die klar festlegt, dass Art. 49 DSGVO nur ausnahmsweise, in eng begrenzten Einzelfällen und nicht für routinemäßige oder massenhafte Transfers genutzt werden darf."
+                                    },
+                                    {
+                                        "id": "xfer-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung eines Standardformulars für Art.-49-Entscheidungen, in dem Zweck, Rechtsgrundlage, betroffene Daten und Personen, Empfänger, Drittländer, Risikoabwägung, etwaige zusätzliche Schutzmaßnahmen und die Information der betroffenen Personen dokumentiert werden."
+                                    },
+                                    {
+                                        "id": "xfer-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Führung eines zentralen Registers aller Art.-49-Fälle mit Angaben zu Anlass, Umfang, Risiken und getroffenen Schutzmaßnahmen sowie regelmäßige Auswertung dieser Fälle im Rahmen des Transferprogramms."
+                                    },
+                                    {
+                                        "id": "xfer-05-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Überprüfung wiederkehrender oder wachsender Art.-49-Nutzungen und aktive Suche nach stabileren, auf Dauer geeigneten Transferinstrumenten (z.B. SCC, Angemessenheitsbeschluss), um Ausnahmefälle in reguläre Lösungen zu überführen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "xfer-05-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es interne Vorgaben, dass Art. 49 DSGVO nur ausnahmsweise und nicht für routinemäßige Transfers eingesetzt wird?\n• Werden Art. 49-Fälle mit Zweck, Rechtsgrundlage, Risikoabwägung und Information der betroffenen Personen dokumentiert und regelmäßig überprüft?"
@@ -3585,6 +3882,33 @@
                                 "id": "xfer-06-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Auskunftsersuchen aus Drittstaaten werden ohne klare Policy behandelt; Risiken für Art. 48 werden nicht systematisch bewertet.\nLevel 3: Es existieren Richtlinien, Entscheidungsbäume und Einbindung von Rechtsberatung/DSB; Anfragen werden dokumentiert und nach einheitlichen Kriterien bewertet.\nLevel 5: Erfahrungswerte aus Anfragen, Aufsichtsfeedback und Rechtsprechung werden ausgewertet; Policy und Entscheidungsprozesse werden fortlaufend angepasst; Kennzahlen werden im Management berichtet."
+                            },
+                            {
+                                "id": "xfer-06-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zum geregelten Umgang mit Auskunfts- und Herausgabeverlangen aus Drittstaaten nach Art. 48 DSGVO.",
+                                "parts": [
+                                    {
+                                        "id": "xfer-06-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Verabschiedung einer Policy zum Umgang mit Anfragen ausländischer Behörden und Gerichte, die Rollen, Prüfschritte, Dokumentationsanforderungen und Eskalationswege (z.B. Rechtsabteilung, DSB, Management) festlegt."
+                                    },
+                                    {
+                                        "id": "xfer-06-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Einrichtung eines zentralen Kanals bzw. einer definierten Stelle für den Eingang solcher Anfragen (z.B. Legal/Compliance), verbunden mit einem Verbot für Fachbereiche und Dienstleister, Daten ohne vorherige Prüfung direkt herauszugeben."
+                                    },
+                                    {
+                                        "id": "xfer-06-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Führung eines strukturierten Registers aller Anfragen und Herausgabeverlangen aus Drittstaaten (inkl. Rechtsgrundlagen, Umfang der angefragten Daten, getroffene Entscheidungen, ggf. Einholung gerichtlicher oder behördlicher Hilfe, Information von Betroffenen)."
+                                    },
+                                    {
+                                        "id": "xfer-06-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Auswertung der Fälle (z.B. Anzahl, Herkunftsländer, Art der Behörden, betroffene Datenkategorien) sowie Anpassung von Policy, Schulungen, Vertragsklauseln und TOM auf Basis von Erfahrungen, Aufsichtsfeedback und Rechtsprechung."
+                                    }
+                                ]
                             },
                             {
                                 "id": "xfer-06-questions",
