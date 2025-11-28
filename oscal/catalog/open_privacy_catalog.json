@@ -1034,6 +1034,20 @@
                                 "name": "assessment-questions",
                                 "prose": "• Ist für jede Verarbeitungstätigkeit im Verzeichnis eine konkrete Rechtsgrundlage (inkl. Abs./Buchstabe) dokumentiert und nachvollziehbar begründet?\n• Gibt es Leitlinien oder Checklisten zur Auswahl von Rechtsgrundlagen und werden diese bei neuen oder geänderten Verarbeitungstätigkeiten konsistent angewendet?"
                             }
+                        ],
+                        "links": [
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control"
+                            },
+                            {
+                                "href": "#REG-02",
+                                "rel": "related-control"
+                            },
+                            {
+                                "href": "#DPIA-01",
+                                "rel": "related-control"
+                            }
                         ]
                     },
                     {
@@ -1111,6 +1125,18 @@
                             }
                         ],
                         "links": [
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control"
+                            },
+                            {
+                                "href": "#REG-02",
+                                "rel": "related-control"
+                            },
+                            {
+                                "href": "#DPIA-01",
+                                "rel": "related-control"
+                            },
                             {
                                 "href": "https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2013/wp203_en.pdf",
                                 "rel": "reference"
