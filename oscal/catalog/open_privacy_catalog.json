@@ -1038,15 +1038,18 @@
                         "links": [
                             {
                                 "href": "#REG-01",
-                                "rel": "related-control"
+                                "rel": "related-control",
+                                "text": "Begründung: Rechtsgrundlagen werden im VVT dokumentiert; REG-01 ist als “zentrale Referenz für DPIA,"
                             },
                             {
                                 "href": "#REG-02",
-                                "rel": "related-control"
+                                "rel": "related-control",
+                                "text": "Begründung: Einheitliche Erfassung von Rechtsgrundlagen hängt direkt an der VVT-Methodik."
                             },
                             {
                                 "href": "#DPIA-01",
-                                "rel": "related-control"
+                                "rel": "related-control",
+                                "text": "Begründung: In jeder DPIA wird nochmal geprüft, ob Rechtsgrundlagen tragfähig sind."
                             }
                         ]
                     },
@@ -1128,17 +1131,17 @@
                             {
                                 "href": "#REG-01",
                                 "rel": "related-control",
-                                "text": "Begründung: Rechtsgrundlagen werden im VVT dokumentiert; REG-01 ist als “zentrale Referenz für DPIA,"
+                                "text": "Begründung: REG-01 enthält die dokumentierten Zwecke jeder Verarbeitungstätigkeit und ist damit die operative Grundlage für Zweckbestimmung und Zweckbindung."
                             },
                             {
                                 "href": "#REG-02",
                                 "rel": "related-control",
-                                "text": "Begründung: Einheitliche Erfassung von Rechtsgrundlagen hängt direkt an der VVT-Methodik."
+                                "text": "Begründung: REG-02 legt fest, wie Zwecke beschrieben werden und wer für Pflege und Konsistenz der Zweckangaben im Verzeichnis verantwortlich ist."
                             },
                             {
                                 "href": "#DPIA-01",
                                 "rel": "related-control",
-                                "text": "Begründung: In jeder DPIA wird nochmal geprüft, ob Rechtsgrundlagen tragfähig sind."
+                                "text": "Begründung: DPIA-01 adressiert die Prüfung von Zweckänderungen und -erweiterungen (Sekundärzwecke) im Rahmen der Risikobewertung."
                             },
                             {
                                 "href": "https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2013/wp203_en.pdf",
@@ -1219,6 +1222,23 @@
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es ein dokumentiertes Lösch- und Aufbewahrungskonzept mit konkreten Fristen und Verantwortlichkeiten je Datenkategorie bzw. Verarbeitungstätigkeit?\n• Werden Datenminimierung und Speicherbegrenzung bei der Gestaltung von Formularen, Systemen und Prozessen (z.B. Pflichtfelder, optionale Felder, automatische Löschung) systematisch berücksichtigt und getestet?"
                             }
+                        ],
+                        "links": [
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control",
+                                "text": "Begründung: In REG-01 werden u.a. Speicherfristen je Verarbeitungstätigkeit dokumentiert; das Lösch- und Aufbewahrungskonzept aus LAW-03 spiegelt sich dort wieder."
+                            },
+                            {
+                                "href": "#TOM-05",
+                                "rel": "related-control",
+                                "text": "Begründung: TOM-05 regelt Backup, Wiederherstellung und Betriebsfortführung; diese Prozesse müssen mit Lösch- und Aufbewahrungsvorgaben aus LAW-03 abgestimmt sein."
+                            },
+                            {
+                                "href": "#DSR-04",
+                                "rel": "related-control",
+                                "text": "Begründung: DSR-04 behandelt Berichtigung/Löschung auf Antrag; die praktische Umsetzung der Löschpflichten stützt sich auf die Regeln zu Datenminimierung und Speicherbegrenzung aus LAW-03."
+                            }
                         ]
                     },
                     {
@@ -1293,6 +1313,23 @@
                                 "id": "law-04-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Sind Verarbeitungen besonderer Kategorien personenbezogener Daten und von Strafdaten explizit identifiziert und mit spezifischen Rechtsgrundlagen (Art. 9(2) bzw. Art. 10 DSGVO) hinterlegt?\n• Werden für diese Verarbeitungen besondere Schutzmaßnahmen (z.B. Zugriffsbegrenzung, Protokollierung, DPIA-Pflicht) definiert, dokumentiert und regelmäßig überprüft?"
+                            }
+                        ],
+                        "links": [
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control",
+                                "text": "Begründung: REG-01 sollte Verarbeitungen mit besonderen Kategorien personenbezogener Daten und Strafdaten explizit kennzeichnen und die spezifischen Rechtsgrundlagen dokumentieren."
+                            },
+                            {
+                                "href": "#DPIA-01",
+                                "rel": "related-control",
+                                "text": "Begründung: DPIA-01 adressiert typischerweise Hochrisiko-Verarbeitungen, insbesondere wenn besondere Kategorien oder Strafdaten betroffen sind."
+                            },
+                            {
+                                "href": "#TOM-02",
+                                "rel": "related-control",
+                                "text": "Begründung: Für Verarbeitungen nach LAW-04 sind häufig strengere Zugriffs- und Berechtigungskonzepte (TOM-02) erforderlich."
                             }
                         ]
                     },
@@ -1371,6 +1408,21 @@
                             }
                         ],
                         "links": [
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control",
+                                "text": "Begründung: Wenn Einwilligung als Rechtsgrundlage verwendet wird, muss dies im Verzeichnis je Verarbeitungstätigkeit dokumentiert sein (REG-01)."
+                            },
+                            {
+                                "href": "#DSR-03",
+                                "rel": "related-control",
+                                "text": "Begründung: DSR-03 (Auskunft) umfasst auch Informationen zu Rechtsgrundlagen und Einwilligungsstatus; die Qualität der Einwilligungsdokumentation nach LAW-05 wirkt sich direkt auf Auskünfte aus."
+                            },
+                            {
+                                "href": "#DSR-05",
+                                "rel": "related-control",
+                                "text": "Begründung: DSR-05 (Widerspruch/Einschränkung, insbesondere Direktwerbung) ist eng mit Einwilligungs- und Widerrufsprozessen verzahnt."
+                            },
                             {
                                 "href": "https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-052020-consent-under-regulation-2016679_en",
                                 "rel": "reference"
@@ -1456,6 +1508,26 @@
                             }
                         ],
                         "links": [
+                            {
+                                "href": "#REG-01",
+                                "rel": "related-control",
+                                "text": "Begründung: Verarbeitungen auf Basis berechtigter Interessen müssen als solche im Verzeichnis kenntlich sein; REG-01 bildet damit die Dokumentationsbasis für LIAs."
+                            },
+                            {
+                                "href": "#ACC-05",
+                                "rel": "related-control",
+                                "text": "Begründung: ACC-05 beschreibt die Dokumentation datenschutzrelevanter Entscheidungs- und Risikoabwägungen; LIAs sind ein zentraler Anwendungsfall dafür."
+                            },
+                            {
+                                "href": "#DPIA-01",
+                                "rel": "related-control",
+                                "text": "Begründung: Bei bestimmten Konstellationen kann aus einem LIA ein DPIA-Bedarf entstehen; DPIA-01 baut auf den dort dokumentierten Abwägungen und Risiken auf."
+                            },
+                            {
+                                "href": "#DSR-05",
+                                "rel": "related-control",
+                                "text": "Begründung: Widerspruchsrechte nach DSR-05 sind besonders relevant bei Verarbeitungen auf Art. 6(1)(f); Ergebnisse aus LIAs sollten in die Gestaltung von Widerspruchs- und Präferenzprozessen einfließen."
+                            },
                             {
                                 "href": "https://www.edpb.europa.eu/system/files/2024-10/edpb_guidelines_202401_legitimateinterest_en.pdf",
                                 "rel": "reference"
