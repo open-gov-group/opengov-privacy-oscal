@@ -1127,15 +1127,18 @@
                         "links": [
                             {
                                 "href": "#REG-01",
-                                "rel": "related-control"
+                                "rel": "related-control",
+                                "text": "Begründung: Rechtsgrundlagen werden im VVT dokumentiert; REG-01 ist als “zentrale Referenz für DPIA,"
                             },
                             {
                                 "href": "#REG-02",
-                                "rel": "related-control"
+                                "rel": "related-control",
+                                "text": "Begründung: Einheitliche Erfassung von Rechtsgrundlagen hängt direkt an der VVT-Methodik."
                             },
                             {
                                 "href": "#DPIA-01",
-                                "rel": "related-control"
+                                "rel": "related-control",
+                                "text": "Begründung: In jeder DPIA wird nochmal geprüft, ob Rechtsgrundlagen tragfähig sind."
                             },
                             {
                                 "href": "https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2013/wp203_en.pdf",
