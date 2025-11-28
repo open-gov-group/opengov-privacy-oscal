@@ -1,0 +1,191 @@
+﻿{
+  "catalog": {
+        "uuid": "68f6e5fb-abd1-4c21-a8ba-4d0432ed081d",
+    "metadata": {
+      "title": "Open SDM / Security TOM Catalog (Mini)",
+       "last-modified": "2025-11-27T00:00:00Z",
+        "version": "0.1.0-draft",
+      "oscal-version": "1.1.2",
+        "roles": [
+            {
+                "id": "owner",
+                "title": "Katalogverantwortliche Stelle"
+            }
+        ],
+        "parties": [
+            {
+                "uuid": "a3466b97-b242-415a-99cf-83ad683ff01f",
+                "type": "organization",
+                "name": "SDM Bausteine"
+            }
+        ],
+       "remarks": "Beispielhafter SDM-/Security-TOM-Katalog zur Verknüpfung mit dem Open Privacy OSCAL Catalog (TOM-02, TOM-03 etc.)."
+    },
+    "groups": [
+      {
+        "id": "sdm-tom-access",
+        "title": "SDM Technical and Organizational Measures – Access Control",
+        "controls": [
+          {
+            "id": "SDM-TOM-AC-01",
+            "title": "Rollenbasiertes Zugriffs- und Berechtigungsmanagement",
+            "class": "technical",
+            "props": [
+              { "name": "sdm-goal", "value": "VERTRAUEN" },
+              { "name": "sdm-goal", "value": "INTEGRITAET" },
+              { "name": "sdm-baustein-id", "value": "SDM-AC-01" },
+              { "name": "mapping-hint-bsi", "value": "BSI / Grundschutz++: Access-Control-Bausteine (Platzhalter, noch zu konkretisieren)" },
+              { "name": "mapping-hint-iso27001", "value": "ISO/IEC 27001 Annex 5 & 8/9 (Access-Control-Bereich, Platzhalter)" },
+              { "name": "mapping-hint-iso27701", "value": "ISO/IEC 27701 – PIMS-spezifische Anforderungen an Zugriff/Berechtigungen (Platzhalter)" }
+            ],
+            "links": [
+              {
+                "href": "#TOM-02",
+                "rel": "related-control",
+                "text": "Begründung: TOM-02 beschreibt Zugriffs- und Berechtigungsmanagement aus Datenschutzsicht; SDM-TOM-AC-01 konkretisiert die sicherheitstechnische Umsetzung (Rollen, JML-Prozesse, Rezertifizierungen)."
+              }
+            ],
+            "parts": [
+              {
+                "id": "sdm-tom-ac-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation betreibt ein rollenbasiertes, dokumentiertes und regelmäßig überprüftes Zugriffs- und Berechtigungsmanagement für alle Systeme mit personenbezogenen Daten."
+              },
+              {
+                "id": "sdm-tom-ac-01-typical-measures",
+                "name": "typical-measures",
+                "prose": "Beispiele für technische und organisatorische Maßnahmen:",
+                "parts": [
+                  {
+                    "id": "sdm-tom-ac-01-typical-measure-01",
+                    "name": "typical-measure",
+                    "prose": "Implementierung eines Identity- und Access-Management-Systems (IAM/IDM) mit definierten Rollenprofilen, Gruppen und Berechtigungsbündeln."
+                  },
+                  {
+                    "id": "sdm-tom-ac-01-typical-measure-02",
+                    "name": "typical-measure",
+                    "prose": "Standardisierte Joiner-Mover-Leaver-Prozesse (JML) mit automatisierter Anbindung an Verzeichnisdienste, Zielsysteme und Ticketing."
+                  },
+                  {
+                    "id": "sdm-tom-ac-01-typical-measure-03",
+                    "name": "typical-measure",
+                    "prose": "Regelmäßige, dokumentierte Berechtigungsreviews durch Fachverantwortliche und System-Eigentümer, inkl. Eskalations- und Korrekturmaßnahmen."
+                  },
+                  {
+                    "id": "sdm-tom-ac-01-typical-measure-04",
+                    "name": "typical-measure",
+                    "prose": "Härtung administrativer Konten (z.B. eigene Admin-Accounts, MFA-Pflicht, Logging, Vier-Augen-Prinzip bei besonders kritischen Änderungen)."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sdm-tom-crypto",
+        "title": "SDM Technical and Organizational Measures – Encryption & Key Management",
+        "controls": [
+          {
+            "id": "SDM-TOM-CR-01",
+            "title": "Verschlüsselung von Daten in Übertragung und Speicherung",
+            "class": "technical",
+            "props": [
+              { "name": "sdm-goal", "value": "VERTRAUEN" },
+              { "name": "sdm-goal", "value": "INTEGRITAET" },
+              { "name": "sdm-goal", "value": "TRANSPORT" },
+              { "name": "sdm-baustein-id", "value": "SDM-CR-01" },
+              { "name": "mapping-hint-bsi", "value": "BSI / Grundschutz++: Kryptographie-/Speicher-Bausteine (Platzhalter)" },
+              { "name": "mapping-hint-iso27001", "value": "ISO/IEC 27001 Annex 10 (Cryptography, Platzhalter)" },
+              { "name": "mapping-hint-iso27701", "value": "ISO/IEC 27701 – Ergänzende PIMS-Anforderungen (Platzhalter)" }
+            ],
+            "links": [
+              {
+                "href": "#TOM-03",
+                "rel": "related-control",
+                "text": "Begründung: TOM-03 fordert angemessene Verschlüsselung und Pseudonymisierung aus Datenschutzperspektive; SDM-TOM-CR-01 konkretisiert die technischen Vorgaben für Daten-at-rest und Daten-in-transit."
+              }
+            ],
+            "parts": [
+              {
+                "id": "sdm-tom-cr-01-stmt",
+                "name": "statement",
+                "prose": "Die Organisation stellt sicher, dass personenbezogene Daten gemäß Schutzbedarf angemessen verschlüsselt werden – sowohl bei der Übertragung als auch bei der Speicherung."
+              },
+              {
+                "id": "sdm-tom-cr-01-typical-measures",
+                "name": "typical-measures",
+                "prose": "Beispiele für technische und organisatorische Maßnahmen:",
+                "parts": [
+                  {
+                    "id": "sdm-tom-cr-01-typical-measure-01",
+                    "name": "typical-measure",
+                    "prose": "Verpflichtende Nutzung von TLS (mindestens aktuelle Version) für alle externen Web- und API-Verbindungen, inkl. Härtung der Cipher-Suites und Zertifikatsverwaltung."
+                  },
+                  {
+                    "id": "sdm-tom-cr-01-typical-measure-02",
+                    "name": "typical-measure",
+                    "prose": "Volumen-Verschlüsselung oder Datenbank-Verschlüsselung für Server, Datenbanken, virtuelle Maschinen und mobile Datenträger, die personenbezogene Daten speichern."
+                  },
+                  {
+                    "id": "sdm-tom-cr-01-typical-measure-03",
+                    "name": "typical-measure",
+                    "prose": "Einsatz von Ende-zu-Ende-Verschlüsselung oder feldbezogener Verschlüsselung bei besonders schutzbedürftigen Daten (z.B. Gesundheitsdaten), sofern technisch und organisatorisch vertretbar."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "SDM-TOM-CR-02",
+            "title": "Kryptografisches Schlüssel- und Geheimnis-Management",
+            "class": "technical",
+            "props": [
+              { "name": "sdm-goal", "value": "VERTRAUEN" },
+              { "name": "sdm-goal", "value": "INTEGRITAET" },
+              { "name": "sdm-baustein-id", "value": "SDM-CR-02" },
+              { "name": "mapping-hint-bsi", "value": "BSI / Grundschutz++: Schlüsselschutz- und HSM-Bausteine (Platzhalter)" },
+              { "name": "mapping-hint-iso27001", "value": "ISO/IEC 27001 – Key management controls (Platzhalter)" }
+            ],
+            "links": [
+              {
+                "href": "#TOM-03",
+                "rel": "related-control",
+                "text": "Begründung: Wirksamkeit von TOM-03 hängt unmittelbar von einem kontrollierten Schlüssel- und Geheimnis-Management ab (Generierung, Rotation, Schutz, Entzug)."
+              }
+            ],
+            "parts": [
+              {
+                "id": "sdm-tom-cr-02-stmt",
+                "name": "statement",
+                "prose": "Die Organisation betreibt ein strukturiertes Management für kryptografische Schlüssel und andere Geheimnisse (z.B. API-Keys, Tokens, Passwörter) über den gesamten Lebenszyklus."
+              },
+              {
+                "id": "sdm-tom-cr-02-typical-measures",
+                "name": "typical-measures",
+                "prose": "Beispiele für technische und organisatorische Maßnahmen:",
+                "parts": [
+                  {
+                    "id": "sdm-tom-cr-02-typical-measure-01",
+                    "name": "typical-measure",
+                    "prose": "Verwendung dedizierter Secrets-Management-Lösungen oder HSMs zur sicheren Generierung, Speicherung und Rotation kryptografischer Schlüssel und Geheimnisse."
+                  },
+                  {
+                    "id": "sdm-tom-cr-02-typical-measure-02",
+                    "name": "typical-measure",
+                    "prose": "Definierte Prozesse und Intervalle für Schlüsselrotation und -widerruf (z.B. bei Kompromittierung, Mitarbeiterwechsel, Ende von Dienstleistungsverhältnissen)."
+                  },
+                  {
+                    "id": "sdm-tom-cr-02-typical-measure-03",
+                    "name": "typical-measure",
+                    "prose": "Strikte Trennung von Rollen (z.B. Systemadministration, Security, Entwicklung) und Logging von Zugriffen auf Schlüsselmaterial."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
