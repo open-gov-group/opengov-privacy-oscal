@@ -621,6 +621,33 @@
                                 "prose": "Level 1: Datenschutz wird punktuell über Einzelmaßnahmen (z.B. Datenschutzhinweise, einzelne Richtlinien) adressiert, es existiert aber kein zusammenhängendes, dokumentiertes Datenschutzmanagementsystem mit klarer Struktur, Rollen und Prozessen.\nLevel 3: Es liegt ein dokumentiertes DSMS vor (z.B. Handbuch, Managementsystem-Beschreibung) mit definiertem Geltungsbereich, Rollen, Kernprozessen (VVT, DPIA, DSR, TOM, Incident, Schulung) und Schnittstellen zu anderen Managementsystemen (z.B. ISMS, QM); Zuständigkeiten sind festgelegt und kommuniziert.\nLevel 5: Das DSMS ist in die übergreifende Governance und das Risikomanagement integriert, wird regelmäßig mittels Audits, Kennzahlen und Management-Reviews gesteuert und kontinuierlich verbessert; Änderungen aus Rechtsprechung, Aufsichtspraxis und Geschäftsmodellentwicklung werden systematisch eingearbeitet."
                             },
                             {
+                                "id": "acc-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Einrichtung und Dokumentation eines Datenschutzmanagementsystems (DSMS).",
+                                "parts": [
+                                    {
+                                        "id": "acc-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung einer zusammenhängenden DSMS-Beschreibung bzw. eines DSMS-Handbuchs mit Geltungsbereich, Zielen, Rollen und Kernprozessen (z.B. VVT, DPIA, DSR, TOM, Incident-Management, Schulung)."
+                                    },
+                                    {
+                                        "id": "acc-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation der Prozesslandschaft des DSMS inklusive Schnittstellen zu anderen Managementsystemen (z.B. ISMS, Qualitätsmanagement, Compliance)."
+                                    },
+                                    {
+                                        "id": "acc-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Governance-Strukturen für das DSMS (z.B. Verantwortliche Stelle, Steuerungsgremium, Berichtswege) und regelmäßige Reviews auf Leitungsebene."
+                                    },
+                                    {
+                                        "id": "acc-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Definition eines Verbesserungsprozesses, über den Ergebnisse aus Audits, Vorfällen, Rechtsprechung und Aufsichtspraxis in das DSMS zurückgespielt werden."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "acc-01-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es eine dokumentierte Beschreibung des Datenschutzmanagementsystems (z.B. DSMS-Handbuch) mit Geltungsbereich, Rollen und Kernprozessen?\n• Sind Schnittstellen des DSMS zu anderen Managementsystemen (z.B. Informationssicherheit, Qualitätsmanagement, Compliance) beschrieben und organisatorisch etabliert?"
@@ -667,6 +694,33 @@
                                 "id": "acc-02-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Dokumente entstehen überwiegend anlassbezogen und verstreut (Dateiserver, E-Mail, lokale Ablagen); es gibt keine einheitlichen Regeln, welche Nachweise vorzuhalten sind, wie sie versioniert und wie lange sie aufbewahrt werden müssen.\nLevel 3: Ein Dokumentationskonzept bzw. eine Policy legt fest, welche Datenschutzdokumente (z.B. VVT, DPIA, TOM-Übersichten, Richtlinien, Verträge, Protokolle) in welcher Struktur, mit welchen Verantwortlichkeiten, Versionierungs- und Aufbewahrungsregeln zu führen sind; zentrale Ablageorte/Tools sind definiert.\nLevel 5: Das Dokumentationskonzept ist in Tools, Workflows und Rollen verankert; regelmäßige Qualitätssicherungen (Stichproben, Metadaten-Checks) stellen Vollständigkeit und Aktualität sicher; Auswertungen (z.B. Dokument-Alter, Lücken, Inkonsistenzen) fließen in Verbesserungsmaßnahmen ein."
+                            },
+                            {
+                                "id": "acc-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für ein strukturiertes Datenschutz-Dokumentationskonzept.",
+                                "parts": [
+                                    {
+                                        "id": "acc-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Verabschiedung einer Dokumentationspolicy, die festlegt, welche Datenschutzdokumente (z.B. VVT, TOM-Übersichten, DPIA, Richtlinien, Verträge, Protokolle) zu führen sind und welche Mindestinhalte sie haben."
+                                    },
+                                    {
+                                        "id": "acc-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition zentraler Ablageorte bzw. Tools (z.B. VVT-Tool, Policy-Repository, DSMS-Plattform) mit einheitlicher Struktur (Ordner/Metadaten) und klaren Zugriffsrechten."
+                                    },
+                                    {
+                                        "id": "acc-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Regeln für Versionierung, Freigabe und Änderungskontrolle von Datenschutzdokumenten (z.B. Versionsnummern, Freigabe-Workflow, Änderungsprotokoll)."
+                                    },
+                                    {
+                                        "id": "acc-02-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von Aufbewahrungs- und Löschfristen für Datenschutzdokumente und Nachweise sowie Durchführung regelmäßiger Qualitätssicherungen (z.B. Stichproben, Metadaten-Checks)."
+                                    }
+                                ]
                             },
                             {
                                 "id": "acc-02-questions",
@@ -717,6 +771,33 @@
                                 "prose": "Level 1: Es existiert keine Übersicht, welche internen Maßnahmen und Dokumente welchen DSGVO-Anforderungen zugeordnet sind; Nachweise müssen bei Prüfungen mühsam zusammengesucht werden.\nLevel 3: Eine Compliance-Matrix bzw. ein Mapping existiert, in dem zentrale Anforderungen (z.B. Art. 5, 6, 24, 25, 30, 32, 35, 37 ff.) den relevanten Policies, Prozessen, Kontrollen und Nachweisen zugeordnet sind; dieses Mapping wird gepflegt und für Audits sowie Management-Reporting genutzt.\nLevel 5: Das Mapping ist in Tools/DSMS integriert; Änderungen an Anforderungen oder internen Kontrollen werden automatisiert oder workflowbasiert reflektiert; Auswertungen (z.B. Lücken, Überdeckungen, Reifegrade) dienen als Grundlage für Programmplanung und Priorisierung von Maßnahmen."
                             },
                             {
+                                "id": "acc-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für Rechenschaftsnachweise und ein DSGVO-Compliance-Mapping.",
+                                "parts": [
+                                    {
+                                        "id": "acc-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Aufbau einer DSGVO-Compliance-Matrix oder eines vergleichbaren Mappings, das zentrale Anforderungen (z.B. Art. 5, 6, 24, 25, 30, 32, 35, 37 ff.) den relevanten Policies, Prozessen, Kontrollen und Nachweisen zuordnet."
+                                    },
+                                    {
+                                        "id": "acc-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Verantwortlichkeiten und Prozessen zur Pflege des Mappings (z.B. bei neuen Anforderungen, neuen Kontrollen oder geänderten Verfahren)."
+                                    },
+                                    {
+                                        "id": "acc-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Nutzung der Compliance-Matrix für interne und externe Audits (Vorbereitung von Dossiers, Bereitstellung von Nachweisen, Beantwortung von Prüffragen)."
+                                    },
+                                    {
+                                        "id": "acc-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Auswertung des Mappings (z.B. Lücken, Überdeckungen, Reifegrade) als Basis für Programmplanung und Priorisierung von Verbesserungsmaßnahmen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "acc-03-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es eine DSGVO-Compliance-Matrix oder ein vergleichbares Mapping, das zeigt, welche Kontrollen und Nachweise welche rechtlichen Anforderungen abdecken?\n• Wird dieses Mapping bei Änderungen (z.B. neue Leitlinien, Urteile, interne Prozessänderungen) aktualisiert und für Audits bzw. Managementberichte genutzt?"
@@ -765,6 +846,33 @@
                                 "prose": "Level 1: Interne Prüfungen zu Datenschutz finden unstrukturiert oder nur anlassbezogen (z.B. nach Vorfällen oder externen Audits) statt; es gibt keinen Auditplan und keine formellen Management-Reviews.\nLevel 3: Es existiert ein Auditprogramm für Datenschutz (z.B. jährlicher Plan), das relevante Bereiche und Themen risikobasiert abdeckt; Ergebnisse werden dokumentiert, Maßnahmen verfolgt und in einem formellen Management-Review (mind. jährlich) auf Leitungsebene bewertet.\nLevel 5: Audit- und Review-Ergebnisse sind eng mit Risikomanagement, Maßnahmenplanung und Budgetierung verknüpft; Trends und wiederkehrende Findings fließen in Governance-, Architektur- und Kulturmaßnahmen ein; es gibt klar definierte KPIs zu Auditabdeckung, Maßnahmenumsetzung und Wirksamkeit."
                             },
                             {
+                                "id": "acc-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für interne Datenschutz-Audits und Management-Reviews.",
+                                "parts": [
+                                    {
+                                        "id": "acc-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung eines risikobasierten Auditprogramms für Datenschutz (z.B. jährlicher Auditplan) mit definiertem Umfang, Themen, Frequenz und Verantwortlichkeiten."
+                                    },
+                                    {
+                                        "id": "acc-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Verwendung standardisierter Audit-Checklisten und -Vorlagen, die wesentliche DSMS-Bausteine (VVT, DPIA, DSR, TOM, Incident, Schulung, Transfers etc.) abdecken."
+                                    },
+                                    {
+                                        "id": "acc-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung formeller Management-Reviews (mindestens jährlich) mit strukturierter Agenda (z.B. Audit-Ergebnisse, Kennzahlen, wesentliche Risiken, Maßnahmenstatus) und dokumentierten Beschlüssen."
+                                    },
+                                    {
+                                        "id": "acc-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Tracking von Audit-Feststellungen und vereinbarten Maßnahmen (z.B. in einem Maßnahmenregister) inklusive Status, Fristen und Wirksamkeitskontrolle."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "acc-04-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es ein dokumentiertes Programm für interne Datenschutz-Audits (inkl. Umfang, Frequenz, Verantwortlichkeiten) und werden die Ergebnisse in einem formellen Management-Review behandelt?\n• Werden Auditfeststellungen und vereinbarte Maßnahmen nachverfolgt (z.B. Tracking von Status und Wirksamkeit) und fließen sie in die Weiterentwicklung des DSMS ein?"
@@ -811,6 +919,33 @@
                                 "id": "acc-05-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Entscheidungen mit erheblicher Datenschutzrelevanz (z.B. zu Rechtsgrundlagen, berechtigten Interessen, Profiling, neuen Technologien) werden nur knapp oder gar nicht dokumentiert; Begründungen sind im Nachhinein schwer nachzuvollziehen.\nLevel 3: Es existieren standardisierte Vorlagen und Prozesse zur Dokumentation von Entscheidungs- und Risikoabwägungen (z.B. LIAs, DPIAs, Risk-Acceptance-Forms); wesentliche Annahmen, Alternativen, Schutzmaßnahmen und Gründe für die Entscheidung werden festgehalten und versioniert archiviert.\nLevel 5: Dokumentierte Abwägungen werden regelmäßig überprüft (z.B. bei Änderungen der Verarbeitung, neuer Rechtsprechung oder Vorfällen); Querverbindungen zu anderen Artefakten (VVT, TOM, Verträge, Richtlinien) sind hergestellt; Musterentscheidungen werden gepflegt und dienen als Referenz für neue Fälle."
+                            },
+                            {
+                                "id": "acc-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Dokumentation von Entscheidungs- und Risikoabwägungen.",
+                                "parts": [
+                                    {
+                                        "id": "acc-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einführung standardisierter Vorlagen für wesentliche Entscheidungs- und Risikoabwägungen (z.B. Legitimate-Interest-Assessments, DPIA-Entscheidungen, Risk-Acceptance-Forms)."
+                                    },
+                                    {
+                                        "id": "acc-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung eines Prozesses zur Erstellung, Prüfung und Freigabe solcher Abwägungsdokumente sowie zentrale, revisionssichere Ablage."
+                                    },
+                                    {
+                                        "id": "acc-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Herstellung von Querverweisen zwischen Abwägungen und anderen Artefakten (z.B. VVT, TOM, Verträgen, Richtlinien), um Entscheidungen im Kontext nachvollziehen zu können."
+                                    },
+                                    {
+                                        "id": "acc-05-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Überprüfung zentraler Abwägungen (z.B. LIAs, DPIAs, akzeptierte Restrisiken) bei geänderten Rahmenbedingungen (Prozesse, Technik, Rechtsprechung, Aufsichtsleitlinien)."
+                                    }
+                                ]
                             },
                             {
                                 "id": "acc-05-questions",
@@ -1480,6 +1615,33 @@
                                 "prose": "Level 1: Es existiert kein oder nur ein rudimentäres Verzeichnis; Einträge sind unvollständig, veraltet oder decken nur ausgewählte Bereiche ab.\nLevel 3: Es liegt ein vollständiges Verzeichnis für die relevanten Verarbeitungstätigkeiten vor, das die Mindestangaben nach Art. 30 DSGVO enthält und bei organisatorischen oder technischen Änderungen aktualisiert wird.\nLevel 5: Das Verzeichnis ist in Tools und Prozesse integriert (z.B. Workflow-/Ticket-/Projekttools); es dient als zentrale Referenz für DPIA, TOM, DSR, XFER und Audits und wird über definierte KPIs (Vollständigkeit, Aktualität, Qualitätsprüfungen) gesteuert."
                             },
                             {
+                                "id": "reg-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Einrichtung und Pflege eines Verzeichnisses von Verarbeitungstätigkeiten nach Art. 30 DSGVO.",
+                                "parts": [
+                                    {
+                                        "id": "reg-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einführung eines zentralen Verzeichnisses von Verarbeitungstätigkeiten (z.B. in einem Tool oder strukturierten Dokument), das alle relevanten Verarbeitungstätigkeiten der Organisation abbildet."
+                                    },
+                                    {
+                                        "id": "reg-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Verwendung standardisierter Eintrags-Templates, die die Mindestinhalte nach Art. 30 DSGVO (Zwecke, Kategorien, Empfänger, Drittlandtransfers, Löschfristen, TOMs etc.) sicherstellen."
+                                    },
+                                    {
+                                        "id": "reg-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Zuordnung jeder Verarbeitungstätigkeit zu verantwortlichen Organisationseinheiten / Rollen (z.B. Fachbereichsverantwortliche, Process Owner)."
+                                    },
+                                    {
+                                        "id": "reg-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines laufenden Aktualisierungsprozesses, der Änderungen in Prozessen, Systemen, Dienstleistern oder Rechtsgrundlagen zeitnah im Verzeichnis nachzieht."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "reg-01-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Deckt das Verzeichnis von Verarbeitungstätigkeiten alle wesentlichen Verarbeitungstätigkeiten der Organisation ab und enthält es die Mindestangaben nach Art. 30 DSGVO?\n• Existiert ein gelebter Prozess, um das Verzeichnis bei Änderungen von Prozessen, Systemen oder Dienstleistern zeitnah zu aktualisieren?"
@@ -1526,6 +1688,33 @@
                                 "id": "reg-02-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Fachbereiche erfassen Verarbeitungstätigkeiten nach eigenem Verständnis; es gibt keine einheitlichen Vorgaben zum Detaillierungsgrad, zu Begriffen oder Verantwortlichkeiten; die Qualität der Einträge ist stark uneinheitlich.\nLevel 3: Leitlinien, Templates und Beispiele definieren, was als Verarbeitungstätigkeit gilt, welche Angaben erforderlich sind und wer für welche Einträge verantwortlich ist; DSB/Datenschutzkoordination unterstützt und prüft.\nLevel 5: Methodik und Rollen sind mit Projekt-, Change- und Prozessmanagement verzahnt; Schulungen und regelmäßige Reviews sichern ein konsistentes Verständnis; Erfahrungen aus Audits, DSR, DPIA und Vorfällen führen zu Anpassungen der Methodik."
+                            },
+                            {
+                                "id": "reg-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Definition von Methodik und Verantwortlichkeiten für Verarbeitungstätigkeiten.",
+                                "parts": [
+                                    {
+                                        "id": "reg-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung einer Leitlinie/Methodik, die festlegt, was als Verarbeitungstätigkeit gilt, welches Abstraktionsniveau verwendet wird und welche Angaben je Eintrag erforderlich sind."
+                                    },
+                                    {
+                                        "id": "reg-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung von Templates, Beispielen und Glossar (Begriffe, Kategorien, typische Fehler), um Fachbereiche bei der einheitlichen Beschreibung von Verarbeitungstätigkeiten zu unterstützen."
+                                    },
+                                    {
+                                        "id": "reg-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Definition einer RACI-/Verantwortlichkeitsmatrix für Anlage, Pflege und Freigabe von Einträgen (z.B. Fachbereich, Datenschutzkoordination, DSB, IT)."
+                                    },
+                                    {
+                                        "id": "reg-02-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung von Schulungen/Workshops für Process Owner und Fachbereiche zur Anwendung der Methodik und zur Sicherstellung eines konsistenten Verständnisses."
+                                    }
+                                ]
                             },
                             {
                                 "id": "reg-02-questions",
@@ -1586,6 +1775,33 @@
                                 "prose": "Level 1: Auftragsverarbeiter-Tätigkeiten werden nicht gesondert dokumentiert; Kundenverträge und technische Implementierungen sind nur punktuell mit einem Verzeichnis verknüpft.\nLevel 3: Es existiert ein separates, strukturiertes Verzeichnis für Auftragsverarbeitungen nach Art. 30(2), das Kunden, Zwecke, Datenkategorien, Unterauftragsverhältnisse und relevante Systeme abbildet.\nLevel 5: Das Verzeichnis der Auftragsverarbeitungen ist mit Vertragsmanagement, Servicekatalogen, TOM-Dokumentation und Dienstleister-Controlling verknüpft und wird aktiv für Risiko- und Kapazitätssteuerung genutzt."
                             },
                             {
+                                "id": "reg-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für das Verzeichnis von Verarbeitungstätigkeiten als Auftragsverarbeiter nach Art. 30 Abs. 2 DSGVO.",
+                                "parts": [
+                                    {
+                                        "id": "reg-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Anlage eines separaten oder gesondert gekennzeichneten Verzeichnisses für Verarbeitungstätigkeiten, in denen die Organisation als Auftragsverarbeiter tätig ist."
+                                    },
+                                    {
+                                        "id": "reg-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Strukturierung der Einträge nach Auftraggebern/Kunden, Leistungen/Services und Verarbeitungszwecken, inklusive relevanter Systeme, Unterauftragsverhältnisse und Datenkategorien."
+                                    },
+                                    {
+                                        "id": "reg-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Verknüpfung der Auftragsverarbeiter-Einträge mit den zugrundeliegenden Verträgen (Art.-28-Vereinbarungen), TOM-Dokumentation und ggf. SLA-/Servicekatalogen."
+                                    },
+                                    {
+                                        "id": "reg-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Überprüfung der Einträge bei Vertragsänderungen, neuen Leistungen oder On-/Offboarding von Kunden."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "reg-03-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Führt die Organisation ein separates Verzeichnis für Verarbeitungstätigkeiten als Auftragsverarbeiter nach Art. 30(2) DSGVO?\n• Sind die Einträge so strukturiert, dass sie einen klaren Bezug zu Kundenverträgen, technischen Umsetzungen und Unterauftragsverhältnissen erlauben?"
@@ -1640,6 +1856,33 @@
                                 "prose": "Level 1: Es existieren nur fragmentarische oder veraltete Übersichten über Systeme und Schnittstellen; Datenflüsse sind überwiegend implizites Wissen einzelner Personen.\nLevel 3: Es gibt eine dokumentierte System- und Datenlandkarte (z.B. Diagramme, Register), die wesentliche Systeme, Schnittstellen, Empfänger und Drittländer abbildet und mit dem VVT konsistent ist.\nLevel 5: Datenflüsse sind in Architektur- und Sicherheitsdokumentation integriert; Änderungen in Systemen/Schnittstellen aktualisieren automatisiert oder workflowbasiert die Datenlandkarte; sie wird aktiv für DPIA, XFER, TOM und Incident-Analysen genutzt."
                             },
                             {
+                                "id": "reg-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Erstellung einer System- und Datenlandkarte auf Basis des Verzeichnisses von Verarbeitungstätigkeiten.",
+                                "parts": [
+                                    {
+                                        "id": "reg-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung einer Übersicht über eingesetzte Anwendungen, Systeme und Datenbestände, inklusive ihrer Rollen in den Verarbeitungstätigkeiten (z.B. führendes System, Fachverfahren, Archiv, Schnittstelle)."
+                                    },
+                                    {
+                                        "id": "reg-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation von Datenflüssen zwischen Systemen, Schnittstellen und Empfängern (inkl. Drittländer) in Form von Diagrammen oder Datenflussregistern."
+                                    },
+                                    {
+                                        "id": "reg-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Abgleich der System-/Datenlandkarte mit dem Verzeichnis von Verarbeitungstätigkeiten (z.B. Prüfung, ob jede wesentliche Schnittstelle und jeder Empfänger im VVT referenziert ist)."
+                                    },
+                                    {
+                                        "id": "reg-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Nutzung der System-/Datenlandkarte als Grundlage für DPIA, TOM-Planung, Incident-Analysen und Bewertung internationaler Transfers (XFER)."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "reg-04-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es eine aktuelle, mit dem Verzeichnis abgestimmte System- und Datenlandkarte, die wesentliche Informationsflüsse (inkl. Drittländer) sichtbar macht?\n• Wird diese Datenlandkarte konkret in Risikoanalysen, DPIAs, Transferbewertungen und TOM-Planung eingesetzt?"
@@ -1686,6 +1929,33 @@
                                 "id": "reg-05-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Aktualisierungen erfolgen unkoordiniert; es gibt keine regelmäßige Überprüfung des Verzeichnisses; Fehler fallen meist erst bei Anfragen von Betroffenen oder Aufsichtsbehörden auf.\nLevel 3: Es existieren definierte Anlässe und Zyklen für Aktualisierungen und Reviews (z.B. jährlich, bei Projekten, bei Prozess-/Systemänderungen); es werden Stichproben und Plausibilitätsprüfungen durchgeführt; Erfahrungen aus Anfragen/Audits werden eingearbeitet.\nLevel 5: Qualität und Nutzung des Verzeichnisses werden über Kennzahlen (z.B. Änderungsrate, Fehlerquote, Zeit zur Bereitstellung von Auskünften gegenüber Behörden) gesteuert; Verbesserungen in Prozessen, Tools und Schulungen werden daraus abgeleitet."
+                            },
+                            {
+                                "id": "reg-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für Pflege, Qualitätssicherung und Nutzung des Verzeichnisses von Verarbeitungstätigkeiten.",
+                                "parts": [
+                                    {
+                                        "id": "reg-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Definition klarer Aktualisierungsanlässe (z.B. neue Verfahren, Systemwechsel, neue Dienstleister, wesentliche Prozessänderungen) und fester Reviewzyklen (z.B. jährliche Überprüfung durch Fachbereiche und Datenschutz)."
+                                    },
+                                    {
+                                        "id": "reg-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung von Stichproben und Plausibilitätsprüfungen (z.B. Abgleich mit Projektlisten, Systeminventar, Verträgen), um Vollständigkeit und Qualität der Einträge zu sichern."
+                                    },
+                                    {
+                                        "id": "reg-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation von Änderungen im Verzeichnis (z.B. Änderungsprotokoll, Versionshistorie) und Nachvollziehbarkeit, welche Rolle/Einheit die Anpassung vorgenommen hat."
+                                    },
+                                    {
+                                        "id": "reg-05-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Nachweisliche Nutzung des Verzeichnisses als zentrale Informationsquelle bei Anfragen von Aufsichtsbehörden, internen Audits, DPIA-Projekten und der Planung von Datenschutzmaßnahmen."
+                                    }
+                                ]
                             },
                             {
                                 "id": "reg-05-questions",
@@ -1746,7 +2016,69 @@
                             {
                                 "id": "tom-01-maturity",
                                 "name": "maturity-hints",
-                                "prose": "Level 1: Schutzbedarfs- und Risikoeinschätzungen erfolgen unsystematisch oder nur im Rahmen einzelner Projekte; TOMs werden primär aus Standardlisten übernommen, ohne klare Nachvollziehbarkeit zur Risikobewertung. Level 3: Es existiert eine dokumentierte Methodik zur Schutzbedarfs- und Risikoanalyse (z.B. nach SDM/BSI), die für relevante Prozesse und IT-Systeme angewendet und mit einer TOM-Liste verknüpft wird; Ergebnisse werden versioniert dokumentiert und regelmäßig überprüft. Level 5: Risikobewertungen sind in DSMS/ISMS, DPIA, Lieferanten- und Incident-Daten integriert; Kennzahlen und wiederkehrende Schwachstellen führen systematisch zu Anpassungen der TOMs, Priorisierung von Maßnahmen und Management-Entscheidungen."
+                                "prose": "CNIL-Reifegradmodell mit Level 1, 3 und 5.",
+                                "parts": [
+                                    {
+                                        "id": "tom-01-maturity-level-01",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "1"
+                                            }
+                                        ],
+                                        "prose": "Level 1: Schutzbedarfs- und Risikoeinschätzungen erfolgen unsystematisch oder nur im Rahmen einzelner Projekte; TOMs werden primär aus Standardlisten übernommen, ohne klare Nachvollziehbarkeit zur Risikobewertung."
+                                    },
+                                    {
+                                        "id": "tom-01-maturity-level-03",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "3"
+                                            }
+                                        ],
+                                        "prose": "Level 3: Es existiert eine dokumentierte Methodik zur Schutzbedarfs- und Risikoanalyse (z.B. nach SDM/BSI), die für relevante Prozesse und IT-Systeme angewendet und mit einer TOM-Liste verknüpft wird; Ergebnisse werden versioniert dokumentiert und regelmäßig überprüft."
+                                    },
+                                    {
+                                        "id": "tom-01-maturity-level-05",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "5"
+                                            }
+                                        ],
+                                        "prose": "Level 5: Risikobewertungen sind in DSMS/ISMS, DPIA, Lieferanten- und Incident-Daten integriert; Kennzahlen und wiederkehrende Schwachstellen führen systematisch zu Anpassungen der TOMs, Priorisierung von Maßnahmen und Management-Entscheidungen."
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "tom-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für Schutzbedarfsfeststellung und risikobasierte Ableitung von TOMs.",
+                                "parts": [
+                                    {
+                                        "id": "tom-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einführung einer dokumentierten Methodik für Schutzbedarfs- und Risikoanalysen (z.B. angelehnt an SDM oder BSI-Standard), inklusive Definition von Schutzbedarfskategorien und Bewertungskriterien."
+                                    },
+                                    {
+                                        "id": "tom-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung strukturierter Schutzbedarfs- bzw. Risikoanalysen für wesentliche Verarbeitungstätigkeiten und IT-Systeme, mit nachvollziehbarer Dokumentation von Bedrohungen, Schwachstellen und möglichen Auswirkungen."
+                                    },
+                                    {
+                                        "id": "tom-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Verknüpfung der Ergebnisse aus Schutzbedarfs-/Risikobewertung mit einer TOM-Liste oder einem Maßnahmenkatalog, einschließlich Begründung, warum bestimmte Maßnahmen gewählt bzw. nicht gewählt wurden."
+                                    },
+                                    {
+                                        "id": "tom-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Auslösern und Zyklen für Aktualisierungen (z.B. neue Systeme, Prozessänderungen, Vorfälle, neue Bedrohungslage) sowie Durchführung und Dokumentation regelmäßiger Reviews der Risikobewertungen."
+                                    }
+                                ]
                             },
                             {
                                 "id": "tom-01-questions",
@@ -1797,6 +2129,33 @@
                                 "prose": "Level 1: Berechtigungen werden überwiegend manuell und ohne einheitliche Rollenmodelle vergeben; Joiner-Mover-Leaver-Prozesse sind unklar oder werden nicht konsistent umgesetzt; regelmäßige Rezertifizierungen finden kaum statt. Level 3: Es existiert eine dokumentierte Access-Control-Policy mit Rollen- und Rechtekonzept; Berechtigungen werden über definierte Joiner-Mover-Leaver-Prozesse vergeben und entzogen, und es finden regelmäßige, dokumentierte Rezertifizierungen der Zugriffsrechte statt. Level 5: Das Berechtigungsmanagement ist weitgehend automatisiert (z.B. über IAM/IDM), mit fachlich verantworteten Rollen, risikobasierten Review-Zyklen und Kennzahlen (z.B. Anzahl veralteter oder überhöhter Berechtigungen), die für kontinuierliche Verbesserungen genutzt werden."
                             },
                             {
+                                "id": "tom-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für ein systematisches Zugriffs- und Berechtigungsmanagement.",
+                                "parts": [
+                                    {
+                                        "id": "tom-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung und Verabschiedung einer Access-Control-Policy mit Rollen- und Rechtekonzept, inklusive Prinzip der geringsten Rechte, Funktions- und Aufgaben­trennung sowie Vorgaben für besonders schutzbedürftige Daten."
+                                    },
+                                    {
+                                        "id": "tom-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Implementierung standardisierter Joiner-Mover-Leaver-Prozesse für die Vergabe, Änderung und Entziehung von Berechtigungen, idealerweise unterstützt durch ein IAM/IDM-System."
+                                    },
+                                    {
+                                        "id": "tom-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Einführung regelmäßiger, dokumentierter Berechtigungsreviews (Rezertifizierungen) durch fachlich verantwortliche Rollen, mit klaren Fristen und Nachverfolgung von Korrekturmaßnahmen."
+                                    },
+                                    {
+                                        "id": "tom-02-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von Standardrollen und -profilen für typische Funktionen (z.B. Sachbearbeitung, Administration, Support) und Minimierung individueller Einzelrechte; Einsatz starker Authentisierungsverfahren (z.B. MFA) für sensible Zugriffe."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "tom-02-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Bestehen dokumentierte Rollen- und Berechtigungskonzepte (inklusive Joiner-Mover-Leaver-Prozess) für Systeme mit personenbezogenen Daten?\n• Werden Zugriffsrechte regelmäßig formal rezertifiziert und bei Rollenwechseln oder Austritten zeitnah angepasst oder entzogen?"
@@ -1843,6 +2202,33 @@
                                 "id": "tom-03-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Verschlüsselung und Pseudonymisierung werden punktuell eingesetzt (z.B. Festplattenverschlüsselung), ohne konsistente Vorgaben zu Einsatzbereichen, Verfahren und Schlüssellebenszyklus; Verantwortlichkeiten sind unklar. Level 3: Es existieren dokumentierte Vorgaben (Policy/Konzept), wann und wie Verschlüsselung und ggf. Pseudonymisierung einzusetzen sind; Schlüssel- und Passwortmanagement (Erzeugung, Aufbewahrung, Rotation, Notzugriff) ist geregelt und wird nachvollziehbar protokolliert. Level 5: Einsatz von Verschlüsselung und Pseudonymisierung ist risikobasiert für relevante Datenklassen und Verarbeitungsketten definiert; Schlüsselmanagement ist technisch und organisatorisch gehärtet (z.B. HSM, Role Split), und Wirksamkeit wird regelmäßig geprüft (z.B. durch Tests, Audits, Incident-Auswertungen)."
+                            },
+                            {
+                                "id": "tom-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für Verschlüsselung, Pseudonymisierung und Schlüsselmanagement.",
+                                "parts": [
+                                    {
+                                        "id": "tom-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Verabschiedung einer Verschlüsselungs- und Pseudonymisierungsrichtlinie, die Einsatzbereiche (z.B. Daten-at-rest, Daten-in-transit, mobile Endgeräte, Backups) und akzeptierte Verfahren/Algorithmen beschreibt."
+                                    },
+                                    {
+                                        "id": "tom-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Umsetzung von Verschlüsselung für Transportwege (z.B. TLS für Web- und Mailkommunikation) und Speichermedien (z.B. Festplatten, Datenbanken, mobile Datenträger) entsprechend Schutzbedarf und Risiko."
+                                    },
+                                    {
+                                        "id": "tom-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines strukturierten Schlüssel- und Kennwortmanagements (Erzeugung sicherer Schlüssel, sichere Ablage, Rotation, Widerruf, Notzugriffe) mit klar definierten Verantwortlichkeiten und Protokollierung."
+                                    },
+                                    {
+                                        "id": "tom-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Konzeption und Einsatz von Pseudonymisierung bzw. Anonymisierung bei Auswertungen, Tests und Entwicklung, um produktive personenbezogene Daten zu minimieren oder zu ersetzen."
+                                    }
+                                ]
                             },
                             {
                                 "id": "tom-03-questions",
@@ -1899,6 +2285,33 @@
                                 "prose": "Level 1: Protokollierung erfolgt uneinheitlich und ohne klare Vorgaben; Logs werden selten oder nur anlassbezogen ausgewertet; Aufbewahrungsfristen und Zugriffe auf Logs sind nicht geregelt. Level 3: Es existieren Logging- und Monitoring-Konzepte mit definierten Ereignistypen, Schweregraden, Aufbewahrungsfristen und Zugriffsregelungen; sicherheitsrelevante Ereignisse werden über geeignete Werkzeuge (z.B. SIEM/Monitoring) regelmäßig ausgewertet und in den Incident-Management-Prozess eingespeist. Level 5: Protokollierung und Monitoring sind risikobasiert auf kritische Systeme und Prozesse ausgerichtet; es gibt Use-Cases und Korrelationen zur Erkennung von Datenschutzvorfällen; Kennzahlen (z.B. Time-to-Detect, Time-to-Respond) werden erhoben und zur kontinuierlichen Verbesserung von TOMs und Incident-Prozessen genutzt."
                             },
                             {
+                                "id": "tom-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für Protokollierung, Monitoring und Erkennung sicherheitsrelevanter Ereignisse.",
+                                "parts": [
+                                    {
+                                        "id": "tom-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung eines Logging- und Monitoring-Konzepts, das festlegt, welche Ereignisse in welchen Systemen mit personenbezogenen Daten zu protokollieren sind, einschließlich Umfang, Detailgrad, Aufbewahrungsdauer und Zugriffsrechten."
+                                    },
+                                    {
+                                        "id": "tom-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Implementierung zentraler Log-Sammlung und Auswertung (z.B. SIEM oder zentrales Log-Management), inklusive Härtung der Log-Infrastruktur und Absicherung vor Manipulation."
+                                    },
+                                    {
+                                        "id": "tom-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von Use-Cases, Korrelationsregeln oder Alarmierungsmechanismen zur Erkennung typischer Datenschutzvorfälle (z.B. unübliche Zugriffe, Massenexporte, fehlgeschlagene Logins) und Übergabe in den Incident-Management-Prozess."
+                                    },
+                                    {
+                                        "id": "tom-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Überprüfung der Wirksamkeit von Logging und Monitoring (z.B. Durchstich-Tests, Auswertung von Time-to-Detect und Time-to-Respond) sowie Anpassung des Konzepts auf Basis von Vorfällen und Audits."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "tom-04-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Sind Umfang, Aufbewahrungsfristen und Zugriffsrechte für Logdaten in Richtlinien oder Konzepten dokumentiert und werden sicherheitsrelevante Logs regelmäßig ausgewertet?\n• Bestehen definierte Use-Cases bzw. Regeln, um mögliche Datenschutzverletzungen (z.B. unbefugte Zugriffe, Massenexporte) automatisiert oder zeitnah zu erkennen und in den Incident-Prozess zu überführen?"
@@ -1953,6 +2366,33 @@
                                 "prose": "Level 1: Backups werden nur punktuell oder ohne klare Strategie durchgeführt; Wiederherstellungstests finden selten oder gar nicht statt; Abhängigkeiten zu kritischen Prozessen sind nicht systematisch analysiert. Level 3: Es existieren dokumentierte Backup- und Restore-Konzepte inklusive RPO/RTO-Vorgaben für kritische Systeme; Backups werden regelmäßig überwacht und es finden dokumentierte Wiederherstellungstests statt; Business-Continuity- oder Notfallpläne berücksichtigen Systeme mit personenbezogenen Daten. Level 5: Backup-, Restore- und Business-Continuity-Maßnahmen werden regelmäßig anhand von Tests, Übungen und Vorfällen bewertet und verbessert; Kennzahlen (z.B. Wiederherstellungsdauer, Datenverlust) werden erhoben und in Risiko- und Investitionsentscheidungen einbezogen."
                             },
                             {
+                                "id": "tom-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für Backup, Wiederherstellung und Betriebsfortführung bezogen auf personenbezogene Daten.",
+                                "parts": [
+                                    {
+                                        "id": "tom-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung einer Backup-Policy mit Definition von Sicherungszielen (RPO/RTO) für Systeme mit personenbezogenen Daten, inklusive Priorisierung besonders kritischer Anwendungen und Datenbestände."
+                                    },
+                                    {
+                                        "id": "tom-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Implementierung regelmäßiger, automatisierter Backups (inklusive Offsite- oder Cloud-Backups, Versionierung, Schutz vor unbefugtem Zugriff) und Überwachung der erfolgreichen Durchführung."
+                                    },
+                                    {
+                                        "id": "tom-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Planung und Durchführung dokumentierter Wiederherstellungstests für kritische Systeme und Daten, inklusive Auswertung der Ergebnisse und Ableitung von Verbesserungsmaßnahmen."
+                                    },
+                                    {
+                                        "id": "tom-05-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Abstimmung von Backup- und Restore-Konzepten mit Notfall- und Business-Continuity-Plänen, insbesondere zu Prioritäten, Kommunikationswegen und Verantwortlichkeiten im Störungs- oder Krisenfall."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "tom-05-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es dokumentierte Backup- und Wiederherstellungskonzepte mit definierten RPO/RTO-Vorgaben für Systeme mit personenbezogenen Daten, und werden Wiederherstellungstests regelmäßig durchgeführt und protokolliert?\n• Sind Notfall- und Betriebsfortführungspläne mit den Verfahren für Backup/Restore und den besonders schutzbedürftigen Verarbeitungstätigkeiten abgestimmt?"
@@ -1999,6 +2439,33 @@
                                 "id": "tom-06-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Entwicklung und Änderungen erfolgen ohne klar definierte Sicherheits- und Datenschutzanforderungen; Code-Reviews und Sicherheitstests finden, wenn überhaupt, nur informell und nicht systematisch statt. Level 3: Es existieren dokumentierte Secure-Development-Guidelines und Change-Management-Verfahren mit Mindestanforderungen (z.B. Code-Review, Sicherheits-/Funktionstests, Datenschutz-Check) vor Produktivsetzung; Änderungen werden nachverfolgbar dokumentiert und freigegeben. Level 5: Sicherheits- und Datenschutzanforderungen sind durchgängig im Entwicklungslebenszyklus verankert (z.B. Security-by-Design, Threat Modeling, automatisierte Security-Tests/Code-Scans); Kennzahlen zu Sicherheits- und Datenschutzfehlern fließen in die Weiterentwicklung von Entwicklungsrichtlinien, Schulungen und Tooling ein."
+                            },
+                            {
+                                "id": "tom-06-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für sichere Entwicklung und Änderungsmanagement bei Systemen mit personenbezogenen Daten.",
+                                "parts": [
+                                    {
+                                        "id": "tom-06-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Verabschiedung von Secure-Development-Guidelines, die Sicherheits- und Datenschutzanforderungen (z.B. Eingabevalidierung, Logging, Zugriffskontrolle, Privacy by Design) in allen Entwicklungsphasen beschreiben."
+                                    },
+                                    {
+                                        "id": "tom-06-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines formalen Change-Management-Prozesses für Anwendungen und Systeme mit personenbezogenen Daten, inklusive Dokumentations-, Review- und Freigabeschritten vor Produktivsetzung."
+                                    },
+                                    {
+                                        "id": "tom-06-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung technischer und fachlicher Reviews (z.B. Code-Reviews, Security-Tests, Datenschutz-Checks, ggf. Penetrationstests) für sicherheits- oder datenschutzkritische Änderungen und Neuentwicklungen."
+                                    },
+                                    {
+                                        "id": "tom-06-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Nutzung von Werkzeugen zur Qualitätssicherung und Sicherheit (z.B. statische Code-Analyse, Dependency-Scanning, automatisierte Tests) sowie Auswertung von Findings aus Vorfällen und Audits zur Weiterentwicklung der Entwicklungsrichtlinien und Schulung der Entwicklungsteams."
+                                    }
+                                ]
                             },
                             {
                                 "id": "tom-06-questions",
@@ -2063,7 +2530,69 @@
                             {
                                 "id": "dpia-01-maturity",
                                 "name": "maturity-hints",
-                                "prose": "Level 1: DPIAs werden kaum oder nur in Ausnahmefällen durchgeführt; es gibt kein konsistentes Vorgehen und keine Übersicht, für welche Vorhaben eine DPIA erforderlich wäre.\nLevel 3: Für identifizierte Hochrisiko-Verarbeitungen werden DPIAs mit definierten Schritten durchgeführt; Ergebnisse und Maßnahmen werden dokumentiert und Verantwortlichkeiten festgelegt.\nLevel 5: DPIAs sind integraler Bestandteil des Risikomanagements; Erkenntnisse fließen in TOM, Systemdesign, Schulungen und Governance ein; Kennzahlen (z.B. Anzahl, Risikolevel, Maßnahmenumsetzung) werden ausgewertet."
+                                "prose": "CNIL-Reifegradmodell mit Level 1, 3 und 5.",
+                                "parts": [
+                                    {
+                                        "id": "dpia-01-maturity-level-01",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "1"
+                                            }
+                                        ],
+                                        "prose": "Level 1: PIAs werden kaum oder nur in Ausnahmefällen durchgeführt; es gibt kein konsistentes Vorgehen und keine Übersicht, für welche Vorhaben eine DPIA erforderlich wäre."
+                                    },
+                                    {
+                                        "id": "dpia-01-maturity-level-03",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "3"
+                                            }
+                                        ],
+                                        "prose": "Level 3: Für identifizierte Hochrisiko-Verarbeitungen werden DPIAs mit definierten Schritten durchgeführt; Ergebnisse und Maßnahmen werden dokumentiert und Verantwortlichkeiten festgelegt."
+                                    },
+                                    {
+                                        "id": "dpia-01-maturity-level-05",
+                                        "name": "maturity-level",
+                                        "props": [
+                                            {
+                                                "name": "maturity-level",
+                                                "value": "5"
+                                            }
+                                        ],
+                                        "prose": "Level 5: DPIAs sind integraler Bestandteil des Risikomanagements; Erkenntnisse fließen in TOM, Systemdesign, Schulungen und Governance ein; Kennzahlen (z.B. Anzahl, Risikolevel, Maßnahmenumsetzung) werden ausgewertet."
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "dpia-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für die Durchführung von Datenschutz-Folgenabschätzungen bei Verarbeitungstätigkeiten mit hohem Risiko.",
+                                "parts": [
+                                    {
+                                        "id": "dpia-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung, dass für alle identifizierten Hochrisiko-Verarbeitungstätigkeiten eine formelle DPIA nach Art. 35 DSGVO durchzuführen ist, bevor die Verarbeitung beginnt bzw. wesentlich geändert wird."
+                                    },
+                                    {
+                                        "id": "dpia-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines standardisierten DPIA-Prozesses mit klaren Phasen (Vorbereitung, Analyse, Maßnahmenplanung, Entscheidung, Review) und definierten Rollen (Fachbereich, DSB, Informationssicherheit, ggf. Rechtsabteilung)."
+                                    },
+                                    {
+                                        "id": "dpia-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Verknüpfung des DPIA-Prozesses mit Projekt-, Produkt- und Change-Management-Prozessen, sodass DPIAs automatisch angestoßen werden (z.B. bei neuen Systemen, neuen Datenquellen, erheblichen Zweckänderungen)."
+                                    },
+                                    {
+                                        "id": "dpia-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation sämtlicher DPIA-Ergebnisse einschließlich identifizierter Risiken, geplanter und umgesetzter Maßnahmen sowie der finalen Entscheidung zum Restrisiko und zur Inbetriebnahme."
+                                    }
+                                ]
                             },
                             {
                                 "id": "dpia-01-questions",
@@ -2112,6 +2641,33 @@
                                 "id": "dpia-02-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Ob eine DPIA erforderlich ist, wird fallweise und ohne klare Kriterien entschieden; nationale Listen, Leitlinien und Branchenempfehlungen werden kaum berücksichtigt.\nLevel 3: Es existiert ein dokumentiertes Screening-Verfahren mit Checklisten und Bezug auf nationale/EDPB-Listen; Screening wird für neue/ändernde Vorhaben verbindlich durchgeführt und dokumentiert.\nLevel 5: Screening ist in Projekt-/Change-Prozesse integriert; Ergebnisse werden statistisch ausgewertet; Kriterien werden auf Basis von Aufsichtspraxis, Rechtsprechung und internen Erfahrungen regelmäßig angepasst."
+                            },
+                            {
+                                "id": "dpia-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für ein systematisches Screening zur Prüfung der DPIA-Pflicht.",
+                                "parts": [
+                                    {
+                                        "id": "dpia-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung einer DPIA-Screening-Leitlinie, die Kriterien nach Art. 35 DSGVO, EDPB-Guidelines und nationalen Positiv-/Negativlisten in konkrete Prüffragen überführt."
+                                    },
+                                    {
+                                        "id": "dpia-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung standardisierter Screening-Formulare oder Online-Checklisten, die bei neuen oder wesentlich geänderten Verarbeitungstätigkeiten verpflichtend auszufüllen sind."
+                                    },
+                                    {
+                                        "id": "dpia-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Integration des DPIA-Screenings in Projekt- und Change-Prozesse (z.B. Pflichtfeld im Projektantrag oder Change-Request) mit definierten Eskalationswegen bei „hohes Risiko“-Indikatoren."
+                                    },
+                                    {
+                                        "id": "dpia-02-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Überprüfung und Aktualisierung der Screening-Kriterien auf Basis neuer Aufsichtsleitlinien, Rechtsprechung, Branchenempfehlungen und interner Erfahrungen aus durchgeführten DPIAs."
+                                    }
+                                ]
                             },
                             {
                                 "id": "dpia-02-questions",
@@ -2170,6 +2726,33 @@
                                 "id": "dpia-03-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Inhalte und Struktur von DPIAs variieren stark; wesentliche Elemente gem. Art. 35(7) (z.B. Maßnahmenbewertung) fehlen teilweise oder sind nur oberflächlich dokumentiert.\nLevel 3: Es existieren verbindliche Templates/Tools und eine Methodik (z.B. nach CNIL/EBIOS), die Mindestinhalte und Risikoschritte festlegt; durchgeführte DPIAs orientieren sich erkennbar daran.\nLevel 5: Methodik wird regelmäßig anhand von Praxisfällen, Aufsichtsbewertungen und internen Lessons Learned weiterentwickelt; Verzahnung mit Informationssicherheit, Architektur/Security by Design und Produkt-/Prozessentwicklung ist etabliert."
+                            },
+                            {
+                                "id": "dpia-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für eine einheitliche DPIA-Methodik mit den Mindestinhalten nach Art. 35(7) DSGVO.",
+                                "parts": [
+                                    {
+                                        "id": "dpia-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung einer verbindlichen DPIA-Methodik (z.B. basierend auf CNIL/EBIOS oder nationalen Leitfäden) mit klar strukturierten Schritten für Beschreibung der Verarbeitung, Notwendigkeits- und Verhältnismäßigkeitsprüfung, Risikoanalyse und Maßnahmenbewertung."
+                                    },
+                                    {
+                                        "id": "dpia-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung standardisierter DPIA-Templates oder Tools, die alle Mindestinhalte nach Art. 35(7) DSGVO abbilden und einheitliche Bewertungsmaßstäbe (Skalen, Kategorien) vorgeben."
+                                    },
+                                    {
+                                        "id": "dpia-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung von Schulungen und Praxis-Workshops für Fachbereiche, DSB und Informationssicherheit zur Anwendung der Methodik und zu typischen Fehlern (z.B. unvollständige Risikobeschreibung, schwache Maßnahmenbegründungen)."
+                                    },
+                                    {
+                                        "id": "dpia-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Verzahnung der DPIA-Methodik mit bestehenden Risiko- und Sicherheitsprozessen (z.B. Informationssicherheits-Risikomanagement, Architektur-Reviews, TOM-Planung), um Doppelarbeit zu vermeiden und Konsistenz sicherzustellen."
+                                    }
+                                ]
                             },
                             {
                                 "id": "dpia-03-questions",
@@ -2234,6 +2817,33 @@
                                 "prose": "Level 1: DPIAs liegen vereinzelt vor, aber es gibt kein zentrales Register; Maßnahmen und Reviews werden nur lose nachgehalten.\nLevel 3: Es existiert ein zentrales DPIA-Register mit Angaben zu Status, Restrisiko, Maßnahmen und Review-Terminen; Umsetzung und Reviews werden dokumentiert.\nLevel 5: Kennzahlen aus dem Register (z.B. Anzahl Hochrisiko-DPIAs, Rest-Risiken, Umsetzungsstand von Maßnahmen) fließen in Management-Reporting und Programmplanung ein; DPIA-Reviews sind mit Projekt-/Change- und Incident-Prozessen gekoppelt."
                             },
                             {
+                                "id": "dpia-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für DPIA-Register, Maßnahmenverfolgung und regelmäßige Reviews.",
+                                "parts": [
+                                    {
+                                        "id": "dpia-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einrichtung eines zentralen DPIA-Registers, das alle durchgeführten DPIAs mit mindestens Status, Verantwortlichen, identifizierten Risiken, Maßnahmen und Review-Terminen erfasst."
+                                    },
+                                    {
+                                        "id": "dpia-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Verknüpfung der in DPIAs definierten Maßnahmen mit TOM- und Maßnahmenregistern sowie ggf. Projekten, um Umsetzung und Wirksamkeitsnachweise systematisch nachzuverfolgen."
+                                    },
+                                    {
+                                        "id": "dpia-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung klarer Kriterien und Fristen für DPIA-Reviews (z.B. periodisch alle X Jahre, bei wesentlichen Änderungen, nach sicherheitsrelevanten Vorfällen) und dokumentierte Durchführung dieser Reviews."
+                                    },
+                                    {
+                                        "id": "dpia-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Auswertung von Kennzahlen aus dem DPIA-Register (z.B. Anzahl DPIAs, Risikolevel, verbleibende Restrisiken, Umsetzungsstand von Maßnahmen) im Rahmen von Management-Reporting und Programmplanung."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "dpia-04-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es ein zentrales DPIA-Register mit Angaben zu Status, Restrisiko und Maßnahmen je DPIA?\n• Werden geplante Reviews und Aktualisierungen von DPIAs (z.B. bei wesentlichen Änderungen) terminiert, durchgeführt und dokumentiert?"
@@ -2286,6 +2896,33 @@
                                 "id": "dpia-05-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Es existieren keine klaren Eskalationsregeln; Prior Consultation wird kaum in Betracht gezogen; der DSB wird uneinheitlich eingebunden.\nLevel 3: Verfahren und Kriterien für Eskalation, DSB-Einbindung und ggf. Prior Consultation sind dokumentiert; Rollen, Entscheidungswege und Dokumentationsanforderungen sind definiert.\nLevel 5: Eskalations- und Konsultationspraxis wird regelmäßig mit Lessons Learned, Aufsichtsbehördenfeedback und Rechtsprechung abgeglichen; Musterfälle und Argumentationslinien werden gepflegt."
+                            },
+                            {
+                                "id": "dpia-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für Eskalationsverfahren und vorherige Konsultation der Aufsichtsbehörde bei hohem Restrisiko.",
+                                "parts": [
+                                    {
+                                        "id": "dpia-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Definition eines Eskalationsprozesses für DPIAs mit hohem Restrisiko, einschließlich Schwellenwerten, ab denen Entscheidungen auf eine höhere Managementebene oder in ein spezielles Gremium eskaliert werden."
+                                    },
+                                    {
+                                        "id": "dpia-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Verpflichtende Einbindung der oder des Datenschutzbeauftragten in Eskalationsfälle sowie Dokumentation seiner/ihrer Stellungnahmen und Empfehlungen."
+                                    },
+                                    {
+                                        "id": "dpia-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Erarbeitung von Verfahren und Templates für die vorherige Konsultation der Aufsichtsbehörde (Prior Consultation), einschließlich Beschreibung der Verarbeitung, der Risiken, der Maßnahmen und der Gründe, warum ein hohes Restrisiko verbleibt."
+                                    },
+                                    {
+                                        "id": "dpia-05-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentation von Korrespondenz und Rückmeldungen der Aufsichtsbehörde sowie systematische Auswertung dieser Erfahrungen für zukünftige DPIAs und Eskalationsentscheidungen."
+                                    }
+                                ]
                             },
                             {
                                 "id": "dpia-05-questions",
