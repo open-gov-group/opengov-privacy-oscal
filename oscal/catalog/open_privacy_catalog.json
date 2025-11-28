@@ -1003,6 +1003,33 @@
                                 "prose": "Level 1: Rechtsgrundlagen werden nur grob oder pauschal benannt (z.B. „Art. 6 DSGVO“), ohne systematische Zuordnung je Verarbeitungstätigkeit; eine Dokumentation erfolgt, wenn überhaupt, nur anlassbezogen.\nLevel 3: Für jede Verarbeitungstätigkeit ist im Verzeichnis von Verarbeitungstätigkeiten eine konkrete Rechtsgrundlage (inkl. Abs./Buchstabe) dokumentiert; es existiert ein Leitfaden oder Checkliste zur Auswahl von Rechtsgrundlagen, und wesentliche Änderungen von Prozessen oder Systemen lösen eine erneute Prüfung aus.\nLevel 5: Rechtsgrundlagen werden regelmäßig im Lichte von Rechtsprechung, Aufsichtsbehördenleitlinien und Geschäftsmodell-/Prozessänderungen überprüft; es existiert eine übergreifende „Legal-Basis-Strategie“ (z.B. für Marketing, HR, Plattformdienste), die mit Risiko- und DPIA-Prozessen verzahnt ist."
                             },
                             {
+                                "id": "law-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur systematischen Festlegung und Dokumentation von Rechtsgrundlagen.",
+                                "parts": [
+                                    {
+                                        "id": "law-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Verpflichtende Dokumentation der konkreten Rechtsgrundlage (inkl. Art., Abs., Buchstabe) für jede Verarbeitungstätigkeit im Verzeichnis von Verarbeitungstätigkeiten (REG)."
+                                    },
+                                    {
+                                        "id": "law-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung eines Leitfadens oder einer Checkliste zur Auswahl geeigneter Rechtsgrundlagen (inkl. Beispielen, Ausschlusskriterien und typischer Fehlkonstellationen) für Fachbereiche und Legal."
+                                    },
+                                    {
+                                        "id": "law-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Einführung eines Prüf- und Freigabeprozesses, bei dem neue oder geänderte Verarbeitungstätigkeiten nur mit geprüfter und dokumentierter Rechtsgrundlage in das Verzeichnis aufgenommen werden."
+                                    },
+                                    {
+                                        "id": "law-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Review-Zyklen (z.B. jährlich) zur Überprüfung der Rechtsgrundlagen im Lichte von Rechtsprechung, Aufsichtsleitlinien und Änderungen im Geschäftsmodell."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "law-01-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Ist für jede Verarbeitungstätigkeit im Verzeichnis eine konkrete Rechtsgrundlage (inkl. Abs./Buchstabe) dokumentiert und nachvollziehbar begründet?\n• Gibt es Leitlinien oder Checklisten zur Auswahl von Rechtsgrundlagen und werden diese bei neuen oder geänderten Verarbeitungstätigkeiten konsistent angewendet?"
@@ -1049,6 +1076,33 @@
                                 "id": "law-02-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Zwecke sind allgemein oder sehr weit gefasst (z.B. „Verbesserung unserer Services“), eine Trennung zwischen Primär- und Sekundärzwecken findet praktisch nicht statt; Kompatibilitätsprüfungen werden selten durchgeführt oder nicht dokumentiert.\nLevel 3: Zwecke sind für jede Verarbeitungstätigkeit spezifisch und verständlich formuliert und im Verzeichnis dokumentiert; für neue oder geänderte Nutzungen (Sekundärzwecke) existiert ein standardisiertes Verfahren zur Kompatibilitätsprüfung nach Art. 6(4) DSGVO mit Dokumentation der wesentlichen Erwägungen.\nLevel 5: Zweck- und Kompatibilitätsprüfungen sind in Produkt-/Projektgovernance integriert; Datenarchitektur und Prozesse unterstützen Zweckbindung technisch (z.B. Zweckkennzeichnungen, getrennte Datenräume); Ergebnisse aus Beschwerden, Vorfällen und DPIAs fließen in die Weiterentwicklung von Zweck- und Kompatibilitätsrichtlinien ein."
+                            },
+                            {
+                                "id": "law-02-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für klare Zweckdefinition und dokumentierte Zweckbindung.",
+                                "parts": [
+                                    {
+                                        "id": "law-02-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Vorgaben und Beispielen für spezifische, verständliche Zweckformulierungen (z.B. Musterzwecke je Fachbereich) und deren verpflichtende Nutzung im Verzeichnis von Verarbeitungstätigkeiten."
+                                    },
+                                    {
+                                        "id": "law-02-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Einführung eines standardisierten Verfahrens zur Kompatibilitätsprüfung bei neuen oder erweiterten Nutzungen von Daten (Sekundärzwecke) inklusive Dokumentationsvorlage für die wesentlichen Erwägungen nach Art. 6(4) DSGVO."
+                                    },
+                                    {
+                                        "id": "law-02-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Technische Unterstützung der Zweckbindung in Systemen (z.B. Zweckkennzeichnungen, getrennte Datenräume, eigene Rollen-/Rechtekonzepte für Sekundärzwecke)."
+                                    },
+                                    {
+                                        "id": "law-02-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Überprüfung von Beschwerden, Vorfällen und DPIA-Ergebnissen im Hinblick auf zu weite Zwecke oder Zweckänderungen und Anpassung der Richtlinien und Beispiele."
+                                    }
+                                ]
                             },
                             {
                                 "id": "law-02-questions",
@@ -1105,6 +1159,33 @@
                                 "prose": "Level 1: Umfang der erhobenen Daten und Speicherfristen orientieren sich vor allem an technischen oder fachlichen Wünschen; es fehlen konsistente Lösch- und Aufbewahrungsregeln; Alt- und Testdaten werden häufig dauerhaft behalten.\nLevel 3: Es existieren ein Lösch- und Aufbewahrungskonzept mit definierten Fristen je Datenkategorie/Verarbeitung sowie Vorgaben zur Datenminimierung (Pflicht-/Kann-Felder, optionale Angaben); Fristen sind mit Fachbereichen, Recht und ggf. Archiv abgestimmt und werden regelmäßig überprüft.\nLevel 5: Datenminimierung und Speicherbegrenzung sind in Fach- und Systemdesign integriert (Privacy by Design); technische Verfahren (z.B. automatisierte Lösch-/Anonymisierungsjobs, Pseudonymisierung, Aggregation) unterstützen die Umsetzung; Kennzahlen zu Datenbeständen und Löschläufen werden genutzt, um Konzept und Prozesse zu verbessern."
                             },
                             {
+                                "id": "law-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Umsetzung von Datenminimierung und Speicherbegrenzung.",
+                                "parts": [
+                                    {
+                                        "id": "law-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung eines Lösch- und Aufbewahrungskonzepts mit konkret definierten Fristen und Verantwortlichkeiten je Datenkategorie und Verarbeitungstätigkeit."
+                                    },
+                                    {
+                                        "id": "law-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Gestaltungsrichtlinien für Formulare und Eingabemasken (Pflicht-/Kann-Felder, optionale Angaben, Verzicht auf nicht erforderliche Daten) sowie Review dieser Vorgaben bei neuen Systemen/Prozessen."
+                                    },
+                                    {
+                                        "id": "law-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Technische Implementierung von Lösch- und Anonymisierungsprozessen (z.B. automatische Löschjobs, Archivierungskonzepte, Pseudonymisierung, Aggregation) mit Nachweisführung."
+                                    },
+                                    {
+                                        "id": "law-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Auswertung von Datenbeständen und Löschläufen (z.B. Volumen, Alter von Datensätzen, Ausnahmefälle) und Nutzung der Ergebnisse zur Optimierung von Fristen und Prozessen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "law-03-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es ein dokumentiertes Lösch- und Aufbewahrungskonzept mit konkreten Fristen und Verantwortlichkeiten je Datenkategorie bzw. Verarbeitungstätigkeit?\n• Werden Datenminimierung und Speicherbegrenzung bei der Gestaltung von Formularen, Systemen und Prozessen (z.B. Pflichtfelder, optionale Felder, automatische Löschung) systematisch berücksichtigt und getestet?"
@@ -1153,6 +1234,33 @@
                                 "prose": "Level 1: Besondere Kategorien und Strafdaten werden rechtlich und technisch weitgehend wie normale personenbezogene Daten behandelt; es gibt keine spezifischen Kriterien für Zulässigkeit, Erforderlichkeit oder zusätzliche Schutzmaßnahmen.\nLevel 3: Für jede Verarbeitung besonderer Kategorien oder von Strafdaten ist eine spezifische Rechtsgrundlage nach Art. 9(2) bzw. Art. 10 DSGVO dokumentiert; es existieren Vorgaben zu zusätzlichen TOMs (z.B. Zugriffsbegrenzung, Protokollierung, Trennung) und zur Notwendigkeit von DPIAs bei hohem Risiko.\nLevel 5: Verarbeitungen besonderer Kategorien/Strafdaten werden regelmäßig im Rahmen von DPIAs, Risiko-Reviews und Rechtsprüfungen bewertet; es bestehen klare Ausstiegs- oder Alternativszenarien (z.B. Aggregation, Pseudonymisierung); Missbrauchs- oder Vorfallrisiken werden aktiv überwacht und fließen in Governance und Technik zurück."
                             },
                             {
+                                "id": "law-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur rechtlichen und technischen Absicherung der Verarbeitung besonderer Kategorien personenbezogener Daten und von Strafdaten.",
+                                "parts": [
+                                    {
+                                        "id": "law-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Identifikation und Kennzeichnung aller Verarbeitungstätigkeiten mit besonderen Kategorien personenbezogener Daten bzw. Strafdaten im Verzeichnis (inkl. Zweck, Rechtsgrundlage, Kontext)."
+                                    },
+                                    {
+                                        "id": "law-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentierte Prüfverfahren für die Auswahl der spezifischen Rechtsgrundlagen nach Art. 9(2) bzw. Art. 10 DSGVO, einschließlich Einbindung von Legal und DSB."
+                                    },
+                                    {
+                                        "id": "law-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Definition zusätzlicher TOMs für diese Verarbeitungen (z.B. strengere Zugriffskonzepte, Protokollierung, Trennung der Verarbeitung, DPIA-Pflicht) und deren Abbildung in TOM- und DPIA-Dokumentation."
+                                    },
+                                    {
+                                        "id": "law-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Risiko- und Rechts-Reviews dieser Verarbeitungen (z.B. im Rahmen von DPIAs, Audits, Vorfallanalysen) und Anpassung von Maßnahmen und Rechtsgrundlagenstrategie."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "law-04-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Sind Verarbeitungen besonderer Kategorien personenbezogener Daten und von Strafdaten explizit identifiziert und mit spezifischen Rechtsgrundlagen (Art. 9(2) bzw. Art. 10 DSGVO) hinterlegt?\n• Werden für diese Verarbeitungen besondere Schutzmaßnahmen (z.B. Zugriffsbegrenzung, Protokollierung, DPIA-Pflicht) definiert, dokumentiert und regelmäßig überprüft?"
@@ -1199,6 +1307,33 @@
                                 "id": "law-05-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Einwilligungen werden mit vorangekreuzten Kästchen, in AGB-ähnlichen Textblöcken oder gebündelt eingeholt; Nachweise über erteilte Einwilligungen und Widerrufe sind schwer oder gar nicht auffindbar; Opt-out-/Widerrufsprozesse sind kompliziert.\nLevel 3: Es existieren standardisierte, geprüfte Einwilligungstexte mit klarer Trennung nach Zwecken; Prozesse und Systeme stellen sicher, dass Einwilligungen protokolliert und nachweisbar sind; Widerruf ist jederzeit über einfache Kanäle möglich und wird zeitnah in den relevanten Systemen umgesetzt.\nLevel 5: Gestaltung und Verständlichkeit von Einwilligungstexten werden regelmäßig getestet (z.B. UX-/Lesbarkeitstests); es gibt zentrale Übersichten über Einwilligungsstände und Widerrufe über Kanäle hinweg; Daten aus Widerrufsgründen, Beschwerden und Audits fließen in die Optimierung von Texten, Prozessen und Rechtsgrundlagenstrategie ein."
+                            },
+                            {
+                                "id": "law-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für die DSGVO-konforme Gestaltung, Dokumentation und Widerrufbarkeit von Einwilligungen.",
+                                "parts": [
+                                    {
+                                        "id": "law-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Aufbau eines zentralen Katalogs geprüfter Einwilligungstexte mit klarer Zwecktrennung und Vorgaben für Sprache, Layout und Trennung von anderen Erklärungen (z.B. AGB)."
+                                    },
+                                    {
+                                        "id": "law-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Implementierung eines einheitlichen Consent-Managements, das Einwilligungsereignisse (Erteilung, Änderung, Widerruf) systematisch protokolliert und in den relevanten Systemen verfügbar macht."
+                                    },
+                                    {
+                                        "id": "law-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Bereitstellung einfacher, gut auffindbarer Widerrufskanäle (z.B. Link in E-Mails, Kontoeinstellungen, Kontaktformulare) und deren technische Anbindung an Systeme, die auf Einwilligungen basieren."
+                                    },
+                                    {
+                                        "id": "law-05-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige inhaltliche und UX-orientierte Überprüfung von Einwilligungs- und Widerrufsprozessen (z.B. Tests zur Verständlichkeit, Analyse von Widerrufsgründen, Beschwerden) und Anpassung der Konzepte."
+                                    }
+                                ]
                             },
                             {
                                 "id": "law-05-questions",
@@ -1257,6 +1392,33 @@
                                 "id": "law-06-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Art. 6(1)(f) wird weit genutzt (insbesondere im Marketing oder bei internen Analysen), ohne dass eine strukturierte Interessenabwägung durchgeführt oder dokumentiert wird; Betroffeneninteressen werden nur pauschal berücksichtigt.\nLevel 3: Es existieren Vorlagen/Checklisten für LIAs; für alle wesentlichen Verarbeitungen auf Basis berechtigter Interessen werden Zweck, Erforderlichkeit, berechtigte Interessen, Betroffeneninteressen, Abwägungsergebnis und Schutzmaßnahmen dokumentiert und periodisch überprüft.\nLevel 5: LIAs sind in Risiko- und DPIA-Prozesse integriert; wiederkehrende Muster (z.B. bestimmte Marketing- oder Analyseformen) werden regelmäßig im Lichte von Rechtsprechung und Aufsichtspraxis überprüft; Anpassungen der Schutzmaßnahmen (z.B. Opt-out-Möglichkeiten, Pseudonymisierung, Einschränkung der Daten) lassen sich aus den LIAs ableiten und werden nachgehalten."
+                            },
+                            {
+                                "id": "law-06-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für strukturierte Legitimate-Interest-Assessments.",
+                                "parts": [
+                                    {
+                                        "id": "law-06-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Entwicklung eines standardisierten LIA-Templates mit Abschnitten zu Zweck, Erforderlichkeit, Art der Daten, betroffenen Personen, Interessen des Verantwortlichen, Interessen/Rechten der Betroffenen, Schutzmaßnahmen und Ergebnis der Abwägung."
+                                    },
+                                    {
+                                        "id": "law-06-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Verpflichtende Durchführung und Dokumentation eines LIAs für alle wesentlichen Verarbeitungen auf Art. 6(1)(f) DSGVO, verknüpft mit REG, DPIA und Risiko-Management."
+                                    },
+                                    {
+                                        "id": "law-06-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Festlegung von Triggern für die Überprüfung und Aktualisierung von LIAs (z.B. Prozess-/Systemänderungen, neue Rechtsprechung, Beschwerden, Vorfälle) und dokumentierte Review-Ergebnisse."
+                                    },
+                                    {
+                                        "id": "law-06-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Auswertung von typischen LIA-Fallgruppen (z.B. bestimmte Marketing-, Monitoring- oder Analyseformen) und Ableitung von Standard-Schutzmaßnahmen und Patterns für wiederkehrende Szenarien."
+                                    }
+                                ]
                             },
                             {
                                 "id": "law-06-questions",
@@ -1320,6 +1482,33 @@
                                 "prose": "Level 1: Umgang mit Betroffenenrechten erfolgt überwiegend ad hoc durch einzelne Fachbereiche; es gibt kein einheitliches Verfahren, keine klaren Zuständigkeiten und keine zentrale Übersicht über Anfragen.\nLevel 3: Es existiert ein dokumentiertes, organisationsweit geltendes Verfahren für alle Betroffenenrechte mit definierten Rollen, Fristen, Eskalationswegen und Dokumentationsanforderungen; Mitarbeitende kennen die grundsätzlichen Abläufe und wenden sie regelmäßig an.\nLevel 5: Das DSR-Governance-Konzept wird regelmäßig anhand von Kennzahlen (z.B. Anzahl/Art der Anfragen, Fristüberschreitungen, Beschwerden), Audits und Lessons Learned aus Vorfällen überprüft und angepasst; Steuerung erfolgt über regelmäßige Management-Reports."
                             },
                             {
+                                "id": "dsr-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für ein strukturiertes Governance-Konzept zum Umgang mit Betroffenenrechten.",
+                                "parts": [
+                                    {
+                                        "id": "dsr-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung und formale Verabschiedung einer organisationsweit gültigen DSR-Policy, die Verfahren, Rollen, Zuständigkeiten, Fristen und Eskalationswege für alle Betroffenenrechte (Art. 12, 15–22 DSGVO) beschreibt."
+                                    },
+                                    {
+                                        "id": "dsr-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition einer RASCI-Matrix für Betroffenenrechte (z.B. DSB, zentrale Koordinationsstelle, Fachbereiche, IT, Legal) und Verankerung in Organisationsdokumenten und Prozessbeschreibungen."
+                                    },
+                                    {
+                                        "id": "dsr-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines standardisierten End-to-End-Prozesses für DSR-Fälle (von Intake über Prüfung, Sachverhaltsermittlung, Entscheidung bis zur Antwort) mit Schnittstellen zu REG, OPS, TOM, INC und XFER."
+                                    },
+                                    {
+                                        "id": "dsr-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßiges Reporting an Management oder Governance-Gremien über Anzahl, Arten, Durchlaufzeiten, SLA-Verletzungen und Beschwerden sowie Ableitung von Verbesserungsmaßnahmen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "dsr-01-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es ein dokumentiertes, organisationsweit verbindliches Verfahren für den Umgang mit allen Betroffenenrechten (Art. 12, 15–22 DSGVO) mit klaren Rollen, Verantwortlichkeiten und Fristen?\n• Werden Umfang und Status von Betroffenenanfragen zentral erfasst und regelmäßig (z.B. jährlich) an Leitung oder Gremien berichtet?"
@@ -1366,6 +1555,33 @@
                                 "id": "dsr-02-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Anfragen erreichen verschiedene Stellen ohne klar definierte Eingangskanäle; es gibt keine einheitlichen Vorgaben zur Identitätsprüfung oder zur sicheren Kommunikation; Risiko von Fehladressierungen oder Offenlegung gegenüber Unbefugten ist hoch.\nLevel 3: Es sind zentrale oder koordinierte Eingangskanäle für Betroffenenrechte definiert; es bestehen dokumentierte Leitlinien zur Identitätsprüfung (risikobasiert) und zur sicheren Kommunikation (z.B. Verschlüsselung, Kundenportal); Eingänge werden protokolliert und zeitnah bestätigt.\nLevel 5: Intake- und Identitätsprozesse werden regelmäßig evaluiert (z.B. anhand von Beschwerden, Vorfällen, Audits) und angepasst; technische Workflows (Portale, Ticket-Systeme) unterstützen automatisierte Erfassung, Fristenkontrolle und sichere Kommunikation."
+                            },
+                            {
+                                "id": "dsr-01-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für ein strukturiertes Governance-Konzept zum Umgang mit Betroffenenrechten.",
+                                "parts": [
+                                    {
+                                        "id": "dsr-01-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung und formale Verabschiedung einer organisationsweit gültigen DSR-Policy, die Verfahren, Rollen, Zuständigkeiten, Fristen und Eskalationswege für alle Betroffenenrechte (Art. 12, 15–22 DSGVO) beschreibt."
+                                    },
+                                    {
+                                        "id": "dsr-01-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition einer RASCI-Matrix für Betroffenenrechte (z.B. DSB, zentrale Koordinationsstelle, Fachbereiche, IT, Legal) und Verankerung in Organisationsdokumenten und Prozessbeschreibungen."
+                                    },
+                                    {
+                                        "id": "dsr-01-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Etablierung eines standardisierten End-to-End-Prozesses für DSR-Fälle (von Intake über Prüfung, Sachverhaltsermittlung, Entscheidung bis zur Antwort) mit Schnittstellen zu REG, OPS, TOM, INC und XFER."
+                                    },
+                                    {
+                                        "id": "dsr-01-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßiges Reporting an Management oder Governance-Gremien über Anzahl, Arten, Durchlaufzeiten, SLA-Verletzungen und Beschwerden sowie Ableitung von Verbesserungsmaßnahmen."
+                                    }
+                                ]
                             },
                             {
                                 "id": "dsr-02-questions",
@@ -1416,6 +1632,33 @@
                                 "prose": "Level 1: Auskünfte werden im Einzelfall manuell zusammengestellt; es gibt keine Standardvorgehensweise zur System- und Datensuche; Risiken durch unvollständige, verspätete oder zu umfangreiche Auskünfte sind hoch.\nLevel 3: Es existieren klare Prozessbeschreibungen und Checklisten für Auskunftsersuchen, inklusive einer Übersicht der relevanten Systeme/Verantwortlichen, Standardtexten, Regeln zum Umgang mit Rechten Dritter und Fristenkontrolle; Ergebnisse und wesentliche Abwägungen werden dokumentiert.\nLevel 5: Prozesse zur Auskunftserteilung werden technisch unterstützt (z.B. Workflows, teilautomatisierte Datensuchen, Self-Service-Portale); Auskunftsfälle werden statistisch ausgewertet; wiederkehrende Probleme (z.B. Datenlokalisierung, Drittdaten) fließen in Datenarchitektur, Prozess- und TOM-Verbesserungen ein."
                             },
                             {
+                                "id": "dsr-03-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur strukturierten Bearbeitung von Auskunftsersuchen und Bereitstellung von Datenkopien.",
+                                "parts": [
+                                    {
+                                        "id": "dsr-03-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Erstellung einer Übersicht relevanter Systeme, Datenquellen und Verantwortlichen, die für Auskunftsersuchen heranzuziehen sind (Systemlandkarte für Art.-15-Anfragen)."
+                                    },
+                                    {
+                                        "id": "dsr-03-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von Such- und Extraktionsverfahren (z.B. Queries, Standardreports, Exportfunktionen) je System sowie Arbeitsanweisungen zur Zusammenführung der Daten in einem konsistenten Antwortpaket."
+                                    },
+                                    {
+                                        "id": "dsr-03-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Dokumentierte Regeln und Entscheidungshilfen zum Umgang mit Rechten Dritter, Geschäftsgeheimnissen und internen Informationen (z.B. Schwärzungsleitfäden, Musterentscheidungen)."
+                                    },
+                                    {
+                                        "id": "dsr-03-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Standardisierte Antwortvorlagen in klarer Sprache, inkl. strukturierter Darstellung der verarbeiteten Daten, Zwecke, Empfänger, Speicherfristen und Betroffenenrechte, sowie Protokollierung der übermittelten Inhalte."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "dsr-03-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es definierte Verfahren und Hilfsmittel (Systemlisten, Checklisten, Vorlagen), um Auskunftsersuchen vollständig, fristgerecht und nachvollziehbar zu beantworten?\n• Werden Abwägungen zum Schutz von Rechten Dritter, Geschäftsgeheimnissen oder IP bei der Auskunftserteilung dokumentiert und ggf. wiederverwendet (z.B. Musterentscheidungen)?"
@@ -1462,6 +1705,33 @@
                                 "id": "dsr-04-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Berichtigungs- und Löschanfragen werden fallweise umgesetzt; die technische Umsetzbarkeit und Abhängigkeiten zu Archiv/Backups sind unklar; Mitteilungspflichten gegenüber Empfängern werden häufig übersehen.\nLevel 3: Es existieren abgestimmte Prozesse, wie Berichtigungs- und Löschanträge in den betroffenen Systemen umgesetzt, dokumentiert und an relevante Empfänger kommuniziert werden; Bezug zu Löschkonzept, Aufbewahrungsfristen und Ausnahmen ist beschrieben.\nLevel 5: Berichtigungs- und Löschprozesse sind weitgehend in Systeme und Workflows integriert; technische Funktionen (z.B. Kennzeichnung zur Löschung, Sperrung, Propagation an Empfänger) unterstützen eine konsistente Umsetzung; Kennzahlen zu Durchlaufzeit, Erfolgsquoten und Problemen fließen in die Weiterentwicklung von Datenarchitektur, Löschkonzept und Prozessen ein."
+                            },
+                            {
+                                "id": "dsr-04-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Umsetzung von Berichtigungs- und Löschanträgen und zur Erfüllung der Mitteilungspflichten.",
+                                "parts": [
+                                    {
+                                        "id": "dsr-04-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Verknüpfung der DSR-Verfahren mit dem Lösch- und Aufbewahrungskonzept, inklusive klarer Regeln, wann eine sofortige Löschung, eine Sperrung oder eine Ablehnung (z.B. wegen Aufbewahrungspflichten) erfolgt."
+                                    },
+                                    {
+                                        "id": "dsr-04-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Standardisierte Arbeitsanweisungen für Fachbereiche und IT zur technischen Umsetzung von Berichtigungen und Löschungen in operativen Systemen, Archiven und Backups (inkl. Dokumentationsanforderungen)."
+                                    },
+                                    {
+                                        "id": "dsr-04-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Prozesse und Templates zur Information von Empfängern nach Art. 19 DSGVO über Berichtigungen oder Löschungen, inkl. Nachverfolgung der Rückmeldungen und etwaiger Rest-Risiken."
+                                    },
+                                    {
+                                        "id": "dsr-04-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Stichproben und Qualitätskontrollen zur Überprüfung, ob Berichtigungen/Löschungen in allen relevanten Systemen konsistent umgesetzt wurden und ob Mitteilungspflichten korrekt erfüllt sind."
+                                    }
+                                ]
                             },
                             {
                                 "id": "dsr-04-questions",
@@ -1512,6 +1782,33 @@
                                 "prose": "Level 1: Widersprüche und Anträge auf Einschränkung werden unsystematisch behandelt; technische Umsetzungen (z.B. Sperrvermerke, Opt-out) sind unvollständig oder nur in einzelnen Systemen vorhanden; Risiko weiterer unerwünschter Verarbeitung bleibt hoch.\nLevel 3: Es existieren standardisierte Verfahren und Systemunterstützung zur Kennzeichnung und Berücksichtigung von Einschränkungen und Widersprüchen (insbesondere in CRM-, Marketing- und Kommunikationssystemen); Mitarbeitende kennen die Vorgaben, und Betroffene erhalten nachvollziehbare Antworten.\nLevel 5: Präferenz- und Widerspruchsmanagement ist ganzheitlich über Kanäle und Systeme hinweg abgestimmt; regelmäßige Tests (z.B. Stichproben, Kampagnenkontrollen) überprüfen die Wirksamkeit; Ergebnisse fließen in die Optimierung von Marketingprozessen, Profiling-Konzepten und Rechtsgrundlagenstrategie ein."
                             },
                             {
+                                "id": "dsr-05-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen zur Umsetzung von Einschränkungen und Widersprüchen, insbesondere gegen Direktwerbung.",
+                                "parts": [
+                                    {
+                                        "id": "dsr-05-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einrichtung eines zentralen Präferenz- und Widerspruchsmanagements (z.B. in CRM/Marketing-Systemen) mit eindeutigen Kennzeichen für Einschränkungen, Widersprüche und Opt-out gegen Direktwerbung."
+                                    },
+                                    {
+                                        "id": "dsr-05-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Standardisierte Prozesse zur Erfassung und Umsetzung von Widersprüchen/Einschränkungen über alle relevanten Kanäle (Online-Formular, Hotline, E-Mail, postalisch) hinweg inklusive Fristenkontrolle."
+                                    },
+                                    {
+                                        "id": "dsr-05-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Technische Sicherstellung, dass Sperrkennzeichen bei Kampagnen-, Versand- und Profiling-Prozessen berücksichtigt werden (z.B. Selektion gegen Sperrlisten, automatische Prüfschritte vor Versand)."
+                                    },
+                                    {
+                                        "id": "dsr-05-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Tests und Stichproben (z.B. Testadressen, Kampagnen-Reviews), um die Wirksamkeit der Widerspruchs- und Opt-out-Regelungen zu überprüfen, sowie Ableitung von Verbesserungen."
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "dsr-05-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Gibt es dokumentierte und technisch unterstützte Verfahren, um Widersprüche (insbesondere gegen Direktwerbung) und Einschränkungen in allen relevanten Systemen zu kennzeichnen und zu berücksichtigen?\n• Werden Wirksamkeit und Konsistenz von Widerspruchs- und Opt-out-Regelungen regelmäßig überprüft (z.B. durch Stichproben, Tests vor Kampagnen)?"
@@ -1558,6 +1855,33 @@
                                 "id": "dsr-06-maturity",
                                 "name": "maturity-hints",
                                 "prose": "Level 1: Es existiert kein oder nur ein fragmentiertes Register; Informationen zu Betroffenenanfragen liegen in E-Mails oder Einzelsystemen; Fristüberschreitungen und Wiederholungsanfragen werden kaum ausgewertet.\nLevel 3: Ein zentrales oder konsolidiertes DSR-Register erfasst alle wesentlichen Daten zu Anfragen; einfache Kennzahlen (z.B. Anzahl, Typ, Fristüberschreitungen) werden regelmäßig erhoben und dienen zur Steuerung von Kapazitäten und Verbesserungsmaßnahmen.\nLevel 5: Das DSR-Register ist in das DSMS integriert; Kennzahlen (z.B. Antwortqualität, Beschwerderate, Ursachen für SLA-Verletzungen) fließen in Management-Reviews, Risikoanalysen und Programmplanung ein und werden mit Ergebnissen aus Audits, Vorfällen und Schulungsmaßnahmen verknüpft."
+                            },
+                            {
+                                "id": "dsr-06-typical-measures",
+                                "name": "typical-measures",
+                                "prose": "Typische Maßnahmen für DSR-Register, SLA-Überwachung und Qualitätskontrolle.",
+                                "parts": [
+                                    {
+                                        "id": "dsr-06-typical-measure-01",
+                                        "name": "typical-measure",
+                                        "prose": "Einrichtung eines zentralen oder konsolidierten DSR-Registers (z.B. in einem Ticket-System), das Art der Anfrage, Eingangskanal, Datum, Fristen, Entscheidungen und Kommunikationshistorie erfasst."
+                                    },
+                                    {
+                                        "id": "dsr-06-typical-measure-02",
+                                        "name": "typical-measure",
+                                        "prose": "Definition von SLAs und Fristvorgaben für verschiedene Anfragetypen sowie automatisierte Eskalationsmechanismen bei drohender oder eingetretener Fristüberschreitung."
+                                    },
+                                    {
+                                        "id": "dsr-06-typical-measure-03",
+                                        "name": "typical-measure",
+                                        "prose": "Regelmäßige Auswertung von Kennzahlen (z.B. Anzahl Anfragen je Typ, Durchlaufzeiten, SLA-Verletzungen, Beschwerden) und Berichterstattung an Management und DSB."
+                                    },
+                                    {
+                                        "id": "dsr-06-typical-measure-04",
+                                        "name": "typical-measure",
+                                        "prose": "Durchführung von Qualitätsreviews (z.B. Stichproben von Antworten, Peer-Review durch DSB/Legal) und Nutzung der Ergebnisse zur Anpassung von Vorlagen, Prozessen und Schulungsinhalten."
+                                    }
+                                ]
                             },
                             {
                                 "id": "dsr-06-questions",
