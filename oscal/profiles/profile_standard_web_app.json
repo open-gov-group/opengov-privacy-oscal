@@ -1,0 +1,37 @@
+﻿{
+  "profile": {
+    "uuid": "b332846c-72d4-4280-a194-09fa1a4b69eb",
+    "metadata": {
+      "title": "Profile – Standard-Web-Anwendung mit Personendaten (Privacy + SDM-TOM)",
+      "version": "0.1.0-draft",
+      "oscal-version": "1.1.2",
+      "remarks": "Beispiel-Profil: Auswahl zentraler Datenschutz- und Security-TOMs für eine Standard-Web-Anwendung mit personenbezogenen Daten.",
+        "last-modified": "2025-11-27T00:00:00Z"
+    },
+    "imports": [
+      {
+        "href": "./oscal/catalog/open_privacy_catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "TOM-02",
+              "TOM-03"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "./oscal/catalog/sdm_tom_catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "SDM-TOM-AC-01",
+              "SDM-TOM-CR-01",
+              "SDM-TOM-CR-02"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
