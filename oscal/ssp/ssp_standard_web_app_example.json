@@ -1,8 +1,8 @@
-﻿{
+{
   "system-security-plan": {
         "uuid": "a52478b0-cd0f-4e41-9397-882edd0d0f65",
     "metadata": {
-      "title": "SSP – Standard-Web-Anwendung mit Personendaten",
+      "title": "SSP - Standard-Web-Anwendung mit Personendaten",
       "last-modified": "2025-11-29T10:00:00+01:00",
       "version": "0.1.0-draft",
       "oscal-version": "1.1.2",
