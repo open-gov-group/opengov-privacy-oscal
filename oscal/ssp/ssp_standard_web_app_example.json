@@ -47,7 +47,7 @@
     ]
 },
     "import-profile": {
-      "href": "./profiles/profile_standard_web_app.json",
+        "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/profiles/profile_standard_web_app.json",
       "remarks": "Profil importiert Privacy-Katalog (TOM-02, TOM-03) und SDM-TOM-Katalog (SDM-TOM-AC-01, SDM-TOM-CR-01, SDM-TOM-CR-02)."
     },
     "system-characteristics": {
