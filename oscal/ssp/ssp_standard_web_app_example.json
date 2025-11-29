@@ -1,7 +1,7 @@
-{
+﻿{
   "$schema": "http://csrc.nist.gov/ns/oscal/1.1.2/oscal-ssp-schema.json",
   "system-security-plan": {
-    "uuid": "11111111-1111-4111-8111-111111111111",
+        "uuid": "a52478b0-cd0f-4e41-9397-882edd0d0f65",
     "metadata": {
       "title": "SSP – Standard-Web-Anwendung mit Personendaten",
       "last-modified": "2025-11-29T10:00:00+01:00",
@@ -23,7 +23,7 @@
       ],
       "parties": [
         {
-          "uuid": "22222222-2222-4222-8222-222222222222",
+            "uuid": "46a6d799-8e07-4b1d-b0a0-dc01c388a5b5",
           "type": "organization",
           "name": "Beispielkommune Webportal",
           "short-name": "BK-Web",
@@ -36,17 +36,17 @@
         {
           "role-id": "system-owner",
           "party-uuids": [
-            "22222222-2222-4222-8222-222222222222"
-          ]
+                "baa744b1-f2c0-4ac6-a37d-ad6a28f7d512"
+            ]
         },
         {
           "role-id": "dpo",
           "party-uuids": [
-            "22222222-2222-4222-8222-222222222222"
-          ]
+                "6014d2cf-0d34-43f4-a3b1-d49935e97a1a"
+            ]
         }
-      ]
-    },
+    ]
+},
     "import-profile": {
       "href": "./profiles/profile_standard_web_app.json",
       "remarks": "Profil importiert Privacy-Katalog (TOM-02, TOM-03) und SDM-TOM-Katalog (SDM-TOM-AC-01, SDM-TOM-CR-01, SDM-TOM-CR-02)."
@@ -55,16 +55,16 @@
       "system-ids": [
         {
           "identifier-type": "https://ietf.org/rfc/rfc4122",
-          "id": "33333333-3333-4333-8333-333333333333"
+            "id": "e51f1cbf-a2f4-44ed-8eb6-28c2b20a5ace"
         }
-      ],
+    ],
       "system-name": "Bürgerportal – Online-Dienste",
       "system-name-short": "Buergerportal-Web",
       "description": "Web-Anwendung für Bürger:innen zur Nutzung von Online-Diensten (Anträge, Statusabfragen) mit personenbezogenen Daten.",
       "system-information": {
         "information-types": [
-          {
-            "uuid": "44444444-4444-4444-8444-444444444444",
+            {
+                "uuid": "9e53e075-e4fc-41f5-ab0c-8cc62f2887b5",
             "title": "Stammdaten Bürger:innen",
             "description": "Identitäts- und Kontaktinformationen (Name, Adresse, Kontakt, Kennziffern) für die Nutzung von Online-Verwaltungsleistungen.",
             "confidentiality-impact": {
@@ -94,15 +94,15 @@
         {
           "role-id": "system-owner",
           "party-uuids": [
-            "22222222-2222-4222-8222-222222222222"
-          ]
+                "77db1bd9-f32e-46d6-92ec-3cd68777187d"
+            ]
         }
-      ]
-    },
+    ]
+},
     "system-implementation": {
       "users": [
-        {
-          "uuid": "55555555-5555-4555-8555-555555555555",
+            {
+                "uuid": "b092be18-4dcd-407e-8f7f-690e83040fc5",
           "title": "Bürger:innen",
           "short-name": "Citizen",
           "description": "Externe Nutzer:innen mit Konto im Bürgerportal.",
@@ -110,8 +110,8 @@
             "system-owner"
           ]
         },
-        {
-          "uuid": "66666666-6666-4666-8666-666666666666",
+            {
+                "uuid": "b67890a1-e0b9-49db-bff1-6098d1b2aa3d",
           "title": "Sachbearbeiter:innen",
           "short-name": "Clerk",
           "description": "Interne Mitarbeitende mit Zugriff auf Vorgänge im Backend.",
@@ -122,7 +122,7 @@
       ],
       "components": [
         {
-          "uuid": "77777777-7777-4777-8777-777777777777",
+            "uuid": "67f498f1-83c9-4bb6-b1b9-33b8870ab239",
           "type": "software",
           "title": "Web-Frontend Bürgerportal",
           "description": "Browser-basiertes Frontend für Bürger:innen.",
@@ -132,7 +132,7 @@
           }
         },
         {
-          "uuid": "88888888-8888-4888-8888-888888888888",
+            "uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
           "type": "software",
           "title": "Backend-API & Geschäftslogik",
           "description": "REST-API und Geschäftslogik für Antragsbearbeitung und Authentifizierung.",
@@ -142,7 +142,7 @@
           }
         },
         {
-          "uuid": "99999999-9999-4999-8999-999999999999",
+            "uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
           "type": "software",
           "title": "Datenbank Bürgerportal",
           "description": "Relationale Datenbank mit Stammdaten und Vorgängen.",
@@ -156,8 +156,8 @@
     "control-implementation": {
       "description": "Implementierung ausgewählter Datenschutz- und SDM-TOM-Kontrollen für das Bürgerportal (Standard-Web-Anwendung).",
       "implemented-requirements": [
-        {
-          "uuid": "aaaa1111-aaaa-4111-8111-aaaaaaaaaaaa",
+            {
+                "uuid": "533d0944-00e9-4a12-8214-0ecf2504dfeb",
           "control-id": "TOM-02",
           "props": [
             {
@@ -173,8 +173,8 @@
           ],
           "by-components": [
             {
-              "component-uuid": "88888888-8888-4888-8888-888888888888",
-              "uuid": "bbbb1111-bbbb-4111-8111-bbbbbbbbbbbb",
+                "component-uuid": "553eeb67-f2e9-4f4d-b308-63a6cfe3f94f",
+                "uuid": "de087413-21b9-4713-b1b4-34e29007425a",
               "description": "Backend-API implementiert rollenbasiertes Zugriffskonzept für Bürger:innen und Sachbearbeiter:innen über eine zentrale IAM-Integration.",
               "implementation-status": {
                 "state": "implemented",
@@ -189,8 +189,8 @@
               ]
             },
             {
-              "component-uuid": "99999999-9999-4999-8999-999999999999",
-              "uuid": "cccc1111-cccc-4111-8111-cccccccccccc",
+                "component-uuid": "5e8c5107-e53b-4328-b30b-4c5c17ff6ff3",
+                "uuid": "d6acbd78-7983-4796-bbd1-0e1cdf3a2c5f",
               "description": "Datenbank-Berechtigungen sind nach Rollen für Sachbearbeiter:innen und Systemkonten getrennt; direkte DB-Zugriffe auf Produktionsdaten sind auf wenige Admin-Rollen beschränkt.",
               "implementation-status": {
                 "state": "partial",
@@ -206,8 +206,8 @@
             }
           ]
         },
-        {
-          "uuid": "aaaa2222-aaaa-4222-8222-aaaaaaaaaaaa",
+            {
+                "uuid": "1d758c91-f5dd-442c-a1f4-b3ed865b1fea",
           "control-id": "TOM-03",
           "props": [
             {
@@ -218,8 +218,8 @@
           ],
           "by-components": [
             {
-              "component-uuid": "77777777-7777-4777-8777-777777777777",
-              "uuid": "bbbb2222-bbbb-4222-8222-bbbbbbbbbbbb",
+                "component-uuid": "f975fb62-e76f-4f2f-9ed7-8397c4388a60",
+                "uuid": "b7dd60ed-ca24-43f2-81ef-47a2d089ef36",
               "description": "Alle Verbindungen vom Web-Frontend zur Backend-API erfolgen ausschließlich über TLS (HTTPS), HSTS ist aktiviert; Cookie-Attribute (Secure, HttpOnly, SameSite=strict) sind gesetzt.",
               "implementation-status": {
                 "state": "implemented"
@@ -233,8 +233,8 @@
               ]
             },
             {
-              "component-uuid": "99999999-9999-4999-8999-999999999999",
-              "uuid": "cccc2222-cccc-4222-8222-cccccccccccc",
+                "component-uuid": "5bc9f1e7-f9fd-4c5c-a0ac-947b808ba3eb",
+                "uuid": "f8d3ac15-dfdb-41b4-ab4d-5dd7332d9cf1",
               "description": "Datenbank-Volume-Verschlüsselung aktiv; Backups werden verschlüsselt abgelegt und sind nur über Backup-Server und definierte Restore-Prozesse zugänglich.",
               "implementation-status": {
                 "state": "implemented"
@@ -249,8 +249,8 @@
             }
           ]
         },
-        {
-          "uuid": "aaaa3333-aaaa-4333-8333-aaaaaaaaaaaa",
+            {
+                "uuid": "8d1230d9-03cb-4af1-90df-77fa03548e6a",
           "control-id": "SDM-TOM-AC-01",
           "props": [
             {
@@ -264,8 +264,8 @@
           ],
           "by-components": [
             {
-              "component-uuid": "88888888-8888-4888-8888-888888888888",
-              "uuid": "bbbb3333-bbbb-4333-8333-bbbbbbbbbbbb",
+                "component-uuid": "c2e8e83f-63b5-4cdc-ba80-86fcbf4b375c",
+                "uuid": "da6fc184-d96e-46ab-aef1-da546ca918d7",
               "description": "IAM-System stellt Rollenprofile für Bürger:innen, Sachbearbeiter:innen und Administrator:innen bereit; Joiner-Mover-Leaver-Prozess (JML) ist an das HR-System angebunden.",
               "implementation-status": {
                 "state": "partial",
@@ -281,8 +281,8 @@
             }
           ]
         },
-        {
-          "uuid": "aaaa4444-aaaa-4444-8444-aaaaaaaaaaaa",
+            {
+                "uuid": "469c1269-7b88-401d-8071-538b4acde013",
           "control-id": "SDM-TOM-CR-01",
           "props": [
             {
@@ -300,8 +300,8 @@
           ],
           "by-components": [
             {
-              "component-uuid": "77777777-7777-4777-8777-777777777777",
-              "uuid": "bbbb4444-bbbb-4444-8444-bbbbbbbbbbbb",
+                "component-uuid": "5167263a-ef60-4733-bb6b-19fbcce5a7f7",
+                "uuid": "db0ec584-64e4-4c4e-a1b2-18e71a31ba42",
               "description": "TLS-Konfiguration folgt internen Mindeststandards (nur aktuelle Protokollversionen und starke Cipher-Suites); Zertifikate werden zentral verwaltet und überwacht.",
               "implementation-status": {
                 "state": "implemented"
@@ -315,8 +315,8 @@
               ]
             },
             {
-              "component-uuid": "99999999-9999-4999-8999-999999999999",
-              "uuid": "cccc4444-cccc-4444-8444-cccccccccccc",
+                "component-uuid": "e02ffd54-d244-416b-934f-e6f8a55fb07f",
+                "uuid": "959ae2e3-71a1-4367-b8c0-18ff181a8e34",
               "description": "Datenbank-Plattform nutzt verschlüsselte Volumes; Datenexporte mit personenbezogenen Daten werden zusätzlich feldweise verschlüsselt oder pseudonymisiert, sofern sie Test- oder Analyseumgebungen bereitgestellt werden.",
               "implementation-status": {
                 "state": "partial",
@@ -332,8 +332,8 @@
             }
           ]
         },
-        {
-          "uuid": "aaaa5555-aaaa-4555-8555-aaaaaaaaaaaa",
+            {
+                "uuid": "263478c9-9303-4d73-9ec5-477000341bed",
           "control-id": "SDM-TOM-CR-02",
           "props": [
             {
@@ -347,8 +347,8 @@
           ],
           "by-components": [
             {
-              "component-uuid": "88888888-8888-4888-8888-888888888888",
-              "uuid": "bbbb5555-bbbb-4555-8555-bbbbbbbbbbbb",
+                "component-uuid": "02585072-7f70-4260-b72c-327ae4068081",
+                "uuid": "840d0b36-7004-42be-8722-9d3aecee00fd",
               "description": "Secrets (Datenbank-Passwörter, API-Keys, Tokens) werden in einem zentralen Secrets-Manager verwaltet; Rotation für besonders kritische Keys mindestens halbjährlich oder anlassbezogen.",
               "implementation-status": {
                 "state": "planned",
