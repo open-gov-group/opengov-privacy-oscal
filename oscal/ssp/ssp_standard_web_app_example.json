@@ -35,13 +35,13 @@
         {
           "role-id": "system-owner",
           "party-uuids": [
-                "baa744b1-f2c0-4ac6-a37d-ad6a28f7d512"
+                "46a6d799-8e07-4b1d-b0a0-dc01c388a5b5"
             ]
         },
         {
           "role-id": "dpo",
           "party-uuids": [
-                "6014d2cf-0d34-43f4-a3b1-d49935e97a1a"
+                "46a6d799-8e07-4b1d-b0a0-dc01c388a5b5"
             ]
         }
     ]
@@ -93,7 +93,7 @@
         {
           "role-id": "system-owner",
           "party-uuids": [
-                "77db1bd9-f32e-46d6-92ec-3cd68777187d"
+                "46a6d799-8e07-4b1d-b0a0-dc01c388a5b5"
             ]
         }
     ]
@@ -156,7 +156,7 @@
       "description": "Implementierung ausgewählter Datenschutz- und SDM-TOM-Kontrollen für das Bürgerportal (Standard-Web-Anwendung).",
       "implemented-requirements": [
             {
-                "uuid": "533d0944-00e9-4a12-8214-0ecf2504dfeb",
+          "uuid": "533d0944-00e9-4a12-8214-0ecf2504dfeb",
           "control-id": "TOM-02",
           "props": [
             {
@@ -172,8 +172,8 @@
           ],
           "by-components": [
             {
-                "component-uuid": "553eeb67-f2e9-4f4d-b308-63a6cfe3f94f",
-                "uuid": "de087413-21b9-4713-b1b4-34e29007425a",
+                "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
+              "uuid": "de087413-21b9-4713-b1b4-34e29007425a",
               "description": "Backend-API implementiert rollenbasiertes Zugriffskonzept für Bürger:innen und Sachbearbeiter:innen über eine zentrale IAM-Integration.",
               "implementation-status": {
                 "state": "implemented",
@@ -188,7 +188,7 @@
               ]
             },
             {
-                "component-uuid": "5e8c5107-e53b-4328-b30b-4c5c17ff6ff3",
+                "component-uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
                 "uuid": "d6acbd78-7983-4796-bbd1-0e1cdf3a2c5f",
               "description": "Datenbank-Berechtigungen sind nach Rollen für Sachbearbeiter:innen und Systemkonten getrennt; direkte DB-Zugriffe auf Produktionsdaten sind auf wenige Admin-Rollen beschränkt.",
               "implementation-status": {
@@ -206,7 +206,7 @@
           ]
         },
             {
-                "uuid": "1d758c91-f5dd-442c-a1f4-b3ed865b1fea",
+          "uuid": "1d758c91-f5dd-442c-a1f4-b3ed865b1fea",
           "control-id": "TOM-03",
           "props": [
             {
@@ -217,8 +217,8 @@
           ],
           "by-components": [
             {
-                "component-uuid": "f975fb62-e76f-4f2f-9ed7-8397c4388a60",
-                "uuid": "b7dd60ed-ca24-43f2-81ef-47a2d089ef36",
+                "component-uuid": "67f498f1-83c9-4bb6-b1b9-33b8870ab239",
+              "uuid": "b7dd60ed-ca24-43f2-81ef-47a2d089ef36",
               "description": "Alle Verbindungen vom Web-Frontend zur Backend-API erfolgen ausschließlich über TLS (HTTPS), HSTS ist aktiviert; Cookie-Attribute (Secure, HttpOnly, SameSite=strict) sind gesetzt.",
               "implementation-status": {
                 "state": "implemented"
@@ -232,8 +232,8 @@
               ]
             },
             {
-                "component-uuid": "5bc9f1e7-f9fd-4c5c-a0ac-947b808ba3eb",
-                "uuid": "f8d3ac15-dfdb-41b4-ab4d-5dd7332d9cf1",
+                "component-uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
+              "uuid": "f8d3ac15-dfdb-41b4-ab4d-5dd7332d9cf1",
               "description": "Datenbank-Volume-Verschlüsselung aktiv; Backups werden verschlüsselt abgelegt und sind nur über Backup-Server und definierte Restore-Prozesse zugänglich.",
               "implementation-status": {
                 "state": "implemented"
@@ -263,7 +263,7 @@
           ],
           "by-components": [
             {
-                "component-uuid": "c2e8e83f-63b5-4cdc-ba80-86fcbf4b375c",
+                "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
                 "uuid": "da6fc184-d96e-46ab-aef1-da546ca918d7",
               "description": "IAM-System stellt Rollenprofile für Bürger:innen, Sachbearbeiter:innen und Administrator:innen bereit; Joiner-Mover-Leaver-Prozess (JML) ist an das HR-System angebunden.",
               "implementation-status": {
@@ -299,7 +299,7 @@
           ],
           "by-components": [
             {
-                "component-uuid": "5167263a-ef60-4733-bb6b-19fbcce5a7f7",
+                "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
                 "uuid": "db0ec584-64e4-4c4e-a1b2-18e71a31ba42",
               "description": "TLS-Konfiguration folgt internen Mindeststandards (nur aktuelle Protokollversionen und starke Cipher-Suites); Zertifikate werden zentral verwaltet und überwacht.",
               "implementation-status": {
@@ -314,7 +314,7 @@
               ]
             },
             {
-                "component-uuid": "e02ffd54-d244-416b-934f-e6f8a55fb07f",
+                "component-uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
                 "uuid": "959ae2e3-71a1-4367-b8c0-18ff181a8e34",
               "description": "Datenbank-Plattform nutzt verschlüsselte Volumes; Datenexporte mit personenbezogenen Daten werden zusätzlich feldweise verschlüsselt oder pseudonymisiert, sofern sie Test- oder Analyseumgebungen bereitgestellt werden.",
               "implementation-status": {
@@ -346,7 +346,7 @@
           ],
           "by-components": [
             {
-                "component-uuid": "02585072-7f70-4260-b72c-327ae4068081",
+                "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
                 "uuid": "840d0b36-7004-42be-8722-9d3aecee00fd",
               "description": "Secrets (Datenbank-Passwörter, API-Keys, Tokens) werden in einem zentralen Secrets-Manager verwaltet; Rotation für besonders kritische Keys mindestens halbjährlich oder anlassbezogen.",
               "implementation-status": {
