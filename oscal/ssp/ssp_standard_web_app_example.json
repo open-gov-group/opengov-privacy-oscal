@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "http://csrc.nist.gov/ns/oscal/1.1.2/oscal-ssp-schema.json",
+  "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_ssp_schema.json",
   "system-security-plan": {
         "uuid": "a52478b0-cd0f-4e41-9397-882edd0d0f65",
     "metadata": {

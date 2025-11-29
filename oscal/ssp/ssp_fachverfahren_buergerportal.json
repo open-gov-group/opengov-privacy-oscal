@@ -1,4 +1,5 @@
 ﻿{
+  "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_ssp_schema.json",
   "system-security-plan": {
     "uuid": "52b18073-0b51-404a-976a-08cea08bfaa2",
     "metadata": {
@@ -18,19 +19,74 @@
     "import-profile": {
       "href": "https://example.org/oscal/profile/opengov-privacy-profile.json"
     },
-
     "system-characteristics": {
         "system-ids": [
             {
                 "id": "buergerportal-1",
-                "identifier-type": "local"
+                "identifier-type": "https://ietf.org/rfc/rfc4122"
             }
         ],
         "system-name": "Fachverfahren Bürgerportal",
-        "description": "Online-Fachverfahren zur Abwicklung von Bürgeranliegen (Anträge, Bescheide, Kommunikation)."
-
-        },
+        "description": "Online-Fachverfahren zur Abwicklung von Bürgeranliegen (Anträge, Bescheide, Kommunikation).",
+      "system-information": {
+        "information-types": [
+            {
+                "uuid": "dace5c26-2ee5-442a-b2ae-832e08c94b68",
+            "title": "Stammdaten Bürger:innen",
+            "description": "Identitäts- und Kontaktinformationen (Name, Adresse, Kontakt, Kennziffern) für die Nutzung von Online-Verwaltungsleistungen.",
+            "confidentiality-impact": {
+              "base": "hoch"
+            },
+            "integrity-impact": {
+              "base": "hoch"
+            },
+            "availability-impact": {
+              "base": "mittel"
+            }
+          }
+        ]
+      }, 
+           "status": {
+        "state": "operational"
+      },
+      "authorization-boundary": {
+        "description": "Umfasst das Bürgerportal (Frontend), die Anwendungs-APIs und die zugehörige Datenbank in der zentralen Infrastruktur der Kommune."
+      },
+      "security-impact-level": {
+        "security-objective-confidentiality": "hoch",
+        "security-objective-integrity": "hoch",
+        "security-objective-availability": "mittel"
+      },
+      "responsible-parties": [
+        {
+          "role-id": "system-owner",
+          "party-uuids": [
+                "77db1bd9-f32e-46d6-92ec-3cd68777187d"
+            ]
+        }
+    ]
+},        
     "system-implementation": {
+            "users": [
+            {
+                "uuid": "b092be18-4dcd-407e-8f7f-690e83040fc5",
+          "title": "Bürger:innen",
+          "short-name": "Citizen",
+          "description": "Externe Nutzer:innen mit Konto im Bürgerportal.",
+          "role-ids": [
+            "system-owner"
+          ]
+        },
+            {
+                "uuid": "b67890a1-e0b9-49db-bff1-6098d1b2aa3d",
+          "title": "Sachbearbeiter:innen",
+          "short-name": "Clerk",
+          "description": "Interne Mitarbeitende mit Zugriff auf Vorgänge im Backend.",
+          "role-ids": [
+            "system-owner"
+          ]
+        }
+      ],
       "components": [
         {
           "uuid": "15e28338-3880-4007-ab08-f94cb2831d2e",
@@ -56,15 +112,15 @@
         {
           "uuid": "3473e0a1-e40a-4db6-b524-47b88bf3cf03",
           "control-id": "GOV-01",
-          "description": "Das Bürgerportal übernimmt das organisationsweite Rollen- und Zuständigkeitsmodell für den Datenschutz.",
+          "remarks": "Das Bürgerportal übernimmt das organisationsweite Rollen- und Zuständigkeitsmodell für den Datenschutz.",
           "statements": [
             {
               "statement-id": "gov-01-stmt",
               "uuid": "f716f669-39cb-4d78-a5c2-4a5c589f81e0",
               "by-components": [
                 {
-                  "component-uuid": "cccccccc-cccc-cccc-cccc-cccccccccccc",
-                  "uuid": "cccccccc-0000-0000-0000-000000000001",
+                  "component-uuid": "7f8444bb-464c-478d-8858-24654c34550b",
+                  "uuid": "0522df50-656d-490e-bd13-d28158ef5e30",
                   "description": "Die Umsetzung von GOV-01 erfolgt über das zentrale DSMS (Dokumente: Datenschutz-Geschäftsanweisung, Organigramm, RACI-Matrix). Diese gelten auch für das Fachverfahren Bürgerportal."
                 }
               ]
@@ -81,7 +137,7 @@
         {
           "uuid": "6b222260-7c59-47ab-a440-132de8fcca37",
           "control-id": "TRAIN-01",
-          "description": "Mitarbeitende im Bürgerportal nehmen an der zentralen DSGVO-Grundlagenschulung teil.",
+          "remarks": "Mitarbeitende im Bürgerportal nehmen an der zentralen DSGVO-Grundlagenschulung teil.",
           "statements": [
             {
               "statement-id": "train-01-stmt",
