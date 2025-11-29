@@ -63,21 +63,21 @@
       "system-information": {
         "information-types": [
             {
-                "uuid": "9e53e075-e4fc-41f5-ab0c-8cc62f2887b5",
+            "uuid": "9e53e075-e4fc-41f5-ab0c-8cc62f2887b5",
             "title": "Stammdaten Bürger:innen",
             "description": "Identitäts- und Kontaktinformationen (Name, Adresse, Kontakt, Kennziffern) für die Nutzung von Online-Verwaltungsleistungen.",
             "confidentiality-impact": {
-              "base": "hoch"
-            },
+            "base": "high"
+                },
             "integrity-impact": {
-              "base": "hoch"
+            "base": "high"
             },
             "availability-impact": {
-              "base": "mittel"
+            "base": "moderate"
             }
-          }
-        ]
-      },
+        }
+    ]
+},
       "status": {
         "state": "operational"
       },
@@ -85,10 +85,10 @@
         "description": "Umfasst das Bürgerportal (Frontend), die Anwendungs-APIs und die zugehörige Datenbank in der zentralen Infrastruktur der Kommune."
       },
       "security-impact-level": {
-        "security-objective-confidentiality": "hoch",
-        "security-objective-integrity": "hoch",
-        "security-objective-availability": "mittel"
-      },
+        "security-objective-confidentiality": "high",
+        "security-objective-integrity": "high",
+        "security-objective-availability": "moderate"
+    },
       "responsible-parties": [
         {
           "role-id": "system-owner",
