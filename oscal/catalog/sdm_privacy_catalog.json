@@ -1,4 +1,4 @@
-﻿{
+{
   "catalog": {
         "uuid": "68f6e5fb-abd1-4c21-a8ba-4d0432ed081d",
     "metadata": {
@@ -31,11 +31,21 @@
             "title": "Rollenbasiertes Zugriffs- und Berechtigungsmanagement",
             "class": "technical",
             "props": [
-              { "name": "sdm-goal", "value": "VERTRAUEN" },
-              { "name": "sdm-goal", "value": "INTEGRITAET" },
+              { "name": "sdm-goal",
+                "class": "warranty-objective", 
+                "value": "VERTRAUEN" },
+              { "name": "sdm-goal",
+                "class": "warranty-objective",
+                "value": "INTEGRITAET"
+            },
               { "name": "sdm-baustein-id", "value": "SDM-AC-01" },
-              { "name": "mapping-hint-bsi", "value": "BSI / Grundschutz++: Access-Control-Bausteine (Platzhalter, noch zu konkretisieren)" },
-              { "name": "mapping-hint-iso27001", "value": "ISO/IEC 27001 Annex 5 & 8/9 (Access-Control-Bereich, Platzhalter)" },
+              { "name": "mapping-hint-bsi",
+                "class": "bsi",
+                "value": "ORP-4",
+                "remarks": "ORP.4 Identitäts- undBerechtigungsmanagement"
+            },
+            {
+                "name": "mapping-hint-iso27001", "value": "ISO/IEC 27001 Annex 5 & 8/9 (Access-Control-Bereich, Platzhalter)" },
               { "name": "mapping-hint-iso27701", "value": "ISO/IEC 27701 – PIMS-spezifische Anforderungen an Zugriff/Berechtigungen (Platzhalter)" }
             ],
             "links": [
