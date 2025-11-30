@@ -38,15 +38,25 @@
                 "class": "warranty-objective",
                 "value": "INTEGRITAET"
             },
-              { "name": "sdm-baustein-id", "value": "SDM-AC-01" },
-              { "name": "mapping-hint-bsi",
+              { "name": "sdm-module",
+                "class": "sdm-module-51",
+                "value": "SDM-AC-01",
+                "remarks": "Zugriffe auf Daten, Systeme und Prozesse regeln"
+            },
+              { "name": "related-mapping",
                 "class": "bsi",
                 "value": "ORP-4",
-                "remarks": "ORP.4 Identitäts- undBerechtigungsmanagement"
+                "remarks": "ORP.4 Identitäts- und Berechtigungsmanagement"
             },
             {
-                "name": "mapping-hint-iso27001", "value": "ISO/IEC 27001 Annex 5 & 8/9 (Access-Control-Bereich, Platzhalter)" },
-              { "name": "mapping-hint-iso27701", "value": "ISO/IEC 27701 – PIMS-spezifische Anforderungen an Zugriff/Berechtigungen (Platzhalter)" }
+                "name": "related-mapping",
+                "class": "iso27001",
+                "value": "A.9.2.3",
+                "remarks": "ISO/IEC 27001 Annex 5 & 8/9 (Access-Control-Bereich, Platzhalter)" },
+              { "name": "mapping-hint",
+                "class": "iso27701",
+                "value": "PIMS-7.2.1",
+                "remarks": "ISO/IEC 27701 – PIMS-spezifische Anforderungen an Zugriff/Berechtigungen (Platzhalter)" }
             ],
             "links": [
               {
