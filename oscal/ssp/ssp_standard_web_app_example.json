@@ -1,10 +1,10 @@
 {
   "system-security-plan": {
-        "uuid": "a52478b0-cd0f-4e41-9397-882edd0d0f65",
+    "uuid": "a52478b0-cd0f-4e41-9397-882edd0d0f65",
     "metadata": {
       "title": "SSP - Standard-Web-Anwendung mit Personendaten",
       "last-modified": "2025-11-29T10:00:00+01:00",
-      "version": "0.1.0-draft",
+      "version": "0.1.0",
       "oscal-version": "1.1.2",
       "roles": [
         {
@@ -22,7 +22,7 @@
       ],
       "parties": [
         {
-            "uuid": "46a6d799-8e07-4b1d-b0a0-dc01c388a5b5",
+          "uuid": "46a6d799-8e07-4b1d-b0a0-dc01c388a5b5",
           "type": "organization",
           "name": "Beispielkommune Webportal",
           "short-name": "BK-Web",
@@ -172,7 +172,7 @@
           ],
           "by-components": [
             {
-                "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
+              "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
               "uuid": "de087413-21b9-4713-b1b4-34e29007425a",
               "description": "Backend-API implementiert rollenbasiertes Zugriffskonzept für Bürger:innen und Sachbearbeiter:innen über eine zentrale IAM-Integration.",
               "implementation-status": {
@@ -188,8 +188,8 @@
               ]
             },
             {
-                "component-uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
-                "uuid": "d6acbd78-7983-4796-bbd1-0e1cdf3a2c5f",
+              "component-uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
+              "uuid": "d6acbd78-7983-4796-bbd1-0e1cdf3a2c5f",
               "description": "Datenbank-Berechtigungen sind nach Rollen für Sachbearbeiter:innen und Systemkonten getrennt; direkte DB-Zugriffe auf Produktionsdaten sind auf wenige Admin-Rollen beschränkt.",
               "implementation-status": {
                 "state": "partial",
@@ -217,7 +217,7 @@
           ],
           "by-components": [
             {
-                "component-uuid": "67f498f1-83c9-4bb6-b1b9-33b8870ab239",
+              "component-uuid": "67f498f1-83c9-4bb6-b1b9-33b8870ab239",
               "uuid": "b7dd60ed-ca24-43f2-81ef-47a2d089ef36",
               "description": "Alle Verbindungen vom Web-Frontend zur Backend-API erfolgen ausschließlich über TLS (HTTPS), HSTS ist aktiviert; Cookie-Attribute (Secure, HttpOnly, SameSite=strict) sind gesetzt.",
               "implementation-status": {
@@ -232,7 +232,7 @@
               ]
             },
             {
-                "component-uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
+              "component-uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
               "uuid": "f8d3ac15-dfdb-41b4-ab4d-5dd7332d9cf1",
               "description": "Datenbank-Volume-Verschlüsselung aktiv; Backups werden verschlüsselt abgelegt und sind nur über Backup-Server und definierte Restore-Prozesse zugänglich.",
               "implementation-status": {
@@ -249,7 +249,7 @@
           ]
         },
             {
-                "uuid": "8d1230d9-03cb-4af1-90df-77fa03548e6a",
+          "uuid": "8d1230d9-03cb-4af1-90df-77fa03548e6a",
           "control-id": "SDM-TOM-AC-01",
           "props": [
             {
@@ -263,8 +263,8 @@
           ],
           "by-components": [
             {
-                "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
-                "uuid": "da6fc184-d96e-46ab-aef1-da546ca918d7",
+              "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
+              "uuid": "da6fc184-d96e-46ab-aef1-da546ca918d7",
               "description": "IAM-System stellt Rollenprofile für Bürger:innen, Sachbearbeiter:innen und Administrator:innen bereit; Joiner-Mover-Leaver-Prozess (JML) ist an das HR-System angebunden.",
               "implementation-status": {
                 "state": "partial",
@@ -281,7 +281,7 @@
           ]
         },
             {
-                "uuid": "469c1269-7b88-401d-8071-538b4acde013",
+          "uuid": "469c1269-7b88-401d-8071-538b4acde013",
           "control-id": "SDM-TOM-CR-01",
           "props": [
             {
@@ -299,8 +299,8 @@
           ],
           "by-components": [
             {
-                "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
-                "uuid": "db0ec584-64e4-4c4e-a1b2-18e71a31ba42",
+              "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
+              "uuid": "db0ec584-64e4-4c4e-a1b2-18e71a31ba42",
               "description": "TLS-Konfiguration folgt internen Mindeststandards (nur aktuelle Protokollversionen und starke Cipher-Suites); Zertifikate werden zentral verwaltet und überwacht.",
               "implementation-status": {
                 "state": "implemented"
@@ -314,8 +314,8 @@
               ]
             },
             {
-                "component-uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
-                "uuid": "959ae2e3-71a1-4367-b8c0-18ff181a8e34",
+              "component-uuid": "59bf35ef-e775-4a3b-8460-135fd6f2d4fe",
+              "uuid": "959ae2e3-71a1-4367-b8c0-18ff181a8e34",
               "description": "Datenbank-Plattform nutzt verschlüsselte Volumes; Datenexporte mit personenbezogenen Daten werden zusätzlich feldweise verschlüsselt oder pseudonymisiert, sofern sie Test- oder Analyseumgebungen bereitgestellt werden.",
               "implementation-status": {
                 "state": "partial",
@@ -332,7 +332,7 @@
           ]
         },
             {
-                "uuid": "263478c9-9303-4d73-9ec5-477000341bed",
+          "uuid": "263478c9-9303-4d73-9ec5-477000341bed",
           "control-id": "SDM-TOM-CR-02",
           "props": [
             {
@@ -346,8 +346,8 @@
           ],
           "by-components": [
             {
-                "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
-                "uuid": "840d0b36-7004-42be-8722-9d3aecee00fd",
+              "component-uuid": "586337dd-a027-4404-9411-236d1c65e9bf",
+              "uuid": "840d0b36-7004-42be-8722-9d3aecee00fd",
               "description": "Secrets (Datenbank-Passwörter, API-Keys, Tokens) werden in einem zentralen Secrets-Manager verwaltet; Rotation für besonders kritische Keys mindestens halbjährlich oder anlassbezogen.",
               "implementation-status": {
                 "state": "planned",
