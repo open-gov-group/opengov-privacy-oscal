@@ -53,7 +53,8 @@
                 "class": "iso27001",
                 "value": "A.9.2.3",
                 "remarks": "ISO/IEC 27001 Annex 5 & 8/9 (Access-Control-Bereich, Platzhalter)" },
-              { "name": "mapping-hint",
+            {
+                "name": "related-mapping",
                 "class": "iso27701",
                 "value": "PIMS-7.2.1",
                 "remarks": "ISO/IEC 27701 – PIMS-spezifische Anforderungen an Zugriff/Berechtigungen (Platzhalter)" }
@@ -111,20 +112,52 @@
             "title": "Verschlüsselung von Daten in Übertragung und Speicherung",
             "class": "technical",
             "props": [
-              { "name": "sdm-goal", "value": "VERTRAUEN" },
-              { "name": "sdm-goal", "value": "INTEGRITAET" },
-              { "name": "sdm-goal", "value": "TRANSPORT" },
-              { "name": "sdm-baustein-id", "value": "SDM-CR-01" },
-              { "name": "mapping-hint-bsi", "value": "BSI / Grundschutz++: Kryptographie-/Speicher-Bausteine (Platzhalter)" },
-              { "name": "mapping-hint-iso27001", "value": "ISO/IEC 27001 Annex 10 (Cryptography, Platzhalter)" },
-              { "name": "mapping-hint-iso27701", "value": "ISO/IEC 27701 – Ergänzende PIMS-Anforderungen (Platzhalter)" }
+                {
+                    "name": "sdm-goal",
+                    "class": "warranty-objective",
+                    "value": "VERTRAUEN"
+                },
+                {
+                    "name": "sdm-goal",
+                    "class": "warranty-objective",
+                    "value": "VERTRAUEN"
+                },
+                {
+                    "name": "sdm-goal",
+                    "class": "warranty-objective",
+                    "value": "TRANSPORT"
+                },
+                {
+                    "name": "sdm-module",
+                    "class": "sdm-module-51",
+                    "value": "SDM-CR-01",
+                    "remarks": "Zugriffe auf Daten, Systeme und Prozesse regeln"
+                },
+                {
+                    "name": "related-mapping",
+                    "class": "bsi",
+                    "value": "CON.1",
+                    "remarks": "CON.1 Kryptokonzept"
+                },
+                {
+                    "name": "related-mapping",
+                    "class": "iso27001",
+                    "value": "A.10.1.3",
+                    "remarks": "ISO/IEC 27001 Annex 10 (Cryptography)"
+                },
+                {
+                    "name": "related-mapping",
+                    "class": "iso27701",
+                    "value": "PIMS-7.2.1",
+                    "remarks": "ISO/IEC 27701 – Ergänzende PIMS-Anforderungen"
+                }
             ],
             "links": [
-              {
-                "href": "#TOM-03",
-                "rel": "related-control",
-                "text": "Begründung: TOM-03 fordert angemessene Verschlüsselung und Pseudonymisierung aus Datenschutzperspektive; SDM-TOM-CR-01 konkretisiert die technischen Vorgaben für Daten-at-rest und Daten-in-transit."
-              }
+                {
+                    "href": "#TOM-03",
+                    "rel": "related-control",
+                    "text": "Begründung: TOM-03 fordert angemessene Verschlüsselung und Pseudonymisierung aus Datenschutzperspektive; SDM-TOM-CR-01 konkretisiert die technischen Vorgaben für Daten-at-rest und Daten-in-transit."
+                }
             ],
             "parts": [
               {
@@ -161,18 +194,47 @@
             "title": "Kryptografisches Schlüssel- und Geheimnis-Management",
             "class": "technical",
             "props": [
-              { "name": "sdm-goal", "value": "VERTRAUEN" },
-              { "name": "sdm-goal", "value": "INTEGRITAET" },
-              { "name": "sdm-baustein-id", "value": "SDM-CR-02" },
-              { "name": "mapping-hint-bsi", "value": "BSI / Grundschutz++: Schlüsselschutz- und HSM-Bausteine (Platzhalter)" },
-              { "name": "mapping-hint-iso27001", "value": "ISO/IEC 27001 – Key management controls (Platzhalter)" }
+                {
+                    "name": "sdm-goal",
+                    "class": "warranty-objective",
+                    "value": "VERTRAUEN"
+                },
+                {
+                    "name": "sdm-goal",
+                    "class": "warranty-objective",
+                    "value": "VERTRAUEN"
+                },
+                {
+                    "name": "sdm-module",
+                    "class": "sdm-module-51",
+                    "value": "SDM-CR-01",
+                    "remarks": "Zugriffe auf Daten, Systeme und Prozesse regeln"
+                },
+                {
+                    "name": "related-mapping",
+                    "class": "bsi",
+                    "value": "CON.1",
+                    "remarks": "CON.1 Kryptokonzept"
+                },
+                {
+                    "name": "related-mapping",
+                    "class": "iso27001",
+                    "value": "A.10.1.3",
+                    "remarks": "ISO/IEC 27001 Annex 10 (Cryptography)"
+                },
+                {
+                    "name": "related-mapping",
+                    "class": "iso27701",
+                    "value": "PIMS-7.2.1",
+                    "remarks": "ISO/IEC 27701 – Ergänzende PIMS-Anforderungen"
+                }
             ],
             "links": [
-              {
-                "href": "#TOM-03",
-                "rel": "related-control",
-                "text": "Begründung: Wirksamkeit von TOM-03 hängt unmittelbar von einem kontrollierten Schlüssel- und Geheimnis-Management ab (Generierung, Rotation, Schutz, Entzug)."
-              }
+                {
+                    "href": "#TOM-03",
+                    "rel": "related-control",
+                    "text": "Begründung: Wirksamkeit von TOM-03 hängt unmittelbar von einem kontrollierten Schlüssel- und Geheimnis-Management ab (Generierung, Rotation, Schutz, Entzug)."
+                }
             ],
             "parts": [
               {
