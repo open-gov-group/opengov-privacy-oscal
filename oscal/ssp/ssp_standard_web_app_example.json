@@ -68,13 +68,13 @@
             "title": "Stammdaten Bürger:innen",
             "description": "Identitäts- und Kontaktinformationen (Name, Adresse, Kontakt, Kennziffern) für die Nutzung von Online-Verwaltungsleistungen.",
             "confidentiality-impact": {
-            "base": "high"
+                    "base": "fips-199-high"
                 },
             "integrity-impact": {
-            "base": "high"
+                "base": "fips-199-high"
             },
             "availability-impact": {
-            "base": "moderate"
+                "base": "fips-199-moderate"
             }
         }
     ]
@@ -86,10 +86,11 @@
         "description": "Umfasst das Bürgerportal (Frontend), die Anwendungs-APIs und die zugehörige Datenbank in der zentralen Infrastruktur der Kommune."
       },
       "security-impact-level": {
-        "security-objective-confidentiality": "high",
-        "security-objective-integrity": "high",
-        "security-objective-availability": "moderate"
+        "security-objective-confidentiality": "fips-199-high",
+        "security-objective-integrity": "fips-199-high",
+        "security-objective-availability": "fips-199-moderate"
     },
+    "security-sensitivity-level": "fips-199-moderate",
       "responsible-parties": [
         {
           "role-id": "system-owner",
