@@ -2696,7 +2696,7 @@
                                 "id": "tom-02-risk-guidance",
                                 "name": "risk-guidance",
                                 "class": "ds-risk-matrix",
-                                "prose": "Risikobasierte Ausgestaltung von TOM-02 (Zugriffs- und Berechtigungsmanagement) in Abhängigkeit vom Datenschutzrisiko (Impact) und der Eintrittswahrscheinlichkeit. Die hier beschriebenen Maßnahmen ergänzen die allgemeinen typical-measures von TOM-02.",
+                                "prose": "Risikobasierte Ausgestaltung von TOM-02 (Zugriffs- und Berechtigungsmanagement) in Abhängigkeit vom Datenschutzrisiko (Impact) und der Eintrittswahrscheinlichkeit. Je nach Eintrittswahrscheinlichkeit sind trengere Maßnahmen zu erfüllen, diese werden im TOM Catalog erläutert. ",
                                 "parts": [
                                     {
                                         "id": "tom-02-risk-impact-normal",
