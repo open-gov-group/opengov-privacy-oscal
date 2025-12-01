@@ -2695,8 +2695,8 @@
                             {
                                 "id": "tom-02-risk-guidance",
                                 "name": "risk-guidance",
-                                "class": "ds-risk-matrix",
-                                "prose": "Risikobasierte Ausgestaltung von TOM-02 (Zugriffs- und Berechtigungsmanagement) in Abhängigkeit vom Datenschutzrisiko (Impact) und der Eintrittswahrscheinlichkeit. Je nach Eintrittswahrscheinlichkeit sind trengere Maßnahmen zu erfüllen, diese werden im TOM Catalog erläutert. ",
+                                "class": "dp-risk-overview",
+                                "prose": "Risikobeschreibung aus Sicht der betroffenen Personen für TOM-02 (Zugriffs- und Berechtigungsmanagement). Es wird beschrieben, welche Auswirkungen ein unzureichender Zugriffsschutz je nach Art der verarbeiteten Datenkategorien haben kann. Die risikobasierte Ableitung des notwendigen Maßnahmenniveaus (z.B. verstärkte Authentisierung, feinere Rollenmodelle) erfolgt im technischen TOM-/SDM-Katalog.",
                                 "parts": [
                                     {
                                         "id": "tom-02-risk-impact-normal",
@@ -2707,9 +2707,14 @@
                                                 "name": "impact-level",
                                                 "class": "dp-risk",
                                                 "value": "normal"
+                                            },
+                                            {
+                                                "name": "data-category-example",
+                                                "class": "dp-data-category",
+                                                "value": "Stammdaten, Kontaktdaten, einfache Nutzungsdaten"
                                             }
                                         ],
-                                        "prose": "Normales Datenschutzrisiko: keine besonderen Kategorien von Daten (Art. 9), keine Strafdaten (Art. 10), begrenzte Datenmengen und Nutzerkreise, überschaubare Schadenserwartung."
+                                        "prose": "Verarbeitung vor allem von \"normalen\" personenbezogenen Daten, z.B. Name, Adresse, Kontaktdaten, Vertrags-/Kundennummern sowie einfache Nutzungs- oder Protokolldaten (Loginzeiten, allgemeine Nutzung von Diensten). Bei einem Data Breach mit unzureichend gesteuerten Berechtigungen können für betroffene Personen insbesondere folgende Risiken entstehen: unerwünschte Kontaktaufnahme (Spam, unerlaubte Werbung), Belästigung, Einsichtnahme durch interne Stellen ohne Berechtigungsgrundlage (z.B. Kolleg:innen), Verlust der Kontrolle darüber, wer welche grundlegenden Informationen kennt, sowie Einschränkungen des Vertrauens in die Organisation."
                                     },
                                     {
                                         "id": "tom-02-risk-impact-moderate",
@@ -2720,9 +2725,14 @@
                                                 "name": "impact-level",
                                                 "class": "dp-risk",
                                                 "value": "moderate"
+                                            },
+                                            {
+                                                "name": "data-category-example",
+                                                "class": "dp-data-category",
+                                                "value": "Finanz-/Vertragsdaten, Standort- und Kommunikationsdaten, Daten vulnerabler Gruppen"
                                             }
                                         ],
-                                        "prose": "Moderates Datenschutzrisiko: Verarbeitung größerer Datenmengen, längerer Speicherdauer oder sensibler Nutzungskontexte (z.B. Scoring, Profiling, schutzbedürftige Personengruppen), jedoch ohne systemische Hochrisiko-Szenarien im Sinne von Art. 35 DSGVO."
+                                        "prose": "Verarbeitung von Daten, die über reine Stammdaten hinausgehen, z.B. Finanz- und Zahlungsdaten, detaillierte Vertrags- und Leistungsdaten, Bewegungs- oder Standortdaten, Kommunikationsinhalte bzw. -metadaten oder Daten von besonders schutzbedürftigen Personengruppen (Kinder, Patient:innen, Hilfesuchende). Bei einem Data Breach mit unzureichend gesteuerten Berechtigungen drohen für betroffene Personen u.a.: finanzieller Schaden (z.B. Betrugsversuche, Identitätsmissbrauch), detaillierte Rückschlüsse auf Lebensumstände oder Gewohnheiten, Bloßstellung im beruflichen oder privaten Umfeld, Erpressungsversuche sowie langfristiger Vertrauensverlust und Zurückhaltung bei der Inanspruchnahme von Leistungen."
                                     },
                                     {
                                         "id": "tom-02-risk-impact-high",
@@ -2733,9 +2743,14 @@
                                                 "name": "impact-level",
                                                 "class": "dp-risk",
                                                 "value": "high"
+                                            },
+                                            {
+                                                "name": "data-category-example",
+                                                "class": "dp-data-category",
+                                                "value": "Besondere Kategorien (Art. 9), Strafdaten (Art. 10), weitreichendes Profiling/Scoring"
                                             }
                                         ],
-                                        "prose": "Hohes Datenschutzrisiko: Verarbeitung besonderer Kategorien personenbezogener Daten (Art. 9), Daten über strafrechtliche Verurteilungen und Straftaten (Art. 10), großflächige Überwachung oder systematische Profiling-/Scoring-Prozesse mit erheblichem Einfluss auf Betroffene."
+                                        "prose": "Verarbeitung besonderer Kategorien personenbezogener Daten (z.B. Gesundheitsdaten, Daten zur ethnischen Herkunft, Religion, politischen Meinung, sexuellen Orientierung) sowie Daten über strafrechtliche Verurteilungen und Straftaten oder umfangreiches Profiling/Scoring mit spürbaren Auswirkungen (z.B. Kreditwürdigkeit, Versicherungsprämien, Zugang zu Leistungen). Bei unzureichendem Zugriffs- und Berechtigungsmanagement kann ein Data Breach für betroffene Personen zu erheblichen Risiken führen: Diskriminierung, Stigmatisierung, soziale Ausgrenzung, Benachteiligung in Beruf und Gesellschaft, psychische Belastungen und im Extremfall auch physische Gefährdung. Die Offenlegung solcher Daten gegenüber unbefugten internen oder externen Akteuren kann kaum rückgängig gemacht werden und wirkt häufig langfristig nach."
                                     }
                                 ]
                             }
