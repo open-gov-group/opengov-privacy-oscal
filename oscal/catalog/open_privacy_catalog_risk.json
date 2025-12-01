@@ -1,4 +1,4 @@
-﻿{
+{
     "catalog": {
         "uuid": "0b431870-7f9d-440f-ac7d-d42bb92e3acb",
         "metadata": {
@@ -2691,240 +2691,54 @@
                                 "id": "tom-02-questions",
                                 "name": "assessment-questions",
                                 "prose": "• Bestehen dokumentierte Rollen- und Berechtigungskonzepte (inklusive Joiner-Mover-Leaver-Prozess) für Systeme mit personenbezogenen Daten?\n• Werden Zugriffsrechte regelmäßig formal rezertifiziert und bei Rollenwechseln oder Austritten zeitnah angepasst oder entzogen?"
-                            },{
-  "id": "tom-02-risk-guidance",
-  "name": "risk-guidance",
-  "class": "ds-risk-matrix",
-  "prose": "Risikobasierte Ausgestaltung von TOM-02 (Zugriffs- und Berechtigungsmanagement) in Abhängigkeit vom Datenschutzrisiko (Impact) und der Eintrittswahrscheinlichkeit. Die hier beschriebenen Maßnahmen ergänzen die allgemeinen typical-measures von TOM-02.",
-  "parts": [
-    {
-      "id": "tom-02-risk-impact-normal",
-      "name": "risk-impact-scenario",
-      "class": "ds-risk-impact",
-      "props": [
-        {
-          "name": "impact-level",
-          "class": "ds-impact",
-          "value": "normal"
-        }
-      ],
-      "prose": "Normales Datenschutzrisiko: keine besonderen Kategorien von Daten (Art. 9), keine Strafdaten (Art. 10), begrenzte Datenmengen und Nutzerkreise, überschaubare Schadenserwartung.",
-      "parts": [
-        {
-          "id": "tom-02-risk-impact-normal-likelihood-low",
-          "name": "risk-likelihood-scenario",
-          "class": "ds-risk-likelihood",
-          "props": [
-            {
-              "name": "likelihood",
-              "class": "ds-likelihood",
-              "value": "low"
-            }
-          ],
-          "prose": "Niedrige Eintrittswahrscheinlichkeit (z.B. interne Fachanwendung in kontrollierter Umgebung, keine Exponierung ins Internet).",
-          "parts": [
-            {
-              "id": "tom-02-risk-impact-normal-likelihood-low-measures",
-              "name": "risk-typical-measures",
-              "prose": "Die in TOM-02-typical-measures beschriebenen Basismaßnahmen werden vollständig umgesetzt: dokumentierte Access-Control-Policy, Joiner-Mover-Leaver-Prozesse, regelmäßige Rezertifizierung der Zugriffe und rollenbasierte Berechtigungskonzepte. Zusätzliche Spezialmaßnahmen sind nur in begründeten Einzelfällen erforderlich."
-            }
-          ]
-        },
-        {
-          "id": "tom-02-risk-impact-normal-likelihood-moderate",
-          "name": "risk-likelihood-scenario",
-          "class": "ds-risk-likelihood",
-          "props": [
-            {
-              "name": "likelihood",
-              "class": "ds-likelihood",
-              "value": "moderate"
-            }
-          ],
-          "prose": "Moderate Eintrittswahrscheinlichkeit (z.B. Web-Anwendung mit authentifizierten Nutzenden, Exponierung ins Internet, aber begrenzter Funktionsumfang und Nutzerkreis).",
-          "parts": [
-            {
-              "id": "tom-02-risk-impact-normal-likelihood-moderate-measures",
-              "name": "risk-typical-measures",
-              "prose": "Zusätzlich zu den Basismassnahmen sollten u.a. umgesetzt werden:\\n\\n• Striktere Trennung von Standard- und Administrationsrollen (least privilege, keine Mischrollen).\\n• Stärkere Authentisierung für administrative Zugriffe (z.B. MFA verpflichtend).\\n• Engere Review-Zyklen für privilegierte Rollen (z.B. halbjährlich statt jährlich).\\n• Technische Durchsetzung von Session-Timeouts und Sperren nach Inaktivität oder Fehlversuchen."
-            }
-          ]
-        },
-        {
-          "id": "tom-02-risk-impact-normal-likelihood-high",
-          "name": "risk-likelihood-scenario",
-          "class": "ds-risk-likelihood",
-          "props": [
-            {
-              "name": "likelihood",
-              "class": "ds-likelihood",
-              "value": "high"
-            }
-          ],
-          "prose": "Hohe Eintrittswahrscheinlichkeit (z.B. bekannte Angriffsszenarien, öffentlich erreichbare Anwendungen mit breiter Nutzerbasis oder jüngere Sicherheitsvorfälle).",
-          "parts": [
-            {
-              "id": "tom-02-risk-impact-normal-likelihood-high-measures",
-              "name": "risk-typical-measures",
-              "prose": "Neben den Basismassnahmen werden aktuelle Stand-der-Technik-Maßnahmen umgesetzt, z.B.:\\n\\n• Zentrale IAM-/IDM-Plattform mit automatisierten Berechtigungs-Workflows und Rezertifizierungen.\\n• Verpflichtende starke Authentisierung (MFA) für alle Nutzenden mit Zugriff auf personenbezogene Daten.\\n• Fein granulierte technische Durchsetzung von Rollen- und Attribut-basierten Zugriffskontrollen (RBAC/ABAC).\\n• Verstärkte Überwachung von Berechtigungsänderungen (Logging, 4-Augen-Freigaben für kritische Rollenänderungen)."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "tom-02-risk-impact-moderate",
-      "name": "risk-impact-scenario",
-      "class": "ds-risk-impact",
-      "props": [
-        {
-          "name": "impact-level",
-          "class": "ds-impact",
-          "value": "moderate"
-        }
-      ],
-      "prose": "Moderates Datenschutzrisiko: Verarbeitung größerer Datenmengen, längerer Speicherdauer oder sensibler Nutzungskontexte (z.B. Scoring, Profiling, schutzbedürftige Personengruppen), jedoch ohne systemische Hochrisiko-Szenarien im Sinne von Art. 35 DSGVO.",
-      "parts": [
-        {
-          "id": "tom-02-risk-impact-moderate-likelihood-low",
-          "name": "risk-likelihood-scenario",
-          "class": "ds-risk-likelihood",
-          "props": [
-            {
-              "name": "likelihood",
-              "class": "ds-likelihood",
-              "value": "low"
-            }
-          ],
-          "prose": "Niedrige Eintrittswahrscheinlichkeit (z.B. dedizierte Fachanwendung in abgeschirmter Verwaltungsumgebung, wenig externe Schnittstellen).",
-          "parts": [
-            {
-              "id": "tom-02-risk-impact-moderate-likelihood-low-measures",
-              "name": "risk-typical-measures",
-              "prose": "Mindestens: vollständige Umsetzung der Basismassnahmen plus erhöhte Anforderungen an die Trennschärfe von Rollen und die Dokumentation von Berechtigungsentscheidungen. Review-Zyklen für sensible Rollen sollten verkürzt werden (z.B. halbjährlich)."
-            }
-          ]
-        },
-        {
-          "id": "tom-02-risk-impact-moderate-likelihood-moderate",
-          "name": "risk-likelihood-scenario",
-          "class": "ds-risk-likelihood",
-          "props": [
-            {
-              "name": "likelihood",
-              "class": "ds-likelihood",
-              "value": "moderate"
-            }
-          ],
-          "prose": "Mittlere Eintrittswahrscheinlichkeit (z.B. Internet-exponierte Anwendungen mit erweiterten Funktionen, Schnittstellen zu Drittsystemen, komplexe Rollenmodelle).",
-          "parts": [
-            {
-              "id": "tom-02-risk-impact-moderate-likelihood-moderate-measures",
-              "name": "risk-typical-measures",
-              "prose": "Zusätzliche Maßnahmen, z.B.:\\n\\n• Strikte Trennung von administrativen und fachlichen Berechtigungen mit getrennten Identitäten (Privileged Access Management).\\n• Standardisierte Rezertifizierungs-Kampagnen mit Eskalation bei ausbleibender Freigabe.\\n• Regelmäßige Stichprobenprüfungen der Berechtigungen durch Datenschutz/Revision oder Informationssicherheit.\\n• Nutzung von Rollenmustern, die explizit an Schutzbedarfs- bzw. DPIA-Ergebnisse gekoppelt sind."
-            }
-          ]
-        },
-        {
-          "id": "tom-02-risk-impact-moderate-likelihood-high",
-          "name": "risk-likelihood-scenario",
-          "class": "ds-risk-likelihood",
-          "props": [
-            {
-              "name": "likelihood",
-              "class": "ds-likelihood",
-              "value": "high"
-            }
-          ],
-          "prose": "Hohe Eintrittswahrscheinlichkeit (z.B. hohe Exponierung, wiederkehrende Angriffe, bekannte interne oder externe Insider-Risiken).",
-          "parts": [
-            {
-              "id": "tom-02-risk-impact-moderate-likelihood-high-measures",
-              "name": "risk-typical-measures",
-              "prose": "Es sollte ein hohes TOM-Niveau erreicht werden, u.a.:\\n\\n• Einsatz spezialisierter IAM-/PAM-Lösungen mit Just-in-Time-Berechtigungen und starker Protokollierung privilegierter Zugriffe.\\n• Verpflichtende Vier-Augen-Prinzipien für kritische Berechtigungsvergaben und -änderungen.\\n• Anomalieerkennung für Berechtigungsnutzung (z.B. ungewöhnliche Zugriffszeiten, Massenabfragen, untypische Systeme).\\n• Enge Verknüpfung von Access-Management mit Incident- und Fraud-Management."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "tom-02-risk-impact-high",
-      "name": "risk-impact-scenario",
-      "class": "ds-risk-impact",
-      "props": [
-        {
-          "name": "impact-level",
-          "class": "ds-impact",
-          "value": "high"
-        }
-      ],
-      "prose": "Hohes Datenschutzrisiko: Verarbeitung besonderer Kategorien personenbezogener Daten (Art. 9), Daten über strafrechtliche Verurteilungen und Straftaten (Art. 10), großflächige Überwachung oder systematische Profiling-/Scoring-Prozesse mit erheblichem Einfluss auf Betroffene.",
-      "parts": [
-        {
-          "id": "tom-02-risk-impact-high-likelihood-low",
-          "name": "risk-likelihood-scenario",
-          "class": "ds-risk-likelihood",
-          "props": [
-            {
-              "name": "likelihood",
-              "class": "ds-likelihood",
-              "value": "low"
-            }
-          ],
-          "prose": "Hohes Impact-Niveau bei eher niedriger Eintrittswahrscheinlichkeit (z.B. stark abgeschottete Fachanwendungen mit besonders sensiblen Daten).",
-          "parts": [
-            {
-              "id": "tom-02-risk-impact-high-likelihood-low-measures",
-              "name": "risk-typical-measures",
-              "prose": "Mindestens: voller Basisschutz aus TOM-02 plus deutliche Erhöhung des Absicherungsniveaus, z.B.:\\n\\n• Streng minimale Rollen mit expliziter Beschränkung auf Betroffenengruppen/Falltypen.\\n• Verbindliches Vier-Augen-Prinzip für kritische Lese- und Änderungszugriffe.\\n• Pflicht zur starken Authentisierung (MFA) für alle Zugriffe auf diese Daten, unabhängig von Rolle oder Netzsegment.\\n• Detaillierte Protokollierung und regelmäßige Auswertung der Nutzung sensibler Rollen."
-            }
-          ]
-        },
-        {
-          "id": "tom-02-risk-impact-high-likelihood-moderate",
-          "name": "risk-likelihood-scenario",
-          "class": "ds-risk-likelihood",
-          "props": [
-            {
-              "name": "likelihood",
-              "class": "ds-likelihood",
-              "value": "moderate"
-            }
-          ],
-          "prose": "Hohes Impact-Niveau mit moderater Eintrittswahrscheinlichkeit (z.B. internetnahe Systeme oder größere Zahl an Nutzenden, die auf besonders schutzbedürftige Daten zugreifen können).",
-          "parts": [
-            {
-              "id": "tom-02-risk-impact-high-likelihood-moderate-measures",
-              "name": "risk-typical-measures",
-              "prose": "Zusätzlich sollten Stand-der-Technik-Maßnahmen umgesetzt werden, z.B.:\\n\\n• Strikte Trennung von Datenbereichen (Mandanten-/Segment-Trennung, separate Zugriffspfade für besonders schutzbedürftige Daten).\\n• Kontinuierliche Überwachung privilegierter Sessions (z.B. Session Recording für Adminzugriffe, wo rechtlich zulässig).\\n• Kurzzyklische Rezertifizierungen (z.B. vierteljährlich) für alle Rollen mit Zugriff auf Hochrisiko-Daten.\\n• Verknüpfung der Rollen- und Berechtigungsmodelle mit Ergebnissen von DPIA und Schutzbedarfsanalysen."
-            }
-          ]
-        },
-        {
-          "id": "tom-02-risk-impact-high-likelihood-high",
-          "name": "risk-likelihood-scenario",
-          "class": "ds-risk-likelihood",
-          "props": [
-            {
-              "name": "likelihood",
-              "class": "ds-likelihood",
-              "value": "high"
-            }
-          ],
-          "prose": "Höchste Risikolage: besonders schutzbedürftige Daten bei gleichzeitig hoher Eintrittswahrscheinlichkeit (z.B. Internet-exponierte Systeme mit bekannten Angriffsszenarien, systemische Risiken, kritische Infrastrukturen).",
-          "parts": [
-            {
-              "id": "tom-02-risk-impact-high-likelihood-high-measures",
-              "name": "risk-typical-measures",
-              "prose": "Hier sind umfassende Maßnahmen nach aktuellem Stand der Technik erforderlich, z.B.:\\n\\n• Einsatz von ausgereiften IAM-/PAM-Lösungen mit stark gehärteter Infrastruktur und Zero-Trust-Prinzipien.\\n• Strenge technische und organisatorische Trennung einzelner Rollen/Funktionen, Minimierung der Anzahl Personen mit Zugriff auf Hochrisiko-Daten.\\n• Kontinuierliche Überwachung und Echtzeit-Alarmierung bei Auffälligkeiten in der Berechtigungsnutzung (User and Entity Behavior Analytics, wo vertretbar).\\n• Regelmäßige externe Audits und Penetrationstests mit Fokus auf Zugriffskontrollen und Berechtigungssysteme.\\n• Konsequente Kopplung von Berechtigungsmanagement mit Incident-Response, DPIA-Reviews und dem übergreifenden Risikomanagement der Organisation."
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-
+                            },
+                            {
+                                "id": "tom-02-risk-guidance",
+                                "name": "risk-guidance",
+                                "class": "ds-risk-matrix",
+                                "prose": "Risikobasierte Ausgestaltung von TOM-02 (Zugriffs- und Berechtigungsmanagement) in Abhängigkeit vom Datenschutzrisiko (Impact) und der Eintrittswahrscheinlichkeit. Die hier beschriebenen Maßnahmen ergänzen die allgemeinen typical-measures von TOM-02.",
+                                "parts": [
+                                    {
+                                        "id": "tom-02-risk-impact-normal",
+                                        "name": "risk-impact-scenario",
+                                        "class": "dp-risk-impact",
+                                        "props": [
+                                            {
+                                                "name": "impact-level",
+                                                "class": "dp-risk",
+                                                "value": "normal"
+                                            }
+                                        ],
+                                        "prose": "Normales Datenschutzrisiko: keine besonderen Kategorien von Daten (Art. 9), keine Strafdaten (Art. 10), begrenzte Datenmengen und Nutzerkreise, überschaubare Schadenserwartung."
+                                    },
+                                    {
+                                        "id": "tom-02-risk-impact-moderate",
+                                        "name": "risk-impact-scenario",
+                                        "class": "dp-risk-impact",
+                                        "props": [
+                                            {
+                                                "name": "impact-level",
+                                                "class": "dp-risk",
+                                                "value": "moderate"
+                                            }
+                                        ],
+                                        "prose": "Moderates Datenschutzrisiko: Verarbeitung größerer Datenmengen, längerer Speicherdauer oder sensibler Nutzungskontexte (z.B. Scoring, Profiling, schutzbedürftige Personengruppen), jedoch ohne systemische Hochrisiko-Szenarien im Sinne von Art. 35 DSGVO."
+                                    },
+                                    {
+                                        "id": "tom-02-risk-impact-high",
+                                        "name": "risk-impact-scenario",
+                                        "class": "dp-risk-impact",
+                                        "props": [
+                                            {
+                                                "name": "impact-level",
+                                                "class": "dp-risk",
+                                                "value": "high"
+                                            }
+                                        ],
+                                        "prose": "Hohes Datenschutzrisiko: Verarbeitung besonderer Kategorien personenbezogener Daten (Art. 9), Daten über strafrechtliche Verurteilungen und Straftaten (Art. 10), großflächige Überwachung oder systematische Profiling-/Scoring-Prozesse mit erheblichem Einfluss auf Betroffene."
+                                    }
+                                ]
+                            }
                         ]
                     },
                     {
