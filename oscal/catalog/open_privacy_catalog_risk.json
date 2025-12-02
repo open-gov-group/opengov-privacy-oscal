@@ -2663,27 +2663,169 @@
                             {
                                 "id": "tom-02-typical-measures",
                                 "name": "typical-measures",
-                                "prose": "Typische Maßnahmen für ein systematisches Zugriffs- und Berechtigungsmanagement.",
+                                "prose": "Typische technische und organisatorische Maßnahmen für ein risikobasiertes Zugriffs- und Berechtigungsmanagement, gegliedert nach Implementierungsniveau (Baseline, Standard, Advanced).",
                                 "parts": [
                                     {
-                                        "id": "tom-02-typical-measure-01",
-                                        "name": "typical-measure",
-                                        "prose": "Erstellung und Verabschiedung einer Access-Control-Policy mit Rollen- und Rechtekonzept, inklusive Prinzip der geringsten Rechte, Funktions- und Aufgaben­trennung sowie Vorgaben für besonders schutzbedürftige Daten."
+                                        "id": "tom-02-typical-measures-base",
+                                        "name": "typical-measures-base",
+                                        "class": "implementation-level",
+                                        "props": [
+                                            {
+                                                "name": "implementation-level",
+                                                "value": "1"
+                                            }
+                                        ],
+                                        "prose": "Baseline / Mindestanforderungen: grundlegende Maßnahmen, ohne die ein datenschutzkonformes Zugriffs- und Berechtigungsmanagement kaum möglich ist.",
+                                        "parts": [
+                                            {
+                                                "id": "tom-02-base-typical-measure-01",
+                                                "name": "typical-measure",
+                                                "prose": "Erstellung einer einfachen Access-Control-Policy mit grundlegenden Regeln zur Vergabe, Änderung und Entziehung von Berechtigungen (inklusive Need-to-know-Prinzip)."
+                                            },
+                                            {
+                                                "id": "tom-02-base-typical-measure-02",
+                                                "name": "typical-measure",
+                                                "prose": "Etablierung eines dokumentierten Joiner-Mover-Leaver-Prozesses (Eintritt, Rollenwechsel, Austritt) für Benutzerkonten mit personenbezogenen Daten."
+                                            },
+                                            {
+                                                "id": "tom-02-base-typical-measure-03",
+                                                "name": "typical-measure",
+                                                "prose": "Benennung fachlicher und technischer Verantwortlichkeiten für Berechtigungen (z.B. Fachvorgesetzte für Freigaben, IT für technische Umsetzung)."
+                                            },
+                                            {
+                                                "id": "tom-02-base-typical-measure-04",
+                                                "name": "typical-measure",
+                                                "prose": "Nutzung personalisierter Benutzerkonten statt allgemeiner Sammelaccounts; Servicekonten nur technisch und mit beschränkten Rechten einsetzen."
+                                            },
+                                            {
+                                                "id": "tom-02-base-typical-measure-05",
+                                                "name": "typical-measure",
+                                                "prose": "Umsetzung grundlegender Passwort- und Anmelderichtlinien (z.B. Mindestlänge, Verbot triviale Passwörter, Sperrung nach mehreren Fehlversuchen)."
+                                            },
+                                            {
+                                                "id": "tom-02-base-typical-measure-06",
+                                                "name": "typical-measure",
+                                                "prose": "Vergabe von Rechten primär über Rollen- oder Gruppenmitgliedschaften statt über individuelle Einzelberechtigungen, soweit technisch möglich."
+                                            },
+                                            {
+                                                "id": "tom-02-base-typical-measure-07",
+                                                "name": "typical-measure",
+                                                "prose": "Aktivierung von Basis-Logging für An- und Abmeldungen, fehlgeschlagene Login-Versuche sowie Änderungen an privilegierten Berechtigungen."
+                                            },
+                                            {
+                                                "id": "tom-02-base-typical-measure-08",
+                                                "name": "typical-measure",
+                                                "prose": "Regelmäßige Deaktivierung oder Prüfung inaktiver Konten nach einem definierten Zeitraum (z.B. 90 Tage)."
+                                            }
+                                        ]
                                     },
                                     {
-                                        "id": "tom-02-typical-measure-02",
-                                        "name": "typical-measure",
-                                        "prose": "Implementierung standardisierter Joiner-Mover-Leaver-Prozesse für die Vergabe, Änderung und Entziehung von Berechtigungen, idealerweise unterstützt durch ein IAM/IDM-System."
+                                        "id": "tom-02-typical-measures-standard",
+                                        "name": "typical-measures-standard",
+                                        "class": "implementation-level",
+                                        "props": [
+                                            {
+                                                "name": "implementation-level",
+                                                "value": "3"
+                                            }
+                                        ],
+                                        "prose": "Standard / Good Practice: etabliertes, auditierbares Zugriffs- und Berechtigungsmanagement, geeignet für die meisten typischen Verarbeitungen mit personenbezogenen Daten.",
+                                        "parts": [
+                                            {
+                                                "id": "tom-02-standard-typical-measure-01",
+                                                "name": "typical-measure",
+                                                "prose": "Ausarbeitung eines formalisierten Rollen- und Berechtigungskonzepts mit klar beschriebenen Rollenprofilen, zugehörigen Aufgaben und erlaubten Datenkategorien."
+                                            },
+                                            {
+                                                "id": "tom-02-standard-typical-measure-02",
+                                                "name": "typical-measure",
+                                                "prose": "Kopplung der Rollen- und Berechtigungskonzepte an Geschäftsprozesse und Verarbeitungsverzeichnisse (REG), sodass nachvollziehbar ist, welche Rolle welche Verarbeitung unterstützen darf."
+                                            },
+                                            {
+                                                "id": "tom-02-standard-typical-measure-03",
+                                                "name": "typical-measure",
+                                                "prose": "Regelmäßige, dokumentierte Berechtigungsrezertifizierungen (z.B. jährlich) durch fachlich Verantwortliche, insbesondere für privilegierte und hochsensitive Rollen."
+                                            },
+                                            {
+                                                "id": "tom-02-standard-typical-measure-04",
+                                                "name": "typical-measure",
+                                                "prose": "Nutzung eines zentralen Identity-/Access-Management-Systems (IAM/IDM) als führende Quelle für Benutzerkonten, Rollen und Gruppenmitgliedschaften."
+                                            },
+                                            {
+                                                "id": "tom-02-standard-typical-measure-05",
+                                                "name": "typical-measure",
+                                                "prose": "Einsatz von Multi-Faktor-Authentisierung (MFA) für Admin-Konten, Fernzugriffe und Zugriffe auf besonders schutzbedürftige Datenbestände."
+                                            },
+                                            {
+                                                "id": "tom-02-standard-typical-measure-06",
+                                                "name": "typical-measure",
+                                                "prose": "Standardisierte Genehmigungs-Workflows mit Vier-Augen-Prinzip für die Vergabe oder Erweiterung privilegierter Berechtigungen."
+                                            },
+                                            {
+                                                "id": "tom-02-standard-typical-measure-07",
+                                                "name": "typical-measure",
+                                                "prose": "Erweiterte Protokollierung von Berechtigungsänderungen und administrativen Aktionen sowie stichprobenartige Auswertung durch Datenschutz-, Informationssicherheits- oder Revisionsfunktionen."
+                                            },
+                                            {
+                                                "id": "tom-02-standard-typical-measure-08",
+                                                "name": "typical-measure",
+                                                "prose": "Durchführung zielgerichteter Schulungen und Awareness-Maßnahmen für Fachverantwortliche, Admins und Service/Support zu Rollenmodellen, Rechtevergabe und Risiken von überhöhten Berechtigungen."
+                                            }
+                                        ]
                                     },
                                     {
-                                        "id": "tom-02-typical-measure-03",
-                                        "name": "typical-measure",
-                                        "prose": "Einführung regelmäßiger, dokumentierter Berechtigungsreviews (Rezertifizierungen) durch fachlich verantwortliche Rollen, mit klaren Fristen und Nachverfolgung von Korrekturmaßnahmen."
-                                    },
-                                    {
-                                        "id": "tom-02-typical-measure-04",
-                                        "name": "typical-measure",
-                                        "prose": "Definition von Standardrollen und -profilen für typische Funktionen (z.B. Sachbearbeitung, Administration, Support) und Minimierung individueller Einzelrechte; Einsatz starker Authentisierungsverfahren (z.B. MFA) für sensible Zugriffe."
+                                        "id": "tom-02-typical-measures-advanced",
+                                        "name": "typical-measures-advanced",
+                                        "class": "implementation-level",
+                                        "props": [
+                                            {
+                                                "name": "implementation-level",
+                                                "value": "5"
+                                            }
+                                        ],
+                                        "prose": "Advanced / Best Practice: hohes Schutzniveau für Verarbeitungen mit hohem Datenschutzrisiko (z.B. besondere Kategorien personenbezogener Daten, umfangreiches Profiling, Art. 10-Daten).",
+                                        "parts": [
+                                            {
+                                                "id": "tom-02-advanced-typical-measure-01",
+                                                "name": "typical-measure",
+                                                "prose": "Ableitung und Verfeinerung der Rollen- und Berechtigungskonzepte direkt aus Schutzbedarfsanalysen und DPIA-Ergebnissen, inklusive Minimierung der Anzahl Personen mit Zugang zu Hochrisiko-Daten."
+                                            },
+                                            {
+                                                "id": "tom-02-advanced-typical-measure-02",
+                                                "name": "typical-measure",
+                                                "prose": "Kurzzyklische, risikobasierte Rezertifizierungen (z.B. quartalsweise) für hochprivilegierte und Hochrisiko-Rollen mit klaren Eskalationswegen bei ausbleibender Freigabe."
+                                            },
+                                            {
+                                                "id": "tom-02-advanced-typical-measure-03",
+                                                "name": "typical-measure",
+                                                "prose": "Einsatz eines Privileged-Access-Management-(PAM)-Systems mit Just-in-Time-Berechtigungen, zeitlicher Limitierung, Audit-Trail und strikter Trennung von Admin- und Normal-Accounts."
+                                            },
+                                            {
+                                                "id": "tom-02-advanced-typical-measure-04",
+                                                "name": "typical-measure",
+                                                "prose": "Feingranulare Zugriffskontrolle (z.B. RBAC kombiniert mit Attribut- oder Kontext-basierten Kontrollen) für besonders schutzbedürftige Daten, inklusive Mandantentrennung und zusätzlicher Prüfungen bei atypischen Zugriffen."
+                                            },
+                                            {
+                                                "id": "tom-02-advanced-typical-measure-05",
+                                                "name": "typical-measure",
+                                                "prose": "Zero-Trust-orientierte Durchsetzung von Zugriffsentscheidungen (kein implizites Vertrauen allein durch Netzlage), inklusive zusätzlicher Prüfungen bei riskanten Kontexten (z.B. ungewöhnlicher Standort oder Uhrzeit)."
+                                            },
+                                            {
+                                                "id": "tom-02-advanced-typical-measure-06",
+                                                "name": "typical-measure",
+                                                "prose": "Kontinuierliches Monitoring und Auswertung von Nutzungsverhalten (z.B. über UEBA-Mechanismen) zur Erkennung auffälliger Zugriffs- oder Exportmuster mit Anbindung an Incident- und Fraud-Management-Prozesse."
+                                            },
+                                            {
+                                                "id": "tom-02-advanced-typical-measure-07",
+                                                "name": "typical-measure",
+                                                "prose": "Streng geschützte Admin-Umgebung (dedizierte Admin-Workstations, gehärtete Netze, ggf. Session-Recording im rechtlich zulässigen Rahmen) mit separaten Prozessen für Notfallzugriffe."
+                                            },
+                                            {
+                                                "id": "tom-02-advanced-typical-measure-08",
+                                                "name": "typical-measure",
+                                                "prose": "Technische Unterstützung von Datenminimierung im Zugriff (z.B. Maskierung, eingeschränkte Detailansicht, „Click-to-See\" mit Protokollierung) für Rollen, die nicht alle Detailinformationen benötigen."
+                                            }
+                                        ]
                                     }
                                 ]
                             },
