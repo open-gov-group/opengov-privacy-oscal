@@ -71,8 +71,8 @@
                     ],
                     "controls": [
                         {
-                            "id": "SDM-TOM-AC-01-stmt",
-                            "title": "Die Organisation betreibt ein rollenbasiertes, dokumentiertes und regelmäßig überprüftes Zugriffs- und Berechtigungsmanagement für alle Systeme mit personenbezogenen Daten.",
+                            "id": "SDM-TOM-AC-01-01",
+                            "title": "",
                             "class": "technical",
                             "props": [
                                 {
@@ -113,7 +113,17 @@
                             ],
                             "parts": [
                                 {
-                                    "id": "sdm-tom-ac-01-typical-measures",
+                                    "id": "SDM-TOM-AC-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Die Organisation betreibt ein rollenbasiertes, dokumentiertes und regelmäßig überprüftes Zugriffs- und Berechtigungsmanagement für alle Systeme mit personenbezogenen Daten."
+                                },
+                                {
+                                    "id": "SDM-TOM-AC-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Zugriffskontrollrichtlinien regeln den Zugriff zwischen aktiven Entitäten oder Subjekten (z. B. Benutzern oder Prozessen, die im Auftrag von Benutzern handeln) und passiven Entitäten oder Objekten (z. B. Geräten, Dateien, Datensätzen, Domänen) in Organisationssystemen. Neben der Durchsetzung autorisierter Zugriffe auf Systemebene und der Berücksichtigung, dass Systeme zahlreiche Anwendungen und Dienste zur Unterstützung von Missions- und Geschäftsfunktionen hosten können, lassen sich Zugriffskontrollmechanismen auch auf Anwendungs- und Dienstebene einsetzen, um die Informationssicherheit und den Datenschutz zu erhöhen. Im Gegensatz zu logischen Zugriffskontrollen, die innerhalb des Systems implementiert werden, werden physische Zugriffskontrollen durch die Kontrollen der Familie „Physischer und Umweltschutz“ (PE) abgedeckt."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-01-typical-measures",
                                     "name": "typical-measures",
                                     "prose": "Konkrete technische und organisatorische Maßnahmen, jeweils mit Implementierungsniveau, risikobezogener Einordnung (Impact/Wahrscheinlichkeit) und Zuordnung der verantwortlichen Rollen.",
                                     "parts": [
@@ -123,6 +133,11 @@
                                             "prose": "Einrichtung eines grundlegenden Identity- und Access-Managements (z.B. Verzeichnisdienst mit Rollen/Gruppen), in dem Benutzerkonten, Rollen und Gruppen zentral verwaltet werden. Zugriffsrechte werden primär über Gruppen/Rollen statt über Einzelberechtigungen vergeben."
                                         }
                                     ]
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Genehmigte Berechtigungen für den logischen Zugriff auf Informationen und Systemressourcen werden gemäß den geltenden Zugriffskontrollrichtlinien durchgesetzt."
                                 }
                             ]
                         }
