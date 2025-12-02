@@ -26,111 +26,394 @@
         "id": "sdm-tom-access",
         "title": "SDM Technical and Organizational Measures – Access Control",
         "controls": [
-          {
-            "id": "SDM-TOM-AC-01",
-            "title": "Rollenbasiertes Zugriffs- und Berechtigungsmanagement",
-            "class": "technical",
-            "props": [
-              { "name": "sdm-goal",
-                "class": "warranty-objective", 
-                "value": "VERTRAUEN" },
-              { "name": "sdm-goal",
-                "class": "warranty-objective",
-                "value": "INTEGRITAET"
-            },
-              { "name": "sdm-module",
-                "class": "sdm-module-51",
-                "value": "SDM-AC-01",
-                "remarks": "Zugriffe auf Daten, Systeme und Prozesse regeln"
-            },
-              { "name": "related-mapping",
-                "class": "bsi",
-                "value": "ORP-4",
-                "remarks": "ORP.4 Identitäts- und Berechtigungsmanagement"
-            },
             {
-                "name": "related-mapping",
-                "class": "iso27001",
-                "value": "A.9.2.3",
-                "remarks": "ISO/IEC 27001 Annex 5 & 8/9 (Access-Control-Bereich, Platzhalter)" },
-            {
-                "name": "related-mapping",
-                "class": "iso27701",
-                "value": "PIMS-7.2.1",
-                "remarks": "ISO/IEC 27701 – PIMS-spezifische Anforderungen an Zugriff/Berechtigungen (Platzhalter)" }
-            ],
-            "links": [
-              {
-                "href": "#TOM-02",
-                "rel": "related-control",
-                "text": "Begründung: TOM-02 beschreibt Zugriffs- und Berechtigungsmanagement aus Datenschutzsicht; SDM-TOM-AC-01 konkretisiert die sicherheitstechnische Umsetzung (Rollen, JML-Prozesse, Rezertifizierungen)."
-              }
-            ],
-            "parts": [
-              {
-                "id": "sdm-tom-ac-01-stmt",
-                "name": "statement",
-                "prose": "Die Organisation betreibt ein rollenbasiertes, dokumentiertes und regelmäßig überprüftes Zugriffs- und Berechtigungsmanagement für alle Systeme mit personenbezogenen Daten."
-              },
-              {
-                "id": "sdm-tom-ac-01-typical-measures",
-                "name": "typical-measures",
-                "prose": "Beispiele für technische und organisatorische Maßnahmen:",
+                "id": "SDM-TOM-AC-01",
+                "title": "Rollenbasiertes Zugriffs- und Berechtigungsmanagement",
+                "class": "technical",
                 "props": [
                     {
-                        "name": "dp-risk-impact",
-                        "class": "dp-risk",
-                        "value": "high"
+                        "name": "sdm-goal",
+                        "class": "warranty-objective",
+                        "value": "VERTRAUEN"
                     },
                     {
-                        "name": "dp-likelihood",
-                        "class": "dp-likelihood",
-                        "value": "moderate"
+                        "name": "sdm-goal",
+                        "class": "warranty-objective",
+                        "value": "INTEGRITAET"
                     },
                     {
-                        "name": "dp-risk-scenario-ref",
-                        "class": "dp-risk-scenario",
-                        "value": "#tom-02-risk-impact-high"
+                        "name": "sdm-baustein-id",
+                        "value": "SDM-AC-01"
                     },
                     {
-                        "name": "implementation-level",
-                        "class": "dp-measure-intensity",
-                        "value": "extended"
+                        "name": "mapping-hint-bsi",
+                        "class": "bsi",
+                        "value": "ORP-4",
+                        "remarks": "ORP.4 Identitäts- und Berechtigungsmanagement"
                     },
                     {
-                        "name": "todo-hint",
-                        "class": "dp-implementation-task",
-                        "value": "enable-mfa-all-users"
+                        "name": "mapping-hint-iso27001",
+                        "class": "iso27001",
+                        "value": "Annex 5 & 8/9 (Access-Control-Bereich, Platzhalter)"
+                    },
+                    {
+                        "name": "mapping-hint-iso27701",
+                        "class": "iso27701",
+                        "value": "PIMS-spezifische Anforderungen an Zugriff/Berechtigungen (Platzhalter)"
                     }
-                ], 
+                ],
+                "links": [
+                    {
+                        "href": "#TOM-02",
+                        "rel": "related-control",
+                        "text": "Begründung: TOM-02 beschreibt Zugriffs- und Berechtigungsmanagement aus Datenschutzsicht; SDM-TOM-AC-01 konkretisiert die sicherheitstechnische Umsetzung (Rollen, JML-Prozesse, Rezertifizierungen)."
+                    }
+                ],
                 "parts": [
-                  {
-                    "id": "sdm-tom-ac-01-typical-measure-01",
-                    "name": "typical-measure",
-                    "prose": "Implementierung eines Identity- und Access-Management-Systems (IAM/IDM) mit definierten Rollenprofilen, Gruppen und Berechtigungsbündeln."
-
-                },
-                  {
-                    "id": "sdm-tom-ac-01-typical-measure-02",
-                    "name": "typical-measure",
-                    "prose": "Standardisierte Joiner-Mover-Leaver-Prozesse (JML) mit automatisierter Anbindung an Verzeichnisdienste, Zielsysteme und Ticketing."
-                  },
-                  {
-                    "id": "sdm-tom-ac-01-typical-measure-03",
-                    "name": "typical-measure",
-                    "prose": "Regelmäßige, dokumentierte Berechtigungsreviews durch Fachverantwortliche und System-Eigentümer, inkl. Eskalations- und Korrekturmaßnahmen."
-                  },
-                  {
-                    "id": "sdm-tom-ac-01-typical-measure-04",
-                    "name": "typical-measure",
-                    "prose": "Härtung administrativer Konten (z.B. eigene Admin-Accounts, MFA-Pflicht, Logging, Vier-Augen-Prinzip bei besonders kritischen Änderungen)."
-                  }
+                    {
+                        "id": "sdm-tom-ac-01-stmt",
+                        "name": "statement",
+                        "prose": "Die Organisation betreibt ein rollenbasiertes, dokumentiertes und regelmäßig überprüftes Zugriffs- und Berechtigungsmanagement für alle Systeme mit personenbezogenen Daten."
+                    },
+                    {
+                        "id": "sdm-tom-ac-01-typical-measures",
+                        "name": "typical-measures",
+                        "prose": "Konkrete technische und organisatorische Maßnahmen, jeweils mit Implementierungsniveau, risikobezogener Einordnung (Impact/Wahrscheinlichkeit) und Zuordnung der verantwortlichen Rollen.",
+                        "parts": [
+                            {
+                                "id": "sdm-tom-ac-01-measure-iam-baseline",
+                                "name": "typical-measure",
+                                "props": [
+                                    {
+                                        "name": "implementation-level",
+                                        "class": "dp-measure-intensity",
+                                        "value": "baseline"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "normal"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "low"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "IT-Operations"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "Process-Owner"
+                                    }
+                                ],
+                                "prose": "Einrichtung eines grundlegenden Identity- und Access-Managements (z.B. Verzeichnisdienst mit Rollen/Gruppen), in dem Benutzerkonten, Rollen und Gruppen zentral verwaltet werden. Zugriffsrechte werden primär über Gruppen/Rollen statt über Einzelberechtigungen vergeben."
+                            },
+                            {
+                                "id": "sdm-tom-ac-01-measure-jml-baseline",
+                                "name": "typical-measure",
+                                "props": [
+                                    {
+                                        "name": "implementation-level",
+                                        "class": "dp-measure-intensity",
+                                        "value": "baseline"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "normal"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "low"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "HR"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "IT-Operations"
+                                    }
+                                ],
+                                "prose": "Implementierung eines einfachen, dokumentierten Joiner-Mover-Leaver-Prozesses (JML), bei dem Eintritte, Rollenwechsel und Austritte zeitnah in Berechtigungen umgesetzt werden. HR liefert hierfür verbindliche Informationen an IT-Operations."
+                            },
+                            {
+                                "id": "sdm-tom-ac-01-measure-logging-baseline",
+                                "name": "typical-measure",
+                                "props": [
+                                    {
+                                        "name": "implementation-level",
+                                        "class": "dp-measure-intensity",
+                                        "value": "baseline"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "normal"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "low"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "IT-Operations"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "Security"
+                                    }
+                                ],
+                                "prose": "Aktivierung von Basis-Logging für An- und Abmeldungen sowie Änderungen an privilegierten Berechtigungen in den Zielsystemen. Logs werden mindestens für einen definierten Zeitraum zentral oder systemnah vorgehalten."
+                            },
+                            {
+                                "id": "sdm-tom-ac-01-measure-review-standard",
+                                "name": "typical-measure",
+                                "props": [
+                                    {
+                                        "name": "implementation-level",
+                                        "class": "dp-measure-intensity",
+                                        "value": "standard"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "normal"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "Process-Owner"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "System-Owner"
+                                    }
+                                ],
+                                "prose": "Etablierung regelmäßiger, dokumentierter Berechtigungsreviews (z.B. jährlich) für Systeme mit personenbezogenen Daten. Prozess- und Systemverantwortliche prüfen, ob die bestehenden Rollen-/Gruppenzuordnungen noch erforderlich sind und veranlassen den Entzug nicht mehr benötigter Berechtigungen."
+                            },
+                            {
+                                "id": "sdm-tom-ac-01-measure-mfa-standard",
+                                "name": "typical-measure",
+                                "props": [
+                                    {
+                                        "name": "implementation-level",
+                                        "class": "dp-measure-intensity",
+                                        "value": "standard"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "high"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "low"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "IT-Operations"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "Security"
+                                    }
+                                ],
+                                "prose": "Einsatz von Multi-Faktor-Authentisierung (MFA) für administrative Konten und für Rollen mit Zugriff auf besonders schutzbedürftige Daten. MFA ist mindestens für Fernzugriffe und internetexponierte Systeme verpflichtend."
+                            },
+                            {
+                                "id": "sdm-tom-ac-01-measure-workflow-standard",
+                                "name": "typical-measure",
+                                "props": [
+                                    {
+                                        "name": "implementation-level",
+                                        "class": "dp-measure-intensity",
+                                        "value": "standard"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "Process-Owner"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "IT-Operations"
+                                    }
+                                ],
+                                "prose": "Implementierung standardisierter Genehmigungs-Workflows für die Vergabe und Erweiterung privilegierter Berechtigungen (Vier-Augen-Prinzip), z.B. über ein Ticket- oder IAM-System mit dokumentierter Freigabe."
+                            },
+                            {
+                                "id": "sdm-tom-ac-01-measure-pam-advanced",
+                                "name": "typical-measure",
+                                "props": [
+                                    {
+                                        "name": "implementation-level",
+                                        "class": "dp-measure-intensity",
+                                        "value": "advanced"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "high"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "high"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "Security"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "IT-Operations"
+                                    }
+                                ],
+                                "prose": "Einführung eines Privileged-Access-Management-(PAM)-Systems für administrative und Hochrisiko-Rollen (z.B. Just-in-Time-Berechtigungen, zeitlich begrenzte Elevation, vollständiger Audit-Trail administrativer Sitzungen)."
+                            },
+                            {
+                                "id": "sdm-tom-ac-01-measure-fine-grained-advanced",
+                                "name": "typical-measure",
+                                "props": [
+                                    {
+                                        "name": "implementation-level",
+                                        "class": "dp-measure-intensity",
+                                        "value": "advanced"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "high"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "moderate"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "high"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "Architecture"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "System-Owner"
+                                    }
+                                ],
+                                "prose": "Umsetzung fein granularer Zugriffskontrollen (z.B. rollen- und attributbasierte Zugriffe, Segmentierung besonders sensibler Datenbereiche), sodass nur eng definierte Rollen Zugriff auf Hochrisiko-Daten erhalten."
+                            },
+                            {
+                                "id": "sdm-tom-ac-01-measure-monitoring-advanced",
+                                "name": "typical-measure",
+                                "props": [
+                                    {
+                                        "name": "implementation-level",
+                                        "class": "dp-measure-intensity",
+                                        "value": "advanced"
+                                    },
+                                    {
+                                        "name": "dp-risk-impact",
+                                        "class": "dp-impact",
+                                        "value": "high"
+                                    },
+                                    {
+                                        "name": "dp-likelihood",
+                                        "class": "dp-likelihood",
+                                        "value": "high"
+                                    },
+                                    {
+                                        "name": "responsible-role",
+                                        "class": "org-role",
+                                        "value": "Security"
+                                    }
+                                ],
+                                "prose": "Einführung von kontinuierlichem Monitoring und Verhaltensanalysen (z.B. UEBA) für Zugriffe auf besonders schutzbedürftige Daten und privilegierte Konten mit Anbindung an Incident-Response- und Fraud-Management-Prozesse."
+                            }
+                        ]
+                    }
                 ]
-              }
-            ]
-          }
+            }
         ]
-      },
+    },
       {
         "id": "sdm-tom-crypto",
         "title": "SDM Technical and Organizational Measures – Encryption & Key Management",
