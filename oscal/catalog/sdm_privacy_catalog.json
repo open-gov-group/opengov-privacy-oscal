@@ -76,38 +76,39 @@
                 "id": "sdm-tom-ac-01-typical-measures",
                 "name": "typical-measures",
                 "prose": "Beispiele für technische und organisatorische Maßnahmen:",
+                "props": [
+                    {
+                        "name": "dp-risk-impact",
+                        "class": "dp-risk",
+                        "value": "high"
+                    },
+                    {
+                        "name": "dp-likelihood",
+                        "class": "dp-likelihood",
+                        "value": "moderate"
+                    },
+                    {
+                        "name": "dp-risk-scenario-ref",
+                        "class": "dp-risk-scenario",
+                        "value": "#tom-02-risk-impact-high"
+                    },
+                    {
+                        "name": "implementation-level",
+                        "class": "dp-measure-intensity",
+                        "value": "extended"
+                    },
+                    {
+                        "name": "todo-hint",
+                        "class": "dp-implementation-task",
+                        "value": "enable-mfa-all-users"
+                    }
+                ], 
                 "parts": [
                   {
                     "id": "sdm-tom-ac-01-typical-measure-01",
                     "name": "typical-measure",
-                    "prose": "Implementierung eines Identity- und Access-Management-Systems (IAM/IDM) mit definierten Rollenprofilen, Gruppen und Berechtigungsbündeln.",
-                    "props": [
-                        {
-                            "name": "dp-risk-impact",
-                            "class": "dp-risk",
-                            "value": "high"
-                        },
-                        {
-                            "name": "dp-likelihood",
-                            "class": "dp-likelihood",
-                            "value": "moderate"
-                        },
-                        {
-                            "name": "dp-risk-scenario-ref",
-                            "class": "dp-risk-scenario",
-                            "value": "#tom-02-risk-impact-high"
-                        },
-                        {
-                            "name": "implementation-level",
-                            "class": "dp-measure-intensity",
-                            "value": "extended"
-                        },
-                        {
-                            "name": "todo-hint",
-                            "class": "dp-implementation-task",
-                            "value": "enable-mfa-all-users"
-                        }
-                    ]
+                    "prose": "Implementierung eines Identity- und Access-Management-Systems (IAM/IDM) mit definierten Rollenprofilen, Gruppen und Berechtigungsbündeln."
+
                 },
                   {
                     "id": "sdm-tom-ac-01-typical-measure-02",
