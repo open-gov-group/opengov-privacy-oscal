@@ -718,171 +718,681 @@
                 }
             ]
         },
-      {
-        "id": "sdm-tom-crypto",
-        "title": "SDM Technical and Organizational Measures – Encryption & Key Management",
-        "controls": [
-          {
-            "id": "SDM-TOM-CR-01",
-            "title": "Verschlüsselung von Daten in Übertragung und Speicherung",
-            "class": "technical",
-            "props": [
+        {
+            "id": "sdm-tom-crypto",
+            "title": "SDM Technical and Organizational Measures – Encryption & Key Management",
+            "controls": [
                 {
-                    "name": "sdm-goal",
-                    "class": "warranty-objective",
-                    "value": "VERTRAUEN"
+                    "id": "SDM-TOM-CR-01",
+                    "title": "Verschlüsselung von Daten in Übertragung und Speicherung",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERTRAULICHKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTEGRITÄT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "NICHTVERKETTUNG"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-51",
+                            "value": "SDM-CR-01",
+                            "remarks": "Baustein Kryptografie – Schutz personenbezogener Daten bei Übertragung und Speicherung."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. f DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO (insb. Verschlüsselung und Pseudonymisierung)"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "CON.1",
+                            "remarks": "BSI-Grundschutz: CON.1 Kryptokonzept."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27001",
+                            "value": "A.10.x",
+                            "remarks": "ISO/IEC 27001 – Cryptography (Platzhalter für detailliertes Mapping)."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27701",
+                            "value": "PIMS-7.2.1",
+                            "remarks": "ISO/IEC 27701 – ergänzende PIMS-Anforderungen an Kryptografie (Platzhalter)."
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#TOM-03",
+                            "rel": "related-control",
+                            "text": "TOM-03 (Open Privacy Catalog) beschreibt Verschlüsselung/Pseudonymisierung aus Sicht der betroffenen Personen und des Datenschutzrisikos; SDM-TOM-CR-01 konkretisiert die technischen Maßnahmen für Daten-in-Transit und Daten-at-Rest."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-cr-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation stellt sicher, dass personenbezogene Daten gemäß ihrem Schutzbedarf angemessen verschlüsselt werden – sowohl bei der Übertragung (Daten-in-Transit) als auch bei der Speicherung (Daten-at-Rest)."
+                        },
+                        {
+                            "id": "sdm-tom-cr-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Die Pflicht zu angemessenen Verschlüsselungsmaßnahmen ergibt sich insbesondere aus Art. 5 Abs. 1 lit. f DSGVO (Integrität und Vertraulichkeit), Art. 24 DSGVO (Verantwortung des Verantwortlichen), Art. 25 DSGVO (Datenschutz durch Technikgestaltung und datenschutzfreundliche Voreinstellungen) sowie Art. 32 DSGVO (Sicherheit der Verarbeitung), der Verschlüsselung ausdrücklich als Beispiel einer geeigneten technischen Maßnahme nennt."
+                        },
+                        {
+                            "id": "sdm-tom-cr-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-CR-01 trägt zu mehreren Gewährleistungszielen des SDM bei.",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-cr-01-warranty-confidentiality",
+                                    "name": "warranty-objective",
+                                    "prose": "VERTRAULICHKEIT: Verschlüsselung stellt sicher, dass unbefugte Dritte bei Verlust, Diebstahl oder Abfluss von Daten keinen unmittelbaren Klartextzugriff erhalten."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-warranty-integrity",
+                                    "name": "warranty-objective",
+                                    "prose": "INTEGRITÄT: Moderne Kryptoprotokolle und Signaturverfahren unterstützen die Erkennung unbefugter Veränderungen von Daten."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-warranty-non-linkability",
+                                    "name": "warranty-objective",
+                                    "prose": "NICHTVERKETTUNG: Durch getrennte Schlüsselräume und Pseudonymisierung kann die Verknüpfung personenbezogener Daten über Systeme hinweg erschwert werden."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-CR-01-01",
+                            "title": "Transportverschlüsselung für personenbezogene Daten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-cr-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Übertragungen personenbezogener Daten über unsichere Netze (insb. Internet) sind durch zeitgemäße Transportverschlüsselung geschützt."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Ohne Transportverschlüsselung besteht ein hohes Risiko des Mitlesens oder der Manipulation personenbezogener Daten auf dem Übertragungsweg. Die Maßnahme konkretisiert Art. 32 DSGVO und ist heute als Mindeststandard für praktisch alle Web-, API- und E-Mail-Kommunikation mit personenbezogenen Daten zu verstehen."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für die Baseline-Umsetzung von Transportverschlüsselung:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-cr-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Verpflichtende Nutzung von TLS (mindestens aktuelle, als sicher empfohlene Version) für alle externen Web- und API-Verbindungen, inkl. Härtung der Cipher-Suites und zentral gesteuerter Zertifikatsverwaltung."
+                                        },
+                                        {
+                                            "id": "sdm-tom-cr-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Aktivierung von TLS für interne Services, soweit technisch möglich, insbesondere bei Zugriffen auf personenbezogene Daten in Rechenzentren oder Cloud-Umgebungen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Konfigurationsbelege, dass Web-/API-Endpunkte TLS erzwingen (z.B. Redirects, HSTS), (b) TLS-Scans oder Sicherheitsberichte mit akzeptablen Konfigurationen, (c) Dokumentation zu Zertifikatsverwaltung und Erneuerungsprozessen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-CR-01-02",
+                            "title": "Speicherverschlüsselung für Daten-at-Rest",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-cr-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Personenbezogene Daten werden bei Speicherung auf Servern, Datenbanken, virtuellen Maschinen und mobilen Datenträgern mit geeigneten Verfahren verschlüsselt."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Speicherverschlüsselung reduziert das Risiko, dass bei Verlust, Diebstahl oder unbefugtem Zugriff auf Datenträger Klartextdaten offengelegt werden. Für Verarbeitungen mit moderatem oder hohem Risiko ist dies regelmäßig Bestandteil eines angemessenen TOM-Sets nach Art. 32 DSGVO."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Speicherverschlüsselung auf Standardniveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-cr-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz von Volumen-Verschlüsselung oder Datenbank-Verschlüsselung für Server, Datenbanken, virtuelle Maschinen und mobile Datenträger, die personenbezogene Daten speichern."
+                                        },
+                                        {
+                                            "id": "sdm-tom-cr-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Verpflichtende Vollverschlüsselung mobiler Endgeräte (Laptops, Smartphones, Tablets) mit personenbezogenen Daten sowie definierte Prozesse für sichere Schlüssel- und Recovery-Verwaltung."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Dokumentation der eingesetzten Verschlüsselungslösungen für relevante Systeme, (b) Richtlinien, die Speicherverschlüsselung für definierte Systeme/Datenträger vorschreiben, (c) Stichproben, dass Systeme tatsächlich verschlüsselt betrieben werden (z.B. Screenshots, Konfigurationsauszüge)."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-CR-01-03",
+                            "title": "Erhöhte Verschlüsselung für Hochrisiko-Daten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-cr-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Verarbeitungen mit hohem Datenschutzrisiko (z.B. Art. 9-/Art. 10-Daten, umfangreiches Profiling) nutzen zusätzliche, anwendungsnahe Verschlüsselungs- oder Pseudonymisierungskonzepte."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Für Hochrisiko-Verarbeitungen genügt reine Transport- und Speicherverschlüsselung oft nicht, da Angriffe im Systemkontext oder durch interne Missbräuche möglich sind. Anwendungsnahe Verschlüsselung oder Pseudonymisierung reduzieren das Risiko für betroffene Personen und sind typischerweise Ergebnis einer DPIA nach Art. 35 DSGVO."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Advanced-Niveau für Hochrisiko-Daten:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-cr-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz von Ende-zu-Ende-Verschlüsselung oder feldbezogener Verschlüsselung bei besonders schutzbedürftigen Daten (z.B. Gesundheitsdaten), sofern technisch und organisatorisch vertretbar."
+                                        },
+                                        {
+                                            "id": "sdm-tom-cr-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Konsequente Trennung von Identitätsdaten und Inhalts-/Fachdaten (Pseudonymisierung) mit getrennten Schlüssel- bzw. Zuordnungstabellen und streng limitiertem Zugriffskreis."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-cr-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Architektur- und Designunterlagen, die zusätzliche Verschlüsselungs-/Pseudonymisierungskonzepte für Hochrisiko-Daten beschreiben, (b) technische Implementierungsnachweise (z.B. Datenbankschemata, Schlüsseltrennung), (c) Bezug zu DPIA-Ergebnissen, aus denen die Notwendigkeit der Maßnahmen hervorgeht."
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "name": "sdm-goal",
-                    "class": "warranty-objective",
-                    "value": "VERTRAUEN"
-                },
-                {
-                    "name": "sdm-goal",
-                    "class": "warranty-objective",
-                    "value": "TRANSPORT"
-                },
-                {
-                    "name": "sdm-module",
-                    "class": "sdm-module-51",
-                    "value": "SDM-CR-01",
-                    "remarks": "Zugriffe auf Daten, Systeme und Prozesse regeln"
-                },
-                {
-                    "name": "related-mapping",
-                    "class": "bsi",
-                    "value": "CON.1",
-                    "remarks": "CON.1 Kryptokonzept"
-                },
-                {
-                    "name": "related-mapping",
-                    "class": "iso27001",
-                    "value": "A.10.1.3",
-                    "remarks": "ISO/IEC 27001 Annex 10 (Cryptography)"
-                },
-                {
-                    "name": "related-mapping",
-                    "class": "iso27701",
-                    "value": "PIMS-7.2.1",
-                    "remarks": "ISO/IEC 27701 – Ergänzende PIMS-Anforderungen"
+                    "id": "SDM-TOM-CR-02",
+                    "title": "Kryptografisches Schlüssel- und Geheimnis-Management",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERTRAULICHKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTEGRITÄT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERFÜGBARKEIT"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-51",
+                            "value": "SDM-CR-02",
+                            "remarks": "Baustein Kryptografisches Schlüssel- und Geheimnis-Management."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. f DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "CON.1",
+                            "remarks": "BSI-Grundschutz: CON.1 Kryptokonzept."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27001",
+                            "value": "A.10.x",
+                            "remarks": "ISO/IEC 27001 – Cryptography (Platzhalter für detailliertes Mapping)."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27701",
+                            "value": "PIMS-7.2.1",
+                            "remarks": "ISO/IEC 27701 – ergänzende PIMS-Anforderungen an Kryptografie (Platzhalter)."
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#TOM-03",
+                            "rel": "related-control",
+                            "text": "Die Wirksamkeit von TOM-03 (Open Privacy Catalog) hängt wesentlich von einem kontrollierten Schlüssel- und Geheimnis-Management ab (Generierung, Rotation, Schutz, Entzug)."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-cr-02-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation betreibt ein strukturiertes Management für kryptografische Schlüssel und andere Geheimnisse (z.B. API-Keys, Tokens, Passwörter) über den gesamten Lebenszyklus."
+                        },
+                        {
+                            "id": "sdm-tom-cr-02-legal",
+                            "name": "legal-justification",
+                            "prose": "Ohne wirksames Schlüssel- und Geheimnis-Management verliert Verschlüsselung ihre Schutzwirkung. Aus Art. 5 Abs. 1 lit. f, Art. 24 und 32 DSGVO folgt daher, dass Generierung, Schutz, Nutzung, Rotation und Widerruf von Schlüsseln/Geheimnissen kontrolliert und nachweisbar zu gestalten sind."
+                        },
+                        {
+                            "id": "sdm-tom-cr-02-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-CR-02 unterstützt mehrere Gewährleistungsziele.",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-cr-02-warranty-confidentiality",
+                                    "name": "warranty-objective",
+                                    "prose": "VERTRAULICHKEIT: Nur bei geschützten und korrekt verwalteten Schlüsseln bleiben verschlüsselte Daten für Unbefugte unlesbar."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-warranty-integrity",
+                                    "name": "warranty-objective",
+                                    "prose": "INTEGRITÄT: Signatur- und Integritätsmechanismen setzen vertrauenswürdige, kontrollierte Schlüssel voraus."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-warranty-availability",
+                                    "name": "warranty-objective",
+                                    "prose": "VERFÜGBARKEIT: Verlust oder unkontrollierbare Sperrung von Schlüsseln kann zu Datenverlust führen; geregeltes Schlüsselmanagement verhindert dies."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-CR-02-01",
+                            "title": "Zentrales Secrets- und Key-Management",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-cr-02-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Kryptografische Schlüssel und andere Geheimnisse werden in zentralen, dafür vorgesehenen Lösungen verwaltet."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Die verteilte, unsystematische Aufbewahrung von Schlüsseln und Geheimnissen (z.B. in Quellcode-Repositories, Konfigurationsdateien, Notizzetteln) führt zu hohem Missbrauchsrisiko. Zentrales Management ist heute Baseline-Voraussetzung für wirksame Verschlüsselung."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für eine Baseline-Umsetzung:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-cr-02-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Verwendung dedizierter Secrets-Management-Lösungen oder HSMs zur sicheren Generierung, Speicherung und Rotation kryptografischer Schlüssel und Geheimnisse."
+                                        },
+                                        {
+                                            "id": "sdm-tom-cr-02-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Verbot der Speicherung von Secrets in Klartext in Quellcode-Repositories oder Konfigurationsdateien; technische Scans zum Auffinden von Hard-Coded-Secrets."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) eingesetzte Secrets-/Key-Management-Lösungen, (b) Richtlinien zum Umgang mit Secrets, (c) Nachweise, dass produktive Secrets in diesen Lösungen und nicht im Klartext in Code/Config gehalten werden."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-CR-02-02",
+                            "title": "Schlüssel-Lifecycle und Rotation",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-cr-02-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Es existieren definierte Prozesse für die Generierung, Verteilung, Rotation und den Widerruf kryptografischer Schlüssel und Geheimnisse."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Ohne geregelten Lebenszyklus steigt mit der Zeit das Risiko kompromittierter oder veralteter Schlüssel. Art. 32 DSGVO verlangt, dass Maßnahmen regelmäßig auf ihre Wirksamkeit überprüft und angepasst werden – dazu gehört insbesondere auch die planvolle Rotation."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Lifecycle-Management und Rotation:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-cr-02-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Definierte Prozesse und Intervalle für Schlüsselrotation und -widerruf (z.B. bei Kompromittierung, Mitarbeiterwechsel, Ende von Dienstleistungsverhältnissen)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-cr-02-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Automatisierte Rotationsmechanismen, soweit möglich (z.B. kurzlebige Tokens, regelmäßige Zertifikatserneuerung mit ACME-Protokoll)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) dokumentierte Prozesse/Policies zur Schlüssel- und Secrets-Rotation, (b) Beispiele durchgeführter Rotation/Widerrufe (z.B. nach Vorfällen oder Personaländerungen), (c) Kennzahlen oder Reports zum Rotationsstatus."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-CR-02-03",
+                            "title": "Rollentrennung und Protokollierung im Schlüsselzugriff",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-cr-02-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Zugriffe auf kryptografische Schlüssel und Geheimnisse unterliegen Rollentrennung, Vier-Augen-Prinzip und werden nachvollziehbar protokolliert."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Da Schlüsselmaterial den Klartextzugang zu verschlüsselten Daten ermöglicht, ist der Zugriff darauf selbst als Hochrisiko-Verarbeitung zu betrachten. Strikte Rollentrennung und Logging sind für hohe Datenschutzrisiken ein Advanced-Maßnahmenpaket im Sinne von Art. 32 DSGVO."
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Advanced-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-cr-02-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Strikte Trennung von Rollen (z.B. Systemadministration, Security, Entwicklung) und Logging von Zugriffen auf Schlüsselmaterial."
+                                        },
+                                        {
+                                            "id": "sdm-tom-cr-02-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Etablierung von Vier-Augen-Freigaben für besonders kritische Operationen (z.B. Export von Schlüsseln, Wiederherstellung von Master-Keys) mit dokumentierter Begründung."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-cr-02-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Rollen- und Berechtigungskonzepte für den Zugriff auf Key-/Secrets-Management-Systeme, (b) Protokolle der Zugriffe und kritischen Operationen, (c) Nachweise für die Umsetzung des Vier-Augen-Prinzips bei besonders sensiblen Aktionen."
+                                }
+                            ]
+                        }
+                    ]
                 }
-            ],
-            "links": [
-                {
-                    "href": "#TOM-03",
-                    "rel": "related-control",
-                    "text": "Begründung: TOM-03 fordert angemessene Verschlüsselung und Pseudonymisierung aus Datenschutzperspektive; SDM-TOM-CR-01 konkretisiert die technischen Vorgaben für Daten-at-rest und Daten-in-transit."
-                }
-            ],
-            "parts": [
-              {
-                "id": "sdm-tom-cr-01-stmt",
-                "name": "statement",
-                "prose": "Die Organisation stellt sicher, dass personenbezogene Daten gemäß Schutzbedarf angemessen verschlüsselt werden – sowohl bei der Übertragung als auch bei der Speicherung."
-              },
-              {
-                "id": "sdm-tom-cr-01-typical-measures",
-                "name": "typical-measures",
-                "prose": "Beispiele für technische und organisatorische Maßnahmen:",
-                "parts": [
-                  {
-                    "id": "sdm-tom-cr-01-typical-measure-01",
-                    "name": "typical-measure",
-                    "prose": "Verpflichtende Nutzung von TLS (mindestens aktuelle Version) für alle externen Web- und API-Verbindungen, inkl. Härtung der Cipher-Suites und Zertifikatsverwaltung."
-                  },
-                  {
-                    "id": "sdm-tom-cr-01-typical-measure-02",
-                    "name": "typical-measure",
-                    "prose": "Volumen-Verschlüsselung oder Datenbank-Verschlüsselung für Server, Datenbanken, virtuelle Maschinen und mobile Datenträger, die personenbezogene Daten speichern."
-                  },
-                  {
-                    "id": "sdm-tom-cr-01-typical-measure-03",
-                    "name": "typical-measure",
-                    "prose": "Einsatz von Ende-zu-Ende-Verschlüsselung oder feldbezogener Verschlüsselung bei besonders schutzbedürftigen Daten (z.B. Gesundheitsdaten), sofern technisch und organisatorisch vertretbar."
-                  }
-                ]
-              }
             ]
-          },
-          {
-            "id": "SDM-TOM-CR-02",
-            "title": "Kryptografisches Schlüssel- und Geheimnis-Management",
-            "class": "technical",
-            "props": [
-                {
-                    "name": "sdm-goal",
-                    "class": "warranty-objective",
-                    "value": "VERTRAUEN"
-                },
-                {
-                    "name": "sdm-goal",
-                    "class": "warranty-objective",
-                    "value": "VERTRAUEN"
-                },
-                {
-                    "name": "sdm-module",
-                    "class": "sdm-module-51",
-                    "value": "SDM-CR-01",
-                    "remarks": "Zugriffe auf Daten, Systeme und Prozesse regeln"
-                },
-                {
-                    "name": "related-mapping",
-                    "class": "bsi",
-                    "value": "CON.1",
-                    "remarks": "CON.1 Kryptokonzept"
-                },
-                {
-                    "name": "related-mapping",
-                    "class": "iso27001",
-                    "value": "A.10.1.3",
-                    "remarks": "ISO/IEC 27001 Annex 10 (Cryptography)"
-                },
-                {
-                    "name": "related-mapping",
-                    "class": "iso27701",
-                    "value": "PIMS-7.2.1",
-                    "remarks": "ISO/IEC 27701 – Ergänzende PIMS-Anforderungen"
-                }
-            ],
-            "links": [
-                {
-                    "href": "#TOM-03",
-                    "rel": "related-control",
-                    "text": "Begründung: Wirksamkeit von TOM-03 hängt unmittelbar von einem kontrollierten Schlüssel- und Geheimnis-Management ab (Generierung, Rotation, Schutz, Entzug)."
-                }
-            ],
-            "parts": [
-              {
-                "id": "sdm-tom-cr-02-stmt",
-                "name": "statement",
-                "prose": "Die Organisation betreibt ein strukturiertes Management für kryptografische Schlüssel und andere Geheimnisse (z.B. API-Keys, Tokens, Passwörter) über den gesamten Lebenszyklus."
-              },
-              {
-                "id": "sdm-tom-cr-02-typical-measures",
-                "name": "typical-measures",
-                "prose": "Beispiele für technische und organisatorische Maßnahmen:",
-                "parts": [
-                  {
-                    "id": "sdm-tom-cr-02-typical-measure-01",
-                    "name": "typical-measure",
-                    "prose": "Verwendung dedizierter Secrets-Management-Lösungen oder HSMs zur sicheren Generierung, Speicherung und Rotation kryptografischer Schlüssel und Geheimnisse."
-                  },
-                  {
-                    "id": "sdm-tom-cr-02-typical-measure-02",
-                    "name": "typical-measure",
-                    "prose": "Definierte Prozesse und Intervalle für Schlüsselrotation und -widerruf (z.B. bei Kompromittierung, Mitarbeiterwechsel, Ende von Dienstleistungsverhältnissen)."
-                  },
-                  {
-                    "id": "sdm-tom-cr-02-typical-measure-03",
-                    "name": "typical-measure",
-                    "prose": "Strikte Trennung von Rollen (z.B. Systemadministration, Security, Entwicklung) und Logging von Zugriffen auf Schlüsselmaterial."
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      }
+        }
     ]
-  }
+}
 }
