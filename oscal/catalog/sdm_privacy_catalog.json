@@ -34,23 +34,23 @@
                         {
                             "name": "sdm-goal",
                             "class": "warranty-objective",
-                            "value": "confidentiality"
+                            "value": "VERTRAULICHKEIT"
                         },
                         {
                             "name": "sdm-goal",
                             "class": "warranty-objective",
-                            "value": "integrity"
+                            "value": "INTEGRITÄT"
                         },
                         {
                             "name": "sdm-goal",
                             "class": "warranty-objective",
-                            "value": "Intervenability"
+                            "value": "INTERVENIERBARKEIT"
                         },
                         {
                             "name": "sdm-module",
                             "class": "sdm-module-51",
                             "value": "SDM-AC-01",
-                            "remarks": "Zugriffe auf Daten, Systeme und Prozesse regeln (SDM-AC-01)."
+                            "remarks": "Baustein 51 „Zugriffe auf Daten, Systeme und Prozesse regeln“."
                         },
                         {
                             "name": "dsgvo-article",
@@ -107,27 +107,27 @@
                         {
                             "id": "sdm-tom-ac-01-legal",
                             "name": "legal-justification",
-                            "prose": "Datenschutzrechtlich folgt das Erfordernis eines angemessenen Zugriffs- und Berechtigungsmanagements insbesondere aus Art. 5 Abs. 1 lit. f DSGVO (Integrität und Vertraulichkeit), Art. 24 DSGVO (Verantwortung des Verantwortlichen), Art. 25 DSGVO (Datenschutz durch Technikgestaltung und durch Voreinstellungen) sowie Art. 32 DSGVO (Sicherheit der Verarbeitung). Ein unzureichend gesteuertes Berechtigungsmanagement erhöht das Risiko unbefugter Einsichtnahme, Veränderung und Verknüpfung personenbezogener Daten und kann damit zu erheblichen Beeinträchtigungen der Rechte und Freiheiten betroffener Personen führen (z.B. Verlust der Vertraulichkeit, unzulässige Profilbildung, Diskriminierung)."
+                            "prose": "Datenschutzrechtlich folgt das Erfordernis eines angemessenen Zugriffs- und Berechtigungsmanagements insbesondere aus Art. 5 Abs. 1 lit. f DSGVO (Integrität und Vertraulichkeit), Art. 24 DSGVO (Verantwortung des Verantwortlichen), Art. 25 DSGVO (Datenschutz durch Technikgestaltung und datenschutzfreundliche Voreinstellungen) sowie Art. 32 DSGVO (Sicherheit der Verarbeitung). Ein unzureichend gesteuertes Berechtigungsmanagement erhöht das Risiko unbefugter Einsichtnahme, Veränderung und Verknüpfung personenbezogener Daten und kann zu erheblichen Beeinträchtigungen der Rechte und Freiheiten betroffener Personen führen."
                         },
                         {
                             "id": "sdm-tom-ac-01-warranty",
                             "name": "warranty-mapping",
-                            "prose": "SDM-TOM-AC-01 trägt zu mehreren Gewährleistungszielen des Standard-Datenschutzmodells bei.",
+                            "prose": "SDM-TOM-AC-01 trägt zu mehreren Gewährleistungszielen des SDM bei.",
                             "parts": [
                                 {
                                     "id": "sdm-tom-ac-01-warranty-confidentiality",
                                     "name": "warranty-objective",
-                                    "prose": "VERTRAULICHKEIT: Durch streng gesteuerte und dokumentierte Berechtigungen wird verhindert, dass Unbefugte personenbezogene Daten einsehen oder abrufen können."
+                                    "prose": "VERTRAULICHKEIT: Streng gesteuerte Berechtigungen verhindern, dass Unbefugte personenbezogene Daten einsehen oder abrufen können."
                                 },
                                 {
                                     "id": "sdm-tom-ac-01-warranty-integrity",
                                     "name": "warranty-objective",
-                                    "prose": "INTEGRITÄT: Rollenkonzepte und Berechtigungsgrenzen reduzieren das Risiko unbefugter oder unbeabsichtigter Veränderungen personenbezogener Daten."
+                                    "prose": "INTEGRITÄT: Rollen- und Berechtigungskonzepte reduzieren das Risiko unbefugter oder unbeabsichtigter Veränderungen personenbezogener Daten."
                                 },
                                 {
                                     "id": "sdm-tom-ac-01-warranty-intervenability",
                                     "name": "warranty-objective",
-                                    "prose": "INTERVENIERBARKEIT: Klar definierte Zuständigkeiten und Rollen erleichtern die Umsetzung von Betroffenenrechten (z.B. Berichtigung, Löschung), weil nachvollziehbar ist, wer Daten ändern oder löschen darf."
+                                    "prose": "INTERVENIERBARKEIT: Klar definierte Zuständigkeiten und Zugriffsrechte erleichtern die Umsetzung von Betroffenenrechten (z.B. Berichtigung, Löschung), weil nachvollziehbar ist, wer Daten ändern oder löschen darf."
                                 }
                             ]
                         }
@@ -135,7 +135,7 @@
                     "controls": [
                         {
                             "id": "SDM-TOM-AC-01-01",
-                            "title": "",
+                            "title": "Grundlegendes IAM und rollenbasierte Berechtigungen",
                             "class": "technical",
                             "props": [
                                 {
@@ -176,22 +176,22 @@
                             ],
                             "parts": [
                                 {
-                                    "id": "SDM-TOM-AC-01-01-stmt",
+                                    "id": "sdm-tom-ac-01-01-stmt",
                                     "name": "statement",
-                                    "prose": "Die Organisation betreibt ein rollenbasiertes, dokumentiertes und regelmäßig überprüftes Zugriffs- und Berechtigungsmanagement für alle Systeme mit personenbezogenen Daten."
+                                    "prose": "Die Organisation betreibt ein grundlegendes Identity- und Access-Management mit zentral verwalteten Benutzerkonten, Rollen und Gruppen für Systeme mit personenbezogenen Daten."
                                 },
                                 {
-                                    "id": "SDM-TOM-AC-01-01-gdn",
+                                    "id": "sdm-tom-ac-01-01-gdn",
                                     "name": "guidance",
-                                    "prose": "Zugriffskontrollrichtlinien regeln den Zugriff zwischen aktiven Entitäten oder Subjekten (z. B. Benutzern oder Prozessen, die im Auftrag von Benutzern handeln) und passiven Entitäten oder Objekten (z. B. Geräten, Dateien, Datensätzen, Domänen) in Organisationssystemen. Neben der Durchsetzung autorisierter Zugriffe auf Systemebene und der Berücksichtigung, dass Systeme zahlreiche Anwendungen und Dienste zur Unterstützung von Missions- und Geschäftsfunktionen hosten können, lassen sich Zugriffskontrollmechanismen auch auf Anwendungs- und Dienstebene einsetzen, um die Informationssicherheit und den Datenschutz zu erhöhen. Im Gegensatz zu logischen Zugriffskontrollen, die innerhalb des Systems implementiert werden, werden physische Zugriffskontrollen durch die Kontrollen der Familie „Physischer und Umweltschutz“ (PE) abgedeckt."
+                                    "prose": "Ein zentrales IAM ist aus Datenschutzsicht erforderlich, um Vertraulichkeit und Integrität personenbezogener Daten (Art. 5 Abs. 1 lit. f, Art. 32 DSGVO) systematisch sicherzustellen. Rollenbasierte Berechtigungen unterstützen das Least-Privilege-Prinzip und zahlen damit direkt auf das Gewährleistungsziel VERTRAULICHKEIT ein."
                                 },
                                 {
                                     "id": "sdm-tom-ac-01-01-typical-measures",
                                     "name": "typical-measures",
-                                    "prose": "Konkrete technische und organisatorische Maßnahmen, jeweils mit Implementierungsniveau, risikobezogener Einordnung (Impact/Wahrscheinlichkeit) und Zuordnung der verantwortlichen Rollen.",
+                                    "prose": "Typische Maßnahmen für die Baseline-Umsetzung eines IAM mit rollenbasierten Berechtigungen:",
                                     "parts": [
                                         {
-                                            "id": "sdm-tom-ac-01-01-measure",
+                                            "id": "sdm-tom-ac-01-01-measure-01",
                                             "name": "typical-measure",
                                             "prose": "Einrichtung eines grundlegenden Identity- und Access-Managements (z.B. Verzeichnisdienst mit Rollen/Gruppen), in dem Benutzerkonten, Rollen und Gruppen zentral verwaltet werden. Zugriffsrechte werden primär über Gruppen/Rollen statt über Einzelberechtigungen vergeben."
                                         }
@@ -200,14 +200,13 @@
                                 {
                                     "id": "sdm-tom-ac-01-01-ass-obj",
                                     "name": "assessment-objective",
-                                    "prose": "Genehmigte Berechtigungen für den logischen Zugriff auf Informationen und Systemressourcen werden gemäß den geltenden Zugriffskontrollrichtlinien durchgesetzt."
-
+                                    "prose": "Nachweisbar sind: (a) IAM-/Verzeichnisstruktur mit Rollen/Gruppen für relevante Systeme, (b) dokumentierte Richtlinie zum Umgang mit Rollen/Gruppen, (c) Stichprobenbelege, dass Berechtigungen über Rollen/Gruppen und nicht über Einzelrechte vergeben werden."
                                 }
                             ]
                         },
                         {
                             "id": "SDM-TOM-AC-01-02",
-                            "title": "",
+                            "title": "Joiner-Mover-Leaver-Prozess (JML)",
                             "class": "technical",
                             "props": [
                                 {
@@ -231,6 +230,201 @@
                                     "value": "low"
                                 },
                                 {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "HR"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-ac-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Ein dokumentierter Joiner-Mover-Leaver-Prozess stellt sicher, dass Berechtigungen bei Eintritt, Rollenwechsel und Austritt zeitnah angepasst werden."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Ohne wirksamen JML-Prozess besteht ein erhöhtes Risiko unbefugter Zugriffe durch Ex-Mitarbeitende oder durch überholte Berechtigungen. Die Maßnahme konkretisiert die Pflichten aus Art. 24, 25 und 32 DSGVO und zahlt auf VERTRAULICHKEIT und INTEGRITÄT ein."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-ac-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung eines einfachen, dokumentierten Joiner-Mover-Leaver-Prozesses (JML), bei dem Eintritte, Rollenwechsel und Austritte zeitnah in Berechtigungen umgesetzt werden. HR liefert hierfür verbindliche Informationen an IT-Operations."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) dokumentierte JML-Prozessbeschreibung, (b) Schnittstelle HR → IT (z.B. Formulare, Tickets, Workflow), (c) Stichproben, dass Konten nach Austritt deaktiviert und Berechtigungen bei Rollenwechsel angepasst wurden."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-AC-01-03",
+                            "title": "Basis-Logging für Zugriffe und Berechtigungsänderungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-ac-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "An- und Abmeldungen sowie privilegierte Berechtigungsänderungen werden protokolliert, um unbefugte Zugriffe und Änderungen erkennen und nachvollziehen zu können."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Logging unterstützt Rechenschaftspflicht und Nachweisfähigkeit (Art. 5 Abs. 2 DSGVO) und ist ein wesentlicher Bestandteil der Sicherstellung von Integrität und Vertraulichkeit (Art. 32 DSGVO)."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-ac-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Aktivierung von Basis-Logging für An- und Abmeldungen sowie Änderungen an privilegierten Berechtigungen in den Zielsystemen. Logs werden mindestens für einen definierten Zeitraum zentral oder systemnah vorgehalten."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Logging-Konfiguration der relevanten Systeme, (b) Vorhandensein von Logs für einen definierten Zeitraum, (c) Stichproben, dass privilegierte Änderungen im Log nachvollziehbar sind."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-AC-01-04",
+                            "title": "Regelmäßige Berechtigungsreviews",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-ac-01-04-stmt",
+                                    "name": "statement",
+                                    "prose": "Berechtigungen für Systeme mit personenbezogenen Daten werden regelmäßig überprüft und bereinigt."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-04-gdn",
+                                    "name": "guidance",
+                                    "prose": "Regelmäßige Reviews konkretisieren die Pflicht zur fortlaufenden Angemessenheit von TOM (Art. 24, 32 DSGVO) und wirken Überprivilegierung entgegen, was Vertraulichkeit und Integrität stärkt."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-04-typical-measures",
+                                    "name": "typical-measures",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-ac-01-04-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Etablierung regelmäßiger, dokumentierter Berechtigungsreviews (z.B. jährlich) für Systeme mit personenbezogenen Daten. Prozess- und Systemverantwortliche prüfen, ob die bestehenden Rollen-/Gruppenzuordnungen noch erforderlich sind und veranlassen den Entzug nicht mehr benötigter Berechtigungen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-04-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Verfahren zur Berechtigungsüberprüfung, (b) Protokolle/Reports durchgeführter Reviews, (c) Beispiele von Maßnahmen (Entzug von Rechten) aus den Reviews."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-AC-01-05",
+                            "title": "MFA für privilegierte und Hochrisiko-Zugriffe",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
                                     "name": "dp-likelihood",
                                     "class": "dp-likelihood",
                                     "value": "moderate"
@@ -243,36 +437,280 @@
                                 {
                                     "name": "responsible-role",
                                     "class": "org-role",
-                                    "value": "Process-Owner"
+                                    "value": "Security"
                                 }
                             ],
                             "parts": [
                                 {
-                                    "id": "SDM-TOM-AC-01-02-stmt",
+                                    "id": "sdm-tom-ac-01-05-stmt",
                                     "name": "statement",
-                                    "prose": "Einrichtung eines grundlegenden Identity- und Access-Managements (z.B. Verzeichnisdienst) mit zentral verwalteten Benutzerkonten, Rollen und Gruppen. Berechtigungen für Systeme mit personenbezogenen Daten werden primär über Rollen/Gruppen vergeben. Es existieren dokumentierte Joiner-Mover-Leaver-Prozesse, mit denen Eintritte, Rollenwechsel und Austritte zeitnah in Berechtigungen umgesetzt werden."
+                                    "prose": "Privilegierte Konten und Zugriffe auf besonders schutzbedürftige Daten werden durch Multi-Faktor-Authentisierung geschützt."
                                 },
                                 {
-                                    "id": "SDM-TOM-AC-01-02-gdn",
+                                    "id": "sdm-tom-ac-01-05-gdn",
                                     "name": "guidance",
-                                    "prose": ""
+                                    "prose": "MFA reduziert das Risiko, dass kompromittierte Passwörter zu unbefugten Zugriffen führen. Damit wird insbesondere VERTRAULICHKEIT bei Verarbeitungen mit erhöhtem oder hohem Risiko unterstützt."
                                 },
                                 {
-                                    "id": "sdm-tom-ac-01-02-typical-measures",
+                                    "id": "sdm-tom-ac-01-05-typical-measures",
                                     "name": "typical-measures",
-                                    "prose": "",
                                     "parts": [
                                         {
-                                            "id": "sdm-tom-ac-01-02-measure",
+                                            "id": "sdm-tom-ac-01-05-measure-01",
                                             "name": "typical-measure",
-                                            "prose": ""
+                                            "prose": "Einsatz von Multi-Faktor-Authentisierung (MFA) für administrative Konten und für Rollen mit Zugriff auf besonders schutzbedürftige Daten. MFA ist mindestens für Fernzugriffe und internetexponierte Systeme verpflichtend."
                                         }
                                     ]
                                 },
                                 {
-                                    "id": "sdm-tom-ac-01-02-ass-obj",
+                                    "id": "sdm-tom-ac-01-05-ass-obj",
                                     "name": "assessment-objective",
-                                    "prose": ""
+                                    "prose": "Nachweisbar sind: (a) Richtlinie zur MFA-Nutzung, (b) technische Konfiguration, die MFA für definierte Rollen/Systeme erzwingt, (c) Stichproben, dass privilegierte und Hochrisiko-Zugriffe tatsächlich MFA nutzen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-AC-01-06",
+                            "title": "Standardisierte Genehmigungs-Workflows für privilegierte Rechte",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-ac-01-06-stmt",
+                                    "name": "statement",
+                                    "prose": "Die Vergabe und Erweiterung privilegierter Berechtigungen erfolgt über standardisierte, nachvollziehbare Genehmigungs-Workflows."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-06-gdn",
+                                    "name": "guidance",
+                                    "prose": "Genehmigungs-Workflows mit Vier-Augen-Prinzip erhöhen die Rechenschaftsfähigkeit und unterstützen die Vermeidung überhöhter Rechte. Sie zahlen auf VERTRAULICHKEIT und INTEGRITÄT ein."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-06-typical-measures",
+                                    "name": "typical-measures",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-ac-01-06-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung standardisierter Genehmigungs-Workflows für die Vergabe und Erweiterung privilegierter Berechtigungen (Vier-Augen-Prinzip), z.B. über ein Ticket- oder IAM-System mit dokumentierter Freigabe."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-06-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) definierte Workflows und Rollen im Genehmigungsprozess, (b) Beispieltickets mit dokumentierten Freigaben, (c) technische oder organisatorische Sicherung des Vier-Augen-Prinzips."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-AC-01-07",
+                            "title": "Privileged-Access-Management (PAM)",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-ac-01-07-stmt",
+                                    "name": "statement",
+                                    "prose": "Privilegierte Zugriffe werden über ein Privileged-Access-Management-System gesteuert, überwacht und protokolliert."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-07-gdn",
+                                    "name": "guidance",
+                                    "prose": "PAM-Systeme ermöglichen eine feinere Kontrolle und Nachvollziehbarkeit von Hochrisiko-Berechtigungen und sind für Verarbeitungen mit hohem Datenschutzrisiko geeignet. Sie stärken insbesondere VERTRAULICHKEIT und INTEGRITÄT."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-07-typical-measures",
+                                    "name": "typical-measures",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-ac-01-07-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einführung eines Privileged-Access-Management-(PAM)-Systems für administrative und Hochrisiko-Rollen (z.B. Just-in-Time-Berechtigungen, zeitlich begrenzte Elevation, vollständiger Audit-Trail administrativer Sitzungen)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-07-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Einsatz eines PAM-Systems, (b) Konfiguration der Einbindung privilegierter Konten, (c) Protokolle/Auswertungen privilegierter Sitzungen, (d) Regelungen zum Zugriff auf diese Protokolle."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-AC-01-08",
+                            "title": "Feingranulare Zugriffskontrollen für Hochrisiko-Daten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-ac-01-08-stmt",
+                                    "name": "statement",
+                                    "prose": "Verarbeitungen mit hohem Datenschutzrisiko nutzen fein granulare Zugriffskonzepte und Segmentierung, um den Personenkreis mit Zugriff auf Hochrisiko-Daten stark zu begrenzen."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-08-gdn",
+                                    "name": "guidance",
+                                    "prose": "Feingranulare Zugriffskontrollen (z.B. RBAC + ABAC) helfen, bei Art. 9-/Art. 10-Daten und umfangreichem Profiling die Risiken unbefugter Offenlegung zu begrenzen. Sie zahlen stark auf VERTRAULICHKEIT und Nichtverkettbarkeit ein."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-08-typical-measures",
+                                    "name": "typical-measures",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-ac-01-08-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Umsetzung fein granularer Zugriffskontrollen (z.B. rollen- und attributbasierte Zugriffe, Segmentierung besonders sensibler Datenbereiche), sodass nur eng definierte Rollen Zugriff auf Hochrisiko-Daten erhalten."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-08-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Architektur-/Rollenmodell für Hochrisiko-Daten, (b) technische Umsetzung der Segmentierung, (c) Nachweis, dass nur definierte Rollen tatsächlich Zugriff erhalten."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-AC-01-09",
+                            "title": "Kontinuierliches Monitoring von Hochrisiko- und Admin-Zugriffen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-ac-01-09-stmt",
+                                    "name": "statement",
+                                    "prose": "Zugriffe auf besonders schutzbedürftige Daten und privilegierte Konten werden kontinuierlich überwacht, um Auffälligkeiten zu erkennen und Vorfälle schnell zu behandeln."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-09-gdn",
+                                    "name": "guidance",
+                                    "prose": "Kontinuierliches Monitoring und Verhaltensanalysen (z.B. UEBA) helfen, Missbrauch privilegierter Zugriffe frühzeitig zu erkennen und einzudämmen. Sie unterstützen Vertraulichkeit, Integrität und Evaluierbarkeit der Verarbeitung."
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-09-typical-measures",
+                                    "name": "typical-measures",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-ac-01-09-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einführung von kontinuierlichem Monitoring und Verhaltensanalysen (z.B. UEBA) für Zugriffe auf besonders schutzbedürftige Daten und privilegierte Konten mit Anbindung an Incident-Response- und Fraud-Management-Prozesse."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-ac-01-09-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) eingesetzte Monitoring-/UEBA-Lösungen, (b) definierte Use-Cases/Regeln für Hochrisiko- und Admin-Zugriffe, (c) dokumentierte Alerts/Incidents und zugehörige Reaktionen."
                                 }
                             ]
                         }
