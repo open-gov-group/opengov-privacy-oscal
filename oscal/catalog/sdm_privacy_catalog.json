@@ -3179,6 +3179,516 @@
                                     "prose": "Nachweisbar sind: (a) dokumentierte Regelungen zur Behandlung von Löschungen in Backups, (b) Konzepte oder Verfahren zur Löschsicherung nach Restore, (c) vertragliche Vorgaben und Löschnachweise von Auftragsverarbeitern und sonstigen Empfängern personenbezogener Daten."
                                 }
                             ]
+                        },
+                        {
+                            "id": "SDM-TOM-LC-01-04",
+                            "title": "Risikobasierte Lösch- und Vernichtungsverfahren für Datenträger und Datenbestände",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-04-stmt",
+                                    "name": "statement",
+                                    "prose": "Für die Löschung und Vernichtung personenbezogener Daten werden risikobasierte Verfahren eingesetzt, die Art und Umfang der Daten, den Schutzbedarf und das Medium (z.B. Datenbank, Dateisystem, mobile Datenträger, Papier) berücksichtigen. Für unterschiedliche Risikolevel und Datenträgertypen sind geeignete Lösch- und Vernichtungsverfahren definiert, dokumentiert und in den betrieblichen Prozessen verankert."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-04-gdn",
+                                    "name": "guidance",
+                                    "prose": "Die Auswahl der Lösch- und Vernichtungsverfahren sollte sich an der Sensibilität der Daten und am Risiko für die Rechte und Freiheiten der betroffenen Personen orientieren. Für einfache, wenig sensible Datenbestände kann ein logisches Löschen ausreichen, während bei besonders schützenswerten Daten (z.B. Gesundheitsdaten) und mobilen oder wiederverwendeten Datenträgern ein physisches Vernichten oder ein nachweisbares Überschreiben mit einem anerkannten Verfahren erforderlich sein kann. Die eingesetzten Verfahren sollten dokumentiert, standardisiert und regelmäßig überprüft werden, um neue technische und regulatorische Anforderungen zu berücksichtigen."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-04-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für risikobasierte Lösch- und Vernichtungsverfahren:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-04-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung einer unternehmensweiten Richtlinie, die für verschiedene Daten- und Datenträgertypen (z.B. Serverfestplatten, mobile Datenträger, Papierakten, Cloud-Speicher) und Schutzbedarfskategorien geeignete Lösch- oder Vernichtungsverfahren definiert."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-04-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz geeigneter Löschprogramme zum sicheren Überschreiben von Datenträgern vor Wiederverwendung oder Aussonderung sowie vertragliche Verpflichtung externer Dienstleister zur physischen Vernichtung nach definierten Standards."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-04-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation der eingesetzten Lösch- und Vernichtungsverfahren (inkl. Versionen, Parameter, Einsatzszenarien) und regelmäßige Überprüfung, ob sie noch dem Stand der Technik und den rechtlichen Anforderungen entsprechen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-04-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Protokollierung von Vernichtungsvorgängen mit Angaben zu Zeitpunkt, Datenträgerart, angewendetem Verfahren und verantwortlicher Stelle, soweit dies zur Nachvollziehbarkeit erforderlich ist und ohne unnötige Offenlegung von Inhaltsdaten."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-04-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Richtlinien oder Konzepte, die risikobasierte Lösch- und Vernichtungsverfahren für unterschiedliche Daten- und Datenträgertypen vorgeben, (b) Nachweise über den Einsatz geeigneter Lösch- bzw. Vernichtungstechniken (z.B. technische Spezifikationen, Dienstleisterverträge), (c) dokumentierte und stichprobenhaft überprüfbare Vernichtungsvorgänge."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-LC-01-06",
+                            "title": "Automatisierte, zeitgesteuerte Löschprozesse und Löschattribute",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-06-stmt",
+                                    "name": "statement",
+                                    "prose": "Systeme, in denen personenbezogene Daten verarbeitet werden, unterstützen die Umsetzung des Lösch- und Aufbewahrungskonzepts durch automatisierte, zeitgesteuerte Löschprozesse. Hierzu werden geeignete Löschattribute und Zeitstempel genutzt, um Löschfristen technisch abzubilden und Löschläufe zu steuern. Es besteht die Möglichkeit, automatisierte Löschungen kontrolliert auszusetzen, wenn rechtliche oder fachliche Gründe dies erfordern."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-06-gdn",
+                                    "name": "guidance",
+                                    "prose": "Automatisierte Löschprozesse reduzieren die Gefahr, dass Daten aus organisatorischer Nachlässigkeit über die zulässige Dauer hinaus gespeichert werden. Löschattribute (z.B. Löschdatum, Ereignisdatum, Status) und Zeitstempel sollten konsistent geführt und vor unbeabsichtigten Änderungen geschützt werden. In Ausnahmefällen, etwa bei gesetzlichen Aufbewahrungspflichten oder laufenden Rechtsstreitigkeiten, muss es möglich sein, einzelne Datensätze von automatischen Löschläufen auszunehmen oder die Löschung zu verschieben, ohne die generelle Löschlogik zu unterlaufen. Die Konfiguration und Änderungen an Löschprozessen sollten dokumentiert und regelmäßig überprüft werden."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-06-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für automatisierte, zeitgesteuerte Löschprozesse und Löschattribute:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-06-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einführung von Datenfeldern bzw. Metadaten (z.B. \"Löschdatum\", \"Löschklasse\", \"Ereignisdatum\"), die es erlauben, Löschfristen systemseitig zu berechnen und zu überwachen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-06-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Konfiguration geplanter Löschjobs oder -Workflows in fachlichen Anwendungen und/oder zentralen Systemen (z.B. Batch-Jobs, Scheduler), die in definierten Intervallen fällige Datensätze identifizieren und entsprechend löschen, anonymisieren oder in ein Archivsystem überführen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-06-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung eines kontrollierten Ausnahmemechanismus, mit dem autorisierte Rollen (z.B. Process-Owner, Legal/Compliance) die automatische Löschung einzelner Datensätze oder Datenklassen vorübergehend aussetzen können, inklusive Begründung und Nachverfolgung."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-06-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation der Konfiguration von Löschjobs, inklusive Zuordnung zu Löschklassen, betroffenen Systemen und Datenbereichen, sowie regelmäßige Überprüfung der korrekten Funktionsweise anhand von Protokollen oder Stichproben."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-06-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) technische Konzepte oder Systemdokumentationen, aus denen Löschattribute, Zeitstempel und automatisierte Löschmechanismen hervorgehen, (b) Beschreibungen und Konfigurationen von Löschjobs oder Workflows, (c) Regelungen und Nachweise zu Ausnahmen von automatisierten Löschungen sowie (d) Protokolle oder Prüfberichte, die die Wirksamkeit der automatisierten Löschprozesse belegen."
+                                }
+                            ]
+                        }
+                        {
+                            "id": "SDM-TOM-LC-01-09",
+                            "title": "Langzeitdatenformate, Metadaten und Schemata für aufbewahrte Daten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Records-Management"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-09-stmt",
+                                    "name": "statement",
+                                    "prose": "Für personenbezogene Daten, die aufbewahrt oder archiviert werden, sind geeignete Langzeitdatenformate und Metadatenmodelle definiert. Formate, Syntax und Semantik der Inhaltsdaten sowie der zugehörigen Metadaten sind dokumentiert, und die zugehörigen Schemata werden für die Dauer der Aufbewahrung vorgehalten. Dadurch bleibt die Lesbarkeit, Interpretierbarkeit und Zuordenbarkeit der Daten über den gesamten Aufbewahrungszeitraum gewährleistet."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-09-gdn",
+                                    "name": "guidance",
+                                    "prose": "Langzeitdatenformate sollten offen, standardisiert und langfristig unterstützbar sein (z.B. PDF/A, ODF, XML/JSON-basierte Formate). Für jede relevante Dokument- oder Datenklasse sollten signifikante Eigenschaften (z.B. Layout, Farbinformation, Auflösung, Struktur) festgelegt werden, die beim Konvertieren und bei Migrationen erhalten bleiben müssen. Metadatenmodelle sollten insbesondere Informationen zu Herkunft, Kontext, Rechtsgrundlage, Aufbewahrungsfrist, Löschdatum und technischen Rahmenbedingungen enthalten. Schemata und Formatdefinitionen (z.B. XSD, JSON-Schema) sind Teil des Aufbewahrungskonzepts und müssen zusammen mit den Daten verfügbar bleiben."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-09-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Langzeitdatenformate, Metadaten und Schemata:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-09-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Durchführung einer Bestandsaufnahme der im Einsatz befindlichen Daten- und Dateiformate für aufbewahrungspflichtige Informationen sowie Bewertung ihrer Eignung für die Langzeitaufbewahrung."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-09-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung bevorzugter Langzeitdatenformate für wesentliche Dokument- und Datentypen (z.B. Verträge, Bescheide, Registerauszüge) und Beschreibung der zulässigen Konvertierungspfade (z.B. von proprietären Formaten in Standardformate)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-09-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Definition eines Metadatenmodells für Archiv- und Aufbewahrungsobjekte, das u.a. Identifikatoren, Entstehungs- und Änderungsdaten, verantwortliche Stelle, Rechtsgrundlage, Aufbewahrungsfristen und Löschinformationen umfasst."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-09-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation der Syntax und Semantik der verwendeten Formate und Metadaten (z.B. in Form von Schemata, Datenwörterbüchern oder Schnittstellenbeschreibungen) und gemeinsame Aufbewahrung dieser Dokumentation mit den Daten."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-09-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Dokumentationen zu den verwendeten Langzeitdatenformaten und Metadatenmodellen, (b) definierte Standards für zentrale Dokument- und Datentypen, (c) Schemata oder vergleichbare technische Beschreibungen, die für die Dauer der Aufbewahrung verfügbar sind, sowie (d) Konzepte oder Verfahren, wie mit nicht geeigneten Formaten (z.B. aus Alt-Systemen) umgegangen wird."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-LC-01-10",
+                            "title": "Integrität, Authentizität und Beweiswert in der Aufbewahrung",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Records-Management"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-10-stmt",
+                                    "name": "statement",
+                                    "prose": "Für aufbewahrte personenbezogene Daten, bei denen ein erhöhter Beweiswert oder eine besondere Nachvollziehbarkeit erforderlich ist, sind Maßnahmen zur Sicherung von Integrität und Authentizität implementiert. Speichersysteme und Verfahren sind so gestaltet, dass unbefugte Änderungen erkannt werden können und der ursprüngliche Zustand der Daten über den gesamten Aufbewahrungszeitraum nachweisbar bleibt."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-10-gdn",
+                                    "name": "guidance",
+                                    "prose": "Je nach rechtlichen Anforderungen (z.B. eIDAS, VDG oder fachgesetzliche Vorgaben) kann es notwendig sein, qualifizierte elektronische Signaturen, Zeitstempel oder andere technische Maßnahmen einzusetzen, um den Beweiswert von Dokumenten während der Aufbewahrung zu erhalten. Archiv- oder Speichersysteme können dazu spezielle Funktionen bereitstellen (z.B. revisionssichere Ablage, unveränderbare Speicherbereiche, Integritätsprüfungen). Wichtig ist, dass eingesetzte Verfahren über die Aufbewahrungsdauer hinweg nachvollziehbar dokumentiert und bei technologischen Änderungen (z.B. kryptographische Verfahren) angepasst werden."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-10-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen zur Sicherung von Integrität, Authentizität und Beweiswert in der Aufbewahrung:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-10-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz von Speichersystemen mit Funktionen zur revisionssicheren Ablage (z.B. Write-Once-Read-Many-Mechanismen, unveränderbare Speicherbereiche, Protokollierung von Schreibzugriffen)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-10-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Verwendung kryptographischer Verfahren wie Prüfsummen, Hash-Werte, Signaturen oder Zeitstempel, um nachweisen zu können, dass archivierte Daten seit einem bestimmten Zeitpunkt nicht verändert wurden."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-10-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung von Verfahren zum Umgang mit ablaufenden kryptographischen Verfahren oder Zertifikaten (z.B. erneutes Signieren, Nachsignieren oder Transfer in andere Vertrauensmodelle), um den Beweiswert über lange Zeiträume aufrechtzuerhalten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-10-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Regelmäßige Integritätsprüfungen ausgewählter Archivbestände (z.B. anhand gespeicherter Hash-Werte) und Dokumentation von Prüfergebnissen und etwaigen Abweichungen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-10-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Konzepte oder Richtlinien, die Anforderungen an Integrität, Authentizität und Beweiswert für aufbewahrte Daten festlegen, (b) technische Spezifikationen oder Systembeschreibungen zu eingesetzten revisionssicheren Speichern und kryptographischen Verfahren, (c) Nachweise über durchgeführte Integritätsprüfungen und ggf. Maßnahmen bei erkannten Abweichungen, (d) Regelungen zum Umgang mit kryptographischem Technologiewandel über die Aufbewahrungsdauer."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-LC-01-11",
+                            "title": "Langzeit-Infrastruktur, Migration und Resilienz für aufbewahrte Daten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Records-Management"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-11-stmt",
+                                    "name": "statement",
+                                    "prose": "Die für die Aufbewahrung personenbezogener Daten eingesetzte technische Infrastruktur ist so gestaltet, dass Daten über die gesamte Aufbewahrungsdauer verfügbar, lesbar und konsistent bleiben. Hierzu gehören geeignete Speicherplattformen, Strategien für Redundanz und Backup/Restore sowie geplante Migrationsverfahren, mit denen technologische Änderungen (z.B. Ablösung von Systemen, Formaten oder Speichertechnologien) kontrolliert bewältigt werden können."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-11-gdn",
+                                    "name": "guidance",
+                                    "prose": "Langzeitaufbewahrung erfordert, dass Daten nicht dauerhaft in veralteten oder nicht mehr gewarteten Systemen feststecken. Stattdessen sollten Archiv- und Aufbewahrungssysteme so gewählt werden, dass sie langfristig betrieben oder geordnet abgelöst werden können. Dazu gehören Konzepte für Redundanz (z.B. verteilte Speicherung, Replikation), für regelmäßige Backups und Wiederherstellungstests sowie für Migrationen auf neue Systeme oder Formate, ohne dass Integrität, Beweiswert oder Zuordenbarkeit verloren gehen. Migrationsprozesse sollten dokumentiert, nachvollziehbar und testbar sein, insbesondere bei personenbezogenen Daten mit hohem Schutzbedarf oder langen Aufbewahrungsfristen."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-11-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Langzeit-Infrastruktur, Migration und Resilienz:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-11-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Auswahl von Archiv- und Speichersystemen, die für den geplanten Aufbewahrungszeitraum geeignet sind und Funktionen für Redundanz, Monitoring und Backup/Restore bereitstellen (z.B. verteilte Speicherung, Replikation, regelmäßige Sicherungen)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-11-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Erarbeitung und Dokumentation eines Migrationskonzepts, das beschreibt, wie aufbewahrte Daten bei absehbarer Ablösung von Systemen oder Formaten in neue Umgebungen überführt werden (inkl. Test, Abnahme und Nachweis der erfolgreichen Migration)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-11-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Regelmäßige Durchführung und Dokumentation von Wiederherstellungstests (Restore-Tests) für Archiv- und Aufbewahrungssysteme, um sicherzustellen, dass Daten im Bedarfsfall innerhalb angemessener Fristen wiederhergestellt werden können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-11-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Planung und Umsetzung von Maßnahmen gegen den Ausfall einzelner Komponenten oder Standorte (z.B. georedundante Speicherung, Ausweichrechenzentren, Notfallkonzepte) entsprechend dem Schutzbedarf der aufbewahrten Daten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-11-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation von durchgeführten Migrationen (z.B. von Alt-Systemen auf neue Archivplattformen) einschließlich Umfang, angewandten Verfahren, Prüfschritten und Ergebnissen von Integritäts- oder Plausibilitätsprüfungen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-11-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Konzepte oder Richtlinien zur Langzeitaufbewahrung, in denen Speicherinfrastruktur, Redundanz, Backup/Restore und Migration geregelt sind, (b) System- oder Betriebsdokumentationen zu den eingesetzten Archiv- und Speichersystemen, (c) Protokolle und Ergebnisse von Wiederherstellungstests, (d) Dokumentationen abgeschlossener Migrationen und die dabei angewandten Prüf- und Freigabeverfahren."
+                                }
+                            ]
                         }
                     ]
                 }
