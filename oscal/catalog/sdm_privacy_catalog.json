@@ -1392,6 +1392,526 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "sdm-tom-logging",
+            "title": "SDM Technical and Organizational Measures – Logging & Monitoring",
+            "controls": [
+                {
+                    "id": "SDM-TOM-LG-01",
+                    "title": "Logging und Monitoring datenschutzrelevanter Vorgänge",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERTRAULICHKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTEGRITÄT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "TRANSPARENZ"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-51",
+                            "value": "SDM-LG-01",
+                            "remarks": "Baustein Logging & Monitoring – datenschutzrelevante Protokollierung und Auswertung."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. f DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 2 DSGVO (Rechenschaftspflicht)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "LOG.1",
+                            "remarks": "BSI-Grundschutz: LOG.1 Protokollierung"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "LOG.3",
+                            "remarks": "BSI-Grundschutz: LOG.3 Zentrales Log-Management"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27001",
+                            "value": "A.12.4",
+                            "remarks": "ISO/IEC 27001 – Logging and monitoring (Platzhalter für detailliertes Mapping)."
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#TOM-02",
+                            "rel": "related-control",
+                            "text": "TOM-02 (Open Privacy Catalog) beschreibt Zugriff und Berechtigungen; SDM-TOM-LG-01 stellt die Protokollierung und Überwachung dieser Zugriffe sicher."
+                        },
+                        {
+                            "href": "#INC-01",
+                            "rel": "related-control",
+                            "text": "INC-01 (Open Privacy Catalog) beschreibt das Management von Datenschutzvorfällen; Logging & Monitoring liefern zentrale Nachweise und Auslöser für Incidents."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-lg-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation protokolliert und überwacht datenschutzrelevante Vorgänge so, dass unbefugte Zugriffe, Änderungen und Übermittlungen personenbezogener Daten erkannt, untersucht und adressiert werden können – bei gleichzeitiger Beachtung von Datenminimierung und Speicherbegrenzung."
+                        },
+                        {
+                            "id": "sdm-tom-lg-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Datenschutzrechtlich ergibt sich die Notwendigkeit wirksamen Loggings insbesondere aus Art. 5 Abs. 1 lit. f DSGVO (Integrität und Vertraulichkeit), Art. 5 Abs. 2 DSGVO (Rechenschaftspflicht), Art. 24 DSGVO (Verantwortung des Verantwortlichen) und Art. 32 DSGVO (Sicherheit der Verarbeitung). Logging ist dabei zweischneidig: Es dient dem Schutz der Daten und der Nachvollziehbarkeit von Verstößen, muss aber selbst datenschutzkonform ausgestaltet werden (insb. Datenminimierung, Speicherbegrenzung, Zweckbindung, Information der Betroffenen)."
+                        },
+                        {
+                            "id": "sdm-tom-lg-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-LG-01 unterstützt mehrere Gewährleistungsziele des SDM:",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lg-01-warranty-confidentiality",
+                                    "name": "warranty-objective",
+                                    "prose": "VERTRAULICHKEIT: Angriffe und unbefugte Zugriffe auf personenbezogene Daten können erkannt und untersucht werden."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-warranty-integrity",
+                                    "name": "warranty-objective",
+                                    "prose": "INTEGRITÄT: Protokolle helfen, unzulässige oder fehlerhafte Änderungen personenbezogener Daten nachzuvollziehen."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-warranty-transparency",
+                                    "name": "warranty-objective",
+                                    "prose": "TRANSPARENZ: Die Verarbeitung personenbezogener Daten wird für Verantwortliche, Aufsichtsbehörden und – mittelbar – für betroffene Personen nachvollziehbar."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-LG-01-01",
+                            "title": "Basis-Logging personenbezogener Zugriffe und Admin-Aktionen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lg-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Zugriffe auf Systeme mit personenbezogenen Daten sowie privilegierte Administrationsaktionen werden protokolliert."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Ohne Basis-Logging ist weder die Rechenschaftspflicht (Art. 5 Abs. 2 DSGVO) noch eine wirksame Reaktion auf Datenschutzvorfälle (Art. 33, 34 DSGVO) möglich. Die Maßnahme ist daher Baseline für praktisch alle produktiven Systeme mit personenbezogenen Daten."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Basis-Logging:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lg-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Protokollierung von An- und Abmeldungen (Login/Logout) inklusive Zeitstempel und Benutzerkennung für alle Systeme mit personenbezogenen Daten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lg-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Protokollierung von fehlgeschlagenen Anmeldeversuchen und Sperrungen von Konten zur Erkennung von Brute-Force- oder Rate-Limiting-Verstößen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lg-01-01-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Protokollierung von administrativen Änderungen an Rollen, Berechtigungen und sicherheitsrelevanten Systemeinstellungen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Logging-Konfigurationen relevanter Systeme, (b) Vorhandensein von Logs für definierte Zeiträume, (c) Stichproben von Logeinträgen zu Zugriffen und Admin-Aktionen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-LG-01-02",
+                            "title": "Schutz und Integrität von Logdaten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lg-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Logdaten werden vor unbefugter Einsichtnahme und Manipulation geschützt und nur so lange gespeichert, wie dies für die Zwecke des Datenschutzes und der Informationssicherheit erforderlich ist."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Protokolle enthalten oft personenbezogene Daten (z.B. Benutzerkennungen, IP-Adressen) und müssen daher selbst datenschutzkonform behandelt werden. Gleichzeitig dürfen sie nicht durch Angreifer oder interne Täter nachträglich manipuliert werden, wenn sie als Nachweis dienen sollen."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen zum Schutz und zur Integrität von Logdaten:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lg-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Übertragung von Logs in ein zentrales Log- oder SIEM-System mit restriktiven Zugriffsrechten (getrennt von Anwendungsadministration)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lg-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Umsetzung technischer Maßnahmen zur Manipulationserschwernis (z.B. Write-Once-Storage, Hashing/Signatur von Log-Files, revisionssichere Speicherung)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lg-01-02-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung und Dokumentation von Löschfristen für Logdaten im Einklang mit Datenminimierung und Speicherbegrenzung, differenziert nach Log-Typ und Risiko."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Architektur und Berechtigungskonzepte für Log-/SIEM-Systeme, (b) Maßnahmen gegen Log-Manipulation, (c) definierte und gelebte Aufbewahrungs- und Löschfristen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-LG-01-03",
+                            "title": "Datenschutzorientierte Log-Auswertung und regelmäßige Reviews",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "DPO"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lg-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Logdaten werden regelmäßig mit Blick auf datenschutzrelevante Ereignisse ausgewertet; Ergebnisse fließen in das Datenschutz- und Risikomanagement ein."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Logging allein reicht nicht; um Art. 32 DSGVO zu erfüllen, müssen die Protokolle auch genutzt werden, um tatsächliche Sicherheitsvorfälle und systematische Schwachpunkte zu erkennen. Datenschutzorientierte Use-Cases (z.B. unzulässige Massenabfragen) sind explizit zu berücksichtigen."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Standard-Reviews:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lg-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Definition und Implementierung von Auswertungs-Use-Cases, die datenschutzrelevante Muster adressieren (z.B. massenhafte Datenexports, Zugriffe außerhalb üblicher Zeiten, wiederholte Zugriffe auf besonders sensible Datensätze)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lg-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Regelmäßige, dokumentierte Log-Reviews für ausgewählte Systeme mit hohem Personenbezug; Einbindung von Datenschutz-/Compliance-Funktion bei auffälligen Mustern."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) definierte Review-Zyklen und -Use-Cases, (b) Protokolle durchgeführter Auswertungen, (c) Beispiele, in denen aus Log-Analysen konkrete Maßnahmen abgeleitet wurden."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-LG-01-04",
+                            "title": "Alerting und Integration in das Incident-Management",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lg-01-04-stmt",
+                                    "name": "statement",
+                                    "prose": "Auffällige Ereignisse in Logs führen zu automatisierten oder halbautomatisierten Alerts und sind in das Incident-Management integriert."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-04-gdn",
+                                    "name": "guidance",
+                                    "prose": "Damit Meldungen von Datenschutzverletzungen nach Art. 33/34 DSGVO fristgerecht und qualifiziert erfolgen können, müssen relevante Ereignisse früh erkannt und als Incidents behandelt werden. Logging & Monitoring sind hier die primäre Früherkennungsquelle."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-04-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Alerting & Incident-Verknüpfung:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lg-01-04-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Definition von Schwellwerten und Ereignismustern, die automatische Alerts auslösen (z.B. Massenexporte, wiederholte Fehlanmeldungen, ungewöhnliche Zugriffsprofile)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lg-01-04-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Anbindung des SIEM-/Log-Systems an das Incident-Management (Ticketsystem, On-Call-Prozesse, Eskalationspfade) mit klaren Rollen und Reaktionszeiten."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-04-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) definierte Alert-Regeln mit Datenschutzbezug, (b) Beispiele für erzeugte Alerts, (c) Verknüpfung zwischen Alerts und Incidents (Ticketnummern, Playbooks)."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-LG-01-05",
+                            "title": "Advanced Anomalie- und Verhaltensanalyse für Hochrisiko-Verarbeitungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "DPO"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lg-01-05-stmt",
+                                    "name": "statement",
+                                    "prose": "Für Verarbeitungen mit hohem Datenschutzrisiko werden zusätzliche, auf Verhaltensmustern basierende Analysen eingesetzt, um Missbrauch und interne/externe Angriffe zu erkennen."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-05-gdn",
+                                    "name": "guidance",
+                                    "prose": "Bei Hochrisiko-Verarbeitungen (z.B. Art. 9-/Art. 10-Daten, Profiling) reichen klassische statische Regeln oft nicht aus. Advanced Monitoring (z.B. UEBA) kann helfen, subtile Missbrauchsmuster zu erkennen – muss aber besonders sorgfältig datenschutzkonform gestaltet werden (z.B. Zweckbindung, Transparenz, Begrenzung der Auswertungen)."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-05-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Advanced-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lg-01-05-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz von UEBA- oder ähnlichen Analysetools für definierte Hochrisiko-Systeme mit Konfiguration von datenschutzfokussierten Use-Cases (z.B. ungewöhnliche Zugriffe auf besondere Kategorien personenbezogener Daten)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lg-01-05-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung eines datenschutzrechtlichen Rahmens für Advanced Monitoring (z.B. Zweck, Datenkategorien, Auswertungslogik, Löschfristen, Beteiligung DSB/Betriebsrat) und Dokumentation im Rahmen einer DPIA."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lg-01-05-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) System- und Verfahrensliste, für die Advanced Monitoring eingesetzt wird, (b) dokumentierter Datenschutz-Rahmen (z.B. DPIA-Ausschnitt), (c) Nachweise für konfigurierte Use-Cases und tatsächliche Alerts/Erkenntnisse."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

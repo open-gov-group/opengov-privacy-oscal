@@ -342,6 +342,58 @@ Beispiel (LAW-01 → REG/DPIA):
 ]
 ```
 
+## Beispiel-Mapping: Encryption / Crypto (TOM-03 ↔ SDM-TOM ↔ BSI / ISO)
+
+Die Kataloge sind bewusst so aufgebaut, dass sich Datenschutz-Anforderungen (Open-Privacy-Catalog) mit technisch-organisatorischen Maßnahmen (SDM-TOM) und bestehenden Security-Katalogen (BSI / ISO) verbinden lassen.
+
+| Ebene / Sicht           | ID / Referenz                    | Rolle im Gesamtbild                                                                 |
+|-------------------------|-----------------------------------|--------------------------------------------------------------------------------------|
+| **Privacy Catalog**     | `TOM-03 – Encryption & Pseudonymisation` | Beschreibt aus Sicht der betroffenen Person, **wann** und **warum** Verschlüsselung / Pseudonymisierung als Datenschutz-TOM erforderlich ist (Risiko, Kontext, Kategorien). |
+| **SDM-TOM Catalog**     | `SDM-TOM-CR-01 – Encryption in Transit & at Rest` | Konkretisiert die technischen Maßnahmen für **Transportverschlüsselung** und **Speicherverschlüsselung** je nach DP-Risiko (Impact/Likelihood) und Implementierungslevel (baseline/standard/advanced). |
+| **SDM-TOM Catalog**     | `SDM-TOM-CR-02 – Key & Secrets Management` | Ergänzt `CR-01` um das erforderliche **Schlüssel- und Geheimnis-Management**, ohne das Verschlüsselung datenschutzrechtlich nicht wirksam ist (Art. 32 DSGVO). |
+| **BSI-Grundschutz**     | `CON.1 Kryptokonzept` (u.a.)      | Referenz für ein organisatorisch und technisch stimmiges Kryptokonzept; wird in den SDM-TOM-Controls über `props.related-mapping (class: "bsi")` referenziert. |
+| **ISO/IEC 27001 / 27701** | `Annex A.10 (Cryptography)` / `PIMS-7.2.1` (Platzhalter) | Liefert den internationalen Referenzrahmen für Kryptografie-Kontrollen; Zuordnung erfolgt ebenfalls über `props.related-mapping` im SDM-TOM-Catalog. |
+
+**Leserichtung im Tool / UI:**
+
+- **Open Privacy Catalog (`TOM-03`)** beantwortet:  
+  *„Brauchen wir hier aus Datenschutzsicht überhaupt Verschlüsselung / Pseudonymisierung – und warum?“*  
+- **SDM-TOM (`SDM-TOM-CR-01` / `CR-02`)** beantwortet:  
+  *„Welche konkreten technischen Maßnahmen sind – je Risiko & Implementierungslevel – umzusetzen, und wer ist zuständig?“*  
+- **BSI / ISO-Mappings** helfen:  
+  *„Wo finde ich die gleiche Maßnahme in bestehenden Security-Katalogen wieder?“*  
+  (z.B. für integrierte Audits oder kombinierte Security-/Privacy-Bewertungen).
+
+
+## Beispiel-Mapping: Access Control (TOM-02 ↔ SDM-TOM-AC-01 ↔ BSI / ISO)
+
+Analog zum Crypto-Beispiel sind auch die Access-Control-Bausteine so modelliert, dass sich
+- die **datenschutzrechtlichen Anforderungen** (Open-Privacy-Catalog),
+- die **konkreten technischen Maßnahmen** (SDM-TOM-Access),
+- und bestehende **Security-Kataloge** (BSI / ISO)
+sauber zueinander in Beziehung setzen lassen.
+
+| Ebene / Sicht           | ID / Referenz                          | Rolle im Gesamtbild                                                                 |
+|-------------------------|-----------------------------------------|--------------------------------------------------------------------------------------|
+| **Privacy Catalog**     | `TOM-02 – Access & Authorization`       | Beschreibt aus Sicht der betroffenen Person, **warum** ein abgestuftes Rollen- und Berechtigungsmodell notwendig ist (Risiko, Datenkategorien, Missbrauchsszenarien). |
+| **SDM-TOM Catalog**     | `SDM-TOM-AC-01 – Rollenbasiertes Zugriffs- und Berechtigungsmanagement` | Konkretisiert die technischen/organisatorischen Maßnahmen zur Zugriffsteuerung (IAM, JML, Reviews, MFA, PAM, Feingranularität, Monitoring) je nach Datenschutzrisiko und Implementierungslevel (baseline/standard/advanced). |
+| **SDM-TOM Sub-Controls** | `SDM-TOM-AC-01-01 … -09`               | Einzelne, klar umrissene Umsetzungsaufgaben (z.B. IAM-Baseline, JML-Prozess, Berechtigungsreviews, PAM, UEBA), jeweils mit Risiko-Einordnung (`dp-risk-impact`, `dp-likelihood`) und Zuständigkeit (`responsible-role`). |
+| **BSI-Grundschutz**     | `ORP.4 Identitäts- und Berechtigungsmanagement` | Dient als Security-Referenz für Identitäts- und Berechtigungsmanagement; wird im SDM-TOM-AC-01 über `props.related-mapping (class: "bsi")` referenziert. |
+| **ISO/IEC 27001**       | `Annex A.9 – Access Control`            | Internationaler Referenzrahmen für Zugriffskontrollen; über `props.related-mapping (class: "iso27001")` mit SDM-TOM-AC-01 verknüpft. |
+| **ISO/IEC 27701**       | PIMS-spezifische Controls zu Access     | Ergänzt Access-Control aus Privacy-/PIMS-Sicht; kann schrittweise im SDM-TOM-AC-01 über zusätzliche Mappings (class: `"iso27701"`) integriert werden. |
+
+**Leserichtung:**
+
+- **Open Privacy Catalog (`TOM-02`)** beantwortet:  
+  *„Welche Zugriffsbeschränkungen brauchen wir aus Sicht der betroffenen Personen und des Datenschutzrisikos?“*
+
+- **SDM-TOM-Access (`SDM-TOM-AC-01-xx`)** beantwortet:  
+  *„Welche konkreten technischen und organisatorischen Maßnahmen müssen umgesetzt werden, welches Risiko decken sie ab und wer ist dafür zuständig?“*
+
+- **BSI / ISO-Mappings** helfen bei:  
+  *„Wie ordnen wir dieselben Maßnahmen in bestehende Security-Frameworks ein (integrierte Audits, kombinierte Controls)?“*
+
+
 ## Konventionen & Kompatibilität
 - **OSCAL-Version**: 1.1.2 (Viewer-Kompatibilität)
 - **Evidenz**: ausschließlich über `back-matter.resources[].rlinks[]` in Artefakten; Referenzierung auf Implementierungsebene via `links[]` (kein `related-resources` im SSP).
