@@ -3376,7 +3376,7 @@
                                     "prose": "Nachweisbar sind: (a) technische Konzepte oder Systemdokumentationen, aus denen Löschattribute, Zeitstempel und automatisierte Löschmechanismen hervorgehen, (b) Beschreibungen und Konfigurationen von Löschjobs oder Workflows, (c) Regelungen und Nachweise zu Ausnahmen von automatisierten Löschungen sowie (d) Protokolle oder Prüfberichte, die die Wirksamkeit der automatisierten Löschprozesse belegen."
                                 }
                             ]
-                        }
+                        },
                         {
                             "id": "SDM-TOM-LC-01-09",
                             "title": "Langzeitdatenformate, Metadaten und Schemata für aufbewahrte Daten",
