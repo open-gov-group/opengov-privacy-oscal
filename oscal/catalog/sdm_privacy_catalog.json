@@ -3919,6 +3919,641 @@
                 }
             ]
         },
+        {
+            "id": "sdm-tom-res",
+            "title": "SDM Technical and Organizational Measures – Einschränken der Verarbeitung",
+            "controls": [
+                {
+                    "id": "SDM-TOM-RES-01",
+                    "title": "Einschränkung der Verarbeitung personenbezogener Daten",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "NICHTVERKETTUNG"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "DATENMINIMIERUNG"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTEGRITÄT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERTRAULICHKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTERVENIERBARKEIT"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-62",
+                            "value": "SDM-62 Einschränken der Verarbeitung",
+                            "remarks": "Baustein 62 „Einschränken der Verarbeitung“ (DSK-SDM V2.0)."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 18 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. b DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. c DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. d DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. f DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#TOM-RES",
+                            "rel": "related-control",
+                            "text": "TOM-RES (Open Privacy Catalog) beschreibt die Anforderungen an die Einschränkung der Verarbeitung aus Sicht der Betroffenenrechte; SDM-TOM-RES-01 konkretisiert die dazugehörigen technischen und organisatorischen Maßnahmen."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-res-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation verfügt über ein Konzept und geeignete technische und organisatorische Maßnahmen zur Einschränkung der Verarbeitung personenbezogener Daten. Gespeicherte Daten können markiert und so behandelt werden, dass ihre weitere Verarbeitung – außer der Speicherung – nur unter den Voraussetzungen des Art. 18 DSGVO erfolgt. Die Einschränkung der Verarbeitung ist in Datenmodellen, Systemen und Prozessen so abgebildet, dass sie dauerhaft wirkt, bis sie wirksam aufgehoben wird."
+                        },
+                        {
+                            "id": "sdm-tom-res-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Das Betroffenenrecht auf Einschränkung der Verarbeitung nach Art. 18 DSGVO ergänzt insbesondere die Rechte auf Berichtigung (Art. 16 DSGVO) und Löschung (Art. 17 DSGVO). Es greift in Situationen, in denen eine Löschung oder Berichtigung noch zu prüfen ist oder überwiegende Interessen der betroffenen Person gegen eine sofortige Löschung sprechen. Art. 5 Abs. 1 lit. b, c, d und f DSGVO (Zweckbindung, Datenminimierung, Richtigkeit, Vertraulichkeit) sowie Art. 24, 25 und 32 DSGVO verpflichten den Verantwortlichen, hierfür geeignete technische und organisatorische Maßnahmen festzulegen und zu betreiben."
+                        },
+                        {
+                            "id": "sdm-tom-res-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-RES-01 trägt zu mehreren Gewährleistungszielen des SDM bei.",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-res-01-warranty-nonlink",
+                                    "name": "warranty-objective",
+                                    "prose": "NICHTVERKETTUNG: Durch Einschränkung der Verarbeitung werden Datenbestände aus der regulären Verarbeitung herausgenommen und dürfen nicht mehr für neue Zwecke verwendet werden."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-warranty-minimization",
+                                    "name": "warranty-objective",
+                                    "prose": "DATENMINIMIERUNG: Die Einschränkung stellt sicher, dass Daten, deren weiterer Einsatz nicht (mehr) erforderlich ist, nur noch in dem Umfang verarbeitet werden, der ausnahmsweise zulässig oder rechtlich geboten ist."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-warranty-integrity",
+                                    "name": "warranty-objective",
+                                    "prose": "INTEGRITÄT: Markierungs- und Kontrollmechanismen verhindern ungewollte Änderungen oder Vermischungen eingeschränkter Daten mit aktiv verarbeiteten Datenbeständen."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-warranty-confidentiality",
+                                    "name": "warranty-objective",
+                                    "prose": "VERTRAULICHKEIT: Zugriffe auf eingeschränkte Daten werden auf einen berechtigten Personenkreis begrenzt und technisch-organisatorisch kontrolliert."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-warranty-intervenability",
+                                    "name": "warranty-objective",
+                                    "prose": "INTERVENIERBARKEIT: Die Umsetzung von Einschränkungen der Verarbeitung ist Voraussetzung dafür, Betroffenenrechte nach Art. 18 DSGVO wirksam zu erfüllen."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-RES-01-01",
+                            "title": "Datenmodell und Markierung für eingeschränkte Verarbeitung",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D04"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D10"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D11"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D12"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-res-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Das Datenmodell und die Art der Speicherung personenbezogener Daten ermöglichen es, einzelne Datenfelder, Datensätze oder definierte Daten-Gruppen mit einem Attribut zur Einschränkung der Verarbeitung zu versehen und mit Fristen für die Dauer der Einschränkung zu verknüpfen. Die Markierung wirkt konsistent über produktive Systeme, Sicherungskopien und – soweit relevant – papiergebundene Akten."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Markierungen für eingeschränkte Verarbeitung sollten direkt an Datenfeldern, Datensätzen oder Dateien anliegen oder durch eine geeignete Controllereinheit mit Rechtemanagement sichergestellt werden. Je höher das Risiko, desto feingranularer sollte markiert werden können. Ergänzend können Pseudonymisierung und Verschlüsselung eingesetzt werden, um eingeschränkte Daten zusätzlich vor unzulässiger Verarbeitung zu schützen. Bei Veröffentlichungen (z.B. Webseiten, soziale Medien) müssen eingeschränkte Daten aus öffentlich zugänglichen Bereichen entfernt werden. Die Eigenschaft der Einschränkung ist auch in Backups zu erhalten und bei Rücksicherungen zu berücksichtigen."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für ein Datenmodell mit Markierung für eingeschränkte Verarbeitung:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-res-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einführung eines Daten- oder Metadatenfeldes (z.B. \"processing_restriction_status\" und \"restriction_until\"), das pro Datensatz oder Dokument den Status der eingeschränkten Verarbeitung und ggf. eine Frist abbildet."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Separate Speicherung eingeschränkter Datenbestände oder zusätzlicher Kopien, in denen eingeschränkte Daten fehlen, um eine weitere Verarbeitung der übrigen Daten zu ermöglichen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-01-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Nutzung von Pseudonymisierung oder Verschlüsselung für eingeschränkte Daten mit strenger Zugangskontrolle zu Schlüsseln bzw. Zuordnungstabellen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-01-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Definition von Verfahren, mit denen bei Datensicherung und Rücksicherung sichergestellt wird, dass die Markierung \"eingeschränkte Verarbeitung\" erhalten bleibt oder bei der Wiederherstellung erneut gesetzt wird."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-01-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Regelungen und Arbeitsanweisungen zur physischen Handhabung von Papierakten mit eingeschränkter Verarbeitung (Entnahme, separate Ablage, Protokollierung, inhaltsneutrale Markierung)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Daten- oder Metadatenmodelle, aus denen Markierungen und Fristen für eingeschränkte Verarbeitung hervorgehen, (b) technische oder organisatorische Regelungen zur separaten Speicherung und/oder Pseudonymisierung/Verschlüsselung eingeschränkter Daten, (c) Verfahren zur Sicherstellung der Markierung in Backups und Rücksicherungen, (d) Arbeitsanweisungen für den Umgang mit Papierakten."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-RES-01-02",
+                            "title": "Systemverhalten und Zugriffe bei eingeschränkten Daten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S04"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P10"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-res-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Systeme und Dienste erkennen Daten mit eingeschränkter Verarbeitung, berücksichtigen dies vor der weiteren Verarbeitung und setzen besondere Regeln für deren Nutzung um. Eingeschränkte Daten werden bei Standard-Such- und Verarbeitungsvorgängen nicht berücksichtigt; Zugriffe sind nur in der eingeschränkten Form zulässig und auf entsprechend berechtigte Rollen begrenzt."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Systeme sollten die Markierung für eingeschränkte Verarbeitung auswerten, bevor Daten verarbeitet werden. Standard-Reports, Suchen und Exporte dürfen eingeschränkte Daten nicht ohne besondere Freigabe enthalten. Je nach Risiko können separate Systeme oder getrennte Verarbeitungswege für eingeschränkte Daten eingesetzt werden. Benachrichtigungsfunktionen helfen, wenn eingeschränkte Daten versehentlich in Verarbeitungsketten geraten. Zeitstempelsysteme oder vergleichbare Auswertesysteme erleichtern die Überwachung von Fristen für die Dauer der Einschränkung und die ggf. anschließende Löschung oder Aufhebung."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Systemverhalten und Zugriffe bei eingeschränkten Daten:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-res-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung von Prüfungen in Anwendungsschichten oder Datenbankabfragen, die eingeschränkte Datensätze anhand eines Status- oder Attributfeldes erkennen und von Standard-Such- und Verarbeitungsvorgängen ausschließen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Bereitstellung separater Masken, Funktionen oder Systeme für den Zugriff auf eingeschränkte Daten, die nur von speziell berechtigten Rollen genutzt werden dürfen und die Anforderungen des Art. 18 Abs. 2 DSGVO berücksichtigen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-02-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung von Benachrichtigungs- oder Warnfunktionen, wenn eingeschränkte Daten verarbeitet werden sollen (z.B. beim Öffnen, Export, Versand)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-02-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz von Verschlüsselungssystemen nach dem Stand der Technik für eingeschränkte Daten sowie Nutzung von Zeitstempeln/Fristattributen inklusive Auswertemöglichkeiten zur Fristenüberwachung."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-02-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Automatisierung des technischen Vorgangs der Einschränkung, wenn klare Regeln bestehen (z.B. periodische Sperrungen bestimmter Datensätze), einschließlich Protokollierung der vorgenommenen Änderungen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) technische Konzepte und Systemdokumentationen, aus denen das Verhalten gegenüber eingeschränkten Daten hervorgeht, (b) Konfigurationen oder Implementierungen, die Standardzugriffe einschränken und besondere Zugriffswege vorsehen, (c) Nachweise über Benachrichtigungs- oder Fristenüberwachungsfunktionen, (d) Prüf- oder Testnachweise, dass eingeschränkte Daten nicht unzulässig in Standardverarbeitungen einfließen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-RES-01-03",
+                            "title": "Prozesse für Anträge, Fristen und Kommunikation bei Einschränkungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Data-Protection-Officer"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Legal/Compliance"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P04"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P11"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P12"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P13"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P14"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P15"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P16"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P17"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P18"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-res-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Die Organisation verfügt über klar definierte Prozesse zur Beantragung, Prüfung, Umsetzung, Dokumentation und Aufhebung von Einschränkungen der Verarbeitung. Diese Prozesse stellen sicher, dass Anträge unabhängig von ihrer Form entgegengenommen, Identitäten geprüft, Fristen eingehalten, Markierungen umgesetzt und alle gesetzlichen Mitteilungspflichten gegenüber betroffenen Personen und Empfängern erfüllt werden."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Ein zentrales Konzept zur Einschränkung der Verarbeitung sollte den gesamten Lebenszyklus abdecken: Antrag, Entscheidung, technische Umsetzung, ggf. weitere eingeschränkte Verarbeitung, Mitteilungen und Aufhebung. Es sollte Antragswege (inkl. elektronischer Kanäle), Kriterien für Identitätsprüfung, Fristensteuerung und Abwägungen bei hohem Schutzbedarf definieren. Ablehnungen müssen begründet werden, und Betroffene sind über Rechtsbehelfe zu informieren. Die Prozesse sollten revisionssicher dokumentiert werden, um Rechenschaftspflichten zu erfüllen."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Prozesse und Kommunikation bei Einschränkungen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-res-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Erstellung eines Konzepts zur Einschränkung der Verarbeitung, das Rollen, Verantwortlichkeiten, Prozessschritte, Fristen und Kommunikationswege definiert."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Bereitstellung von Antragsformularen (ggf. online), aber gleichzeitige Gewährleistung, dass Anträge auch in anderer Form entgegengenommen werden, wenn die Organisation über den jeweiligen Kommunikationskanal erreichbar ist."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-03-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung von Prozessen zur Identitätsprüfung einschließlich Dokumentation der Prüfungsschritte sowie Einrichtung eines Fristenmonitorings, das die Bearbeitung von Anträgen innerhalb der gesetzlichen Fristen sicherstellt."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-03-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Definition eines Prozesses für den technischen Vorgang des Einschränkens (Setzen/Entfernen von Markierungen), einschließlich Automatisierungsoptionen bei wiederkehrenden Fällen und klarer Regeln für die weitere eingeschränkte Verarbeitung."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-03-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Prozesse zur Information der betroffenen Person über Empfänger, denen eingeschränkte Daten offengelegt wurden, zur Information dieser Empfänger über die Einschränkung, zur Mitteilung über Ablehnungen und zur Information über die Aufhebung der Einschränkung."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-03-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Verankerung risikobasierter Abwägungsprozesse für Fälle mit hohem Schutzbedarf (z.B. Gesundheitsdaten), inklusive Dokumentation der Entscheidungsgrundlagen und -ergebnisse."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) ein dokumentiertes Konzept zur Einschränkung der Verarbeitung, (b) Prozessbeschreibungen für Antragsannahme, Identitätsprüfung, Fristenüberwachung, technische Umsetzung, Mitteilungen und Aufhebung, (c) Musterkommunikationen für Zusagen und Ablehnungen inkl. Hinweise auf Rechtsbehelfe, (d) revisionssichere Dokumentation einzelner Fälle und der jeweils getroffenen Abwägungen."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
 
 
         {
