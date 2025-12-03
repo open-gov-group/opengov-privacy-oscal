@@ -2802,7 +2802,389 @@
                     ]
                 }
             ]
-        }
+        },
+        {
+            "id": "sdm-tom-lifecycle",
+            "title": "SDM Technical and Organizational Measures – Löschung und Aufbewahrung",
+            "controls": [
+                {
+                    "id": "SDM-TOM-LC-01",
+                    "title": "Lösch- und Aufbewahrungskonzept für personenbezogene Daten",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERTRAULICHKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTEGRITÄT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTERVENIERBARKEIT"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-60",
+                            "value": "SDM-60 Löschen und Vernichten",
+                            "remarks": "Baustein 60 „Löschen und Vernichten“ (DSK-SDM V2.0)."
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-11",
+                            "value": "SDM-11 Aufbewahren",
+                            "remarks": "Baustein 11 „Aufbewahren“ (DSK-SDM V2.0)."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. c DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. e DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 17 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 18 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#TOM-XX",
+                            "rel": "related-control",
+                            "text": "TOM-XX (Open Privacy Catalog) beschreibt die Anforderungen an Löschung und Aufbewahrung aus Sicht der betroffenen Personen und des Datenschutzrisikos; SDM-TOM-LC-01 konkretisiert die dazugehörigen technischen und organisatorischen Maßnahmen."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-lc-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation betreibt ein dokumentiertes, risikoorientiertes Lösch- und Aufbewahrungskonzept für personenbezogene Daten. Löschfristen und Aufbewahrungsfristen sind festgelegt, den Verfahren zugeordnet und technisch wie organisatorisch so umgesetzt, dass Daten nach Wegfall des Zwecks oder Ablaufen gesetzlicher Fristen tatsächlich gelöscht, vernichtet oder – falls rechtlich erforderlich – ausschließlich in geeigneten Aufbewahrungssystemen vorgehalten werden."
+                        },
+                        {
+                            "id": "sdm-tom-lc-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Rechtsgrundlage für ein wirksames Lösch- und Aufbewahrungskonzept sind insbesondere Art. 5 Abs. 1 lit. c DSGVO (Datenminimierung) und Art. 5 Abs. 1 lit. e DSGVO (Speicherbegrenzung) sowie Art. 17 und 18 DSGVO (Recht auf Löschung und Recht auf Einschränkung der Verarbeitung). Art. 24, 25 und 32 DSGVO konkretisieren die Pflicht des Verantwortlichen, angemessene technische und organisatorische Maßnahmen festzulegen und umzusetzen. Ohne Lösch- und Aufbewahrungskonzept werden Daten typischerweise zu lange oder unkontrolliert verarbeitet, was zu unnötigen Risiken für die Rechte und Freiheiten betroffener Personen führt."
+                        },
+                        {
+                            "id": "sdm-tom-lc-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-LC-01 trägt zu mehreren Gewährleistungszielen des SDM bei.",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-warranty-confidentiality",
+                                    "name": "warranty-objective",
+                                    "prose": "VERTRAULICHKEIT: Daten werden nicht unbegrenzt oder unnötig in produktiven Systemen oder Kopien vorgehalten, wodurch die Angriffsfläche und das Risiko unbefugter Zugriffe sinken."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-warranty-integrity",
+                                    "name": "warranty-objective",
+                                    "prose": "INTEGRITÄT: Klare Regeln zu Löschung, Aufbewahrung und Archivierung tragen dazu bei, Datenbestände vollständig und konsistent zu halten (z.B. keine veralteten Dubletten, kein unkontrolliertes Wiederauftauchen gelöschter Daten aus Backups)."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-warranty-intervenability",
+                                    "name": "warranty-objective",
+                                    "prose": "INTERVENIERBARKEIT: Ein strukturiertes Lösch- und Aufbewahrungskonzept ist Voraussetzung dafür, Betroffenenrechte – insbesondere Löschung und Einschränkung der Verarbeitung – wirksam umzusetzen."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-LC-01-01",
+                            "title": "Zentrales Löschkonzept und dokumentierte Löschfristen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Legal/Compliance"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Für alle Verfahren mit personenbezogenen Daten existiert ein zentrales, dokumentiertes Löschkonzept. Es enthält für jede Datenkategorie bzw. jeden Verarbeitungszweck Löschfristen, Startzeitpunkte der Frist (Ereignisse) sowie die Art der Löschung (z.B. Anonymisierung, physische Vernichtung, logisches Löschen in Systemen). Die Löschfristen sind mit gesetzlichen Aufbewahrungspflichten und geschäftlichen Erfordernissen abgestimmt."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Das Löschkonzept baut typischerweise auf dem Verzeichnis von Verarbeitungstätigkeiten auf und konkretisiert Art. 5 Abs. 1 lit. c und e DSGVO sowie Art. 17 DSGVO. Es sollte praktikabel gehalten werden (z.B. durch Clustern von Verfahren in Löschklassen) und pro Löschklasse klar definieren, welche Systeme und Datenfelder betroffen sind. Für Fälle, in denen eine sofortige Löschung rechtlich nicht möglich ist (z.B. laufende Aufbewahrungspflichten, offene Rechtsstreitigkeiten), sollte im Konzept geregelt sein, dass die Daten gesperrt bzw. eingeschränkt verarbeitet werden."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für ein Löschkonzept mit dokumentierten Löschfristen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Erstellung eines zentralen Löschkonzept-Dokuments mit Beschreibung der Löschklassen (z.B. Personalakten, Kundenverträge, Newsletter-Abonnements, Logdaten) und den jeweils zutreffenden Rechtsgrundlagen und Fristen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Zuordnung der Löschklassen zu konkreten Verfahren und Systemen im Verzeichnis von Verarbeitungstätigkeiten und/oder einem ergänzenden Löschregister."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-01-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung und Dokumentation der auslösenden Ereignisse für den Beginn der Löschfrist (z.B. Vertragsende plus X Jahre, Inaktivität des Accounts, Widerruf einer Einwilligung)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) ein aktuelles Löschkonzept mit definierten Löschklassen und Fristen, (b) die Zuordnung dieser Löschklassen zu Verfahren/Systemen, (c) Belege, dass das Konzept regelmäßig überprüft und bei Rechtsänderungen oder neuen Verfahren angepasst wird."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-LC-01-02",
+                            "title": "Archivierungskonzept und Zuständigkeiten für Aufbewahrung",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Records-Management"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Für personenbezogene Daten, die aufgrund gesetzlicher oder vertraglicher Pflichten aufbewahrt werden müssen, existiert ein Archivierungskonzept. Es legt fest, welche Daten zu welchen Zeitpunkten in welche Aufbewahrungssysteme überführt werden, in welchen Formaten sie gespeichert werden und welche Organisationseinheiten für Definition, Umsetzung und Überwachung der Aufbewahrung verantwortlich sind."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Das Archivierungskonzept differenziert zwischen produktiver Verarbeitung und Aufbewahrung/Archivierung. Es vermeidet, dass Daten allein aus Gründen der Aufbewahrung in produktiven Systemen verbleiben, und regelt die Nutzung geeigneter Formate (z.B. PDF/A, ODF) sowie Metadaten, um spätere Auffindbarkeit, Nachvollziehbarkeit und ggf. Beweiswert zu gewährleisten. Zuständigkeiten (z.B. Fachbereich, IT, Archivstelle) sollten klar beschrieben und mit dem Löschkonzept abgestimmt sein, damit Aufbewahrungs- und Löschregeln zusammenpassen."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für ein Archivierungskonzept mit klaren Zuständigkeiten:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung einer verantwortlichen Stelle für Archivierung und Aufbewahrung (z.B. Records-Management, Fachbereich), inklusive Aufgabenbeschreibung in Richtlinien oder Prozessdokumenten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Definition von Archivierungsformaten und Metadaten für wesentliche Dokumenttypen (z.B. Verträge, Bescheide, Bescheinigungen) und Dokumentation in einem Archivierungshandbuch oder einer technischen Spezifikation."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-02-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung von Kriterien und Zeitpunkten für die Überführung aus produktiven Systemen in Archiv- oder Aufbewahrungssysteme (z.B. nach Abschluss eines Vorgangs oder nach Ablauf bestimmter Fristen)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) ein dokumentiertes Archivierungskonzept, (b) Rollen- und Zuständigkeitsbeschreibungen für Archivierungsaufgaben, (c) technische oder organisatorische Regelungen zur Überführung von Daten in Archivsysteme und zur späteren Löschung nach Ablauf der Aufbewahrungsfrist."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-LC-01-03",
+                            "title": "Löschung in Sicherungskopien und bei Auftragsverarbeitern",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Die Organisation stellt sicher, dass das Lösch- und Aufbewahrungskonzept auch für Sicherungskopien (Backups) und Auftragsverarbeiter gilt. Gelöschte Daten werden nicht dauerhaft aus Backups wieder nutzbar, und Auftragsverarbeiter sowie sonstige Empfänger personenbezogener Daten erhalten klare, vertraglich geregelte Weisungen zur Löschung und Aufbewahrung."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Für Backups sollte dokumentiert sein, innerhalb welchen Zeitraums sich gelöschte Daten auch aus Sicherungskopien endgültig nicht mehr wiederherstellen lassen (z.B. durch Ablauf des Backup-Zyklus oder spezielle Löschmechanismen). Bei Rücksicherungen müssen Verfahren vorgesehen sein, um bereits gelöschte Daten im wiederhergestellten Systemstand erneut zu löschen oder zu sperren. Für Auftragsverarbeiter und andere Empfänger sollten Löschfristen, Löschmodi und Nachweise (z.B. Löschprotokolle, Zertifikate) vertraglich festgelegt und stichprobenartig überprüft werden."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Löschung in Backups und bei Auftragsverarbeitern:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation des Backup- und Restore-Konzepts mit Angaben zu Aufbewahrungsdauer, Rotations- und Überschreibzyklen sowie zum Umgang mit Löschungen (z.B. kein gezieltes Restore einzelner gelöschter Datensätze für produktive Zwecke)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung eines Verfahrens, wie nach einer Rücksicherung sichergestellt wird, dass Daten, die im aktuellen Löschstatus bereits gelöscht sein müssten, erneut gelöscht oder zumindest für die Nutzung gesperrt werden."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-03-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Vertragliche Regelungen in Auftragsverarbeitungsverträgen (Art.-28-Vereinbarungen) zu Löschfristen, Löschverfahren und Nachweisen; insbesondere Verpflichtung des Auftragsverarbeiters, Löschungen nach Weisung umzusetzen und zu bestätigen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-03-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Stichprobenartige Einholung und Prüfung von Löschbestätigungen oder Auditberichten von Auftragsverarbeitern bzw. Rechenzentrumsbetreibern."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) dokumentierte Regelungen zur Behandlung von Löschungen in Backups, (b) Konzepte oder Verfahren zur Löschsicherung nach Restore, (c) vertragliche Vorgaben und Löschnachweise von Auftragsverarbeitern und sonstigen Empfängern personenbezogener Daten."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
 
         {
             "id": "sdm-tom-backup",
