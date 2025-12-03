@@ -394,6 +394,25 @@ sauber zueinander in Beziehung setzen lassen.
   *„Wie ordnen wir dieselben Maßnahmen in bestehende Security-Frameworks ein (integrierte Audits, kombinierte Controls)?“*
 
 
+#### Mapping: TOM / OPS ↔ SDM-TOM-BR-01 (Backup & Recovery) ↔ ISO/BSI
+
+| Datenschutz-Sicht (Open Privacy Catalog)                                   | SDM-TOM-Baustein                         | BSI IT-Grundschutz / ISO-Kontrollen (nicht abschließend)                              |
+|----------------------------------------------------------------------------|------------------------------------------|----------------------------------------------------------------------------------------|
+| TOM-01 – Schutzbedarf und Risikobewertung                                 | SDM-TOM-BR-01 (Backup & Recovery) – als Risikotreiber für Häufigkeit/Tiefe von Backups und Restore-Tests | BSI CON.2 „Datenschutz“, CON.3 „Datensicherungskonzept“; ISO/IEC 27001:2022 Annex A 8.13 „Information backup“, 5.30 „ICT readiness for business continuity“ |
+| TOM-03 – Verschlüsselung und Pseudonymisierung                            | SDM-TOM-BR-01-xx (z.B. „Verschlüsselte Sicherungen“, „Schlüsselmanagement für Backups“) | BSI CON.3 „Datensicherungskonzept“ (Schutz von Sicherungsdaten); ISO/IEC 27001 Annex A 8.13, 8.24 (Use of cryptography) |
+| OPS-04 – Lösch-, Sperr- und Archivierungsprozesse                         | SDM-TOM-BR-01-xx (z.B. „Restore ohne Wiederbelebung gelöschter Daten“, „Archivkonzept“) | BSI CON.3 „Datensicherungskonzept“, OPS.1.2.2 „Archivierung“; ISO/IEC 27001 Annex A 8.10 „Information deletion“, 8.13 „Information backup“ |
+| Weitere OPS-/BCM-Controls (z.B. Betriebs- und Wiederanlaufkonzepte)       | SDM-TOM-BR-01-xx (z.B. „Notfall-/Wiederanlauftests“, „RPO/RTO aus Datenschutzsicht“)    | BSI Bausteine zu Notfallmanagement / Business Continuity; ISO/IEC 27001 Annex A 5.30 „ICT readiness for business continuity“ |
+
+
+#### Mapping: TOM-01 / TOM-03 ↔ SDM-TOM-DM-01 (Datenminimierung & Pseudonymisierung) ↔ ISO/BSI
+
+| Datenschutz-Sicht (Open Privacy Catalog)                                   | SDM-TOM-Baustein                                   | BSI IT-Grundschutz / ISO-Kontrollen (nicht abschließend)                                         |
+|----------------------------------------------------------------------------|----------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| TOM-01 – Schutzbedarf und Risikobewertung                                 | SDM-TOM-DM-01-01/02 (z.B. „Datenmodell-/Schema-Minimierung“, „Risikobasierte Attributauswahl“) | BSI CON.2 „Datenschutz“ (Verknüpfung SDM ↔ IT-Grundschutz); ISO/IEC 27001 Annex A 5.12 „Classification of information“, 5.34 „Privacy and protection of PII“ |
+| TOM-03 – Verschlüsselung und Pseudonymisierung                            | SDM-TOM-DM-01-03/04 (z.B. „Pseudonymisierung in Test-/Analyseumgebungen“, „Trennung Identitäts- vs. Fachdaten“) | BSI CON.2 „Datenschutz“, anwendungsnahe Bausteine (APP-…); ISO/IEC 27001 Annex A 8.11 „Data masking“, 8.10 „Information deletion“; ISO/IEC 27701 PIMS-Kontrollen |
+| REG-01/REG-02 – VVT und Datenkategorien/Kontexte                          | SDM-TOM-DM-01 – Input (welche Datenklassen, Kontexte, Zwecke)                            | BSI CON.2 „Datenschutz“ (Bezug zum SDM), CON.3 „Datensicherungskonzept“ (Abgrenzung produktiv/Test/Archiv) |
+
+
 ## Konventionen & Kompatibilität
 - **OSCAL-Version**: 1.1.2 (Viewer-Kompatibilität)
 - **Evidenz**: ausschließlich über `back-matter.resources[].rlinks[]` in Artefakten; Referenzierung auf Implementierungsebene via `links[]` (kein `related-resources` im SSP).

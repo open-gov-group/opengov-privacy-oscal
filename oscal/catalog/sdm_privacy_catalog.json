@@ -1914,6 +1914,394 @@
             ]
         },
         {
+            "id": "sdm-tom-logging",
+            "title": "SDM Technical and Organizational Measures – Data processing logging",
+            "controls": [
+                {
+                    "id": "SDM-TOM-PL-01",
+                    "title": "Protokollierung und Auswertung datenschutzrelevanter Aktivitäten",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "TRANSPARENZ"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTERVENIERBARKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERTRAULICHKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTEGRITÄT"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-43",
+                            "value": "SDM-LG-01",
+                            "remarks": "Baustein 43 „Protokollieren“ – Protokollierung als Grundlage von Transparenz, Rechenschaft und Nachvollziehbarkeit."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. a, f DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 2 DSGVO (Rechenschaftspflicht)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 30 DSGVO (VVT – Nachweisfähigkeit von Verarbeitungstätigkeiten)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "OPS.1.1.5",
+                            "remarks": "BSI IT-Grundschutz: Protokollierung."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27001",
+                            "value": "A.8.15",
+                            "remarks": "ISO/IEC 27001:2022 – Logging."
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#INC-01",
+                            "rel": "related-control",
+                            "text": "INC-01 (Open Privacy Catalog) beschreibt Incident-Management aus Sicht des Datenschutzes; SDM-TOM-LG-01 liefert die technische Grundlage zur Erkennung und Analyse von Datenschutzvorfällen."
+                        },
+                        {
+                            "href": "#TOM-02",
+                            "rel": "related-control",
+                            "text": "TOM-02 (Open Privacy Catalog) adressiert Datenschutzrisiken; SDM-TOM-LG-01 konkretisiert Protokollierungsmaßnahmen zur Reduktion von Erkennungs- und Nachweisrisiken."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-pl-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation protokolliert datenschutzrelevante Aktivitäten in geeigneter Tiefe und Qualität, wertet Protokolldaten aus und nutzt die Ergebnisse für Transparenz, Incident-Management und kontinuierliche Verbesserung der technischen und organisatorischen Maßnahmen."
+                        },
+                        {
+                            "id": "sdm-tom-pl-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Protokollierung unterstützt die Rechenschaftspflicht (Art. 5 Abs. 2 DSGVO), die Sicherstellung von Integrität und Vertraulichkeit (Art. 5 Abs. 1 lit. f, Art. 32 DSGVO) sowie die Umsetzung von Betroffenenrechten und Nachweispflichten gegenüber Aufsichtsbehörden."
+                        },
+                        {
+                            "id": "sdm-tom-pl-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-PL-01 trägt zu mehreren Gewährleistungszielen des SDM bei.",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-pl-01-warranty-transparency",
+                                    "name": "warranty-objective",
+                                    "prose": "TRANSPARENZ: Protokolle machen Verarbeitungsvorgänge für Verantwortliche und Aufsicht nachvollziehbar."
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-warranty-intervenability",
+                                    "name": "warranty-objective",
+                                    "prose": "INTERVENIERBARKEIT: Auf Basis von Logs können Betroffenenrechte (z.B. Auskunft, Löschung) geprüft und nachvollzogen werden."
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-warranty-confidentiality",
+                                    "name": "warranty-objective",
+                                    "prose": "VERTRAULICHKEIT: Zugriffe und Änderungen werden nachvollziehbar, Missbrauch kann erkannt und sanktioniert werden."
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-warranty-integrity",
+                                    "name": "warranty-objective",
+                                    "prose": "INTEGRITÄT: Protokolle helfen, unzulässige oder fehlerhafte Änderungen personenbezogener Daten aufzudecken."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-PL-01-01",
+                            "title": "Standardisierte Protokolldaten (Zeitstempel, Instanz, Aktivität)",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "sdm-measure-id",
+                                    "class": "sdm-measure",
+                                    "value": "M43.D01-D04"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-pl-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Protokolldaten enthalten mindestens standardisierte Zeitstempel, eine eindeutige Instanzkennung und eine klare Beschreibung der protokollierten Aktivität."
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Ohne einheitliche Zeitstempel, Instanz- und Aktivitätskennungen lassen sich Ereignisse nicht zuverlässig korrelieren. Aus Sicht des Datenschutzes ist das insbesondere für die Aufklärung von Datenschutzvorfällen und die Nachvollziehbarkeit von Zugriffs- und Änderungsereignissen kritisch."
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Baseline-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-pl-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Standardisierung der Zeitstempel in Protokolldaten (z.B. Zeitzone, Format, möglichst geringe Abweichung zwischen Ereigniszeit und Log-Zeit)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-pl-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Vergabe eindeutiger Kennungen für protokollierende Instanzen (Anwendung, Service, Systemkomponente), die in den Protokolldatensätzen wiederverwendet werden."
+                                        },
+                                        {
+                                            "id": "sdm-tom-pl-01-01-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Definition eines überschaubaren, dokumentierten Sets von Aktivitätsarten (z.B. LOGIN, LOGOUT, READ, WRITE, DELETE, ROLE_CHANGE), das in allen relevanten Systemen konsistent verwendet wird."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Format- und Felddefinitionen für Protokolldaten, (b) Beispiel-Logs mit konsistenten Zeitstempeln und Instanz-/Aktivitätskennungen, (c) dokumentierte Beschreibung der verwendeten Aktivitätscodes."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-PL-01-02",
+                            "title": "Löschfristen, Schutz und Aufbewahrung von Protokolldaten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "sdm-measure-id",
+                                    "class": "sdm-measure",
+                                    "value": "M43.D05, M43.P07"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-pl-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Für Protokolldaten bestehen definierte Aufbewahrungs- und Löschfristen; Protokolldaten sind gegen unbefugte Kenntnisnahme und Manipulation geschützt."
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Logdaten können personenbezogene oder personenbeziehbare Informationen enthalten und unterliegen daher denselben Grundsätzen wie andere personenbezogene Daten (insb. Speicherbegrenzung, Integrität und Vertraulichkeit). Gleichzeitig müssen sie ausreichend lange verfügbar bleiben, um Vorfälle aufklären und Nachweise erbringen zu können."
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-pl-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Definition und Dokumentation von Lösch- bzw. Aufbewahrungsfristen für verschiedene Logtypen (z.B. Sicherheits-/Zugriffslogs vs. Anwendungslogs), orientiert an gesetzlichen Anforderungen und Risiko."
+                                        },
+                                        {
+                                            "id": "sdm-tom-pl-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Schutz von Protokolldaten durch Zugriffsrechte und Integritätssicherung (z.B. gesicherter Protokollserver, Signierung oder HMAC, beschränkte Administrationsrechte auf Log-Infrastruktur)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-pl-01-02-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Regelmäßige technische Überprüfung, ob definierte Löschfristen eingehalten werden (z.B. Auswertung von Retention-Settings, Stichprobenkontrollen)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Richtlinien oder Konfigurationen zu Aufbewahrungsfristen, (b) technische Schutzmaßnahmen für Logsysteme, (c) Protokolle oder Nachweise von Lösch-/Archivierungsläufen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-PL-01-03",
+                            "title": "Protokollierungskonzept und Auswertung/Korrelation von Protokollen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "sdm-measure-id",
+                                    "class": "sdm-measure",
+                                    "value": "M43.S01, M43.P01, M43.P02, M43.P06"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-pl-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Es existiert ein dokumentiertes Protokollierungskonzept; Protokolle aus verschiedenen Ebenen (Fachverfahren, Anwendungen, Infrastruktur, Administration) können korreliert und für Sicherheits- und Datenschutzanalysen ausgewertet werden."
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Protokollierung ist kein Selbstzweck. Aus Sicht des Datenschutzes ist entscheidend, dass Protokolle so geplant werden, dass Rechtskonformität, Sicherheitsvorfälle und Missbrauch erkennbar werden. Dazu gehört ein Konzept, das Umfang, Qualität, Aufbewahrung, Rollen, Auswertung und Schnittstellen beschreibt."
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Standard-/Advanced-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-pl-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Erstellung und Pflege eines Protokollierungskonzepts, das Zwecke, Verantwortlichkeiten, Protokollierungsumfang, Aufbewahrungsfristen, Auswertungsprozesse und eingesetzte Tools beschreibt."
+                                        },
+                                        {
+                                            "id": "sdm-tom-pl-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung technischer Möglichkeiten, Protokolle aus verschiedenen Quellen (Fachapplikationen, Authentifizierungssysteme, Infrastruktur, Admin-Tools) zu korrelieren, z.B. über ein zentrales Log- oder SIEM-System."
+                                        },
+                                        {
+                                            "id": "sdm-tom-pl-01-03-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Definition regelmäßiger Auswertungen von Protokolldaten (z.B. Security-Review, Datenschutzkontrollen) mit dokumentierten Ergebnissen und abgeleiteten Maßnahmen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-pl-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) ein Protokollierungskonzept, (b) technische Architekturunterlagen zur Zusammenführung/Korrelation von Logs, (c) Dokumentation regelmäßig durchgeführter Log-Analysen und daraus abgeleiteter Maßnahmen."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
             "id": "sdm-tom-backup",
             "title": "SDM Technical and Organizational Measures – Backup & Recovery aus Datenschutzsicht",
             "controls": [
