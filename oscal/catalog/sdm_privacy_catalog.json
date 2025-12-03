@@ -2877,9 +2877,14 @@
                     ],
                     "links": [
                         {
-                            "href": "#TOM-XX",
-                            "rel": "related-control",
-                            "text": "TOM-XX (Open Privacy Catalog) beschreibt die Anforderungen an Löschung und Aufbewahrung aus Sicht der betroffenen Personen und des Datenschutzrisikos; SDM-TOM-LC-01 konkretisiert die dazugehörigen technischen und organisatorischen Maßnahmen."
+                            "href": "#SDM-60",
+                            "rel": "reference",
+                            "text": "SDM-Baustein 60 „Löschen und Vernichten“"
+                        },
+                        {
+                            "href": "#SDM-11",
+                            "rel": "reference",
+                            "text": "SDM-Baustein 11 „Aufbewahren“"
                         }
                     ],
                     "parts": [
@@ -2961,6 +2966,21 @@
                                     "name": "responsible-role",
                                     "class": "org-role",
                                     "value": "Legal/Compliance"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P03"
                                 }
                             ],
                             "parts": [
@@ -3042,6 +3062,21 @@
                                     "name": "responsible-role",
                                     "class": "org-role",
                                     "value": "Records-Management"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.P01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.P02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.P03"
                                 }
                             ],
                             "parts": [
@@ -3133,6 +3168,36 @@
                                     "name": "responsible-role",
                                     "class": "org-role",
                                     "value": "System-Owner"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P11"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P13"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P14"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S10"
                                 }
                             ],
                             "parts": [
@@ -3234,6 +3299,36 @@
                                     "name": "responsible-role",
                                     "class": "org-role",
                                     "value": "System-Owner"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P10"
                                 }
                             ],
                             "parts": [
@@ -3330,6 +3425,26 @@
                                     "name": "responsible-role",
                                     "class": "org-role",
                                     "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P06"
                                 }
                             ],
                             "parts": [
@@ -3436,6 +3551,31 @@
                                     "name": "responsible-role",
                                     "class": "org-role",
                                     "value": "Information-Security"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.D01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.D02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.D03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.D04"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.D05"
                                 }
                             ],
                             "parts": [
@@ -3532,6 +3672,26 @@
                                     "name": "responsible-role",
                                     "class": "org-role",
                                     "value": "System-Owner"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.D06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S14"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S15"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S16"
                                 }
                             ],
                             "parts": [
@@ -3638,6 +3798,71 @@
                                     "name": "responsible-role",
                                     "class": "org-role",
                                     "value": "Information-Security"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S10"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.S12"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.P02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.P03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.P06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.P07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-11",
+                                    "value": "M11.P08"
                                 }
                             ],
                             "parts": [
