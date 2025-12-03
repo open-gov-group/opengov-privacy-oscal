@@ -5194,6 +5194,646 @@
                 }
             ]
         },
+        {
+            "id": "sdm-tom-rectification",
+            "title": "SDM Technical and Organizational Measures – Berichtigung personenbezogener Daten",
+            "controls": [
+                {
+                    "id": "SDM-TOM-REC-01",
+                    "title": "Berichtigung personenbezogener Daten",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTERVENIERBARKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTEGRITÄT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "RICHTIGKEIT"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-61",
+                            "value": "SDM-61 Berichtigen",
+                            "remarks": "Baustein 61 „Berichtigen“ (DSK-SDM V2.0)."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. d DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 16 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 19 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#TOM-REC",
+                            "rel": "related-control",
+                            "text": "TOM-REC (Open Privacy Catalog) beschreibt die Anforderungen an die Berichtigung personenbezogener Daten; SDM-TOM-REC-01 konkretisiert die dazugehörigen technischen und organisatorischen Maßnahmen."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-rec-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation verfügt über ein Konzept und geeignete technische und organisatorische Maßnahmen zur Berichtigung personenbezogener Daten. Datenmodelle, Systeme und Prozesse sind so gestaltet, dass unrichtige oder unvollständige Daten zeitnah berichtigt oder vervollständigt werden können, ohne die Integrität des übrigen Datenbestands zu gefährden. Berichtigungen wirken konsistent über aktive Systeme, Sicherungskopien und Archivbestände und werden nachvollziehbar dokumentiert."
+                        },
+                        {
+                            "id": "sdm-tom-rec-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Das Betroffenenrecht auf Berichtigung nach Art. 16 DSGVO konkretisiert den Grundsatz der Datenrichtigkeit aus Art. 5 Abs. 1 lit. d DSGVO. Verantwortliche müssen geeignete technische und organisatorische Maßnahmen nach Art. 24, 25 und 32 DSGVO treffen, um unrichtige Daten zu berichtigen oder zu löschen und Betroffene sowie Empfänger nach Art. 19 DSGVO über Berichtigungen zu informieren."
+                        },
+                        {
+                            "id": "sdm-tom-rec-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-REC-01 unterstützt insbesondere die Gewährleistungsziele Richtigkeit, Integrität und Intervenierbarkeit.",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-rec-01-warranty-accuracy",
+                                    "name": "warranty-objective",
+                                    "prose": "RICHTIGKEIT: Datenmodelle, Systeme und Prozesse stellen sicher, dass gespeicherte personenbezogene Daten sachlich richtig und erforderlichenfalls auf dem neuesten Stand sind."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-warranty-integrity",
+                                    "name": "warranty-objective",
+                                    "prose": "INTEGRITÄT: Berichtigungen erfolgen so, dass die Integrität nicht betroffener Daten gewahrt bleibt, insbesondere bei feingranularen Korrekturen und bei Rücksicherungen."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-warranty-intervenability",
+                                    "name": "warranty-objective",
+                                    "prose": "INTERVENIERBARKEIT: Betroffene können ihr Recht auf Berichtigung effektiv wahrnehmen; Anträge werden geprüft, umgesetzt, dokumentiert und kommuniziert."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-REC-01-01",
+                            "title": "Datenmodell, Zeitverläufe und Kopien für Berichtigungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Records-Management"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.D01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.D02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.D03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.D04"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.D05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.D06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P20"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P21"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P22"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-rec-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Die Struktur der Daten und das Datenmodell sind so organisiert, dass einzelne Datenfelder, Datensätze oder Gruppen von Daten berichtigt werden können. Zeitverläufe und Zeitpunkte werden geeignet abgebildet, identifizierende Daten der betroffenen Person sind nachvollziehbar zugeordnet, und alle Kopien, Sicherungen und Archivbestände können Berichtigungen nachvollziehen oder nachziehen, ohne dass falsche Daten erneut aktiv werden."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Datenmodelle sollten Berichtigungen auf Feldebene unterstützen, insbesondere bei hohem Schutzbedarf. Felder für Zeitverläufe und Zeitstempel helfen, historische Zustände von aktuellen Werten zu unterscheiden. Identifizierende Daten der antragstellenden Person erleichtern die spätere Nachvollziehbarkeit von Berichtigungsentscheidungen. Für Kopien und Sicherungen sollten Übersichten über Speicherorte und Erstellungsdaten geführt werden, um gezielt Blockberichtigungen, Korrekturläufe und Ergänzungen (z.B. Gegendarstellungen in Archivunterlagen) durchführen zu können."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Datenmodell, Zeitverläufe und Kopien:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-rec-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einführung von Datenfeldern für Berichtigungsstatus, Versionen, Zeitverläufe und Zeitstempel (z.B. „valid_from“, „valid_to“, „corrected_at“, „correction_reason“), um verschiedene Zustände eines Datums nachvollziehbar zu machen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Speicherung identifizierender Daten der betroffenen Person, die den Berichtigungsantrag gestellt hat (z.B. Kunden-ID, Aktenzeichen), um den Antrag später einem Berichtigungsvorgang zuordnen zu können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-01-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Führen eines Verzeichnisses aller Kopien und Datensicherungen mit Erstellungsdatum und Bezug zu Datenbeständen, um bei Bedarf gezielte Korrekturläufe für Sicherungen und Archive durchführen zu können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-01-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Definition von Verfahren für turnusmäßige „Berichtigungen im Block“ und außerplanmäßige Korrekturläufe von Datensicherungen, insbesondere bei hohem Schutzbedarf."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-01-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Prozesse, mit denen in Archivsystemen Gegendarstellungen der betroffenen Person ergänzt und mit den ursprünglichen Unterlagen verknüpft werden können."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Datenmodelle mit Feldern für Zeitverläufe, Zeitstempel und Berichtigungsstatus, (b) Verfahren zur Sicherstellung, dass Rücksicherungen berichtigte Daten nicht überschreiben, (c) Übersichten über Kopien und Sicherungen, (d) Konzepte und Nachweise zu Blockberichtigungen, Korrekturläufen und Gegendarstellungen in Archivsystemen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-REC-01-02",
+                            "title": "Technische Systeme und Sicherheit bei Berichtigungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S04"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S10"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S11"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S12"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-rec-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Technische Systeme unterstützen die Durchführung von Berichtigungen, ohne die Integrität unverändert bleibender Datenbestände zu beeinträchtigen. Sie ermöglichen bei Zweifeln eine Einschränkung der Verarbeitung, setzen das Berechtigungs- und Rollenkonzept technisch um, überwachen Fristen, nutzen Zeitstempel, Protokollierung und sichere Kommunikationswege und stellen sichere Identifizierung der betroffenen Person sicher."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Systeme müssen Berichtigungen technisch realisieren können und bei Zweifelsfällen eine Einschränkung der Verarbeitung ermöglichen. Berichtigungen dürfen nicht dazu führen, dass andere Daten ungewollt verändert werden. Zugriffssysteme müssen verhindern, dass Unbefugte Daten berichtigen. Für Fristenüberwachung und Nachweis sind Zeitstempel und Protokollierungssysteme erforderlich. Sicher identifizierende Verfahren (z.B. eID, etablierte 2FA-Kanäle) helfen, unbefugte Berichtigungsanträge zu verhindern. Für Daten mit hohem Risiko sind sichere Übertragungsverfahren und erhöhte Authentifizierungsanforderungen vorzusehen."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für technische Systeme und Sicherheit bei Berichtigungen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-rec-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung von Funktionen in Anwendungen und Datenbanken, die feingranulare Berichtigungen auf Feldebene ermöglichen und die Integrität nicht betroffener Daten sicherstellen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Bereitstellung einer technischen Möglichkeit, Daten während der Prüfung oder bei Zweifeln temporär nur eingeschränkt zu verarbeiten (Kombination mit Einschränkungs-Mechanismen)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-02-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Umsetzung des Berechtigungs- und Rollenkonzepts in einem Zugriffsrechtesystem, das gezielt steuert, wer Berichtigungen anordnen und durchführen darf."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-02-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz von Systemen zur Fristenüberwachung (z.B. Ticket- oder Workflow-Systeme) in Verbindung mit elektronischen Zeitstempelsystemen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-02-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Bereitstellung technischer Identifizierungssysteme für Antragsteller (z.B. eID-Funktion Personalausweis, etablierte 2FA-Kanäle) insbesondere bei hohem Schutzbedarf."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-02-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Protokollierungssysteme, die Berichtigungen und relevante Offenlegungen erfassen, sowie Funktionen zur Prüfung der Datenrichtigkeit nach Rücksicherung."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-02-measure-07",
+                                            "name": "typical-measure",
+                                            "prose": "Nutzung sicherer Übertragungsverfahren (z.B. Ende-zu-Ende-Verschlüsselung, gesicherte Portale, Einschreiben mit Rückschein) für Berichtigungsmitteilungen bei hohem Risiko."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Systembeschreibungen und Implementierungen, die Berichtigungen und Einschränkungen unterstützen, (b) technische Umsetzung von Rollen-/Rechten, Fristenüberwachung, Zeitstempeln und Protokollierung, (c) Verfahren zur sicheren Identifizierung von Antragstellern und zur sicheren Übermittlung von Berichtigungsinformationen, (d) Nachweise, dass Rücksicherungen berichtigte Daten nicht unbemerkt zurückrollen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-REC-01-03",
+                            "title": "Prozesse, Fristen und Kommunikation bei Berichtigungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Data-Protection-Officer"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Legal/Compliance"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P04"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P10"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P11"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P12"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P13"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P14"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P15"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P16"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P17"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P18"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P19"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P23"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-rec-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Die Organisation verfügt über klar definierte Prozesse zur Beantragung, Prüfung, Entscheidung, Umsetzung, Dokumentation und Kommunikation von Berichtigungen. Diese Prozesse regeln die Zusammenarbeit mit gemeinsam Verantwortlichen und Auftragsverarbeitern, die Fristenüberwachung, die Mitteilungspflichten gegenüber Empfängern und Absendern sowie den Umgang mit Ablehnungen und besonderen Anforderungen bei hohem Schutzbedarf."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Ein Berichtigungskonzept sollte Rollen, Verantwortlichkeiten, Prozessschritte und Fristen festlegen. Anträge müssen über verschiedene Kanäle entgegengenommen werden können; Identitätsprüfung, Entscheidungsfindung und Fristensteuerung müssen dokumentiert sein. Vereinbarungen zwischen gemeinsam Verantwortlichen und mit Auftragsverarbeitern müssen Pflichten rund um Berichtigungen klar regeln. Offenlegungen sind zu dokumentieren, um Empfänger informieren zu können. Ablehnungen müssen begründet und mit Hinweisen auf Rechtsbehelfe versehen sein; bei hohem Schutzbedarf sind strengere Anforderungen an Authentifizierung und Prozessstandardisierung anzuwenden."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Prozesse, Fristen und Kommunikation bei Berichtigungen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-rec-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Erstellung eines Berichtigungskonzepts, das den gesamten Lebenszyklus von Berichtigungen abdeckt (Antrag, Prüfung, Entscheidung, technische Umsetzung, Mitteilungen, Dokumentation, Aufbewahrung)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Bereitstellung von Formularen und elektronischen Kanälen zur Beantragung von Berichtigungen sowie gleichzeitige Sicherstellung, dass Anträge unabhängig von ihrer Form entgegengenommen werden."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-03-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung von Prozessen zur Identitätsprüfung von Antragstellern und zur Sicherstellung, dass Berichtigungsanträge unverzüglich und innerhalb gesetzlicher Fristen bearbeitet werden."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-03-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung von Pflichten bei gemeinsam Verantwortlichen und von Mitwirkungspflichten von Auftragsverarbeitern in Vereinbarungen nach Art. 26 und Art. 28 DSGVO."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-03-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation von Offenlegungen gegenüber Dritten und Einrichtung von Prozessen zur Organisation der Mitteilungspflichten gegenüber Empfängern und ggf. Absendern berichtigter Daten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-03-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Standardisierte, rollenabhängig konfigurierbare Berichtigungsprozesse einschließlich Fristenüberwachung, Entscheidungsdokumentation, Ablehnung unberechtigter Anträge und Hinweis auf Rechtsbehelfe."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-03-measure-07",
+                                            "name": "typical-measure",
+                                            "prose": "Besondere Prozesse für Berichtigungen bei hohem Schutzbedarf (z.B. Gesundheitsdaten), einschließlich erhöhter Anforderungen an Authentifizierung und fachliche Prüfung."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) ein dokumentiertes Berichtigungskonzept, (b) Prozessbeschreibungen und Arbeitsanweisungen für Antragsannahme, Identitätsprüfung, Fristenüberwachung, Entscheidung und technische Umsetzung, (c) Nachweise über Mitteilungspflichten gegenüber Empfängern und Absendern, (d) Vereinbarungen mit gemeinsam Verantwortlichen und Auftragsverarbeitern zu Berichtigungspflichten, (e) Dokumentation von Ablehnungen und von Fällen mit hohem Schutzbedarf."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
 
 
         {
