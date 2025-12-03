@@ -2915,6 +2915,11 @@
                             {
                                 "href": "https://www.edpb.europa.eu/system/files/2024-01/one_stop_shop_case_digest_security_data_breach_en.pdf",
                                 "rel": "reference"
+                            },
+                            {
+                                "href": "#SDM-TOM-LG-01",
+                                "rel": "related-control",
+                                "text": "SDM-TOM-LG-01 (SDM-Security-TOM-Katalog) konkretisiert die technischen Logging- und Monitoring-Maßnahmen (Ereignistypen, Aufbewahrung, SIEM/Monitoring), die die in TOM-04 beschriebenen datenschutzbezogenen Anforderungen praktisch umsetzen."
                             }
                         ]
                     },
@@ -4683,6 +4688,11 @@
                             {
                                 "href": "https://www.bsi.bund.de/DE/IT-Sicherheitsvorfall/Unternehmen/Ich-habe-einen-IT-Sicherheitsvorfall-Checkliste-Organisatorisches/ich-habe-einen-it-sicherheitsvorfall-checkliste-organisatorisches_node.html",
                                 "rel": "reference"
+                            },
+                            {
+                                "href": "#SDM-TOM-LG-01",
+                                "rel": "related-control",
+                                "text": "SDM-TOM-LG-01 (Logging & Monitoring) beschreibt die technischen Protokollierungs- und Monitoring-Maßnahmen, deren Erkennungs- und Alarmierungsfunktionen in den organisatorischen Meldeprozess nach INC-02 eingebunden werden sollten."
                             }
                         ]
                     },

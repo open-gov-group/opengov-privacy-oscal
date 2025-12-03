@@ -2,7 +2,7 @@
   "catalog": {
         "uuid": "68f6e5fb-abd1-4c21-a8ba-4d0432ed081d",
     "metadata": {
-      "title": "Open SDM / Security TOM Catalog (Mini)",
+      "title": "Open Privacy Security TOM Catalog",
        "last-modified": "2025-11-27T00:00:00Z",
         "version": "0.1.0-draft",
       "oscal-version": "1.1.2",
@@ -19,7 +19,7 @@
                 "name": "SDM Bausteine"
             }
         ],
-       "remarks": "Beispielhafter SDM-/Security-TOM-Katalog zur Verknüpfung mit dem Open Privacy OSCAL Catalog (TOM-02, TOM-03 etc.)."
+       "remarks": "Privacy Security-TOM-Katalog zur Verknüpfung mit dem Open Privacy OSCAL Catalog."
     },
     "groups": [
         {
@@ -1906,6 +1906,366 @@
                                     "id": "sdm-tom-lg-01-05-ass-obj",
                                     "name": "assessment-objective",
                                     "prose": "Nachweisbar sind: (a) System- und Verfahrensliste, für die Advanced Monitoring eingesetzt wird, (b) dokumentierter Datenschutz-Rahmen (z.B. DPIA-Ausschnitt), (c) Nachweise für konfigurierte Use-Cases und tatsächliche Alerts/Erkenntnisse."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sdm-tom-backup",
+            "title": "SDM Technical and Organizational Measures – Backup & Recovery aus Datenschutzsicht",
+            "controls": [
+                {
+                    "id": "SDM-TOM-BR-01",
+                    "title": "Backup- und Wiederherstellungskonzept für personenbezogene Daten",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERFÜGBARKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTEGRITÄT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTERVENIERBARKEIT"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-51",
+                            "value": "SDM-BR-01",
+                            "remarks": "Baustein Backup & Recovery – Verfügbarkeit und datenschutzkonforme Wiederherstellung."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. f DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. d DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. e DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO (insb. Verfügbarkeit und Belastbarkeit der Systeme und Dienste)"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "CON.x",
+                            "remarks": "BSI-Grundschutz: Datensicherung / Notfallvorsorge (Platzhalter für detailliertes Mapping)."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27001",
+                            "value": "A.17.x",
+                            "remarks": "ISO/IEC 27001 – Information security aspects of business continuity (Platzhalter)."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-br-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation stellt durch geeignete Backup- und Wiederherstellungsmaßnahmen sicher, dass personenbezogene Daten bei technischen oder organisatorischen Störungen verfügbar bleiben und in einem konsistenten, datenschutzkonformen Zustand wiederhergestellt werden können – ohne gelöschte oder unzulässige Daten dauerhaft „zurückzuholen“."
+                        },
+                        {
+                            "id": "sdm-tom-br-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Art. 32 DSGVO verlangt ausdrücklich Maßnahmen zur Sicherstellung der Verfügbarkeit und Belastbarkeit von Systemen und Diensten; Art. 5 Abs. 1 lit. d, e, f DSGVO konkretisieren, dass dabei zugleich Richtigkeit, Speicherbegrenzung sowie Integrität und Vertraulichkeit der Daten zu wahren sind. Backup & Recovery müssen daher nicht nur die technische Wiederherstellung, sondern auch die datenschutzkonforme Behandlung gelöschter und unzulässiger Daten berücksichtigen."
+                        },
+                        {
+                            "id": "sdm-tom-br-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-BR-01 unterstützt mehrere Gewährleistungsziele des SDM:",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-br-01-warranty-availability",
+                                    "name": "warranty-objective",
+                                    "prose": "VERFÜGBARKEIT: Personenbezogene Daten und die dazugehörigen Dienste bleiben im Störungsfall nutzbar oder können in angemessener Zeit wiederhergestellt werden."
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-warranty-integrity",
+                                    "name": "warranty-objective",
+                                    "prose": "INTEGRITÄT: Wiederhergestellte Daten sind vollständig und unverfälscht; Wiederherstellungsprozesse führen nicht zu inkonsistenten oder vermischten Datenbeständen."
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-warranty-intervenability",
+                                    "name": "warranty-objective",
+                                    "prose": "INTERVENIERBARKEIT: Umgesetzte Löschungen und andere Betroffenenrechte bleiben auch nach einer Wiederherstellung wirksam, z.B. durch nachgelagerte Bereinigung oder „Delete-Journale“."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-BR-01-01",
+                            "title": "Baseline-Backup-Konzept und Abdeckung personenbezogener Daten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-br-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Es existiert ein grundlegendes Backup-Konzept, das alle Systeme und Datenbestände mit personenbezogenen Daten erfasst und regelmäßige Sicherungen vorsieht."
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Ohne dokumentiertes Backup-Konzept kann nicht sichergestellt werden, dass alle relevanten Datenbestände abgedeckt sind und im Notfall verfügbar bleiben. Aus Sicht der betroffenen Personen ist dabei wesentlich, dass nicht nur Kernsysteme, sondern auch nachgelagerte Datenbestände (z.B. Reporting, Archive) berücksichtigt werden."
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Baseline-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-br-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentiertes Backup-Konzept mit Übersicht der Systeme/Anwendungen, die personenbezogene Daten verarbeiten, inkl. der jeweiligen Backup-Verfahren und Sicherungsintervalle."
+                                        },
+                                        {
+                                            "id": "sdm-tom-br-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Durchführung regelmäßiger Backups gemäß definierten Intervallen (z.B. tägliche inkrementelle Sicherung, wöchentliche Vollsicherung) und Sicherstellung, dass Sicherungen vor unbefugtem Zugriff geschützt und angemessen verschlüsselt sind."
+                                        },
+                                        {
+                                            "id": "sdm-tom-br-01-01-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung von grundlegenden RPO/RTO-Zielen für wesentliche Verfahren mit Personenbezug (z.B. maximale Datenverluste und Wiederanlaufzeiten)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) ein dokumentiertes Backup-Konzept mit System-/Verfahrensliste und Sicherungsintervallen, (b) Protokolle durchgeführter Sicherungen, (c) Beschreibung der Schutzmaßnahmen für Backup-Medien (z.B. Verschlüsselung, Lagerung, Zugriffskontrolle)."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-BR-01-02",
+                            "title": "Datenschutzkonforme Wiederherstellung und Restore-Tests",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "DPO"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-br-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Wiederherstellungsprozesse werden regelmäßig getestet und so gestaltet, dass bereits gelöschte oder unzulässige Daten nicht dauerhaft in Produktivsysteme zurückkehren."
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Backup ohne erprobte Wiederherstellung genügt Art. 32 DSGVO nicht. Zugleich darf Restore nicht dazu führen, dass Löschungen nach Art. 17 DSGVO oder Berichtigungen nach Art. 16 DSGVO im Ergebnis ins Leere laufen. Aus Datenschutzsicht braucht es daher Verfahren, mit denen Lösch-/Sperr-Informationen auch im Notfall respektiert werden (z.B. durch nachgelagerten Abgleich oder selektive Wiederherstellung)."
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Standard-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-br-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Regelmäßige, dokumentierte Wiederherstellungstests für ausgewählte Systeme mit personenbezogenen Daten (z.B. mindestens jährlich), inkl. Prüfung der RPO/RTO-Ziele."
+                                        },
+                                        {
+                                            "id": "sdm-tom-br-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Führung eines „Delete- oder Change-Journals“, in dem wesentliche Löschungen und Korrekturen dokumentiert werden, um sie im Wiederherstellungsfall erneut anwenden oder berücksichtigen zu können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-br-01-02-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Definition von Verfahren für selektive Wiederherstellungen (z.B. Restore auf separate Umgebung, nachgelagerter Abgleich), um die Rückkehr bereits gelöschter Daten in das Produktivsystem zu vermeiden oder unmittelbar nach Restore zu korrigieren."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Protokolle durchgeführter Restore-Tests, (b) Nachweise, dass Lösch-/Korrekturinformationen im Restore-Prozess berücksichtigt werden, (c) dokumentierte Verfahren für selektive Wiederherstellung und nachgelagerte Bereinigung."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-BR-01-03",
+                            "title": "Advanced-Resilienz für Hochrisiko-Verarbeitungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-br-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Für Verarbeitungen mit hohem Datenschutzrisiko werden erweitert resiliente Backup-/Recovery-Architekturen eingesetzt (z.B. Geo-Redundanz, Immutable Backups, differenzierte Aufbewahrungsstrategien), die sowohl Verfügbarkeit als auch datenschutzkonformes Löschverhalten unterstützen."
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Bei Hochrisiko-Verarbeitungen (z.B. umfangreiche Gesundheitsdatenbestände, kritische Registerverfahren) können Ausfälle oder Datenverluste die Rechte der betroffenen Personen massiv beeinträchtigen. Gleichzeitig muss sichergestellt sein, dass erweiterte Redundanzkonzepte nicht dazu führen, dass gelöschte Daten in vielen Replikaten „persistieren“ und faktisch nicht mehr entfernbar sind."
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Advanced-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-br-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz geo-redundanter oder mehrfach replizierter Backup- und Storage-Konzepte für kritische Hochrisiko-Verfahren, inklusive klarer Konzepte für Löschpropagation (z.B. wie eine Löschung systemübergreifend nachgezogen wird)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-br-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Nutzung von „Immutable Backups“ oder Write-Once-Mechanismen für ausgewählte Sicherungen, kombiniert mit Prozessen, die sicherstellen, dass die Aufbewahrungsfristen und Löschpflichten auch für diese Sicherungen sinnvoll eingehalten werden (z.B. zeitlich begrenzte Immutability mit anschließender Löschung)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-br-01-03-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Regelmäßige Notfall-Übungen (z.B. Tabletop Exercises) für Hochrisiko-Verfahren, in denen Wiederherstellungsszenarien explizit mit Datenschutzaspekten (Betroffenenrechte, Meldepflichten, Löschstatus) durchgespielt werden."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-br-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Architekturunterlagen zu Resilienz- und Redundanzkonzepten, (b) definierte Lösch- und Aufbewahrungsstrategien auch für Replikate und Immutable Backups, (c) Dokumentation von Notfallübungen inklusive Bewertung der Auswirkungen auf Betroffenenrechte."
                                 }
                             ]
                         }
