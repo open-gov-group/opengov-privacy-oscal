@@ -2380,6 +2380,429 @@
                 }
             ]
         },
+        {
+            "id": "sdm-tom-deletion",
+            "title": "SDM Technical and Organizational Measures – Löschen & Vernichten",
+            "controls": [
+                {
+                    "id": "SDM-TOM-DEL-01",
+                    "title": "Lösch- und Vernichtungsprozesse für personenbezogene Daten",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "DATENMINIMIERUNG"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTERVENIERBARKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTEGRITÄT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERTRAULICHKEIT"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-60",
+                            "value": "SDM-DEL-01",
+                            "remarks": "Baustein „Löschen & Vernichten“ – Umsetzung von Speicherbegrenzung und Löschpflichten (SDM-Baustein 60)."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. c DSGVO (Datenminimierung)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. e DSGVO (Speicherbegrenzung)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 2 DSGVO (Rechenschaftspflicht)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 17 DSGVO (Recht auf Löschung)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO (Privacy by Design & Default)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "CON.3",
+                            "remarks": "BSI IT-Grundschutz: Datensicherungskonzept (inkl. Umgang mit Löschung in Sicherungen)."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "OPS.1.2.2",
+                            "remarks": "BSI IT-Grundschutz: Archivierung – Abgrenzung zu Löschung/Vernichtung."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27001",
+                            "value": "A.8.10",
+                            "remarks": "ISO/IEC 27001:2022 – Information deletion."
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#OPS-04",
+                            "rel": "related-control",
+                            "text": "OPS-04 (Open Privacy Catalog) beschreibt Lösch-, Sperr- und Archivierungsprozesse aus Governance-Sicht; SDM-TOM-DEL-01 konkretisiert die technischen und organisatorischen Lösch-/Vernichtungsmaßnahmen."
+                        },
+                        {
+                            "href": "#DSR-05",
+                            "rel": "related-control",
+                            "text": "DSR-05 (Open Privacy Catalog) behandelt die Umsetzung von Löschverlangen betroffener Personen; SDM-TOM-DEL-01 stellt sicher, dass die zugrunde liegenden Systeme tatsächlich löschfähig sind."
+                        },
+                        {
+                            "href": "#TOM-02",
+                            "rel": "related-control",
+                            "text": "TOM-02 (Open Privacy Catalog) adressiert Datenschutzrisiken; SDM-TOM-DEL-01 steuert, wie tief Lösch- und Vernichtungsmaßnahmen in Abhängigkeit vom Risiko auszugestalten sind."
+                        },
+                        {
+                            "href": "#SDM-TOM-BR-01",
+                            "rel": "related-control",
+                            "text": "SDM-TOM-BR-01 (Backup & Recovery) regelt die datenschutzkonforme Wiederherstellung; SDM-TOM-DEL-01 ergänzt, wie Löschpflichten auch bei Sicherungen und Replikaten umgesetzt werden."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-del-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation stellt sicher, dass personenbezogene Daten entsprechend gesetzlichen Lösch- und Speicherbegrenzungspflichten gelöscht oder vernichtet werden können – inklusive Verteilsystemen, Sicherungen und Altbeständen – und dass Löschungen nachvollziehbar dokumentiert sind."
+                        },
+                        {
+                            "id": "sdm-tom-del-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Art. 5 Abs. 1 lit. c und e DSGVO verlangen, dass personenbezogene Daten auf das notwendige Maß beschränkt und nicht länger als erforderlich gespeichert werden. Art. 17 DSGVO gewährt betroffenen Personen ein Recht auf Löschung. Aus technischer Sicht bedeutet das: Systeme müssen Löschbarkeit im Datenmodell, in Schnittstellen, Sicherungen und Archiven unterstützen; aus organisatorischer Sicht braucht es klare Verantwortlichkeiten, Verfahren und Nachweise."
+                        },
+                        {
+                            "id": "sdm-tom-del-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-DEL-01 unterstützt insbesondere folgende Gewährleistungsziele:",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-del-01-warranty-minimization",
+                                    "name": "warranty-objective",
+                                    "prose": "DATENMINIMIERUNG: Durch wirksame Lösch- und Vernichtungsprozesse wird der Datenbestand auf das erforderliche Maß beschränkt."
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-warranty-intervenability",
+                                    "name": "warranty-objective",
+                                    "prose": "INTERVENIERBARKEIT: Betroffenenrechte (insb. Löschung und Berichtigung) können systematisch und nachweisbar umgesetzt werden."
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-warranty-integrity",
+                                    "name": "warranty-objective",
+                                    "prose": "INTEGRITÄT: Der verbleibende Datenbestand bleibt konsistent; Löschungen führen nicht zu widersprüchlichen Teilbeständen."
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-warranty-confidentiality",
+                                    "name": "warranty-objective",
+                                    "prose": "VERTRAULICHKEIT: Datenträger werden so vernichtet oder bereinigt, dass keine unbefugte Wiederherstellung personenbezogener Daten möglich ist."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-DEL-01-01",
+                            "title": "Löschkonzept und Löschbarkeit im Datenmodell",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "sdm-measure-id",
+                                    "class": "sdm-measure",
+                                    "value": "M60.D01, M60.D02"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "DPO"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-del-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Es existiert ein dokumentiertes Löschkonzept; Datenmodell und Prozesse unterstützen die Löschbarkeit personenbezogener Daten (inkl. Kennzeichnung von Löschpflichten und Löschfristen)."
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Viele Systeme sind historisch gewachsen und setzen auf „ewige Speicherung“. Aus Datenschutzsicht muss bereits im Datenmodell erkennbar sein, welche Daten wann zu löschen sind (z.B. über Fristinformationen, Statusfelder, Referenzen) und wie sich Löschpflichten auf abhängige Objekte auswirken (z.B. Protokolle, Anhänge, Kopien)."
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Baseline-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-del-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Erstellung eines Löschkonzepts, das Verarbeitungen, Datenkategorien, Löschanlässe (Fristablauf, Widerruf, Widerspruch, Zweckwegfall) und grobe technische Realisierungswege beschreibt."
+                                        },
+                                        {
+                                            "id": "sdm-tom-del-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Erweiterung des Datenmodells um Attribute zur Steuerung von Löschfristen und -anlässen (z.B. „gültig bis“, „Löschflag“, „Archivstatus“), soweit technisch möglich."
+                                        },
+                                        {
+                                            "id": "sdm-tom-del-01-01-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation, welche Daten in welchem System als „führend“ gelten und in welchen Systemen Kopien/Spiegelungen existieren, damit Löschungen systemübergreifend geplant werden können."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Löschkonzept mit System-/Verfahrensbezug, (b) Datenmodell-Dokumentation inkl. löschrelevanter Felder, (c) Beispiele, wie Löschanlässe in Prozessen und Systemen abgebildet sind."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-DEL-01-02",
+                            "title": "Technische Lösch- und Vernichtungsverfahren",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "sdm-measure-id",
+                                    "class": "sdm-measure",
+                                    "value": "M60.S10, M60.S11"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Asset-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-del-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Für produktive Systeme und Datenträger sind geeignete technische Lösch- und Vernichtungsverfahren definiert und implementiert; diese berücksichtigen Datenträgertyp, Sensibilität und Einsatzkontext."
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Löschung ist nicht gleich Löschung. Je nach Datenträger (Datenbank, Dateisystem, SSD, Backup-Tape, mobile Geräte) und Sensibilität der Daten sind unterschiedliche Verfahren angemessen – von logischen Löschprozessen bis hin zur physikalischen Vernichtung. Aus Datenschutzsicht ist entscheidend, dass nach Ablauf der Zwecke oder auf Verlangen der betroffenen Person eine Wiederherstellung mit vertretbarem Aufwand nicht mehr möglich ist."
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Standard-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-del-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Definition technischer Löschverfahren für zentrale Systemtypen (z.B. Anwendungsdatenbanken, File-Server, E-Mail-Systeme, Endgeräte), inkl. Unterscheidung zwischen logischer Löschung (Datensatzentfernung/Über-schreiben) und physischer Vernichtung von Datenträgern."
+                                        },
+                                        {
+                                            "id": "sdm-tom-del-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz geeigneter Tools oder Funktionen für sichere Löschung, wo erforderlich (z.B. Überschreibverfahren, Secure Erase, kryptografische Löschung bei verschlüsselten Datenträgern)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-del-01-02-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation und Nachweis der Vernichtung physischer Datenträger mit personenbezogenen Daten (z.B. Vernichtungsprotokolle externer Dienstleister, Seriennummernlisten, Freigaben)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Richtlinien oder Verfahren zu Löschung/Vernichtung nach System- und Datenträgertyp, (b) Konfigurationen bzw. Tools für sichere Löschung, (c) Protokolle von Datenträgervernichtungen und Aussonderungen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-DEL-01-03",
+                            "title": "Löschung in Sicherungen, Archiven und verteilten Systemen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "sdm-measure-id",
+                                    "class": "sdm-measure",
+                                    "value": "M60.P20, M60.P21"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-del-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Lösch- und Speicherbegrenzungspflichten werden auch in Sicherungen, Archiven und verteilten Systemen berücksichtigt; Wiederherstellungskonzepte sind so gestaltet, dass gelöschte oder unzulässige Daten nicht dauerhaft „zurückkehren“."
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Der „harte“ Teil von Löschen & Vernichten liegt oft in Backups, Archiven und komplex verteilten Systemen. Hier ist eine vollständige physische Löschung häufig nicht sofort möglich; trotzdem muss aus Sicht der DSGVO sichergestellt werden, dass (a) Löschungen nicht durch Restore aus Bestands- oder Vollsicherungen dauerhaft unterlaufen werden und (b) Aufbewahrungsfristen definiert und eingehalten werden."
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Advanced-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-del-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Abstimmung von Lösch- und Aufbewahrungskonzept mit den Backup- und Recovery-Konzepten (z.B. zeitlich begrenzte Aufbewahrung von Vollsicherungen, definierte maximale „Rücksprungtiefe“)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-del-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Einsatz von Verfahren, bei denen Löschungen aus dem Produktivsystem nach einem Restore automatisch oder prozessual nachgezogen werden (z.B. Lösch-/Change-Journal, das nach Wiederherstellung erneut angewendet wird)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-del-01-03-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Für Langzeitarchive und verteilte Speicher: Definition, wie Daten nach Ablauf der Aufbewahrungsfrist effektiv unzugänglich gemacht oder gelöscht werden (z.B. Entschlüsselungsschlüssel vernichten, Objekte technisch sperren und aus dem aktiven Zugriff entfernen, danach physische Löschung)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-del-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) abgestimmte Konzepte zu Löschung, Backup/Recovery und Archivierung, (b) technische oder prozessuale Mechanismen zur Nachführung von Löschungen nach Restore, (c) Evidenz, dass Aufbewahrungsfristen in Sicherungen/Archiven tatsächlich umgesetzt werden."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
 
         {
             "id": "sdm-tom-backup",
