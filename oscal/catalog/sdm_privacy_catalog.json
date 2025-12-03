@@ -2272,6 +2272,405 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "sdm-tom-dataminimization",
+            "title": "SDM Technical and Organizational Measures – Datenminimierung & Pseudonymisierung",
+            "controls": [
+                {
+                    "id": "SDM-TOM-DM-01",
+                    "title": "Datenminimierung, Zweckbindung und Pseudonymisierung",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "DATENMINIMIERUNG"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTERVENIERBARKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "TRANSPARENZ"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-51",
+                            "value": "SDM-DM-01",
+                            "remarks": "Baustein Datenminimierung & Pseudonymisierung – Reduktion, Trennung und Schutz personenbezogener Daten."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. b DSGVO (Zweckbindung)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. c DSGVO (Datenminimierung)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. e DSGVO (Speicherbegrenzung)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO (Privacy by Design & Default)"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 35 DSGVO (DSFA) – insbesondere bei umfangreicher Profilbildung und besonderen Kategorien."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "CON.x",
+                            "remarks": "BSI-Grundschutz: Bausteine zu Datenminimierung/Pseudonymisierung (Platzhalter)."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27701",
+                            "value": "PIMS-7.x",
+                            "remarks": "ISO/IEC 27701 – PIMS-Anforderungen zu Minimierung und Pseudonymisierung (Platzhalter)."
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#TOM-01",
+                            "rel": "related-control",
+                            "text": "TOM-01 (Open Privacy Catalog) behandelt Datenminimierung und Zweckbindung aus Sicht der betroffenen Personen; SDM-TOM-DM-01 konkretisiert die technischen/organisatorischen Maßnahmen im Datenmodell und in den Umgebungen."
+                        },
+                        {
+                            "href": "#TOM-03",
+                            "rel": "related-control",
+                            "text": "TOM-03 (Open Privacy Catalog) beschreibt Pseudonymisierung und Verschlüsselung als Mittel zur Risikoreduktion; SDM-TOM-DM-01 legt fest, wie Pseudonymisierung praktisch umgesetzt und getrennt verwaltet wird."
+                        },
+                        {
+                            "href": "#REG-02",
+                            "rel": "related-control",
+                            "text": "REG-02 (Open Privacy Catalog) beschreibt VVT-Methodik inkl. Zweck- und Datenkategorien; SDM-TOM-DM-01 nutzt diese Informationen, um technische Minimierungs- und Pseudonymisierungskonzepte abzuleiten."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-dm-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation stellt sicher, dass nur solche personenbezogenen Daten erhoben, verarbeitet und gespeichert werden, die für die jeweiligen Zwecke erforderlich sind, und dass – wo möglich – Pseudonymisierung und Trennung von Identitäts- und Fachdaten umgesetzt werden."
+                        },
+                        {
+                            "id": "sdm-tom-dm-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Art. 5 Abs. 1 lit. b, c, e DSGVO verlangen, dass personenbezogene Daten zweckgebunden, dem Zweck angemessen und auf das notwendige Maß beschränkt sowie nicht länger als notwendig gespeichert werden. Art. 25 DSGVO verpflichtet zu datenschutzfreundlicher Technikgestaltung und Voreinstellungen; Art. 32 und 35 DSGVO machen deutlich, dass Pseudonymisierung ein zentrales Instrument zur Risikoreduktion sein kann, insbesondere bei umfangreichen, sensiblen Verarbeitungen."
+                        },
+                        {
+                            "id": "sdm-tom-dm-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-DM-01 unterstützt zentrale Gewährleistungsziele des SDM:",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-dm-01-warranty-minimization",
+                                    "name": "warranty-objective",
+                                    "prose": "DATENMINIMIERUNG: Reduktion des Umfangs und der Detailtiefe personenbezogener Daten verringert das Risiko für betroffene Personen und die Angriffsfläche."
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-warranty-intervenability",
+                                    "name": "warranty-objective",
+                                    "prose": "INTERVENIERBARKEIT: Klare Trennung von Identitäts- und Fachdaten sowie begrenzte Kopien erleichtern die Umsetzung von Betroffenenrechten (Auskunft, Löschung, Berichtigung)."
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-warranty-transparency",
+                                    "name": "warranty-objective",
+                                    "prose": "TRANSPARENZ: Strukturierte Modelle von Datenkategorien und Verwendungszwecken machen Verarbeitungen nachvollziehbar und auditierbar."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-DM-01-01",
+                            "title": "Datenminimierung im Datenmodell und in den Prozessen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "DPO"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-dm-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Datenmodell und Prozesse sind so gestaltet, dass nur solche personenbezogenen Daten und Attribute erhoben und gespeichert werden, die für die Zwecke der Verarbeitung erforderlich sind."
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Datenminimierung beginnt im Datenmodell und im Prozessdesign. Viele Übererhebungen entstehen durch „Standardformulare“ oder generische Datenbanken ohne Zweckbezug. Aus Datenschutzsicht ist eine regelmäßige Überprüfung sinnvoll, welche Felder wirklich benötigt werden und ob sie durch weniger eingriffsintensive Alternativen ersetzt werden können."
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Minimierung im Datenmodell:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-dm-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Abgleich von Formularen, Masken und Schnittstellen mit den im VVT dokumentierten Zwecken und Datenkategorien; Entfernung von Feldern, die nicht (mehr) erforderlich oder zweckgebunden sind."
+                                        },
+                                        {
+                                            "id": "sdm-tom-dm-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Verwendung datensparsamer Standardeinstellungen (Privacy by Default), z.B. deaktivierte optionale Felder, Ausblendung nicht benötigter Attribute in Standardansichten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-dm-01-01-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Regelmäßige Reviews des Datenmodells (z.B. alle 1–2 Jahre oder bei größeren Änderungen) mit Beteiligung von Fachbereich, Architektur und DSB, um überflüssige Felder oder Kopien zu identifizieren und zu entfernen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Dokumentation des Datenmodells und der Pflicht-/Optionalfelder, (b) Protokolle von Review-Workshops oder Freigaben, (c) Beispiele für entfernte/zusammengefasste Felder bzw. reduzierte Datensätze."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-DM-01-02",
+                            "title": "Pseudonymisierung und Minimierung in Test- und Analyseumgebungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dpia-trigger",
+                                    "class": "dpia-relation",
+                                    "value": "recommended-for-high-risk-analytics",
+                                    "remarks": "Bei umfangreichen Profiling-/Analyseszenarien sollte die Ausgestaltung im Rahmen einer DPIA bewertet werden."
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Analytics/BI"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "DPO"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-dm-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "In Test-, Entwicklungs- und Analyseumgebungen werden personenbezogene Daten nur in minimierter, pseudonymisierter oder anonymisierter Form verwendet, soweit dies technisch und organisatorisch vertretbar ist."
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Test- und Analyseumgebungen sind häufig weniger stark abgesichert als Produktionssysteme, werden von mehr Personen genutzt und enthalten dennoch vollständige personenbezogene Daten. Aus Sicht des Datenschutzes ist es daher besonders wichtig, hier Datenminimierung und Pseudonymisierung konsequent umzusetzen oder auf synthetische Daten zurückzugreifen."
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Test-/Analyseumgebungen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-dm-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einführung eines standardisierten Anonymisierungs-/Pseudonymisierungsprozesses beim Export von Produktivdaten in Test- oder Analyseumgebungen (z.B. Maskierung von Namen, Adressen, Kontakt- und Identifikationsdaten)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-dm-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Verwendung von synthetischen oder stark aggregierten Datensätzen, wo möglich, statt direkter Replikation kompletter Produktivdaten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-dm-01-02-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Trennung und restriktive Verwaltung von Zuordnungs-Tabellen (Mapping-Keys) zwischen Pseudonymen und echten Identitäten; nur wenige, speziell berechtigte Rollen erhalten Zugriff."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) dokumentierte Prozesse/Tools zur Pseudonymisierung/Anonymisierung, (b) Beispiele pseudonymisierter Test-/Analysedaten, (c) Berechtigungskonzepte und Protokolle für Zugriffe auf Zuordnungs-Tabellen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-DM-01-03",
+                            "title": "Trennung von Identitäts- und Fachdaten für Hochrisiko-Verarbeitungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dpia-trigger",
+                                    "class": "dpia-relation",
+                                    "value": "required-if-dpia-high-risk",
+                                    "remarks": "Für Verarbeitungen, die in DPIAs als hohes Risiko bewertet werden, ist eine saubere Trennung Identitäts-/Fachdaten regelmäßig zu prüfen."
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "DPO"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-dm-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Für Verarbeitungen mit hohem Datenschutzrisiko werden Identitätsdaten und Fachdaten logisch und organisatorisch getrennt gespeichert; Re-Identifizierung ist nur über kontrollierte Mechanismen möglich."
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Bei Hochrisiko-Verarbeitungen (z.B. besondere Kategorien, umfangreiches Profiling) ist eine strikte Trennung von Identitäts- und Fachdaten ein zentrales Mittel, um Auswirkungen von Datenpannen zu begrenzen und Missbrauch zu erschweren. Technisch bedeutet dies meist eigene Datenbanken/Schemata, getrennte Schlüsselräume sowie streng kontrollierte Mapping-Mechanismen."
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Advanced-Maßnahmen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-dm-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Architektur mit separaten Speicherorten für Identitätsdaten (Stammdaten) und Fachdaten, verknüpft über pseudonyme Schlüssel (z.B. zufällige IDs statt direkt sprechender Identifikatoren)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-dm-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Streng begrenzter Zugriff auf die Zuordnung zwischen Identitäts- und Fachdaten (Mapping-Service, Key Vault, separate Berechtigungsdomäne); Protokollierung jeder Nutzung der Re-Identifizierungsfunktion."
+                                        },
+                                        {
+                                            "id": "sdm-tom-dm-01-03-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Festlegung und Dokumentation einer klaren Re-Identifizierungs-Policy (wer darf, aus welchen Gründen, mit welchem Genehmigungsverfahren) und Einbindung dieser Policy in DPIA und Governance-Prozesse."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-dm-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Architektur- und Datenschemata, die Trennung von Identitäts- und Fachdaten belegen, (b) Berechtigungskonzepte und Logs für Re-Identifizierungsfunktionen, (c) DPIA- oder vergleichbare Unterlagen, in denen Trennung und Pseudonymisierung als Risiko-Maßnahme beschrieben sind."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
