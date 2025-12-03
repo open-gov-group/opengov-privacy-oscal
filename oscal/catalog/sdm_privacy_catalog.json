@@ -2289,6 +2289,92 @@
                                     "prose": "Nachweisbar sind: (a) ein Protokollierungskonzept, (b) technische Architekturunterlagen zur Zusammenführung/Korrelation von Logs, (c) Dokumentation regelmäßig durchgeführter Log-Analysen und daraus abgeleiteter Maßnahmen."
                                 }
                             ]
+                        },
+                        {
+                            "id": "SDM-TOM-LG-02-04",
+                            "title": "Protokollierung von Administrationsaktivitäten und erhöhte Zeitstempel-Integrität",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "advanced"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "sdm-measure-id",
+                                    "class": "sdm-measure",
+                                    "value": "M43.D19, M43.D20"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lg-02-04-stmt",
+                                    "name": "statement",
+                                    "prose": "Administrationsaktivitäten werden vollständig und nachvollziehbar protokolliert; Protokolle nutzen vertrauenswürdige Zeitquellen bzw. verstärkte Zeitstempelsicherheit, damit Vorgänge in hochrisikobehafteten Verarbeitungen gerichtsfest bzw. revisionssicher nachvollzogen werden können."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-02-04-gdn",
+                                    "name": "guidance",
+                                    "prose": "Insbesondere bei Hochrisiko-Verarbeitungen hängt die Nachvollziehbarkeit von Datenschutzverletzungen häufig an wenigen privilegierten Konten. Aus Datenschutz- und Haftungssicht ist es daher wichtig, dass (a) administrative Aktionen (z.B. Rechtevergabe, Konfigurationsänderungen, Massen-Exports) lückenlos protokolliert werden und (b) Zeitstempel so genau und manipulationsresistent wie möglich sind (z.B. zentral synchronisierte Zeitquelle, ggf. Einsatz von signierten bzw. zertifizierten Zeitstempeln)."
+                                },
+                                {
+                                    "id": "sdm-tom-lg-02-04-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen auf Advanced-Niveau:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lg-02-04-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Vollständige Protokollierung von Administrationsaktivitäten in fachlichen Anwendungen, Verzeichnisdiensten, Datenbanken und Infrastrukturkomponenten (z.B. Anlegen/Ändern/Löschen von Konten, Rollen- und Berechtigungsänderungen, Konfigurationsänderungen, De-/Aktivierung von Protokollierung)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lg-02-04-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Verwendung einer zentralen, vertrauenswürdigen Zeitquelle (z.B. abgesicherter NTP-Dienst) für alle sicherheitsrelevanten Systeme; regelmäßige Kontrolle der Zeitabweichungen und Alarmierung bei signifikanten Abweichungen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lg-02-04-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Für besonders kritische Verarbeitungen: Einsatz zusätzlicher Mechanismen zur Absicherung der Zeitstempel (z.B. kryptografisch signierte Logs, ggf. Nutzung eines zertifizierten Zeitstempeldienstes) und Sicherstellung, dass Änderungen an Systemzeit oder Log-Einstellungen selbst wiederum protokolliert und überwacht werden."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lg-02-04-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Log-Beispiele mit detaillierten Administrationsaktivitäten und konsistenten Zeitstempeln, (b) Architektur- bzw. Betriebsdokumente zur zentralen Zeitversorgung und deren Absicherung, (c) Konfigurationen bzw. Spezifikationen, die verstärkte Integritäts- und Zeitstempelschutzmechanismen für Protokolldaten beschreiben."
+                                }
+                            ]
                         }
                     ]
                 }
