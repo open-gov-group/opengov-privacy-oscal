@@ -24,7 +24,7 @@
     "groups": [
         {
             "id": "sdm-tom-access",
-            "title": "SDM Technical and Organizational Measures – Access Control",
+            "title": "Access Control",
             "controls": [
                 {
                     "id": "SDM-TOM-AC-01",
@@ -720,7 +720,7 @@
         },
         {
             "id": "sdm-tom-crypto",
-            "title": "SDM Technical and Organizational Measures – Encryption & Key Management",
+            "title": "Encryption & Key Management",
             "controls": [
                 {
                     "id": "SDM-TOM-CR-01",
@@ -1395,7 +1395,7 @@
         },
         {
             "id": "sdm-tom-logging",
-            "title": "SDM Technical and Organizational Measures – Logging & Monitoring",
+            "title": "Logging & Monitoring",
             "controls": [
                 {
                     "id": "SDM-TOM-LG-01",
@@ -2382,7 +2382,7 @@
         },
         {
             "id": "sdm-tom-deletion",
-            "title": "SDM Technical and Organizational Measures – Löschen & Vernichten",
+            "title": "Löschen & Vernichten",
             "controls": [
                 {
                     "id": "SDM-TOM-DEL-01",
@@ -2805,7 +2805,7 @@
         },
         {
             "id": "sdm-tom-lifecycle",
-            "title": "SDM Technical and Organizational Measures – Löschung und Aufbewahrung",
+            "title": "Löschung und Aufbewahrung",
             "controls": [
                 {
                     "id": "SDM-TOM-LC-01",
@@ -3921,7 +3921,7 @@
         },
         {
             "id": "sdm-tom-res",
-            "title": "SDM Technical and Organizational Measures – Einschränken der Verarbeitung",
+            "title": "Einschränken der Verarbeitung",
             "controls": [
                 {
                     "id": "SDM-TOM-RES-01",
@@ -4554,11 +4554,651 @@
                 }
             ]
         },
+        {
+            "id": "sdm-tom-sep",
+            "title": "Trennung von Verarbeitungen",
+            "controls": [
+                {
+                    "id": "SDM-TOM-SEP-01",
+                    "title": "Trennung von Verarbeitungstätigkeiten, Daten, Systemen und Diensten",
+                    "class": "technical",
+                    "props": [
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "NICHTVERKETTUNG"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "DATENMINIMIERUNG"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "VERTRAULICHKEIT"
+                        },
+                        {
+                            "name": "sdm-goal",
+                            "class": "warranty-objective",
+                            "value": "INTERVENIERBARKEIT"
+                        },
+                        {
+                            "name": "sdm-module",
+                            "class": "sdm-module-50",
+                            "value": "SDM-50 Trennen",
+                            "remarks": "Baustein 50 „Trennen“ (DSK-SDM V2.0)."
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. b DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. c DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 5 Abs. 1 lit. f DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 17 Abs. 1 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 24 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 25 DSGVO"
+                        },
+                        {
+                            "name": "dsgvo-article",
+                            "class": "legal-basis",
+                            "value": "Art. 32 DSGVO"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "href": "#TOM-SEP",
+                            "rel": "related-control",
+                            "text": "TOM-SEP (Open Privacy Catalog) beschreibt die Anforderungen an die Trennung von Verarbeitungstätigkeiten; SDM-TOM-SEP-01 konkretisiert die dazugehörigen technischen und organisatorischen Maßnahmen."
+                        }
+                    ],
+                    "parts": [
+                        {
+                            "id": "sdm-tom-sep-01-stmt",
+                            "name": "statement",
+                            "prose": "Die Organisation setzt Trennungsanforderungen aus Zweckbeschreibungen, Rechtsgrundlagen und Verantwortlichkeiten technisch und organisatorisch um. Verarbeitungstätigkeiten, Datenbestände, Systeme, Netze und Dienste werden so getrennt, dass Zweckbindung, Verantwortlichkeiten und datenschutzrechtliche Vorgaben eingehalten werden, auch wenn gemeinsam genutzte Informationstechnik oder Mandantenmodelle zum Einsatz kommen."
+                        },
+                        {
+                            "id": "sdm-tom-sep-01-legal",
+                            "name": "legal-justification",
+                            "prose": "Der Baustein „Trennen“ dient vor allem der Umsetzung von Art. 5 Abs. 1 lit. b, c und f DSGVO (Zweckbindung, Datenminimierung, Vertraulichkeit) sowie Art. 17 Abs. 1 DSGVO (Löschbarkeit). Unterschiedliche Zwecke erzeugen unterschiedliche Befugnisse zur Verarbeitung, die technisch und organisatorisch gegeneinander abgegrenzt werden müssen. Bei gemeinsam genutzter Informationstechnik ist insbesondere sicherzustellen, dass Mandanten und Verarbeitungstätigkeiten nicht unzulässig ineinander übergreifen."
+                        },
+                        {
+                            "id": "sdm-tom-sep-01-warranty",
+                            "name": "warranty-mapping",
+                            "prose": "SDM-TOM-SEP-01 trägt zu mehreren Gewährleistungszielen des SDM bei.",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-sep-01-warranty-nonlink",
+                                    "name": "warranty-objective",
+                                    "prose": "NICHTVERKETTUNG: Zweckgebundene Datenbestände werden voneinander getrennt verarbeitet und nicht ohne Rechtsgrundlage zusammengeführt."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-warranty-minimization",
+                                    "name": "warranty-objective",
+                                    "prose": "DATENMINIMIERUNG: Gemeinsame Nutzung von Informationstechnik führt nicht dazu, dass mehr Personen oder Stellen Zugriff auf Daten erhalten als für ihre Zwecke erforderlich."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-warranty-confidentiality",
+                                    "name": "warranty-objective",
+                                    "prose": "VERTRAULICHKEIT: Mandantentrennung, Rollen- und Berechtigungskonzepte sowie getrennte Netze reduzieren die Gefahr unbefugter Zugriffe durch andere Mandanten oder Dienstleister."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-warranty-intervenability",
+                                    "name": "warranty-objective",
+                                    "prose": "INTERVENIERBARKEIT: Durch klare Trennungen können Betroffenenrechte bezogen auf einzelne Verarbeitungstätigkeiten gezielt umgesetzt werden."
+                                }
+                            ]
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "id": "SDM-TOM-SEP-01-01",
+                            "title": "Zweck-, Mandanten- und Datenmodell zur Umsetzung von Trennungsgeboten",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Process-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Legal/Compliance"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.D01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.D02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.D03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.D04"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-sep-01-01-stmt",
+                                    "name": "statement",
+                                    "prose": "Für alle Verarbeitungstätigkeiten existieren Zweckbeschreibungen und ein Mandantenmodell, aus denen sich Trennungsanforderungen für Daten, Systeme und Dienste ableiten. Datenmodelle und Schnittstellen sind so gestaltet, dass zweckgebundene Datenbestände logisch getrennt geführt, Übermittlungen zwischen Mandanten auf eine rechtmäßige Grundlage gestützt und jede Übermittlung nachvollziehbar protokolliert werden kann."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-01-gdn",
+                                    "name": "guidance",
+                                    "prose": "Zweckbeschreibungen sollten eng gefasst und gegenüber anderen Verarbeitungstätigkeiten klar abgegrenzt sein. Darauf aufbauend ist festzulegen, welche Organisationseinheiten bzw. Mandanten welche Daten für welche Zwecke verarbeiten dürfen. Datenmodelle, Auswertungs- und Suchfunktionen sowie Schnittstellen müssen diese Zweck- und Mandantentrennung widerspiegeln. Übermittlungen zwischen Mandanten bzw. Verantwortlichen sollten nur auf Basis definierter Such- und Filterkriterien erfolgen und jede Übermittlung sollte mit Zweck, Rechtsgrundlage, Empfänger und übermitteltem Umfang protokolliert werden."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-01-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für ein zweck- und mandantenbasiertes Datenmodell:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-sep-01-01-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation von Zweckbeschreibungen für alle relevanten Verarbeitungstätigkeiten und Zuordnung dieser Zwecke zu Datenfeldern, Tabellen oder Dokumenttypen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-01-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Definition eines Mandantenmodells, das Verantwortlichkeiten, Verarbeitungstätigkeiten und zulässige Datenübermittlungen zwischen Mandanten beschreibt."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-01-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Vertragliche Festlegung von Such- und Filterkriterien für Datenübermittlungen (z.B. Auswahl nach Rollen, Zuständigkeiten, Fachbereichen) sowie deren Umsetzung in technischen Schnittstellen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-01-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung einer Protokollierung für Datenübermittlungen zwischen Mandanten oder Verarbeitungstätigkeiten, die Zweck, Rechtsgrundlage, Empfänger, Zeitpunkt und Umfang der Übermittlung erfasst."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-01-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Zweckbeschreibungen und Mandantenkonzepte, aus denen Trennungsanforderungen hervorgehen, (b) Datenmodelle und Schnittstellenbeschreibungen, die Zweck- und Mandantentrennung abbilden, (c) Regelungen zu Suchkriterien und Filtern für Datenübermittlungen, (d) Protokolle oder Logauswertungen zu Datenübermittlungen zwischen Mandanten."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-SEP-01-02",
+                            "title": "Technische Mandantentrennung in Systemen, Datenbanken und Netzen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S04"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S10"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S11"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S12"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S13"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S14"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S15"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S16"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S17"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-sep-01-02-stmt",
+                                    "name": "statement",
+                                    "prose": "Gemeinsam genutzte Systeme, Datenbanken und Netze sind so gestaltet, dass Mandanten und Verarbeitungstätigkeiten technisch getrennt sind. Mandantenspezifische Benutzerkennungen, Rollen, Berechtigungsvergabesysteme und Protokolle stellen sicher, dass Daten, Administrationshandlungen und Protokollierung mandantenspezifisch nachvollziehbar bleiben. Wo erforderlich, werden Systeme, Netze oder Komponenten physikalisch getrennt betrieben."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-02-gdn",
+                                    "name": "guidance",
+                                    "prose": "Je nach Schutzbedarf kann die Trennung von rein organisatorischen Anweisungen über logisch getrennte Instanzen bis hin zur vollständigen physikalischen Trennung von Systemen und Netzen reichen. Mandantenspezifische Benutzerkennungen, Rollendefinitionen und Protokolle sind zentrale Elemente. Administrations- und Sachbearbeitungssysteme sollten bei hohem Schutzbedarf getrennt sein; zusätzliche Softwarekomponenten dürfen Trennungen nicht unterlaufen. Mandantenspezifische und mandantenübergreifende Administrationsaktivitäten sind getrennt zu protokollieren."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-02-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für technische Mandantentrennung:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-sep-01-02-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung mandantenspezifischer Benutzerkennungen, Rollen und Berechtigungsschemata, so dass Nutzer immer eindeutig einem Mandanten und bestimmten Verarbeitungstätigkeiten zugeordnet sind."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-02-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Trennung der Berechtigungsverwaltung von Fachsystemen (z.B. dedizierte IAM-Lösung) mit Unterstützung mandantenspezifischer Berechtigungs- und Rollendefinitionen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-02-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung von Mandantentrennung in Datenbanken (z.B. separate Schemas, Mandanten-IDs, separate Instanzen) mit Prüfkonzept zur Wirksamkeit der Trennung."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-02-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Trennung von Netzen, IT-Komponenten und Diensten für Sachbearbeitung, Administration und besondere Services (z.B. Druckdienste), insbesondere bei hohem Schutzbedarf."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-02-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Konfigurierbare Protokollierung von Nutzungs- und Administrationsaktivitäten mit Mandantenbezug und getrennten Auswertungsmöglichkeiten für einzelne Mandanten und für mandantenübergreifende Prüfungen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-02-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Sicherstellung, dass zusätzliche Softwarekomponenten oder Integrationsschichten die eingerichteten Trennungsmechanismen nicht aufheben oder umgehen können."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-02-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) System- und Architekturkonzepte zur Mandantentrennung, (b) Dokumentationen der Rollen-, Berechtigungs- und Protokollierungskonzepte mit Mandantenbezug, (c) technische Nachweise oder Tests zur Wirksamkeit von Mandantentrennung in Systemen und Netzen, (d) Nachweise, dass zusätzliche Komponenten Trennungen nicht aufheben."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-SEP-01-03",
+                            "title": "Mandantenübergreifendes Management, Vereinbarungen und Nachweis der Trennung",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Data-Protection-Officer"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Top-Management"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P04"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P10"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P11"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P12"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P13"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P14"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P15"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P16"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P17"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-sep-01-03-stmt",
+                                    "name": "statement",
+                                    "prose": "Für gemeinsam genutzte Informationstechnik existieren mandantenübergreifende Administrations-, Datenschutz- und Sicherheitskonzepte. Sie regeln Rollen, Verantwortlichkeiten, Management- und Notfallprozesse, Dokumentation von Restrisiken, Wirksamkeitsnachweise von Trennungsmaßnahmen sowie Vereinbarungen zwischen beteiligten Verantwortlichen und Auftragsverarbeitern."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-03-gdn",
+                                    "name": "guidance",
+                                    "prose": "Der Betreiber gemeinsam genutzter Informationstechnik benötigt ein mandantenübergreifendes Datenschutz- und Sicherheitsmanagement, das in seine betrieblichen Prozesse eingebunden ist. Dazu gehören Administrationskonzepte, Change- und Berichtswesen, regelmäßige Überprüfungen der Trennungsmaßnahmen durch Datenschutz- und Sicherheitsmanagement sowie abgestimmte Notfallkonzepte mit klarer Regelung, wie und in welchem Umfang Trennungen im Krisenfall vorübergehend aufgegeben werden können. Restrisiken und Wirksamkeit der Trennungsmaßnahmen sind zu dokumentieren; Vereinbarungen nach Art. 26 und 28 DSGVO müssen Rollen, Verantwortlichkeiten und Trennungsanforderungen widerspiegeln."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-03-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für mandantenübergreifendes Management und Nachweisführung:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-sep-01-03-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Erstellung eines mandantenübergreifenden Administrationskonzepts, das beschreibt, welche Administrationsaufgaben zentral bzw. mandantenspezifisch wahrgenommen werden und wie Trennungsgebote dabei eingehalten werden."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-03-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Etablierung eines mandantenübergreifenden Datenschutz- und Sicherheitsmanagements, das regelmäßig die Wirksamkeit von Trennungsmaßnahmen überprüft und Ergebnisse allen Mandanten zur Verfügung stellt."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-03-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Definition von Prozessen für mandantenspezifisches und mandantenübergreifendes Change- und Berichtswesen einschließlich Überwachung der Managementprozesse und Korrektur bei Abweichungen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-03-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Konzeption eines Notfallplans mit klarer, gestufter Aufgabe von Trennungsmaßnahmen und anschließender Rückführung in einen ordnungsgemäßen Zustand."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-03-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Dokumentation von Restrisiken im Zusammenhang mit Trennungsmaßnahmen durch Betreiber und beteiligte Verantwortliche sowie Nachweis der Wirksamkeit von Trennungsmaßnahmen anhand von Protokollen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-03-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Abschluss von Vereinbarungen nach Art. 26 DSGVO zwischen gemeinsam Verantwortlichen und von Auftragsverarbeitungsverträgen nach Art. 28 DSGVO, in denen Trennungsanforderungen und Prüfrechte konkret festgelegt sind."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-03-measure-07",
+                                            "name": "typical-measure",
+                                            "prose": "Prozesse zur Prüfung von Datenübermittlungen zwischen Mandanten im Hinblick auf Rechtsgrundlage, Zweckbindung, Integrität und Einhaltung der vereinbarten Trennungsanforderungen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-03-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) mandantenübergreifende Administrations-, Datenschutz- und Sicherheitskonzepte, (b) dokumentierte Prozesse für Change-, Berichtswesen und Notfallmanagement, (c) dokumentierte Restrisikobetrachtungen und Wirksamkeitsnachweise von Trennungsmaßnahmen, (d) Vereinbarungen nach Art. 26 und 28 DSGVO, (e) Nachweise über Prüfungen von Datenübermittlungen zwischen Mandanten."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
 
 
         {
             "id": "sdm-tom-backup",
-            "title": "SDM Technical and Organizational Measures – Backup & Recovery aus Datenschutzsicht",
+            "title": "Backup & Recovery aus Datenschutzsicht",
             "controls": [
                 {
                     "id": "SDM-TOM-BR-01",
@@ -4918,7 +5558,7 @@
         },
         {
             "id": "sdm-tom-dataminimization",
-            "title": "SDM Technical and Organizational Measures – Datenminimierung & Pseudonymisierung",
+            "title": "Datenminimierung & Pseudonymisierung",
             "controls": [
                 {
                     "id": "SDM-TOM-DM-01",
