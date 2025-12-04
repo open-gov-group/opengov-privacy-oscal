@@ -3552,7 +3552,6 @@
                                     "class": "org-role",
                                     "value": "Data-Engineering"
                                 },
-                                /* SDM-Mapping Lösch-Baustein */
                                 {
                                     "name": "sdm-measure",
                                     "class": "sdm-60",
@@ -3573,7 +3572,6 @@
                                     "class": "sdm-60",
                                     "value": "M60.S08"
                                 },
-                                /* RESILIENCE-MAPPINGS – EINZELN PRO KATALOG */
                                 {
                                     "name": "resilience-standard",
                                     "class": "nist-csf-v1.1",
