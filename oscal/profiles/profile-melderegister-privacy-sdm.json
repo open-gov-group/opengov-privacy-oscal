@@ -20,7 +20,7 @@
         }
       ]
     },
-"imports": [
+    "imports": [
         {
             "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/open_privacy_catalog_risk.json",
             "include-controls": [
