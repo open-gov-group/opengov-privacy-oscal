@@ -3493,6 +3493,180 @@
                             ]
                         },
                         {
+                            "id": "SDM-TOM-LC-01-07",
+                            "title": "Technische Lösch- und Archivierungs-APIs sowie Ereignisverarbeitung",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Data-Engineering"
+                                },
+                                /* SDM-Mapping Lösch-Baustein */
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P20"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P21"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S08"
+                                },
+                                /* RESILIENCE-MAPPINGS – EINZELN PRO KATALOG */
+                                {
+                                    "name": "resilience-standard",
+                                    "class": "nist-csf-v1.1",
+                                    "value": "PR.DS-3"
+                                },
+                                {
+                                    "name": "resilience-standard",
+                                    "class": "nist-csf-v1.1",
+                                    "value": "PR.IP-4"
+                                },
+                                {
+                                    "name": "resilience-standard",
+                                    "class": "iso27001-2022",
+                                    "value": "A.5.30"
+                                },
+                                {
+                                    "name": "resilience-standard",
+                                    "class": "iso27001-2022",
+                                    "value": "A.5.34"
+                                },
+                                {
+                                    "name": "resilience-standard",
+                                    "class": "eu-nis2",
+                                    "value": "Art.21(2)(c)"
+                                },
+                                {
+                                    "name": "resilience-standard",
+                                    "class": "bsig-de",
+                                    "value": "§8a(1)"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-07-stmt",
+                                    "name": "statement",
+                                    "prose": "Lösch- und Aufbewahrungsentscheidungen werden über technische Schnittstellen und Ereignisse in allen relevanten Systemen konsistent umgesetzt. Hierzu stellt die Organisation standardisierte Lösch- und Archivierungs-APIs sowie ereignisbasierte Mechanismen bereit, mit denen Fachsysteme, Datenplattformen, Suchindizes und weitere abhängige Komponenten Lösch- und Archivierungsbefehle verarbeiten. Die Schnittstellen sind so gestaltet, dass sie idempotent, nachvollziehbar und testbar sind und Rückmeldungen zur erfolgreichen Umsetzung liefern."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-07-gdn",
+                                    "name": "guidance",
+                                    "prose": "In verteilten Architekturen (z.B. Microservices, Data Warehouses, Suchindizes, Event-Streaming) reicht es aus Datenschutzsicht nicht aus, Löschlogik nur in einzelnen Kernsystemen zu implementieren. Stattdessen sollten zentrale oder standardisierte Lösch- und Archivierungsschnittstellen bereitgestellt werden, über die Objekte und Datensätze eindeutig identifiziert werden und über deren Aufruf bzw. über veröffentlichte Ereignisse (Events) alle beteiligten Systeme ihre lokalen Datenbestände aktualisieren. Schnittstellen sollten idempotent sein und Fehlerzustände klar melden, damit Nachsteuerung, Monitoring und Audit möglich sind. Für Systeme mit hohem Schutzbedarf sollten erhöhte Anforderungen an Authentisierung, Autorisierung und Protokollierung der Schnittstellennutzung gelten."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-07-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für technische Lösch- und Archivierungs-APIs sowie Ereignisverarbeitung:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-07-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einführung eines zentralen oder geteilten „Lifecycle“-Dienstes bzw. einer technischen Schnittstelle (z.B. REST- oder gRPC-API), über die Objekte und Datensätze anhand stabiler Identifikatoren (z.B. fachliche IDs, UUIDs) zum Löschen, Anonymisieren oder zur Archivierung markiert und verarbeitet werden können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-07-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Verwendung eines ereignisorientierten Ansatzes (z.B. Message-Bus, Event-Streaming-Plattform), bei dem Lösch- und Archivierungsevents (z.B. \"person.deleted\", \"contract.archived\") veröffentlicht werden. Abonnierende Systeme (Fachanwendungen, Data Warehouse, Suchindizes, Caches) konsumieren diese Ereignisse und führen korrespondierende Lösch- oder Archivierungsschritte lokal aus."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-07-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Gestaltung der Schnittstellen und Event-Consumer als idempotent, sodass wiederholte Aufrufe oder doppelt eingehende Ereignisse nicht zu Inkonsistenzen führen (z.B. durch Statusfelder, Versionsnummern oder dedizierte Lifecycle-States wie \"marked_for_deletion\", \"archived\")."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-07-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Definition technischer Rückmelde- und Fehlerbehandlungsmechanismen (z.B. Response-Codes, Dead-Letter-Queues, Retry-Strategien), mit denen fehlgeschlagene Lösch- oder Archivierungsschritte erkannt, erneut angestoßen oder manuell bearbeitet werden können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-07-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung von Monitoring und Reporting für Lösch- und Archivierungs-APIs sowie Events (z.B. Kennzahlen zu verarbeiteten Events, Fehler- und Retry-Raten, Durchlaufzeiten), um die Wirksamkeit und Vollständigkeit der technischen Umsetzung des Lösch- und Aufbewahrungskonzepts nachvollziehen zu können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-07-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Absicherung der Lösch- und Archivierungsschnittstellen durch starke Authentisierung und Autorisierung (z.B. technische Service-Identitäten, mTLS, fein granulare API-Policies), insbesondere bei Verarbeitungen mit hohem Schutzbedarf oder hohem Risiko für betroffene Personen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-07-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) technische Spezifikationen oder Schnittstellenbeschreibungen für Lösch- und Archivierungs-APIs sowie zugehörige Ereignisse (Event-Schemata), (b) Architektur- oder Systemdokumentationen, die zeigen, welche Systeme und Komponenten an den Lösch- und Archivierungsprozessen teilnehmen, (c) Implementierungs- oder Konfigurationsnachweise für Event-Consumer, Jobs und Workflows, die Lösch- und Archivierungsevents verarbeiten, (d) Monitoring- oder Reporting-Unterlagen zu durchgeführten Lösch- bzw. Archivierungsvorgängen und deren Fehlerbehandlung, (e) Nachweise zur Absicherung der Schnittstellen (z.B. Authentisierungs- und Autorisierungskonzepte, API-Gateways, mTLS-Konfigurationen)."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-07-resilience",
+                                    "name": "resilience-mapping",
+                                    "prose": "Dieses Control unterstützt mehrere Resilienz-Rahmenwerke: (a) Im NIST Cybersecurity Framework v1.1 trägt es zur Umsetzung von PR.DS-3 (formales Management von Daten und Assets über Entfernung und Entsorgung hinweg) und PR.IP-4 (Backups werden durchgeführt, gepflegt und getestet) bei, indem Lösch- und Archivierungszustände technisch konsistent über Systeme, Backups und Wiederherstellung hinweg propagiert werden. (b) In ISO/IEC 27001:2022 adressiert es Annex A 5.30 (ICT Readiness for Business Continuity), indem es sicherstellt, dass Geschäftskontinuität und Wiederanlaufprozesse mit dem tatsächlichen Datenlebenszyklus (inklusive Löschungen und Archivierung) übereinstimmen, sowie Annex A 5.34 (Privacy and Protection of PII), indem es den datenschutzkonformen Umgang mit personenbezogenen Daten über den gesamten Lebenszyklus einschließlich Löschung unterstützt. (c) Im Kontext von NIS2 konkretisiert es Art. 21(2)(c) zur betrieblichen Kontinuität („business continuity, such as backup management and disaster recovery“), indem es fordert, dass Lösch- und Archivierungsentscheidungen in Backup- und Recovery-Prozessen technisch berücksichtigt werden. (d) Für Betreiber Kritischer Infrastrukturen nach BSIG ergänzt dieses Control die Pflicht aus §8a(1), angemessene organisatorische und technische Vorkehrungen zur Vermeidung von Störungen der Verfügbarkeit, Integrität, Authentizität und Vertraulichkeit zu treffen, indem es den konsistenten Umgang mit Lösch- und Archivierungszuständen als Bestandteil des Standes der Technik konkretisiert."
+                                }
+                            ]
+                        },
+
+                        {
                             "id": "SDM-TOM-LC-01-09",
                             "title": "Langzeitdatenformate, Metadaten und Schemata für aufbewahrte Daten",
                             "class": "technical",
@@ -3912,142 +4086,6 @@
                                     "id": "sdm-tom-lc-01-11-ass-obj",
                                     "name": "assessment-objective",
                                     "prose": "Nachweisbar sind: (a) Konzepte oder Richtlinien zur Langzeitaufbewahrung, in denen Speicherinfrastruktur, Redundanz, Backup/Restore und Migration geregelt sind, (b) System- oder Betriebsdokumentationen zu den eingesetzten Archiv- und Speichersystemen, (c) Protokolle und Ergebnisse von Wiederherstellungstests, (d) Dokumentationen abgeschlossener Migrationen und die dabei angewandten Prüf- und Freigabeverfahren."
-                                }
-                            ]
-                        },
-                        {
-                            "id": "SDM-TOM-LC-01-12",
-                            "title": "Technische Lösch- und Archivierungs-APIs sowie Ereignisverarbeitung",
-                            "class": "technical",
-                            "props": [
-                                {
-                                    "name": "implementation-level",
-                                    "class": "dp-measure-intensity",
-                                    "value": "standard"
-                                },
-                                {
-                                    "name": "implementation-level",
-                                    "class": "dp-measure-intensity",
-                                    "value": "high"
-                                },
-                                {
-                                    "name": "dp-risk-impact",
-                                    "class": "dp-impact",
-                                    "value": "normal"
-                                },
-                                {
-                                    "name": "dp-risk-impact",
-                                    "class": "dp-impact",
-                                    "value": "moderate"
-                                },
-                                {
-                                    "name": "dp-risk-impact",
-                                    "class": "dp-impact",
-                                    "value": "high"
-                                },
-                                {
-                                    "name": "dp-likelihood",
-                                    "class": "dp-likelihood",
-                                    "value": "low"
-                                },
-                                {
-                                    "name": "dp-likelihood",
-                                    "class": "dp-likelihood",
-                                    "value": "moderate"
-                                },
-                                {
-                                    "name": "responsible-role",
-                                    "class": "org-role",
-                                    "value": "Architecture"
-                                },
-                                {
-                                    "name": "responsible-role",
-                                    "class": "org-role",
-                                    "value": "System-Owner"
-                                },
-                                {
-                                    "name": "responsible-role",
-                                    "class": "org-role",
-                                    "value": "IT-Operations"
-                                },
-                                {
-                                    "name": "responsible-role",
-                                    "class": "org-role",
-                                    "value": "Data-Engineering"
-                                },
-                                {
-                                    "name": "sdm-measure",
-                                    "class": "sdm-60",
-                                    "value": "M60.P20"
-                                },
-                                {
-                                    "name": "sdm-measure",
-                                    "class": "sdm-60",
-                                    "value": "M60.P21"
-                                },
-                                {
-                                    "name": "sdm-measure",
-                                    "class": "sdm-60",
-                                    "value": "M60.S07"
-                                },
-                                {
-                                    "name": "sdm-measure",
-                                    "class": "sdm-60",
-                                    "value": "M60.S08"
-                                }
-                            ],
-                            "parts": [
-                                {
-                                    "id": "sdm-tom-lc-01-12-stmt",
-                                    "name": "statement",
-                                    "prose": "Lösch- und Aufbewahrungsentscheidungen werden über technische Schnittstellen und Ereignisse in allen relevanten Systemen konsistent umgesetzt. Hierzu stellt die Organisation standardisierte Lösch- und Archivierungs-APIs sowie ereignisbasierte Mechanismen bereit, mit denen Fachsysteme, Datenplattformen, Suchindizes und weitere abhängige Komponenten Lösch- und Archivierungsbefehle verarbeiten. Die Schnittstellen sind so gestaltet, dass sie idempotent, nachvollziehbar und testbar sind und Rückmeldungen zur erfolgreichen Umsetzung liefern."
-                                },
-                                {
-                                    "id": "sdm-tom-lc-01-12-gdn",
-                                    "name": "guidance",
-                                    "prose": "In verteilten Architekturen (z.B. Microservices, Data Warehouses, Suchindizes, Event-Streaming) reicht es aus Datenschutzsicht nicht aus, Löschlogik nur in einzelnen Kernsystemen zu implementieren. Stattdessen sollten zentrale oder standardisierte Lösch- und Archivierungsschnittstellen bereitgestellt werden, über die Objekte und Datensätze eindeutig identifiziert werden und über deren Aufruf bzw. über veröffentlichte Ereignisse (Events) alle beteiligten Systeme ihre lokalen Datenbestände aktualisieren. Schnittstellen sollten idempotent sein und Fehlerzustände klar melden, damit Nachsteuerung, Monitoring und Audit möglich sind. Für Systeme mit hohem Schutzbedarf sollten erhöhte Anforderungen an Authentisierung, Autorisierung und Protokollierung der Schnittstellennutzung gelten."
-                                },
-                                {
-                                    "id": "sdm-tom-lc-01-12-typical-measures",
-                                    "name": "typical-measures",
-                                    "prose": "Typische Maßnahmen für technische Lösch- und Archivierungs-APIs sowie Ereignisverarbeitung:",
-                                    "parts": [
-                                        {
-                                            "id": "sdm-tom-lc-01-12-measure-01",
-                                            "name": "typical-measure",
-                                            "prose": "Einführung eines zentralen oder geteilten „Lifecycle“-Dienstes bzw. einer technischen Schnittstelle (z.B. REST- oder gRPC-API), über die Objekte und Datensätze anhand stabiler Identifikatoren (z.B. fachliche IDs, UUIDs) zum Löschen, Anonymisieren oder zur Archivierung markiert und verarbeitet werden können."
-                                        },
-                                        {
-                                            "id": "sdm-tom-lc-01-12-measure-02",
-                                            "name": "typical-measure",
-                                            "prose": "Verwendung eines ereignisorientierten Ansatzes (z.B. Message-Bus, Event-Streaming-Plattform), bei dem Lösch- und Archivierungsevents (z.B. \"person.deleted\", \"contract.archived\") veröffentlicht werden. Abonnierende Systeme (Fachanwendungen, Data Warehouse, Suchindizes, Caches) konsumieren diese Ereignisse und führen korrespondierende Lösch- oder Archivierungsschritte lokal aus."
-                                        },
-                                        {
-                                            "id": "sdm-tom-lc-01-12-measure-03",
-                                            "name": "typical-measure",
-                                            "prose": "Gestaltung der Schnittstellen und Event-Consumer als idempotent, sodass wiederholte Aufrufe oder doppelt eingehende Ereignisse nicht zu Inkonsistenzen führen (z.B. durch Statusfelder, Versionsnummern oder dedizierte Lifecycle-States wie \"marked_for_deletion\", \"archived\")."
-                                        },
-                                        {
-                                            "id": "sdm-tom-lc-01-12-measure-04",
-                                            "name": "typical-measure",
-                                            "prose": "Definition technischer Rückmelde- und Fehlerbehandlungsmechanismen (z.B. Response-Codes, Dead-Letter-Queues, Retry-Strategien), mit denen fehlgeschlagene Lösch- oder Archivierungsschritte erkannt, erneut angestoßen oder manuell bearbeitet werden können."
-                                        },
-                                        {
-                                            "id": "sdm-tom-lc-01-12-measure-05",
-                                            "name": "typical-measure",
-                                            "prose": "Einrichtung von Monitoring und Reporting für Lösch- und Archivierungs-APIs sowie Events (z.B. Kennzahlen zu verarbeiteten Events, Fehler- und Retry-Raten, Durchlaufzeiten), um die Wirksamkeit und Vollständigkeit der technischen Umsetzung des Lösch- und Aufbewahrungskonzepts nachvollziehen zu können."
-                                        },
-                                        {
-                                            "id": "sdm-tom-lc-01-12-measure-06",
-                                            "name": "typical-measure",
-                                            "prose": "Absicherung der Lösch- und Archivierungsschnittstellen durch starke Authentisierung und Autorisierung (z.B. technische Service-Identitäten, mTLS, fein granulare API-Policies), insbesondere bei Verarbeitungen mit hohem Schutzbedarf oder hohem Risiko für betroffene Personen."
-                                        }
-                                    ]
-                                },
-                                {
-                                    "id": "sdm-tom-lc-01-12-ass-obj",
-                                    "name": "assessment-objective",
-                                    "prose": "Nachweisbar sind: (a) technische Spezifikationen oder Schnittstellenbeschreibungen für Lösch- und Archivierungs-APIs sowie zugehörige Ereignisse (Event-Schemata), (b) Architektur- oder Systemdokumentationen, die zeigen, welche Systeme und Komponenten an den Lösch- und Archivierungsprozessen teilnehmen, (c) Implementierungs- oder Konfigurationsnachweise für Event-Consumer, Jobs und Workflows, die Lösch- und Archivierungsevents verarbeiten, (d) Monitoring- oder Reporting-Unterlagen zu durchgeführten Lösch- bzw. Archivierungsvorgängen und deren Fehlerbehandlung, (e) Nachweise zur Absicherung der Schnittstellen (z.B. Authentisierungs- und Autorisierungskonzepte, API-Gateways, mTLS-Konfigurationen)."
                                 }
                             ]
                         }
@@ -4683,6 +4721,162 @@
                                     "id": "sdm-tom-res-01-03-ass-obj",
                                     "name": "assessment-objective",
                                     "prose": "Nachweisbar sind: (a) ein dokumentiertes Konzept zur Einschränkung der Verarbeitung, (b) Prozessbeschreibungen für Antragsannahme, Identitätsprüfung, Fristenüberwachung, technische Umsetzung, Mitteilungen und Aufhebung, (c) Musterkommunikationen für Zusagen und Ablehnungen inkl. Hinweise auf Rechtsbehelfe, (d) revisionssichere Dokumentation einzelner Fälle und der jeweils getroffenen Abwägungen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-RES-01-04",
+                            "title": "Technische Durchsetzung von Einschränkungen in Schnittstellen, Suche und Auswertungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Data-Engineering"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "BI-Analytics"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S01"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.S07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.D09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-62",
+                                    "value": "M62.P10"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-res-01-04-stmt",
+                                    "name": "statement",
+                                    "prose": "Einschränkungen der Verarbeitung werden in allen technischen Komponenten und Schnittstellen durchgängig berücksichtigt. Systeme, APIs, Suchmechanismen, Berichts- und Exportfunktionen sowie Datenplattformen erkennen den Einschränkungsstatus von Datensätzen und stellen sicher, dass diese standardmäßig nicht oder nur in entsprechend eingeschränkter Form verarbeitet, angezeigt oder ausgewertet werden. Dies gilt auch für Kopien, Sicherungen, Suchindizes und analytische Datenbestände."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-04-gdn",
+                                    "name": "guidance",
+                                    "prose": "Die bloße Markierung von Datensätzen als \"eingeschränkt\" reicht nicht aus. Die Markierung muss in allen relevanten technischen Schichten ausgewertet werden. Standard-APIs, UIs, Such- und Reportingfunktionen dürfen eingeschränkte Daten nicht wie reguläre Daten behandeln; für zulässige Sonderfälle sind gesonderte, streng berechtigte Zugriffspfade vorzusehen. Datenflüsse in verteilten Architekturen (Microservices, Data Warehouse, Suchindizes, Caches) müssen den Einschränkungsstatus mitführen und bei Änderungen aktualisieren. Bei Datensicherungen und Rücksicherungen ist sicherzustellen, dass der Einschränkungsstatus erhalten bleibt und nach einer Rücksicherung nicht versehentlich aufgehoben wird."
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-04-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für die technische Durchsetzung von Einschränkungen in Schnittstellen, Suche und Auswertungen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-res-01-04-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einführung eines einheitlichen Attributs bzw. Statusfeldes zur Kennzeichnung der eingeschränkten Verarbeitung in allen relevanten Datenmodellen und API-Ressourcen (z.B. \"processing_restricted\", Einschränkungsgrund, Fristende)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-04-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Standardkonfiguration aller Lese-APIs und UI-Komponenten so, dass Datensätze mit eingeschränkter Verarbeitung standardmäßig nicht in Suchergebnissen, Listen, Reports oder Exporten erscheinen bzw. nur in der zulässigen eingeschränkten Form angezeigt werden."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-04-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Integration des Einschränkungsstatus in Suchindizes (z.B. Suchfelder in Volltextindizes) und konsequenter Ausschluss eingeschränkter Datensätze aus Standard-Suchabfragen; separate, besonders geschützte Abfragewege für zulässige Verarbeitungen eingeschränkter Daten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-04-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Sicherstellung, dass ETL-Prozesse und Datenpipelines den Einschränkungsstatus in Data-Warehouse-, BI- oder Data-Lake-Umgebungen mitführen und berücksichtigen, z.B. durch Filterung in Views, Maskierung in Berichten oder separate, eingeschränkte Datenbereiche."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-04-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung von Mechanismen, die bei Änderung des Einschränkungsstatus Caches, abgeleitete Datenbestände und Replikate (z.B. Caches, Suchindizes, analytische Aggregate) aktualisieren oder invalidieren, damit eingeschränkte Daten dort nicht in unzulässiger Form weiterverwendet werden."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-04-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Gestaltung von Sicherungs- und Rücksicherungsverfahren so, dass der Einschränkungsstatus in Sicherungskopien erhalten bleibt und bei Rücksicherungen automatisch ausgelesen und erneut angewendet wird, um die eingeschränkte Verarbeitung beizubehalten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-res-01-04-measure-07",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung automatisierter Tests und Prüfabfragen, die sicherstellen, dass Standard-Schnittstellen und -Abfragen eingeschränkte Datensätze nicht unzulässig zurückliefern oder verarbeiten (z.B. gezielte Testdatensätze mit gesetzter Einschränkung und erwarteten leeren Ergebnismengen)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-04-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Datenmodell- und Schnittstellenbeschreibungen, die ein Attribut bzw. Statusfeld für eingeschränkte Verarbeitung vorsehen, (b) technische Spezifikationen oder Konfigurationen von APIs, Such- und Reportingfunktionen, aus denen die Behandlung eingeschränkter Datensätze hervorgeht, (c) ETL-/Datenpipeline-Designs und -Implementierungen, die den Einschränkungsstatus mitführen und auswerten, (d) Beschreibungen und Nachweise zu Verfahren, mit denen Einschränkungen in Caches, Indizes, analytischen Systemen sowie bei Sicherung und Rücksicherung berücksichtigt werden, (e) Testfälle, Testprotokolle oder Monitoringberichte, die zeigen, dass eingeschränkte Daten nicht unzulässig in Standardabfragen, Reports oder Exporten erscheinen."
                                 }
                             ]
                         }
@@ -5325,6 +5519,182 @@
                                     "prose": "Nachweisbar sind: (a) mandantenübergreifende Administrations-, Datenschutz- und Sicherheitskonzepte, (b) dokumentierte Prozesse für Change-, Berichtswesen und Notfallmanagement, (c) dokumentierte Restrisikobetrachtungen und Wirksamkeitsnachweise von Trennungsmaßnahmen, (d) Vereinbarungen nach Art. 26 und 28 DSGVO, (e) Nachweise über Prüfungen von Datenübermittlungen zwischen Mandanten."
                                 }
                             ]
+                        },
+                        {
+                            "id": "SDM-TOM-SEP-01-04",
+                            "title": "Automatisierte Tests und technische Nachweise der Trennungsmaßnahmen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "QA-Engineering"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S02"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S03"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S05"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S06"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S08"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S13"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.S14"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P10"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-50",
+                                    "value": "M50.P14"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-sep-01-04-stmt",
+                                    "name": "statement",
+                                    "prose": "Die technische Umsetzung von Trennungsmaßnahmen (z.B. Mandantentrennung, Zwecktrennung, Netzsegmentierung) wird regelmäßig durch automatisierte Tests und technische Prüfungen verifiziert. Die Tests stellen sicher, dass Daten und Funktionen eines Mandanten oder einer Verarbeitungstätigkeit nicht unzulässig für andere Mandanten oder Zwecke sichtbar oder nutzbar sind. Testergebnisse werden nachvollziehbar dokumentiert und können als Nachweis gegenüber internen und externen Stellen verwendet werden."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-04-gdn",
+                                    "name": "guidance",
+                                    "prose": "Trennungsmaßnahmen sollten nicht nur konzeptionell beschrieben, sondern auch in der technischen Realität überprüft werden. Dazu gehören Tests auf Datenbank- und Applikationsebene (z.B. Mandantenfilter, Berechtigungsprüfungen), Netz- und Systemtests (z.B. Segmentierung, Firewall-Regeln) sowie Prüfungen von Integrationen, Schnittstellen und Datenflüssen. Automatisierte Tests können in CI/CD-Pipelines integriert werden und bei Änderungen an Systemen oder Berechtigungskonzepten frühzeitig Hinweise auf Trennungsverluste geben. Je höher das Risiko, desto enger sollten Testzyklen und desto umfassender Testabdeckung und Logging der Ergebnisse sein."
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-04-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für automatisierte Tests und technische Nachweise von Trennungsmaßnahmen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-sep-01-04-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Definition von Testfällen, die prüfen, ob Benutzerkonten eines Mandanten ausschließlich auf Daten, Funktionen und Protokolle dieses Mandanten zugreifen können und keine Daten anderer Mandanten oder Verarbeitungstätigkeiten sehen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-04-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung automatisierter Tests in CI/CD-Pipelines (z.B. Integrationstests, API-Tests, End-to-End-Tests), die bei jeder relevanten Änderung an Systemen, Berechtigungen oder Konfigurationen ausgeführt werden und Trennungsregeln explizit verifizieren."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-04-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Durchführung gezielter „Cross-Tenant-Probes“ in Test- oder Staging-Umgebungen, bei denen versucht wird, aus einem Mandantenkontext heraus auf Daten eines anderen Mandanten zuzugreifen, und Auswertung der Ergebnisse als Wirksamkeitsnachweis der Mandantentrennung."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-04-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Automatisierte Prüfungen von Datenbankstrukturen und -inhalten (z.B. SQL-Checks, Reports), die sicherstellen, dass Daten mit unterschiedlichen Mandanten- oder Zweckkennungen nicht in denselben Tabellenbereichen oder Dateien abgelegt sind, sofern dies dem Trennungskonzept widerspricht."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-04-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Regelmäßige technische Überprüfung von Netzsegmentierung und Systemtrennung (z.B. durch automatisierte Port-Scans, Firewall-Regel-Checks, Netzwerkpfad-Analysen), um sicherzustellen, dass unerwünschte Kommunikationspfade zwischen Mandanten- oder Zweckbereichen nicht bestehen oder entstehen."
+                                        },
+                                        {
+                                            "id": "sdm-tom-sep-01-04-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Erstellung und Aufbewahrung von Testberichten, Logauswertungen und technischen Nachweisen über durchgeführte Trennungstests, inkl. dokumentierter Abweichungen, Ursachenanalysen und ergriffener Korrekturmaßnahmen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-sep-01-04-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) Testkonzepte und -spezifikationen, die Trennungsanforderungen in konkrete Testfälle übersetzen, (b) technische Implementierungen automatisierter Tests (z.B. Testskripte, CI/CD-Konfigurationen), (c) regelmäßige Test- oder Prüfberichte zur Wirksamkeit von Mandanten-, Zweck- und Netztrennung, (d) dokumentierte Abweichungen und Korrekturmaßnahmen bei festgestellten Trennungsverletzungen, (e) Auswertungen von Protokolldaten oder Monitoring-Systemen, die Trennungsverstöße erkennen helfen."
+                                }
+                            ]
                         }
                     ]
                 }
@@ -5963,6 +6333,172 @@
                                     "id": "sdm-tom-rec-01-03-ass-obj",
                                     "name": "assessment-objective",
                                     "prose": "Nachweisbar sind: (a) ein dokumentiertes Berichtigungskonzept, (b) Prozessbeschreibungen und Arbeitsanweisungen für Antragsannahme, Identitätsprüfung, Fristenüberwachung, Entscheidung und technische Umsetzung, (c) Nachweise über Mitteilungspflichten gegenüber Empfängern und Absendern, (d) Vereinbarungen mit gemeinsam Verantwortlichen und Auftragsverarbeitern zu Berichtigungspflichten, (e) Dokumentation von Ablehnungen und von Fällen mit hohem Schutzbedarf."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "SDM-TOM-REC-01-04",
+                            "title": "Audit-Trail, Vier-Augen-Prinzip und Kontrollmechanismen bei Berichtigungen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Information-Security"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Data-Protection-Officer"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Internal-Audit"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S09"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S10"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S11"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.S12"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P10"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P14"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P15"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P19"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-61",
+                                    "value": "M61.P23"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-rec-01-04-stmt",
+                                    "name": "statement",
+                                    "prose": "Berichtigungen personenbezogener Daten erfolgen über technisch kontrollierte Workflows mit nachvollziehbarem Audit-Trail und – bei erhöhtem Risiko – Vier-Augen-Prinzip. Jede Berichtigung wird so protokolliert, dass Zeitpunkt, alte und neue Werte, beteiligte Rollen, Entscheidung und Begründung nachvollziehbar sind. Direkte, nicht protokollierte Änderungen an produktiven Datenbeständen sind ausgeschlossen oder technisch stark begrenzt."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-04-gdn",
+                                    "name": "guidance",
+                                    "prose": "Berichtigungen sollten nicht über direkte Schreibzugriffe auf Datenbanken oder unkontrollierte Admin-Funktionen erfolgen, sondern über dedizierte Korrektur-Workflows. Für Daten mit normalem Schutzbedarf kann ein dokumentierter Single-Operator-Workflow mit vollständiger Protokollierung ausreichen; bei erhöhtem Risiko (z.B. Gesundheitsdaten, Scoring-Informationen) ist regelmäßig ein Vier-Augen-Prinzip mit fachlicher und technischer Prüfung vorzusehen. Audit-Trails sind manipulationsresistent zu speichern (z.B. append-only, signierte/hashes Logs, revisionssichere Systeme) und mit dem Berechtigungskonzept verzahnt, so dass nur befugte Rollen Berichtigungen anstoßen oder freigeben können. Regelmäßige Reviews von Berichtigungslogs unterstützen die Erkennung von Fehlbedienungen oder missbräuchlichen Korrekturen."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-04-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für Audit-Trail, Vier-Augen-Prinzip und Kontrollmechanismen bei Berichtigungen:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-rec-01-04-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung separater Korrektur-Workflows in Fachanwendungen, in denen Berichtigungen immer über klar definierte Masken oder API-Endpunkte erfolgen und nicht über generische Bearbeitungsfunktionen oder direkte Datenbankzugriffe."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-04-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Technische Umsetzung eines Vier-Augen-Prinzips für Berichtigungen mit erhöhtem Risiko: eine Rolle nimmt den Antrag bzw. die Änderung vor („Maker“), eine andere Rolle prüft und gibt die Berichtigung frei („Checker“), bevor sie wirksam wird."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-04-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung eines manipulationsresistenten Audit-Trails für Berichtigungen (z.B. append-only Logs, WORM-Speicher, kryptographische Verkettung von Einträgen), der alte und neue Werte, Zeitstempel, betroffene Datensätze, Rollen/Identitäten der Handelnden und Freigaben dokumentiert."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-04-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Kopplung der Berichtigungs-Workflows an das zentrale Authentifizierungs- und Berechtigungssystem (z.B. RBAC/ABAC), so dass nur speziell berechtigte Rollen überhaupt Berichtigungen veranlassen oder freigeben können, und diese Aktionen im Audit-Trail mit den entsprechenden Identitäten verknüpft sind."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-04-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Regelmäßige, strukturierte Auswertung der Berichtigungsprotokolle (z.B. durch Datenschutz, Informationssicherheit oder Internal Audit), um Muster zu erkennen (ungewöhnliche Häufung von Korrekturen, bestimmte Benutzerkonten, Datenarten) und bei Auffälligkeiten technische oder organisatorische Gegenmaßnahmen einzuleiten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-04-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Technische Einschränkung oder Protokollpflicht für direkte Datenbankänderungen (z.B. beschränkte Admin-Tools, zwingende Ticket-Referenzen, detailliertes Logging auf DB-Ebene), um unkontrollierte Berichtigungen am Korrektur-Workflow vorbei zu verhindern oder zumindest nachvollziehen zu können."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-04-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) technische und fachliche Beschreibungen der Berichtigungs-Workflows (inklusive eventueller Vier-Augen-Prinzipien), (b) Implementierungs- oder Konfigurationsnachweise, dass Berichtigungen nur über definierte Funktionen und nicht über unkontrollierte Direktzugriffe erfolgen, (c) Audit-Trail- oder Log-Beispiele, die den vollständigen Verlauf einzelner Berichtigungen dokumentieren, (d) Konzepte und Nachweise zur Manipulationssicherheit des Audit-Trails, (e) Auswertungen oder Prüfberichte von Datenschutz, Informationssicherheit oder Revision zu Berichtigungsaktivitäten."
                                 }
                             ]
                         }
