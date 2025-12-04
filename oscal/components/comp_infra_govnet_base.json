@@ -1,0 +1,91 @@
+{
+    "component-definition": {
+        "uuid": "1a9a9469-b995-49ad-8651-28274ed69728",
+        "metadata": {
+            "title": "Infrastruktur-Basiskomponenten – IT network of the public administration",
+            "version": "0.1.0",
+            "oscal-version": "1.1.2",
+            "last-modified": "2025-12-04T00:00:00Z",
+            "props": [
+                {
+                    "name": "component-type",
+                    "value": "infrastructure"
+                }
+            ],
+            "parties": [
+                {
+                    "uuid": "82e3aaf2-00ae-4255-82f8-29fd79c007c3",
+                    "type": "organization",
+                    "name": "Public IT network provider"
+                }
+            ]
+        },
+        "components": [
+            {
+                "uuid": "4cd7cf5a-45f8-470b-a18c-8835e28de5f8",
+                "type": "service",
+                "title": "NETZ-01 – Verwaltungsnetz",
+                "description": "Logisch segmentiertes Verwaltungsnetz mit sicheren Transportwegen zwischen Portal, Fachverfahren, Registern, RZ und externen Anbindungen.",
+                "props": [
+                    {
+                        "name": "component-category",
+                        "value": "infra.network.zone"
+                    },
+                    {
+                        "name": "type",
+                        "value": "netz"
+                    },
+                    {
+                        "name": "processing-role",
+                        "value": "netz"
+                    },
+                    {
+                        "name": "location",
+                        "value": "EU-DE"
+                    },
+                    {
+                        "name": "responsible-role",
+                        "value": "Network-Operations"
+                    },
+                    {
+                        "name": "responsible-role",
+                        "value": "Security"
+                    }
+                ],
+                "control-implementations": [
+                    {
+                        "uuid": "8aa0bbac-3680-4e1c-be6e-f3d47733c60b",
+                        "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+                        "description": "Verwaltungsnetz als Transport- und Segmentierungs-Infrastruktur für personenbezogene Daten.",
+                        "implemented-requirements": [
+                            {
+                                "uuid": "208be032-26f4-43b1-962c-2cbaea3842ea",
+                                "control-id": "SDM-TOM-CR-01-01",
+                                "description": "Transportverschlüsselung für personenbezogene Daten im Verwaltungsnetz.",
+                                "statements": [
+                                    {
+                                        "uuid": "ecf1cbaf-24a9-4aa6-ac35-c65ccc6a3b8e",
+                                        "statement-id": "sdm-tom-cr-01-01-netz01",
+                                        "description": "Alle externen Web-/API-Schnittstellen und administrativen Zugriffe auf Fachverfahren und Register werden ausschließlich über aktuelle TLS-Verbindungen oder VPN-Tunnel abgewickelt. Interne Verbindungen mit hohem Schutzbedarf werden schrittweise auf TLS umgestellt."
+                                    }
+                                ]
+                            },
+                            {
+                                "uuid": "d4096d4d-e668-4b01-9653-4111ac7cd153",
+                                "control-id": "SDM-TOM-AC-01-08",
+                                "description": "Feingranulare Zugriffskontrollen und Segmentierung für Hochrisiko-Daten werden im Netzdesign abgebildet.",
+                                "statements": [
+                                    {
+                                        "uuid": "netz01-stmt-sdm-ac-01-08-0001",
+                                        "statement-id": "sdm-tom-ac-01-08-netz01",
+                                        "description": "Hochrisiko-Fachverfahren und Register sind in separaten Netzsegmenten mit restriktiven Firewall-Regeln und streng limitierten Management-Zugängen platziert. Zugriffe erfolgen über definierte Jump-Hosts oder Gateways mit starker Authentisierung."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

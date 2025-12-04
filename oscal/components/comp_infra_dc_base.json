@@ -1,0 +1,74 @@
+{
+  "component-definition": {
+    "uuid": "1a9a9469-b995-49ad-8651-28274ed69728",
+    "metadata": {
+      "title": "Infrastruktur-Basiskomponenten – Musterstadt Verwaltung",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-12-04T00:00:00Z",
+      "props": [
+        {
+          "name": "component-type",
+          "value": "infrastructure"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "82e3aaf2-00ae-4255-82f8-29fd79c007c3",
+          "type": "organization",
+          "name": "Muster Data-Center"
+        }
+      ]
+    },
+
+    "components": [
+        {
+        "uuid": "5900e13a-d6f1-44a2-a72d-b6551c681bc1",
+        "type": "service",
+        "title": "RZ-01 – Rechenzentrum / Hosting",
+        "description": "Rechenzentrums- und Hosting-Infrastruktur für Fachverfahren, Register und Portale der Musterstadt Verwaltung.",
+        "props": [
+          { "name": "component-category", "value": "infra.datacenter" },
+          { "name": "type", "value": "datacenter" },
+          { "name": "processing-role","value": "datacenter"},
+          { "name": "location", "value": "EU-DE" },
+          { "name": "responsible-role", "value": "IT-Operations" },
+          { "name": "responsible-role", "value": "Data-Center-Provider" }
+        ],
+        "control-implementations": [
+            {
+            "uuid": "c1487096-2591-4aef-8b52-6ff51adee89c",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+            "description": "Rechenzentrums-Infrastruktur als technische Grundlage für Langzeitaufbewahrung, Backup/Restore und Kryptografie.",
+            "implemented-requirements": [
+                    {
+                "uuid": "cbad4fd1-17c8-44f2-b612-778e61864d44",
+                "control-id": "SDM-TOM-LC-01-11",
+                "description": "Langzeit-Infrastruktur, Migration und Resilienz für aufbewahrte Daten werden über die RZ-Infrastruktur umgesetzt (Speicherplattformen, Redundanz, Backup/Restore, Migrationspfade).",
+                "statements": [
+                            {
+                    "uuid": "199f1531-5c4b-4340-8886-6d77ebe58772",
+                    "statement-id": "sdm-tom-lc-01-11-rz01",
+                    "description": "Das Rechenzentrum betreibt für Archiv- und Aufbewahrungssysteme georedundante Speicher, regelmäßige Backups und dokumentierte Restore-Tests. Für Systemablösungen existieren Migrationskonzepte mit Integritätsprüfungen."
+                  }
+                ]
+              },
+                    {
+                "uuid": "f7aebd0b-a7eb-4f7d-b46b-a5aae566c4fa",
+                "control-id": "SDM-TOM-CR-01-02",
+                "description": "Speicherverschlüsselung für Daten-at-Rest wird auf Ebene der RZ-Plattform (Storage, virtuelle Server, Datenbanken) umgesetzt.",
+                "statements": [
+                            {
+                    "uuid": "2c7ef135-9ee8-420d-a717-7ba18ca35e79",
+                    "statement-id": "sdm-tom-cr-01-02-rz01",
+                    "description": "Server, Datenbanken und virtuelle Maschinen mit personenbezogenen Daten werden auf verschlüsselten Volumes betrieben; mobile oder exportierte Datenträger unterliegen verbindlicher Vollverschlüsselung. Schlüsselverwaltung erfolgt zentral nach den Vorgaben der Sicherheitsorganisation."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+ }
+}
