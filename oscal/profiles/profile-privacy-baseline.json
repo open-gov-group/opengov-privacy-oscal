@@ -1,0 +1,70 @@
+{
+  "profile": {
+        "uuid": "0609c622-4c9b-4b04-8320-130be4d3e9fe",
+        "metadata": {
+            "title": "Privacy Baseline – DSGVO-Grundprofil",
+            "version": "0.1.0",
+            "oscal-version": "1.1.2",
+            "last-modified": "2025-12-04T00:00:00Z",
+            "roles": [
+                {
+                    "id": "owner",
+                    "title": "Profilverantwortliche Stelle"
+                }
+            ],
+            "parties": [
+                {
+                    "uuid": "b1f203e6-82a4-4d36-bb70-1b709978c49e",
+                    "type": "organization",
+                    "name": "Beispielorganisation – Privacy-Baseline"
+                }
+            ]
+        },
+
+    "imports": [
+            {
+        "href": "#0b431870-7f9d-440f-ac7d-d42bb92e3acb",
+        "include-controls": [
+          {
+            "with-ids": [
+              "GOV-01",
+              "REG-01",
+              "REG-02",
+              "REG-04",
+              "REG-05",
+              "DSR-01",
+              "DSR-02", 
+              "DSR-03",
+              "DSR-04", 
+              "DSR-05", 
+              "TOM-01",
+              "TOM-02",
+              "TOM-04", 
+              "TOM-05"  
+            ]
+          }
+        ]
+      }
+    ],
+
+    "merge": {
+      "as-is": true
+    },
+
+    "back-matter": {
+      "resources": [
+            {
+          "uuid": "0b431870-7f9d-440f-ac7d-d42bb92e3acb",
+          "title": "Open Privacy Catalog (Risk)",
+          "description": "OSCAL-Datenschutzkatalog nach DSGVO mit risikobasierten Privacy-Controls und Maturity-Hints.",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/open_privacy_catalog_risk.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
