@@ -1,0 +1,64 @@
+{
+  "profile": {
+    "uuid": "1905244a-4314-4e24-b5dd-31eeba79d0bb",
+    "metadata": {
+      "title": "SDM TOM Baseline – Technische Datenschutzmaßnahmen",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-12-04T00:00:00Z",
+      "roles": [
+        {
+          "id": "owner",
+          "title": "Profilverantwortliche Stelle"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "377dbf9b-6dcc-4c6b-b23e-c29082058419",
+          "type": "organization",
+          "name": "SDM Bausteine – TOM-Baseline"
+        }
+      ]
+    },
+
+    "imports": [
+        {
+        "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "SDM-TOM-AC-01",
+              "SDM-TOM-CR-01",
+              "SDM-TOM-LG-01",
+              "SDM-TOM-LG-02", 
+              "SDM-TOM-DEL-01",
+              "SDM-TOM-REC-01",
+              "SDM-TOM-RES-01",
+              "SDM-TOM-SEP-01" 
+            ]
+          }
+        ]
+      }
+    ],
+
+    "merge": {
+      "as-is": true
+    },
+
+    "back-matter": {
+      "resources": [
+            {                
+          "uuid": "68f6e5fb-abd1-4c21-a8ba-4d0432ed081d",
+          "title": "Open Privacy Security TOM Catalog (SDM)",
+          "description": "SDM-basierter Katalog technischer Datenschutzmaßnahmen (TOMs) mit Risiko- und Reifegradlogik, inkl. Mapping zu Open Privacy Catalog.",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
