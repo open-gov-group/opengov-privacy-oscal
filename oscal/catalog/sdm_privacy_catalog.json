@@ -2919,6 +2919,78 @@
                                     "prose": "INTERVENIERBARKEIT: Ein strukturiertes Lösch- und Aufbewahrungskonzept ist Voraussetzung dafür, Betroffenenrechte – insbesondere Löschung und Einschränkung der Verarbeitung – wirksam umzusetzen."
                                 }
                             ]
+                        },
+                        {
+                            "id": "sdm-tom-lc-01-maturity",
+                            "name": "maturity-hints",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-maturity-1",
+                                    "name": "level-1",
+                                    "prose": "Lösch- und Aufbewahrungsprozesse existieren nur teilweise oder in Form von Einzelregelungen. Löschungen werden überwiegend manuell und systemspezifisch durchgeführt. Es gibt keine zentrale Übersicht über Fristen, keine durchgängigen technischen Schnittstellen zu Lösch-/Archivierungsvorgängen und nur punktuelle oder unvollständige Protokollierung. Rücksicherungen können dazu führen, dass bereits gelöschte Daten wieder in produktive Bestände zurückkehren."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-maturity-3",
+                                    "name": "level-3",
+                                    "prose": "Ein Lösch- und Aufbewahrungskonzept ist dokumentiert und für wesentliche Verarbeitungstätigkeiten umgesetzt. Datenmodelle und Systeme unterstützen selektive Löschung nach Fristen und auf Verlangen; zentrale oder standardisierte Mechanismen (z.B. Jobs, Workflows, Lösch-APIs) werden von den meisten relevanten Systemen genutzt. Löschvorgänge einschließlich Rücksicherungsfällen werden protokolliert; unbefugte Löschung ist durch Rollen- und Rechtekonzepte weitgehend verhindert. Löschfristen werden technisch überwacht, Auswertungen zu fälligen und durchgeführten Löschungen sind möglich."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-maturity-5",
+                                    "name": "level-5",
+                                    "prose": "Lösch- und Aufbewahrungsprozesse sind vollständig in Architektur, Datenmodelle und Betriebsprozesse integriert. Alle relevanten Systeme, Backups, Archive und Auftragsverarbeiter sind über standardisierte APIs und Ereignisse an Lösch- und Archivierungsvorgänge angebunden. Die technische Umsetzung wird laufend überwacht (Monitoring, KPIs), regelmäßig getestet (inkl. Recovery-Szenarien) und kontinuierlich verbessert. Protokolle liefern einen vollständigen, manipulationsresistenten Nachweis über Lösch- und Archivierungsvorgänge; die Einhaltung von Fristen und Löschpflichten ist nach innen und außen belegbar."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sdm-tom-lc-01-assessment",
+                            "name": "assessment-questions",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-q-01",
+                                    "name": "question",
+                                    "prose": "Existiert ein dokumentiertes Lösch- und Aufbewahrungskonzept, das für alle relevanten Verarbeitungstätigkeiten definiert, welche Daten wann zu löschen oder zu archivieren sind (einschließlich gesetzlicher Mindest- und Höchstfristen)?"
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-q-02",
+                                    "name": "question",
+                                    "prose": "Unterstützen Datenmodell und Speicherorganisation eine selektive Löschung (z.B. nach Person, Vorgang oder Zeitraum), ohne die Integrität des verbleibenden Datenbestandes zu beeinträchtigen (z.B. durch Foreign Keys, Referenzen, Protokolle)?"
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-q-03",
+                                    "name": "question",
+                                    "prose": "Können Systeme Löschungen sowohl auf Verlangen der betroffenen Person (Art. 17 DSGVO) als auch automatisch nach Ablauf definierter Fristen auslösen und nachvollziehbar protokollieren?"
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-q-04",
+                                    "name": "question",
+                                    "prose": "Sind für die verschiedenen Speicher- und Trägertypen (z.B. Datenbank, Filesystem, Object Storage, mobile Datenträger) geeignete, dokumentierte Lösch- bzw. Vernichtungsverfahren definiert und technisch umgesetzt (inkl. Test- oder Abnahmeprotokollen)?"
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-q-05",
+                                    "name": "question",
+                                    "prose": "Werden Löschvorgänge (einschließlich Sonderfällen wie erneuter Löschung nach Rücksicherungen) so protokolliert, dass Zeitpunkt, Umfang, verantwortliche Rolle und Ergebnis der Durchführung nachvollziehbar sind?"
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-q-06",
+                                    "name": "question",
+                                    "prose": "Existieren technische Mechanismen zur Verhinderung unbefugter Löschung (z.B. Rollenkonzepte, Vier-Augen-Freigaben für Massenlöschungen, Schutz besonders sensibler Datenbereiche)?"
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-q-07",
+                                    "name": "question",
+                                    "prose": "Werden gesetzliche und vertragliche Lösch- und Aufbewahrungsfristen automatisiert überwacht (z.B. durch Jobs, Scheduler, Policies) und gibt es Auswertungen über fällige, durchgeführte und fehlgeschlagene Löschläufe?"
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-q-08",
+                                    "name": "question",
+                                    "prose": "Sind Lösch- und Archivierungsentscheidungen in Backup- und Recovery-Prozesse integriert, sodass nach Rücksicherungen gelöschte oder zu löschende Daten nicht wieder dauerhaft in produktive Bestände gelangen (z.B. erneute Löschläufe, Lifecycle-Events)?"
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-q-09",
+                                    "name": "question",
+                                    "prose": "Sind die Pflichten von Auftragsverarbeitern und anderen Empfängern hinsichtlich Löschung und Löschnachweisen vertraglich geregelt und technisch unterstützt (z.B. Lösch-APIs, Löschbestätigungen, Ereignisrückmeldungen)?"
+                                }
+                            ]
                         }
                     ],
                     "controls": [
