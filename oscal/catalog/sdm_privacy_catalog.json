@@ -4291,83 +4291,83 @@
                                     "id": "sdm-tom-res-01-warranty-intervenability",
                                     "name": "warranty-objective",
                                     "prose": "INTERVENIERBARKEIT: Die Umsetzung von Einschränkungen der Verarbeitung ist Voraussetzung dafür, Betroffenenrechte nach Art. 18 DSGVO wirksam zu erfüllen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sdm-tom-res-01-maturity",
+                            "name": "maturity-hints",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-res-01-maturity-1",
+                                    "name": "level-1",
+                                    "prose": "Einschränkungen der Verarbeitung werden überwiegend ad hoc und manuell gehandhabt. Es gibt allenfalls einfache organisatorische Anweisungen; einheitliche Statusfelder oder Kennzeichen im Datenmodell fehlen oder werden nur in einzelnen Systemen verwendet. Fachanwendungen und Schnittstellen behandeln eingeschränkte Datensätze häufig wie reguläre Daten. Nachgelagerte Systeme (Data Warehouse, Reporting, Suchindizes, Caches) und Backups berücksichtigen Einschränkungen in der Regel nicht. Prozesse zur Beantragung, Prüfung und Aufhebung von Einschränkungen sind nur teilweise beschrieben oder nicht durchgängig technisch abgebildet; Protokollierung und Auswertung sind lückenhaft."
                                 },
                                 {
-                                    "id": "sdm-tom-res-01-maturity",
-                                    "name": "maturity-hints",
-                                    "parts": [
-                                        {
-                                            "id": "sdm-tom-res-01-maturity-1",
-                                            "name": "level-1",
-                                            "prose": "Einschränkungen der Verarbeitung werden überwiegend ad hoc und manuell gehandhabt. Es gibt allenfalls einfache organisatorische Anweisungen; einheitliche Statusfelder oder Kennzeichen im Datenmodell fehlen oder werden nur in einzelnen Systemen verwendet. Fachanwendungen und Schnittstellen behandeln eingeschränkte Datensätze häufig wie reguläre Daten. Nachgelagerte Systeme (Data Warehouse, Reporting, Suchindizes, Caches) und Backups berücksichtigen Einschränkungen in der Regel nicht. Prozesse zur Beantragung, Prüfung und Aufhebung von Einschränkungen sind nur teilweise beschrieben oder nicht durchgängig technisch abgebildet; Protokollierung und Auswertung sind lückenhaft."
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-maturity-3",
-                                            "name": "level-3",
-                                            "prose": "Es existiert ein dokumentiertes Konzept zur Einschränkung der Verarbeitung, und der Einschränkungsstatus ist im Datenmodell der wichtigsten Systeme abgebildet. Fachanwendungen, APIs und Kernsysteme berücksichtigen Einschränkungen bei Anzeige und Verarbeitung eingeschränkter Datensätze; Standardfunktionen nutzen diese Daten nur eingeschränkt oder gar nicht. Nachgelagerte Systeme und analytische Umgebungen sind teilweise eingebunden, z.B. durch Filterung oder Maskierung in Berichten. Backups und Rücksicherungen enthalten zumindest konzeptionell geregelte Verfahren, um Einschränkungen nach einer Wiederherstellung erneut anzuwenden. Prozesse zur Beantragung, Prüfung, Umsetzung und Aufhebung von Einschränkungen sind definiert und technisch unterstützt; Fristen werden überwacht und Einschränkungen werden protokolliert und stichprobenartig ausgewertet."
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-maturity-5",
-                                            "name": "level-5",
-                                            "prose": "Einschränkung der Verarbeitung ist durchgängig in Datenmodell, Fachsystemen, Schnittstellen, Datenplattformen, Sicherungs- und Wiederherstellungsprozessen sowie in der Zusammenarbeit mit Auftragsverarbeitern und gemeinsam Verantwortlichen integriert. Einschränkungsstatus und zulässige Restverarbeitungen sind technisch klar modelliert und werden in allen relevanten Lese-, Such-, Reporting- und Exportpfaden automatisch berücksichtigt. Ereignisbasierte Mechanismen sorgen dafür, dass Änderungen des Einschränkungsstatus zeitnah in nachgelagerte Systeme, Kopien und Backups propagiert werden. Manipulationsresistente Protokollierung ermöglicht eine lückenlose Nachvollziehbarkeit von Einschränkungen und deren Aufhebung; Monitoring und regelmäßige Auswertungen dienen der Erkennung von Missbrauch und der kontinuierlichen Verbesserung. Für Fälle mit hohem Risiko sind starke Authentisierungs- und Freigabemechanismen, gesicherte Kommunikationswege und eng abgestimmte Prozesse etabliert."
-                                        }
-                                    ]
+                                    "id": "sdm-tom-res-01-maturity-3",
+                                    "name": "level-3",
+                                    "prose": "Es existiert ein dokumentiertes Konzept zur Einschränkung der Verarbeitung, und der Einschränkungsstatus ist im Datenmodell der wichtigsten Systeme abgebildet. Fachanwendungen, APIs und Kernsysteme berücksichtigen Einschränkungen bei Anzeige und Verarbeitung eingeschränkter Datensätze; Standardfunktionen nutzen diese Daten nur eingeschränkt oder gar nicht. Nachgelagerte Systeme und analytische Umgebungen sind teilweise eingebunden, z.B. durch Filterung oder Maskierung in Berichten. Backups und Rücksicherungen enthalten zumindest konzeptionell geregelte Verfahren, um Einschränkungen nach einer Wiederherstellung erneut anzuwenden. Prozesse zur Beantragung, Prüfung, Umsetzung und Aufhebung von Einschränkungen sind definiert und technisch unterstützt; Fristen werden überwacht und Einschränkungen werden protokolliert und stichprobenartig ausgewertet."
                                 },
                                 {
-                                    "id": "sdm-tom-res-01-assessment",
-                                    "name": "assessment-questions",
-                                    "parts": [
-                                        {
-                                            "id": "sdm-tom-res-01-q-01",
-                                            "name": "question",
-                                            "prose": "Gibt es ein dokumentiertes Konzept, das festlegt, in welchen Fällen personenbezogene Daten eingeschränkt werden (z.B. auf Antrag der betroffenen Person, während der Prüfung von Ansprüchen, bei Widerspruch) und welche zulässigen Restverarbeitungen in diesen Zuständen erlaubt sind?"
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-q-02",
-                                            "name": "question",
-                                            "prose": "Werden Einschränkungen der Verarbeitung im Datenmodell durch geeignete Statusfelder bzw. Kennzeichen abgebildet (z.B. \"processing_restricted\", Einschränkungsgrund, Beginn/Ende) und sind diese Statusinformationen in allen relevanten Systemen verfügbar?"
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-q-03",
-                                            "name": "question",
-                                            "prose": "Berücksichtigen Fachanwendungen, APIs und Benutzeroberflächen den Einschränkungsstatus bei der Anzeige und Verarbeitung von Daten (z.B. keine oder nur stark eingeschränkte Bearbeitung/Nutzung eingeschränkter Datensätze in Standardfunktionen)?"
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-q-04",
-                                            "name": "question",
-                                            "prose": "Werden auch nachgelagerte Systeme, Datenplattformen und analytische Umgebungen (z.B. Data Warehouse, Data Lake, Reporting, Suchindizes, Caches) über Einschränkungen informiert und wenden sie diese technisch an (z.B. Filterung, Maskierung, gesonderte Bereiche)?"
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-q-05",
-                                            "name": "question",
-                                            "prose": "Sind Sicherungs- und Wiederherstellungsverfahren so gestaltet, dass der Einschränkungsstatus von Datensätzen erhalten bleibt und nach einer Rücksicherung nicht verloren geht oder unzulässig aufgehoben wird?"
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-q-06",
-                                            "name": "question",
-                                            "prose": "Existieren definierte und technisch unterstützte Prozesse zur Beantragung, Prüfung, Entscheidung, Umsetzung und Aufhebung von Einschränkungen, einschließlich Fristenüberwachung und Dokumentation des Entscheidungsverlaufs?"
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-q-07",
-                                            "name": "question",
-                                            "prose": "Werden Einschränkungen und ihre Aufhebung manipulationsresistent protokolliert (z.B. mit Zeitpunkt, Grund, betroffenen Datensätzen, beteiligten Rollen) und regelmäßig ausgewertet, um Missbrauch oder Fehlkonfigurationen zu erkennen?"
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-q-08",
-                                            "name": "question",
-                                            "prose": "Sind gemeinsam Verantwortliche, Auftragsverarbeiter und sonstige Empfänger technisch und vertraglich in die Einschränkungsprozesse eingebunden (z.B. durch Schnittstellen für Einschränkungsaufträge, Bestätigungen, aktualisierte Datensätze)?"
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-q-09",
-                                            "name": "question",
-                                            "prose": "Existieren Vorkehrungen, um bei Zweifeln an der Richtigkeit, Rechtmäßigkeit oder Erforderlichkeit von Daten die Verarbeitung technisch einzuschränken (z.B. Flags, Workflows), bis eine Klärung erfolgt ist, ohne die Daten vorschnell zu löschen?"
-                                        },
-                                        {
-                                            "id": "sdm-tom-res-01-q-10",
-                                            "name": "question",
-                                            "prose": "Werden Einschränkungen mit hohem Risiko (z.B. bei besonderen Kategorien personenbezogener Daten oder weitreichenden Auswirkungen) mit erhöhten Sicherheitsanforderungen umgesetzt (z.B. starke Authentisierung, Vier-Augen-Freigaben, sichere Kommunikationswege)?"
-                                        }
-                                    ]
+                                    "id": "sdm-tom-res-01-maturity-5",
+                                    "name": "level-5",
+                                    "prose": "Einschränkung der Verarbeitung ist durchgängig in Datenmodell, Fachsystemen, Schnittstellen, Datenplattformen, Sicherungs- und Wiederherstellungsprozessen sowie in der Zusammenarbeit mit Auftragsverarbeitern und gemeinsam Verantwortlichen integriert. Einschränkungsstatus und zulässige Restverarbeitungen sind technisch klar modelliert und werden in allen relevanten Lese-, Such-, Reporting- und Exportpfaden automatisch berücksichtigt. Ereignisbasierte Mechanismen sorgen dafür, dass Änderungen des Einschränkungsstatus zeitnah in nachgelagerte Systeme, Kopien und Backups propagiert werden. Manipulationsresistente Protokollierung ermöglicht eine lückenlose Nachvollziehbarkeit von Einschränkungen und deren Aufhebung; Monitoring und regelmäßige Auswertungen dienen der Erkennung von Missbrauch und der kontinuierlichen Verbesserung. Für Fälle mit hohem Risiko sind starke Authentisierungs- und Freigabemechanismen, gesicherte Kommunikationswege und eng abgestimmte Prozesse etabliert."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sdm-tom-res-01-assessment",
+                            "name": "assessment-questions",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-res-01-q-01",
+                                    "name": "question",
+                                    "prose": "Gibt es ein dokumentiertes Konzept, das festlegt, in welchen Fällen personenbezogene Daten eingeschränkt werden (z.B. auf Antrag der betroffenen Person, während der Prüfung von Ansprüchen, bei Widerspruch) und welche zulässigen Restverarbeitungen in diesen Zuständen erlaubt sind?"
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-q-02",
+                                    "name": "question",
+                                    "prose": "Werden Einschränkungen der Verarbeitung im Datenmodell durch geeignete Statusfelder bzw. Kennzeichen abgebildet (z.B. \"processing_restricted\", Einschränkungsgrund, Beginn/Ende) und sind diese Statusinformationen in allen relevanten Systemen verfügbar?"
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-q-03",
+                                    "name": "question",
+                                    "prose": "Berücksichtigen Fachanwendungen, APIs und Benutzeroberflächen den Einschränkungsstatus bei der Anzeige und Verarbeitung von Daten (z.B. keine oder nur stark eingeschränkte Bearbeitung/Nutzung eingeschränkter Datensätze in Standardfunktionen)?"
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-q-04",
+                                    "name": "question",
+                                    "prose": "Werden auch nachgelagerte Systeme, Datenplattformen und analytische Umgebungen (z.B. Data Warehouse, Data Lake, Reporting, Suchindizes, Caches) über Einschränkungen informiert und wenden sie diese technisch an (z.B. Filterung, Maskierung, gesonderte Bereiche)?"
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-q-05",
+                                    "name": "question",
+                                    "prose": "Sind Sicherungs- und Wiederherstellungsverfahren so gestaltet, dass der Einschränkungsstatus von Datensätzen erhalten bleibt und nach einer Rücksicherung nicht verloren geht oder unzulässig aufgehoben wird?"
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-q-06",
+                                    "name": "question",
+                                    "prose": "Existieren definierte und technisch unterstützte Prozesse zur Beantragung, Prüfung, Entscheidung, Umsetzung und Aufhebung von Einschränkungen, einschließlich Fristenüberwachung und Dokumentation des Entscheidungsverlaufs?"
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-q-07",
+                                    "name": "question",
+                                    "prose": "Werden Einschränkungen und ihre Aufhebung manipulationsresistent protokolliert (z.B. mit Zeitpunkt, Grund, betroffenen Datensätzen, beteiligten Rollen) und regelmäßig ausgewertet, um Missbrauch oder Fehlkonfigurationen zu erkennen?"
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-q-08",
+                                    "name": "question",
+                                    "prose": "Sind gemeinsam Verantwortliche, Auftragsverarbeiter und sonstige Empfänger technisch und vertraglich in die Einschränkungsprozesse eingebunden (z.B. durch Schnittstellen für Einschränkungsaufträge, Bestätigungen, aktualisierte Datensätze)?"
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-q-09",
+                                    "name": "question",
+                                    "prose": "Existieren Vorkehrungen, um bei Zweifeln an der Richtigkeit, Rechtmäßigkeit oder Erforderlichkeit von Daten die Verarbeitung technisch einzuschränken (z.B. Flags, Workflows), bis eine Klärung erfolgt ist, ohne die Daten vorschnell zu löschen?"
+                                },
+                                {
+                                    "id": "sdm-tom-res-01-q-10",
+                                    "name": "question",
+                                    "prose": "Werden Einschränkungen mit hohem Risiko (z.B. bei besonderen Kategorien personenbezogener Daten oder weitreichenden Auswirkungen) mit erhöhten Sicherheitsanforderungen umgesetzt (z.B. starke Authentisierung, Vier-Augen-Freigaben, sichere Kommunikationswege)?"
                                 }
                             ]
                         }
@@ -6017,6 +6017,83 @@
                                     "id": "sdm-tom-rec-01-warranty-intervenability",
                                     "name": "warranty-objective",
                                     "prose": "INTERVENIERBARKEIT: Betroffene können ihr Recht auf Berichtigung effektiv wahrnehmen; Anträge werden geprüft, umgesetzt, dokumentiert und kommuniziert."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sdm-tom-rec-01-maturity",
+                            "name": "maturity-hints",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-rec-01-maturity-1",
+                                    "name": "level-1",
+                                    "prose": "Berichtigungen werden überwiegend manuell und einzelfallbezogen durchgeführt. Datenmodelle und Systeme sind nur begrenzt auf Berichtigung vorbereitet; feingranulare Berichtigungen sind schwierig oder nur durch technische Expertinnen und Experten möglich. Protokollierung beschränkt sich ggf. auf Freitext in Tickets oder E-Mails. Backups, Kopien und Archivsysteme werden bei Berichtigungen kaum berücksichtigt; das Risiko, dass falsche Daten nach einer Rücksicherung erneut verarbeitet werden, ist hoch. Fristenüberwachung und Mitteilungspflichten gegenüber Empfängern und Absendern sind nur teilweise geregelt oder nicht durchgängig technisch unterstützt."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-maturity-3",
+                                    "name": "level-3",
+                                    "prose": "Ein Berichtigungskonzept und standardisierte Prozesse für Berichtigungsanträge sind dokumentiert und in den wichtigsten Systemen technisch umgesetzt. Datenmodelle unterstützen Berichtigungen auf Ebene von Datensätzen und relevanten Feldern; Systeme ermöglichen Berichtigungsvorgänge unter Berücksichtigung der Integrität des verbleibenden Datenbestands. Berichtigungen werden in Fachsystemen bzw. Workflowsystemen mit Anlass, Umfang und beteiligten Rollen protokolliert. Fristen zur Bearbeitung von Anträgen werden überwacht, und es existieren definierte Verfahren zur Information von Empfängern und ggf. Absendern berichtigter Daten. Backups und Kopien sind zumindest über Korrekturläufe oder erneute Berichtigungen bei Rücksicherungen konzeptionell erfasst und in wesentlichen Szenarien technisch berücksichtigt."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-maturity-5",
+                                    "name": "level-5",
+                                    "prose": "Berichtigungsprozesse sind vollständig in Datenmodell, Fachsysteme, Workflows, Protokollierung und Backup-/Archivlandschaft integriert. Feingranulare Berichtigungen bis auf Feldebene sind möglich, ohne die Integrität der übrigen Daten zu gefährden. Dedizierte Berichtigungs-Workflows mit manipulationsresistentem Audit-Trail, starken Identitätsprüfungen und – bei hohem Risiko – Vier-Augen-Prinzip sind etabliert. Berichtigungen werden über standardisierte Schnittstellen und Ereignisse an alle relevanten Systeme, Auftragsverarbeiter und ggf. gemeinsam Verantwortliche propagiert. Backups, Kopien und Archivsysteme verfügen über technische Verfahren, mit denen vormals berichtigte Daten nach Rücksicherung automatisch erneut berichtigt oder von der weiteren Verarbeitung ausgeschlossen werden. Monitoring und regelmäßige Auswertungen der Berichtigungsprotokolle dienen der kontinuierlichen Verbesserung und der Nachweisführung gegenüber Aufsicht und Betroffenen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "sdm-tom-rec-01-assessment",
+                            "name": "assessment-questions",
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-rec-01-q-01",
+                                    "name": "question",
+                                    "prose": "Sind Datenmodell und Datenstrukturen so gestaltet, dass einzelne Datenfelder, Datensätze oder Gruppen von Daten gezielt berichtigt werden können, ohne die Integrität der nicht betroffenen Daten zu gefährden?"
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-q-02",
+                                    "name": "question",
+                                    "prose": "Werden Berichtigungen technisch so umgesetzt, dass der verbleibende Datenbestand konsistent bleibt (z.B. durch geeignete Referenzen, Trennung von Beständen oder feingranulare Berichtigungsmöglichkeiten)?"
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-q-03",
+                                    "name": "question",
+                                    "prose": "Existieren Systeme und Workflows, die Berichtigungsvorgänge unterstützen (inklusive Identitätsprüfung der Antragstellenden, Prüfung der Anspruchsberechtigung und ggf. Einschränkung der Verarbeitung bei Zweifelsfällen)?"
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-q-04",
+                                    "name": "question",
+                                    "prose": "Werden alle Berichtigungsvorgänge einschließlich Anlass, Umfang, betroffener Datensätze, beteiligter Rollen und Zeitpunkt manipulationsresistent protokolliert, sodass der Verlauf der Berichtigung im Nachhinein nachvollzogen werden kann?"
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-q-05",
+                                    "name": "question",
+                                    "prose": "Sind Prozesse und technische Mechanismen vorhanden, mit denen Berichtigungen an alle relevanten Datenempfänger und Systeme propagiert werden (z.B. interne Systeme, Auftragsverarbeiter, weitere Verantwortliche), und werden diese Mitteilungen dokumentiert?"
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-q-06",
+                                    "name": "question",
+                                    "prose": "Werden Fristen zur Bearbeitung von Berichtigungsanträgen überwacht (z.B. durch Ticket- oder Workflowsysteme), und gibt es Auswertungen darüber, ob Anträge innerhalb der gesetzlichen Fristen abgeschlossen wurden?"
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-q-07",
+                                    "name": "question",
+                                    "prose": "Sind Backups, Kopien und Archivsysteme in das Berichtigungskonzept eingebunden, sodass bei Rücksicherungen oder Korrekturläufen sichergestellt wird, dass vormals berichtigte Daten nicht als veraltete oder falsche Version erneut in den Produktivbetrieb gelangen?"
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-q-08",
+                                    "name": "question",
+                                    "prose": "Existiert ein standardisierter, dokumentierter Prozess zur Behandlung von Berichtigungsanträgen (inklusive Ablehnung von Anträgen), der in den eingesetzten Fach- und Workflowsystemen technisch abgebildet ist?"
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-q-09",
+                                    "name": "question",
+                                    "prose": "Sind im Falle von gemeinsam Verantwortlichen und Auftragsverarbeitern die Pflichten zur Berichtigung (inklusive Mitwirkung, Fristen, Umgang mit Kopien/Backups) vertraglich geregelt und technisch unterstützt (z.B. durch definierte Schnittstellen, Lösch-/Berichtigungsaufträge, Rückmeldungen)?"
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-q-10",
+                                    "name": "question",
+                                    "prose": "Werden für Berichtigungen mit hohem Risiko (z.B. besondere Kategorien personenbezogener Daten) erhöhte Sicherheitsmaßnahmen angewendet, wie starke Authentisierung der Antragstellenden und der bearbeitenden Personen sowie ggf. Vier-Augen-Freigaben und sichere Kommunikationswege?"
                                 }
                             ]
                         }
