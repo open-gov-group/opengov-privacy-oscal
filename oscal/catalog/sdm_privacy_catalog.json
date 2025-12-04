@@ -6874,6 +6874,210 @@
                                     "prose": "Nachweisbar sind: (a) technische und fachliche Beschreibungen der Berichtigungs-Workflows (inklusive eventueller Vier-Augen-Prinzipien), (b) Implementierungs- oder Konfigurationsnachweise, dass Berichtigungen nur über definierte Funktionen und nicht über unkontrollierte Direktzugriffe erfolgen, (c) Audit-Trail- oder Log-Beispiele, die den vollständigen Verlauf einzelner Berichtigungen dokumentieren, (d) Konzepte und Nachweise zur Manipulationssicherheit des Audit-Trails, (e) Auswertungen oder Prüfberichte von Datenschutz, Informationssicherheit oder Revision zu Berichtigungsaktivitäten."
                                 }
                             ]
+                        },
+                        {
+                            "id": "SDM-TOM-REC-01-05",
+                            "title": "Konsistente Berichtigung in verteilten und referenzierten Datenbeständen",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "sdm-goal",
+                                    "class": "warranty-objective",
+                                    "value": "RICHTIGKEIT"
+                                },
+                                {
+                                    "name": "sdm-goal",
+                                    "class": "warranty-objective",
+                                    "value": "INTEGRITÄT"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "level",
+                                    "value": "baseline"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "level",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "level",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "open-privacy-control-id",
+                                    "class": "reference",
+                                    "value": "DSR-04"
+                                },
+                                {
+                                    "name": "open-privacy-target-maturity",
+                                    "class": "reference",
+                                    "value": "4"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "role",
+                                    "value": "data-architect"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "role",
+                                    "value": "application-owner"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-rec-01-05-stmt",
+                                    "name": "statement",
+                                    "prose": "Die Datenmodelle, Schnittstellen und technischen Workflows sind so gestaltet, dass Berichtigungen personenbezogener Daten in allen betroffenen Systemen konsistent und nachvollziehbar umgesetzt werden. Referenzen, Historien und abgeleitete Daten bleiben fachlich und technisch konsistent; inkonsistente Mischstände (z.B. unterschiedliche Versionen derselben Person in Stammdaten-, Bewegungs- und Reporting-Systemen) werden durch geeignete Korrektur- und Propagationsmechanismen vermieden."
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-05-risk-guidance",
+                                    "name": "risk-guidance",
+                                    "prose": "Risikobasierte Ausgestaltung der technischen Berichtigungsmechanismen.",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-rec-01-05-risk-normal-low",
+                                            "name": "risk-scenario",
+                                            "props": [
+                                                {
+                                                    "name": "dp-risk-impact",
+                                                    "class": "impact",
+                                                    "value": "normal"
+                                                },
+                                                {
+                                                    "name": "dp-likelihood",
+                                                    "class": "likelihood",
+                                                    "value": "low"
+                                                },
+                                                {
+                                                    "name": "implementation-level",
+                                                    "class": "level",
+                                                    "value": "baseline"
+                                                },
+                                                {
+                                                    "name": "maturity-level",
+                                                    "class": "open-privacy",
+                                                    "value": "3"
+                                                }
+                                            ],
+                                            "prose": "Einfache Fachanwendungen mit begrenztem Personenbezug: relationales Datenmodell mit Primär-/Fremdschlüsseln, konsistenter Update-Logik und Integritätsprüfungen; Berichtigungen erfolgen transaktional innerhalb eines Systems, Protokollierung der Änderungen auf Datensatz-/Feldebene."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-05-risk-moderate",
+                                            "name": "risk-scenario",
+                                            "props": [
+                                                {
+                                                    "name": "dp-risk-impact",
+                                                    "class": "impact",
+                                                    "value": "moderate"
+                                                },
+                                                {
+                                                    "name": "dp-likelihood",
+                                                    "class": "likelihood",
+                                                    "value": "moderate"
+                                                },
+                                                {
+                                                    "name": "implementation-level",
+                                                    "class": "level",
+                                                    "value": "standard"
+                                                },
+                                                {
+                                                    "name": "maturity-level",
+                                                    "class": "open-privacy",
+                                                    "value": "4"
+                                                }
+                                            ],
+                                            "prose": "Verbund aus mehreren Systemen (z.B. CRM, Fachverfahren, Reporting): zentrale Personenschlüssel, technische Abgrenzung von Stammdaten und abgeleiteten Beständen, Berichtigungs-Events oder APIs, die idempotent sind und in nachgelagerten Systemen verarbeitet werden; technische Schutzmechanismen gegen partielle Aktualisierungen (z.B. Retry, Dead-Letter-Queues, Monitoring)."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-05-risk-high",
+                                            "name": "risk-scenario",
+                                            "props": [
+                                                {
+                                                    "name": "dp-risk-impact",
+                                                    "class": "impact",
+                                                    "value": "high"
+                                                },
+                                                {
+                                                    "name": "dp-likelihood",
+                                                    "class": "likelihood",
+                                                    "value": "moderate"
+                                                },
+                                                {
+                                                    "name": "implementation-level",
+                                                    "class": "level",
+                                                    "value": "high"
+                                                },
+                                                {
+                                                    "name": "maturity-level",
+                                                    "class": "open-privacy",
+                                                    "value": "5"
+                                                }
+                                            ],
+                                            "prose": "Hochriskante Daten (z.B. Gesundheits-, Sozial- oder Strafdaten) in verteilten Architekturen: streng versionierte Stammdaten, transaktionale oder kompensationsfähige Workflows für Berichtigungen über Systemgrenzen, explizite Konsistenzprüfungen nach Berichtigung (z.B. Reconciling-Reports), technische Sperren für Verarbeitung veralteter Versionen sowie eng integrierter Audit-Trail (REC-01-04) für alle beteiligten Systeme."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-05-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische technische Maßnahmen zur Sicherstellung konsistenter Berichtigungen.",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-rec-01-05-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Entwurf eines zentralen Identifikations- und Schlüsselkonzepts (z.B. Master-Person-ID) für alle Systeme, die personenbezogene Daten derselben betroffenen Person verarbeiten, inkl. Migrationsregeln für Altdaten."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-05-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Implementierung von Berichtigungs-APIs oder Ereignissen (z.B. \"person.corrected\"), die Berichtigungen mit alter und neuer Ausprägung, Zeitstempel und Auslöser transportieren und in allen angeschlossenen Systemen idempotent verarbeitet werden können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-05-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Trennung von Stammdaten, Bewegungsdaten und Reporting-/Cache-Beständen, sodass Berichtigungen zuerst im führenden Stammdatensystem erfolgen und anschließend kontrolliert in abgeleiteten Beständen ausgerollt werden."
+                                        },
+                                        {
+                                            "id": "sdm-tom-rec-01-05-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung automatischer Konsistenzprüfungen (z.B. Abgleich von Schlüsselfeldern, Dubletten-Checks, Reports über widersprüchliche Attribute), die nach Berichtigungen ausgeführt und bei Abweichungen eskaliert werden."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-rec-01-05-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind insbesondere: (a) Datenmodelle und Architekturunterlagen, die Schlüsselkonzepte und Referenzen für Berichtigungen beschreiben, (b) technische Spezifikationen und Implementierungen von Berichtigungs-APIs/Ereignissen, (c) Konfigurationen von Workflows, Queues und Monitoring, mit denen Berichtigungen über Systemgrenzen propagiert und überwacht werden, (d) Berichte aus Konsistenzprüfungen sowie (e) protokollierte Berichtigungsfälle, in denen Propagation und Konsistenz über mehrere Systeme nachvollzogen werden können."
+                                }
+                            ]
                         }
                     ]
                 }
