@@ -21,28 +21,36 @@
       ]
     },
 "imports": [
-      {
-        "href": "#open-privacy-catalog",
-        "include-controls": [
-          { "with-ids": [ "DSR-01", "DSR-04", "DSR-05", "OPS-04", "TOM-02" ] }
-        ]
-      },
-      {
-        "href": "#sdm-privacy-catalog",
-        "include-controls": [
-          {
-            "with-ids": [
-              "SDM-TOM-AC-01",
-              "SDM-TOM-LG-01",
-              "SDM-TOM-LG-02",
-              "SDM-TOM-DEL-01",
-              "SDM-TOM-REC-01",
-              "SDM-TOM-RES-01",
-              "SDM-TOM-SEP-01"
+        {
+            "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/open_privacy_catalog_risk.json",
+            "include-controls": [
+                {
+                    "with-ids": [
+                        "DSR-01",
+                        "DSR-04",
+                        "DSR-05",
+                        "OPS-04",
+                        "TOM-02"
+                    ]
+                }
             ]
-          }
-        ]
-      }
+        },
+        {
+            "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+            "include-controls": [
+                {
+                    "with-ids": [
+                        "SDM-TOM-AC-01",
+                        "SDM-TOM-LG-01",
+                        "SDM-TOM-LG-02",
+                        "SDM-TOM-DEL-01",
+                        "SDM-TOM-REC-01",
+                        "SDM-TOM-RES-01",
+                        "SDM-TOM-SEP-01"
+                    ]
+                }
+            ]
+        }
     ],
 
     "merge": {
