@@ -1,0 +1,159 @@
+{
+  "profile": {
+    "uuid": "7f4c1d4c-8f3f-4f6e-9f3b-7b210974a001",
+    "metadata": {
+      "title": "Melderegister – Privacy- und SDM-TOM-Profil",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-12-04T00:00:00Z",
+      "roles": [
+        {
+          "id": "owner",
+          "title": "Profilverantwortliche Stelle"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "9f92b4e6-63c0-4b8d-9d60-1b7514fb0001",
+          "type": "organization",
+          "name": "Beispielkommune – Melderegister"
+        }
+      ]
+    },
+"imports": [
+      {
+        "href": "#open-privacy-catalog",
+        "include-controls": [
+          { "with-ids": [ "DSR-01", "DSR-04", "DSR-05", "OPS-04", "TOM-02" ] }
+        ]
+      },
+      {
+        "href": "#sdm-privacy-catalog",
+        "include-controls": [
+          {
+            "with-ids": [
+              "SDM-TOM-AC-01",
+              "SDM-TOM-LG-01",
+              "SDM-TOM-LG-02",
+              "SDM-TOM-DEL-01",
+              "SDM-TOM-REC-01",
+              "SDM-TOM-RES-01",
+              "SDM-TOM-SEP-01"
+            ]
+          }
+        ]
+      }
+    ],
+
+    "merge": {
+      "as-is": true
+    },
+
+    "modify": {
+      "alters": [
+        {
+          "control-id": "DSR-04",
+          "props": [
+            {
+              "name": "target-maturity",
+              "class": "open-privacy",
+              "value": "4"
+            },
+            {
+              "name": "dp-risk-impact",
+              "class": "impact",
+              "value": "moderate"
+            }
+          ]
+        },
+        {
+          "control-id": "OPS-04",
+          "props": [
+            {
+              "name": "target-maturity",
+              "class": "open-privacy",
+              "value": "4"
+            }
+          ]
+        },
+        {
+          "control-id": "SDM-TOM-DEL-01",
+          "props": [
+            {
+              "name": "implementation-level-required",
+              "class": "dp-measure-intensity",
+              "value": "standard"
+            },
+            {
+              "name": "dp-risk-impact",
+              "class": "impact",
+              "value": "moderate"
+            }
+          ]
+        },
+        {
+          "control-id": "SDM-TOM-REC-01",
+          "props": [
+            {
+              "name": "implementation-level-required",
+              "class": "dp-measure-intensity",
+              "value": "standard"
+            },
+            {
+              "name": "dp-risk-impact",
+              "class": "impact",
+              "value": "moderate"
+            }
+          ]
+        },
+        {
+          "control-id": "SDM-TOM-RES-01",
+          "props": [
+            {
+              "name": "implementation-level-required",
+              "class": "dp-measure-intensity",
+              "value": "standard"
+            }
+          ]
+        },
+        {
+          "control-id": "SDM-TOM-SEP-01",
+          "props": [
+            {
+              "name": "implementation-level-required",
+              "class": "dp-measure-intensity",
+              "value": "standard"
+            }
+          ]
+        }
+      ]
+    },
+
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "open-privacy-catalog",
+          "title": "Open Privacy Catalog (Risk)",
+          "description": "Open-Privacy-Grundkatalog mit risikobasierten Privacy-Controls.",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/open_privacy_catalog_risk.json",
+              "media-type": "application/json"
+            }
+          ]
+        },
+        {
+          "uuid": "sdm-privacy-catalog",
+          "title": "SDM Privacy / TOM Catalog",
+          "description": "SDM-basierter Katalog technischer Datenschutzmaßnahmen (TOMs) inkl. Risiko- und Reifegradlogik.",
+          "rlinks": [
+            {
+              "href": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+              "media-type": "application/json"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
