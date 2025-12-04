@@ -3914,6 +3914,142 @@
                                     "prose": "Nachweisbar sind: (a) Konzepte oder Richtlinien zur Langzeitaufbewahrung, in denen Speicherinfrastruktur, Redundanz, Backup/Restore und Migration geregelt sind, (b) System- oder Betriebsdokumentationen zu den eingesetzten Archiv- und Speichersystemen, (c) Protokolle und Ergebnisse von Wiederherstellungstests, (d) Dokumentationen abgeschlossener Migrationen und die dabei angewandten Prüf- und Freigabeverfahren."
                                 }
                             ]
+                        },
+                        {
+                            "id": "SDM-TOM-LC-01-12",
+                            "title": "Technische Lösch- und Archivierungs-APIs sowie Ereignisverarbeitung",
+                            "class": "technical",
+                            "props": [
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "standard"
+                                },
+                                {
+                                    "name": "implementation-level",
+                                    "class": "dp-measure-intensity",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "normal"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "dp-risk-impact",
+                                    "class": "dp-impact",
+                                    "value": "high"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "low"
+                                },
+                                {
+                                    "name": "dp-likelihood",
+                                    "class": "dp-likelihood",
+                                    "value": "moderate"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Architecture"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "System-Owner"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "IT-Operations"
+                                },
+                                {
+                                    "name": "responsible-role",
+                                    "class": "org-role",
+                                    "value": "Data-Engineering"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P20"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.P21"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S07"
+                                },
+                                {
+                                    "name": "sdm-measure",
+                                    "class": "sdm-60",
+                                    "value": "M60.S08"
+                                }
+                            ],
+                            "parts": [
+                                {
+                                    "id": "sdm-tom-lc-01-12-stmt",
+                                    "name": "statement",
+                                    "prose": "Lösch- und Aufbewahrungsentscheidungen werden über technische Schnittstellen und Ereignisse in allen relevanten Systemen konsistent umgesetzt. Hierzu stellt die Organisation standardisierte Lösch- und Archivierungs-APIs sowie ereignisbasierte Mechanismen bereit, mit denen Fachsysteme, Datenplattformen, Suchindizes und weitere abhängige Komponenten Lösch- und Archivierungsbefehle verarbeiten. Die Schnittstellen sind so gestaltet, dass sie idempotent, nachvollziehbar und testbar sind und Rückmeldungen zur erfolgreichen Umsetzung liefern."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-12-gdn",
+                                    "name": "guidance",
+                                    "prose": "In verteilten Architekturen (z.B. Microservices, Data Warehouses, Suchindizes, Event-Streaming) reicht es aus Datenschutzsicht nicht aus, Löschlogik nur in einzelnen Kernsystemen zu implementieren. Stattdessen sollten zentrale oder standardisierte Lösch- und Archivierungsschnittstellen bereitgestellt werden, über die Objekte und Datensätze eindeutig identifiziert werden und über deren Aufruf bzw. über veröffentlichte Ereignisse (Events) alle beteiligten Systeme ihre lokalen Datenbestände aktualisieren. Schnittstellen sollten idempotent sein und Fehlerzustände klar melden, damit Nachsteuerung, Monitoring und Audit möglich sind. Für Systeme mit hohem Schutzbedarf sollten erhöhte Anforderungen an Authentisierung, Autorisierung und Protokollierung der Schnittstellennutzung gelten."
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-12-typical-measures",
+                                    "name": "typical-measures",
+                                    "prose": "Typische Maßnahmen für technische Lösch- und Archivierungs-APIs sowie Ereignisverarbeitung:",
+                                    "parts": [
+                                        {
+                                            "id": "sdm-tom-lc-01-12-measure-01",
+                                            "name": "typical-measure",
+                                            "prose": "Einführung eines zentralen oder geteilten „Lifecycle“-Dienstes bzw. einer technischen Schnittstelle (z.B. REST- oder gRPC-API), über die Objekte und Datensätze anhand stabiler Identifikatoren (z.B. fachliche IDs, UUIDs) zum Löschen, Anonymisieren oder zur Archivierung markiert und verarbeitet werden können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-12-measure-02",
+                                            "name": "typical-measure",
+                                            "prose": "Verwendung eines ereignisorientierten Ansatzes (z.B. Message-Bus, Event-Streaming-Plattform), bei dem Lösch- und Archivierungsevents (z.B. \"person.deleted\", \"contract.archived\") veröffentlicht werden. Abonnierende Systeme (Fachanwendungen, Data Warehouse, Suchindizes, Caches) konsumieren diese Ereignisse und führen korrespondierende Lösch- oder Archivierungsschritte lokal aus."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-12-measure-03",
+                                            "name": "typical-measure",
+                                            "prose": "Gestaltung der Schnittstellen und Event-Consumer als idempotent, sodass wiederholte Aufrufe oder doppelt eingehende Ereignisse nicht zu Inkonsistenzen führen (z.B. durch Statusfelder, Versionsnummern oder dedizierte Lifecycle-States wie \"marked_for_deletion\", \"archived\")."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-12-measure-04",
+                                            "name": "typical-measure",
+                                            "prose": "Definition technischer Rückmelde- und Fehlerbehandlungsmechanismen (z.B. Response-Codes, Dead-Letter-Queues, Retry-Strategien), mit denen fehlgeschlagene Lösch- oder Archivierungsschritte erkannt, erneut angestoßen oder manuell bearbeitet werden können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-12-measure-05",
+                                            "name": "typical-measure",
+                                            "prose": "Einrichtung von Monitoring und Reporting für Lösch- und Archivierungs-APIs sowie Events (z.B. Kennzahlen zu verarbeiteten Events, Fehler- und Retry-Raten, Durchlaufzeiten), um die Wirksamkeit und Vollständigkeit der technischen Umsetzung des Lösch- und Aufbewahrungskonzepts nachvollziehen zu können."
+                                        },
+                                        {
+                                            "id": "sdm-tom-lc-01-12-measure-06",
+                                            "name": "typical-measure",
+                                            "prose": "Absicherung der Lösch- und Archivierungsschnittstellen durch starke Authentisierung und Autorisierung (z.B. technische Service-Identitäten, mTLS, fein granulare API-Policies), insbesondere bei Verarbeitungen mit hohem Schutzbedarf oder hohem Risiko für betroffene Personen."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "sdm-tom-lc-01-12-ass-obj",
+                                    "name": "assessment-objective",
+                                    "prose": "Nachweisbar sind: (a) technische Spezifikationen oder Schnittstellenbeschreibungen für Lösch- und Archivierungs-APIs sowie zugehörige Ereignisse (Event-Schemata), (b) Architektur- oder Systemdokumentationen, die zeigen, welche Systeme und Komponenten an den Lösch- und Archivierungsprozessen teilnehmen, (c) Implementierungs- oder Konfigurationsnachweise für Event-Consumer, Jobs und Workflows, die Lösch- und Archivierungsevents verarbeiten, (d) Monitoring- oder Reporting-Unterlagen zu durchgeführten Lösch- bzw. Archivierungsvorgängen und deren Fehlerbehandlung, (e) Nachweise zur Absicherung der Schnittstellen (z.B. Authentisierungs- und Autorisierungskonzepte, API-Gateways, mTLS-Konfigurationen)."
+                                }
+                            ]
                         }
                     ]
                 }
