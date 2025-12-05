@@ -1,0 +1,91 @@
+{
+  "component-definition": {
+    "uuid": "1ecd7b02-4b98-490b-b15e-a728e06462b4",
+    "metadata": {
+      "title": "Fachverfahren – Line-of-Business-Anwendung (Datenschutz-Baustein)",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-12-05T00:00:00Z",
+      "props": [
+        { "name": "component-type", "value": "application" }
+      ],
+      "parties": [
+        {
+          "uuid": "1ecd7b02-4b98-490b-b15e-a728e06462b4",
+          "type": "organization",
+          "name": "Verantwortliche Stelle / Fachbereich"
+        }
+      ]
+    },
+    "components": [
+      {
+        "uuid": "1f04ec6d-8e7e-47b0-a5e3-f19b8543a1ef",
+        "type": "service",
+        "title": "FACH-REG-01 – Fachverfahren Melderegister (generischer Baustein)",
+        "description": "Generische Komponentenbeschreibung für ein Melderegister-Fachverfahren, das Meldedaten fachlich führt und Melderegisterprozesse abbildet.",
+        "props": [
+          { "name": "role", "value": "fachverfahren" },
+          { "name": "component-category", "value": "app.line-of-business" },
+          { "name": "processing-role", "value": "controller-core-system" }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "d33068ba-fa9d-4b3f-b1c5-c8f56b35d882",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+            "description": "Datenschutzrelevante technische Maßnahmen des Fachverfahrens (Lebenszyklussteuerung, Betroffenenrechte, Protokollierung).",
+            "implemented-requirements": [
+              {
+                "uuid": "0564aa2b-5137-4a85-bba6-f9e959a3950b",
+                "control-id": "SDM-TOM-LC-01",
+                "description": "Das Fachverfahren unterstützt Löschung, Archivierung und Aufbewahrung von Meldedaten.",
+                "statements": [
+                  {
+                    "uuid": "747f6d47-fb88-4b70-96db-132bf5a40d32",
+                    "statement-id": "sdm-tom-lc-01-fach",
+                    "description": "Für alle Personen- und Vorgangsdaten sind Lösch- und Aufbewahrungsfristen hinterlegt. Das Fachverfahren kann Daten nach Ablauf definierter Fristen oder auf Antrag der betroffenen Person selektiv löschen oder in ein Archiv überführen und protokolliert diese Vorgänge."
+                  }
+                ]
+              },
+              {
+                "uuid": "96416a7d-d078-465c-99ea-2c73bdb512dd",
+                "control-id": "SDM-TOM-REC-01",
+                "description": "Das Fachverfahren bildet Berichtigungsprozesse technisch ab.",
+                "statements": [
+                  {
+                    "uuid": "90d2512a-ee81-435d-9588-d641bb835e4f",
+                    "statement-id": "sdm-tom-rec-01-fach",
+                    "description": "Berichtigungen von Meldedaten (z.B. Namen, Adressen, Familienstand) erfolgen über definierte Workflows mit Identitätsprüfung. Änderungen werden transaktional auf alle relevanten Tabellen angewendet und in einem Berichtigungsprotokoll (alt/neu, Zeitpunkt, Sachbearbeitung) festgehalten."
+                  }
+                ]
+              },
+              {
+                "uuid": "48494379-75a4-47d0-ae22-4fcaf72a2b85",
+                "control-id": "SDM-TOM-RES-01",
+                "description": "Das Fachverfahren unterstützt Einschränkung der Verarbeitung.",
+                "statements": [
+                  {
+                    "uuid": "bea90e78-9def-42a8-943a-016e5c2eb696",
+                    "statement-id": "sdm-tom-res-01-fach",
+                    "description": "Datensätze können mit einem Einschränkungsstatus versehen werden (z.B. 'streitig', 'gesperrt'). Standardfunktionen berücksichtigen den Status technisch (z.B. keine oder reduzierte Nutzung in Abfragen, Berichten und Exporten), bis eine Klärung erfolgt."
+                  }
+                ]
+              },
+              {
+                "uuid": "19724c40-566f-46ca-98ff-9a598d4f116a",
+                "control-id": "SDM-TOM-SEP-01",
+                "description": "Das Fachverfahren unterstützt die Trennung von Zwecke/Mandanten.",
+                "statements": [
+                  {
+                    "uuid": "e3e9a8ee-d7ec-4229-8b20-1e2eee2feeed",
+                    "statement-id": "sdm-tom-sep-01-fach",
+                    "description": "Das Datenmodell des Fachverfahrens unterscheidet Mandanten bzw. Zuständigkeitsbereiche (z.B. Gemeinden) sowie unterschiedliche Verarbeitungszwecke. Abfragen und Funktionen sind so implementiert, dass unzulässige Datenvermischungen vermieden werden."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

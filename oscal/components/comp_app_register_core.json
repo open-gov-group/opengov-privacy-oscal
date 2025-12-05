@@ -1,0 +1,79 @@
+{
+  "component-definition": {
+    "uuid": "78f00bd6-b367-4475-a287-95c60986a5a0",
+    "metadata": {
+      "title": "Register-Kernsystem – Melderegister (Datenschutz-Baustein)",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-12-05T00:00:00Z",
+      "props": [
+        { "name": "component-type", "value": "application" }
+      ],
+      "parties": [
+        {
+          "uuid": "07389378-cadc-472d-81c4-17d0e63fda78",
+          "type": "organization",
+          "name": "Verantwortliche Stelle – Melderegister"
+        }
+      ]
+    },
+    "components": [
+      {
+        "uuid": "cb1bccb8-6093-4de5-b4c3-69d52265146d",
+        "type": "service",
+        "title": "REGISTER-01 – Melderegister-Kernsystem",
+        "description": "Generische Komponentenbeschreibung für das Melderegister-Kernsystem als führende Registerdatenbank für Meldedaten.",
+        "props": [
+          { "name": "role", "value": "register" },
+          { "name": "component-category", "value": "app.register.core" },
+          { "name": "processing-role", "value": "controller-register" }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "fa0929f1-acf9-4178-955f-41c72a462646",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+            "description": "Datenschutzrelevante technische Maßnahmen im Melderegister-Kernsystem (Langzeitaufbewahrung, Integrität, Protokollierung).",
+            "implemented-requirements": [
+              {
+                "uuid": "701c623b-8443-4006-a675-4928e73851b2",
+                "control-id": "SDM-TOM-LC-01-09",
+                "description": "Langzeitdatenformate und Metadaten werden für Meldedaten umgesetzt.",
+                "statements": [
+                  {
+                    "uuid": "06e6e23f-bfe7-4655-924a-e8f74209174f",
+                    "statement-id": "sdm-tom-lc-01-09-register",
+                    "description": "Meldedaten werden in dokumentierten, migrierbaren Formaten gehalten. Ergänzende Metadaten (z.B. Quellen, Zeitpunkte, Bearbeitungsstatus) ermöglichen auch nach längerer Zeit eine nachvollziehbare Nutzung und Bewertung der Daten."
+                  }
+                ]
+              },
+              {
+                "uuid": "61d9e469-1926-4a5d-b05b-214d93fc6e86",
+                "control-id": "SDM-TOM-LC-01-10",
+                "description": "Integrität, Authentizität und Beweiswert des Melderegisters werden abgesichert.",
+                "statements": [
+                  {
+                    "uuid": "96ae30a2-fa85-40a4-9d04-16fa32ce00b1",
+                    "statement-id": "sdm-tom-lc-01-10-register",
+                    "description": "Änderungen an Meldedaten werden versioniert oder durch manipulationsresistente Protokolle nachvollzogen. Signaturen, Hashwerte oder vergleichbare Mechanismen sichern die Integrität von Auskünften und Bescheinigungen."
+                  }
+                ]
+              },
+              {
+                "uuid": "cfa3d648-db5a-4e3f-bccd-de943e3babba",
+                "control-id": "SDM-TOM-LG-02",
+                "description": "Registerzugriffe und -änderungen werden detailliert protokolliert.",
+                "statements": [
+                  {
+                    "uuid": "f06b4d5f-5f57-4177-b44b-b78e2129518d",
+                    "statement-id": "sdm-tom-lg-02-register",
+                    "description": "Alle Lese- und Schreibzugriffe auf Meldedaten werden mit Benutzerkennung, Zweck, Vorgangsbezug und Zeitpunkt protokolliert. Protokolle werden nach einheitlichen Fristen aufbewahrt und können für Datenschutz-Audits ausgewertet werden."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

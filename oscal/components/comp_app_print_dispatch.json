@@ -1,0 +1,79 @@
+{
+  "component-definition": {
+    "uuid": "b562986c-962e-4e29-ae2a-f09c7cbbb1df",
+    "metadata": {
+      "title": "Druck- und Versanddienstleister (Datenschutz-Baustein)",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-12-05T00:00:00Z",
+      "props": [
+        { "name": "component-type", "value": "service" }
+      ],
+      "parties": [
+        {
+          "uuid": "0299ab49-fc4c-4579-b56c-1c50237a3f4b",
+          "type": "organization",
+          "name": "Druck- und Versanddienstleister (Auftragsverarbeiter)"
+        }
+      ]
+    },
+    "components": [
+      {
+        "uuid": "01c4ae12-b0a7-4e4b-9778-0d3014503361",
+        "type": "service",
+        "title": "DRUCK-01 – Druck- und Versandservice",
+        "description": "Generische Komponentenbeschreibung für einen Druck- und Versanddienstleister, der Meldedaten für Anschreiben und Bescheide verarbeitet.",
+        "props": [
+          { "name": "role", "value": "print-dispatch" },
+          { "name": "component-category", "value": "service.print-dispatch" },
+          { "name": "processing-role", "value": "processor" }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "8bd44227-fe99-479a-b203-0b749099b02c",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+            "description": "Datenschutz-TOMs für Druck- und Versanddienste (Minimaldaten, Trennung, Löschung).",
+            "implemented-requirements": [
+              {
+                "uuid": "8e87dd04-1a30-4df4-8d04-1a05341aec3c",
+                "control-id": "SDM-TOM-SEP-01",
+                "description": "Daten verschiedener Auftraggeber und Aufträge werden organisatorisch und technisch getrennt.",
+                "statements": [
+                  {
+                    "uuid": "687e86dc-7eeb-42b7-8878-33e70948eeb8",
+                    "statement-id": "sdm-tom-sep-01-druck",
+                    "description": "Adressdaten und Versanddaten werden mandantenbezogen verarbeitet. Logische und organisatorische Trennungen (z.B. Mandantenkennungen, getrennte Auftragsläufe, Zugriffsbeschränkungen) verhindern eine Vermischung von Daten verschiedener Auftraggeber."
+                  }
+                ]
+              },
+              {
+                "uuid": "ecf44bd2-0891-4835-9992-3a166ee315e2",
+                "control-id": "SDM-TOM-LC-01",
+                "description": "Löschung und kurze Aufbewahrungsfristen für Druckdaten.",
+                "statements": [
+                  {
+                    "uuid": "7ce35c91-357d-478c-b43a-035bb7fc86e2",
+                    "statement-id": "sdm-tom-lc-01-druck",
+                    "description": "Daten für Druck- und Versandaufträge werden nach erfolgreichem Versand und Ablauf kurzer, vertraglich vereinbarter Fristen gelöscht. Löschläufe sind dokumentiert; verbleibende Daten dienen maximal der Nachweisführung und werden nach definierten Fristen ebenfalls gelöscht."
+                  }
+                ]
+              },
+              {
+                "uuid": "0a6580f2-cc7d-47d4-853f-f19c582429b5",
+                "control-id": "SDM-TOM-AC-01-01",
+                "description": "Zugriffe auf Druckdaten sind auf wenige berechtigte Personen beschränkt.",
+                "statements": [
+                  {
+                    "uuid": "9b3947f0-5c59-4931-80a9-099ab38872c0",
+                    "statement-id": "sdm-tom-ac-01-01-druck",
+                    "description": "Zugriff auf personenbezogene Druckdaten haben nur Mitarbeitende, die an der technischen Auftragsabwicklung und Qualitätssicherung beteiligt sind. Zugriffskonzepte und Berechtigungsvergaben folgen dem Need-to-know-Prinzip."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "component-definition": {
+    "uuid": "d9768a86-3811-444c-9d13-8a08856c94a2",
+    "metadata": {
+      "title": "Portal – Fach- und Serviceportal (Datenschutz-Baustein)",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-12-05T00:00:00Z",
+      "props": [
+        { "name": "component-type", "value": "application" }
+      ],
+      "parties": [
+        {
+          "uuid": "d63e27cf-4972-4b53-9557-620bea67c489",
+          "type": "organization",
+          "name": "Portalbetreiber / Auftragsverarbeiter"
+        }
+      ]
+    },
+    "components": [
+      {
+        "uuid": "52e463be-5564-42b3-84cc-873694781fcf",
+        "type": "service",
+        "title": "PORTAL-01 – Verwaltungsportal (Frontend)",
+        "description": "Generische Komponentenbeschreibung für ein Verwaltungsportal, über das betroffene Personen und Mitarbeitende Meldedaten anzeigen, eingeben und Änderungsprozesse (z.B. An-/Abmeldung, Berichtigung) anstoßen können.",
+        "props": [
+          { "name": "role", "value": "portal" },
+          { "name": "component-category", "value": "app.portal.frontend" },
+          { "name": "processing-role", "value": "portal-operator" },
+          { "name": "legal-role", "value": "processor" }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "85395323-2ee3-4a30-bae2-6cabfbd1fcef",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+            "description": "Datenschutzrelevante technische Maßnahmen des Portals (Zugriffsschutz, Transport, Logging, DSR-Schnittstellen).",
+            "implemented-requirements": [
+              {
+                "uuid": "a1b37cc9-7c74-4bfe-b47d-be1b9df2c828",
+                "control-id": "SDM-TOM-AC-01-01",
+                "description": "Portalzugriffe sind über ein zentrales Identity- und Access-Management abgesichert.",
+                "statements": [
+                  {
+                    "uuid": "31c6aaa6-c972-4a2e-844d-d42d8968ee05",
+                    "statement-id": "sdm-tom-ac-01-01-portal",
+                    "description": "Das Portal nutzt ein zentrales IAM für Benutzerkonten und Rollen (z.B. Bürgerkonto, Sachbearbeitung, Admin). Rollenbasierte Berechtigungen steuern, welche Daten und Funktionen angezeigt werden dürfen. Technische Anbindung erfolgt z.B. über OIDC/SAML."
+                  }
+                ]
+              },
+              {
+                "uuid": "80902851-6b7b-4e85-9969-6a0b0ca214df",
+                "control-id": "SDM-TOM-LG-01",
+                "description": "Portalzugriffe und datenschutzrelevante Aktionen werden protokolliert.",
+                "statements": [
+                  {
+                    "uuid": "ccaef064-1fb6-4374-90a4-136568bbe918",
+                    "statement-id": "sdm-tom-lg-01-portal",
+                    "description": "An- und Abmeldungen im Portal, Aufrufe von Meldedaten, Änderungen und Exporte werden mit Benutzerkennung, Zeitpunkt und Vorgangs-ID protokolliert und an das zentrale Log-/SIEM-System übergeben."
+                  }
+                ]
+              },
+              {
+                "uuid": "fadf93ed-1427-4e19-9f76-15831462d93a",
+                "control-id": "SDM-TOM-LC-01-12",
+                "description": "Das Portal stellt technische Schnittstellen für Lösch-, Berichtigungs- und Einschränkungsprozesse bereit.",
+                "statements": [
+                  {
+                    "uuid": "f1044975-afd5-4a20-b2b8-855dc40716fa",
+                    "statement-id": "sdm-tom-lc-01-12-portal",
+                    "description": "Über das Portal können Betroffene Anträge auf Berichtigung, Löschung oder Einschränkung stellen. Das Portal hält nur kurzfristige Arbeitsspeicherungen vor und leitet die Vorgänge über definierte APIs/Events an das führende Fachverfahren weiter; dauerhafte Speicherung erfolgt dort."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
