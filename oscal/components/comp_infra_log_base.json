@@ -1,0 +1,74 @@
+{
+  "component-definition": {
+    "uuid": "1a527f81-5b31-4cd4-857a-a1d9b198b8ca",
+    "metadata": {
+      "title": "Infrastruktur-Basiskomponenten – Muster Zentrales Log- und SIEM-System",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-12-04T00:00:00Z",
+      "props": [
+        {
+          "name": "component-type",
+          "value": "infrastructure"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "ee9b7ca8-65ee-4ce4-8531-9d93ec03fc08",
+          "type": "organization",
+          "name": "Muster Zentrales Log- und SIEM-System"
+        }
+      ]
+    },
+
+    "components": [
+         {
+        "uuid": "83df8222-a716-4d86-8aa3-359b2cbb1943",
+        "type": "service",
+        "title": "LOG-01 – Zentrales Log- und SIEM-System",
+        "description": "Zentrale Plattform zur Sammlung, Aufbewahrung und Auswertung von Logdaten aus Portal, Fachverfahren, Registern und Infrastruktur.",
+        "props": [
+          { "name": "component-category", "value": "infra.logging.siem" },
+          { "name": "type", "value": "logging" },
+          { "name": "processing-role", "value": "logging" },
+          { "name": "location", "value": "EU-DE" },
+          { "name": "responsible-role", "value": "Security" },
+          { "name": "responsible-role", "value": "IT-Operations" }
+        ],
+        "control-implementations": [
+          {
+            "uuid": "190916c5-a022-4bc9-9334-47547d9feea9",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+            "description": "Zentrales Log-/SIEM-System als Kernkomponente für datenschutzrelevante Protokollierung und Auswertung.",
+            "implemented-requirements": [
+              {
+                "uuid": "25c98bf2-a20d-49b9-be89-1230d206187a",
+                "control-id": "SDM-TOM-LG-02",
+                "description": "Protokollierung und Auswertung datenschutzrelevanter Aktivitäten werden im zentralen Log-/SIEM-System umgesetzt.",
+                "statements": [
+                  {
+                    "uuid": "21fe54b3-c97f-4356-9cd5-0102969e7371",
+                    "statement-id": "sdm-tom-lg-02-log01",
+                    "description": "Fachverfahren, Register, Portale und Infrastrukturkomponenten liefern relevante Protokolle (z.B. Anmeldungen, Berechtigungsänderungen, Datenexporte) an das zentrale Log-/SIEM-System. Dort sind Aufbewahrungsfristen, Zugriffsbeschränkungen und Auswertungs-Use-Cases mit Datenschutzbezug konfiguriert."
+                  }
+                ]
+              },
+              {
+                "uuid": "4ce8fc90-aa24-4793-8e81-367ba787266f",
+                "control-id": "SDM-TOM-LG-01-05",
+                "description": "Advanced Anomalie- und Verhaltensanalyse für Hochrisiko-Verarbeitungen wird über das SIEM bereitgestellt.",
+                "statements": [
+                  {
+                    "uuid": "71cff5c9-b223-4165-8e06-7b46f720ce72",
+                    "statement-id": "sdm-tom-lg-01-05-log01",
+                    "description": "Für Verarbeitungen mit hohem Datenschutzrisiko sind im SIEM spezielle Use-Cases und Anomalie-Detektionen hinterlegt (z.B. Massenabfragen besonderer Kategorien, untypische Exportmuster). Alerts sind mit dem Incident-Management verknüpft und werden dokumentiert bearbeitet."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+ }
+}
