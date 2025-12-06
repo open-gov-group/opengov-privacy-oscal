@@ -1,0 +1,148 @@
+{
+  "component-definition": {
+    "uuid": "380bec0f-4cb0-4c0c-a06c-47e000cb59df",
+    "metadata": {
+      "title": "Fachverfahren – generischer Applikationsbaustein (öffentliche Verwaltung)",
+      "version": "0.1.0",
+      "oscal-version": "1.1.2",
+      "last-modified": "2025-12-06T00:00:00Z",
+      "props": [
+        {
+          "name": "component-type",
+          "value": "application"
+        },
+        {
+          "name": "sdm-layer",
+          "value": "2-applikation"
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "7c62bfeb-5a26-4273-ae95-b4bfdd0f7fbf",
+          "type": "organization",
+          "name": "Öffentliche Verwaltung – generischer Fachverfahrensbetreiber"
+        }
+      ]
+    },
+
+    "components": [
+      {
+        "uuid": "40d32dbd-31d3-42ac-b111-6e74c0310c65",
+        "type": "service",
+        "title": "Fachverfahren (Applikationsschicht) – generischer Datenschutz-Baustein",
+        "description": "Generische Beschreibung eines Fachverfahrens der öffentlichen Verwaltung auf Applikationsschicht (SDM Ebene 2): Anwendung, die fachliche Prozesse (z.B. Anträge, Bescheide, Registerführung) abbildet, personenbezogene Daten verarbeitet und Betroffenenrechte technisch unterstützt.",
+        "props": [
+          { "name": "role", "value": "fachverfahren" },
+          { "name": "component-category", "value": "app.line-of-business" },
+          { "name": "processing-role", "value": "controller-core-system" },
+
+          { "name": "expected-data-model-aspects", "value": "personen, vorgänge/fälle, dokumente, historien, zweck-/verfahrenkennzeichen" },
+          { "name": "expected-workflow-aspects", "value": "antragsbearbeitung, prüflogik, entscheidung/bescheid, widerspruch, auskunft" },
+          { "name": "expected-dsr-support", "value": "auskunft, berichtigung, löschung, einschränkung, widerspruch" }
+        ],
+
+        "control-implementations": [
+          {
+            "uuid": "837a3269-8ba9-4065-85c1-09e5c67d5eb6",
+            "source": "https://raw.githubusercontent.com/open-gov-group/opengov-privacy-oscal/main/oscal/catalog/sdm_privacy_catalog.json",
+            "description": "Datenschutzrelevante technische Anforderungen an Fachverfahren auf Applikationsschicht (Zugriff, Lebenszyklus, Betroffenenrechte, Trennung, Protokollierung).",
+            "implemented-requirements": [
+
+              {
+                "uuid": "3c737b80-8fda-495e-b12a-e2deff18d8b5",
+                "control-id": "SDM-TOM-AC-01",
+                "description": "Rollen- und Berechtigungskonzept im Fachverfahren.",
+                "statements": [
+                  {
+                    "uuid": "bd2294c1-6f78-43d9-9453-a26eea31423c",
+                    "statement-id": "sdm-tom-ac-01-fach-base",
+                    "description": "Das Fachverfahren besitzt ein rollenbasiertes Berechtigungsmodell. Rollen steuern, welche personenbezogenen Daten (Felder, Akten, Vorgänge) und welche Funktionen (z.B. Auskunft, Datenänderung, Export, Administration) für welche Benutzergruppen verfügbar sind. Administrationsfunktionen sind von der fachlichen Bearbeitung getrennt."
+                  }
+                ]
+              },
+
+              {
+                "uuid": "405aed6a-b902-49c8-9673-12825f1b8497",
+                "control-id": "SDM-TOM-LG-01",
+                "description": "Protokollierung fachverfahrensbezogener Zugriffe und Änderungen.",
+                "statements": [
+                  {
+                    "uuid": "fc4c44a1-b788-485b-96b4-ccc25b6d2732",
+                    "statement-id": "sdm-tom-lg-01-fach-base",
+                    "description": "Das Fachverfahren protokolliert datenschutzrelevante Aktionen wie An- und Abmeldungen, Zugriffe auf Personen-/Fallakten, Änderungen und Exporte mit Benutzerkennung, Zeitpunkt und Vorgangs-/Aktenbezug. Protokolle sind strukturiert, auswertbar und können an ein zentrales Log-/SIEM-System weitergegeben werden."
+                  }
+                ]
+              },
+
+              {
+                "uuid": "fc3b1104-adc9-44f9-abaa-6ec1bcd65f57",
+                "control-id": "SDM-TOM-LC-01",
+                "description": "Unterstützung von Löschung, Aufbewahrung und Archivierung im Datenmodell und in Workflows.",
+                "statements": [
+                  {
+                    "uuid": "2ec73e09-82a0-467f-b859-9c37f088027d",
+                    "statement-id": "sdm-tom-lc-01-fach-base",
+                    "description": "Das Datenmodell und die Funktionen des Fachverfahrens erlauben eine zweck- und fristengerechte Löschung oder Archivierung personenbezogener Daten. Für relevante Datenarten sind Aufbewahrungs- und Löschregeln hinterlegbar; das System kann Daten selektiv (z.B. nach Person, Vorgang, Zeitraum) löschen oder einem Archiv zuführen und dokumentiert diese Vorgänge."
+                  }
+                ]
+              },
+
+              {
+                "uuid": "edbf54e4-5cb0-4c30-b123-4ba23a0fb26a",
+                "control-id": "SDM-TOM-REC-01",
+                "description": "Technische Unterstützung von Berichtigungen.",
+                "statements": [
+                  {
+                    "uuid": "5c429840-1568-414f-8bca-3811075a7ba2",
+                    "statement-id": "sdm-tom-rec-01-fach-base",
+                    "description": "Das Fachverfahren unterstützt Berichtigungen personenbezogener Daten über fachliche Masken und Workflows. Änderungen werden so umgesetzt, dass der verbleibende Datenbestand konsistent bleibt (z.B. durch konsistente Aktualisierung aller betroffenen Tabellen/Objekte) und die Änderungshistorie nachvollzogen werden kann."
+                  }
+                ]
+              },
+
+              {
+                "uuid": "c96fcee0-fac7-4208-8920-f6ea5a35bbf5",
+                "control-id": "SDM-TOM-RES-01",
+                "description": "Technische Unterstützung der Einschränkung der Verarbeitung.",
+                "statements": [
+                  {
+                    "uuid": "5ddea93a-4a52-4167-b1eb-a4205f8da515",
+                    "statement-id": "sdm-tom-res-01-fach-base",
+                    "description": "Für Datensätze können Einschränkungszustände (z.B. 'verarbeitung eingeschränkt', 'streitig') hinterlegt werden. Standardfunktionen respektieren diese Zustände, indem z.B. nur eine reduzierte Nutzung der Daten möglich ist oder bestimmte Verarbeitungen blockiert werden, bis eine Klärung erfolgt."
+                  }
+                ]
+              },
+
+              {
+                "uuid": "05263c51-d085-44fd-b7f3-6ab4ae7f5373",
+                "control-id": "SDM-TOM-SEP-01",
+                "description": "Abbildung von Zweck- und Mandantentrennung im Fachverfahren.",
+                "statements": [
+                  {
+                    "uuid": "fach-stmt-sep-01",
+                    "statement-id": "sdm-tom-sep-01-fach-base",
+                    "description": "Das Datenmodell und die Geschäftslogik des Fachverfahrens unterstützen die fachlich erforderliche Trennung von Verarbeitungszwecken, Zuständigkeitsbereichen oder Mandanten (z.B. über Kennzeichen, eigene Bereiche, Filterlogik). Die Anwendung stellt sicher, dass Benutzer:innen nur in den für sie zulässigen Kontexten arbeiten und keine unzulässige Vermischung von Daten stattfindet."
+                  }
+                ]
+              },
+
+              {
+                "uuid": "36a7606f-08f0-4bd3-9f26-92433ef0a890",
+                "control-id": "SDM-TOM-REC-01-04",
+                "description": "Unterstützung von Auskunfts- und Exportfunktionen für Betroffenenrechte.",
+                "statements": [
+                  {
+                    "uuid": "493fb013-cf63-4384-bb77-1aacffb823b4",
+                    "statement-id": "sdm-tom-rec-01-04-fach-base",
+                    "description": "Das Fachverfahren stellt Funktionen zur Verfügung, um alle relevanten personenbezogenen Daten einer betroffenen Person in strukturierter, verständlicher Form anzeigen und exportieren zu können (z.B. für Auskunftsersuchen). Exportformate sind menschenlesbar und soweit möglich maschinenlesbar."
+                  }
+                ]
+              }
+
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
