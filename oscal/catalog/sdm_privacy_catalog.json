@@ -4242,6 +4242,30 @@
                             "name": "dsgvo-article",
                             "class": "legal-basis",
                             "value": "Art. 32 DSGVO"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "CON.2",
+                            "remarks": "BSI IT-Grundschutz: CON.2 Datenschutz – Brücke zwischen SDM und Grundschutz, inkl. Betroffenenrechten wie Einschränkung der Verarbeitung."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "APP.3.1",
+                            "remarks": "BSI IT-Grundschutz: APP.3.1 Webanwendungen und Webservices – technische Plattform für die Umsetzung von Einschränkungs-Workflows in Portalen/Fachverfahren."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27001",
+                            "value": "A.5.34",
+                            "remarks": "ISO/IEC 27001:2022 Annex A 5.34 ‚Privacy and protection of PII‘ – organisatorische und technische Anforderungen für den Schutz und die regelkonforme Verarbeitung von PII (inkl. Einschränkung)."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27701",
+                            "value": "PIMS-7.3.x",
+                            "remarks": "ISO/IEC 27701:2025 – PIMS-Anforderungen an Betroffenenrechte (Access, Rectification, Erasure, Restriction); RES-01 fokussiert auf Restriction of Processing."
                         }
                     ],
                     "links": [
@@ -4487,6 +4511,36 @@
                                     "name": "sdm-measure",
                                     "class": "sdm-62",
                                     "value": "M62.D12"
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "CON.2",
+                                    "remarks": "Verknüpfung der SDM-Anforderungen zur Einschränkung der Verarbeitung mit dem BSI-Baustein CON.2 Datenschutz (Abbildung datenschutzrechtlicher Anforderungen im IT-Grundschutz)."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "APP.4.3",
+                                    "remarks": "Relationale Datenbanksysteme: Datenmodellierung, Integrität und sichere Speicherung personenbezogener Daten inkl. Status- und Metadaten."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.5.34",
+                                    "remarks": "Privacy and protection of PII: Sicherstellung, dass personenbezogene Daten im Datenmodell so abgebildet werden, dass Datenschutzanforderungen (u.a. Einschränkung der Verarbeitung) technisch unterstützt werden."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.8.10",
+                                    "remarks": "Information deletion: Datenmodell und Kennzeichnung sind Grundlage dafür, dass nicht mehr erforderliche oder eingeschränkte personenbezogene Daten gezielt gelöscht bzw. in ihrer Verarbeitung begrenzt werden können."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27701",
+                                    "value": "PIMS-A.7/8",
+                                    "remarks": "Allgemeiner Bezug zu PIMS-Anforderungen für Umsetzung von Betroffenenrechten und Verarbeitungseinschränkungen; Feingranularer Mapping-Punkt für künftige 27701:2025-Crosswalks."
                                 }
                             ],
                             "parts": [
@@ -4814,6 +4868,30 @@
                                     "name": "sdm-measure",
                                     "class": "sdm-62",
                                     "value": "M62.P18"
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "CON.2",
+                                    "remarks": "BSI IT-Grundschutz CON.2 Datenschutz – organisatorische Umsetzung von Betroffenenrechten und SDM-Prozessen."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.5.31",
+                                    "remarks": "ISO/IEC 27001:2022 A.5.31 – Ermittlung und Umsetzung rechtlicher/vertraglicher Anforderungen (u.a. DSGVO Art. 18)."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.5.34",
+                                    "remarks": "ISO/IEC 27001:2022 A.5.34 Privacy and protection of PII – Governance-Rahmen für Prozesse zu Einschränkungen."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27701",
+                                    "value": "Clause 7.3",
+                                    "remarks": "ISO/IEC 27701 – Pflichten ggü. PII-Principals; RES-01-03 konkretisiert organisatorische Abläufe für Einschränkungsanträge."
                                 }
                             ],
                             "parts": [
@@ -4965,6 +5043,42 @@
                                     "name": "sdm-measure",
                                     "class": "sdm-62",
                                     "value": "M62.P10"
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "CON.3",
+                                    "remarks": "Datensicherungskonzept: Sicherstellung, dass Datensicherungen und Rücksicherungen so konzipiert sind, dass der Einschränkungsstatus erhalten bleibt und nicht unterlaufen wird."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "APP.3.1",
+                                    "remarks": "Webanwendungen und Webservices, deren Such- und API-Schnittstellen eingeschränkte Datensätze korrekt filtern bzw. nur in zulässiger Form bereitstellen müssen."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "APP.4.3",
+                                    "remarks": "Relationale Datenbanken: Umsetzung von Einschränkungsflags in Indizes, Views, Reporting-Tabellen und ETL-Prozessen."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.8.10",
+                                    "remarks": "Information deletion: Vorgaben zur Löschung und zum Umgang mit Kopien und Sicherungen werden hier aus Datenschutzsicht konkretisiert (inkl. Caches, Suchindizes, analytische Aggregate)."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.5.34",
+                                    "remarks": "Privacy and protection of PII: Gewährleistung, dass eingeschränkte personenbezogene Daten auch in nachgelagerten Plattformen und Kopien nicht unzulässig verarbeitet oder offengelegt werden."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27701",
+                                    "value": "PIMS-A.7/8",
+                                    "remarks": "Unterstützung von PIMS-Anforderungen zur Umsetzung und Dokumentation von Einschränkungen über Systemgrenzen hinweg, insbesondere in komplexen Datenlandschaften."
                                 }
                             ],
                             "parts": [
@@ -5978,6 +6092,30 @@
                             "name": "dsgvo-article",
                             "class": "legal-basis",
                             "value": "Art. 32 DSGVO"
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "CON.2",
+                            "remarks": "BSI IT-Grundschutz: CON.2 Datenschutz – verbindet SDM-Baustein ‚Berichtigen‘ mit den Grundschutz-Anforderungen an Verarbeitung personenbezogener Daten."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "bsi",
+                            "value": "APP.3.1",
+                            "remarks": "BSI IT-Grundschutz: APP.3.1 Webanwendungen und Webservices – technische Grundlage für Berichtigungsfunktionen in Online-Portalen und Fachverfahren."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27001",
+                            "value": "A.5.34",
+                            "remarks": "ISO/IEC 27001:2022 Annex A 5.34 ‚Privacy and protection of PII‘ – adressiert die Einhaltung rechtlicher Anforderungen für PII, inkl. Korrektheit und Aktualität der Daten."
+                        },
+                        {
+                            "name": "related-mapping",
+                            "class": "iso27701",
+                            "value": "PIMS-7.3.x",
+                            "remarks": "ISO/IEC 27701:2025 – PIMS-Anforderungen an Betroffenenrechte (insbesondere Right to Rectification nach Art. 16 DSGVO) und deren technische/organisatorische Umsetzung."
                         }
                     ],
                     "links": [
@@ -6203,6 +6341,36 @@
                                     "name": "sdm-measure",
                                     "class": "sdm-61",
                                     "value": "M61.P22"
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "CON.2",
+                                    "remarks": "BSI IT-Grundschutz CON.2 Datenschutz – Verbindung SDM ↔ Grundschutz für Verfahren mit personenbezogenen Daten."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "APP.4.3",
+                                    "remarks": "BSI IT-Grundschutz APP.4.3 Relationale Datenbanken – Datenmodellierung, Integrität, Versionierung und Betrieb von Datenbanken."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.5.34",
+                                    "remarks": "ISO/IEC 27001:2022 A.5.34 Privacy and protection of PII – übergreifender Rahmen für Schutz und Berichtigung personenbezogener Daten."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.8.10",
+                                    "remarks": "ISO/IEC 27001:2022 A.8.10 Information deletion – konsistente Löschung bzw. Berichtigung über Hauptbestände, Kopien und Sicherungen hinweg."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27701",
+                                    "value": "Clause 7.3",
+                                    "remarks": "ISO/IEC 27701 – Pflichten gegenüber PII-Principals inkl. Recht auf Berichtigung; REC-01-01 liefert dazu das technische Datenmodell."
                                 }
                             ],
                             "parts": [
@@ -6441,6 +6609,48 @@
                                     "name": "sdm-measure",
                                     "class": "sdm-61",
                                     "value": "M61.S12"
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "CON.2",
+                                    "remarks": "BSI IT-Grundschutz CON.2 Datenschutz – technische Umsetzung von SDM-Maßnahmen für Betroffenenrechte (hier: Berichtigung)."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "APP.3.1",
+                                    "remarks": "BSI IT-Grundschutz APP.3.1 Webanwendungen und Webservices – sichere Portale, Web-UIs und Webservices für Berichtigungen."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "APP.4.3",
+                                    "remarks": "BSI IT-Grundschutz APP.4.3 Relationale Datenbanken – Transaktionen, Integrität und Protokollierung bei Datenänderungen."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.5.34",
+                                    "remarks": "ISO/IEC 27001:2022 A.5.34 – Privacy & PII: organisatorischer Rahmen für datenschutzkonforme Berichtigungsprozesse."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.8.15",
+                                    "remarks": "ISO/IEC 27001:2022 A.8.15 Logging – Protokollierung von Berichtigungs- und Prüfaktivitäten."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.8.20",
+                                    "remarks": "ISO/IEC 27001:2022 A.8.20 Network security – Absicherung der Übertragungswege für Berichtigungsanträge und -entscheidungen."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27701",
+                                    "value": "Clause 7.3",
+                                    "remarks": "ISO/IEC 27701 – Pflichten ggü. PII-Principals (u.a. Berichtigung); REC-01-02 macht Anforderungen auf Systemebene konkret."
                                 }
                             ],
                             "parts": [
@@ -6949,6 +7159,36 @@
                                     "name": "responsible-role",
                                     "class": "role",
                                     "value": "application-owner"
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "CON.2",
+                                    "remarks": "Datenschutz-Baustein, der die Verbindung der SDM-Anforderungen zur Richtigkeit und Integrität personenbezogener Daten in verteilten Systemen zum IT-Grundschutz herstellt."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "bsi",
+                                    "value": "APP.4.3",
+                                    "remarks": "Relationale Datenbanken mit Anforderungen an konsistente Datenmodelle, Integritätsmechanismen und Änderungsprozesse – Grundlage für konsistente Berichtigungen über Systemgrenzen hinweg."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.5.34",
+                                    "remarks": "Privacy and protection of PII: Sicherstellung, dass personenbezogene Daten korrekt und aktuell bleiben; REC-01-05 konkretisiert dies für verteilte, referenzierte Datenbestände."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27001",
+                                    "value": "A.8.10",
+                                    "remarks": "Information deletion: technische Korrektur- und Propagationsmechanismen unterstützen das Entfernen veralteter, falscher Versionen personenbezogener Daten aus allen Systemen."
+                                },
+                                {
+                                    "name": "related-mapping",
+                                    "class": "iso27701",
+                                    "value": "PIMS-A.7/8",
+                                    "remarks": "Allgemeiner Bezug zu PIMS-Anforderungen zur Umsetzung von Betroffenenrechten (Berichtigung) und zur Sicherstellung konsistenter PII-Verarbeitung in komplexen Systemlandschaften."
                                 }
                             ],
                             "parts": [
